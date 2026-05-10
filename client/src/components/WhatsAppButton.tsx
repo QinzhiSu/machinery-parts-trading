@@ -5,8 +5,8 @@ import { useState } from 'react';
 
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
-  const whatsappNumber = '8618888888888'; // China +86 188 8888 8888
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hi%20Global%20Machinery%20%26%20Parts%20Trading%2C%20I%27m%20interested%20in%20your%20products.`;
+  const whatsappNumber = '224622497604'; // Guinea +224 622 497 604
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hi%20VXZO%2C%20I%27m%20interested%20in%20your%20products`;
 
   return (
     <div className="fixed bottom-6 right-6 z-40">
@@ -21,7 +21,7 @@ export default function WhatsAppButton() {
             boxShadow: '0 4px 12px oklch(0 0 0 / 0.15)',
           }}
         >
-          Chat with us on WhatsApp
+          Chat with VXZO on WhatsApp
           {/* Arrow */}
           <div
             className="absolute top-full right-3 w-0 h-0"

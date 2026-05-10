@@ -24,13 +24,13 @@ export default function Navbar() {
       <div className="hidden md:block" style={{ background: 'oklch(0.14 0.04 265)', borderBottom: '1px solid oklch(0.22 0.04 265)' }}>
         <div className="container flex items-center justify-between py-1.5">
           <div className="flex items-center gap-6 text-xs" style={{ color: 'oklch(0.7 0.02 265)', fontFamily: 'var(--font-body)' }}>
-            <a href="mailto:info@globalmachinery.com" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
-              <Mail size={12} />
-              info@globalmachinery.com
-            </a>
-            <a href="tel:+8618888888888" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
+            <a href="https://wa.me/224622497604?text=Hello%20VXZO" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
               <Phone size={12} />
-              +86 188 8888 8888
+              WhatsApp: +224 622 497 604
+            </a>
+            <a href="https://wa.me/224622497604?text=Hello%20VXZO" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
+              <Mail size={12} />
+              Contact via WhatsApp
             </a>
           </div>
           <div className="flex items-center gap-1.5 text-xs" style={{ color: 'oklch(0.7 0.02 265)' }}>
