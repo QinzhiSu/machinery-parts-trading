@@ -12,6 +12,7 @@ import ConstructionPage from "./pages/ConstructionPage";
 import TrucksPage from "./pages/TrucksPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
+import FAQPage from "./pages/FAQPage";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/brand/:brandId" component={BrandPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/about" component={AboutPage} />
+      <Route path="/faq" component={FAQPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

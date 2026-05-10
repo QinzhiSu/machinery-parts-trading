@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Disallow: /404
+Disallow: /*.json$
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://vxzo.manus.space/sitemap.xml
+Sitemap: https://vxzo.manus.space/sitemap-africa.xml
+Sitemap: https://vxzo.manus.space/sitemap-middle-east.xml
+Sitemap: https://vxzo.manus.space/sitemap-central-asia.xml
+Sitemap: https://vxzo.manus.space/sitemap-south-america.xml
+Sitemap: https://vxzo.manus.space/sitemap-russia.xml
