@@ -1,0 +1,302 @@
+// Multi-language translations: English, Arabic, Russian
+export type Language = 'en' | 'ar' | 'ru';
+
+export const translations: Record<Language, Record<string, string>> = {
+  en: {
+    // Navigation
+    'nav.home': 'HOME',
+    'nav.construction': 'CONSTRUCTION MACHINERY',
+    'nav.trucks': 'TRUCKS & ENGINES',
+    'nav.about': 'ABOUT US',
+    'nav.contact': 'CONTACT',
+    'nav.getQuote': 'GET QUOTE',
+
+    // Home page
+    'home.tagline': 'GLOBAL MACHINERY & PARTS TRADING',
+    'home.hero.title': 'CONSTRUCTION MACHINERY & SPARE PARTS WORLDWIDE',
+    'home.hero.subtitle': 'Your trusted partner for CAT, Komatsu, XCMG, Shantui, SANY, Isuzu, Sinotruck, Toyota, Cummins, Weichai and more — whole machines, engines, and wear parts exported globally.',
+    'home.browse': 'BROWSE MACHINERY',
+    'home.getQuote': 'GET A QUOTE',
+    'home.globalBrands': 'GLOBAL BRANDS',
+    'home.machineModels': 'MACHINE MODELS',
+    'home.spareParts': 'SPARE PARTS',
+    'home.countriesServed': 'COUNTRIES SERVED',
+
+    // Category pages
+    'category.constructionMachinery': 'Construction Machinery',
+    'category.trucksEngines': 'Trucks & Engines',
+    'category.ourBrands': 'Our Brands',
+    'category.clickToBrowse': 'Click on any brand to view complete machine models and spare parts catalog.',
+    'category.machineModels': 'Machine Models',
+    'category.spareParts': 'Spare Parts',
+    'category.viewFullCatalog': 'View Full Catalog',
+
+    // Brand page
+    'brand.wholeMachines': 'Whole Machines',
+    'brand.completeAvailable': 'Complete machines available for export. Contact us for pricing and availability.',
+    'brand.spareParts': 'Spare Parts',
+    'brand.wearParts': 'Wear parts and components with OEM part numbers. Contact us for pricing.',
+    'brand.quickInquiry': 'Quick Inquiry',
+    'brand.getPrice': 'Get Price',
+
+    // Quick Inquiry Dialog
+    'inquiry.title': 'Quick Inquiry',
+    'inquiry.machinery': 'Machinery',
+    'inquiry.sparePart': 'Spare Part',
+    'inquiry.productInfo': 'Product Information',
+    'inquiry.model': 'Model',
+    'inquiry.product': 'Product',
+    'inquiry.specifications': 'Specifications',
+    'inquiry.yourName': 'Your Name',
+    'inquiry.company': 'Company',
+    'inquiry.email': 'Email',
+    'inquiry.phone': 'Phone / WhatsApp',
+    'inquiry.quantity': 'Quantity',
+    'inquiry.requirements': 'Additional Requirements',
+    'inquiry.cancel': 'Cancel',
+    'inquiry.send': 'Send Inquiry',
+    'inquiry.success': 'Inquiry sent successfully! We will reply within 24 hours.',
+
+    // Contact page
+    'contact.title': 'Contact Us',
+    'contact.subtitle': 'Get in touch for product inquiries, pricing, availability, and shipping quotes. We respond within 24 hours.',
+    'contact.email': 'Email',
+    'contact.replyWithin24': 'Reply within 24 hours',
+    'contact.phone': 'Phone / WhatsApp',
+    'contact.monSat': 'Mon–Sat 8:00–18:00 CST',
+    'contact.location': 'Location',
+    'contact.globalExport': 'Global Export Operations',
+    'contact.exportMarkets': 'Export Markets',
+    'contact.worldwideShipping': 'Worldwide Shipping',
+    'contact.businessHours': 'Business Hours',
+    'contact.chinaTime': 'China Standard Time (UTC+8)',
+    'contact.sendInquiry': 'Send Inquiry',
+    'contact.subject': 'Subject',
+    'contact.message': 'Message',
+    'contact.describeProducts': 'Please describe the products you need, quantity, destination country, and any other requirements...',
+
+    // About page
+    'about.title': 'About Us',
+    'about.whoWeAre': 'Who We Are',
+    'about.companyName': 'Global Machinery & Parts Trading',
+    'about.description': 'We are a professional exporter specializing in construction machinery, heavy trucks, and spare parts. With over a decade of experience in the international trade of heavy equipment, we have built strong partnerships with leading manufacturers in China, Japan, and the USA.',
+    'about.portfolio': 'Our Portfolio',
+    'about.brandsWeCarry': 'Brands We Carry',
+    'about.advantages': 'Our Advantages',
+    'about.whyChooseUs': 'Why Choose Us',
+    'about.directFactory': 'Direct factory partnerships for competitive pricing',
+    'about.genuineOem': 'Genuine OEM and certified aftermarket parts',
+    'about.exportDocs': 'Professional export documentation (CO, invoice, packing list)',
+    'about.paymentTerms': 'Flexible payment terms: T/T, L/C, Western Union',
+    'about.professionalPacking': 'Professional packing for sea freight and air freight',
+    'about.technicalSupport': 'Technical support for part number identification',
+    'about.fastResponse': 'Fast response time — reply within 24 hours',
+    'about.longTermRelation': 'Long-term relationship focus with dedicated account service',
+
+    // Common
+    'common.loading': 'Loading...',
+    'common.error': 'Error',
+    'common.backHome': 'Back to Home',
+    'common.language': 'Language',
+  },
+
+  ar: {
+    // Navigation
+    'nav.home': 'الرئيسية',
+    'nav.construction': 'الآلات الإنشائية',
+    'nav.trucks': 'الشاحنات والمحركات',
+    'nav.about': 'عن الشركة',
+    'nav.contact': 'اتصل بنا',
+    'nav.getQuote': 'احصل على عرض سعر',
+
+    // Home page
+    'home.tagline': 'التجارة العالمية للآلات والأجزاء',
+    'home.hero.title': 'آلات البناء والأجزاء الاحتياطية في جميع أنحاء العالم',
+    'home.hero.subtitle': 'شريكك الموثوق به لـ CAT و Komatsu و XCMG و Shantui و SANY و Isuzu و Sinotruck و Toyota و Cummins و Weichai والمزيد — آلات كاملة ومحركات وأجزاء بلى يتم تصديرها عالميًا.',
+    'home.browse': 'استعرض الآلات',
+    'home.getQuote': 'احصل على عرض سعر',
+    'home.globalBrands': 'العلامات التجارية العالمية',
+    'home.machineModels': 'نماذج الآلات',
+    'home.spareParts': 'الأجزاء الاحتياطية',
+    'home.countriesServed': 'الدول المخدومة',
+
+    // Category pages
+    'category.constructionMachinery': 'الآلات الإنشائية',
+    'category.trucksEngines': 'الشاحنات والمحركات',
+    'category.ourBrands': 'علاماتنا التجارية',
+    'category.clickToBrowse': 'انقر على أي علامة تجارية لعرض كتالوج النماذج الكاملة والأجزاء الاحتياطية.',
+    'category.machineModels': 'نماذج الآلات',
+    'category.spareParts': 'الأجزاء الاحتياطية',
+    'category.viewFullCatalog': 'عرض الكتالوج الكامل',
+
+    // Brand page
+    'brand.wholeMachines': 'آلات كاملة',
+    'brand.completeAvailable': 'آلات كاملة متاحة للتصدير. اتصل بنا للحصول على الأسعار والتوفر.',
+    'brand.spareParts': 'الأجزاء الاحتياطية',
+    'brand.wearParts': 'أجزاء البلى والمكونات برقم الجزء OEM. اتصل بنا للحصول على الأسعار.',
+    'brand.quickInquiry': 'استفسار سريع',
+    'brand.getPrice': 'احصل على السعر',
+
+    // Quick Inquiry Dialog
+    'inquiry.title': 'استفسار سريع',
+    'inquiry.machinery': 'الآلات',
+    'inquiry.sparePart': 'الجزء الاحتياطي',
+    'inquiry.productInfo': 'معلومات المنتج',
+    'inquiry.model': 'الموديل',
+    'inquiry.product': 'المنتج',
+    'inquiry.specifications': 'المواصفات',
+    'inquiry.yourName': 'اسمك',
+    'inquiry.company': 'الشركة',
+    'inquiry.email': 'البريد الإلكتروني',
+    'inquiry.phone': 'الهاتف / WhatsApp',
+    'inquiry.quantity': 'الكمية',
+    'inquiry.requirements': 'متطلبات إضافية',
+    'inquiry.cancel': 'إلغاء',
+    'inquiry.send': 'إرسال استفسار',
+    'inquiry.success': 'تم إرسال الاستفسار بنجاح! سنرد عليك في غضون 24 ساعة.',
+
+    // Contact page
+    'contact.title': 'اتصل بنا',
+    'contact.subtitle': 'تواصل معنا للحصول على استفسارات المنتجات والأسعار والتوفر وعروض الشحن. نرد في غضون 24 ساعة.',
+    'contact.email': 'البريد الإلكتروني',
+    'contact.replyWithin24': 'الرد في غضون 24 ساعة',
+    'contact.phone': 'الهاتف / WhatsApp',
+    'contact.monSat': 'الإثنين–السبت 8:00–18:00 بتوقيت الصين',
+    'contact.location': 'الموقع',
+    'contact.globalExport': 'عمليات التصدير العالمية',
+    'contact.exportMarkets': 'أسواق التصدير',
+    'contact.worldwideShipping': 'شحن عالمي',
+    'contact.businessHours': 'ساعات العمل',
+    'contact.chinaTime': 'توقيت الصين القياسي (UTC+8)',
+    'contact.sendInquiry': 'إرسال استفسار',
+    'contact.subject': 'الموضوع',
+    'contact.message': 'الرسالة',
+    'contact.describeProducts': 'يرجى وصف المنتجات التي تحتاجها والكمية والدولة المقصودة وأي متطلبات أخرى...',
+
+    // About page
+    'about.title': 'عن الشركة',
+    'about.whoWeAre': 'من نحن',
+    'about.companyName': 'التجارة العالمية للآلات والأجزاء',
+    'about.description': 'نحن مصدر متخصص في الآلات الإنشائية والشاحنات الثقيلة والأجزاء الاحتياطية. مع أكثر من عقد من الخبرة في التجارة الدولية للمعدات الثقيلة، بنينا شراكات قوية مع الشركات المصنعة الرائدة في الصين واليابان والولايات المتحدة.',
+    'about.portfolio': 'محفظتنا',
+    'about.brandsWeCarry': 'العلامات التجارية التي نتعامل معها',
+    'about.advantages': 'مميزاتنا',
+    'about.whyChooseUs': 'لماذا تختارنا',
+    'about.directFactory': 'شراكات مباشرة مع المصانع للحصول على أسعار تنافسية',
+    'about.genuineOem': 'أجزاء OEM أصلية ومعتمدة بعد البيع',
+    'about.exportDocs': 'وثائق تصدير احترافية (CO، الفاتورة، قائمة التعبئة)',
+    'about.paymentTerms': 'شروط دفع مرنة: T/T، L/C، Western Union',
+    'about.professionalPacking': 'تعبئة احترافية للشحن البحري والجوي',
+    'about.technicalSupport': 'الدعم الفني لتحديد رقم الجزء',
+    'about.fastResponse': 'وقت استجابة سريع — الرد في غضون 24 ساعة',
+    'about.longTermRelation': 'التركيز على العلاقات طويلة الأجل مع خدمة حساب مخصصة',
+
+    // Common
+    'common.loading': 'جاري التحميل...',
+    'common.error': 'خطأ',
+    'common.backHome': 'العودة إلى الرئيسية',
+    'common.language': 'اللغة',
+  },
+
+  ru: {
+    // Navigation
+    'nav.home': 'ГЛАВНАЯ',
+    'nav.construction': 'СТРОИТЕЛЬНАЯ ТЕХНИКА',
+    'nav.trucks': 'ГРУЗОВИКИ И ДВИГАТЕЛИ',
+    'nav.about': 'О НАС',
+    'nav.contact': 'КОНТАКТЫ',
+    'nav.getQuote': 'ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ',
+
+    // Home page
+    'home.tagline': 'ГЛОБАЛЬНАЯ ТОРГОВЛЯ МАШИНАМИ И ЗАПЧАСТЯМИ',
+    'home.hero.title': 'СТРОИТЕЛЬНАЯ ТЕХНИКА И ЗАПЧАСТИ ПО ВСЕМУ МИРУ',
+    'home.hero.subtitle': 'Ваш надежный партнер для CAT, Komatsu, XCMG, Shantui, SANY, Isuzu, Sinotruck, Toyota, Cummins, Weichai и многого другого — полные машины, двигатели и износостойкие детали экспортируются по всему миру.',
+    'home.browse': 'ПРОСМОТРЕТЬ МАШИНЫ',
+    'home.getQuote': 'ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ',
+    'home.globalBrands': 'ГЛОБАЛЬНЫЕ БРЕНДЫ',
+    'home.machineModels': 'МОДЕЛИ МАШИН',
+    'home.spareParts': 'ЗАПЧАСТИ',
+    'home.countriesServed': 'ОБСЛУЖИВАЕМЫЕ СТРАНЫ',
+
+    // Category pages
+    'category.constructionMachinery': 'Строительная техника',
+    'category.trucksEngines': 'Грузовики и двигатели',
+    'category.ourBrands': 'Наши бренды',
+    'category.clickToBrowse': 'Нажмите на любой бренд, чтобы просмотреть полный каталог моделей машин и запчастей.',
+    'category.machineModels': 'Модели машин',
+    'category.spareParts': 'Запчасти',
+    'category.viewFullCatalog': 'Просмотреть полный каталог',
+
+    // Brand page
+    'brand.wholeMachines': 'Полные машины',
+    'brand.completeAvailable': 'Полные машины доступны для экспорта. Свяжитесь с нами для получения цены и наличия.',
+    'brand.spareParts': 'Запчасти',
+    'brand.wearParts': 'Износостойкие детали и компоненты с номерами оригинальных запчастей. Свяжитесь с нами для получения цены.',
+    'brand.quickInquiry': 'Быстрый запрос',
+    'brand.getPrice': 'Получить цену',
+
+    // Quick Inquiry Dialog
+    'inquiry.title': 'Быстрый запрос',
+    'inquiry.machinery': 'Машины',
+    'inquiry.sparePart': 'Запчасть',
+    'inquiry.productInfo': 'Информация о продукте',
+    'inquiry.model': 'Модель',
+    'inquiry.product': 'Продукт',
+    'inquiry.specifications': 'Характеристики',
+    'inquiry.yourName': 'Ваше имя',
+    'inquiry.company': 'Компания',
+    'inquiry.email': 'Электронная почта',
+    'inquiry.phone': 'Телефон / WhatsApp',
+    'inquiry.quantity': 'Количество',
+    'inquiry.requirements': 'Дополнительные требования',
+    'inquiry.cancel': 'Отмена',
+    'inquiry.send': 'Отправить запрос',
+    'inquiry.success': 'Запрос успешно отправлен! Мы ответим вам в течение 24 часов.',
+
+    // Contact page
+    'contact.title': 'Свяжитесь с нами',
+    'contact.subtitle': 'Свяжитесь с нами для запросов о продуктах, ценах, наличии и предложениях по доставке. Мы ответим в течение 24 часов.',
+    'contact.email': 'Электронная почта',
+    'contact.replyWithin24': 'Ответ в течение 24 часов',
+    'contact.phone': 'Телефон / WhatsApp',
+    'contact.monSat': 'Пн–Сб 8:00–18:00 CST',
+    'contact.location': 'Местоположение',
+    'contact.globalExport': 'Глобальные экспортные операции',
+    'contact.exportMarkets': 'Экспортные рынки',
+    'contact.worldwideShipping': 'Мировая доставка',
+    'contact.businessHours': 'Часы работы',
+    'contact.chinaTime': 'Китайское стандартное время (UTC+8)',
+    'contact.sendInquiry': 'Отправить запрос',
+    'contact.subject': 'Тема',
+    'contact.message': 'Сообщение',
+    'contact.describeProducts': 'Пожалуйста, опишите нужные вам продукты, количество, страну назначения и любые другие требования...',
+
+    // About page
+    'about.title': 'О нас',
+    'about.whoWeAre': 'Кто мы',
+    'about.companyName': 'Глобальная торговля машинами и запчастями',
+    'about.description': 'Мы специализированный экспортер строительной техники, грузовиков и запчастей. Имея более чем десятилетний опыт в международной торговле тяжелым оборудованием, мы установили прочные партнерские отношения с ведущими производителями в Китае, Японии и США.',
+    'about.portfolio': 'Наше портфолио',
+    'about.brandsWeCarry': 'Бренды, с которыми мы работаем',
+    'about.advantages': 'Наши преимущества',
+    'about.whyChooseUs': 'Почему выбрать нас',
+    'about.directFactory': 'Прямые партнерства с заводами для конкурентоспособных цен',
+    'about.genuineOem': 'Оригинальные и сертифицированные запчасти',
+    'about.exportDocs': 'Профессиональная экспортная документация (CO, счет-фактура, упаковочный лист)',
+    'about.paymentTerms': 'Гибкие условия оплаты: T/T, L/C, Western Union',
+    'about.professionalPacking': 'Профессиональная упаковка для морских и авиаперевозок',
+    'about.technicalSupport': 'Техническая поддержка для идентификации номера детали',
+    'about.fastResponse': 'Быстрое время ответа — ответ в течение 24 часов',
+    'about.longTermRelation': 'Ориентация на долгосрочные отношения с выделенным обслуживанием счета',
+
+    // Common
+    'common.loading': 'Загрузка...',
+    'common.error': 'Ошибка',
+    'common.backHome': 'Вернуться на главную',
+    'common.language': 'Язык',
+  },
+};
+
+export function t(key: string, lang: Language): string {
+  return translations[lang][key] || key;
+}

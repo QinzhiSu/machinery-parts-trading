@@ -2,17 +2,20 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [location] = useLocation();
+  const { t } = useLanguage();
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/construction', label: 'Construction Machinery' },
-    { href: '/trucks', label: 'Trucks & Engines' },
-    { href: '/about', label: 'About Us' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/', label: t('nav.home') },
+    { href: '/construction', label: t('nav.construction') },
+    { href: '/trucks', label: t('nav.trucks') },
+    { href: '/about', label: t('nav.about') },
+    { href: '/contact', label: t('nav.contact') },
   ];
 
   return (
@@ -109,8 +112,11 @@ export default function Navbar() {
                 fontSize: '0.8rem',
               }}
             >
-              Get Quote
+              {t('nav.getQuote')}
             </Link>
+            <div className="ml-3 pl-3 border-l" style={{ borderColor: 'oklch(0.3 0.04 265)' }}>
+              <LanguageSwitcher />
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -141,6 +147,9 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <div className="px-6 py-3 border-t" style={{ borderColor: 'oklch(0.22 0.04 265)' }}>
+              <LanguageSwitcher />
+            </div>
           </div>
         )}
       </nav>

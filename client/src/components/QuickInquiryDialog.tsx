@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { X, Send } from 'lucide-react';
 import { toast } from 'sonner';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface QuickInquiryDialogProps {
   isOpen: boolean;
@@ -16,6 +17,7 @@ interface QuickInquiryDialogProps {
 }
 
 export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: QuickInquiryDialogProps) {
+  const { t } = useLanguage();
   const [form, setForm] = useState({
     name: '',
     company: '',
@@ -27,7 +29,7 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Inquiry sent successfully! We will reply within 24 hours.');
+    toast.success(t('inquiry.success'));
     setForm({ name: '', company: '', email: '', phone: '', quantity: '1', message: '' });
     onClose();
   };
@@ -65,10 +67,10 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
                 className="text-xl font-bold uppercase tracking-wide text-white"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
-                Quick Inquiry
+                {t('inquiry.title')}
               </h2>
               <p className="text-xs mt-1" style={{ color: 'oklch(0.6 0.02 265)' }}>
-                {productInfo.type === 'machine' ? 'Machinery' : 'Spare Part'} ·{' '}
+                {productInfo.type === 'machine' ? t('inquiry.machinery') : t('inquiry.sparePart')} ·
                 <span style={{ color: 'oklch(0.68 0.18 42)' }} className="font-semibold">
                   {productInfo.model}
                 </span>
@@ -94,24 +96,24 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
               }}
             >
               <div className="text-xs uppercase tracking-widest font-semibold mb-2" style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}>
-                Product Information
+                {t('inquiry.productInfo')}
               </div>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
-                  <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)' }}>Model</div>
+                  <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)' }}>{t('inquiry.model')}</div>
                   <div className="font-semibold mt-0.5" style={{ color: 'oklch(0.18 0.04 265)', fontFamily: 'var(--font-mono)' }}>
                     {productInfo.model}
                   </div>
                 </div>
                 <div>
-                  <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)' }}>Product</div>
+                  <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)' }}>{t('inquiry.product')}</div>
                   <div className="font-semibold mt-0.5" style={{ color: 'oklch(0.18 0.04 265)' }}>
                     {productInfo.name}
                   </div>
                 </div>
                 {productInfo.specs && (
                   <div className="col-span-2">
-                    <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)' }}>Specifications</div>
+                    <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)' }}>{t('inquiry.specifications')}</div>
                     <div className="text-xs mt-0.5 font-mono" style={{ color: 'oklch(0.35 0.02 265)' }}>
                       {productInfo.specs}
                     </div>
@@ -125,7 +127,7 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                    Your Name *
+                    {t('inquiry.yourName')} *
                   </label>
                   <input
                     type="text"
@@ -139,7 +141,7 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
                 </div>
                 <div>
                   <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                    Company
+                    {t('inquiry.company')}
                   </label>
                   <input
                     type="text"
@@ -155,7 +157,7 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                    Email *
+                    {t('inquiry.email')} *
                   </label>
                   <input
                     type="email"
@@ -169,7 +171,7 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
                 </div>
                 <div>
                   <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                    Phone / WhatsApp
+                    {t('inquiry.phone')}
                   </label>
                   <input
                     type="tel"
@@ -183,9 +185,9 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
               </div>
 
               <div>
-                <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                  Quantity
-                </label>
+                  <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
+                    {t('inquiry.quantity')}
+                  </label>
                 <input
                   type="number"
                   min="1"
@@ -198,9 +200,9 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
               </div>
 
               <div>
-                <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                  Additional Requirements
-                </label>
+                  <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
+                    {t('inquiry.requirements')}
+                  </label>
                 <textarea
                   rows={3}
                   value={form.message}
@@ -227,7 +229,7 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
                 fontFamily: 'var(--font-display)',
               }}
             >
-              Cancel
+              {t('inquiry.cancel')}
             </button>
             <button
               onClick={handleSubmit}
@@ -238,7 +240,7 @@ export default function QuickInquiryDialog({ isOpen, onClose, productInfo }: Qui
               }}
             >
               <Send size={16} />
-              Send Inquiry
+              {t('inquiry.send')}
             </button>
           </div>
         </div>
