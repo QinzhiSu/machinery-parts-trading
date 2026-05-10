@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import WhatsAppButton from "./components/WhatsAppButton";
+import WeChatButton from "./components/WeChatButton";
 import Home from "./pages/Home";
 import BrandPage from "./pages/BrandPage";
 import ConstructionPage from "./pages/ConstructionPage";
@@ -39,6 +40,7 @@ function App() {
             <Toaster />
             <Router />
             <WhatsAppButton />
+            <WeChatButton />
           </TooltipProvider>
         </ThemeProvider>
       </LanguageProvider>
