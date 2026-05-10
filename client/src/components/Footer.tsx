@@ -19,32 +19,28 @@ export default function Footer() {
                   paddingRight: '4px',
                 }}
               >
-                GM
+                VX
               </div>
               <div>
                 <div className="text-white font-bold text-sm" style={{ fontFamily: 'var(--font-display)', letterSpacing: '0.08em' }}>
-                  GLOBAL MACHINERY
+                  VXZO
                 </div>
                 <div className="text-xs" style={{ color: 'oklch(0.68 0.18 42)', letterSpacing: '0.1em' }}>
-                  & PARTS TRADING
+                  MACHINERY TRADING
                 </div>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.6 0.02 265)' }}>
-              Professional exporter of construction machinery, heavy trucks, and spare parts. Serving global customers with quality products and reliable service.
+              Professional exporter of construction machinery, heavy trucks, and spare parts. Global offices in Beijing, Guinea, Madagascar, Hong Kong, and Shandong.
             </p>
             <div className="flex flex-col gap-2">
-              <a href="mailto:info@globalmachinery.com" className="flex items-center gap-2 text-xs transition-colors hover:text-orange-400" style={{ color: 'oklch(0.6 0.02 265)' }}>
-                <Mail size={12} style={{ color: 'oklch(0.68 0.18 42)' }} />
-                info@globalmachinery.com
-              </a>
-              <a href="tel:+8618888888888" className="flex items-center gap-2 text-xs transition-colors hover:text-orange-400" style={{ color: 'oklch(0.6 0.02 265)' }}>
+              <a href="https://wa.me/224622497604" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs transition-colors hover:text-orange-400" style={{ color: 'oklch(0.6 0.02 265)' }}>
                 <Phone size={12} style={{ color: 'oklch(0.68 0.18 42)' }} />
-                +86 188 8888 8888
+                +224 622 497 604 (WhatsApp)
               </a>
               <div className="flex items-center gap-2 text-xs" style={{ color: 'oklch(0.6 0.02 265)' }}>
                 <MapPin size={12} style={{ color: 'oklch(0.68 0.18 42)' }} />
-                China | Global Export
+                Beijing HQ | Global Export
               </div>
             </div>
           </div>
@@ -55,15 +51,22 @@ export default function Footer() {
               Construction Machinery
             </h4>
             <ul className="space-y-2">
-              {['Caterpillar (CAT)', 'Shantui', 'XCMG', 'LiuGong', 'SANY', 'Komatsu'].map(brand => (
-                <li key={brand}>
+              {[
+                { name: 'Caterpillar', id: 'caterpillar' },
+                { name: 'Shantui', id: 'shantui' },
+                { name: 'XCMG', id: 'xcmg' },
+                { name: 'LiuGong', id: 'liugong' },
+                { name: 'SANY', id: 'sany' },
+                { name: 'Komatsu', id: 'komatsu' },
+              ].map(brand => (
+                <li key={brand.id}>
                   <Link
-                    href={`/brand/${brand.toLowerCase().replace(/[^a-z]/g, '')}`}
+                    href={`/brand/${brand.id}`}
                     className="flex items-center gap-1.5 text-xs transition-colors hover:text-orange-400"
                     style={{ color: 'oklch(0.6 0.02 265)' }}
                   >
                     <ArrowRight size={10} style={{ color: 'oklch(0.68 0.18 42)' }} />
-                    {brand}
+                    {brand.name}
                   </Link>
                 </li>
               ))}
@@ -76,15 +79,22 @@ export default function Footer() {
               Trucks & Engines
             </h4>
             <ul className="space-y-2">
-              {['Isuzu', 'Shacman', 'Sinotruk (HOWO)', 'Toyota', 'Cummins', 'Weichai'].map(brand => (
-                <li key={brand}>
+              {[
+                { name: 'Isuzu', id: 'isuzu' },
+                { name: 'Shacman', id: 'shacman' },
+                { name: 'Sinotruk', id: 'sinotruck' },
+                { name: 'Toyota', id: 'toyota' },
+                { name: 'Cummins', id: 'cummins' },
+                { name: 'Weichai', id: 'weichai' },
+              ].map(brand => (
+                <li key={brand.id}>
                   <Link
-                    href={`/brand/${brand.toLowerCase().replace(/[^a-z]/g, '')}`}
+                    href={`/brand/${brand.id}`}
                     className="flex items-center gap-1.5 text-xs transition-colors hover:text-orange-400"
                     style={{ color: 'oklch(0.6 0.02 265)' }}
                   >
                     <ArrowRight size={10} style={{ color: 'oklch(0.68 0.18 42)' }} />
-                    {brand}
+                    {brand.name}
                   </Link>
                 </li>
               ))}
@@ -134,7 +144,7 @@ export default function Footer() {
       <div style={{ background: 'oklch(0.1 0.04 265)', borderTop: '1px solid oklch(0.18 0.04 265)' }}>
         <div className="container py-3 flex flex-col md:flex-row items-center justify-between gap-2">
           <p className="text-xs" style={{ color: 'oklch(0.45 0.02 265)' }}>
-            © 2024 Global Machinery & Parts Trading. All rights reserved.
+            © 2024 VXZO. All rights reserved.
           </p>
           <p className="text-xs" style={{ color: 'oklch(0.45 0.02 265)' }}>
             Professional Exporter · Quality Guaranteed · Competitive Price
