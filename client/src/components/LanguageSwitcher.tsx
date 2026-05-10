@@ -8,6 +8,11 @@ const LANGUAGES = [
   { code: 'en', label: 'English', flag: '🇺🇸' },
   { code: 'ar', label: 'العربية', flag: '🇸🇦' },
   { code: 'ru', label: 'Русский', flag: '🇷🇺' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷' },
+  { code: 'zh', label: '中文', flag: '🇨🇳' },
+  { code: 'pt', label: 'Português', flag: '🇧🇷' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'it', label: 'Italiano', flag: '🇮🇹' },
 ] as const;
 
 export default function LanguageSwitcher() {
@@ -55,7 +60,7 @@ export default function LanguageSwitcher() {
             <button
               key={lang.code}
               onClick={() => {
-                setLanguage(lang.code as 'en' | 'ar' | 'ru');
+                setLanguage(lang.code as any);
                 setIsOpen(false);
               }}
               className="w-full flex items-center gap-2 px-4 py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors hover:bg-orange-50"
