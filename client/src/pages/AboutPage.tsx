@@ -41,10 +41,10 @@ export default function AboutPage() {
                 Who We Are
               </div>
               <h2 className="section-heading mb-6" style={{ color: 'oklch(0.18 0.04 265)' }}>
-                Global Machinery<br />& Parts Trading
+                VXZO: Global<br />Machinery Trading
               </h2>
               <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.4 0.02 265)' }}>
-                We are a professional exporter specializing in construction machinery, heavy trucks, and spare parts. With over a decade of experience in the international trade of heavy equipment, we have built strong partnerships with leading manufacturers in China, Japan, and the USA.
+                VXZO is a professional exporter specializing in construction machinery, heavy trucks, and spare parts. With headquarters in Beijing and strategic branch offices across Africa and Asia, we serve international markets with genuine OEM products and certified aftermarket components.
               </p>
               <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.4 0.02 265)' }}>
                 Our product portfolio covers the full spectrum of construction and transportation needs — from CAT and Komatsu excavators to Sinotruk HOWO dump trucks, from Cummins engines to Weichai power units. We supply both complete machines and an extensive range of wear parts and components.
@@ -81,15 +81,92 @@ export default function AboutPage() {
             </div>
           </div>
 
+          {/* Office Locations */}
+          <div className="mb-16">
+            <div className="text-xs uppercase tracking-widest mb-2 font-semibold" style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}>
+              Global Presence
+            </div>
+            <h2 className="section-heading mb-8" style={{ color: 'oklch(0.18 0.04 265)' }}>
+              Our Offices Worldwide
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+              {[
+                {
+                  city: 'Beijing',
+                  country: 'China',
+                  type: 'Headquarters',
+                  address: 'Beijing, China',
+                  phone: '+86 10 XXXX XXXX',
+                  desc: 'Global sourcing and export operations center'
+                },
+                {
+                  city: 'Conakry',
+                  country: 'Guinea',
+                  type: 'West Africa',
+                  address: 'Conakry, Guinea',
+                  phone: '+224 622 497 604',
+                  desc: 'Primary office serving West African markets'
+                },
+                {
+                  city: 'Antananarivo',
+                  country: 'Madagascar',
+                  type: 'East Africa',
+                  address: 'Antananarivo, Madagascar',
+                  phone: '+261 XX XXX XXXX',
+                  desc: 'Regional hub for Southern African operations'
+                },
+                {
+                  city: 'Hong Kong',
+                  country: 'SAR',
+                  type: 'Asia Pacific',
+                  address: 'Hong Kong',
+                  phone: '+852 XXXX XXXX',
+                  desc: 'Regional logistics and distribution center'
+                },
+                {
+                  city: 'Shandong',
+                  country: 'China',
+                  type: 'Logistics Hub',
+                  address: 'Shandong Province, China',
+                  phone: '+86 XXX XXXX XXXX',
+                  desc: 'Port operations and freight coordination'
+                },
+              ].map(office => (
+                <div
+                  key={office.city}
+                  className="p-5 bg-white border-l-4 hover:shadow-md transition-shadow"
+                  style={{ borderLeftColor: 'oklch(0.68 0.18 42)' }}
+                >
+                  <div
+                    className="font-bold uppercase tracking-wide text-sm mb-1"
+                    style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.68 0.18 42)' }}
+                  >
+                    {office.city}
+                  </div>
+                  <div className="text-xs font-semibold mb-2" style={{ color: 'oklch(0.5 0.02 265)' }}>
+                    {office.type}
+                  </div>
+                  <p className="text-xs leading-relaxed mb-2" style={{ color: 'oklch(0.4 0.02 265)' }}>
+                    {office.desc}
+                  </p>
+                  <div className="text-xs" style={{ color: 'oklch(0.55 0.02 265)' }}>
+                    <div className="mb-1">{office.address}</div>
+                    <div>{office.phone}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Our Brands */}
           <div className="mb-16">
             <div className="text-xs uppercase tracking-widest mb-2 font-semibold" style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}>
               Our Portfolio
             </div>
             <h2 className="section-heading mb-6" style={{ color: 'oklch(0.18 0.04 265)' }}>
-              Brands We Carry
+              13 Premium Brands
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {[
                 { name: 'Caterpillar', country: 'USA', id: 'caterpillar' },
                 { name: 'Komatsu', country: 'Japan', id: 'komatsu' },
