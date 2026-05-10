@@ -2,9 +2,10 @@
 // Brand page with machines + spare parts tabs, orange accent cards
 import { useState } from 'react';
 import { useParams, Link } from 'wouter';
-import { ArrowLeft, ChevronRight, Package, Wrench, Tag, Phone, Mail } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Package, Wrench, Tag, Phone, Mail, MessageSquare } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import QuickInquiryDialog from '@/components/QuickInquiryDialog';
 import { getBrandById } from '@/data/products';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
@@ -14,6 +15,13 @@ export default function BrandPage() {
   const brand = getBrandById(brandId || '');
   const [activeTab, setActiveTab] = useState<'machines' | 'parts'>('machines');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [inquiryDialogOpen, setInquiryDialogOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<{ model: string; name: string; specs?: string; type: 'machine' | 'spare-part' } | null>(null);
+
+  const openInquiry = (product: { model: string; name: string; specs?: string; type: 'machine' | 'spare-part' }) => {
+    setSelectedProduct(product);
+    setInquiryDialogOpen(true);
+  };
 
   if (!brand) {
     return (
@@ -23,12 +31,22 @@ export default function BrandPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>Brand Not Found</h2>
             <Link href="/" className="text-orange-500 hover:underline">← Back to Home</Link>
-          </div>
         </div>
-        <Footer />
       </div>
-    );
-  }
+
+      {/* Quick Inquiry Dialog */}
+      {selectedProduct && (
+        <QuickInquiryDialog
+          isOpen={inquiryDialogOpen}
+          onClose={() => setInquiryDialogOpen(false)}
+          productInfo={selectedProduct}
+        />
+      )}
+
+      <Footer />
+    </div>
+  );
+}
 
   const categories = ['All', ...Array.from(new Set(brand.spareParts.map(p => p.category)))];
   const filteredParts = selectedCategory === 'All'
@@ -226,14 +244,14 @@ export default function BrandPage() {
                         {machine.description}
                       </p>
 
-                      <a
-                        href={`mailto:info@globalmachinery.com?subject=Inquiry: ${brand.name} ${machine.model}`}
+                      <button
+                        onClick={() => openInquiry({ model: machine.model, name: machine.name, specs: machine.specs, type: 'machine' })}
                         className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-all hover:opacity-90"
                         style={{ background: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
                       >
-                        <Mail size={12} />
-                        Inquire Now
-                      </a>
+                        <MessageSquare size={12} />
+                        Quick Inquiry
+                      </button>
                     </div>
                   </div>
                 ))}
@@ -323,8 +341,8 @@ export default function BrandPage() {
                         {part.description}
                       </p>
 
-                      <a
-                        href={`mailto:info@globalmachinery.com?subject=Part Inquiry: ${part.partNumber} - ${part.name}`}
+                      <button
+                        onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
                         className="flex items-center justify-center gap-1.5 w-full py-2 text-xs font-bold uppercase tracking-wider transition-all hover:opacity-90"
                         style={{
                           background: 'oklch(0.18 0.04 265)',
@@ -332,9 +350,9 @@ export default function BrandPage() {
                           fontFamily: 'var(--font-display)',
                         }}
                       >
-                        <Phone size={11} />
-                        Get Price
-                      </a>
+                        <MessageSquare size={11} />
+                        Quick Inquiry
+                      </button>
                     </div>
                   </div>
                 ))}
