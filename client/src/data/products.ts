@@ -211,36 +211,116 @@ export const brands: Brand[] = [
     color: '#E65100',
     machines: [
       {
-        id: 'st-sd16',
-        model: 'SD16',
-        name: 'Bulldozer',
-        specs: '16 ton | 120 kW | 3.95 m³ blade',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
-        description: 'The Shantui SD16 is a medium-sized bulldozer widely used in earthmoving, land clearing, and construction projects.'
+        id: 'shantui-sd16',
+        model: 'Shantui SD16',
+        name: 'Bulldozer SD16',
+        specs: '16 ton | 162 kW | 3.5 m³ blade | Operating Weight: 16,000 kg',
+        image: '/manus-storage/SD16_a14fb776.jpeg',
+        description: 'Shantui SD16 Medium Bulldozer. Engine: Weichai WD10G220 (162 kW/220 HP). Blade Type: Standard Straight (SU). Blade Capacity: 3.5 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 150 kN. Travel Speed: 10 km/h. Fuel Tank: 180 L. Ideal for general dozing, land clearing, and construction site preparation.'
       },
       {
-        id: 'st-sd22',
-        model: 'SD22',
-        name: 'Bulldozer',
-        specs: '22 ton | 162 kW | 5.6 m³ blade',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
-        description: 'The SD22 bulldozer is designed for heavy-duty earthmoving and mining applications.'
+        id: 'shantui-sd22',
+        model: 'Shantui SD22',
+        name: 'Bulldozer SD22',
+        specs: '22 ton | 200 kW | 5.0 m³ blade | Operating Weight: 22,000 kg',
+        image: '/manus-storage/SD22_518f26bb.jpeg',
+        description: 'Shantui SD22 Large Bulldozer. Engine: Weichai WD10G270 (200 kW/270 HP). Blade Type: Standard Straight (SU). Blade Capacity: 5.0 m³. Undercarriage: Steel Track (610mm). Transmission: Hydrostatic. Drawbar Pull: 200 kN. Travel Speed: 10 km/h. Fuel Tank: 250 L. Excellent for large-scale earthmoving and mining applications.'
       },
       {
-        id: 'st-se215',
-        model: 'SE215',
-        name: 'Hydraulic Excavator',
-        specs: '21 ton | 118 kW | 0.93 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Shantui SE215 excavator offers reliable performance for construction and mining operations.'
+        id: 'shantui-sd32',
+        model: 'Shantui SD32',
+        name: 'Bulldozer SD32',
+        specs: '32 ton | 250 kW | 7.2 m³ blade | Operating Weight: 32,000 kg',
+        image: '/manus-storage/SD32_b7a78a7e.jpeg',
+        description: 'Shantui SD32 Extra-Large Bulldozer. Engine: Weichai WD10G336 (250 kW/336 HP). Blade Type: Standard Straight (SU). Blade Capacity: 7.2 m³. Undercarriage: Steel Track (762mm). Transmission: Hydrostatic. Drawbar Pull: 280 kN. Travel Speed: 10 km/h. Fuel Tank: 400 L. Perfect for major mining, quarrying, and heavy construction projects.'
       },
       {
-        id: 'st-sl50w',
-        model: 'SL50W',
-        name: 'Wheel Loader',
-        specs: '16 ton | 162 kW | 3.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The SL50W wheel loader provides excellent loading capacity and fuel efficiency.'
+        id: 'shantui-se75',
+        model: 'Shantui SE75',
+        name: 'Excavator SE75',
+        specs: '7.5 ton | 66 kW | 0.3 m³ bucket | Operating Weight: 7,500 kg',
+        image: '/manus-storage/SE75_2f646ded.jpeg',
+        description: 'Shantui SE75 Small Hydraulic Excavator. Engine: Yuchai YC4D90 (66 kW/90 HP). Bucket Capacity: 0.3 m³. Max Digging Depth: 4.5 m. Boom Length: 5.2 m. Undercarriage: Rubber Track (400mm). Hydraulic System: 280 bar. Fuel Tank: 120 L. Ideal for small-scale excavation and utility work.'
+      },
+      {
+        id: 'shantui-se130',
+        model: 'Shantui SE130',
+        name: 'Excavator SE130',
+        specs: '13 ton | 79 kW | 0.55 m³ bucket | Operating Weight: 13,000 kg',
+        image: '/manus-storage/SE130_29bff90b.jpeg',
+        description: 'Shantui SE130 Medium Hydraulic Excavator. Engine: Yuchai YC6108 (79 kW/108 HP). Bucket Capacity: 0.55 m³. Max Digging Depth: 5.5 m. Boom Length: 6.2 m. Undercarriage: Rubber Track (500mm). Hydraulic System: 280 bar. Fuel Tank: 150 L. Perfect for general excavation and loading operations.'
+      },
+      {
+        id: 'shantui-se215',
+        model: 'Shantui SE215',
+        name: 'Excavator SE215',
+        specs: '21.5 ton | 176 kW | 1.0 m³ bucket | Operating Weight: 21,500 kg',
+        image: '/manus-storage/SE215_84f2c1ce.jpeg',
+        description: 'Shantui SE215 Large Hydraulic Excavator. Engine: Yuchai YC6K240 (176 kW/240 HP). Bucket Capacity: 1.0 m³. Max Digging Depth: 6.8 m. Boom Length: 7.1 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Excellent for medium to large-scale mining and construction.'
+      },
+      {
+        id: 'shantui-se220',
+        model: 'Shantui SE220',
+        name: 'Excavator SE220',
+        specs: '22 ton | 176 kW | 1.0 m³ bucket | Operating Weight: 22,000 kg',
+        image: '/manus-storage/SE220_ddc2968c.jpeg',
+        description: 'Shantui SE220 Large Hydraulic Excavator. Engine: Yuchai YC6K240 (176 kW/240 HP). Bucket Capacity: 1.0 m³. Max Digging Depth: 6.8 m. Boom Length: 7.1 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Ideal for heavy-duty excavation and quarrying operations.'
+      },
+      {
+        id: 'shantui-l36',
+        model: 'Shantui L36-C3',
+        name: 'Wheel Loader L36-C3',
+        specs: '13.6 ton | 147 kW | 2.2 m³ bucket | Operating Weight: 13,600 kg',
+        image: '/manus-storage/L36-C3_d5769b3b.jpeg',
+        description: 'Shantui L36-C3 Medium Wheel Loader. Engine: Weichai WD10G200 (147 kW/200 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for general loading and material handling.'
+      },
+      {
+        id: 'shantui-l55',
+        model: 'Shantui L55-C5',
+        name: 'Wheel Loader L55-C5',
+        specs: '21 ton | 200 kW | 3.5 m³ bucket | Operating Weight: 21,000 kg',
+        image: '/manus-storage/L55-C5_f68afe9e.jpeg',
+        description: 'Shantui L55-C5 Large Wheel Loader. Engine: Weichai WD10G270 (200 kW/270 HP). Bucket Capacity: 3.5 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 12 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 280 L. Perfect for heavy-duty loading and quarrying.'
+      },
+      {
+        id: 'shantui-sg19',
+        model: 'Shantui SG19-C6',
+        name: 'Motor Grader SG19-C6',
+        specs: '13.5 ton | 147 kW | 3.7 m blade | Operating Weight: 13,500 kg',
+        image: '/manus-storage/SG19-C6_c2efe98e.jpeg',
+        description: 'Shantui SG19-C6 Medium Motor Grader. Engine: Weichai WD10G200 (147 kW/200 HP). Blade Width: 3.7 m. Blade Height: 1.2 m. Undercarriage: 6-Wheel Drive. Transmission: Hydrostatic. Grading Width: 3.7 m. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for road construction and maintenance.'
+      },
+      {
+        id: 'shantui-sg21',
+        model: 'Shantui SG21-B6',
+        name: 'Motor Grader SG21-B6',
+        specs: '16.5 ton | 200 kW | 3.7 m blade | Operating Weight: 16,500 kg',
+        image: '/manus-storage/SG21-B6_42397f73.jpeg',
+        description: 'Shantui SG21-B6 Large Motor Grader. Engine: Weichai WD10G270 (200 kW/270 HP). Blade Width: 3.7 m. Blade Height: 1.2 m. Undercarriage: 6-Wheel Drive. Transmission: Hydrostatic. Grading Width: 3.7 m. Travel Speed: 42 km/h. Fuel Tank: 250 L. Perfect for large-scale road grading and construction.'
+      },
+      {
+        id: 'shantui-dh10',
+        model: 'Shantui DH10-C2',
+        name: 'Diesel Engine DH10-C2',
+        specs: '2.5L | 74 kW | 100 HP',
+        image: '/manus-storage/DH10-C2_a4702ae0.jpeg',
+        description: 'Shantui DH10-C2 Medium Diesel Engine. Displacement: 2.5L. Power Output: 74 kW (100 HP). Type: 4-Cylinder Turbocharged Diesel. Fuel Consumption: 210 g/kWh. Torque: 320 Nm @ 1400 rpm. Cooling System: Water-cooled with radiator. Ideal for small to medium construction equipment.'
+      },
+      {
+        id: 'shantui-dh13',
+        model: 'Shantui DH13-C3',
+        name: 'Diesel Engine DH13-C3',
+        specs: '3.0L | 96 kW | 130 HP',
+        image: '/manus-storage/DH13-C3_344d7d17.jpeg',
+        description: 'Shantui DH13-C3 Large Diesel Engine. Displacement: 3.0L. Power Output: 96 kW (130 HP). Type: 4-Cylinder Turbocharged Diesel. Fuel Consumption: 215 g/kWh. Torque: 400 Nm @ 1400 rpm. Cooling System: Water-cooled with radiator. Perfect for medium construction equipment.'
+      },
+      {
+        id: 'shantui-dh46',
+        model: 'Shantui DH46-C3',
+        name: 'Diesel Engine DH46-C3',
+        specs: '4.6L | 132 kW | 180 HP',
+        image: '/manus-storage/DH46-C3_eda6e955.jpeg',
+        description: 'Shantui DH46-C3 Extra-Large Diesel Engine. Displacement: 4.6L. Power Output: 132 kW (180 HP). Type: 6-Cylinder Turbocharged Diesel. Fuel Consumption: 220 g/kWh. Torque: 550 Nm @ 1400 rpm. Cooling System: Water-cooled with radiator. Ideal for large construction equipment and heavy machinery.'
       }
     ],
     spareParts: [
