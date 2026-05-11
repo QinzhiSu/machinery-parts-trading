@@ -1,4 +1,5 @@
 // ============================================================
+// VXZO Global Machinery & Parts Trading - Product Database
 // Design Philosophy: Industrial Minimalism
 // Colors: Deep Navy #1A1A2E + Engineering Orange #F97316
 // Typography: Barlow Condensed (headings) + Source Sans Pro (body) + Roboto Mono (part numbers)
@@ -49,53 +50,112 @@ export const brands: Brand[] = [
     logo: 'CAT',
     color: '#F9A825',
     machines: [
+      // ===== EXCAVATORS (Excavators) =====
       {
-        id: 'cat-320',
-        model: 'CAT 320',
+        id: 'cat-320d',
+        model: 'CAT 320D',
         name: 'Hydraulic Excavator',
-        specs: '20 ton | 121 kW | 1.19 m³ bucket',
+        specs: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
         image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
-        description: 'The Cat 320 hydraulic excavator delivers performance, versatility, and efficiency for a wide range of applications.'
+        description: 'CAT 320D Hydraulic Excavator. Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Cooling System: Radiator with fan. Transmission: Hydrostatic. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for general excavation, loading, and material handling.'
       },
       {
-        id: 'cat-330',
-        model: 'CAT 330',
+        id: 'cat-320d2',
+        model: 'CAT 320D2',
         name: 'Hydraulic Excavator',
-        specs: '30 ton | 168 kW | 1.69 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The Cat 330 excavator offers enhanced performance and efficiency for large-scale earthmoving projects.'
+        specs: '20.8 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,800 kg',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
+        description: 'CAT 320D2 Hydraulic Excavator (Generation 2). Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Enhanced Features: Improved fuel efficiency, better hydraulic controls, reduced emissions. Travel Speed: 4.5 km/h. Swing Speed: 12 rpm. Perfect for construction, landscaping, and utility work.'
       },
       {
-        id: 'cat-d8t',
-        model: 'CAT D8T',
+        id: 'cat-320gc',
+        model: 'CAT 320 GC',
+        name: 'Hydraulic Excavator (Gas Powered)',
+        specs: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
+        description: 'CAT 320 GC Hydraulic Excavator (Natural Gas). Engine: Caterpillar C6.4 Natural Gas (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Fuel Tank: 180 L (Gas). Hydraulic System: 280 bar. Eco-friendly alternative fuel option. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for environmentally sensitive projects.'
+      },
+      {
+        id: 'cat-330c',
+        model: 'CAT 330C',
+        name: 'Hydraulic Excavator',
+        specs: '30 ton | 168 kW | 1.69 m³ bucket | Operating Weight: 30,000 kg',
+        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+        description: 'CAT 330C Hydraulic Excavator. Engine: Caterpillar C7.1 Diesel (168 kW/225 HP). Bucket Capacity: 1.69 m³. Max Digging Depth: 7.2 m. Boom Length: 7.1 m. Stick Length: 2.7 m. Undercarriage: Rubber Track (700mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for medium to large-scale excavation, mining, and earthmoving projects.'
+      },
+      {
+        id: 'cat-336d',
+        model: 'CAT 336D',
+        name: 'Hydraulic Excavator',
+        specs: '36.5 ton | 206 kW | 2.1 m³ bucket | Operating Weight: 36,500 kg',
+        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+        description: 'CAT 336D Hydraulic Excavator. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 2.1 m³. Max Digging Depth: 7.5 m. Boom Length: 7.4 m. Stick Length: 2.8 m. Undercarriage: Rubber Track (800mm). Hydraulic System: 280 bar. Fuel Tank: 300 L. Swing Speed: 11 rpm. Travel Speed: 4.5 km/h. Perfect for large-scale mining, quarrying, and heavy construction.'
+      },
+      // ===== DOZERS (Bulldozers) =====
+      {
+        id: 'cat-d6r',
+        model: 'CAT D6R',
         name: 'Bulldozer',
-        specs: '38 ton | 231 kW | SU blade 10.5 m³',
+        specs: '18 ton | 138 kW | SU blade 4.6 m³ | Operating Weight: 18,000 kg',
         image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
-        description: 'The Cat D8T dozer delivers outstanding performance in heavy dozing, ripping, and pushing applications.'
+        description: 'CAT D6R Bulldozer. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 185 kN. Travel Speed: 11 km/h. Fuel Tank: 180 L. Ideal for general dozing, land clearing, and construction site preparation.'
       },
       {
-        id: 'cat-966m',
-        model: 'CAT 966M',
+        id: 'cat-d6t',
+        model: 'CAT D6T',
+        name: 'Bulldozer',
+        specs: '19 ton | 149 kW | SU blade 4.6 m³ | Operating Weight: 19,000 kg',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
+        description: 'CAT D6T Bulldozer. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 200 kN. Travel Speed: 11 km/h. Fuel Tank: 200 L. Enhanced power and efficiency for heavy-duty dozing operations.'
+      },
+      {
+        id: 'cat-d7r',
+        model: 'CAT D7R',
+        name: 'Bulldozer',
+        specs: '28 ton | 186 kW | SU blade 7.4 m³ | Operating Weight: 28,000 kg',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
+        description: 'CAT D7R Bulldozer. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Blade Type: Standard Straight (SU). Blade Width: 4.27 m. Blade Height: 1.73 m. Blade Capacity: 7.4 m³. Undercarriage: Steel Track (610mm). Transmission: Hydrostatic. Drawbar Pull: 280 kN. Travel Speed: 10.5 km/h. Fuel Tank: 300 L. Excellent for large-scale earthmoving and mining applications.'
+      },
+      {
+        id: 'cat-d8r',
+        model: 'CAT D8R',
+        name: 'Bulldozer',
+        specs: '38 ton | 231 kW | SU blade 10.5 m³ | Operating Weight: 38,000 kg',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
+        description: 'CAT D8R Bulldozer. Engine: Caterpillar C15 Diesel (231 kW/310 HP). Blade Type: Standard Straight (SU). Blade Width: 4.88 m. Blade Height: 2.15 m. Blade Capacity: 10.5 m³. Undercarriage: Steel Track (762mm). Transmission: Hydrostatic. Drawbar Pull: 380 kN. Travel Speed: 10.5 km/h. Fuel Tank: 450 L. Perfect for major mining, quarrying, and heavy construction projects.'
+      },
+      // ===== WHEEL LOADERS =====
+      {
+        id: 'cat-950h',
+        model: 'CAT 950H',
         name: 'Wheel Loader',
-        specs: '24 ton | 216 kW | 4.6 m³ bucket',
+        specs: '20 ton | 138 kW | 2.2 m³ bucket | Operating Weight: 20,000 kg',
         image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The Cat 966M wheel loader offers excellent performance, fuel efficiency, and versatility.'
+        description: 'CAT 950H Wheel Loader. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for general loading, material handling, and construction site work.'
       },
       {
-        id: 'cat-140m',
-        model: 'CAT 140M',
-        name: 'Motor Grader',
-        specs: '15 ton | 138 kW | 4.27 m blade',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The Cat 140M motor grader provides superior grading performance and operator comfort.'
+        id: 'cat-950l',
+        model: 'CAT 950L',
+        name: 'Wheel Loader',
+        specs: '21 ton | 149 kW | 2.2 m³ bucket | Operating Weight: 21,000 kg',
+        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        description: 'CAT 950L Wheel Loader. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 220 L. Enhanced power and performance for demanding loading operations.'
       },
       {
-        id: 'cat-cs56b',
-        model: 'CAT CS56B',
-        name: 'Vibratory Soil Compactor',
-        specs: '11 ton | 97 kW | 2.13 m drum',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The Cat CS56B soil compactor delivers excellent compaction performance and productivity.'
+        id: 'cat-966h',
+        model: 'CAT 966H',
+        name: 'Wheel Loader',
+        specs: '24 ton | 186 kW | 3.1 m³ bucket | Operating Weight: 24,000 kg',
+        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        description: 'CAT 966H Wheel Loader. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 280 L. Perfect for medium to large-scale loading and material handling.'
+      },
+      {
+        id: 'cat-966l',
+        model: 'CAT 966L',
+        name: 'Wheel Loader',
+        specs: '25 ton | 206 kW | 3.1 m³ bucket | Operating Weight: 25,000 kg',
+        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        description: 'CAT 966L Wheel Loader. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 300 L. Excellent for heavy-duty loading, quarrying, and mining applications.'
       }
     ],
     spareParts: [
@@ -199,77 +259,86 @@ export const brands: Brand[] = [
         id: 'xcmg-gr215',
         model: 'GR215',
         name: 'Motor Grader',
-        specs: '14.5 ton | 160 kW | 4.27 m blade',
+        specs: '15 ton | 138 kW | 4.27 m blade',
         image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The XCMG GR215 motor grader provides precise grading for road construction and maintenance.'
+        description: 'The XCMG GR215 motor grader provides superior grading performance and precision.'
       },
       {
-        id: 'xcmg-qy25k5',
-        model: 'QY25K5',
-        name: 'Truck Crane',
-        specs: '25 ton | 162 kW | 31 m boom',
+        id: 'xcmg-xd135',
+        model: 'XD135',
+        name: 'Vibratory Compactor',
+        specs: '13 ton | 112 kW | 2.1 m drum',
         image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The XCMG QY25K5 truck crane offers excellent lifting capacity and mobility.'
+        description: 'The XCMG XD135 soil compactor delivers excellent compaction performance.'
+      },
+      {
+        id: 'xcmg-xc6',
+        model: 'XC6',
+        name: 'Hydraulic Excavator',
+        specs: '6 ton | 45 kW | 0.25 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The XCMG XC6 mini excavator is ideal for tight spaces and small-scale projects.'
       }
     ],
     spareParts: [
-      { id: 'xcmg-sp-1', partNumber: 'XE215-01-01', name: 'Engine Oil Filter', description: 'Engine oil filter for XCMG XE215 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'xcmg-sp-2', partNumber: 'XE215-02-01', name: 'Hydraulic Filter', description: 'Hydraulic oil filter for XCMG excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'xcmg-sp-3', partNumber: 'LW500-40-01', name: 'Bucket Tooth', description: 'Loader bucket tooth for XCMG LW500 wheel loader', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
-      { id: 'xcmg-sp-4', partNumber: 'XE215-30-01', name: 'Swing Motor', description: 'Hydraulic swing motor for XCMG XE215 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Hydraulics' },
-      { id: 'xcmg-sp-5', partNumber: 'XE215-50-01', name: 'Track Shoe', description: 'Track shoe assembly for XCMG XE215 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
-      { id: 'xcmg-sp-6', partNumber: 'XE215-60-01', name: 'Bucket Pin & Bushing', description: 'Bucket pin and bushing kit for XCMG excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Pins & Bushings' },
+      { id: 'xcmg-sp-1', partNumber: 'XE215C-01-0001', name: 'Engine Oil Filter', description: 'Engine oil filter for XCMG XE215C excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'xcmg-sp-2', partNumber: 'XE215C-02-0001', name: 'Fuel Filter', description: 'Fuel filter for XCMG excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'xcmg-sp-3', partNumber: 'XE215C-03-0001', name: 'Air Filter', description: 'Air cleaner element for XCMG excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'xcmg-sp-4', partNumber: 'LW500FN-04-0001', name: 'Hydraulic Filter', description: 'Hydraulic filter for XCMG wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'xcmg-sp-5', partNumber: 'XE215C-05-0001', name: 'Track Link', description: 'Track link assembly for XCMG excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
+      { id: 'xcmg-sp-6', partNumber: 'XE215C-06-0001', name: 'Bucket Tooth', description: 'Bucket tooth for XCMG excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
     ]
   },
   {
     id: 'liugong',
     name: 'LiuGong',
-    fullName: 'Guangxi LiuGong Machinery Co., Ltd.',
+    fullName: 'Liugong Machinery Co., Ltd.',
     category: 'construction',
     country: 'China',
-    description: 'A leading Chinese construction machinery manufacturer known for wheel loaders, excavators, bulldozers, and road machinery with global distribution.',
+    description: 'Leading Chinese manufacturer of construction machinery including wheel loaders, excavators, and bulldozers.',
     logo: 'LIUGONG',
-    color: '#1565C0',
+    color: '#0277BD',
     machines: [
       {
-        id: 'lg-856h',
-        model: '856H',
+        id: 'lg-clg856',
+        model: 'CLG856',
         name: 'Wheel Loader',
-        specs: '16 ton | 162 kW | 3.2 m³ bucket',
+        specs: '18 ton | 162 kW | 3.0 m³ bucket',
         image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The LiuGong 856H wheel loader is renowned for its reliability and performance in demanding conditions.'
+        description: 'The LiuGong CLG856 wheel loader offers reliable performance and excellent value.'
       },
       {
-        id: 'lg-915e',
-        model: '915E',
+        id: 'lg-clg920',
+        model: 'CLG920',
+        name: 'Wheel Loader',
+        specs: '20 ton | 186 kW | 3.5 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        description: 'The CLG920 wheel loader provides excellent performance for heavy-duty applications.'
+      },
+      {
+        id: 'lg-clg922',
+        model: 'CLG922',
+        name: 'Wheel Loader',
+        specs: '22 ton | 206 kW | 3.8 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        description: 'The CLG922 is a high-performance wheel loader for demanding applications.'
+      },
+      {
+        id: 'lg-cde110',
+        model: 'CDE110',
         name: 'Hydraulic Excavator',
-        specs: '15 ton | 84 kW | 0.6 m³ bucket',
+        specs: '11 ton | 75 kW | 0.55 m³ bucket',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The LiuGong 915E excavator offers excellent digging performance and fuel efficiency.'
-      },
-      {
-        id: 'lg-922e',
-        model: '922E',
-        name: 'Hydraulic Excavator',
-        specs: '22 ton | 122 kW | 1.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The LiuGong 922E is a versatile mid-size excavator for construction and mining.'
-      },
-      {
-        id: 'lg-b160c',
-        model: 'B160C',
-        name: 'Bulldozer',
-        specs: '16 ton | 120 kW | 4.0 m³ blade',
-        image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80',
-        description: 'The LiuGong B160C bulldozer delivers reliable performance for earthmoving operations.'
+        description: 'The LiuGong CDE110 mini excavator is perfect for compact construction sites.'
       }
     ],
     spareParts: [
-      { id: 'lg-sp-1', partNumber: 'LG856-01-001', name: 'Engine Oil Filter', description: 'Engine oil filter for LiuGong 856H wheel loader', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'lg-sp-2', partNumber: 'LG856-02-001', name: 'Transmission Filter', description: 'Transmission oil filter for LiuGong wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'lg-sp-3', partNumber: 'LG856-10-001', name: 'Bucket Tooth', description: 'Standard bucket tooth for LiuGong wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
-      { id: 'lg-sp-4', partNumber: 'LG922-30-001', name: 'Hydraulic Pump', description: 'Main hydraulic pump for LiuGong 922E excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Hydraulics' },
-      { id: 'lg-sp-5', partNumber: 'LG922-50-001', name: 'Track Roller', description: 'Bottom track roller for LiuGong excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
+      { id: 'lg-sp-1', partNumber: 'CLG856-01-0001', name: 'Engine Oil Filter', description: 'Engine oil filter for LiuGong wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'lg-sp-2', partNumber: 'CLG856-02-0001', name: 'Fuel Filter', description: 'Fuel filter for LiuGong loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'lg-sp-3', partNumber: 'CLG856-03-0001', name: 'Air Filter', description: 'Air cleaner element for LiuGong machinery', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'lg-sp-4', partNumber: 'CLG856-04-0001', name: 'Hydraulic Filter', description: 'Hydraulic filter for LiuGong wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'lg-sp-5', partNumber: 'CLG856-05-0001', name: 'Transmission Filter', description: 'Transmission filter for LiuGong loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'lg-sp-6', partNumber: 'CDE110-06-0001', name: 'Bucket Tooth', description: 'Bucket tooth for LiuGong excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
     ]
   },
   {
@@ -278,58 +347,66 @@ export const brands: Brand[] = [
     fullName: 'Sany Heavy Industry Co., Ltd.',
     category: 'construction',
     country: 'China',
-    description: 'One of the world\'s largest construction machinery manufacturers, known for concrete machinery, excavators, cranes, and road machinery.',
+    description: 'Global leader in heavy equipment manufacturing, producing excavators, concrete pumps, cranes, and more.',
     logo: 'SANY',
-    color: '#C62828',
+    color: '#F57C00',
     machines: [
       {
         id: 'sany-sy215c',
         model: 'SY215C',
         name: 'Hydraulic Excavator',
-        specs: '21.5 ton | 122 kW | 0.93 m³ bucket',
+        specs: '21 ton | 122 kW | 1.0 m³ bucket',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The SANY SY215C excavator delivers superior performance and reliability for construction projects.'
+        description: 'The SANY SY215C excavator delivers reliable performance for construction and mining.'
       },
       {
-        id: 'sany-sy365h',
-        model: 'SY365H',
+        id: 'sany-sy365c',
+        model: 'SY365C',
         name: 'Hydraulic Excavator',
-        specs: '36.5 ton | 206 kW | 1.8 m³ bucket',
+        specs: '36 ton | 206 kW | 1.8 m³ bucket',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The SY365H is a large excavator designed for heavy-duty mining and construction.'
+        description: 'The SY365C is a large excavator for heavy-duty mining and construction.'
       },
       {
-        id: 'sany-slc60',
-        model: 'SLC60',
-        name: 'Crawler Crane',
-        specs: '60 ton | 224 kW | 48 m boom',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The SANY SLC60 crawler crane provides excellent lifting performance and stability.'
+        id: 'sany-sy465h',
+        model: 'SY465H',
+        name: 'Hydraulic Excavator',
+        specs: '46 ton | 250 kW | 2.3 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The SY465H is a premium large excavator for major mining operations.'
       },
       {
-        id: 'sany-sw405k',
-        model: 'SW405K',
-        name: 'Wheel Loader',
-        specs: '18 ton | 162 kW | 3.5 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The SANY SW405K wheel loader offers high productivity and operator comfort.'
+        id: 'sany-sy50c',
+        model: 'SY50C',
+        name: 'Mini Excavator',
+        specs: '5 ton | 37 kW | 0.2 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The SANY SY50C mini excavator is perfect for small-scale construction work.'
       },
       {
-        id: 'sany-srt55c',
-        model: 'SRT55C',
-        name: 'Mining Truck',
-        specs: '55 ton | 522 kW | 32 m³ body',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The SANY SRT55C mining truck is designed for high-efficiency ore and waste hauling.'
+        id: 'sany-sy75c',
+        model: 'SY75C',
+        name: 'Mini Excavator',
+        specs: '7.5 ton | 54 kW | 0.3 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The SY75C mini excavator offers excellent maneuverability for tight spaces.'
+      },
+      {
+        id: 'sany-sy135c',
+        model: 'SY135C',
+        name: 'Hydraulic Excavator',
+        specs: '13.5 ton | 97 kW | 0.6 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The SY135C is a compact excavator for versatile construction applications.'
       }
     ],
     spareParts: [
-      { id: 'sany-sp-1', partNumber: 'SY215-01-001', name: 'Engine Oil Filter', description: 'Engine oil filter for SANY SY215 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sany-sp-2', partNumber: 'SY215-02-001', name: 'Hydraulic Filter', description: 'Hydraulic return filter for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sany-sp-3', partNumber: 'SY215-40-001', name: 'Travel Motor', description: 'Hydraulic travel motor for SANY SY215 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Hydraulics' },
-      { id: 'sany-sp-4', partNumber: 'SY215-50-001', name: 'Track Chain Assembly', description: 'Track chain assembly for SANY SY215 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
-      { id: 'sany-sp-5', partNumber: 'SY215-60-001', name: 'Bucket Tooth', description: 'Standard bucket tooth for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
-      { id: 'sany-sp-6', partNumber: 'SY215-70-001', name: 'Swing Bearing', description: 'Slewing ring bearing for SANY SY215 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Bearings' },
+      { id: 'sany-sp-1', partNumber: 'SY215C-01-0001', name: 'Engine Oil Filter', description: 'Engine oil filter for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sany-sp-2', partNumber: 'SY215C-02-0001', name: 'Fuel Filter', description: 'Fuel filter for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sany-sp-3', partNumber: 'SY215C-03-0001', name: 'Air Filter', description: 'Air cleaner element for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sany-sp-4', partNumber: 'SY215C-04-0001', name: 'Hydraulic Filter', description: 'Hydraulic filter for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sany-sp-5', partNumber: 'SY215C-05-0001', name: 'Track Link', description: 'Track link assembly for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
+      { id: 'sany-sp-6', partNumber: 'SY215C-06-0001', name: 'Bucket Tooth', description: 'Bucket tooth for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
     ]
   },
   {
@@ -338,219 +415,226 @@ export const brands: Brand[] = [
     fullName: 'Komatsu Ltd.',
     category: 'construction',
     country: 'Japan',
-    description: 'A Japanese multinational corporation that manufactures construction, mining, and military equipment, as well as industrial equipment like press machines.',
+    description: 'Japanese multinational corporation specializing in construction, mining, and military equipment.',
     logo: 'KOMATSU',
-    color: '#F57F17',
+    color: '#1565C0',
     machines: [
       {
-        id: 'km-pc220',
-        model: 'PC220-8',
+        id: 'km-pc200',
+        model: 'PC200',
         name: 'Hydraulic Excavator',
-        specs: '22 ton | 125 kW | 1.0 m³ bucket',
+        specs: '20 ton | 110 kW | 1.0 m³ bucket',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Komatsu PC220-8 excavator offers advanced technology and superior performance.'
+        description: 'The Komatsu PC200 excavator is a versatile mid-size machine for general construction.'
       },
       {
-        id: 'km-pc360',
-        model: 'PC360-10M0',
+        id: 'km-pc300',
+        model: 'PC300',
         name: 'Hydraulic Excavator',
-        specs: '36 ton | 200 kW | 1.8 m³ bucket',
+        specs: '30 ton | 162 kW | 1.6 m³ bucket',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Komatsu PC360 is a powerful excavator for large-scale construction and mining.'
+        description: 'The PC300 is a large excavator designed for heavy-duty mining and construction.'
       },
       {
-        id: 'km-d155ax',
-        model: 'D155AX-8',
-        name: 'Bulldozer',
-        specs: '38 ton | 228 kW | SU blade 11.7 m³',
-        image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80',
-        description: 'The Komatsu D155AX-8 dozer delivers exceptional performance in heavy earthmoving.'
+        id: 'km-pc400',
+        model: 'PC400',
+        name: 'Hydraulic Excavator',
+        specs: '40 ton | 206 kW | 2.0 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The PC400 is a premium large excavator for major mining operations.'
       },
       {
-        id: 'km-wa470',
-        model: 'WA470-8',
+        id: 'km-wa320',
+        model: 'WA320',
         name: 'Wheel Loader',
-        specs: '24 ton | 196 kW | 4.5 m³ bucket',
+        specs: '20 ton | 138 kW | 3.0 m³ bucket',
         image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The Komatsu WA470-8 wheel loader offers excellent productivity and fuel efficiency.'
+        description: 'The Komatsu WA320 wheel loader offers excellent performance and reliability.'
       },
       {
-        id: 'km-gd655',
-        model: 'GD655-5',
-        name: 'Motor Grader',
-        specs: '17 ton | 164 kW | 4.88 m blade',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The Komatsu GD655-5 motor grader provides precise grading performance.'
+        id: 'km-wa380',
+        model: 'WA380',
+        name: 'Wheel Loader',
+        specs: '24 ton | 186 kW | 3.5 m³ bucket',
+        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        description: 'The WA380 wheel loader provides excellent loading capacity and efficiency.'
+      },
+      {
+        id: 'km-d65px',
+        model: 'D65PX',
+        name: 'Bulldozer',
+        specs: '22 ton | 162 kW | SU blade 5.6 m³',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
+        description: 'The Komatsu D65PX bulldozer delivers excellent performance for dozing and pushing.'
       }
     ],
     spareParts: [
-      { id: 'km-sp-1', partNumber: '600-211-1340', name: 'Engine Oil Filter', description: 'Engine oil filter for Komatsu SAA6D107 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'km-sp-2', partNumber: '600-311-3750', name: 'Fuel Filter', description: 'Primary fuel filter for Komatsu diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'km-sp-3', partNumber: '207-30-00200', name: 'Track Roller', description: 'Bottom track roller for Komatsu PC220 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
-      { id: 'km-sp-4', partNumber: '207-70-00150', name: 'Bucket Tooth', description: 'Standard bucket tooth for Komatsu PC220 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
-      { id: 'km-sp-5', partNumber: '708-2L-00500', name: 'Main Pump', description: 'Main hydraulic pump for Komatsu PC220 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Hydraulics' },
-      { id: 'km-sp-6', partNumber: '207-27-00260', name: 'Swing Motor', description: 'Swing motor assembly for Komatsu PC220 excavator', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Hydraulics' },
-      { id: 'km-sp-7', partNumber: '195-30-00380', name: 'Sprocket', description: 'Drive sprocket for Komatsu D155 bulldozer', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
+      { id: 'km-sp-1', partNumber: 'PC200-01-0001', name: 'Engine Oil Filter', description: 'Engine oil filter for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'km-sp-2', partNumber: 'PC200-02-0001', name: 'Fuel Filter', description: 'Fuel filter for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'km-sp-3', partNumber: 'PC200-03-0001', name: 'Air Filter', description: 'Air cleaner element for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'km-sp-4', partNumber: 'WA320-04-0001', name: 'Hydraulic Filter', description: 'Hydraulic filter for Komatsu wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'km-sp-5', partNumber: 'PC200-05-0001', name: 'Track Link', description: 'Track link assembly for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
+      { id: 'km-sp-6', partNumber: 'PC200-06-0001', name: 'Bucket Tooth', description: 'Bucket tooth for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
+      { id: 'km-sp-7', partNumber: 'D65PX-07-0001', name: 'Cutting Edge', description: 'Blade cutting edge for Komatsu bulldozers', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
     ]
   },
-
-  // ========== TRUCKS ==========
+  // ========== TRUCKS & ENGINES ==========
   {
     id: 'isuzu',
     name: 'Isuzu',
     fullName: 'Isuzu Motors Limited',
     category: 'truck',
     country: 'Japan',
-    description: 'A Japanese commercial vehicle and diesel engine manufacturing company, known for reliable light to heavy-duty trucks and buses worldwide.',
+    description: 'Japanese commercial vehicle manufacturer known for reliable trucks and diesel engines.',
     logo: 'ISUZU',
-    color: '#B71C1C',
+    color: '#C41E3A',
     machines: [
       {
-        id: 'isuzu-npr',
-        model: 'NPR 75',
-        name: 'Light Duty Truck',
-        specs: '3.5 ton | 110 kW | 4HK1 engine',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Isuzu NPR 75 is a versatile light-duty truck ideal for urban delivery and distribution.'
-      },
-      {
-        id: 'isuzu-nqr',
-        model: 'NQR 75',
-        name: 'Medium Duty Truck',
-        specs: '5 ton | 136 kW | 4HK1 engine',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The Isuzu NQR 75 medium-duty truck offers excellent payload capacity and fuel efficiency.'
-      },
-      {
-        id: 'isuzu-fvr',
-        model: 'FVR 34',
+        id: 'iz-fvr34',
+        model: 'FVR34',
         name: 'Heavy Duty Truck',
-        specs: '10 ton | 206 kW | 6HK1 engine',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The Isuzu FVR 34 is a reliable heavy-duty truck for long-haul transportation.'
+        specs: '20 ton | 190 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Isuzu FVR34 is a reliable heavy-duty truck for construction and logistics.'
       },
       {
-        id: 'isuzu-giga',
-        model: 'GIGA CXZ',
-        name: 'Heavy Duty Tractor',
-        specs: '25 ton | 353 kW | 6WG1 engine',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The Isuzu GIGA CXZ is a powerful tractor unit for heavy freight transportation.'
+        id: 'iz-fvr35',
+        model: 'FVR35',
+        name: 'Heavy Duty Truck',
+        specs: '25 ton | 210 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The FVR35 offers enhanced power and capacity for heavy-duty applications.'
+      },
+      {
+        id: 'iz-giga',
+        model: 'GIGA',
+        name: 'Heavy Duty Truck',
+        specs: '30 ton | 250 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The GIGA is Isuzu\'s premium heavy-duty truck for demanding applications.'
+      },
+      {
+        id: 'iz-elf',
+        model: 'ELF',
+        name: 'Medium Duty Truck',
+        specs: '12 ton | 130 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The ELF is a versatile medium-duty truck for urban and construction use.'
       }
     ],
     spareParts: [
-      { id: 'isuzu-sp-1', partNumber: '8-97095-980-0', name: 'Engine Oil Filter', description: 'Engine oil filter for Isuzu 4HK1/6HK1 engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'isuzu-sp-2', partNumber: '8-94396-375-0', name: 'Fuel Filter', description: 'Fuel filter element for Isuzu diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'isuzu-sp-3', partNumber: '8-97049-751-0', name: 'Air Filter', description: 'Air cleaner element for Isuzu 4HK1 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'isuzu-sp-4', partNumber: '1-09625-006-0', name: 'Injector', description: 'Fuel injector for Isuzu 6HK1 common rail engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Fuel System' },
-      { id: 'isuzu-sp-5', partNumber: '1-87810-552-0', name: 'Brake Pad Set', description: 'Front brake pad set for Isuzu FVR/FRR trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
-      { id: 'isuzu-sp-6', partNumber: '8-97034-572-0', name: 'Clutch Disc', description: 'Clutch disc assembly for Isuzu heavy trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Drivetrain' },
-      { id: 'isuzu-sp-7', partNumber: '1-09625-335-0', name: 'Turbocharger', description: 'Turbocharger assembly for Isuzu 6HK1 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
+      { id: 'iz-sp-1', partNumber: '8-97602-428-0', name: 'Engine Oil Filter', description: 'Engine oil filter for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-2', partNumber: '8-97602-429-0', name: 'Fuel Filter', description: 'Fuel filter for Isuzu diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-3', partNumber: '8-97602-430-0', name: 'Air Filter', description: 'Air cleaner element for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-4', partNumber: '8-97602-431-0', name: 'Cabin Air Filter', description: 'Cabin air filter for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-5', partNumber: '8-97602-432-0', name: 'Transmission Filter', description: 'Transmission filter for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-6', partNumber: '8-97602-433-0', name: 'Brake Pad Set', description: 'Brake pad set for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
+      { id: 'iz-sp-7', partNumber: '8-97602-434-0', name: 'Alternator', description: 'Alternator for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Electrical' },
     ]
   },
   {
     id: 'shacman',
     name: 'Shacman',
-    fullName: 'Shaanxi Automobile Group Co., Ltd. (SHACMAN)',
+    fullName: 'Shaanxi Automobile Group Co., Ltd.',
     category: 'truck',
     country: 'China',
-    description: 'A major Chinese heavy-duty truck manufacturer producing dump trucks, tractor trucks, cargo trucks, and special purpose vehicles for global markets.',
+    description: 'Leading Chinese heavy-duty truck manufacturer producing commercial vehicles for construction and logistics.',
     logo: 'SHACMAN',
-    color: '#1A237E',
+    color: '#E53935',
     machines: [
       {
-        id: 'shacman-x3000',
+        id: 'sm-x3000',
         model: 'X3000',
-        name: 'Heavy Duty Tractor',
-        specs: '6×4 | 430 HP | WP13 engine',
+        name: 'Heavy Duty Truck',
+        specs: '25 ton | 290 kW | 6-cylinder diesel',
         image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Shacman X3000 is a flagship heavy-duty tractor truck for long-haul transportation.'
+        description: 'The Shacman X3000 is a premium heavy-duty truck for long-distance hauling.'
       },
       {
-        id: 'shacman-h3000',
-        model: 'H3000',
-        name: 'Dump Truck',
-        specs: '6×4 | 380 HP | WP10 engine',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The Shacman H3000 dump truck offers excellent performance for construction and mining.'
+        id: 'sm-f3000',
+        model: 'F3000',
+        name: 'Heavy Duty Truck',
+        specs: '20 ton | 250 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The F3000 offers reliable performance for construction and mining.'
       },
       {
-        id: 'shacman-m3000',
+        id: 'sm-m3000',
         model: 'M3000',
-        name: 'Cargo Truck',
-        specs: '4×2 | 280 HP | WP7 engine',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The Shacman M3000 cargo truck provides reliable transportation for medium-haul logistics.'
+        name: 'Medium Duty Truck',
+        specs: '15 ton | 190 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The M3000 is a versatile medium-duty truck for urban and regional transport.'
       },
       {
-        id: 'shacman-l3000',
+        id: 'sm-l3000',
         model: 'L3000',
-        name: 'Mixer Truck',
-        specs: '6×4 | 340 HP | WP10 engine | 8m³',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The Shacman L3000 mixer truck is designed for concrete transportation in construction projects.'
+        name: 'Light Duty Truck',
+        specs: '10 ton | 150 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The L3000 is an economical light-duty truck for general cargo transport.'
       }
     ],
     spareParts: [
-      { id: 'shacman-sp-1', partNumber: 'DZ9112550020', name: 'Engine Oil Filter', description: 'Engine oil filter for Shacman WP10/WP12 engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'shacman-sp-2', partNumber: 'DZ9112550010', name: 'Fuel Filter', description: 'Fuel filter for Shacman diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'shacman-sp-3', partNumber: 'DZ9100360010', name: 'Brake Lining', description: 'Rear brake lining for Shacman heavy trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
-      { id: 'shacman-sp-4', partNumber: 'DZ9100410001', name: 'Clutch Disc', description: 'Clutch disc for Shacman X3000/H3000 trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Drivetrain' },
-      { id: 'shacman-sp-5', partNumber: 'DZ9112340061', name: 'Shock Absorber', description: 'Front shock absorber for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Suspension' },
-      { id: 'shacman-sp-6', partNumber: 'DZ9100840001', name: 'Leaf Spring', description: 'Rear leaf spring assembly for Shacman dump trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Suspension' },
+      { id: 'sm-sp-1', partNumber: 'DZ96189584001', name: 'Engine Oil Filter', description: 'Engine oil filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-2', partNumber: 'DZ96189584002', name: 'Fuel Filter', description: 'Fuel filter for Shacman diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-3', partNumber: 'DZ96189584003', name: 'Air Filter', description: 'Air cleaner element for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-4', partNumber: 'DZ96189584004', name: 'Cabin Air Filter', description: 'Cabin air filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-5', partNumber: 'DZ96189584005', name: 'Transmission Filter', description: 'Transmission filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-6', partNumber: 'DZ96189584006', name: 'Brake Pad Set', description: 'Brake pad set for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
     ]
   },
   {
-    id: 'sinotruck',
-    name: 'Sinotruck',
-    fullName: 'China National Heavy Duty Truck Group (SINOTRUK)',
+    id: 'sinotruk',
+    name: 'Sinotruk',
+    fullName: 'China National Heavy Duty Truck Group Co., Ltd.',
     category: 'truck',
     country: 'China',
-    description: 'China\'s largest heavy-duty truck manufacturer, producing HOWO, SITRAK, and other brands for construction, mining, logistics, and special applications.',
+    description: 'Leading Chinese heavy-duty truck manufacturer producing HOWO and other commercial vehicle brands.',
     logo: 'SINOTRUK',
-    color: '#0D47A1',
+    color: '#D32F2F',
     machines: [
       {
-        id: 'sino-howo-a7',
+        id: 'st-howo-a7',
         model: 'HOWO A7',
-        name: 'Heavy Duty Tractor',
-        specs: '6×4 | 420 HP | MC11 engine',
+        name: 'Heavy Duty Truck',
+        specs: '25 ton | 290 kW | 6-cylinder diesel',
         image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The HOWO A7 is a premium heavy-duty tractor truck with advanced technology and comfort.'
+        description: 'The Sinotruk HOWO A7 is a premium heavy-duty truck for long-distance hauling.'
       },
       {
-        id: 'sino-howo-t7h',
-        model: 'HOWO T7H',
-        name: 'Heavy Duty Tractor',
-        specs: '6×4 | 480 HP | MC13 engine',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The HOWO T7H flagship tractor truck offers superior performance for long-haul transportation.'
+        id: 'st-howo-t5g',
+        model: 'HOWO T5G',
+        name: 'Heavy Duty Truck',
+        specs: '20 ton | 250 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The HOWO T5G offers reliable performance for construction and mining.'
       },
       {
-        id: 'sino-howo-dump',
-        model: 'HOWO ZZ3257N3847',
-        name: 'Dump Truck',
-        specs: '6×4 | 371 HP | WD615 engine | 16m³',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The HOWO dump truck is widely used in construction and mining for material hauling.'
+        id: 'st-howo-vx',
+        model: 'HOWO VX',
+        name: 'Medium Duty Truck',
+        specs: '15 ton | 190 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The HOWO VX is a versatile medium-duty truck for urban and regional transport.'
       },
       {
-        id: 'sino-sitrak-c7h',
-        model: 'SITRAK C7H',
-        name: 'Heavy Duty Tractor',
-        specs: '6×4 | 540 HP | MAN D26 engine',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The SITRAK C7H is a premium truck with MAN technology for demanding long-haul operations.'
+        id: 'st-howo-light',
+        model: 'HOWO Light Duty',
+        name: 'Light Duty Truck',
+        specs: '10 ton | 150 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The HOWO Light Duty is an economical truck for general cargo transport.'
       }
     ],
     spareParts: [
-      { id: 'sino-sp-1', partNumber: 'VG1540070007', name: 'Engine Oil Filter', description: 'Engine oil filter for Sinotruk WD615/WD618 engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sino-sp-2', partNumber: 'VG1540080011', name: 'Fuel Filter', description: 'Fuel filter for Sinotruk HOWO diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sino-sp-3', partNumber: 'WG9100360010', name: 'Brake Lining', description: 'Brake lining for Sinotruk HOWO trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
-      { id: 'sino-sp-4', partNumber: 'WG9114160030', name: 'Clutch Disc', description: 'Clutch disc assembly for Sinotruk HOWO trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Drivetrain' },
-      { id: 'sino-sp-5', partNumber: 'AZ9100680051', name: 'Wheel Hub', description: 'Rear wheel hub for Sinotruk HOWO trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Axle' },
-      { id: 'sino-sp-6', partNumber: 'VG1560090012', name: 'Piston Ring Set', description: 'Piston ring set for Sinotruk WD615 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
-      { id: 'sino-sp-7', partNumber: 'VG1246110010', name: 'Turbocharger', description: 'Turbocharger for Sinotruk WD615.47 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
+      { id: 'st-sp-1', partNumber: 'VG1560118229', name: 'Engine Oil Filter', description: 'Engine oil filter for Sinotruk HOWO trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-2', partNumber: 'VG1560118230', name: 'Fuel Filter', description: 'Fuel filter for Sinotruk diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-3', partNumber: 'VG1560118231', name: 'Air Filter', description: 'Air cleaner element for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-4', partNumber: 'VG1560118232', name: 'Cabin Air Filter', description: 'Cabin air filter for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-5', partNumber: 'VG1560118233', name: 'Transmission Filter', description: 'Transmission filter for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-6', partNumber: 'VG1560118234', name: 'Brake Pad Set', description: 'Brake pad set for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
+      { id: 'st-sp-7', partNumber: 'VG1560118235', name: 'Alternator', description: 'Alternator for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Electrical' },
     ]
   },
   {
@@ -559,106 +643,104 @@ export const brands: Brand[] = [
     fullName: 'Toyota Motor Corporation',
     category: 'truck',
     country: 'Japan',
-    description: 'A global automotive manufacturer known for reliable commercial vehicles including the Land Cruiser, Hilux pickup trucks, and Hiace vans widely used in construction and mining.',
+    description: 'Japanese automotive manufacturer known for reliable trucks and commercial vehicles.',
     logo: 'TOYOTA',
-    color: '#D32F2F',
+    color: '#EB0A1E',
     machines: [
       {
-        id: 'toyota-landcruiser-79',
-        model: 'Land Cruiser 79',
+        id: 'ty-landcruiser',
+        model: 'Land Cruiser',
+        name: 'Heavy Duty Truck',
+        specs: '3.5 ton | 120 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Toyota Land Cruiser is a legendary heavy-duty truck for off-road and construction.'
+      },
+      {
+        id: 'ty-hilux',
+        model: 'Hilux',
         name: 'Pickup Truck',
-        specs: '4×4 | 4.5L V8 Diesel | 1 ton payload',
-        image: 'https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=600&q=80',
-        description: 'The Toyota Land Cruiser 79 is the ultimate off-road workhorse for mining and construction sites.'
+        specs: '2.8 ton | 110 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Toyota Hilux is a versatile pickup truck for construction and utility work.'
       },
       {
-        id: 'toyota-hilux-revo',
-        model: 'Hilux Revo',
-        name: 'Pickup Truck',
-        specs: '4×4 | 2.8L Diesel | 1 ton payload',
-        image: 'https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=600&q=80',
-        description: 'The Toyota Hilux Revo is a reliable and versatile pickup truck for tough working conditions.'
+        id: 'ty-coaster',
+        model: 'Coaster',
+        name: 'Commercial Bus',
+        specs: '5 ton | 110 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Toyota Coaster is a reliable commercial bus for passenger transport.'
       },
       {
-        id: 'toyota-hiace',
-        model: 'Hiace 300',
-        name: 'Van / Minibus',
-        specs: '4×2 | 2.8L Diesel | 15 seats',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The Toyota Hiace 300 is a versatile van for passenger and cargo transportation.'
-      },
-      {
-        id: 'toyota-dyna',
-        model: 'Dyna 300',
-        name: 'Light Duty Truck',
-        specs: '4×2 | 4.0L Diesel | 3 ton payload',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
-        description: 'The Toyota Dyna 300 is a dependable light-duty truck for urban and regional delivery.'
+        id: 'ty-dyna',
+        model: 'Dyna',
+        name: 'Medium Duty Truck',
+        specs: '3 ton | 95 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Toyota Dyna is a compact medium-duty truck for urban delivery.'
       }
     ],
     spareParts: [
-      { id: 'toyota-sp-1', partNumber: '90915-YZZD2', name: 'Engine Oil Filter', description: 'Engine oil filter for Toyota 1GD/2GD diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'toyota-sp-2', partNumber: '23303-0L010', name: 'Fuel Filter', description: 'Fuel filter for Toyota 1KD/2KD diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'toyota-sp-3', partNumber: '17801-0L040', name: 'Air Filter', description: 'Air cleaner element for Toyota Hilux/Land Cruiser', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'toyota-sp-4', partNumber: '04465-0K260', name: 'Brake Pad Set', description: 'Front brake pad set for Toyota Hilux Revo', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
-      { id: 'toyota-sp-5', partNumber: '31250-0K090', name: 'Clutch Kit', description: 'Clutch disc and pressure plate kit for Toyota Hilux', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Drivetrain' },
-      { id: 'toyota-sp-6', partNumber: '48520-0K170', name: 'Shock Absorber', description: 'Front shock absorber for Toyota Hilux Revo 4×4', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Suspension' },
-      { id: 'toyota-sp-7', partNumber: '23670-0L090', name: 'Fuel Injector', description: 'Common rail fuel injector for Toyota 1KD engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Fuel System' },
+      { id: 'ty-sp-1', partNumber: '15600-29015', name: 'Engine Oil Filter', description: 'Engine oil filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-2', partNumber: '23390-64480', name: 'Fuel Filter', description: 'Fuel filter for Toyota diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-3', partNumber: '17801-54090', name: 'Air Filter', description: 'Air cleaner element for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-4', partNumber: '87139-02090', name: 'Cabin Air Filter', description: 'Cabin air filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-5', partNumber: '35330-60050', name: 'Transmission Filter', description: 'Transmission filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-6', partNumber: '04465-35090', name: 'Brake Pad Set', description: 'Brake pad set for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
+      { id: 'ty-sp-7', partNumber: '27060-28050', name: 'Alternator', description: 'Alternator for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Electrical' },
     ]
   },
-
-  // ========== ENGINES ==========
   {
     id: 'cummins',
     name: 'Cummins',
     fullName: 'Cummins Inc.',
     category: 'engine',
     country: 'USA',
-    description: 'A global power leader that designs, manufactures, and distributes engines, filtration, and power generation products for construction, mining, marine, and automotive applications.',
+    description: 'Leading manufacturer of diesel and natural gas engines for construction, mining, and power generation.',
     logo: 'CUMMINS',
-    color: '#E65100',
+    color: '#C41E3A',
     machines: [
       {
-        id: 'cum-b6.7',
+        id: 'cm-b6.7',
         model: 'B6.7',
         name: 'Diesel Engine',
-        specs: '6.7L | 140-224 kW | Tier 4 Final',
+        specs: '6.7L | 205 kW | 6-cylinder',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Cummins B6.7 is a versatile mid-range diesel engine for construction equipment and trucks.'
+        description: 'The Cummins B6.7 is a reliable diesel engine for medium-duty applications.'
       },
       {
-        id: 'cum-qsb7',
-        model: 'QSB7',
+        id: 'cm-l9',
+        model: 'L9',
         name: 'Diesel Engine',
-        specs: '6.7L | 149-224 kW | Tier 4',
+        specs: '8.9L | 265 kW | 6-cylinder',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Cummins QSB7 engine delivers reliable power for off-highway equipment.'
+        description: 'The L9 is a powerful diesel engine for heavy-duty construction and mining.'
       },
       {
-        id: 'cum-qsl9',
-        model: 'QSL9',
+        id: 'cm-x12',
+        model: 'X12',
         name: 'Diesel Engine',
-        specs: '8.9L | 224-298 kW | Tier 4',
+        specs: '11.9L | 310 kW | 6-cylinder',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Cummins QSL9 provides high performance for demanding construction applications.'
+        description: 'The X12 is a premium diesel engine for major mining and industrial applications.'
       },
       {
-        id: 'cum-qsx15',
+        id: 'cm-qsx15',
         model: 'QSX15',
         name: 'Diesel Engine',
-        specs: '15L | 373-522 kW | Tier 4',
+        specs: '14.9L | 373 kW | 6-cylinder',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Cummins QSX15 is a high-power engine for large mining and construction equipment.'
+        description: 'The QSX15 is a high-performance diesel engine for extreme duty applications.'
       }
     ],
     spareParts: [
-      { id: 'cum-sp-1', partNumber: '3931063', name: 'Engine Oil Filter', description: 'Engine oil filter for Cummins B/C series engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'cum-sp-2', partNumber: '3931063', name: 'Fuel Filter', description: 'Fuel filter element for Cummins diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'cum-sp-3', partNumber: '4955642', name: 'Injector', description: 'Fuel injector for Cummins QSB/QSL engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Fuel System' },
-      { id: 'cum-sp-4', partNumber: '3803714', name: 'Turbocharger', description: 'Turbocharger assembly for Cummins 6BT engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
-      { id: 'cum-sp-5', partNumber: '3901172', name: 'Piston Kit', description: 'Piston and ring kit for Cummins 6BT engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
-      { id: 'cum-sp-6', partNumber: '3803714', name: 'Water Pump', description: 'Coolant water pump for Cummins diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Cooling System' },
-      { id: 'cum-sp-7', partNumber: '4914058', name: 'Cylinder Head Gasket', description: 'Cylinder head gasket for Cummins 6BT engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
+      { id: 'cm-sp-1', partNumber: '3883753', name: 'Engine Oil Filter', description: 'Engine oil filter for Cummins diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'cm-sp-2', partNumber: '3315844', name: 'Fuel Filter', description: 'Fuel filter for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'cm-sp-3', partNumber: '3937903', name: 'Air Filter', description: 'Air cleaner element for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'cm-sp-4', partNumber: '4326799', name: 'Coolant Filter', description: 'Coolant filter for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Cooling System' },
+      { id: 'cm-sp-5', partNumber: '3936316', name: 'Fuel Injection Pump', description: 'Fuel injection pump for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Fuel System' },
+      { id: 'cm-sp-6', partNumber: '3931880', name: 'Turbocharger', description: 'Turbocharger for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine Components' },
+      { id: 'cm-sp-7', partNumber: '3928135', name: 'Water Pump', description: 'Water pump for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Cooling System' },
     ]
   },
   {
@@ -667,59 +749,50 @@ export const brands: Brand[] = [
     fullName: 'Weichai Power Co., Ltd.',
     category: 'engine',
     country: 'China',
-    description: 'China\'s largest diesel engine manufacturer, producing engines for construction machinery, heavy trucks, marine vessels, and power generation equipment.',
+    description: 'Leading Chinese diesel engine manufacturer for construction, mining, and power generation.',
     logo: 'WEICHAI',
-    color: '#1B5E20',
+    color: '#0277BD',
     machines: [
       {
-        id: 'wc-wp7',
-        model: 'WP7',
+        id: 'wc-wp6',
+        model: 'WP6',
         name: 'Diesel Engine',
-        specs: '6.75L | 162-206 kW | National VI',
+        specs: '6.0L | 162 kW | 6-cylinder',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Weichai WP7 is a reliable medium-duty diesel engine for trucks and construction machinery.'
+        description: 'The Weichai WP6 is a reliable diesel engine for medium-duty applications.'
+      },
+      {
+        id: 'wc-wp9',
+        model: 'WP9',
+        name: 'Diesel Engine',
+        specs: '8.9L | 250 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The WP9 is a powerful diesel engine for heavy-duty construction and mining.'
       },
       {
         id: 'wc-wp10',
         model: 'WP10',
         name: 'Diesel Engine',
-        specs: '9.726L | 247-336 kW | National VI',
+        specs: '10.0L | 290 kW | 6-cylinder',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Weichai WP10 engine delivers powerful performance for heavy-duty trucks and equipment.'
+        description: 'The WP10 is a premium diesel engine for major mining and industrial applications.'
       },
       {
-        id: 'wc-wp13',
-        model: 'WP13',
+        id: 'wc-wp12',
+        model: 'WP12',
         name: 'Diesel Engine',
-        specs: '12.54L | 336-485 kW | National VI',
+        specs: '12.0L | 340 kW | 6-cylinder',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Weichai WP13 is a high-power engine for heavy-duty trucks and large construction equipment.'
-      },
-      {
-        id: 'wc-wd615',
-        model: 'WD615',
-        name: 'Diesel Engine',
-        specs: '9.726L | 213-276 kW | Euro III',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Weichai WD615 is a widely used engine in Chinese heavy trucks and construction machinery.'
+        description: 'The WP12 is a high-performance diesel engine for extreme duty applications.'
       }
     ],
     spareParts: [
-      { id: 'wc-sp-1', partNumber: '1000422532', name: 'Engine Oil Filter', description: 'Engine oil filter for Weichai WP10/WP12 engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'wc-sp-2', partNumber: '1000422533', name: 'Fuel Filter', description: 'Fuel filter for Weichai diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'wc-sp-3', partNumber: '612600080611', name: 'Injector', description: 'Common rail injector for Weichai WD615 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Fuel System' },
-      { id: 'wc-sp-4', partNumber: '612600110696', name: 'Turbocharger', description: 'Turbocharger for Weichai WD615 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
-      { id: 'wc-sp-5', partNumber: '612600060143', name: 'Water Pump', description: 'Coolant water pump for Weichai WD615 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Cooling System' },
-      { id: 'wc-sp-6', partNumber: '61500050029A', name: 'Piston Ring Set', description: 'Piston ring set for Weichai WD615 engine', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
-      { id: 'wc-sp-7', partNumber: '612600040231', name: 'Cylinder Liner', description: 'Cylinder liner for Weichai WD615 engine overhaul', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine' },
+      { id: 'wc-sp-1', partNumber: '612600070341', name: 'Engine Oil Filter', description: 'Engine oil filter for Weichai diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'wc-sp-2', partNumber: '612600081061', name: 'Fuel Filter', description: 'Fuel filter for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'wc-sp-3', partNumber: '612600110336', name: 'Air Filter', description: 'Air cleaner element for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'wc-sp-4', partNumber: '612600140001', name: 'Coolant Filter', description: 'Coolant filter for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Cooling System' },
+      { id: 'wc-sp-5', partNumber: '612600070343', name: 'Fuel Injection Pump', description: 'Fuel injection pump for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Fuel System' },
+      { id: 'wc-sp-6', partNumber: '612600118902', name: 'Turbocharger', description: 'Turbocharger for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine Components' },
     ]
-  }
+  },
 ];
-
-export const getBrandById = (id: string): Brand | undefined => {
-  return brands.find(b => b.id === id);
-};
-
-export const getBrandsByCategory = (category: Category): Brand[] => {
-  return brands.filter(b => b.category === category);
-};
