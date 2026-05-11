@@ -324,12 +324,374 @@ export const brands: Brand[] = [
       }
     ],
     spareParts: [
-      { id: 'st-sp-1', partNumber: 'SD16-11-01000', name: 'Engine Oil Filter', description: 'Engine oil filter for Shantui SD16 bulldozer', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'st-sp-2', partNumber: 'SD16-14-01000', name: 'Air Filter', description: 'Air cleaner element for Shantui SD series bulldozers', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'st-sp-3', partNumber: 'SD22-40-00000', name: 'Final Drive Assembly', description: 'Final drive assembly for Shantui SD22 bulldozer', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
-      { id: 'st-sp-4', partNumber: 'SD16-40-02000', name: 'Track Roller', description: 'Bottom roller for Shantui SD16 bulldozer undercarriage', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
-      { id: 'st-sp-5', partNumber: 'SD16-16-01000', name: 'Cutting Edge', description: 'Blade cutting edge for Shantui SD16 bulldozer', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
-      { id: 'st-sp-6', partNumber: 'SD16-30-00000', name: 'Hydraulic Pump', description: 'Main hydraulic pump for Shantui SD16 bulldozer', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Hydraulics' },
+      {
+        id: 'shantui-sp-1',
+        partNumber: '16Y-40-09000',
+        name: 'Single Flange Track Roller',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'Single Flange Track Roller. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-2',
+        partNumber: '16Y-40-10000',
+        name: 'Double Flange Track Roller',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'Double Flange Track Roller. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-3',
+        partNumber: '16Y-30-00000',
+        name: 'Idler Assembly',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'Idler Assembly. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/HUMEcesbyAE8_0caf4ff6.png'
+      },
+      {
+        id: 'shantui-sp-4',
+        partNumber: '16Y-45-00000',
+        name: 'Carrier Roller Assembly',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'Carrier Roller Assembly. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-5',
+        partNumber: '16Y-54-00000',
+        name: 'Track Shoe Assembly',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'Track Shoe Assembly. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-6',
+        partNumber: '16Y-41-00000',
+        name: 'Track Chain Assembly',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'Track Chain Assembly. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-7',
+        partNumber: '16Y-54-00012/13',
+        name: 'Track Bolt & Nut',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'Track Bolt & Nut. Applicable to: SD16, SD22, DH16, DH24. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-8',
+        partNumber: '22Y-32-00000',
+        name: 'SD22 Idler Assembly',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'SD22 Idler Assembly. Applicable to: SD22, DH24. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/HUMEcesbyAE8_0caf4ff6.png'
+      },
+      {
+        id: 'shantui-sp-9',
+        partNumber: '22Y-40-00000',
+        name: 'SD22 Track Roller Assembly',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'SD22 Track Roller Assembly. Applicable to: SD22, DH24. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-10',
+        partNumber: '22Y-41-00000',
+        name: 'SD22 Track Chain Assembly',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'SD22 Track Chain Assembly. Applicable to: SD22, DH24. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-11',
+        partNumber: '8280-40-00000',
+        name: 'DH46 Mine Type Track Roller',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'DH46 Mine Type Track Roller. Applicable to: DH46. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-12',
+        partNumber: '8280-54-00000',
+        name: 'DH46 Reinforced Track Shoe',
+        category: 'Bulldozer - Chassis & Travel System',
+        description: 'DH46 Reinforced Track Shoe. Applicable to: DH46. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/DHKW4Teze1mN_c5f5c641.webp'
+      },
+      {
+        id: 'shantui-sp-13',
+        partNumber: '16Y-75-23200',
+        name: 'Transmission Filter',
+        category: 'Bulldozer - Transmission & Hydraulic System',
+        description: 'Transmission Filter. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-14',
+        partNumber: '16Y-15-00000',
+        name: 'Transmission Control Valve',
+        category: 'Bulldozer - Transmission & Hydraulic System',
+        description: 'Transmission Control Valve. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/NKbEqrjZ4lwr_4bbb5b51.jpg'
+      },
+      {
+        id: 'shantui-sp-15',
+        partNumber: '23Y-17B-00000',
+        name: 'Steering Clutch Assembly',
+        category: 'Bulldozer - Transmission & Hydraulic System',
+        description: 'Steering Clutch Assembly. Applicable to: SD22, DH24. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/NKbEqrjZ4lwr_4bbb5b51.jpg'
+      },
+      {
+        id: 'shantui-sp-16',
+        partNumber: '22Y-87-00001',
+        name: 'Final Drive Gear',
+        category: 'Bulldozer - Transmission & Hydraulic System',
+        description: 'Final Drive Gear. Applicable to: SD22, DH24. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/NKbEqrjZ4lwr_4bbb5b51.jpg'
+      },
+      {
+        id: 'shantui-sp-17',
+        partNumber: '16Y-16-01000',
+        name: 'Clutch Friction Plate',
+        category: 'Bulldozer - Transmission & Hydraulic System',
+        description: 'Clutch Friction Plate. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/NKbEqrjZ4lwr_4bbb5b51.jpg'
+      },
+      {
+        id: 'shantui-sp-18',
+        partNumber: '16Y-16-01100',
+        name: 'Clutch Steel Plate',
+        category: 'Bulldozer - Transmission & Hydraulic System',
+        description: 'Clutch Steel Plate. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/NKbEqrjZ4lwr_4bbb5b51.jpg'
+      },
+      {
+        id: 'shantui-sp-19',
+        partNumber: '16Y-14-00000',
+        name: 'Transmission Oil Seal Repair Kit',
+        category: 'Bulldozer - Transmission & Hydraulic System',
+        description: 'Transmission Oil Seal Repair Kit. Applicable to: SD16 Full Series. Engine: N/A. Brand: OEM Matching',
+        image: '/manus-storage/5ZWag8W1OaSu_4290c181.webp'
+      },
+      {
+        id: 'shantui-sp-20',
+        partNumber: '16Y-17-02000',
+        name: 'Steering Cylinder Oil Seal',
+        category: 'Bulldozer - Transmission & Hydraulic System',
+        description: 'Steering Cylinder Oil Seal. Applicable to: SD22, DH24. Engine: N/A. Brand: OEM Matching',
+        image: '/manus-storage/VsMFwesujEND_c6d74c9e.jpg'
+      },
+      {
+        id: 'shantui-sp-21',
+        partNumber: '16Y-80-00019',
+        name: 'Blade Corner Edge',
+        category: 'Bulldozer - Structure & Seal System',
+        description: 'Blade Corner Edge. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/HUMEcesbyAE8_0caf4ff6.png'
+      },
+      {
+        id: 'shantui-sp-22',
+        partNumber: '16Y-80-00018',
+        name: 'Main Cutting Blade',
+        category: 'Bulldozer - Structure & Seal System',
+        description: 'Main Cutting Blade. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/HUMEcesbyAE8_0caf4ff6.png'
+      },
+      {
+        id: 'shantui-sp-23',
+        partNumber: '16Y-63-00000',
+        name: 'Tilt Cylinder Oil Seal Repair Kit',
+        category: 'Bulldozer - Structure & Seal System',
+        description: 'Tilt Cylinder Oil Seal Repair Kit. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: OEM Matching',
+        image: '/manus-storage/5ZWag8W1OaSu_4290c181.webp'
+      },
+      {
+        id: 'shantui-sp-24',
+        partNumber: '16Y-62-00000',
+        name: 'Lift Cylinder Oil Seal Repair Kit',
+        category: 'Bulldozer - Structure & Seal System',
+        description: 'Lift Cylinder Oil Seal Repair Kit. Applicable to: SD16, DH16-B3. Engine: N/A. Brand: OEM Matching',
+        image: '/manus-storage/5ZWag8W1OaSu_4290c181.webp'
+      },
+      {
+        id: 'shantui-sp-25',
+        partNumber: '16Y-40-01000',
+        name: 'Travel Motor Oil Seal',
+        category: 'Bulldozer - Structure & Seal System',
+        description: 'Travel Motor Oil Seal. Applicable to: SD16 Full Series. Engine: N/A. Brand: OEM Matching',
+        image: '/manus-storage/VsMFwesujEND_c6d74c9e.jpg'
+      },
+      {
+        id: 'shantui-sp-26',
+        partNumber: '61000070005',
+        name: 'Engine Oil Filter',
+        category: 'Bulldozer - Engine Wear Parts',
+        description: 'Engine Oil Filter. Applicable to: SD16, DH16-B3. Engine: Weichai WD615. Brand: Weichai',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-27',
+        partNumber: '612600080211',
+        name: 'Fuel Pre-filter',
+        category: 'Bulldozer - Engine Wear Parts',
+        description: 'Fuel Pre-filter. Applicable to: Full Bulldozer Series. Engine: Weichai WD615/WP12. Brand: Weichai',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-28',
+        partNumber: '612600080134',
+        name: 'Fuel Fine Filter',
+        category: 'Bulldozer - Engine Wear Parts',
+        description: 'Fuel Fine Filter. Applicable to: Full Bulldozer Series. Engine: Weichai WD615/WP12. Brand: Weichai',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-29',
+        partNumber: '16Y-76-23000',
+        name: 'Air Filter',
+        category: 'Bulldozer - Engine Wear Parts',
+        description: 'Air Filter. Applicable to: SD16, DH16-B3. Engine: Weichai WD615. Brand: Weichai Matching',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-30',
+        partNumber: '612600080353',
+        name: 'Fuel Transfer Pump',
+        category: 'Bulldozer - Engine Wear Parts',
+        description: 'Fuel Transfer Pump. Applicable to: SD16, SD22, DH16, DH24. Engine: Weichai WD615/WP12. Brand: Weichai',
+        image: '/manus-storage/mEykvoZZnbwy_009c3ba9.png'
+      },
+      {
+        id: 'shantui-sp-31',
+        partNumber: '612600060101',
+        name: 'Cooling Water Pump',
+        category: 'Bulldozer - Engine Wear Parts',
+        description: 'Cooling Water Pump. Applicable to: Full Bulldozer Series. Engine: Weichai WD615/WP12. Brand: Weichai',
+        image: '/manus-storage/mEykvoZZnbwy_009c3ba9.png'
+      },
+      {
+        id: 'shantui-sp-32',
+        partNumber: '16Y-76-14000',
+        name: 'Fan Belt',
+        category: 'Bulldozer - Engine Wear Parts',
+        description: 'Fan Belt. Applicable to: SD16, DH16-B3. Engine: Weichai WD615. Brand: Weichai Matching',
+        image: '/manus-storage/HpSAVvKQgR5J_971d5808.jpg'
+      },
+      {
+        id: 'shantui-sp-33',
+        partNumber: '612600060335',
+        name: 'Alternator Belt',
+        category: 'Bulldozer - Engine Wear Parts',
+        description: 'Alternator Belt. Applicable to: Full Bulldozer Series. Engine: Weichai WD615/WP12. Brand: Weichai',
+        image: '/manus-storage/HpSAVvKQgR5J_971d5808.jpg'
+      },
+      {
+        id: 'shantui-sp-34',
+        partNumber: '708-2L-00415',
+        name: 'Main Hydraulic Pump',
+        category: 'Excavator - Hydraulic System',
+        description: 'Main Hydraulic Pump. Applicable to: SE210LC. Engine: N/A. Brand: Kawasaki Matching',
+        image: '/manus-storage/lPZ1c8d0P1KT_347a850d.jpg'
+      },
+      {
+        id: 'shantui-sp-35',
+        partNumber: '14531818',
+        name: 'Pilot Filter',
+        category: 'Excavator - Hydraulic System',
+        description: 'Pilot Filter. Applicable to: SE210LC, SE335LC, SE390LC. Engine: N/A. Brand: OEM Matching',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-36',
+        partNumber: 'J213-03A-020001',
+        name: 'Return Oil Filter',
+        category: 'Excavator - Hydraulic System',
+        description: 'Return Oil Filter. Applicable to: SE210LC. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-37',
+        partNumber: 'J213-03A-010001',
+        name: 'Inlet Oil Filter',
+        category: 'Excavator - Hydraulic System',
+        description: 'Inlet Oil Filter. Applicable to: SE210LC. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-38',
+        partNumber: 'J235-03A-030001',
+        name: 'Pipeline Filter',
+        category: 'Excavator - Hydraulic System',
+        description: 'Pipeline Filter. Applicable to: SE335LC, SE390LC. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/BdhAzqKATMvt_ebec6d67.jpg'
+      },
+      {
+        id: 'shantui-sp-39',
+        partNumber: 'SE210-001',
+        name: 'Travel Motor Repair Kit',
+        category: 'Excavator - Hydraulic System',
+        description: 'Travel Motor Repair Kit. Applicable to: SE210LC. Engine: N/A. Brand: OEM Matching',
+        image: '/manus-storage/5ZWag8W1OaSu_4290c181.webp'
+      },
+      {
+        id: 'shantui-sp-40',
+        partNumber: 'SE210-002',
+        name: 'Swing Motor Repair Kit',
+        category: 'Excavator - Hydraulic System',
+        description: 'Swing Motor Repair Kit. Applicable to: SE210LC. Engine: N/A. Brand: OEM Matching',
+        image: '/manus-storage/5ZWag8W1OaSu_4290c181.webp'
+      },
+      {
+        id: 'shantui-sp-41',
+        partNumber: 'J213-62-00000',
+        name: 'Boom Cylinder Oil Seal Repair Kit',
+        category: 'Excavator - Hydraulic System',
+        description: 'Boom Cylinder Oil Seal Repair Kit. Applicable to: SE210LC. Engine: N/A. Brand: OEM Seal Parts',
+        image: '/manus-storage/7kSIAoqERqKl_963148f6.webp'
+      },
+      {
+        id: 'shantui-sp-42',
+        partNumber: 'J213-63-00000',
+        name: 'Arm Cylinder Oil Seal Repair Kit',
+        category: 'Excavator - Hydraulic System',
+        description: 'Arm Cylinder Oil Seal Repair Kit. Applicable to: SE210LC. Engine: N/A. Brand: OEM Seal Parts',
+        image: '/manus-storage/7kSIAoqERqKl_963148f6.webp'
+      },
+      {
+        id: 'shantui-sp-43',
+        partNumber: 'J213-64-00000',
+        name: 'Bucket Cylinder Oil Seal Repair Kit',
+        category: 'Excavator - Hydraulic System',
+        description: 'Bucket Cylinder Oil Seal Repair Kit. Applicable to: SE210LC. Engine: N/A. Brand: OEM Seal Parts',
+        image: '/manus-storage/fZEQTmhPChmb_605f9d95.webp'
+      },
+      {
+        id: 'shantui-sp-44',
+        partNumber: '205-70-73160',
+        name: 'Standard Bucket Tooth',
+        category: 'Excavator - Bucket Structure',
+        description: 'Standard Bucket Tooth. Applicable to: SE210LC, SE335LC, SE390LC. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/lPZ1c8d0P1KT_347a850d.jpg'
+      },
+      {
+        id: 'shantui-sp-45',
+        partNumber: '205-70-73161',
+        name: 'Tooth Pin',
+        category: 'Excavator - Bucket Structure',
+        description: 'Tooth Pin. Applicable to: SE210LC, SE335LC, SE390LC. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/soEbKPVAVIaR_169a7ad5.jpg'
+      },
+      {
+        id: 'shantui-sp-46',
+        partNumber: '205-70-73220',
+        name: 'Side Cutter',
+        category: 'Excavator - Bucket Structure',
+        description: 'Side Cutter. Applicable to: SE210LC. Engine: N/A. Brand: Original Shantui',
+        image: '/manus-storage/tSkpHmij4HwV_d788949e.jpg'
+      }
     ]
   },
   {
