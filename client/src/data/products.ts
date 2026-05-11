@@ -38,6 +38,14 @@ export interface Brand {
   spareParts: SparePart[];
 }
 
+export function getBrandById(id: string): Brand | undefined {
+  return brands.find(b => b.id === id);
+}
+
+export function getBrandsByCategory(category: Category): Brand[] {
+  return brands.filter(b => b.category === category);
+}
+
 export const brands: Brand[] = [
   // ========== CONSTRUCTION MACHINERY ==========
   {
