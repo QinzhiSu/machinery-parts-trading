@@ -31,22 +31,12 @@ export default function BrandPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>Brand Not Found</h2>
             <Link href="/" className="text-orange-500 hover:underline">← Back to Home</Link>
+          </div>
         </div>
+        <Footer />
       </div>
-
-      {/* Quick Inquiry Dialog */}
-      {selectedProduct && (
-        <QuickInquiryDialog
-          isOpen={inquiryDialogOpen}
-          onClose={() => setInquiryDialogOpen(false)}
-          productInfo={selectedProduct}
-        />
-      )}
-
-      <Footer />
-    </div>
-  );
-}
+    );
+  }
 
   const categories = ['All', ...Array.from(new Set(brand.spareParts.map(p => p.category)))];
   const filteredParts = selectedCategory === 'All'
@@ -57,7 +47,7 @@ export default function BrandPage() {
   const categoryLabel = brand.category === 'construction' ? 'Construction Machinery' : 'Trucks & Engines';
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col" role="main">
       <Navbar />
 
       {/* Brand Hero */}
@@ -402,6 +392,15 @@ export default function BrandPage() {
           </div>
         </div>
       </div>
+
+      {/* Quick Inquiry Dialog */}
+      {selectedProduct && (
+        <QuickInquiryDialog
+          isOpen={inquiryDialogOpen}
+          onClose={() => setInquiryDialogOpen(false)}
+          productInfo={selectedProduct}
+        />
+      )}
 
       <Footer />
     </div>

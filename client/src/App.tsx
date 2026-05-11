@@ -14,8 +14,8 @@ import TrucksPage from "./pages/TrucksPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import FAQPage from "./pages/FAQPage";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />

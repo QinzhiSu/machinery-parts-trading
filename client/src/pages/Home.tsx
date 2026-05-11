@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle, Globe, Package, Wrench, Shield, ChevronRight }
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { brands } from '@/data/products';
+import { useAuth } from '@/_core/hooks/useAuth';
 
 const constructionBrands = brands.filter(b => b.category === 'construction');
 const truckBrands = brands.filter(b => b.category === 'truck');
@@ -30,6 +31,10 @@ const features = [
 ];
 
 export default function Home() {
+  // The useAuth hook provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  const { user, loading, error, isAuthenticated, logout } = useAuth();
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
