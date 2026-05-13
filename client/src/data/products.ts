@@ -1122,52 +1122,92 @@ export const brands: Brand[] = [
     color: '#1565C0',
     machines: [
       {
-        id: 'km-pc200',
-        model: 'PC200',
-        name: 'Hydraulic Excavator',
-        specs: '20 ton | 110 kW | 1.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Komatsu PC200 excavator is a versatile mid-size machine for general construction.'
+        id: 'komatsu-pc50',
+        model: 'PC50MR-2',
+        name: 'Mini Excavator',
+        specs: '5 ton | 32 kW | 0.15 m³ bucket',
+        image: '/manus-storage/saUZZ9MRrA2n_00d7a498.webp',
+        description: 'Komatsu PC50MR-2 ultra-compact mini excavator for tight spaces. Features compact design, fuel efficiency, and excellent precision. Engine: Komatsu 3D68-1 (32 kW / 43 HP). Operating weight: 5 ton. Bucket capacity: 0.15 m³. Max digging depth: 3.2 m. Perfect for landscaping and confined construction work.'
       },
       {
-        id: 'km-pc300',
-        model: 'PC300',
-        name: 'Hydraulic Excavator',
-        specs: '30 ton | 162 kW | 1.6 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The PC300 is a large excavator designed for heavy-duty mining and construction.'
+        id: 'komatsu-pc120',
+        model: 'PC120-8',
+        name: 'Excavator',
+        specs: '12 ton | 74 kW | 0.45 m³ bucket',
+        image: '/manus-storage/TWZmqY59QlJQ_f5543d7f.jpg',
+        description: 'Komatsu PC120-8 compact excavator for confined spaces and utility work. Features fuel-efficient Komatsu engine, smooth control, and excellent maneuverability. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 12 ton. Bucket capacity: 0.45 m³. Max digging depth: 5.0 m. Ideal for small construction sites and landscaping.'
       },
       {
-        id: 'km-pc400',
-        model: 'PC400',
-        name: 'Hydraulic Excavator',
-        specs: '40 ton | 206 kW | 2.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The PC400 is a premium large excavator for major mining operations.'
+        id: 'komatsu-pc200',
+        model: 'PC200-8',
+        name: 'Excavator',
+        specs: '20 ton | 110 kW | 0.9 m³ bucket',
+        image: '/manus-storage/vQsQGavBS5Ft_050c4027.webp',
+        description: 'Komatsu PC200-8 mid-size excavator for general construction and excavation. Features fuel-efficient Komatsu engine, smooth hydraulics, and excellent reliability. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 20 ton. Bucket capacity: 0.9 m³. Max digging depth: 6.0 m. Ideal for construction, mining, and earthmoving operations.'
       },
       {
-        id: 'km-wa320',
-        model: 'WA320',
+        id: 'komatsu-pc300',
+        model: 'PC300-8',
+        name: 'Excavator',
+        specs: '30 ton | 162 kW | 1.4 m³ bucket',
+        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
+        description: 'Komatsu PC300-8 large excavator for heavy-duty mining and construction. Features powerful Komatsu engine, advanced hydraulic system, and high efficiency. Engine: Komatsu SAA6D107E (162 kW / 220 HP). Operating weight: 30 ton. Bucket capacity: 1.4 m³. Max digging depth: 6.8 m. Perfect for large-scale excavation and mining.'
+      },
+      {
+        id: 'komatsu-wa60m',
+        model: 'WA60M-5',
         name: 'Wheel Loader',
-        specs: '20 ton | 138 kW | 3.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The Komatsu WA320 wheel loader offers excellent performance and reliability.'
+        specs: '6 ton | 74 kW | 1.8 m³ bucket',
+        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
+        description: 'Komatsu WA60M-5 compact wheel loader for light-duty material handling. Features fuel-efficient Komatsu engine, smooth hydraulic system, and excellent maneuverability. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 6 ton. Bucket capacity: 1.8 m³. Max loading height: 2.6 m. Perfect for small construction sites.'
       },
       {
-        id: 'km-wa380',
-        model: 'WA380',
+        id: 'komatsu-wa100m',
+        model: 'WA100M-5',
         name: 'Wheel Loader',
-        specs: '24 ton | 186 kW | 3.5 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The WA380 wheel loader provides excellent loading capacity and efficiency.'
+        specs: '10 ton | 110 kW | 3.0 m³ bucket',
+        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
+        description: 'Komatsu WA100M-5 mid-size wheel loader for general material handling. Features powerful Komatsu engine, smooth hydraulic system, and excellent visibility. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 10 ton. Bucket capacity: 3.0 m³. Max loading height: 3.0 m. Excellent for construction and mining operations.'
       },
       {
-        id: 'km-d65px',
-        model: 'D65PX',
+        id: 'komatsu-wa150m',
+        model: 'WA150M-5',
+        name: 'Wheel Loader',
+        specs: '15 ton | 155 kW | 4.5 m³ bucket',
+        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
+        description: 'Komatsu WA150M-5 large wheel loader for heavy-duty material handling. Features powerful Komatsu engine, advanced control system, and excellent stability. Engine: Komatsu SAA6D102E (155 kW / 210 HP). Operating weight: 15 ton. Bucket capacity: 4.5 m³. Max loading height: 3.2 m. Ideal for large-scale construction and mining.'
+      },
+      {
+        id: 'komatsu-d50px',
+        model: 'D50PX-8',
         name: 'Bulldozer',
-        specs: '22 ton | 162 kW | SU blade 5.6 m³',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
-        description: 'The Komatsu D65PX bulldozer delivers excellent performance for dozing and pushing.'
+        specs: '50 ton | 155 kW | 3.2 m blade',
+        image: '/manus-storage/47LgdcnWgNcI_427235b3.jpg',
+        description: 'Komatsu D50PX-8 mid-size bulldozer for general earthmoving and construction. Features powerful Komatsu engine, smooth control, and excellent efficiency. Engine: Komatsu SAA6D102E (155 kW / 210 HP). Operating weight: 50 ton. Blade width: 3.2 m. Blade capacity: 4.0 m³. Perfect for construction and mining operations.'
+      },
+      {
+        id: 'komatsu-d65px',
+        model: 'D65PX-8',
+        name: 'Bulldozer',
+        specs: '65 ton | 206 kW | 3.9 m blade',
+        image: '/manus-storage/ihJ4eBTn430j_157a4508.jpg',
+        description: 'Komatsu D65PX-8 large bulldozer for heavy-duty earthmoving and construction. Features powerful Komatsu engine, advanced hydraulic system, and excellent stability. Engine: Komatsu SAA6D107E (206 kW / 280 HP). Operating weight: 65 ton. Blade width: 3.9 m. Blade capacity: 5.5 m³. Ideal for large-scale construction and mining projects.'
+      },
+      {
+        id: 'komatsu-gd530a',
+        model: 'GD530A-5',
+        name: 'Motor Grader',
+        specs: '16 ton | 110 kW | 3.7 m blade',
+        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
+        description: 'Komatsu GD530A-5 motor grader for road construction and maintenance. Features precise blade control, powerful Komatsu engine, and excellent visibility. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 16 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal for highway and airport construction.'
+      },
+      {
+        id: 'komatsu-wd600',
+        model: 'WD600-3',
+        name: 'Vibratory Roller',
+        specs: '12 ton | 74 kW | 2.1 m width',
+        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
+        description: 'Komatsu WD600-3 vibratory roller for asphalt and soil compaction. Features powerful Komatsu engine, advanced vibration system, and excellent compaction efficiency. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 12 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfect for road construction and maintenance.'
       }
     ],
     spareParts: [
