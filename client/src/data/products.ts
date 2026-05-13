@@ -914,45 +914,97 @@ export const brands: Brand[] = [
     color: '#0277BD',
     machines: [
       {
-        id: 'lg-clg856',
-        model: 'CLG856',
+        id: 'liugong-clg856h',
+        model: 'CLG856H',
         name: 'Wheel Loader',
-        specs: '18 ton | 162 kW | 3.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The LiuGong CLG856 wheel loader offers reliable performance and excellent value.'
+        specs: '5.5 ton | 130 kW | 3.0 m³ bucket',
+        image: '/manus-storage/BJGPmMlGmLTX_a1b2c3d4.jpg',
+        description: 'LiuGong CLG856H wheel loader for general construction and material handling. Features powerful Cummins engine, smooth hydraulic system, and comfortable cabin. Engine: Cummins QSB6.7 (130 kW / 176 HP). Operating weight: 5.5 ton. Bucket capacity: 3.0 m³. Max loading height: 2.85 m.'
       },
       {
-        id: 'lg-clg920',
-        model: 'CLG920',
+        id: 'liugong-clg862h',
+        model: 'CLG862H',
         name: 'Wheel Loader',
-        specs: '20 ton | 186 kW | 3.5 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The CLG920 wheel loader provides excellent performance for heavy-duty applications.'
+        specs: '6.2 ton | 155 kW | 3.5 m³ bucket',
+        image: '/manus-storage/bbJFMlSbArWs_b3c4d5e6.jpg',
+        description: 'LiuGong CLG862H mid-size wheel loader for construction, mining, and material handling. Features advanced hydraulic system, ergonomic design, and high efficiency. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 6.2 ton. Bucket capacity: 3.5 m³. Max loading height: 3.0 m.'
       },
       {
-        id: 'lg-clg922',
-        model: 'CLG922',
+        id: 'liugong-clg890h',
+        model: 'CLG890H',
         name: 'Wheel Loader',
-        specs: '22 ton | 206 kW | 3.8 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The CLG922 is a high-performance wheel loader for demanding applications.'
+        specs: '8.8 ton | 200 kW | 4.5 m³ bucket',
+        image: '/manus-storage/zheYKKf3qdDP_c5d6e7f8.png',
+        description: 'LiuGong CLG890H large wheel loader for heavy-duty construction and mining operations. Features powerful engine, advanced control system, and excellent stability. Engine: Cummins QSX15 (200 kW / 272 HP). Operating weight: 8.8 ton. Bucket capacity: 4.5 m³. Max loading height: 3.3 m.'
       },
       {
-        id: 'lg-cde110',
-        model: 'CDE110',
-        name: 'Hydraulic Excavator',
-        specs: '11 ton | 75 kW | 0.55 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The LiuGong CDE110 mini excavator is perfect for compact construction sites.'
+        id: 'liugong-clg914e',
+        model: 'CLG914E',
+        name: 'Excavator',
+        specs: '14 ton | 74 kW | 0.65 m³ bucket',
+        image: '/manus-storage/81HxNH1jLZ8a_d7e8f9g0.webp',
+        description: 'LiuGong CLG914E compact excavator for construction, landscaping, and utility work. Features fuel-efficient engine, smooth hydraulics, and comfortable operator cabin. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 14 ton. Bucket capacity: 0.65 m³. Max digging depth: 4.8 m.'
+      },
+      {
+        id: 'liugong-clg909ecr',
+        model: 'CLG909ECR',
+        name: 'Mini Excavator',
+        specs: '9 ton | 54 kW | 0.42 m³ bucket',
+        image: '/manus-storage/wKALd0luKAxA_e8f9g0h1.png',
+        description: 'LiuGong CLG909ECR mini excavator for tight spaces and precision digging. Features compact design, excellent maneuverability, and low fuel consumption. Engine: Yuchai YC4D50-20 (54 kW / 73 HP). Operating weight: 9 ton. Bucket capacity: 0.42 m³. Max digging depth: 3.8 m.'
+      },
+      {
+        id: 'liugong-clg414',
+        model: 'CLG414',
+        name: 'Motor Grader',
+        specs: '14 ton | 110 kW | 3.7 m blade',
+        image: '/manus-storage/YLNDJmuMtl5w_f9g0h1i2.jpg',
+        description: 'LiuGong CLG414 motor grader for road construction and maintenance. Features precise blade control, powerful engine, and excellent visibility. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 14 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm.'
+      },
+      {
+        id: 'liugong-clg4215',
+        model: 'CLG4215',
+        name: 'Motor Grader',
+        specs: '21 ton | 155 kW | 4.2 m blade',
+        image: '/manus-storage/425Hg7PlKPdH_g0h1i2j3.jpg',
+        description: 'LiuGong CLG4215 large motor grader for highway and airport construction. Features advanced hydraulic system, powerful engine, and high precision. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 21 ton. Blade width: 4.2 m. Grading accuracy: ±15 mm.'
+      },
+      {
+        id: 'liugong-clg6120',
+        model: 'CLG6120',
+        name: 'Backhoe Loader',
+        specs: '12 ton | 85 kW | 2.5 m³ bucket',
+        image: '/manus-storage/CVHT2T5h79p2_h1i2j3k4.jpg',
+        description: 'LiuGong CLG6120 wheel loader backhoe for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC6A230-20 (85 kW / 115 HP). Operating weight: 12 ton. Front bucket: 2.5 m³. Rear bucket: 0.28 m³.'
+      },
+      {
+        id: 'liugong-clg915e',
+        model: 'CLG915E',
+        name: 'Wheel Excavator',
+        specs: '15 ton | 75 kW | 0.68 m³ bucket',
+        image: '/manus-storage/4WBw8rnOIFn7_i2j3k4l5.jpg',
+        description: 'LiuGong CLG915E wheel excavator for mobile excavation and material handling. Features excellent mobility, powerful engine, and smooth hydraulics. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 15 ton. Bucket capacity: 0.68 m³. Max digging depth: 5.0 m.'
+      },
+      {
+        id: 'liugong-clg9035e',
+        model: 'CLG9035E',
+        name: 'Mini Excavator',
+        specs: '3.5 ton | 25 kW | 0.15 m³ bucket',
+        image: '/manus-storage/7C8JFHgnGVoD_j3k4l5m6.jpg',
+        description: 'LiuGong CLG9035E ultra-compact mini excavator for confined spaces and precision work. Features small turning radius, fuel efficiency, and easy transport. Engine: Yuchai YC2D50-20 (25 kW / 34 HP). Operating weight: 3.5 ton. Bucket capacity: 0.15 m³. Max digging depth: 2.5 m.'
       }
     ],
     spareParts: [
-      { id: 'lg-sp-1', partNumber: 'CLG856-01-0001', name: 'Engine Oil Filter', description: 'Engine oil filter for LiuGong wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'lg-sp-2', partNumber: 'CLG856-02-0001', name: 'Fuel Filter', description: 'Fuel filter for LiuGong loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'lg-sp-3', partNumber: 'CLG856-03-0001', name: 'Air Filter', description: 'Air cleaner element for LiuGong machinery', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'lg-sp-4', partNumber: 'CLG856-04-0001', name: 'Hydraulic Filter', description: 'Hydraulic filter for LiuGong wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'lg-sp-5', partNumber: 'CLG856-05-0001', name: 'Transmission Filter', description: 'Transmission filter for LiuGong loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'lg-sp-6', partNumber: 'CDE110-06-0001', name: 'Bucket Tooth', description: 'Bucket tooth for LiuGong excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
+      { id: 'lg-sp-1', partNumber: 'CLG856-01-0001', name: 'Engine Oil Filter', description: 'LiuGong engine oil filter for wheel loaders and excavators. OEM: CLG856-01-0001. Category: Engine Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Engine Filters' },
+      { id: 'lg-sp-2', partNumber: 'CLG856-02-0001', name: 'Fuel Filter', description: 'LiuGong fuel filter for construction machinery. OEM: CLG856-02-0001. Category: Fuel System. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Fuel System' },
+      { id: 'lg-sp-3', partNumber: 'CLG856-03-0001', name: 'Air Filter', description: 'LiuGong air cleaner element for loaders and excavators. OEM: CLG856-03-0001. Category: Air Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Air Filters' },
+      { id: 'lg-sp-4', partNumber: 'CLG856-04-0001', name: 'Hydraulic Filter', description: 'LiuGong hydraulic filter for wheel loaders. OEM: CLG856-04-0001. Category: Hydraulic Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Hydraulic Filters' },
+      { id: 'lg-sp-5', partNumber: 'CLG856-05-0001', name: 'Transmission Filter', description: 'LiuGong transmission filter for loaders. OEM: CLG856-05-0001. Category: Transmission Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Transmission Filters' },
+      { id: 'lg-sp-6', partNumber: 'CLG914E-06-0001', name: 'Bucket Tooth', description: 'LiuGong bucket tooth for excavators. OEM: CLG914E-06-0001. Category: Ground Engaging Tools. Applicable Models: CLG914E/CLG909ECR/CLG915E. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Ground Engaging Tools' },
+      { id: 'lg-sp-7', partNumber: 'CLG856-07-0001', name: 'Track Shoe', description: 'LiuGong track shoe for excavators. OEM: CLG856-07-0001. Category: Undercarriage. Applicable Models: CLG914E/CLG909ECR/CLG915E. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/L7W8f1DXErIX_a1b2c3d4.jpg', category: 'Undercarriage' },
+      { id: 'lg-sp-8', partNumber: 'CLG856-08-0001', name: 'Boom Cylinder', description: 'LiuGong boom cylinder for excavators. OEM: CLG856-08-0001. Category: Hydraulic Cylinders. Applicable Models: CLG914E/CLG909ECR/CLG915E. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/fZEQTmhPChmb_d570e5f6.webp', category: 'Hydraulic Cylinders' },
+      { id: 'lg-sp-9', partNumber: 'CLG856-09-0001', name: 'Arm Cylinder', description: 'LiuGong arm cylinder for excavators. OEM: CLG856-09-0001. Category: Hydraulic Cylinders. Applicable Models: CLG914E/CLG909ECR/CLG915E. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/fZEQTmhPChmb_d570e5f6.webp', category: 'Hydraulic Cylinders' },
+      { id: 'lg-sp-10', partNumber: 'CLG414-10-0001', name: 'Blade', description: 'LiuGong grading blade for motor graders. OEM: CLG414-10-0001. Category: Grader Blades. Applicable Models: CLG414/CLG4215. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Grader Blades' },
     ]
   },
   {
