@@ -1018,61 +1018,97 @@ export const brands: Brand[] = [
     color: '#F57C00',
     machines: [
       {
-        id: 'sany-sy215c',
-        model: 'SY215C',
-        name: 'Hydraulic Excavator',
-        specs: '21 ton | 122 kW | 1.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The SANY SY215C excavator delivers reliable performance for construction and mining.'
-      },
-      {
-        id: 'sany-sy365c',
-        model: 'SY365C',
-        name: 'Hydraulic Excavator',
-        specs: '36 ton | 206 kW | 1.8 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The SY365C is a large excavator for heavy-duty mining and construction.'
-      },
-      {
-        id: 'sany-sy465h',
-        model: 'SY465H',
-        name: 'Hydraulic Excavator',
-        specs: '46 ton | 250 kW | 2.3 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The SY465H is a premium large excavator for major mining operations.'
-      },
-      {
-        id: 'sany-sy50c',
-        model: 'SY50C',
-        name: 'Mini Excavator',
-        specs: '5 ton | 37 kW | 0.2 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The SANY SY50C mini excavator is perfect for small-scale construction work.'
-      },
-      {
         id: 'sany-sy75c',
         model: 'SY75C',
         name: 'Mini Excavator',
-        specs: '7.5 ton | 54 kW | 0.3 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The SY75C mini excavator offers excellent maneuverability for tight spaces.'
+        specs: '7.5 ton | 54 kW | 0.28 m³ bucket',
+        image: '/manus-storage/sany_sy75c.jpg',
+        description: 'SANY SY75C compact mini excavator for tight spaces and precision work. Features fuel-efficient Yuchai engine, smooth hydraulics, and excellent maneuverability. Engine: Yuchai YC4D50-20 (54 kW / 73 HP). Operating weight: 7.5 ton. Bucket capacity: 0.28 m³. Max digging depth: 3.8 m. Ideal for landscaping, utility work, and confined construction sites.'
       },
       {
         id: 'sany-sy135c',
         model: 'SY135C',
-        name: 'Hydraulic Excavator',
-        specs: '13.5 ton | 97 kW | 0.6 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The SY135C is a compact excavator for versatile construction applications.'
+        name: 'Excavator',
+        specs: '13.5 ton | 74 kW | 0.55 m³ bucket',
+        image: '/manus-storage/sany_sy135c.jpg',
+        description: 'SANY SY135C mid-size excavator for general construction and excavation. Features powerful Yuchai engine, advanced control system, and comfortable cabin. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 13.5 ton. Bucket capacity: 0.55 m³. Max digging depth: 4.8 m. Excellent for earthmoving, foundation digging, and material handling.'
+      },
+      {
+        id: 'sany-sy215c',
+        model: 'SY215C',
+        name: 'Excavator',
+        specs: '21.5 ton | 110 kW | 0.95 m³ bucket',
+        image: '/manus-storage/sany_sy215c.jpg',
+        description: 'SANY SY215C large excavator for heavy-duty construction and mining. Features powerful Cummins engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB6.7 (110 kW / 150 HP). Operating weight: 21.5 ton. Bucket capacity: 0.95 m³. Max digging depth: 6.2 m. Perfect for large-scale excavation and mining operations.'
+      },
+      {
+        id: 'sany-sy365c',
+        model: 'SY365C',
+        name: 'Excavator',
+        specs: '36.5 ton | 186 kW | 1.9 m³ bucket',
+        image: '/manus-storage/sany_sy365c.jpg',
+        description: 'SANY SY365C heavy-duty excavator for large-scale mining and construction. Features powerful Cummins engine, advanced control technology, and excellent stability. Engine: Cummins QSX15 (186 kW / 253 HP). Operating weight: 36.5 ton. Bucket capacity: 1.9 m³. Max digging depth: 7.5 m. Ideal for mining, quarrying, and major infrastructure projects.'
+      },
+      {
+        id: 'sany-sy50c',
+        model: 'SY50C',
+        name: 'Wheel Loader',
+        specs: '5 ton | 74 kW | 2.0 m³ bucket',
+        image: '/manus-storage/sany_sy50c.jpg',
+        description: 'SANY SY50C compact wheel loader for light-duty material handling and construction. Features fuel-efficient engine, smooth hydraulic system, and excellent visibility. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 5 ton. Bucket capacity: 2.0 m³. Max loading height: 2.8 m. Perfect for small construction sites and landscaping.'
+      },
+      {
+        id: 'sany-sy65c',
+        model: 'SY65C',
+        name: 'Wheel Loader',
+        specs: '6.5 ton | 110 kW | 2.8 m³ bucket',
+        image: '/manus-storage/sany_sy65c.jpg',
+        description: 'SANY SY65C mid-size wheel loader for construction and material handling. Features advanced hydraulic system, ergonomic design, and high efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 6.5 ton. Bucket capacity: 2.8 m³. Max loading height: 3.0 m. Excellent for general construction and mining operations.'
+      },
+      {
+        id: 'sany-sy90c',
+        model: 'SY90C',
+        name: 'Wheel Loader',
+        specs: '9 ton | 155 kW | 3.8 m³ bucket',
+        image: '/manus-storage/sany_sy90c.jpg',
+        description: 'SANY SY90C large wheel loader for heavy-duty construction and mining. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 9 ton. Bucket capacity: 3.8 m³. Max loading height: 3.3 m. Ideal for large-scale construction and mining projects.'
+      },
+      {
+        id: 'sany-sy16c',
+        model: 'SY16C',
+        name: 'Backhoe Loader',
+        specs: '8 ton | 75 kW | 2.0 m³ bucket',
+        image: '/manus-storage/sany_sy16c.jpg',
+        description: 'SANY SY16C backhoe loader for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 8 ton. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect for utility work and small construction projects.'
+      },
+      {
+        id: 'sany-sy220h',
+        model: 'SY220H',
+        name: 'Motor Grader',
+        specs: '22 ton | 155 kW | 3.7 m blade',
+        image: '/manus-storage/sany_sy220h.jpg',
+        description: 'SANY SY220H motor grader for road construction and maintenance. Features precise blade control, powerful Cummins engine, and excellent visibility. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 22 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal for highway and airport construction.'
+      },
+      {
+        id: 'sany-sy320c',
+        model: 'SY320C',
+        name: 'Roller Compactor',
+        specs: '20 ton | 110 kW | 2.1 m width',
+        image: '/manus-storage/sany_sy320c.jpg',
+        description: 'SANY SY320C vibratory roller compactor for asphalt and soil compaction. Features powerful Cummins engine, advanced vibration system, and excellent compaction efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 20 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfect for road construction and maintenance.'
       }
     ],
     spareParts: [
-      { id: 'sany-sp-1', partNumber: 'SY215C-01-0001', name: 'Engine Oil Filter', description: 'Engine oil filter for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sany-sp-2', partNumber: 'SY215C-02-0001', name: 'Fuel Filter', description: 'Fuel filter for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sany-sp-3', partNumber: 'SY215C-03-0001', name: 'Air Filter', description: 'Air cleaner element for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sany-sp-4', partNumber: 'SY215C-04-0001', name: 'Hydraulic Filter', description: 'Hydraulic filter for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sany-sp-5', partNumber: 'SY215C-05-0001', name: 'Track Link', description: 'Track link assembly for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
-      { id: 'sany-sp-6', partNumber: 'SY215C-06-0001', name: 'Bucket Tooth', description: 'Bucket tooth for SANY excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
+      { id: 'sany-sp-1', partNumber: 'SY215C-01-0001', name: 'Engine Oil Filter', description: 'SANY engine oil filter for excavators and loaders. OEM: SY215C-01-0001. Category: Engine Filters. Applicable Models: SY135C/SY215C/SY365C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Engine Filters' },
+      { id: 'sany-sp-2', partNumber: 'SY215C-02-0001', name: 'Fuel Filter', description: 'SANY fuel filter for construction machinery. OEM: SY215C-02-0001. Category: Fuel System. Applicable Models: SY135C/SY215C/SY365C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Fuel System' },
+      { id: 'sany-sp-3', partNumber: 'SY215C-03-0001', name: 'Air Filter', description: 'SANY air cleaner element for excavators. OEM: SY215C-03-0001. Category: Air Filters. Applicable Models: SY135C/SY215C/SY365C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Air Filters' },
+      { id: 'sany-sp-4', partNumber: 'SY215C-04-0001', name: 'Hydraulic Filter', description: 'SANY hydraulic filter for excavators. OEM: SY215C-04-0001. Category: Hydraulic Filters. Applicable Models: SY135C/SY215C/SY365C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Hydraulic Filters' },
+      { id: 'sany-sp-5', partNumber: 'SY215C-05-0001', name: 'Track Link', description: 'SANY track link assembly for excavators. OEM: SY215C-05-0001. Category: Undercarriage. Applicable Models: SY135C/SY215C/SY365C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/L7W8f1DXErIX_a1b2c3d4.jpg', category: 'Undercarriage' },
+      { id: 'sany-sp-6', partNumber: 'SY215C-06-0001', name: 'Bucket Tooth', description: 'SANY bucket tooth for excavators. OEM: SY215C-06-0001. Category: Ground Engaging Tools. Applicable Models: SY135C/SY215C/SY365C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Ground Engaging Tools' },
+      { id: 'sany-sp-7', partNumber: 'SY215C-07-0001', name: 'Boom Cylinder', description: 'SANY boom cylinder for excavators. OEM: SY215C-07-0001. Category: Hydraulic Cylinders. Applicable Models: SY135C/SY215C/SY365C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/fZEQTmhPChmb_d570e5f6.webp', category: 'Hydraulic Cylinders' },
+      { id: 'sany-sp-8', partNumber: 'SY215C-08-0001', name: 'Arm Cylinder', description: 'SANY arm cylinder for excavators. OEM: SY215C-08-0001. Category: Hydraulic Cylinders. Applicable Models: SY135C/SY215C/SY365C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/fZEQTmhPChmb_d570e5f6.webp', category: 'Hydraulic Cylinders' },
+      { id: 'sany-sp-9', partNumber: 'SY50C-09-0001', name: 'Transmission Filter', description: 'SANY transmission filter for wheel loaders. OEM: SY50C-09-0001. Category: Transmission Filters. Applicable Models: SY50C/SY65C/SY90C. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Transmission Filters' },
+      { id: 'sany-sp-10', partNumber: 'SY220H-10-0001', name: 'Grading Blade', description: 'SANY grading blade for motor graders. OEM: SY220H-10-0001. Category: Grader Blades. Applicable Models: SY220H. High-quality genuine SANY spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Grader Blades' },
     ]
   },
   {
