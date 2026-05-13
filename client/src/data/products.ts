@@ -705,52 +705,132 @@ export const brands: Brand[] = [
     color: '#D32F2F',
     machines: [
       {
-        id: 'xcmg-xe215c',
-        model: 'XE215C',
-        name: 'Hydraulic Excavator',
+        id: 'xcmg-xe155ucr',
+        model: 'XE155UCR',
+        name: 'Compact Hydraulic Excavator',
+        specs: '15.5 ton | 80 kW | 0.65 m³ bucket',
+        image: '/manus-storage/XE155UCR_527b8a21.jpg',
+        description: 'XCMG XE155UCR compact hydraulic excavator designed for urban construction and tight spaces. Features advanced hydraulic system, fuel-efficient Cummins engine, and excellent maneuverability. Engine: Cummins 4BTA3.9-C130 (80 kW / 109 HP). Max digging depth: 6.2 m. Max reach height: 9.8 m.'
+      },
+      {
+        id: 'xcmg-xe215da',
+        model: 'XE215DA',
+        name: 'Mid-Size Hydraulic Excavator',
         specs: '21.5 ton | 122 kW | 1.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The XCMG XE215C excavator delivers excellent performance and reliability for construction applications.'
+        image: '/manus-storage/XE215DA_297f0d64.jpeg',
+        description: 'XCMG XE215DA mid-size hydraulic excavator for general construction and earthmoving. Features fuel-efficient Cummins engine, smooth hydraulic operation, and durable undercarriage. Engine: Cummins 6BTA5.9-C180 (122 kW / 165 HP). Max digging depth: 6.8 m. Max reach height: 10.4 m.'
       },
       {
-        id: 'xcmg-xe370ca',
-        model: 'XE370CA',
-        name: 'Hydraulic Excavator',
-        specs: '37 ton | 206 kW | 1.8 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The XE370CA is a large excavator designed for heavy-duty mining and construction projects.'
+        id: 'xcmg-xe215ev',
+        model: 'XE215EV',
+        name: 'Electric Hybrid Excavator',
+        specs: '21.5 ton | 122 kW | 1.0 m³ bucket',
+        image: '/manus-storage/XE215EV_32741e1c.png',
+        description: 'XCMG XE215EV eco-friendly hybrid excavator with electric-hydraulic system. Reduces fuel consumption by 30%, lower emissions, ideal for urban and environmental-sensitive projects. Hybrid Electric System (122 kW equivalent). Max digging depth: 6.8 m. Max reach height: 10.4 m.'
       },
       {
-        id: 'xcmg-lw500fn',
-        model: 'LW500FN',
-        name: 'Wheel Loader',
-        specs: '17 ton | 162 kW | 3.0 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'The XCMG LW500FN wheel loader offers high productivity and fuel efficiency.'
+        id: 'xcmg-xe520e',
+        model: 'XE520E',
+        name: 'Large Hydraulic Excavator',
+        specs: '52 ton | 320 kW | 2.8 m³ bucket',
+        image: '/manus-storage/XE520E_4e72cccf.jpeg',
+        description: 'XCMG XE520E large-scale hydraulic excavator for mining and heavy construction. Features powerful Cummins engine, advanced load-sensing hydraulics, and reinforced undercarriage. Engine: Cummins QSX15-C600 (320 kW / 435 HP). Max digging depth: 8.5 m. Max reach height: 12.8 m.'
       },
       {
-        id: 'xcmg-gr215',
-        model: 'GR215',
+        id: 'xcmg-xe4000e',
+        model: 'XE4000E',
+        name: 'Ultra-Large Mining Excavator',
+        specs: '400 ton | 2100 kW | 21 m³ bucket',
+        image: '/manus-storage/XE4000E_a401060d.bmp',
+        description: 'XCMG XE4000E ultra-large mining excavator for open-pit mining operations. Features massive bucket capacity, powerful hydraulic system, and advanced automation. Engine: Cummins QSK78-C3000 (2100 kW / 2857 HP). Max digging depth: 12.5 m. Max reach height: 18.5 m.'
+      },
+      {
+        id: 'xcmg-xc9260',
+        model: 'XC9260',
+        name: 'Mid-Size Wheel Loader',
+        specs: '26 ton | 180 kW | 3.5 m³ bucket',
+        image: '/manus-storage/XC9260_f6fa5f6b.png',
+        description: 'XCMG XC9260 mid-size wheel loader for construction and material handling. Features powerful Weichai engine, smooth transmission, and excellent load capacity. Engine: Weichai WP12.430E50 (180 kW / 245 HP). Max load capacity: 18 ton. Max dump height: 3.2 m.'
+      },
+      {
+        id: 'xcmg-xc968',
+        model: 'XC968',
+        name: 'Large Wheel Loader',
+        specs: '68 ton | 410 kW | 6.0 m³ bucket',
+        image: '/manus-storage/XC968_330a600d.png',
+        description: 'XCMG XC968 large wheel loader for heavy-duty loading and transport. Features advanced load-sensing hydraulics, comfortable cab, and high reliability. Engine: Cummins QSX15-C600 (410 kW / 559 HP). Max load capacity: 42 ton. Max dump height: 3.8 m.'
+      },
+      {
+        id: 'xcmg-xc968-ev',
+        model: 'XC968-EV',
+        name: 'Electric Wheel Loader',
+        specs: '68 ton | 410 kW | 6.0 m³ bucket',
+        image: '/manus-storage/XC968-EV_fe292a3f.png',
+        description: 'XCMG XC968-EV electric wheel loader with zero emissions. Ideal for underground mines, tunnels, and enclosed spaces. Reduces operating costs significantly. Electric Motor System (410 kW equivalent). Max load capacity: 42 ton. Max dump height: 3.8 m.'
+      },
+      {
+        id: 'xcmg-gd220j',
+        model: 'GD220J',
         name: 'Motor Grader',
-        specs: '15 ton | 138 kW | 4.27 m blade',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The XCMG GR215 motor grader provides superior grading performance and precision.'
+        specs: '22 ton | 155 kW | 3.7 m blade',
+        image: '/manus-storage/GD220J_d58ae730.jpeg',
+        description: 'XCMG GD220J motor grader for road construction and maintenance. Features precision blade control, comfortable operator cabin, and excellent grading accuracy. Engine: Weichai WD10.336E50 (155 kW / 211 HP). Max grading width: 3.5 m.'
       },
       {
-        id: 'xcmg-xd135',
-        model: 'XD135',
-        name: 'Vibratory Compactor',
-        specs: '13 ton | 112 kW | 2.1 m drum',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'The XCMG XD135 soil compactor delivers excellent compaction performance.'
+        id: 'xcmg-dl560',
+        model: 'DL560',
+        name: 'Hydraulic Bulldozer',
+        specs: '56 ton | 410 kW | 5.2 m blade',
+        image: '/manus-storage/DL560_58315436.png',
+        description: 'XCMG DL560 large hydraulic bulldozer for heavy earthmoving and site preparation. Features powerful engine, advanced hydraulic system, and reinforced undercarriage. Engine: Cummins QSX15-C600 (410 kW / 559 HP). Blade capacity: 5.2 m³. Max blade pressure: 280 bar.'
       },
       {
-        id: 'xcmg-xc6',
-        model: 'XC6',
-        name: 'Hydraulic Excavator',
-        specs: '6 ton | 45 kW | 0.25 m³ bucket',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The XCMG XC6 mini excavator is ideal for tight spaces and small-scale projects.'
+        id: 'xcmg-xct45u',
+        model: 'XCT45U',
+        name: 'Mobile Truck Crane',
+        specs: '45 ton | 290 kW | 42 m boom',
+        image: '/manus-storage/XCT45U_6a596d70.webp',
+        description: 'XCMG XCT45U mobile truck crane for lifting and material handling. Features advanced boom control, high stability, and excellent load capacity. Engine: Weichai WP12.430E50 (290 kW / 395 HP). Max lift capacity: 45 ton. Max boom length: 42 m. Max working height: 48 m.'
+      },
+      {
+        id: 'xcmg-xlc17000',
+        model: 'XLC17000',
+        name: 'Large Crawler Crane',
+        specs: '170 ton | 410 kW | 100 m boom',
+        image: '/manus-storage/XLC17000_f4051095.jpeg',
+        description: 'XCMG XLC17000 large crawler crane for heavy lifting in mining and construction. Features powerful hydraulic system, excellent stability, and advanced load monitoring. Engine: Cummins QSX15-C600 (410 kW / 559 HP). Max lift capacity: 170 ton. Max boom length: 100 m. Max working height: 120 m.'
+      },
+      {
+        id: 'xcmg-xc978e',
+        model: 'XC978E',
+        name: 'Vibratory Road Roller',
+        specs: '9.8 ton | 75 kW | 2.1 m drum',
+        image: '/manus-storage/XC978E_c520434e.webp',
+        description: 'XCMG XC978E vibratory road roller for asphalt and soil compaction. Features high compaction efficiency, smooth operation, and fuel efficiency. Engine: Weichai WD615.47 (75 kW / 102 HP). Drum width: 2.1 m. Compaction depth: 0.3 m.'
+      },
+      {
+        id: 'xcmg-xde120',
+        model: 'XDE120',
+        name: 'Rotary Drilling Rig',
+        specs: '120 ton | 200 kW | 1500 m depth',
+        image: '/manus-storage/XDE120_381e634c.jpeg',
+        description: 'XCMG XDE120 rotary drilling rig for geotechnical and water well drilling. Features advanced drilling system, high precision, and excellent reliability. Engine: Cummins 6BTA5.9-C180 (200 kW / 272 HP). Max drilling depth: 1500 m. Drill pipe diameter: 127 mm.'
+      },
+      {
+        id: 'xcmg-xde260',
+        model: 'XDE260',
+        name: 'Large Rotary Drilling Rig',
+        specs: '260 ton | 350 kW | 3000 m depth',
+        image: '/manus-storage/xde260_0cad1859.png',
+        description: 'XCMG XDE260 large rotary drilling rig for deep geotechnical drilling. Features powerful drilling system, advanced automation, and high efficiency. Engine: Cummins QSX15-C600 (350 kW / 476 HP). Max drilling depth: 3000 m. Drill pipe diameter: 152 mm.'
+      },
+      {
+        id: 'xcmg-xca120g7-1h',
+        model: 'XCA120G7-1H',
+        name: 'Truck-Mounted Crane',
+        specs: '120 ton | 350 kW | 60 m boom',
+        image: '/manus-storage/XCA120G7-1H_b247aa65.png',
+        description: 'XCMG XCA120G7-1H truck-mounted crane for versatile lifting operations. Features compact design, high mobility, and excellent load capacity. Engine: Cummins QSX15-C600 (350 kW / 476 HP). Max lift capacity: 120 ton. Max boom length: 60 m. Max working height: 68 m.'
       }
     ],
     spareParts: [
