@@ -1421,7 +1421,7 @@ export const brands: Brand[] = [
     id: 'isuzu',
     name: 'Isuzu',
     fullName: 'Isuzu Motors Limited',
-    category: 'truck',
+    category: 'engine',
     country: 'Japan',
     description: 'Japanese commercial vehicle manufacturer known for reliable trucks and diesel engines.',
     logo: 'ISUZU',
