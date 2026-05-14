@@ -1018,84 +1018,196 @@ export const brands: Brand[] = [
     color: '#F57C00',
     machines: [
       {
-        id: 'sany-sy75c',
-        model: 'SY75C',
+        id: 'sany-sy35u',
+        model: 'SY35U',
         name: 'Mini Excavator',
-        specs: '7.5 ton | 54 kW | 0.28 m³ bucket',
-        image: '/manus-storage/sany_sy75c.jpg',
-        description: 'SANY SY75C compact mini excavator for tight spaces and precision work. Features fuel-efficient Yuchai engine, smooth hydraulics, and excellent maneuverability. Engine: Yuchai YC4D50-20 (54 kW / 73 HP). Operating weight: 7.5 ton. Bucket capacity: 0.28 m³. Max digging depth: 3.8 m. Ideal for landscaping, utility work, and confined construction sites.'
+        specs: '3.5 ton | 25 kW | 0.12 m³ bucket',
+        image: '/manus-storage/SY35U_eaed7302.webp',
+        description: 'SANY SY35U ultra-compact mini excavator for landscaping and confined spaces. Features compact design, fuel efficiency, and excellent precision. Engine: Yuchai YC3D60-20 (25 kW / 34 HP). Operating weight: 3.5 ton. Bucket capacity: 0.12 m³. Max digging depth: 2.8 m. Perfect for small-scale construction and landscaping work.'
       },
       {
-        id: 'sany-sy135c',
-        model: 'SY135C',
+        id: 'sany-sy135f',
+        model: 'SY135F',
+        name: 'Mini Excavator',
+        specs: '13.5 ton | 74 kW | 0.5 m³ bucket',
+        image: '/manus-storage/SY135F_9bd51599.webp',
+        description: 'SANY SY135F compact excavator for utility work and small construction. Features fuel-efficient engine, smooth control, and excellent maneuverability. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 13.5 ton. Bucket capacity: 0.5 m³. Max digging depth: 4.5 m. Ideal for landscaping and small construction projects.'
+      },
+      {
+        id: 'sany-sy155h',
+        model: 'SY155H',
         name: 'Excavator',
-        specs: '13.5 ton | 74 kW | 0.55 m³ bucket',
-        image: '/manus-storage/sany_sy135c.jpg',
-        description: 'SANY SY135C mid-size excavator for general construction and excavation. Features powerful Yuchai engine, advanced control system, and comfortable cabin. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 13.5 ton. Bucket capacity: 0.55 m³. Max digging depth: 4.8 m. Excellent for earthmoving, foundation digging, and material handling.'
+        specs: '15 ton | 74 kW | 0.65 m³ bucket',
+        image: '/manus-storage/SY155H_862bcf37.webp',
+        description: 'SANY SY155H mid-size excavator for general construction and excavation. Features fuel-efficient engine, smooth hydraulics, and excellent reliability. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 15 ton. Bucket capacity: 0.65 m³. Max digging depth: 5.2 m. Ideal for construction, mining, and earthmoving operations.'
       },
       {
         id: 'sany-sy215c',
         model: 'SY215C',
         name: 'Excavator',
-        specs: '21.5 ton | 110 kW | 0.95 m³ bucket',
-        image: '/manus-storage/sany_sy215c.jpg',
-        description: 'SANY SY215C large excavator for heavy-duty construction and mining. Features powerful Cummins engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB6.7 (110 kW / 150 HP). Operating weight: 21.5 ton. Bucket capacity: 0.95 m³. Max digging depth: 6.2 m. Perfect for large-scale excavation and mining operations.'
+        specs: '21.5 ton | 110 kW | 0.9 m³ bucket',
+        image: '/manus-storage/SY215C_9f686dd4.webp',
+        description: 'SANY SY215C popular mid-size excavator for construction and mining. Features powerful engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 21.5 ton. Bucket capacity: 0.9 m³. Max digging depth: 6.0 m. Perfect for general construction and mining.'
       },
       {
-        id: 'sany-sy365c',
-        model: 'SY365C',
+        id: 'sany-sy335c',
+        model: 'SY335C',
         name: 'Excavator',
-        specs: '36.5 ton | 186 kW | 1.9 m³ bucket',
-        image: '/manus-storage/sany_sy365c.jpg',
-        description: 'SANY SY365C heavy-duty excavator for large-scale mining and construction. Features powerful Cummins engine, advanced control technology, and excellent stability. Engine: Cummins QSX15 (186 kW / 253 HP). Operating weight: 36.5 ton. Bucket capacity: 1.9 m³. Max digging depth: 7.5 m. Ideal for mining, quarrying, and major infrastructure projects.'
+        specs: '33.5 ton | 162 kW | 1.4 m³ bucket',
+        image: '/manus-storage/SY335C_400ae492.webp',
+        description: 'SANY SY335C large excavator for heavy-duty mining and construction. Features powerful Cummins engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB6.7 (162 kW / 220 HP). Operating weight: 33.5 ton. Bucket capacity: 1.4 m³. Max digging depth: 6.8 m. Excellent for large-scale excavation and mining.'
       },
       {
-        id: 'sany-sy50c',
-        model: 'SY50C',
-        name: 'Wheel Loader',
-        specs: '5 ton | 74 kW | 2.0 m³ bucket',
-        image: '/manus-storage/sany_sy50c.jpg',
-        description: 'SANY SY50C compact wheel loader for light-duty material handling and construction. Features fuel-efficient engine, smooth hydraulic system, and excellent visibility. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 5 ton. Bucket capacity: 2.0 m³. Max loading height: 2.8 m. Perfect for small construction sites and landscaping.'
+        id: 'sany-sy365h',
+        model: 'SY365H',
+        name: 'Excavator',
+        specs: '36.5 ton | 206 kW | 1.7 m³ bucket',
+        image: '/manus-storage/SY365H_82e03c4d.webp',
+        description: 'SANY SY365H large excavator for major mining and construction projects. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSB6.7 (206 kW / 280 HP). Operating weight: 36.5 ton. Bucket capacity: 1.7 m³. Max digging depth: 7.0 m. Ideal for large-scale mining and construction.'
       },
       {
-        id: 'sany-sy65c',
-        model: 'SY65C',
-        name: 'Wheel Loader',
-        specs: '6.5 ton | 110 kW | 2.8 m³ bucket',
-        image: '/manus-storage/sany_sy65c.jpg',
-        description: 'SANY SY65C mid-size wheel loader for construction and material handling. Features advanced hydraulic system, ergonomic design, and high efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 6.5 ton. Bucket capacity: 2.8 m³. Max loading height: 3.0 m. Excellent for general construction and mining operations.'
+        id: 'sany-sy550h',
+        model: 'SY550H',
+        name: 'Excavator',
+        specs: '55 ton | 280 kW | 2.4 m³ bucket',
+        image: '/manus-storage/SY550H_072b043d.webp',
+        description: 'SANY SY550H super-large excavator for major mining operations. Features powerful Cummins engine, advanced hydraulic system, and excellent efficiency. Engine: Cummins QSM11 (280 kW / 380 HP). Operating weight: 55 ton. Bucket capacity: 2.4 m³. Max digging depth: 8.0 m. Perfect for large-scale mining projects.'
       },
       {
-        id: 'sany-sy90c',
-        model: 'SY90C',
+        id: 'sany-sy650h',
+        model: 'SY650H',
+        name: 'Excavator',
+        specs: '65 ton | 340 kW | 3.0 m³ bucket',
+        image: '/manus-storage/SY650H_86480fd9.webp',
+        description: 'SANY SY650H ultra-large excavator for major mining operations. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSM11 (340 kW / 460 HP). Operating weight: 65 ton. Bucket capacity: 3.0 m³. Max digging depth: 8.5 m. Ideal for large-scale mining and earthmoving.'
+      },
+      {
+        id: 'sany-sy956h',
+        model: 'SY956H',
+        name: 'Excavator',
+        specs: '95 ton | 500 kW | 4.5 m³ bucket',
+        image: '/manus-storage/SY956H_f166e7ef.png',
+        description: 'SANY SY956H mega excavator for major mining and quarrying operations. Features powerful Cummins engine, advanced hydraulic system, and exceptional efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Operating weight: 95 ton. Bucket capacity: 4.5 m³. Max digging depth: 9.5 m. Perfect for large-scale mining and quarrying.'
+      },
+      {
+        id: 'sany-sy55c',
+        model: 'SY55C',
         name: 'Wheel Loader',
-        specs: '9 ton | 155 kW | 3.8 m³ bucket',
-        image: '/manus-storage/sany_sy90c.jpg',
-        description: 'SANY SY90C large wheel loader for heavy-duty construction and mining. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 9 ton. Bucket capacity: 3.8 m³. Max loading height: 3.3 m. Ideal for large-scale construction and mining projects.'
+        specs: '5.5 ton | 74 kW | 2.0 m³ bucket',
+        image: '/manus-storage/SY55C_b53e35a5.webp',
+        description: 'SANY SY55C compact wheel loader for light-duty material handling. Features fuel-efficient engine, smooth hydraulic system, and excellent visibility. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 5.5 ton. Bucket capacity: 2.0 m³. Max loading height: 2.8 m. Perfect for small construction sites.'
+      },
+      {
+        id: 'sany-sy60c',
+        model: 'SY60C',
+        name: 'Wheel Loader',
+        specs: '6 ton | 110 kW | 2.5 m³ bucket',
+        image: '/manus-storage/SY60C_e56369ef.webp',
+        description: 'SANY SY60C mid-size wheel loader for general material handling. Features powerful engine, smooth hydraulic system, and excellent visibility. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 6 ton. Bucket capacity: 2.5 m³. Max loading height: 3.0 m. Excellent for construction and mining operations.'
+      },
+      {
+        id: 'sany-sy75c',
+        model: 'SY75C',
+        name: 'Wheel Loader',
+        specs: '7.5 ton | 155 kW | 3.0 m³ bucket',
+        image: '/manus-storage/SY75C_cf0e2362.webp',
+        description: 'SANY SY75C large wheel loader for heavy-duty material handling. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 7.5 ton. Bucket capacity: 3.0 m³. Max loading height: 3.2 m. Ideal for large-scale construction and mining.'
+      },
+      {
+        id: 'sany-xc968',
+        model: 'XC968',
+        name: 'Wheel Loader',
+        specs: '96 ton | 500 kW | 6.0 m³ bucket',
+        image: '/manus-storage/XC968_513b412e.png',
+        description: 'SANY XC968 ultra-large wheel loader for major mining operations. Features powerful Cummins engine, advanced hydraulic system, and exceptional efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Operating weight: 96 ton. Bucket capacity: 6.0 m³. Max loading height: 3.8 m. Perfect for large-scale mining and quarrying.'
       },
       {
         id: 'sany-sy16c',
         model: 'SY16C',
         name: 'Backhoe Loader',
         specs: '8 ton | 75 kW | 2.0 m³ bucket',
-        image: '/manus-storage/sany_sy16c.jpg',
-        description: 'SANY SY16C backhoe loader for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 8 ton. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect for utility work and small construction projects.'
+        image: '/manus-storage/SY16C_ec705e0e.webp',
+        description: 'SANY SY16C backhoe loader for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 8 ton. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect for utility work and small construction.'
       },
       {
-        id: 'sany-sy220h',
-        model: 'SY220H',
+        id: 'sany-sy18c',
+        model: 'SY18C',
+        name: 'Backhoe Loader',
+        specs: '9 ton | 110 kW | 2.5 m³ bucket',
+        image: '/manus-storage/SY18C_048ea560.webp',
+        description: 'SANY SY18C backhoe loader for general construction and excavation. Features combined loading and digging capability, advanced hydraulic system, and excellent performance. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 9 ton. Front bucket: 2.5 m³. Rear bucket: 0.3 m³. Excellent for construction and utility work.'
+      },
+      {
+        id: 'sany-gd220j',
+        model: 'GD220J',
         name: 'Motor Grader',
         specs: '22 ton | 155 kW | 3.7 m blade',
-        image: '/manus-storage/sany_sy220h.jpg',
-        description: 'SANY SY220H motor grader for road construction and maintenance. Features precise blade control, powerful Cummins engine, and excellent visibility. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 22 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal for highway and airport construction.'
+        image: '/manus-storage/GD220J_5230ed14.jpeg',
+        description: 'SANY GD220J motor grader for road construction and maintenance. Features precise blade control, powerful Cummins engine, and excellent visibility. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 22 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal for highway and airport construction.'
       },
       {
-        id: 'sany-sy320c',
-        model: 'SY320C',
-        name: 'Roller Compactor',
-        specs: '20 ton | 110 kW | 2.1 m width',
-        image: '/manus-storage/sany_sy320c.jpg',
-        description: 'SANY SY320C vibratory roller compactor for asphalt and soil compaction. Features powerful Cummins engine, advanced vibration system, and excellent compaction efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 20 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfect for road construction and maintenance.'
+        id: 'sany-xde120',
+        model: 'XDE120',
+        name: 'Motor Grader',
+        specs: '12 ton | 110 kW | 3.2 m blade',
+        image: '/manus-storage/XDE120_7253de2b.jpeg',
+        description: 'SANY XDE120 compact motor grader for road maintenance and light construction. Features precise blade control, fuel-efficient engine, and excellent maneuverability. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 12 ton. Blade width: 3.2 m. Grading accuracy: ±15 mm. Perfect for road maintenance and small projects.'
+      },
+      {
+        id: 'sany-dl560',
+        model: 'DL560',
+        name: 'Bulldozer',
+        specs: '56 ton | 280 kW | 4.0 m blade',
+        image: '/manus-storage/DL560_fa1499e2.png',
+        description: 'SANY DL560 large bulldozer for heavy-duty earthmoving and construction. Features powerful Cummins engine, advanced hydraulic system, and excellent stability. Engine: Cummins QSM11 (280 kW / 380 HP). Operating weight: 56 ton. Blade width: 4.0 m. Blade capacity: 6.5 m³. Ideal for large-scale construction and mining projects.'
+      },
+      {
+        id: 'sany-ssr160ac',
+        model: 'SSR160AC-8',
+        name: 'Vibratory Roller',
+        specs: '16 ton | 110 kW | 2.1 m width',
+        image: '/manus-storage/SSR160AC-8_0a41f2ff.webp',
+        description: 'SANY SSR160AC-8 vibratory roller for asphalt and soil compaction. Features powerful Cummins engine, advanced vibration system, and excellent compaction efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 16 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfect for road construction and maintenance.'
+      },
+      {
+        id: 'sany-ssr200c',
+        model: 'SSR200C-8H',
+        name: 'Vibratory Roller',
+        specs: '20 ton | 155 kW | 2.1 m width',
+        image: '/manus-storage/SSR200C-8H_d8390bbc.webp',
+        description: 'SANY SSR200C-8H vibratory roller for heavy-duty asphalt compaction. Features powerful Cummins engine, advanced vibration system, and excellent efficiency. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 20 ton. Roller width: 2.1 m. Compaction depth: 0.4 m. Ideal for highway and airport construction.'
+      },
+      {
+        id: 'sany-stc250t5',
+        model: 'STC250T5',
+        name: 'Truck Crane',
+        specs: '250 ton | 500 kW | 60 m boom',
+        image: '/manus-storage/STC250T5_0dcf44b0.webp',
+        description: 'SANY STC250T5 large truck crane for heavy lifting and construction. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSK60 (500 kW / 680 HP). Lifting capacity: 250 ton. Max boom length: 60 m. Perfect for major construction and industrial projects.'
+      },
+      {
+        id: 'sany-stc1200t7',
+        model: 'STC1200T7',
+        name: 'Truck Crane',
+        specs: '1200 ton | 800 kW | 100 m boom',
+        image: '/manus-storage/STC1200T7_d0f368f9.webp',
+        description: 'SANY STC1200T7 mega truck crane for ultra-heavy lifting operations. Features powerful engine, advanced hydraulic system, and exceptional stability. Engine: Cummins QSK95 (800 kW / 1088 HP). Lifting capacity: 1200 ton. Max boom length: 100 m. Ideal for major infrastructure and industrial projects.'
+      },
+      {
+        id: 'sany-sac600e',
+        model: 'SAC600E',
+        name: 'Concrete Pump',
+        specs: '600 m³/h | 500 kW | 60 m boom',
+        image: '/manus-storage/SAC600E_ea1e482a.webp',
+        description: 'SANY SAC600E truck-mounted concrete pump for large-scale construction. Features powerful Cummins engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Pumping capacity: 600 m³/h. Max boom length: 60 m. Perfect for major construction projects.'
+      },
+      {
+        id: 'sany-scc1000tb',
+        model: 'SCC1000TB',
+        name: 'Concrete Pump',
+        specs: '1000 m³/h | 800 kW | 80 m boom',
+        image: '/manus-storage/SCC1000TB_e01f9b29.webp',
+        description: 'SANY SCC1000TB ultra-large concrete pump for major construction operations. Features powerful Cummins engine, advanced control system, and exceptional efficiency. Engine: Cummins QSK95 (800 kW / 1088 HP). Pumping capacity: 1000 m³/h. Max boom length: 80 m. Ideal for large-scale construction projects.'
       }
     ],
     spareParts: [
