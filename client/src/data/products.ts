@@ -80,7 +80,7 @@ export const brands: Brand[] = [
         model: 'CAT 320 GC',
         name: 'Hydraulic Excavator (Gas Powered)',
         specs: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
-        image: '/manus-storage/320 GC_86003381.jpeg',
+        image: '/manus-storage/320 GC_1a38b095.jpeg',
         description: 'CAT 320 GC Hydraulic Excavator (Natural Gas). Engine: Caterpillar C6.4 Natural Gas (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Fuel Tank: 180 L (Gas). Hydraulic System: 280 bar. Eco-friendly alternative fuel option. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for environmentally sensitive projects.'
       },
       {
