@@ -912,187 +912,825 @@ export const brands: Brand[] = [
     description: 'Leading Chinese manufacturer of construction machinery including wheel loaders, excavators, and bulldozers.',
     logo: 'LIUGONG',
     color: '#0277BD',
-        machines: [
+    machines: [
       {
-        id: 'lg-856he',
-        model: '856HE',
+        id: 'liugong-clg856h',
+        model: 'CLG856H',
         name: 'Wheel Loader',
-        specs: '8.5 ton | 110 kW | 3.0 m³ bucket',
-        image: '/manus-storage/856HE_348e297a.png',
-        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW (150 HP)). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Perfect for loading, material handling, and construction work.'
+        specs: '5.5 ton | 130 kW | 3.0 m³ bucket',
+        image: '/manus-storage/BJGPmMlGmLTX_a1b2c3d4.jpg',
+        description: 'LiuGong CLG856H wheel loader for general construction and material handling. Features powerful Cummins engine, smooth hydraulic system, and comfortable cabin. Engine: Cummins QSB6.7 (130 kW / 176 HP). Operating weight: 5.5 ton. Bucket capacity: 3.0 m³. Max loading height: 2.85 m.'
       },
       {
-        id: 'lg-856t',
-        model: '856T',
+        id: 'liugong-clg862h',
+        model: 'CLG862H',
         name: 'Wheel Loader',
-        specs: '8.5 ton | 110 kW | 3.0 m³ bucket',
-        image: '/manus-storage/856T_b17d0d76.png',
-        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW (150 HP)). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Perfect for loading, material handling, and construction work.'
+        specs: '6.2 ton | 155 kW | 3.5 m³ bucket',
+        image: '/manus-storage/bbJFMlSbArWs_b3c4d5e6.jpg',
+        description: 'LiuGong CLG862H mid-size wheel loader for construction, mining, and material handling. Features advanced hydraulic system, ergonomic design, and high efficiency. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 6.2 ton. Bucket capacity: 3.5 m³. Max loading height: 3.0 m.'
       },
       {
-        id: 'lg-870he',
-        model: '870HE',
+        id: 'liugong-clg890h',
+        model: 'CLG890H',
         name: 'Wheel Loader',
-        specs: '8.7 ton | 115 kW | 3.2 m³ bucket',
-        image: '/manus-storage/870HE_9128d7b0.png',
-        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW (156 HP)). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Perfect for loading, material handling, and construction work.'
+        specs: '8.8 ton | 200 kW | 4.5 m³ bucket',
+        image: '/manus-storage/zheYKKf3qdDP_c5d6e7f8.png',
+        description: 'LiuGong CLG890H large wheel loader for heavy-duty construction and mining operations. Features powerful engine, advanced control system, and excellent stability. Engine: Cummins QSX15 (200 kW / 272 HP). Operating weight: 8.8 ton. Bucket capacity: 4.5 m³. Max loading height: 3.3 m.'
       },
       {
-        id: 'lg-890t',
-        model: '890T',
-        name: 'Wheel Loader',
-        specs: '8.9 ton | 120 kW | 3.4 m³ bucket',
-        image: '/manus-storage/890T_b1caed62.png',
-        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW (163 HP)). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Perfect for loading, material handling, and construction work.'
+        id: 'liugong-clg914e',
+        model: 'CLG914E',
+        name: 'Excavator',
+        specs: '14 ton | 74 kW | 0.65 m³ bucket',
+        image: '/manus-storage/81HxNH1jLZ8a_d7e8f9g0.webp',
+        description: 'LiuGong CLG914E compact excavator for construction, landscaping, and utility work. Features fuel-efficient engine, smooth hydraulics, and comfortable operator cabin. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 14 ton. Bucket capacity: 0.65 m³. Max digging depth: 4.8 m.'
       },
       {
-        id: 'lg-922e',
-        model: '922E',
-        name: 'Wheel Loader',
-        specs: '9.2 ton | 125 kW | 3.6 m³ bucket',
-        image: '/manus-storage/922E_83b68604.png',
-        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW (170 HP)). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Perfect for loading, material handling, and construction work.'
+        id: 'liugong-clg909ecr',
+        model: 'CLG909ECR',
+        name: 'Mini Excavator',
+        specs: '9 ton | 54 kW | 0.42 m³ bucket',
+        image: '/manus-storage/wKALd0luKAxA_e8f9g0h1.png',
+        description: 'LiuGong CLG909ECR mini excavator for tight spaces and precision digging. Features compact design, excellent maneuverability, and low fuel consumption. Engine: Yuchai YC4D50-20 (54 kW / 73 HP). Operating weight: 9 ton. Bucket capacity: 0.42 m³. Max digging depth: 3.8 m.'
       },
       {
-        id: 'lg-922fe',
-        model: '922FE',
-        name: 'Wheel Loader',
-        specs: '9.2 ton | 130 kW | 3.8 m³ bucket',
-        image: '/manus-storage/922FE_c5980235.png',
-        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW (177 HP)). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Perfect for loading, material handling, and construction work.'
+        id: 'liugong-clg414',
+        model: 'CLG414',
+        name: 'Motor Grader',
+        specs: '14 ton | 110 kW | 3.7 m blade',
+        image: '/manus-storage/YLNDJmuMtl5w_f9g0h1i2.jpg',
+        description: 'LiuGong CLG414 motor grader for road construction and maintenance. Features precise blade control, powerful engine, and excellent visibility. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 14 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm.'
       },
       {
-        id: 'lg-933e',
-        model: '933E',
-        name: 'Wheel Loader',
-        specs: '9.3 ton | 135 kW | 4.0 m³ bucket',
-        image: '/manus-storage/933E_3ef67cc8.png',
-        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW (184 HP)). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for loading, material handling, and construction work.'
+        id: 'liugong-clg4215',
+        model: 'CLG4215',
+        name: 'Motor Grader',
+        specs: '21 ton | 155 kW | 4.2 m blade',
+        image: '/manus-storage/425Hg7PlKPdH_g0h1i2j3.jpg',
+        description: 'LiuGong CLG4215 large motor grader for highway and airport construction. Features advanced hydraulic system, powerful engine, and high precision. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 21 ton. Blade width: 4.2 m. Grading accuracy: ±15 mm.'
       },
       {
-        id: 'lg-936e',
-        model: '936E',
-        name: 'Wheel Loader',
-        specs: '9.6 ton | 140 kW | 4.2 m³ bucket',
-        image: '/manus-storage/936E_81aed160.png',
-        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW (190 HP)). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Perfect for loading, material handling, and construction work.'
+        id: 'liugong-clg6120',
+        model: 'CLG6120',
+        name: 'Backhoe Loader',
+        specs: '12 ton | 85 kW | 2.5 m³ bucket',
+        image: '/manus-storage/CVHT2T5h79p2_h1i2j3k4.jpg',
+        description: 'LiuGong CLG6120 wheel loader backhoe for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC6A230-20 (85 kW / 115 HP). Operating weight: 12 ton. Front bucket: 2.5 m³. Rear bucket: 0.28 m³.'
       },
       {
-        id: 'lg-938ehd',
-        model: '938EHD',
-        name: 'Wheel Loader',
-        specs: '9.8 ton | 145 kW | 4.4 m³ bucket',
-        image: '/manus-storage/938EHD_5215f127.png',
-        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW (197 HP)). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. Perfect for loading, material handling, and construction work.'
+        id: 'liugong-clg915e',
+        model: 'CLG915E',
+        name: 'Wheel Excavator',
+        specs: '15 ton | 75 kW | 0.68 m³ bucket',
+        image: '/manus-storage/4WBw8rnOIFn7_i2j3k4l5.jpg',
+        description: 'LiuGong CLG915E wheel excavator for mobile excavation and material handling. Features excellent mobility, powerful engine, and smooth hydraulics. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 15 ton. Bucket capacity: 0.68 m³. Max digging depth: 5.0 m.'
       },
       {
-        id: 'lg-952f',
-        model: '952F',
-        name: 'Wheel Loader',
-        specs: '9.5 ton | 142 kW | 4.3 m³ bucket',
-        image: '/manus-storage/952F_def2cd67.png',
-        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW (193 HP)). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Perfect for loading, material handling, and construction work.'
-      },
-      {
-        id: 'lg-965f',
-        model: '965F',
-        name: 'Wheel Loader',
-        specs: '9.6 ton | 148 kW | 4.5 m³ bucket',
-        image: '/manus-storage/965F_729648e6.png',
-        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW (201 HP)). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Perfect for loading, material handling, and construction work.'
-      },
-      {
-        id: 'lg-8128h',
-        model: '8128H',
-        name: 'Hydraulic Excavator',
-        specs: '12.8 ton | 85 kW | 0.50 m³ bucket',
-        image: '/manus-storage/8128H_2a9ec8db.png',
-        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW (115 HP)). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Perfect for excavation and material handling.'
-      },
-      {
-        id: 'lg-6608f',
-        model: '6608F',
-        name: 'Wheel Loader',
-        specs: '6.6 ton | 95 kW | 2.5 m³ bucket',
-        image: '/manus-storage/6608F_d4164c38.png',
-        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW (129 HP)). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Perfect for loading, material handling, and construction work.'
-      },
-      {
-        id: 'lg-4215d',
-        model: '4215D',
-        name: 'Wheel Loader',
-        specs: '4.2 ton | 65 kW | 1.8 m³ bucket',
-        image: '/manus-storage/4215D_7f783cbc.png',
-        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW (88 HP)). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Perfect for loading, material handling, and construction work.'
-      },
-      {
-        id: 'lg-clg764a',
-        model: 'CLG764A',
-        name: 'Wheel Loader',
-        specs: '7.6 ton | 105 kW | 2.8 m³ bucket',
-        image: '/manus-storage/CLG764A_360fbab5.png',
-        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW (143 HP)). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Perfect for loading, material handling, and construction work.'
-      },
-      {
-        id: 'lg-clg777a',
-        model: 'CLG777A',
-        name: 'Wheel Loader',
-        specs: '7.7 ton | 108 kW | 2.9 m³ bucket',
-        image: '/manus-storage/placeholder.png',
-        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW (147 HP)). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Perfect for loading, material handling, and construction work.'
-      },
-      {
-        id: 'lg-dw105ae',
-        model: 'DW105AE',
-        name: 'Bulldozer',
-        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
-        image: '/manus-storage/DW105AE_0cd6820d.png',
-        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW (106 HP)). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Ideal for grading and land preparation.'
-      },
-      {
-        id: 'lg-td16n',
-        model: 'TD16N',
-        name: 'Bulldozer',
-        specs: '16 ton | 110 kW | Blade: 3.5 m',
-        image: '/manus-storage/TD16N_9729a409.png',
-        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW (150 HP)). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Ideal for grading and land preparation.'
-      },
-      {
-        id: 'lg-de100c',
-        model: 'de100c',
-        name: 'Bulldozer',
-        specs: '10 ton | 75 kW | Blade: 2.8 m',
-        image: '/manus-storage/de100c_e261d9a3.png',
-        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW (102 HP)). Blade Width: 2.8 m. Operating Weight: 10,000 kg. Ideal for grading and land preparation.'
-      },
-      {
-        id: 'lg-dw90',
-        model: 'dw90',
-        name: 'Bulldozer',
-        specs: '9 ton | 65 kW | Blade: 2.5 m',
-        image: '/manus-storage/dw90_2628074a.png',
-        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW (88 HP)). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Ideal for grading and land preparation.'
-      },
-      {
-        id: 'lg-ltc900t5',
-        model: 'ltc900t5',
-        name: 'Truck Crane',
-        specs: '90 ton | 350 kW | Max Boom: 45 m',
-        image: '/manus-storage/ltc900t5_5b01386e.png',
-        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW (476 HP)). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Perfect for heavy lifting and construction.'
-      },
+        id: 'liugong-clg9035e',
+        model: 'CLG9035E',
+        name: 'Mini Excavator',
+        specs: '3.5 ton | 25 kW | 0.15 m³ bucket',
+        image: '/manus-storage/7C8JFHgnGVoD_j3k4l5m6.jpg',
+        description: 'LiuGong CLG9035E ultra-compact mini excavator for confined spaces and precision work. Features small turning radius, fuel efficiency, and easy transport. Engine: Yuchai YC2D50-20 (25 kW / 34 HP). Operating weight: 3.5 ton. Bucket capacity: 0.15 m³. Max digging depth: 2.5 m.'
+      }
     ],
     spareParts: [
-      { id: 'lg-filter-air', partNumber: 'AF26M', name: 'Air Filter', description: 'High-quality air filter for LiuGong machinery', image: '/manus-storage/placeholder.png', category: 'Filters' },
-      { id: 'lg-filter-oil', partNumber: 'LF3M', name: 'Oil Filter', description: 'Premium oil filter for engine protection', image: '/manus-storage/placeholder.png', category: 'Filters' },
-      { id: 'lg-filter-fuel', partNumber: 'FF5M', name: 'Fuel Filter', description: 'Fuel filter for clean combustion', image: '/manus-storage/placeholder.png', category: 'Filters' },
-      { id: 'lg-bucket-tooth', partNumber: 'BT-001', name: 'Bucket Tooth', description: 'Replacement bucket tooth for loaders', image: '/manus-storage/placeholder.png', category: 'Bucket Parts' },
-      { id: 'lg-track-link', partNumber: 'TL-50', name: 'Track Link', description: 'Durable track link for excavators', image: '/manus-storage/placeholder.png', category: 'Track Parts' },
-      { id: 'lg-hydraulic-hose', partNumber: 'HH-25', name: 'Hydraulic Hose', description: 'High-pressure hydraulic hose', image: '/manus-storage/placeholder.png', category: 'Hydraulic' },
-      { id: 'lg-seal-kit', partNumber: 'SK-100', name: 'Seal Kit', description: 'Complete seal kit for cylinders', image: '/manus-storage/placeholder.png', category: 'Seals' },
-      { id: 'lg-bearing', partNumber: 'BR-30', name: 'Bearing', description: 'Precision bearing for machinery', image: '/manus-storage/placeholder.png', category: 'Bearings' },
-      { id: 'lg-valve', partNumber: 'HV-15', name: 'Hydraulic Valve', description: 'Directional control valve', image: '/manus-storage/placeholder.png', category: 'Valves' },
-      { id: 'lg-pump', partNumber: 'HP-80', name: 'Hydraulic Pump', description: 'Main hydraulic pump assembly', image: '/manus-storage/placeholder.png', category: 'Pumps' },
+      { id: 'lg-sp-1', partNumber: 'CLG856-01-0001', name: 'Engine Oil Filter', description: 'LiuGong engine oil filter for wheel loaders and excavators. OEM: CLG856-01-0001. Category: Engine Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Engine Filters' },
+      { id: 'lg-sp-2', partNumber: 'CLG856-02-0001', name: 'Fuel Filter', description: 'LiuGong fuel filter for construction machinery. OEM: CLG856-02-0001. Category: Fuel System. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Fuel System' },
+      { id: 'lg-sp-3', partNumber: 'CLG856-03-0001', name: 'Air Filter', description: 'LiuGong air cleaner element for loaders and excavators. OEM: CLG856-03-0001. Category: Air Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Air Filters' },
+      { id: 'lg-sp-4', partNumber: 'CLG856-04-0001', name: 'Hydraulic Filter', description: 'LiuGong hydraulic filter for wheel loaders. OEM: CLG856-04-0001. Category: Hydraulic Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Hydraulic Filters' },
+      { id: 'lg-sp-5', partNumber: 'CLG856-05-0001', name: 'Transmission Filter', description: 'LiuGong transmission filter for loaders. OEM: CLG856-05-0001. Category: Transmission Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Transmission Filters' },
+      { id: 'lg-sp-6', partNumber: 'CLG914E-06-0001', name: 'Bucket Tooth', description: 'LiuGong bucket tooth for excavators. OEM: CLG914E-06-0001. Category: Ground Engaging Tools. Applicable Models: CLG914E/CLG909ECR/CLG915E. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Ground Engaging Tools' },
+      { id: 'lg-sp-7', partNumber: 'CLG856-07-0001', name: 'Track Shoe', description: 'LiuGong track shoe for excavators. OEM: CLG856-07-0001. Category: Undercarriage. Applicable Models: CLG914E/CLG909ECR/CLG915E. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/L7W8f1DXErIX_a1b2c3d4.jpg', category: 'Undercarriage' },
+      { id: 'lg-sp-8', partNumber: 'CLG856-08-0001', name: 'Boom Cylinder', description: 'LiuGong boom cylinder for excavators. OEM: CLG856-08-0001. Category: Hydraulic Cylinders. Applicable Models: CLG914E/CLG909ECR/CLG915E. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/fZEQTmhPChmb_d570e5f6.webp', category: 'Hydraulic Cylinders' },
+      { id: 'lg-sp-9', partNumber: 'CLG856-09-0001', name: 'Arm Cylinder', description: 'LiuGong arm cylinder for excavators. OEM: CLG856-09-0001. Category: Hydraulic Cylinders. Applicable Models: CLG914E/CLG909ECR/CLG915E. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/fZEQTmhPChmb_d570e5f6.webp', category: 'Hydraulic Cylinders' },
+      { id: 'lg-sp-10', partNumber: 'CLG414-10-0001', name: 'Blade', description: 'LiuGong grading blade for motor graders. OEM: CLG414-10-0001. Category: Grader Blades. Applicable Models: CLG414/CLG4215. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Grader Blades' },
+    ]
+  },
+  {
+    id: 'sany',
+    name: 'SANY',
+    fullName: 'Sany Heavy Industry Co., Ltd.',
+    category: 'construction',
+    country: 'China',
+    description: 'Global leader in heavy equipment manufacturing, producing excavators, concrete pumps, cranes, and more.',
+    logo: 'SANY',
+    color: '#F57C00',
+    machines: [
+      {
+        id: 'sany-sy35u',
+        model: 'SY35U',
+        name: 'Mini Excavator',
+        specs: '3.5 ton | 25 kW | 0.12 m³ bucket',
+        image: '/manus-storage/SY35U_eaed7302.webp',
+        description: 'SANY SY35U ultra-compact mini excavator for landscaping and confined spaces. Features compact design, fuel efficiency, and excellent precision. Engine: Yuchai YC3D60-20 (25 kW / 34 HP). Operating weight: 3.5 ton. Bucket capacity: 0.12 m³. Max digging depth: 2.8 m. Perfect for small-scale construction and landscaping work.'
+      },
+      {
+        id: 'sany-sy135f',
+        model: 'SY135F',
+        name: 'Mini Excavator',
+        specs: '13.5 ton | 74 kW | 0.5 m³ bucket',
+        image: '/manus-storage/SY135F_9bd51599.webp',
+        description: 'SANY SY135F compact excavator for utility work and small construction. Features fuel-efficient engine, smooth control, and excellent maneuverability. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 13.5 ton. Bucket capacity: 0.5 m³. Max digging depth: 4.5 m. Ideal for landscaping and small construction projects.'
+      },
+      {
+        id: 'sany-sy155h',
+        model: 'SY155H',
+        name: 'Excavator',
+        specs: '15 ton | 74 kW | 0.65 m³ bucket',
+        image: '/manus-storage/SY155H_862bcf37.webp',
+        description: 'SANY SY155H mid-size excavator for general construction and excavation. Features fuel-efficient engine, smooth hydraulics, and excellent reliability. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 15 ton. Bucket capacity: 0.65 m³. Max digging depth: 5.2 m. Ideal for construction, mining, and earthmoving operations.'
+      },
+      {
+        id: 'sany-sy215c',
+        model: 'SY215C',
+        name: 'Excavator',
+        specs: '21.5 ton | 110 kW | 0.9 m³ bucket',
+        image: '/manus-storage/SY215C_9f686dd4.webp',
+        description: 'SANY SY215C popular mid-size excavator for construction and mining. Features powerful engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 21.5 ton. Bucket capacity: 0.9 m³. Max digging depth: 6.0 m. Perfect for general construction and mining.'
+      },
+      {
+        id: 'sany-sy335c',
+        model: 'SY335C',
+        name: 'Excavator',
+        specs: '33.5 ton | 162 kW | 1.4 m³ bucket',
+        image: '/manus-storage/SY335C_400ae492.webp',
+        description: 'SANY SY335C large excavator for heavy-duty mining and construction. Features powerful Cummins engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB6.7 (162 kW / 220 HP). Operating weight: 33.5 ton. Bucket capacity: 1.4 m³. Max digging depth: 6.8 m. Excellent for large-scale excavation and mining.'
+      },
+      {
+        id: 'sany-sy365h',
+        model: 'SY365H',
+        name: 'Excavator',
+        specs: '36.5 ton | 206 kW | 1.7 m³ bucket',
+        image: '/manus-storage/SY365H_82e03c4d.webp',
+        description: 'SANY SY365H large excavator for major mining and construction projects. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSB6.7 (206 kW / 280 HP). Operating weight: 36.5 ton. Bucket capacity: 1.7 m³. Max digging depth: 7.0 m. Ideal for large-scale mining and construction.'
+      },
+      {
+        id: 'sany-sy550h',
+        model: 'SY550H',
+        name: 'Excavator',
+        specs: '55 ton | 280 kW | 2.4 m³ bucket',
+        image: '/manus-storage/SY550H_072b043d.webp',
+        description: 'SANY SY550H super-large excavator for major mining operations. Features powerful Cummins engine, advanced hydraulic system, and excellent efficiency. Engine: Cummins QSM11 (280 kW / 380 HP). Operating weight: 55 ton. Bucket capacity: 2.4 m³. Max digging depth: 8.0 m. Perfect for large-scale mining projects.'
+      },
+      {
+        id: 'sany-sy650h',
+        model: 'SY650H',
+        name: 'Excavator',
+        specs: '65 ton | 340 kW | 3.0 m³ bucket',
+        image: '/manus-storage/SY650H_86480fd9.webp',
+        description: 'SANY SY650H ultra-large excavator for major mining operations. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSM11 (340 kW / 460 HP). Operating weight: 65 ton. Bucket capacity: 3.0 m³. Max digging depth: 8.5 m. Ideal for large-scale mining and earthmoving.'
+      },
+      {
+        id: 'sany-sy956h',
+        model: 'SY956H',
+        name: 'Excavator',
+        specs: '95 ton | 500 kW | 4.5 m³ bucket',
+        image: '/manus-storage/SY956H_f166e7ef.png',
+        description: 'SANY SY956H mega excavator for major mining and quarrying operations. Features powerful Cummins engine, advanced hydraulic system, and exceptional efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Operating weight: 95 ton. Bucket capacity: 4.5 m³. Max digging depth: 9.5 m. Perfect for large-scale mining and quarrying.'
+      },
+      {
+        id: 'sany-sy55c',
+        model: 'SY55C',
+        name: 'Wheel Loader',
+        specs: '5.5 ton | 74 kW | 2.0 m³ bucket',
+        image: '/manus-storage/SY55C_b53e35a5.webp',
+        description: 'SANY SY55C compact wheel loader for light-duty material handling. Features fuel-efficient engine, smooth hydraulic system, and excellent visibility. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 5.5 ton. Bucket capacity: 2.0 m³. Max loading height: 2.8 m. Perfect for small construction sites.'
+      },
+      {
+        id: 'sany-sy60c',
+        model: 'SY60C',
+        name: 'Wheel Loader',
+        specs: '6 ton | 110 kW | 2.5 m³ bucket',
+        image: '/manus-storage/SY60C_e56369ef.webp',
+        description: 'SANY SY60C mid-size wheel loader for general material handling. Features powerful engine, smooth hydraulic system, and excellent visibility. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 6 ton. Bucket capacity: 2.5 m³. Max loading height: 3.0 m. Excellent for construction and mining operations.'
+      },
+      {
+        id: 'sany-sy75c',
+        model: 'SY75C',
+        name: 'Wheel Loader',
+        specs: '7.5 ton | 155 kW | 3.0 m³ bucket',
+        image: '/manus-storage/SY75C_cf0e2362.webp',
+        description: 'SANY SY75C large wheel loader for heavy-duty material handling. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 7.5 ton. Bucket capacity: 3.0 m³. Max loading height: 3.2 m. Ideal for large-scale construction and mining.'
+      },
+      {
+        id: 'sany-xc968',
+        model: 'XC968',
+        name: 'Wheel Loader',
+        specs: '96 ton | 500 kW | 6.0 m³ bucket',
+        image: '/manus-storage/XC968_513b412e.png',
+        description: 'SANY XC968 ultra-large wheel loader for major mining operations. Features powerful Cummins engine, advanced hydraulic system, and exceptional efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Operating weight: 96 ton. Bucket capacity: 6.0 m³. Max loading height: 3.8 m. Perfect for large-scale mining and quarrying.'
+      },
+      {
+        id: 'sany-sy16c',
+        model: 'SY16C',
+        name: 'Backhoe Loader',
+        specs: '8 ton | 75 kW | 2.0 m³ bucket',
+        image: '/manus-storage/SY16C_ec705e0e.webp',
+        description: 'SANY SY16C backhoe loader for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 8 ton. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect for utility work and small construction.'
+      },
+      {
+        id: 'sany-sy18c',
+        model: 'SY18C',
+        name: 'Backhoe Loader',
+        specs: '9 ton | 110 kW | 2.5 m³ bucket',
+        image: '/manus-storage/SY18C_048ea560.webp',
+        description: 'SANY SY18C backhoe loader for general construction and excavation. Features combined loading and digging capability, advanced hydraulic system, and excellent performance. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 9 ton. Front bucket: 2.5 m³. Rear bucket: 0.3 m³. Excellent for construction and utility work.'
+      },
+      {
+        id: 'sany-gd220j',
+        model: 'GD220J',
+        name: 'Motor Grader',
+        specs: '22 ton | 155 kW | 3.7 m blade',
+        image: '/manus-storage/GD220J_5230ed14.jpeg',
+        description: 'SANY GD220J motor grader for road construction and maintenance. Features precise blade control, powerful Cummins engine, and excellent visibility. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 22 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal for highway and airport construction.'
+      },
+      {
+        id: 'sany-xde120',
+        model: 'XDE120',
+        name: 'Motor Grader',
+        specs: '12 ton | 110 kW | 3.2 m blade',
+        image: '/manus-storage/XDE120_7253de2b.jpeg',
+        description: 'SANY XDE120 compact motor grader for road maintenance and light construction. Features precise blade control, fuel-efficient engine, and excellent maneuverability. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 12 ton. Blade width: 3.2 m. Grading accuracy: ±15 mm. Perfect for road maintenance and small projects.'
+      },
+      {
+        id: 'sany-dl560',
+        model: 'DL560',
+        name: 'Bulldozer',
+        specs: '56 ton | 280 kW | 4.0 m blade',
+        image: '/manus-storage/DL560_fa1499e2.png',
+        description: 'SANY DL560 large bulldozer for heavy-duty earthmoving and construction. Features powerful Cummins engine, advanced hydraulic system, and excellent stability. Engine: Cummins QSM11 (280 kW / 380 HP). Operating weight: 56 ton. Blade width: 4.0 m. Blade capacity: 6.5 m³. Ideal for large-scale construction and mining projects.'
+      },
+      {
+        id: 'sany-ssr160ac',
+        model: 'SSR160AC-8',
+        name: 'Vibratory Roller',
+        specs: '16 ton | 110 kW | 2.1 m width',
+        image: '/manus-storage/SSR160AC-8_0a41f2ff.webp',
+        description: 'SANY SSR160AC-8 vibratory roller for asphalt and soil compaction. Features powerful Cummins engine, advanced vibration system, and excellent compaction efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 16 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfect for road construction and maintenance.'
+      },
+      {
+        id: 'sany-ssr200c',
+        model: 'SSR200C-8H',
+        name: 'Vibratory Roller',
+        specs: '20 ton | 155 kW | 2.1 m width',
+        image: '/manus-storage/SSR200C-8H_d8390bbc.webp',
+        description: 'SANY SSR200C-8H vibratory roller for heavy-duty asphalt compaction. Features powerful Cummins engine, advanced vibration system, and excellent efficiency. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 20 ton. Roller width: 2.1 m. Compaction depth: 0.4 m. Ideal for highway and airport construction.'
+      },
+      {
+        id: 'sany-stc250t5',
+        model: 'STC250T5',
+        name: 'Truck Crane',
+        specs: '250 ton | 500 kW | 60 m boom',
+        image: '/manus-storage/STC250T5_0dcf44b0.webp',
+        description: 'SANY STC250T5 large truck crane for heavy lifting and construction. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSK60 (500 kW / 680 HP). Lifting capacity: 250 ton. Max boom length: 60 m. Perfect for major construction and industrial projects.'
+      },
+      {
+        id: 'sany-stc1200t7',
+        model: 'STC1200T7',
+        name: 'Truck Crane',
+        specs: '1200 ton | 800 kW | 100 m boom',
+        image: '/manus-storage/STC1200T7_d0f368f9.webp',
+        description: 'SANY STC1200T7 mega truck crane for ultra-heavy lifting operations. Features powerful engine, advanced hydraulic system, and exceptional stability. Engine: Cummins QSK95 (800 kW / 1088 HP). Lifting capacity: 1200 ton. Max boom length: 100 m. Ideal for major infrastructure and industrial projects.'
+      },
+      {
+        id: 'sany-sac600e',
+        model: 'SAC600E',
+        name: 'Concrete Pump',
+        specs: '600 m³/h | 500 kW | 60 m boom',
+        image: '/manus-storage/SAC600E_ea1e482a.webp',
+        description: 'SANY SAC600E truck-mounted concrete pump for large-scale construction. Features powerful Cummins engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Pumping capacity: 600 m³/h. Max boom length: 60 m. Perfect for major construction projects.'
+      },
+      {
+        id: 'sany-scc1000tb',
+        model: 'SCC1000TB',
+        name: 'Concrete Pump',
+        specs: '1000 m³/h | 800 kW | 80 m boom',
+        image: '/manus-storage/SCC1000TB_e01f9b29.webp',
+        description: 'SANY SCC1000TB ultra-large concrete pump for major construction operations. Features powerful Cummins engine, advanced control system, and exceptional efficiency. Engine: Cummins QSK95 (800 kW / 1088 HP). Pumping capacity: 1000 m³/h. Max boom length: 80 m. Ideal for large-scale construction projects.'
+      }
     ],
+    spareParts: [
+      { id: 'sany-sp-60151839', partNumber: '60151839', name: 'Filter System', description: 'SANY Filter System (OEM: 60151839). Category: Fuel Filter Element. Applicable Models: SY55C SY60C SY75C SY135C SY215C SY365H. Engine Model: 4JJ1 4D34 V3800. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Fuel Filter Element' },
+      { id: 'sany-sp-60206590', partNumber: '60206590', name: 'Filter System', description: 'SANY Filter System (OEM: 60206590). Category: Fuel Filter Element. Applicable Models: SY215C SY235C SY335C. Engine Model: 6HK1 DD6FRC. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Fuel Filter Element' },
+      { id: 'sany-sp-60281527', partNumber: '60281527', name: 'Filter System', description: 'SANY Filter System (OEM: 60281527). Category: Oil Filter Element. Applicable Models: SY55C SY60C SY75C. Engine Model: 4JJ1 V3300. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Oil Filter Element' },
+      { id: 'sany-sp-60281528', partNumber: '60281528', name: 'Filter System', description: 'SANY Filter System (OEM: 60281528). Category: Inner & Outer Air Filter. Applicable Models: SY135C SY215C SY335C. Engine Model: 6HK1 4JJ1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Inner & Outer Air Filter' },
+      { id: 'sany-sp-b222100000238', partNumber: 'B222100000238', name: 'Filter System', description: 'SANY Filter System (OEM: B222100000238). Category: Pilot Filter Element. Applicable Models: SY16C SY18U SY35U SY55C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Pilot Filter Element' },
+      { id: 'sany-sp-b222100000239', partNumber: 'B222100000239', name: 'Filter System', description: 'SANY Filter System (OEM: B222100000239). Category: Return Oil Filter. Applicable Models: SY215C SY245C SY365H SY485H. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Return Oil Filter' },
+      { id: 'sany-sp-60008221', partNumber: '60008221', name: 'Filter System', description: 'SANY Filter System (OEM: 60008221). Category: Suction Oil Filter. Applicable Models: SY135C SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Suction Oil Filter' },
+      { id: 'sany-sp-4940647', partNumber: '4940647', name: 'Filter System', description: 'SANY Filter System (OEM: 4940647). Category: Fuel Fine Filter. Applicable Models: SY215E SY245H SY305H. Engine Model: QSB6.7. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Fuel Fine Filter' },
+      { id: 'sany-sp-5262314', partNumber: '5262314', name: 'Filter System', description: 'SANY Filter System (OEM: 5262314). Category: Engine Oil Filter. Applicable Models: SY215C SY335C SY365H. Engine Model: QSL9. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Engine Oil Filter' },
+      { id: 'sany-sp-60101254', partNumber: '60101254', name: 'Filter System', description: 'SANY Filter System (OEM: 60101254). Category: Outer Air Filter. Applicable Models: SY75C SY95C SY135C. Engine Model: 4JJ1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Outer Air Filter' },
+      { id: 'sany-sp-60101255', partNumber: '60101255', name: 'Filter System', description: 'SANY Filter System (OEM: 60101255). Category: Inner Air Filter. Applicable Models: SY75C SY95C SY135C. Engine Model: 4JJ1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Inner Air Filter' },
+      { id: 'sany-sp-b222100000240', partNumber: 'B222100000240', name: 'Filter System', description: 'SANY Filter System (OEM: B222100000240). Category: Spin-on Hydraulic Filter. Applicable Models: SY215C SY235C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Spin-on Hydraulic Filter' },
+      { id: 'sany-sp-60222159', partNumber: '60222159', name: 'Filter System', description: 'SANY Filter System (OEM: 60222159). Category: Transmission Filter. Applicable Models: SW956H SW960E SW966E. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Transmission Filter' },
+      { id: 'sany-sp-60235811', partNumber: '60235811', name: 'Filter System', description: 'SANY Filter System (OEM: 60235811). Category: Fuel Water Separator. Applicable Models: SY215C SY335C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Fuel Water Separator' },
+      { id: 'sany-sp-60251236', partNumber: '60251236', name: 'Filter System', description: 'SANY Filter System (OEM: 60251236). Category: Water Separator Filter. Applicable Models: SY155C SY215C. Engine Model: 4JJ1 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Water Separator Filter' },
+      { id: 'sany-sp-60267891', partNumber: '60267891', name: 'Filter System', description: 'SANY Filter System (OEM: 60267891). Category: Hydraulic Cartridge Filter. Applicable Models: SY335C SY365H. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Hydraulic Cartridge Filter' },
+      { id: 'sany-sp-b222100000241', partNumber: 'B222100000241', name: 'Filter System', description: 'SANY Filter System (OEM: B222100000241). Category: Magnetic Oil Filter. Applicable Models: SY215C SY245C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=Filter+System', category: 'Magnetic Oil Filter' },
+      { id: 'sany-sp-13690773', partNumber: '13690773', name: 'Engine System', description: 'SANY Engine System (OEM: 13690773). Category: Cooling Water Pump. Applicable Models: SY215C SY235C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Cooling Water Pump' },
+      { id: 'sany-sp-b220401000459', partNumber: 'B220401000459', name: 'Engine System', description: 'SANY Engine System (OEM: B220401000459). Category: Solenoid Valve. Applicable Models: SY155C SY135C. Engine Model: 4JJ1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Solenoid Valve' },
+      { id: 'sany-sp-60021385', partNumber: '60021385', name: 'Engine System', description: 'SANY Engine System (OEM: 60021385). Category: Generator Fan Belt. Applicable Models: SY215C SY335C. Engine Model: 6HK1 QSB6.7. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Generator Fan Belt' },
+      { id: 'sany-sp-60035782', partNumber: '60035782', name: 'Engine System', description: 'SANY Engine System (OEM: 60035782). Category: Thermostat Valve. Applicable Models: SY215C SY235C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Thermostat Valve' },
+      { id: 'sany-sp-60087621', partNumber: '60087621', name: 'Engine System', description: 'SANY Engine System (OEM: 60087621). Category: Crankshaft Front Oil Seal. Applicable Models: SY215C SY335C. Engine Model: 6HK1 QSB6.7. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Crankshaft Front Oil Seal' },
+      { id: 'sany-sp-60087622', partNumber: '60087622', name: 'Engine System', description: 'SANY Engine System (OEM: 60087622). Category: Crankshaft Rear Oil Seal. Applicable Models: SY215C SY365H. Engine Model: 6HK1 QSL9. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Crankshaft Rear Oil Seal' },
+      { id: 'sany-sp-b210101000081', partNumber: 'B210101000081', name: 'Engine System', description: 'SANY Engine System (OEM: B210101000081). Category: Fuel Transfer Pump. Applicable Models: SY215C SY235C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Fuel Transfer Pump' },
+      { id: 'sany-sp-60125489', partNumber: '60125489', name: 'Engine System', description: 'SANY Engine System (OEM: 60125489). Category: Injector Nozzle. Applicable Models: SY335C SY365H. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Injector Nozzle' },
+      { id: 'sany-sp-60135791', partNumber: '60135791', name: 'Engine System', description: 'SANY Engine System (OEM: 60135791). Category: Engine Full Gasket Kit. Applicable Models: SY215C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Engine Full Gasket Kit' },
+      { id: 'sany-sp-60145822', partNumber: '60145822', name: 'Engine System', description: 'SANY Engine System (OEM: 60145822). Category: Cylinder Head Gasket. Applicable Models: SY215C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Cylinder Head Gasket' },
+      { id: 'sany-sp-b210201000121', partNumber: 'B210201000121', name: 'Engine System', description: 'SANY Engine System (OEM: B210201000121). Category: Turbocharger Assembly. Applicable Models: SY335C SY365H. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Turbocharger Assembly' },
+      { id: 'sany-sp-b210301000132', partNumber: 'B210301000132', name: 'Engine System', description: 'SANY Engine System (OEM: B210301000132). Category: Engine Mount Rubber Pad. Applicable Models: SY215C SY135C. Engine Model: 4JJ1 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Engine Mount Rubber Pad' },
+      { id: 'sany-sp-b210401000143', partNumber: 'B210401000143', name: 'Engine System', description: 'SANY Engine System (OEM: B210401000143). Category: Connecting Rod Bearing. Applicable Models: SY215C SY335C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Connecting Rod Bearing' },
+      { id: 'sany-sp-b210501000154', partNumber: 'B210501000154', name: 'Engine System', description: 'SANY Engine System (OEM: B210501000154). Category: Piston Ring Set. Applicable Models: SY215C SY335C. Engine Model: 6HK1 QSB6.7. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Piston Ring Set' },
+      { id: 'sany-sp-60051234', partNumber: '60051234', name: 'Engine System', description: 'SANY Engine System (OEM: 60051234). Category: Exhaust Manifold Gasket. Applicable Models: SY215C SY235C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Exhaust Manifold Gasket' },
+      { id: 'sany-sp-60061245', partNumber: '60061245', name: 'Engine System', description: 'SANY Engine System (OEM: 60061245). Category: Alternator Assembly. Applicable Models: SY215C SY335C. Engine Model: 6HK1. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Alternator Assembly' },
+      { id: 'sany-sp-60071256', partNumber: '60071256', name: 'Engine System', description: 'SANY Engine System (OEM: 60071256). Category: Starter Motor. Applicable Models: SY215C SY335C. Engine Model: 6HK1 QSB6.7. High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Starter Motor' },
+      { id: 'sany-sp-b220601000165', partNumber: 'B220601000165', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B220601000165). Category: Main Pump Repair Kit. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Main Pump Repair Kit' },
+      { id: 'sany-sp-b220701000176', partNumber: 'B220701000176', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B220701000176). Category: Main Relief Valve. Applicable Models: SY215C SY235C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Main Relief Valve' },
+      { id: 'sany-sp-b220801000187', partNumber: 'B220801000187', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B220801000187). Category: Control Valve Spool. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Control Valve Spool' },
+      { id: 'sany-sp-b220901000198', partNumber: 'B220901000198', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B220901000198). Category: Check Valve. Applicable Models: SY215C SY245C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Check Valve' },
+      { id: 'sany-sp-60081267', partNumber: '60081267', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: 60081267). Category: Hydraulic Quick Coupling. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Hydraulic Quick Coupling' },
+      { id: 'sany-sp-60091278', partNumber: '60091278', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: 60091278). Category: High Pressure Hydraulic Hose. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'High Pressure Hydraulic Hose' },
+      { id: 'sany-sp-60101289', partNumber: '60101289', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: 60101289). Category: Hydraulic Oil Cooler. Applicable Models: SY335C SY365H. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Hydraulic Oil Cooler' },
+      { id: 'sany-sp-b221001000209', partNumber: 'B221001000209', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221001000209). Category: Oil Pump Assembly. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Oil Pump Assembly' },
+      { id: 'sany-sp-b221101000210', partNumber: 'B221101000210', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221101000210). Category: Swing Motor Assembly. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Swing Motor Assembly' },
+      { id: 'sany-sp-b221201000221', partNumber: 'B221201000221', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221201000221). Category: Travel Motor Assembly. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Travel Motor Assembly' },
+      { id: 'sany-sp-b221301000232', partNumber: 'B221301000232', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221301000232). Category: Swing Motor Seal Kit. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Swing Motor Seal Kit' },
+      { id: 'sany-sp-b221401000243', partNumber: 'B221401000243', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221401000243). Category: Travel Motor Seal Kit. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Travel Motor Seal Kit' },
+      { id: 'sany-sp-b221501000254', partNumber: 'B221501000254', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221501000254). Category: Boom Cylinder Seal Kit. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Boom Cylinder Seal Kit' },
+      { id: 'sany-sp-b221601000265', partNumber: 'B221601000265', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221601000265). Category: Arm Cylinder Seal Kit. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Arm Cylinder Seal Kit' },
+      { id: 'sany-sp-b221701000276', partNumber: 'B221701000276', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221701000276). Category: Bucket Cylinder Seal Kit. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Bucket Cylinder Seal Kit' },
+      { id: 'sany-sp-b221801000287', partNumber: 'B221801000287', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221801000287). Category: Lift Cylinder Seal Kit. Applicable Models: SY50C SY65C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Lift Cylinder Seal Kit' },
+      { id: 'sany-sp-b221901000298', partNumber: 'B221901000298', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B221901000298). Category: Steering Cylinder Seal Kit. Applicable Models: SY50C SY65C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Steering Cylinder Seal Kit' },
+      { id: 'sany-sp-b222001000309', partNumber: 'B222001000309', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B222001000309). Category: Outrigger Cylinder Seal Kit. Applicable Models: STC250T5 STC1200T7. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Outrigger Cylinder Seal Kit' },
+      { id: 'sany-sp-b222101000310', partNumber: 'B222101000310', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B222101000310). Category: Track Adjuster Cylinder Seal Kit. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Track Adjuster Cylinder Seal Kit' },
+      { id: 'sany-sp-b222201000321', partNumber: 'B222201000321', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B222201000321). Category: Steering Hydraulic Hose. Applicable Models: SY50C SY65C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Steering Hydraulic Hose' },
+      { id: 'sany-sp-b222301000332', partNumber: 'B222301000332', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B222301000332). Category: O-Ring Assortment Repair Kit. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'O-Ring Assortment Repair Kit' },
+      { id: 'sany-sp-b222401000343', partNumber: 'B222401000343', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B222401000343). Category: U-Cup Seal. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'U-Cup Seal' },
+      { id: 'sany-sp-b222501000354', partNumber: 'B222501000354', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B222501000354). Category: Wiper Seal. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Wiper Seal' },
+      { id: 'sany-sp-b222601000365', partNumber: 'B222601000365', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B222601000365). Category: Mechanical Face Seal. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Mechanical Face Seal' },
+      { id: 'sany-sp-b222701000376', partNumber: 'B222701000376', name: 'Hydraulic System', description: 'SANY Hydraulic System (OEM: B222701000376). Category: Pressure Sensor. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Pressure Sensor' },
+      { id: 'sany-sp-60111290', partNumber: '60111290', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60111290). Category: Track Chain Assembly. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Track Chain Assembly' },
+      { id: 'sany-sp-60121301', partNumber: '60121301', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60121301). Category: Track Pin And Bushing. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Track Pin And Bushing' },
+      { id: 'sany-sp-60131312', partNumber: '60131312', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60131312). Category: Track Bolt And Nut. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Track Bolt And Nut' },
+      { id: 'sany-sp-60141323', partNumber: '60141323', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60141323). Category: Track Shoe Plate. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Track Shoe Plate' },
+      { id: 'sany-sp-60151334', partNumber: '60151334', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60151334). Category: Lower Track Roller. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Lower Track Roller' },
+      { id: 'sany-sp-60161345', partNumber: '60161345', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60161345). Category: Upper Carrier Roller. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Upper Carrier Roller' },
+      { id: 'sany-sp-60171356', partNumber: '60171356', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60171356). Category: Front Idler. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Front Idler' },
+      { id: 'sany-sp-60181367', partNumber: '60181367', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60181367). Category: Drive Sprocket. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Drive Sprocket' },
+      { id: 'sany-sp-60191378', partNumber: '60191378', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60191378). Category: Roller Bearing. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Roller Bearing' },
+      { id: 'sany-sp-60201389', partNumber: '60201389', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60201389). Category: Roller Outer Oil Seal. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Roller Outer Oil Seal' },
+      { id: 'sany-sp-60211390', partNumber: '60211390', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60211390). Category: Idler Oil Seal. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Idler Oil Seal' },
+      { id: 'sany-sp-60221401', partNumber: '60221401', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60221401). Category: Hub Oil Seal. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Hub Oil Seal' },
+      { id: 'sany-sp-60231412', partNumber: '60231412', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60231412). Category: Track Adjuster Cylinder. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Track Adjuster Cylinder' },
+      { id: 'sany-sp-60241423', partNumber: '60241423', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60241423). Category: Dust Seal. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Dust Seal' },
+      { id: 'sany-sp-60251434', partNumber: '60251434', name: 'Undercarriage', description: 'SANY Undercarriage (OEM: 60251434). Category: SPGW Oil Seal. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'SPGW Oil Seal' },
+      { id: 'sany-sp-60261445', partNumber: '60261445', name: 'Bucket & Tooth', description: 'SANY Bucket & Tooth (OEM: 60261445). Category: Standard Bucket Tooth. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Standard Bucket Tooth' },
+      { id: 'sany-sp-60271456', partNumber: '60271456', name: 'Bucket & Tooth', description: 'SANY Bucket & Tooth (OEM: 60271456). Category: Bucket Side Cutter. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Bucket Side Cutter' },
+      { id: 'sany-sp-60281467', partNumber: '60281467', name: 'Bucket & Tooth', description: 'SANY Bucket & Tooth (OEM: 60281467). Category: Tooth Adapter. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Tooth Adapter' },
+      { id: 'sany-sp-60291478', partNumber: '60291478', name: 'Bucket & Tooth', description: 'SANY Bucket & Tooth (OEM: 60291478). Category: Loader Bucket Tooth. Applicable Models: SY50C SY65C SY90C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Loader Bucket Tooth' },
+      { id: 'sany-sp-60301489', partNumber: '60301489', name: 'Bucket & Tooth', description: 'SANY Bucket & Tooth (OEM: 60301489). Category: Ripper Tooth. Applicable Models: DL560. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Ripper Tooth' },
+      { id: 'sany-sp-60311490', partNumber: '60311490', name: 'Bucket & Tooth', description: 'SANY Bucket & Tooth (OEM: 60311490). Category: Wear Plate. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Wear Plate' },
+      { id: 'sany-sp-60321501', partNumber: '60321501', name: 'Structural Parts', description: 'SANY Structural Parts (OEM: 60321501). Category: Arm Pin Shaft. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Arm Pin Shaft' },
+      { id: 'sany-sp-60331512', partNumber: '60331512', name: 'Structural Parts', description: 'SANY Structural Parts (OEM: 60331512). Category: Bucket Pin Shaft. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Bucket Pin Shaft' },
+      { id: 'sany-sp-60341523', partNumber: '60341523', name: 'Structural Parts', description: 'SANY Structural Parts (OEM: 60341523). Category: Boom Bushing. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Boom Bushing' },
+      { id: 'sany-sp-60351534', partNumber: '60351534', name: 'Structural Parts', description: 'SANY Structural Parts (OEM: 60351534). Category: Pin Snap Ring. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Pin Snap Ring' },
+      { id: 'sany-sp-60361545', partNumber: '60361545', name: 'Structural Parts', description: 'SANY Structural Parts (OEM: 60361545). Category: Spring Seat. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Spring Seat' },
+      { id: 'sany-sp-60371556', partNumber: '60371556', name: 'Structural Parts', description: 'SANY Structural Parts (OEM: 60371556). Category: Recoil Spring. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Recoil Spring' },
+      { id: 'sany-sp-60381567', partNumber: '60381567', name: 'Structural Parts', description: 'SANY Structural Parts (OEM: 60381567). Category: Vibration Rubber Damper. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Vibration Rubber Damper' },
+      { id: 'sany-sp-60391578', partNumber: '60391578', name: 'Transmission System', description: 'SANY Transmission System (OEM: 60391578). Category: Drive Shaft Universal Joint. Applicable Models: SY50C SY65C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Drive Shaft Universal Joint' },
+      { id: 'sany-sp-60401589', partNumber: '60401589', name: 'Transmission System', description: 'SANY Transmission System (OEM: 60401589). Category: Transmission Filter. Applicable Models: SY50C SY65C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Transmission Filter' },
+      { id: 'sany-sp-60411590', partNumber: '60411590', name: 'Brake System', description: 'SANY Brake System (OEM: 60411590). Category: Brake Pad. Applicable Models: SY215C SY335C. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Brake Pad' },
+      { id: 'sany-sp-60421601', partNumber: '60421601', name: 'Brake System', description: 'SANY Brake System (OEM: 60421601). Category: Compactor Brake Seal Kit. Applicable Models: SSR160AC-8 SSR200C-8H. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Compactor Brake Seal Kit' },
+      { id: 'sany-sp-60431612', partNumber: '60431612', name: 'Brake System', description: 'SANY Brake System (OEM: 60431612). Category: Crane Brake Pad. Applicable Models: STC250T5 STC1200T7. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Crane Brake Pad' },
+      { id: 'sany-sp-60441623', partNumber: '60441623', name: 'Compactor System', description: 'SANY Compactor System (OEM: 60441623). Category: Compactor Drum Rubber Ring. Applicable Models: SSR160AC-8 SSR200C-8H. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Compactor Drum Rubber Ring' },
+      { id: 'sany-sp-60451634', partNumber: '60451634', name: 'Crane System', description: 'SANY Crane System (OEM: 60451634). Category: Crane Wire Rope. Applicable Models: STC250T5 STC1200T7. Engine Model: . High-quality genuine SANY spare part with warranty.', image: 'https://via.placeholder.com/400x300?text=SANY+Spare+Part', category: 'Crane Wire Rope' },
+    ]
+  },
+  {
+    id: 'komatsu',
+    name: 'Komatsu',
+    fullName: 'Komatsu Ltd.',
+    category: 'construction',
+    country: 'Japan',
+    description: 'Japanese multinational corporation specializing in construction, mining, and military equipment.',
+    logo: 'KOMATSU',
+    color: '#1565C0',
+    machines: [
+      {
+        id: 'komatsu-pc50',
+        model: 'PC50MR-2',
+        name: 'Mini Excavator',
+        specs: '5 ton | 32 kW | 0.15 m³ bucket',
+        image: '/manus-storage/saUZZ9MRrA2n_00d7a498.webp',
+        description: 'Komatsu PC50MR-2 ultra-compact mini excavator for tight spaces. Features compact design, fuel efficiency, and excellent precision. Engine: Komatsu 3D68-1 (32 kW / 43 HP). Operating weight: 5 ton. Bucket capacity: 0.15 m³. Max digging depth: 3.2 m. Perfect for landscaping and confined construction work.'
+      },
+      {
+        id: 'komatsu-pc120',
+        model: 'PC120-8',
+        name: 'Excavator',
+        specs: '12 ton | 74 kW | 0.45 m³ bucket',
+        image: '/manus-storage/TWZmqY59QlJQ_f5543d7f.jpg',
+        description: 'Komatsu PC120-8 compact excavator for confined spaces and utility work. Features fuel-efficient Komatsu engine, smooth control, and excellent maneuverability. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 12 ton. Bucket capacity: 0.45 m³. Max digging depth: 5.0 m. Ideal for small construction sites and landscaping.'
+      },
+      {
+        id: 'komatsu-pc200',
+        model: 'PC200-8',
+        name: 'Excavator',
+        specs: '20 ton | 110 kW | 0.9 m³ bucket',
+        image: '/manus-storage/vQsQGavBS5Ft_050c4027.webp',
+        description: 'Komatsu PC200-8 mid-size excavator for general construction and excavation. Features fuel-efficient Komatsu engine, smooth hydraulics, and excellent reliability. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 20 ton. Bucket capacity: 0.9 m³. Max digging depth: 6.0 m. Ideal for construction, mining, and earthmoving operations.'
+      },
+      {
+        id: 'komatsu-pc300',
+        model: 'PC300-8',
+        name: 'Excavator',
+        specs: '30 ton | 162 kW | 1.4 m³ bucket',
+        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
+        description: 'Komatsu PC300-8 large excavator for heavy-duty mining and construction. Features powerful Komatsu engine, advanced hydraulic system, and high efficiency. Engine: Komatsu SAA6D107E (162 kW / 220 HP). Operating weight: 30 ton. Bucket capacity: 1.4 m³. Max digging depth: 6.8 m. Perfect for large-scale excavation and mining.'
+      },
+      {
+        id: 'komatsu-wa60m',
+        model: 'WA60M-5',
+        name: 'Wheel Loader',
+        specs: '6 ton | 74 kW | 1.8 m³ bucket',
+        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
+        description: 'Komatsu WA60M-5 compact wheel loader for light-duty material handling. Features fuel-efficient Komatsu engine, smooth hydraulic system, and excellent maneuverability. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 6 ton. Bucket capacity: 1.8 m³. Max loading height: 2.6 m. Perfect for small construction sites.'
+      },
+      {
+        id: 'komatsu-wa100m',
+        model: 'WA100M-5',
+        name: 'Wheel Loader',
+        specs: '10 ton | 110 kW | 3.0 m³ bucket',
+        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
+        description: 'Komatsu WA100M-5 mid-size wheel loader for general material handling. Features powerful Komatsu engine, smooth hydraulic system, and excellent visibility. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 10 ton. Bucket capacity: 3.0 m³. Max loading height: 3.0 m. Excellent for construction and mining operations.'
+      },
+      {
+        id: 'komatsu-wa150m',
+        model: 'WA150M-5',
+        name: 'Wheel Loader',
+        specs: '15 ton | 155 kW | 4.5 m³ bucket',
+        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
+        description: 'Komatsu WA150M-5 large wheel loader for heavy-duty material handling. Features powerful Komatsu engine, advanced control system, and excellent stability. Engine: Komatsu SAA6D102E (155 kW / 210 HP). Operating weight: 15 ton. Bucket capacity: 4.5 m³. Max loading height: 3.2 m. Ideal for large-scale construction and mining.'
+      },
+      {
+        id: 'komatsu-d50px',
+        model: 'D50PX-8',
+        name: 'Bulldozer',
+        specs: '50 ton | 155 kW | 3.2 m blade',
+        image: '/manus-storage/47LgdcnWgNcI_427235b3.jpg',
+        description: 'Komatsu D50PX-8 mid-size bulldozer for general earthmoving and construction. Features powerful Komatsu engine, smooth control, and excellent efficiency. Engine: Komatsu SAA6D102E (155 kW / 210 HP). Operating weight: 50 ton. Blade width: 3.2 m. Blade capacity: 4.0 m³. Perfect for construction and mining operations.'
+      },
+      {
+        id: 'komatsu-d65px',
+        model: 'D65PX-8',
+        name: 'Bulldozer',
+        specs: '65 ton | 206 kW | 3.9 m blade',
+        image: '/manus-storage/ihJ4eBTn430j_157a4508.jpg',
+        description: 'Komatsu D65PX-8 large bulldozer for heavy-duty earthmoving and construction. Features powerful Komatsu engine, advanced hydraulic system, and excellent stability. Engine: Komatsu SAA6D107E (206 kW / 280 HP). Operating weight: 65 ton. Blade width: 3.9 m. Blade capacity: 5.5 m³. Ideal for large-scale construction and mining projects.'
+      },
+      {
+        id: 'komatsu-gd530a',
+        model: 'GD530A-5',
+        name: 'Motor Grader',
+        specs: '16 ton | 110 kW | 3.7 m blade',
+        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
+        description: 'Komatsu GD530A-5 motor grader for road construction and maintenance. Features precise blade control, powerful Komatsu engine, and excellent visibility. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 16 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal for highway and airport construction.'
+      },
+      {
+        id: 'komatsu-wd600',
+        model: 'WD600-3',
+        name: 'Vibratory Roller',
+        specs: '12 ton | 74 kW | 2.1 m width',
+        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
+        description: 'Komatsu WD600-3 vibratory roller for asphalt and soil compaction. Features powerful Komatsu engine, advanced vibration system, and excellent compaction efficiency. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 12 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfect for road construction and maintenance.'
+      }
+    ],
+    spareParts: [
+      { id: 'km-sp-1', partNumber: 'PC200-01-0001', name: 'Engine Oil Filter', description: 'Engine oil filter for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'km-sp-2', partNumber: 'PC200-02-0001', name: 'Fuel Filter', description: 'Fuel filter for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'km-sp-3', partNumber: 'PC200-03-0001', name: 'Air Filter', description: 'Air cleaner element for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'km-sp-4', partNumber: 'WA320-04-0001', name: 'Hydraulic Filter', description: 'Hydraulic filter for Komatsu wheel loaders', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'km-sp-5', partNumber: 'PC200-05-0001', name: 'Track Link', description: 'Track link assembly for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Undercarriage' },
+      { id: 'km-sp-6', partNumber: 'PC200-06-0001', name: 'Bucket Tooth', description: 'Bucket tooth for Komatsu excavators', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
+      { id: 'km-sp-7', partNumber: 'D65PX-07-0001', name: 'Cutting Edge', description: 'Blade cutting edge for Komatsu bulldozers', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Ground Engaging Tools' },
+    ]
+  },
+  // ========== TRUCKS & ENGINES ==========
+  {
+    id: 'isuzu',
+    name: 'Isuzu',
+    fullName: 'Isuzu Motors Limited',
+    category: 'truck',
+    country: 'Japan',
+    description: 'Japanese commercial vehicle manufacturer known for reliable trucks and diesel engines.',
+    logo: 'ISUZU',
+    color: '#C41E3A',
+    machines: [
+      {
+        id: 'iz-fvr34',
+        model: 'FVR34',
+        name: 'Heavy Duty Truck',
+        specs: '20 ton | 190 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Isuzu FVR34 is a reliable heavy-duty truck for construction and logistics.'
+      },
+      {
+        id: 'iz-fvr35',
+        model: 'FVR35',
+        name: 'Heavy Duty Truck',
+        specs: '25 ton | 210 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The FVR35 offers enhanced power and capacity for heavy-duty applications.'
+      },
+      {
+        id: 'iz-giga',
+        model: 'GIGA',
+        name: 'Heavy Duty Truck',
+        specs: '30 ton | 250 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The GIGA is Isuzu\'s premium heavy-duty truck for demanding applications.'
+      },
+      {
+        id: 'iz-elf',
+        model: 'ELF',
+        name: 'Medium Duty Truck',
+        specs: '12 ton | 130 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The ELF is a versatile medium-duty truck for urban and construction use.'
+      }
+    ],
+    spareParts: [
+      { id: 'iz-sp-1', partNumber: '8-97602-428-0', name: 'Engine Oil Filter', description: 'Engine oil filter for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-2', partNumber: '8-97602-429-0', name: 'Fuel Filter', description: 'Fuel filter for Isuzu diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-3', partNumber: '8-97602-430-0', name: 'Air Filter', description: 'Air cleaner element for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-4', partNumber: '8-97602-431-0', name: 'Cabin Air Filter', description: 'Cabin air filter for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-5', partNumber: '8-97602-432-0', name: 'Transmission Filter', description: 'Transmission filter for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'iz-sp-6', partNumber: '8-97602-433-0', name: 'Brake Pad Set', description: 'Brake pad set for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
+      { id: 'iz-sp-7', partNumber: '8-97602-434-0', name: 'Alternator', description: 'Alternator for Isuzu trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Electrical' },
+    ]
+  },
+  {
+    id: 'shacman',
+    name: 'Shacman',
+    fullName: 'Shaanxi Automobile Group Co., Ltd.',
+    category: 'truck',
+    country: 'China',
+    description: 'Leading Chinese heavy-duty truck manufacturer producing commercial vehicles for construction and logistics.',
+    logo: 'SHACMAN',
+    color: '#E53935',
+    machines: [
+      {
+        id: 'sm-x3000',
+        model: 'X3000',
+        name: 'Heavy Duty Truck',
+        specs: '25 ton | 290 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Shacman X3000 is a premium heavy-duty truck for long-distance hauling.'
+      },
+      {
+        id: 'sm-f3000',
+        model: 'F3000',
+        name: 'Heavy Duty Truck',
+        specs: '20 ton | 250 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The F3000 offers reliable performance for construction and mining.'
+      },
+      {
+        id: 'sm-m3000',
+        model: 'M3000',
+        name: 'Medium Duty Truck',
+        specs: '15 ton | 190 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The M3000 is a versatile medium-duty truck for urban and regional transport.'
+      },
+      {
+        id: 'sm-l3000',
+        model: 'L3000',
+        name: 'Light Duty Truck',
+        specs: '10 ton | 150 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The L3000 is an economical light-duty truck for general cargo transport.'
+      }
+    ],
+    spareParts: [
+      { id: 'sm-sp-1', partNumber: 'DZ96189584001', name: 'Engine Oil Filter', description: 'Engine oil filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-2', partNumber: 'DZ96189584002', name: 'Fuel Filter', description: 'Fuel filter for Shacman diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-3', partNumber: 'DZ96189584003', name: 'Air Filter', description: 'Air cleaner element for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-4', partNumber: 'DZ96189584004', name: 'Cabin Air Filter', description: 'Cabin air filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-5', partNumber: 'DZ96189584005', name: 'Transmission Filter', description: 'Transmission filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'sm-sp-6', partNumber: 'DZ96189584006', name: 'Brake Pad Set', description: 'Brake pad set for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
+    ]
+  },
+  {
+    id: 'sinotruk',
+    name: 'Sinotruk',
+    fullName: 'China National Heavy Duty Truck Group Co., Ltd.',
+    category: 'truck',
+    country: 'China',
+    description: 'Leading Chinese heavy-duty truck manufacturer producing HOWO and other commercial vehicle brands.',
+    logo: 'SINOTRUK',
+    color: '#D32F2F',
+    machines: [
+      {
+        id: 'st-howo-a7',
+        model: 'HOWO A7',
+        name: 'Heavy Duty Truck',
+        specs: '25 ton | 290 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Sinotruk HOWO A7 is a premium heavy-duty truck for long-distance hauling.'
+      },
+      {
+        id: 'st-howo-t5g',
+        model: 'HOWO T5G',
+        name: 'Heavy Duty Truck',
+        specs: '20 ton | 250 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The HOWO T5G offers reliable performance for construction and mining.'
+      },
+      {
+        id: 'st-howo-vx',
+        model: 'HOWO VX',
+        name: 'Medium Duty Truck',
+        specs: '15 ton | 190 kW | 6-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The HOWO VX is a versatile medium-duty truck for urban and regional transport.'
+      },
+      {
+        id: 'st-howo-light',
+        model: 'HOWO Light Duty',
+        name: 'Light Duty Truck',
+        specs: '10 ton | 150 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The HOWO Light Duty is an economical truck for general cargo transport.'
+      }
+    ],
+    spareParts: [
+      { id: 'st-sp-1', partNumber: 'VG1560118229', name: 'Engine Oil Filter', description: 'Engine oil filter for Sinotruk HOWO trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-2', partNumber: 'VG1560118230', name: 'Fuel Filter', description: 'Fuel filter for Sinotruk diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-3', partNumber: 'VG1560118231', name: 'Air Filter', description: 'Air cleaner element for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-4', partNumber: 'VG1560118232', name: 'Cabin Air Filter', description: 'Cabin air filter for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-5', partNumber: 'VG1560118233', name: 'Transmission Filter', description: 'Transmission filter for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'st-sp-6', partNumber: 'VG1560118234', name: 'Brake Pad Set', description: 'Brake pad set for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
+      { id: 'st-sp-7', partNumber: 'VG1560118235', name: 'Alternator', description: 'Alternator for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Electrical' },
+    ]
+  },
+  {
+    id: 'toyota',
+    name: 'Toyota',
+    fullName: 'Toyota Motor Corporation',
+    category: 'truck',
+    country: 'Japan',
+    description: 'Japanese automotive manufacturer known for reliable trucks and commercial vehicles.',
+    logo: 'TOYOTA',
+    color: '#EB0A1E',
+    machines: [
+      {
+        id: 'ty-landcruiser',
+        model: 'Land Cruiser',
+        name: 'Heavy Duty Truck',
+        specs: '3.5 ton | 120 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Toyota Land Cruiser is a legendary heavy-duty truck for off-road and construction.'
+      },
+      {
+        id: 'ty-hilux',
+        model: 'Hilux',
+        name: 'Pickup Truck',
+        specs: '2.8 ton | 110 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Toyota Hilux is a versatile pickup truck for construction and utility work.'
+      },
+      {
+        id: 'ty-coaster',
+        model: 'Coaster',
+        name: 'Commercial Bus',
+        specs: '5 ton | 110 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Toyota Coaster is a reliable commercial bus for passenger transport.'
+      },
+      {
+        id: 'ty-dyna',
+        model: 'Dyna',
+        name: 'Medium Duty Truck',
+        specs: '3 ton | 95 kW | 4-cylinder diesel',
+        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
+        description: 'The Toyota Dyna is a compact medium-duty truck for urban delivery.'
+      }
+    ],
+    spareParts: [
+      { id: 'ty-sp-1', partNumber: '15600-29015', name: 'Engine Oil Filter', description: 'Engine oil filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-2', partNumber: '23390-64480', name: 'Fuel Filter', description: 'Fuel filter for Toyota diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-3', partNumber: '17801-54090', name: 'Air Filter', description: 'Air cleaner element for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-4', partNumber: '87139-02090', name: 'Cabin Air Filter', description: 'Cabin air filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-5', partNumber: '35330-60050', name: 'Transmission Filter', description: 'Transmission filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'ty-sp-6', partNumber: '04465-35090', name: 'Brake Pad Set', description: 'Brake pad set for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
+      { id: 'ty-sp-7', partNumber: '27060-28050', name: 'Alternator', description: 'Alternator for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Electrical' },
+    ]
+  },
+  {
+    id: 'cummins',
+    name: 'Cummins',
+    fullName: 'Cummins Inc.',
+    category: 'engine',
+    country: 'USA',
+    description: 'Leading manufacturer of diesel and natural gas engines for construction, mining, and power generation.',
+    logo: 'CUMMINS',
+    color: '#C41E3A',
+    machines: [
+      {
+        id: 'cm-b6.7',
+        model: 'B6.7',
+        name: 'Diesel Engine',
+        specs: '6.7L | 205 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The Cummins B6.7 is a reliable diesel engine for medium-duty applications.'
+      },
+      {
+        id: 'cm-l9',
+        model: 'L9',
+        name: 'Diesel Engine',
+        specs: '8.9L | 265 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The L9 is a powerful diesel engine for heavy-duty construction and mining.'
+      },
+      {
+        id: 'cm-x12',
+        model: 'X12',
+        name: 'Diesel Engine',
+        specs: '11.9L | 310 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The X12 is a premium diesel engine for major mining and industrial applications.'
+      },
+      {
+        id: 'cm-qsx15',
+        model: 'QSX15',
+        name: 'Diesel Engine',
+        specs: '14.9L | 373 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The QSX15 is a high-performance diesel engine for extreme duty applications.'
+      }
+    ],
+    spareParts: [
+      { id: 'cm-sp-1', partNumber: '3883753', name: 'Engine Oil Filter', description: 'Engine oil filter for Cummins diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'cm-sp-2', partNumber: '3315844', name: 'Fuel Filter', description: 'Fuel filter for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'cm-sp-3', partNumber: '3937903', name: 'Air Filter', description: 'Air cleaner element for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'cm-sp-4', partNumber: '4326799', name: 'Coolant Filter', description: 'Coolant filter for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Cooling System' },
+      { id: 'cm-sp-5', partNumber: '3936316', name: 'Fuel Injection Pump', description: 'Fuel injection pump for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Fuel System' },
+      { id: 'cm-sp-6', partNumber: '3931880', name: 'Turbocharger', description: 'Turbocharger for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine Components' },
+      { id: 'cm-sp-7', partNumber: '3928135', name: 'Water Pump', description: 'Water pump for Cummins engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Cooling System' },
+    ]
+  },
+  {
+    id: 'weichai',
+    name: 'Weichai',
+    fullName: 'Weichai Power Co., Ltd.',
+    category: 'engine',
+    country: 'China',
+    description: 'Leading Chinese diesel engine manufacturer for construction, mining, and power generation.',
+    logo: 'WEICHAI',
+    color: '#0277BD',
+    machines: [
+      {
+        id: 'wc-wp6',
+        model: 'WP6',
+        name: 'Diesel Engine',
+        specs: '6.0L | 162 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The Weichai WP6 is a reliable diesel engine for medium-duty applications.'
+      },
+      {
+        id: 'wc-wp9',
+        model: 'WP9',
+        name: 'Diesel Engine',
+        specs: '8.9L | 250 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The WP9 is a powerful diesel engine for heavy-duty construction and mining.'
+      },
+      {
+        id: 'wc-wp10',
+        model: 'WP10',
+        name: 'Diesel Engine',
+        specs: '10.0L | 290 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The WP10 is a premium diesel engine for major mining and industrial applications.'
+      },
+      {
+        id: 'wc-wp12',
+        model: 'WP12',
+        name: 'Diesel Engine',
+        specs: '12.0L | 340 kW | 6-cylinder',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+        description: 'The WP12 is a high-performance diesel engine for extreme duty applications.'
+      }
+    ],
+    spareParts: [
+      { id: 'wc-sp-1', partNumber: '612600070341', name: 'Engine Oil Filter', description: 'Engine oil filter for Weichai diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'wc-sp-2', partNumber: '612600081061', name: 'Fuel Filter', description: 'Fuel filter for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'wc-sp-3', partNumber: '612600110336', name: 'Air Filter', description: 'Air cleaner element for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
+      { id: 'wc-sp-4', partNumber: '612600140001', name: 'Coolant Filter', description: 'Coolant filter for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Cooling System' },
+      { id: 'wc-sp-5', partNumber: '612600070343', name: 'Fuel Injection Pump', description: 'Fuel injection pump for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Fuel System' },
+      { id: 'wc-sp-6', partNumber: '612600118902', name: 'Turbocharger', description: 'Turbocharger for Weichai engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Engine Components' },
+    ]
   },
 ];
