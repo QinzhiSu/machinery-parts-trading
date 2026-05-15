@@ -64,7 +64,7 @@ export const brands: Brand[] = [
         model: 'CAT 320D',
         name: 'Hydraulic Excavator',
         specs: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
+        image: '/manus-storage/320D_8a1e02e6.jpeg',
         description: 'CAT 320D Hydraulic Excavator. Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Cooling System: Radiator with fan. Transmission: Hydrostatic. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for general excavation, loading, and material handling.'
       },
       {
@@ -72,7 +72,7 @@ export const brands: Brand[] = [
         model: 'CAT 320D2',
         name: 'Hydraulic Excavator',
         specs: '20.8 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,800 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
+        image: '/manus-storage/320D2_0478c97f.jpeg',
         description: 'CAT 320D2 Hydraulic Excavator (Generation 2). Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Enhanced Features: Improved fuel efficiency, better hydraulic controls, reduced emissions. Travel Speed: 4.5 km/h. Swing Speed: 12 rpm. Perfect for construction, landscaping, and utility work.'
       },
       {
@@ -80,7 +80,7 @@ export const brands: Brand[] = [
         model: 'CAT 320 GC',
         name: 'Hydraulic Excavator (Gas Powered)',
         specs: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
+        image: '/manus-storage/320 GC_86003381.jpeg',
         description: 'CAT 320 GC Hydraulic Excavator (Natural Gas). Engine: Caterpillar C6.4 Natural Gas (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Fuel Tank: 180 L (Gas). Hydraulic System: 280 bar. Eco-friendly alternative fuel option. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for environmentally sensitive projects.'
       },
       {
@@ -88,7 +88,7 @@ export const brands: Brand[] = [
         model: 'CAT 330C',
         name: 'Hydraulic Excavator',
         specs: '30 ton | 168 kW | 1.69 m³ bucket | Operating Weight: 30,000 kg',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+        image: '/manus-storage/330C_b6088d0c.jpeg',
         description: 'CAT 330C Hydraulic Excavator. Engine: Caterpillar C7.1 Diesel (168 kW/225 HP). Bucket Capacity: 1.69 m³. Max Digging Depth: 7.2 m. Boom Length: 7.1 m. Stick Length: 2.7 m. Undercarriage: Rubber Track (700mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for medium to large-scale excavation, mining, and earthmoving projects.'
       },
       {
@@ -96,7 +96,7 @@ export const brands: Brand[] = [
         model: 'CAT 336D',
         name: 'Hydraulic Excavator',
         specs: '36.5 ton | 206 kW | 2.1 m³ bucket | Operating Weight: 36,500 kg',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+        image: '/manus-storage/336D_dc59bfa4.jpg',
         description: 'CAT 336D Hydraulic Excavator. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 2.1 m³. Max Digging Depth: 7.5 m. Boom Length: 7.4 m. Stick Length: 2.8 m. Undercarriage: Rubber Track (800mm). Hydraulic System: 280 bar. Fuel Tank: 300 L. Swing Speed: 11 rpm. Travel Speed: 4.5 km/h. Perfect for large-scale mining, quarrying, and heavy construction.'
       },
       // ===== DOZERS (Bulldozers) =====
@@ -105,7 +105,7 @@ export const brands: Brand[] = [
         model: 'CAT D6R',
         name: 'Bulldozer',
         specs: '18 ton | 138 kW | SU blade 4.6 m³ | Operating Weight: 18,000 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
+        image: '/manus-storage/D6R_9ee7c412.jpeg',
         description: 'CAT D6R Bulldozer. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 185 kN. Travel Speed: 11 km/h. Fuel Tank: 180 L. Ideal for general dozing, land clearing, and construction site preparation.'
       },
       {
@@ -113,7 +113,7 @@ export const brands: Brand[] = [
         model: 'CAT D6T',
         name: 'Bulldozer',
         specs: '19 ton | 149 kW | SU blade 4.6 m³ | Operating Weight: 19,000 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
+        image: '/manus-storage/D6T_0b530551.jpeg',
         description: 'CAT D6T Bulldozer. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 200 kN. Travel Speed: 11 km/h. Fuel Tank: 200 L. Enhanced power and efficiency for heavy-duty dozing operations.'
       },
       {
@@ -121,7 +121,7 @@ export const brands: Brand[] = [
         model: 'CAT D7R',
         name: 'Bulldozer',
         specs: '28 ton | 186 kW | SU blade 7.4 m³ | Operating Weight: 28,000 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
+        image: '/manus-storage/D7R_1f06175f.jpeg',
         description: 'CAT D7R Bulldozer. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Blade Type: Standard Straight (SU). Blade Width: 4.27 m. Blade Height: 1.73 m. Blade Capacity: 7.4 m³. Undercarriage: Steel Track (610mm). Transmission: Hydrostatic. Drawbar Pull: 280 kN. Travel Speed: 10.5 km/h. Fuel Tank: 300 L. Excellent for large-scale earthmoving and mining applications.'
       },
       {
@@ -129,7 +129,7 @@ export const brands: Brand[] = [
         model: 'CAT D8R',
         name: 'Bulldozer',
         specs: '38 ton | 231 kW | SU blade 10.5 m³ | Operating Weight: 38,000 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
+        image: '/manus-storage/D8R_33e472d5.jpeg',
         description: 'CAT D8R Bulldozer. Engine: Caterpillar C15 Diesel (231 kW/310 HP). Blade Type: Standard Straight (SU). Blade Width: 4.88 m. Blade Height: 2.15 m. Blade Capacity: 10.5 m³. Undercarriage: Steel Track (762mm). Transmission: Hydrostatic. Drawbar Pull: 380 kN. Travel Speed: 10.5 km/h. Fuel Tank: 450 L. Perfect for major mining, quarrying, and heavy construction projects.'
       },
       // ===== WHEEL LOADERS =====
@@ -138,7 +138,7 @@ export const brands: Brand[] = [
         model: 'CAT 950H',
         name: 'Wheel Loader',
         specs: '20 ton | 138 kW | 2.2 m³ bucket | Operating Weight: 20,000 kg',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        image: '/manus-storage/950H_b17d33be.jpeg',
         description: 'CAT 950H Wheel Loader. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for general loading, material handling, and construction site work.'
       },
       {
@@ -146,7 +146,7 @@ export const brands: Brand[] = [
         model: 'CAT 950L',
         name: 'Wheel Loader',
         specs: '21 ton | 149 kW | 2.2 m³ bucket | Operating Weight: 21,000 kg',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        image: '/manus-storage/950L_15077f35.jpeg',
         description: 'CAT 950L Wheel Loader. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 220 L. Enhanced power and performance for demanding loading operations.'
       },
       {
@@ -154,7 +154,7 @@ export const brands: Brand[] = [
         model: 'CAT 966H',
         name: 'Wheel Loader',
         specs: '24 ton | 186 kW | 3.1 m³ bucket | Operating Weight: 24,000 kg',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        image: '/manus-storage/966H_46daa795.jpeg',
         description: 'CAT 966H Wheel Loader. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 280 L. Perfect for medium to large-scale loading and material handling.'
       },
       {
@@ -162,7 +162,7 @@ export const brands: Brand[] = [
         model: 'CAT 966L',
         name: 'Wheel Loader',
         specs: '25 ton | 206 kW | 3.1 m³ bucket | Operating Weight: 25,000 kg',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
+        image: '/manus-storage/966L_f415e2f8.jpeg',
         description: 'CAT 966L Wheel Loader. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 300 L. Excellent for heavy-duty loading, quarrying, and mining applications.'
       }
     ],
