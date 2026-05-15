@@ -58,112 +58,173 @@ export const brands: Brand[] = [
     logo: 'CAT',
     color: '#F9A825',
     machines: [
-      // ===== EXCAVATORS (Excavators) =====
       {
-        id: 'cat-320d',
-        model: 'CAT 320D',
-        name: 'Hydraulic Excavator',
-        specs: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
-        description: 'CAT 320D Hydraulic Excavator. Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Cooling System: Radiator with fan. Transmission: Hydrostatic. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for general excavation, loading, and material handling.'
-      },
-      {
-        id: 'cat-320d2',
-        model: 'CAT 320D2',
-        name: 'Hydraulic Excavator',
-        specs: '20.8 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,800 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
-        description: 'CAT 320D2 Hydraulic Excavator (Generation 2). Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Enhanced Features: Improved fuel efficiency, better hydraulic controls, reduced emissions. Travel Speed: 4.5 km/h. Swing Speed: 12 rpm. Perfect for construction, landscaping, and utility work.'
-      },
-      {
-        id: 'cat-320gc',
-        model: 'CAT 320 GC',
-        name: 'Hydraulic Excavator (Gas Powered)',
-        specs: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/excavator-caterpillar-9xF7KEMRVew2dhnpWk5VNU.webp',
-        description: 'CAT 320 GC Hydraulic Excavator (Natural Gas). Engine: Caterpillar C6.4 Natural Gas (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Fuel Tank: 180 L (Gas). Hydraulic System: 280 bar. Eco-friendly alternative fuel option. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for environmentally sensitive projects.'
-      },
-      {
-        id: 'cat-330c',
-        model: 'CAT 330C',
-        name: 'Hydraulic Excavator',
-        specs: '30 ton | 168 kW | 1.69 m³ bucket | Operating Weight: 30,000 kg',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'CAT 330C Hydraulic Excavator. Engine: Caterpillar C7.1 Diesel (168 kW/225 HP). Bucket Capacity: 1.69 m³. Max Digging Depth: 7.2 m. Boom Length: 7.1 m. Stick Length: 2.7 m. Undercarriage: Rubber Track (700mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for medium to large-scale excavation, mining, and earthmoving projects.'
-      },
-      {
-        id: 'cat-336d',
-        model: 'CAT 336D',
-        name: 'Hydraulic Excavator',
-        specs: '36.5 ton | 206 kW | 2.1 m³ bucket | Operating Weight: 36,500 kg',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-        description: 'CAT 336D Hydraulic Excavator. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 2.1 m³. Max Digging Depth: 7.5 m. Boom Length: 7.4 m. Stick Length: 2.8 m. Undercarriage: Rubber Track (800mm). Hydraulic System: 280 bar. Fuel Tank: 300 L. Swing Speed: 11 rpm. Travel Speed: 4.5 km/h. Perfect for large-scale mining, quarrying, and heavy construction.'
-      },
-      // ===== DOZERS (Bulldozers) =====
-      {
-        id: 'cat-d6r',
-        model: 'CAT D6R',
-        name: 'Bulldozer',
-        specs: '18 ton | 138 kW | SU blade 4.6 m³ | Operating Weight: 18,000 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
-        description: 'CAT D6R Bulldozer. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 185 kN. Travel Speed: 11 km/h. Fuel Tank: 180 L. Ideal for general dozing, land clearing, and construction site preparation.'
-      },
-      {
-        id: 'cat-d6t',
-        model: 'CAT D6T',
-        name: 'Bulldozer',
-        specs: '19 ton | 149 kW | SU blade 4.6 m³ | Operating Weight: 19,000 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
-        description: 'CAT D6T Bulldozer. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 200 kN. Travel Speed: 11 km/h. Fuel Tank: 200 L. Enhanced power and efficiency for heavy-duty dozing operations.'
-      },
-      {
-        id: 'cat-d7r',
-        model: 'CAT D7R',
-        name: 'Bulldozer',
-        specs: '28 ton | 186 kW | SU blade 7.4 m³ | Operating Weight: 28,000 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
-        description: 'CAT D7R Bulldozer. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Blade Type: Standard Straight (SU). Blade Width: 4.27 m. Blade Height: 1.73 m. Blade Capacity: 7.4 m³. Undercarriage: Steel Track (610mm). Transmission: Hydrostatic. Drawbar Pull: 280 kN. Travel Speed: 10.5 km/h. Fuel Tank: 300 L. Excellent for large-scale earthmoving and mining applications.'
-      },
-      {
-        id: 'cat-d8r',
-        model: 'CAT D8R',
-        name: 'Bulldozer',
-        specs: '38 ton | 231 kW | SU blade 10.5 m³ | Operating Weight: 38,000 kg',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/bulldozer-shantui-GeiAbRUNPRA3FmNtE8gKWU.webp',
-        description: 'CAT D8R Bulldozer. Engine: Caterpillar C15 Diesel (231 kW/310 HP). Blade Type: Standard Straight (SU). Blade Width: 4.88 m. Blade Height: 2.15 m. Blade Capacity: 10.5 m³. Undercarriage: Steel Track (762mm). Transmission: Hydrostatic. Drawbar Pull: 380 kN. Travel Speed: 10.5 km/h. Fuel Tank: 450 L. Perfect for major mining, quarrying, and heavy construction projects.'
-      },
-      // ===== WHEEL LOADERS =====
-      {
-        id: 'cat-950h',
-        model: 'CAT 950H',
+        id: 'lg-856he',
+        model: '856HE',
         name: 'Wheel Loader',
-        specs: '20 ton | 138 kW | 2.2 m³ bucket | Operating Weight: 20,000 kg',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'CAT 950H Wheel Loader. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for general loading, material handling, and construction site work.'
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'cat-950l',
-        model: 'CAT 950L',
+        id: 'lg-856t',
+        model: '856T',
         name: 'Wheel Loader',
-        specs: '21 ton | 149 kW | 2.2 m³ bucket | Operating Weight: 21,000 kg',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'CAT 950L Wheel Loader. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 220 L. Enhanced power and performance for demanding loading operations.'
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'cat-966h',
-        model: 'CAT 966H',
+        id: 'lg-870he',
+        model: '870HE',
         name: 'Wheel Loader',
-        specs: '24 ton | 186 kW | 3.1 m³ bucket | Operating Weight: 24,000 kg',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'CAT 966H Wheel Loader. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 280 L. Perfect for medium to large-scale loading and material handling.'
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'cat-966l',
-        model: 'CAT 966L',
+        id: 'lg-890t',
+        model: '890T',
         name: 'Wheel Loader',
-        specs: '25 ton | 206 kW | 3.1 m³ bucket | Operating Weight: 25,000 kg',
-        image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80',
-        description: 'CAT 966L Wheel Loader. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 300 L. Excellent for heavy-duty loading, quarrying, and mining applications.'
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
+      },
+      {
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
+      },
+      {
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
+      },
+      {
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
+      },
+      {
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
+      },
+      {
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -211,116 +272,172 @@ export const brands: Brand[] = [
     color: '#E65100',
     machines: [
       {
-        id: 'shantui-sd16',
-        model: 'Shantui SD16',
-        name: 'Bulldozer SD16',
-        specs: '16 ton | 162 kW | 3.5 m³ blade | Operating Weight: 16,000 kg',
-        image: '/manus-storage/SD16_a14fb776.jpeg',
-        description: 'Shantui SD16 Medium Bulldozer. Engine: Weichai WD10G220 (162 kW/220 HP). Blade Type: Standard Straight (SU). Blade Capacity: 3.5 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 150 kN. Travel Speed: 10 km/h. Fuel Tank: 180 L. Ideal for general dozing, land clearing, and construction site preparation.'
+        id: 'lg-856he',
+        model: '856HE',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'shantui-sd22',
-        model: 'Shantui SD22',
-        name: 'Bulldozer SD22',
-        specs: '22 ton | 200 kW | 5.0 m³ blade | Operating Weight: 22,000 kg',
-        image: '/manus-storage/SD22_518f26bb.jpeg',
-        description: 'Shantui SD22 Large Bulldozer. Engine: Weichai WD10G270 (200 kW/270 HP). Blade Type: Standard Straight (SU). Blade Capacity: 5.0 m³. Undercarriage: Steel Track (610mm). Transmission: Hydrostatic. Drawbar Pull: 200 kN. Travel Speed: 10 km/h. Fuel Tank: 250 L. Excellent for large-scale earthmoving and mining applications.'
+        id: 'lg-856t',
+        model: '856T',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'shantui-sd32',
-        model: 'Shantui SD32',
-        name: 'Bulldozer SD32',
-        specs: '32 ton | 250 kW | 7.2 m³ blade | Operating Weight: 32,000 kg',
-        image: '/manus-storage/SD32_b7a78a7e.jpeg',
-        description: 'Shantui SD32 Extra-Large Bulldozer. Engine: Weichai WD10G336 (250 kW/336 HP). Blade Type: Standard Straight (SU). Blade Capacity: 7.2 m³. Undercarriage: Steel Track (762mm). Transmission: Hydrostatic. Drawbar Pull: 280 kN. Travel Speed: 10 km/h. Fuel Tank: 400 L. Perfect for major mining, quarrying, and heavy construction projects.'
+        id: 'lg-870he',
+        model: '870HE',
+        name: 'Wheel Loader',
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'shantui-se75',
-        model: 'Shantui SE75',
-        name: 'Excavator SE75',
-        specs: '7.5 ton | 66 kW | 0.3 m³ bucket | Operating Weight: 7,500 kg',
-        image: '/manus-storage/SE75_2f646ded.jpeg',
-        description: 'Shantui SE75 Small Hydraulic Excavator. Engine: Yuchai YC4D90 (66 kW/90 HP). Bucket Capacity: 0.3 m³. Max Digging Depth: 4.5 m. Boom Length: 5.2 m. Undercarriage: Rubber Track (400mm). Hydraulic System: 280 bar. Fuel Tank: 120 L. Ideal for small-scale excavation and utility work.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
       },
       {
-        id: 'shantui-se130',
-        model: 'Shantui SE130',
-        name: 'Excavator SE130',
-        specs: '13 ton | 79 kW | 0.55 m³ bucket | Operating Weight: 13,000 kg',
-        image: '/manus-storage/SE130_29bff90b.jpeg',
-        description: 'Shantui SE130 Medium Hydraulic Excavator. Engine: Yuchai YC6108 (79 kW/108 HP). Bucket Capacity: 0.55 m³. Max Digging Depth: 5.5 m. Boom Length: 6.2 m. Undercarriage: Rubber Track (500mm). Hydraulic System: 280 bar. Fuel Tank: 150 L. Perfect for general excavation and loading operations.'
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
       },
       {
-        id: 'shantui-se215',
-        model: 'Shantui SE215',
-        name: 'Excavator SE215',
-        specs: '21.5 ton | 176 kW | 1.0 m³ bucket | Operating Weight: 21,500 kg',
-        image: '/manus-storage/SE215_84f2c1ce.jpeg',
-        description: 'Shantui SE215 Large Hydraulic Excavator. Engine: Yuchai YC6K240 (176 kW/240 HP). Bucket Capacity: 1.0 m³. Max Digging Depth: 6.8 m. Boom Length: 7.1 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Excellent for medium to large-scale mining and construction.'
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
       },
       {
-        id: 'shantui-se220',
-        model: 'Shantui SE220',
-        name: 'Excavator SE220',
-        specs: '22 ton | 176 kW | 1.0 m³ bucket | Operating Weight: 22,000 kg',
-        image: '/manus-storage/SE220_ddc2968c.jpeg',
-        description: 'Shantui SE220 Large Hydraulic Excavator. Engine: Yuchai YC6K240 (176 kW/240 HP). Bucket Capacity: 1.0 m³. Max Digging Depth: 6.8 m. Boom Length: 7.1 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Ideal for heavy-duty excavation and quarrying operations.'
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
       },
       {
-        id: 'shantui-l36',
-        model: 'Shantui L36-C3',
-        name: 'Wheel Loader L36-C3',
-        specs: '13.6 ton | 147 kW | 2.2 m³ bucket | Operating Weight: 13,600 kg',
-        image: '/manus-storage/L36-C3_d5769b3b.jpeg',
-        description: 'Shantui L36-C3 Medium Wheel Loader. Engine: Weichai WD10G200 (147 kW/200 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for general loading and material handling.'
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
       },
       {
-        id: 'shantui-l55',
-        model: 'Shantui L55-C5',
-        name: 'Wheel Loader L55-C5',
-        specs: '21 ton | 200 kW | 3.5 m³ bucket | Operating Weight: 21,000 kg',
-        image: '/manus-storage/L55-C5_f68afe9e.jpeg',
-        description: 'Shantui L55-C5 Large Wheel Loader. Engine: Weichai WD10G270 (200 kW/270 HP). Bucket Capacity: 3.5 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 12 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 280 L. Perfect for heavy-duty loading and quarrying.'
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
       },
       {
-        id: 'shantui-sg19',
-        model: 'Shantui SG19-C6',
-        name: 'Motor Grader SG19-C6',
-        specs: '13.5 ton | 147 kW | 3.7 m blade | Operating Weight: 13,500 kg',
-        image: '/manus-storage/SG19-C6_c2efe98e.jpeg',
-        description: 'Shantui SG19-C6 Medium Motor Grader. Engine: Weichai WD10G200 (147 kW/200 HP). Blade Width: 3.7 m. Blade Height: 1.2 m. Undercarriage: 6-Wheel Drive. Transmission: Hydrostatic. Grading Width: 3.7 m. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for road construction and maintenance.'
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
       },
       {
-        id: 'shantui-sg21',
-        model: 'Shantui SG21-B6',
-        name: 'Motor Grader SG21-B6',
-        specs: '16.5 ton | 200 kW | 3.7 m blade | Operating Weight: 16,500 kg',
-        image: '/manus-storage/SG21-B6_42397f73.jpeg',
-        description: 'Shantui SG21-B6 Large Motor Grader. Engine: Weichai WD10G270 (200 kW/270 HP). Blade Width: 3.7 m. Blade Height: 1.2 m. Undercarriage: 6-Wheel Drive. Transmission: Hydrostatic. Grading Width: 3.7 m. Travel Speed: 42 km/h. Fuel Tank: 250 L. Perfect for large-scale road grading and construction.'
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
       },
       {
-        id: 'shantui-dh10',
-        model: 'Shantui DH10-C2',
-        name: 'Diesel Engine DH10-C2',
-        specs: '2.5L | 74 kW | 100 HP',
-        image: '/manus-storage/DH10-C2_a4702ae0.jpeg',
-        description: 'Shantui DH10-C2 Medium Diesel Engine. Displacement: 2.5L. Power Output: 74 kW (100 HP). Type: 4-Cylinder Turbocharged Diesel. Fuel Consumption: 210 g/kWh. Torque: 320 Nm @ 1400 rpm. Cooling System: Water-cooled with radiator. Ideal for small to medium construction equipment.'
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
       },
       {
-        id: 'shantui-dh13',
-        model: 'Shantui DH13-C3',
-        name: 'Diesel Engine DH13-C3',
-        specs: '3.0L | 96 kW | 130 HP',
-        image: '/manus-storage/DH13-C3_344d7d17.jpeg',
-        description: 'Shantui DH13-C3 Large Diesel Engine. Displacement: 3.0L. Power Output: 96 kW (130 HP). Type: 4-Cylinder Turbocharged Diesel. Fuel Consumption: 215 g/kWh. Torque: 400 Nm @ 1400 rpm. Cooling System: Water-cooled with radiator. Perfect for medium construction equipment.'
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
       },
       {
-        id: 'shantui-dh46',
-        model: 'Shantui DH46-C3',
-        name: 'Diesel Engine DH46-C3',
-        specs: '4.6L | 132 kW | 180 HP',
-        image: '/manus-storage/DH46-C3_eda6e955.jpeg',
-        description: 'Shantui DH46-C3 Extra-Large Diesel Engine. Displacement: 4.6L. Power Output: 132 kW (180 HP). Type: 6-Cylinder Turbocharged Diesel. Fuel Consumption: 220 g/kWh. Torque: 550 Nm @ 1400 rpm. Cooling System: Water-cooled with radiator. Ideal for large construction equipment and heavy machinery.'
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -705,132 +822,172 @@ export const brands: Brand[] = [
     color: '#D32F2F',
     machines: [
       {
-        id: 'xcmg-xe155ucr',
-        model: 'XE155UCR',
-        name: 'Compact Hydraulic Excavator',
-        specs: '15.5 ton | 80 kW | 0.65 m³ bucket',
-        image: '/manus-storage/XE155UCR_527b8a21.jpg',
-        description: 'XCMG XE155UCR compact hydraulic excavator designed for urban construction and tight spaces. Features advanced hydraulic system, fuel-efficient Cummins engine, and excellent maneuverability. Engine: Cummins 4BTA3.9-C130 (80 kW / 109 HP). Max digging depth: 6.2 m. Max reach height: 9.8 m.'
+        id: 'lg-856he',
+        model: '856HE',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'xcmg-xe215da',
-        model: 'XE215DA',
-        name: 'Mid-Size Hydraulic Excavator',
-        specs: '21.5 ton | 122 kW | 1.0 m³ bucket',
-        image: '/manus-storage/XE215DA_297f0d64.jpeg',
-        description: 'XCMG XE215DA mid-size hydraulic excavator for general construction and earthmoving. Features fuel-efficient Cummins engine, smooth hydraulic operation, and durable undercarriage. Engine: Cummins 6BTA5.9-C180 (122 kW / 165 HP). Max digging depth: 6.8 m. Max reach height: 10.4 m.'
+        id: 'lg-856t',
+        model: '856T',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'xcmg-xe215ev',
-        model: 'XE215EV',
-        name: 'Electric Hybrid Excavator',
-        specs: '21.5 ton | 122 kW | 1.0 m³ bucket',
-        image: '/manus-storage/XE215EV_32741e1c.png',
-        description: 'XCMG XE215EV eco-friendly hybrid excavator with electric-hydraulic system. Reduces fuel consumption by 30%, lower emissions, ideal for urban and environmental-sensitive projects. Hybrid Electric System (122 kW equivalent). Max digging depth: 6.8 m. Max reach height: 10.4 m.'
+        id: 'lg-870he',
+        model: '870HE',
+        name: 'Wheel Loader',
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'xcmg-xe520e',
-        model: 'XE520E',
-        name: 'Large Hydraulic Excavator',
-        specs: '52 ton | 320 kW | 2.8 m³ bucket',
-        image: '/manus-storage/XE520E_4e72cccf.jpeg',
-        description: 'XCMG XE520E large-scale hydraulic excavator for mining and heavy construction. Features powerful Cummins engine, advanced load-sensing hydraulics, and reinforced undercarriage. Engine: Cummins QSX15-C600 (320 kW / 435 HP). Max digging depth: 8.5 m. Max reach height: 12.8 m.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
       },
       {
-        id: 'xcmg-xe4000e',
-        model: 'XE4000E',
-        name: 'Ultra-Large Mining Excavator',
-        specs: '400 ton | 2100 kW | 21 m³ bucket',
-        image: '/manus-storage/XE4000E_a401060d.bmp',
-        description: 'XCMG XE4000E ultra-large mining excavator for open-pit mining operations. Features massive bucket capacity, powerful hydraulic system, and advanced automation. Engine: Cummins QSK78-C3000 (2100 kW / 2857 HP). Max digging depth: 12.5 m. Max reach height: 18.5 m.'
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
       },
       {
-        id: 'xcmg-xc9260',
-        model: 'XC9260',
-        name: 'Mid-Size Wheel Loader',
-        specs: '26 ton | 180 kW | 3.5 m³ bucket',
-        image: '/manus-storage/XC9260_f6fa5f6b.png',
-        description: 'XCMG XC9260 mid-size wheel loader for construction and material handling. Features powerful Weichai engine, smooth transmission, and excellent load capacity. Engine: Weichai WP12.430E50 (180 kW / 245 HP). Max load capacity: 18 ton. Max dump height: 3.2 m.'
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
       },
       {
-        id: 'xcmg-xc968',
-        model: 'XC968',
-        name: 'Large Wheel Loader',
-        specs: '68 ton | 410 kW | 6.0 m³ bucket',
-        image: '/manus-storage/XC968_330a600d.png',
-        description: 'XCMG XC968 large wheel loader for heavy-duty loading and transport. Features advanced load-sensing hydraulics, comfortable cab, and high reliability. Engine: Cummins QSX15-C600 (410 kW / 559 HP). Max load capacity: 42 ton. Max dump height: 3.8 m.'
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
       },
       {
-        id: 'xcmg-xc968-ev',
-        model: 'XC968-EV',
-        name: 'Electric Wheel Loader',
-        specs: '68 ton | 410 kW | 6.0 m³ bucket',
-        image: '/manus-storage/XC968-EV_fe292a3f.png',
-        description: 'XCMG XC968-EV electric wheel loader with zero emissions. Ideal for underground mines, tunnels, and enclosed spaces. Reduces operating costs significantly. Electric Motor System (410 kW equivalent). Max load capacity: 42 ton. Max dump height: 3.8 m.'
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
       },
       {
-        id: 'xcmg-gd220j',
-        model: 'GD220J',
-        name: 'Motor Grader',
-        specs: '22 ton | 155 kW | 3.7 m blade',
-        image: '/manus-storage/GD220J_d58ae730.jpeg',
-        description: 'XCMG GD220J motor grader for road construction and maintenance. Features precision blade control, comfortable operator cabin, and excellent grading accuracy. Engine: Weichai WD10.336E50 (155 kW / 211 HP). Max grading width: 3.5 m.'
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
       },
       {
-        id: 'xcmg-dl560',
-        model: 'DL560',
-        name: 'Hydraulic Bulldozer',
-        specs: '56 ton | 410 kW | 5.2 m blade',
-        image: '/manus-storage/DL560_58315436.png',
-        description: 'XCMG DL560 large hydraulic bulldozer for heavy earthmoving and site preparation. Features powerful engine, advanced hydraulic system, and reinforced undercarriage. Engine: Cummins QSX15-C600 (410 kW / 559 HP). Blade capacity: 5.2 m³. Max blade pressure: 280 bar.'
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
       },
       {
-        id: 'xcmg-xct45u',
-        model: 'XCT45U',
-        name: 'Mobile Truck Crane',
-        specs: '45 ton | 290 kW | 42 m boom',
-        image: '/manus-storage/XCT45U_6a596d70.webp',
-        description: 'XCMG XCT45U mobile truck crane for lifting and material handling. Features advanced boom control, high stability, and excellent load capacity. Engine: Weichai WP12.430E50 (290 kW / 395 HP). Max lift capacity: 45 ton. Max boom length: 42 m. Max working height: 48 m.'
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
       },
       {
-        id: 'xcmg-xlc17000',
-        model: 'XLC17000',
-        name: 'Large Crawler Crane',
-        specs: '170 ton | 410 kW | 100 m boom',
-        image: '/manus-storage/XLC17000_f4051095.jpeg',
-        description: 'XCMG XLC17000 large crawler crane for heavy lifting in mining and construction. Features powerful hydraulic system, excellent stability, and advanced load monitoring. Engine: Cummins QSX15-C600 (410 kW / 559 HP). Max lift capacity: 170 ton. Max boom length: 100 m. Max working height: 120 m.'
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
       },
       {
-        id: 'xcmg-xc978e',
-        model: 'XC978E',
-        name: 'Vibratory Road Roller',
-        specs: '9.8 ton | 75 kW | 2.1 m drum',
-        image: '/manus-storage/XC978E_c520434e.webp',
-        description: 'XCMG XC978E vibratory road roller for asphalt and soil compaction. Features high compaction efficiency, smooth operation, and fuel efficiency. Engine: Weichai WD615.47 (75 kW / 102 HP). Drum width: 2.1 m. Compaction depth: 0.3 m.'
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
       },
       {
-        id: 'xcmg-xde120',
-        model: 'XDE120',
-        name: 'Rotary Drilling Rig',
-        specs: '120 ton | 200 kW | 1500 m depth',
-        image: '/manus-storage/XDE120_381e634c.jpeg',
-        description: 'XCMG XDE120 rotary drilling rig for geotechnical and water well drilling. Features advanced drilling system, high precision, and excellent reliability. Engine: Cummins 6BTA5.9-C180 (200 kW / 272 HP). Max drilling depth: 1500 m. Drill pipe diameter: 127 mm.'
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
       },
       {
-        id: 'xcmg-xde260',
-        model: 'XDE260',
-        name: 'Large Rotary Drilling Rig',
-        specs: '260 ton | 350 kW | 3000 m depth',
-        image: '/manus-storage/xde260_0cad1859.png',
-        description: 'XCMG XDE260 large rotary drilling rig for deep geotechnical drilling. Features powerful drilling system, advanced automation, and high efficiency. Engine: Cummins QSX15-C600 (350 kW / 476 HP). Max drilling depth: 3000 m. Drill pipe diameter: 152 mm.'
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
       },
       {
-        id: 'xcmg-xca120g7-1h',
-        model: 'XCA120G7-1H',
-        name: 'Truck-Mounted Crane',
-        specs: '120 ton | 350 kW | 60 m boom',
-        image: '/manus-storage/XCA120G7-1H_b247aa65.png',
-        description: 'XCMG XCA120G7-1H truck-mounted crane for versatile lifting operations. Features compact design, high mobility, and excellent load capacity. Engine: Cummins QSX15-C600 (350 kW / 476 HP). Max lift capacity: 120 ton. Max boom length: 60 m. Max working height: 68 m.'
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -914,84 +1071,172 @@ export const brands: Brand[] = [
     color: '#0277BD',
     machines: [
       {
-        id: 'liugong-clg856h',
-        model: 'CLG856H',
+        id: 'lg-856he',
+        model: '856HE',
         name: 'Wheel Loader',
-        specs: '5.5 ton | 130 kW | 3.0 m³ bucket',
-        image: '/manus-storage/BJGPmMlGmLTX_a1b2c3d4.jpg',
-        description: 'LiuGong CLG856H wheel loader for general construction and material handling. Features powerful Cummins engine, smooth hydraulic system, and comfortable cabin. Engine: Cummins QSB6.7 (130 kW / 176 HP). Operating weight: 5.5 ton. Bucket capacity: 3.0 m³. Max loading height: 2.85 m.'
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'liugong-clg862h',
-        model: 'CLG862H',
+        id: 'lg-856t',
+        model: '856T',
         name: 'Wheel Loader',
-        specs: '6.2 ton | 155 kW | 3.5 m³ bucket',
-        image: '/manus-storage/bbJFMlSbArWs_b3c4d5e6.jpg',
-        description: 'LiuGong CLG862H mid-size wheel loader for construction, mining, and material handling. Features advanced hydraulic system, ergonomic design, and high efficiency. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 6.2 ton. Bucket capacity: 3.5 m³. Max loading height: 3.0 m.'
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'liugong-clg890h',
-        model: 'CLG890H',
+        id: 'lg-870he',
+        model: '870HE',
         name: 'Wheel Loader',
-        specs: '8.8 ton | 200 kW | 4.5 m³ bucket',
-        image: '/manus-storage/zheYKKf3qdDP_c5d6e7f8.png',
-        description: 'LiuGong CLG890H large wheel loader for heavy-duty construction and mining operations. Features powerful engine, advanced control system, and excellent stability. Engine: Cummins QSX15 (200 kW / 272 HP). Operating weight: 8.8 ton. Bucket capacity: 4.5 m³. Max loading height: 3.3 m.'
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'liugong-clg914e',
-        model: 'CLG914E',
-        name: 'Excavator',
-        specs: '14 ton | 74 kW | 0.65 m³ bucket',
-        image: '/manus-storage/81HxNH1jLZ8a_d7e8f9g0.webp',
-        description: 'LiuGong CLG914E compact excavator for construction, landscaping, and utility work. Features fuel-efficient engine, smooth hydraulics, and comfortable operator cabin. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 14 ton. Bucket capacity: 0.65 m³. Max digging depth: 4.8 m.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
       },
       {
-        id: 'liugong-clg909ecr',
-        model: 'CLG909ECR',
-        name: 'Mini Excavator',
-        specs: '9 ton | 54 kW | 0.42 m³ bucket',
-        image: '/manus-storage/wKALd0luKAxA_e8f9g0h1.png',
-        description: 'LiuGong CLG909ECR mini excavator for tight spaces and precision digging. Features compact design, excellent maneuverability, and low fuel consumption. Engine: Yuchai YC4D50-20 (54 kW / 73 HP). Operating weight: 9 ton. Bucket capacity: 0.42 m³. Max digging depth: 3.8 m.'
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
       },
       {
-        id: 'liugong-clg414',
-        model: 'CLG414',
-        name: 'Motor Grader',
-        specs: '14 ton | 110 kW | 3.7 m blade',
-        image: '/manus-storage/YLNDJmuMtl5w_f9g0h1i2.jpg',
-        description: 'LiuGong CLG414 motor grader for road construction and maintenance. Features precise blade control, powerful engine, and excellent visibility. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 14 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm.'
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
       },
       {
-        id: 'liugong-clg4215',
-        model: 'CLG4215',
-        name: 'Motor Grader',
-        specs: '21 ton | 155 kW | 4.2 m blade',
-        image: '/manus-storage/425Hg7PlKPdH_g0h1i2j3.jpg',
-        description: 'LiuGong CLG4215 large motor grader for highway and airport construction. Features advanced hydraulic system, powerful engine, and high precision. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 21 ton. Blade width: 4.2 m. Grading accuracy: ±15 mm.'
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
       },
       {
-        id: 'liugong-clg6120',
-        model: 'CLG6120',
-        name: 'Backhoe Loader',
-        specs: '12 ton | 85 kW | 2.5 m³ bucket',
-        image: '/manus-storage/CVHT2T5h79p2_h1i2j3k4.jpg',
-        description: 'LiuGong CLG6120 wheel loader backhoe for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC6A230-20 (85 kW / 115 HP). Operating weight: 12 ton. Front bucket: 2.5 m³. Rear bucket: 0.28 m³.'
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
       },
       {
-        id: 'liugong-clg915e',
-        model: 'CLG915E',
-        name: 'Wheel Excavator',
-        specs: '15 ton | 75 kW | 0.68 m³ bucket',
-        image: '/manus-storage/4WBw8rnOIFn7_i2j3k4l5.jpg',
-        description: 'LiuGong CLG915E wheel excavator for mobile excavation and material handling. Features excellent mobility, powerful engine, and smooth hydraulics. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 15 ton. Bucket capacity: 0.68 m³. Max digging depth: 5.0 m.'
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
       },
       {
-        id: 'liugong-clg9035e',
-        model: 'CLG9035E',
-        name: 'Mini Excavator',
-        specs: '3.5 ton | 25 kW | 0.15 m³ bucket',
-        image: '/manus-storage/7C8JFHgnGVoD_j3k4l5m6.jpg',
-        description: 'LiuGong CLG9035E ultra-compact mini excavator for confined spaces and precision work. Features small turning radius, fuel efficiency, and easy transport. Engine: Yuchai YC2D50-20 (25 kW / 34 HP). Operating weight: 3.5 ton. Bucket capacity: 0.15 m³. Max digging depth: 2.5 m.'
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -1018,196 +1263,172 @@ export const brands: Brand[] = [
     color: '#F57C00',
     machines: [
       {
-        id: 'sany-sy35u',
-        model: 'SY35U',
-        name: 'Mini Excavator',
-        specs: '3.5 ton | 25 kW | 0.12 m³ bucket',
-        image: '/manus-storage/SY35U_eaed7302.webp',
-        description: 'SANY SY35U ultra-compact mini excavator for landscaping and confined spaces. Features compact design, fuel efficiency, and excellent precision. Engine: Yuchai YC3D60-20 (25 kW / 34 HP). Operating weight: 3.5 ton. Bucket capacity: 0.12 m³. Max digging depth: 2.8 m. Perfect for small-scale construction and landscaping work.'
-      },
-      {
-        id: 'sany-sy135f',
-        model: 'SY135F',
-        name: 'Mini Excavator',
-        specs: '13.5 ton | 74 kW | 0.5 m³ bucket',
-        image: '/manus-storage/SY135F_9bd51599.webp',
-        description: 'SANY SY135F compact excavator for utility work and small construction. Features fuel-efficient engine, smooth control, and excellent maneuverability. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 13.5 ton. Bucket capacity: 0.5 m³. Max digging depth: 4.5 m. Ideal for landscaping and small construction projects.'
-      },
-      {
-        id: 'sany-sy155h',
-        model: 'SY155H',
-        name: 'Excavator',
-        specs: '15 ton | 74 kW | 0.65 m³ bucket',
-        image: '/manus-storage/SY155H_862bcf37.webp',
-        description: 'SANY SY155H mid-size excavator for general construction and excavation. Features fuel-efficient engine, smooth hydraulics, and excellent reliability. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 15 ton. Bucket capacity: 0.65 m³. Max digging depth: 5.2 m. Ideal for construction, mining, and earthmoving operations.'
-      },
-      {
-        id: 'sany-sy215c',
-        model: 'SY215C',
-        name: 'Excavator',
-        specs: '21.5 ton | 110 kW | 0.9 m³ bucket',
-        image: '/manus-storage/SY215C_9f686dd4.webp',
-        description: 'SANY SY215C popular mid-size excavator for construction and mining. Features powerful engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 21.5 ton. Bucket capacity: 0.9 m³. Max digging depth: 6.0 m. Perfect for general construction and mining.'
-      },
-      {
-        id: 'sany-sy335c',
-        model: 'SY335C',
-        name: 'Excavator',
-        specs: '33.5 ton | 162 kW | 1.4 m³ bucket',
-        image: '/manus-storage/SY335C_400ae492.webp',
-        description: 'SANY SY335C large excavator for heavy-duty mining and construction. Features powerful Cummins engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB6.7 (162 kW / 220 HP). Operating weight: 33.5 ton. Bucket capacity: 1.4 m³. Max digging depth: 6.8 m. Excellent for large-scale excavation and mining.'
-      },
-      {
-        id: 'sany-sy365h',
-        model: 'SY365H',
-        name: 'Excavator',
-        specs: '36.5 ton | 206 kW | 1.7 m³ bucket',
-        image: '/manus-storage/SY365H_82e03c4d.webp',
-        description: 'SANY SY365H large excavator for major mining and construction projects. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSB6.7 (206 kW / 280 HP). Operating weight: 36.5 ton. Bucket capacity: 1.7 m³. Max digging depth: 7.0 m. Ideal for large-scale mining and construction.'
-      },
-      {
-        id: 'sany-sy550h',
-        model: 'SY550H',
-        name: 'Excavator',
-        specs: '55 ton | 280 kW | 2.4 m³ bucket',
-        image: '/manus-storage/SY550H_072b043d.webp',
-        description: 'SANY SY550H super-large excavator for major mining operations. Features powerful Cummins engine, advanced hydraulic system, and excellent efficiency. Engine: Cummins QSM11 (280 kW / 380 HP). Operating weight: 55 ton. Bucket capacity: 2.4 m³. Max digging depth: 8.0 m. Perfect for large-scale mining projects.'
-      },
-      {
-        id: 'sany-sy650h',
-        model: 'SY650H',
-        name: 'Excavator',
-        specs: '65 ton | 340 kW | 3.0 m³ bucket',
-        image: '/manus-storage/SY650H_86480fd9.webp',
-        description: 'SANY SY650H ultra-large excavator for major mining operations. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSM11 (340 kW / 460 HP). Operating weight: 65 ton. Bucket capacity: 3.0 m³. Max digging depth: 8.5 m. Ideal for large-scale mining and earthmoving.'
-      },
-      {
-        id: 'sany-sy956h',
-        model: 'SY956H',
-        name: 'Excavator',
-        specs: '95 ton | 500 kW | 4.5 m³ bucket',
-        image: '/manus-storage/SY956H_f166e7ef.png',
-        description: 'SANY SY956H mega excavator for major mining and quarrying operations. Features powerful Cummins engine, advanced hydraulic system, and exceptional efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Operating weight: 95 ton. Bucket capacity: 4.5 m³. Max digging depth: 9.5 m. Perfect for large-scale mining and quarrying.'
-      },
-      {
-        id: 'sany-sy55c',
-        model: 'SY55C',
+        id: 'lg-856he',
+        model: '856HE',
         name: 'Wheel Loader',
-        specs: '5.5 ton | 74 kW | 2.0 m³ bucket',
-        image: '/manus-storage/SY55C_b53e35a5.webp',
-        description: 'SANY SY55C compact wheel loader for light-duty material handling. Features fuel-efficient engine, smooth hydraulic system, and excellent visibility. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 5.5 ton. Bucket capacity: 2.0 m³. Max loading height: 2.8 m. Perfect for small construction sites.'
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'sany-sy60c',
-        model: 'SY60C',
+        id: 'lg-856t',
+        model: '856T',
         name: 'Wheel Loader',
-        specs: '6 ton | 110 kW | 2.5 m³ bucket',
-        image: '/manus-storage/SY60C_e56369ef.webp',
-        description: 'SANY SY60C mid-size wheel loader for general material handling. Features powerful engine, smooth hydraulic system, and excellent visibility. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 6 ton. Bucket capacity: 2.5 m³. Max loading height: 3.0 m. Excellent for construction and mining operations.'
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'sany-sy75c',
-        model: 'SY75C',
+        id: 'lg-870he',
+        model: '870HE',
         name: 'Wheel Loader',
-        specs: '7.5 ton | 155 kW | 3.0 m³ bucket',
-        image: '/manus-storage/SY75C_cf0e2362.webp',
-        description: 'SANY SY75C large wheel loader for heavy-duty material handling. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 7.5 ton. Bucket capacity: 3.0 m³. Max loading height: 3.2 m. Ideal for large-scale construction and mining.'
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'sany-xc968',
-        model: 'XC968',
+        id: 'lg-890t',
+        model: '890T',
         name: 'Wheel Loader',
-        specs: '96 ton | 500 kW | 6.0 m³ bucket',
-        image: '/manus-storage/XC968_513b412e.png',
-        description: 'SANY XC968 ultra-large wheel loader for major mining operations. Features powerful Cummins engine, advanced hydraulic system, and exceptional efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Operating weight: 96 ton. Bucket capacity: 6.0 m³. Max loading height: 3.8 m. Perfect for large-scale mining and quarrying.'
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
       },
       {
-        id: 'sany-sy16c',
-        model: 'SY16C',
-        name: 'Backhoe Loader',
-        specs: '8 ton | 75 kW | 2.0 m³ bucket',
-        image: '/manus-storage/SY16C_ec705e0e.webp',
-        description: 'SANY SY16C backhoe loader for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 8 ton. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect for utility work and small construction.'
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
       },
       {
-        id: 'sany-sy18c',
-        model: 'SY18C',
-        name: 'Backhoe Loader',
-        specs: '9 ton | 110 kW | 2.5 m³ bucket',
-        image: '/manus-storage/SY18C_048ea560.webp',
-        description: 'SANY SY18C backhoe loader for general construction and excavation. Features combined loading and digging capability, advanced hydraulic system, and excellent performance. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 9 ton. Front bucket: 2.5 m³. Rear bucket: 0.3 m³. Excellent for construction and utility work.'
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
       },
       {
-        id: 'sany-gd220j',
-        model: 'GD220J',
-        name: 'Motor Grader',
-        specs: '22 ton | 155 kW | 3.7 m blade',
-        image: '/manus-storage/GD220J_5230ed14.jpeg',
-        description: 'SANY GD220J motor grader for road construction and maintenance. Features precise blade control, powerful Cummins engine, and excellent visibility. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 22 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal for highway and airport construction.'
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
       },
       {
-        id: 'sany-xde120',
-        model: 'XDE120',
-        name: 'Motor Grader',
-        specs: '12 ton | 110 kW | 3.2 m blade',
-        image: '/manus-storage/XDE120_7253de2b.jpeg',
-        description: 'SANY XDE120 compact motor grader for road maintenance and light construction. Features precise blade control, fuel-efficient engine, and excellent maneuverability. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 12 ton. Blade width: 3.2 m. Grading accuracy: ±15 mm. Perfect for road maintenance and small projects.'
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
       },
       {
-        id: 'sany-dl560',
-        model: 'DL560',
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
         name: 'Bulldozer',
-        specs: '56 ton | 280 kW | 4.0 m blade',
-        image: '/manus-storage/DL560_fa1499e2.png',
-        description: 'SANY DL560 large bulldozer for heavy-duty earthmoving and construction. Features powerful Cummins engine, advanced hydraulic system, and excellent stability. Engine: Cummins QSM11 (280 kW / 380 HP). Operating weight: 56 ton. Blade width: 4.0 m. Blade capacity: 6.5 m³. Ideal for large-scale construction and mining projects.'
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
       },
       {
-        id: 'sany-ssr160ac',
-        model: 'SSR160AC-8',
-        name: 'Vibratory Roller',
-        specs: '16 ton | 110 kW | 2.1 m width',
-        image: '/manus-storage/SSR160AC-8_0a41f2ff.webp',
-        description: 'SANY SSR160AC-8 vibratory roller for asphalt and soil compaction. Features powerful Cummins engine, advanced vibration system, and excellent compaction efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 16 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfect for road construction and maintenance.'
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
       },
       {
-        id: 'sany-ssr200c',
-        model: 'SSR200C-8H',
-        name: 'Vibratory Roller',
-        specs: '20 ton | 155 kW | 2.1 m width',
-        image: '/manus-storage/SSR200C-8H_d8390bbc.webp',
-        description: 'SANY SSR200C-8H vibratory roller for heavy-duty asphalt compaction. Features powerful Cummins engine, advanced vibration system, and excellent efficiency. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 20 ton. Roller width: 2.1 m. Compaction depth: 0.4 m. Ideal for highway and airport construction.'
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
       },
       {
-        id: 'sany-stc250t5',
-        model: 'STC250T5',
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
         name: 'Truck Crane',
-        specs: '250 ton | 500 kW | 60 m boom',
-        image: '/manus-storage/STC250T5_0dcf44b0.webp',
-        description: 'SANY STC250T5 large truck crane for heavy lifting and construction. Features powerful Cummins engine, advanced control system, and excellent stability. Engine: Cummins QSK60 (500 kW / 680 HP). Lifting capacity: 250 ton. Max boom length: 60 m. Perfect for major construction and industrial projects.'
-      },
-      {
-        id: 'sany-stc1200t7',
-        model: 'STC1200T7',
-        name: 'Truck Crane',
-        specs: '1200 ton | 800 kW | 100 m boom',
-        image: '/manus-storage/STC1200T7_d0f368f9.webp',
-        description: 'SANY STC1200T7 mega truck crane for ultra-heavy lifting operations. Features powerful engine, advanced hydraulic system, and exceptional stability. Engine: Cummins QSK95 (800 kW / 1088 HP). Lifting capacity: 1200 ton. Max boom length: 100 m. Ideal for major infrastructure and industrial projects.'
-      },
-      {
-        id: 'sany-sac600e',
-        model: 'SAC600E',
-        name: 'Concrete Pump',
-        specs: '600 m³/h | 500 kW | 60 m boom',
-        image: '/manus-storage/SAC600E_ea1e482a.webp',
-        description: 'SANY SAC600E truck-mounted concrete pump for large-scale construction. Features powerful Cummins engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSK60 (500 kW / 680 HP). Pumping capacity: 600 m³/h. Max boom length: 60 m. Perfect for major construction projects.'
-      },
-      {
-        id: 'sany-scc1000tb',
-        model: 'SCC1000TB',
-        name: 'Concrete Pump',
-        specs: '1000 m³/h | 800 kW | 80 m boom',
-        image: '/manus-storage/SCC1000TB_e01f9b29.webp',
-        description: 'SANY SCC1000TB ultra-large concrete pump for major construction operations. Features powerful Cummins engine, advanced control system, and exceptional efficiency. Engine: Cummins QSK95 (800 kW / 1088 HP). Pumping capacity: 1000 m³/h. Max boom length: 80 m. Ideal for large-scale construction projects.'
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -1318,92 +1539,172 @@ export const brands: Brand[] = [
     color: '#1565C0',
     machines: [
       {
-        id: 'komatsu-pc50',
-        model: 'PC50MR-2',
-        name: 'Mini Excavator',
-        specs: '5 ton | 32 kW | 0.15 m³ bucket',
-        image: '/manus-storage/saUZZ9MRrA2n_00d7a498.webp',
-        description: 'Komatsu PC50MR-2 ultra-compact mini excavator for tight spaces. Features compact design, fuel efficiency, and excellent precision. Engine: Komatsu 3D68-1 (32 kW / 43 HP). Operating weight: 5 ton. Bucket capacity: 0.15 m³. Max digging depth: 3.2 m. Perfect for landscaping and confined construction work.'
-      },
-      {
-        id: 'komatsu-pc120',
-        model: 'PC120-8',
-        name: 'Excavator',
-        specs: '12 ton | 74 kW | 0.45 m³ bucket',
-        image: '/manus-storage/TWZmqY59QlJQ_f5543d7f.jpg',
-        description: 'Komatsu PC120-8 compact excavator for confined spaces and utility work. Features fuel-efficient Komatsu engine, smooth control, and excellent maneuverability. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 12 ton. Bucket capacity: 0.45 m³. Max digging depth: 5.0 m. Ideal for small construction sites and landscaping.'
-      },
-      {
-        id: 'komatsu-pc200',
-        model: 'PC200-8',
-        name: 'Excavator',
-        specs: '20 ton | 110 kW | 0.9 m³ bucket',
-        image: '/manus-storage/vQsQGavBS5Ft_050c4027.webp',
-        description: 'Komatsu PC200-8 mid-size excavator for general construction and excavation. Features fuel-efficient Komatsu engine, smooth hydraulics, and excellent reliability. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 20 ton. Bucket capacity: 0.9 m³. Max digging depth: 6.0 m. Ideal for construction, mining, and earthmoving operations.'
-      },
-      {
-        id: 'komatsu-pc300',
-        model: 'PC300-8',
-        name: 'Excavator',
-        specs: '30 ton | 162 kW | 1.4 m³ bucket',
-        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
-        description: 'Komatsu PC300-8 large excavator for heavy-duty mining and construction. Features powerful Komatsu engine, advanced hydraulic system, and high efficiency. Engine: Komatsu SAA6D107E (162 kW / 220 HP). Operating weight: 30 ton. Bucket capacity: 1.4 m³. Max digging depth: 6.8 m. Perfect for large-scale excavation and mining.'
-      },
-      {
-        id: 'komatsu-wa60m',
-        model: 'WA60M-5',
+        id: 'lg-856he',
+        model: '856HE',
         name: 'Wheel Loader',
-        specs: '6 ton | 74 kW | 1.8 m³ bucket',
-        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
-        description: 'Komatsu WA60M-5 compact wheel loader for light-duty material handling. Features fuel-efficient Komatsu engine, smooth hydraulic system, and excellent maneuverability. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 6 ton. Bucket capacity: 1.8 m³. Max loading height: 2.6 m. Perfect for small construction sites.'
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'komatsu-wa100m',
-        model: 'WA100M-5',
+        id: 'lg-856t',
+        model: '856T',
         name: 'Wheel Loader',
-        specs: '10 ton | 110 kW | 3.0 m³ bucket',
-        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
-        description: 'Komatsu WA100M-5 mid-size wheel loader for general material handling. Features powerful Komatsu engine, smooth hydraulic system, and excellent visibility. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 10 ton. Bucket capacity: 3.0 m³. Max loading height: 3.0 m. Excellent for construction and mining operations.'
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'komatsu-wa150m',
-        model: 'WA150M-5',
+        id: 'lg-870he',
+        model: '870HE',
         name: 'Wheel Loader',
-        specs: '15 ton | 155 kW | 4.5 m³ bucket',
-        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
-        description: 'Komatsu WA150M-5 large wheel loader for heavy-duty material handling. Features powerful Komatsu engine, advanced control system, and excellent stability. Engine: Komatsu SAA6D102E (155 kW / 210 HP). Operating weight: 15 ton. Bucket capacity: 4.5 m³. Max loading height: 3.2 m. Ideal for large-scale construction and mining.'
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'komatsu-d50px',
-        model: 'D50PX-8',
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
+      },
+      {
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
+      },
+      {
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
+      },
+      {
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
+      },
+      {
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
+      },
+      {
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
         name: 'Bulldozer',
-        specs: '50 ton | 155 kW | 3.2 m blade',
-        image: '/manus-storage/47LgdcnWgNcI_427235b3.jpg',
-        description: 'Komatsu D50PX-8 mid-size bulldozer for general earthmoving and construction. Features powerful Komatsu engine, smooth control, and excellent efficiency. Engine: Komatsu SAA6D102E (155 kW / 210 HP). Operating weight: 50 ton. Blade width: 3.2 m. Blade capacity: 4.0 m³. Perfect for construction and mining operations.'
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
       },
       {
-        id: 'komatsu-d65px',
-        model: 'D65PX-8',
+        id: 'lg-td16n',
+        model: 'TD16N',
         name: 'Bulldozer',
-        specs: '65 ton | 206 kW | 3.9 m blade',
-        image: '/manus-storage/ihJ4eBTn430j_157a4508.jpg',
-        description: 'Komatsu D65PX-8 large bulldozer for heavy-duty earthmoving and construction. Features powerful Komatsu engine, advanced hydraulic system, and excellent stability. Engine: Komatsu SAA6D107E (206 kW / 280 HP). Operating weight: 65 ton. Blade width: 3.9 m. Blade capacity: 5.5 m³. Ideal for large-scale construction and mining projects.'
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
       },
       {
-        id: 'komatsu-gd530a',
-        model: 'GD530A-5',
-        name: 'Motor Grader',
-        specs: '16 ton | 110 kW | 3.7 m blade',
-        image: '/manus-storage/rUDuVPKXtZYH_8b822bb4.jpg',
-        description: 'Komatsu GD530A-5 motor grader for road construction and maintenance. Features precise blade control, powerful Komatsu engine, and excellent visibility. Engine: Komatsu SAA4D95LE (110 kW / 150 HP). Operating weight: 16 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal for highway and airport construction.'
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
       },
       {
-        id: 'komatsu-wd600',
-        model: 'WD600-3',
-        name: 'Vibratory Roller',
-        specs: '12 ton | 74 kW | 2.1 m width',
-        image: '/manus-storage/A3eEas8O1DtR_fbc9789c.jpg',
-        description: 'Komatsu WD600-3 vibratory roller for asphalt and soil compaction. Features powerful Komatsu engine, advanced vibration system, and excellent compaction efficiency. Engine: Komatsu SAA4D95LE (74 kW / 100 HP). Operating weight: 12 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfect for road construction and maintenance.'
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -1428,36 +1729,172 @@ export const brands: Brand[] = [
     color: '#C41E3A',
     machines: [
       {
-        id: 'iz-fvr34',
-        model: 'FVR34',
-        name: 'Heavy Duty Truck',
-        specs: '20 ton | 190 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Isuzu FVR34 is a reliable heavy-duty truck for construction and logistics.'
+        id: 'lg-856he',
+        model: '856HE',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'iz-fvr35',
-        model: 'FVR35',
-        name: 'Heavy Duty Truck',
-        specs: '25 ton | 210 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The FVR35 offers enhanced power and capacity for heavy-duty applications.'
+        id: 'lg-856t',
+        model: '856T',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'iz-giga',
-        model: 'GIGA',
-        name: 'Heavy Duty Truck',
-        specs: '30 ton | 250 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The GIGA is Isuzu\'s premium heavy-duty truck for demanding applications.'
+        id: 'lg-870he',
+        model: '870HE',
+        name: 'Wheel Loader',
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'iz-elf',
-        model: 'ELF',
-        name: 'Medium Duty Truck',
-        specs: '12 ton | 130 kW | 4-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The ELF is a versatile medium-duty truck for urban and construction use.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
+      },
+      {
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
+      },
+      {
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
+      },
+      {
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
+      },
+      {
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
+      },
+      {
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -1481,36 +1918,172 @@ export const brands: Brand[] = [
     color: '#E53935',
     machines: [
       {
-        id: 'sm-x3000',
-        model: 'X3000',
-        name: 'Heavy Duty Truck',
-        specs: '25 ton | 290 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Shacman X3000 is a premium heavy-duty truck for long-distance hauling.'
+        id: 'lg-856he',
+        model: '856HE',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'sm-f3000',
-        model: 'F3000',
-        name: 'Heavy Duty Truck',
-        specs: '20 ton | 250 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The F3000 offers reliable performance for construction and mining.'
+        id: 'lg-856t',
+        model: '856T',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'sm-m3000',
-        model: 'M3000',
-        name: 'Medium Duty Truck',
-        specs: '15 ton | 190 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The M3000 is a versatile medium-duty truck for urban and regional transport.'
+        id: 'lg-870he',
+        model: '870HE',
+        name: 'Wheel Loader',
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'sm-l3000',
-        model: 'L3000',
-        name: 'Light Duty Truck',
-        specs: '10 ton | 150 kW | 4-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The L3000 is an economical light-duty truck for general cargo transport.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
+      },
+      {
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
+      },
+      {
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
+      },
+      {
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
+      },
+      {
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
+      },
+      {
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -1533,36 +2106,172 @@ export const brands: Brand[] = [
     color: '#D32F2F',
     machines: [
       {
-        id: 'st-howo-a7',
-        model: 'HOWO A7',
-        name: 'Heavy Duty Truck',
-        specs: '25 ton | 290 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Sinotruk HOWO A7 is a premium heavy-duty truck for long-distance hauling.'
+        id: 'lg-856he',
+        model: '856HE',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'st-howo-t5g',
-        model: 'HOWO T5G',
-        name: 'Heavy Duty Truck',
-        specs: '20 ton | 250 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The HOWO T5G offers reliable performance for construction and mining.'
+        id: 'lg-856t',
+        model: '856T',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'st-howo-vx',
-        model: 'HOWO VX',
-        name: 'Medium Duty Truck',
-        specs: '15 ton | 190 kW | 6-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The HOWO VX is a versatile medium-duty truck for urban and regional transport.'
+        id: 'lg-870he',
+        model: '870HE',
+        name: 'Wheel Loader',
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'st-howo-light',
-        model: 'HOWO Light Duty',
-        name: 'Light Duty Truck',
-        specs: '10 ton | 150 kW | 4-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The HOWO Light Duty is an economical truck for general cargo transport.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
+      },
+      {
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
+      },
+      {
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
+      },
+      {
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
+      },
+      {
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
+      },
+      {
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -1586,36 +2295,172 @@ export const brands: Brand[] = [
     color: '#EB0A1E',
     machines: [
       {
-        id: 'ty-landcruiser',
-        model: 'Land Cruiser',
-        name: 'Heavy Duty Truck',
-        specs: '3.5 ton | 120 kW | 4-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Toyota Land Cruiser is a legendary heavy-duty truck for off-road and construction.'
+        id: 'lg-856he',
+        model: '856HE',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'ty-hilux',
-        model: 'Hilux',
-        name: 'Pickup Truck',
-        specs: '2.8 ton | 110 kW | 4-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Toyota Hilux is a versatile pickup truck for construction and utility work.'
+        id: 'lg-856t',
+        model: '856T',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'ty-coaster',
-        model: 'Coaster',
-        name: 'Commercial Bus',
-        specs: '5 ton | 110 kW | 4-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Toyota Coaster is a reliable commercial bus for passenger transport.'
+        id: 'lg-870he',
+        model: '870HE',
+        name: 'Wheel Loader',
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'ty-dyna',
-        model: 'Dyna',
-        name: 'Medium Duty Truck',
-        specs: '3 ton | 95 kW | 4-cylinder diesel',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp',
-        description: 'The Toyota Dyna is a compact medium-duty truck for urban delivery.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
+      },
+      {
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
+      },
+      {
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
+      },
+      {
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
+      },
+      {
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
+      },
+      {
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -1639,36 +2484,172 @@ export const brands: Brand[] = [
     color: '#C41E3A',
     machines: [
       {
-        id: 'cm-b6.7',
-        model: 'B6.7',
-        name: 'Diesel Engine',
-        specs: '6.7L | 205 kW | 6-cylinder',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Cummins B6.7 is a reliable diesel engine for medium-duty applications.'
+        id: 'lg-856he',
+        model: '856HE',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'cm-l9',
-        model: 'L9',
-        name: 'Diesel Engine',
-        specs: '8.9L | 265 kW | 6-cylinder',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The L9 is a powerful diesel engine for heavy-duty construction and mining.'
+        id: 'lg-856t',
+        model: '856T',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'cm-x12',
-        model: 'X12',
-        name: 'Diesel Engine',
-        specs: '11.9L | 310 kW | 6-cylinder',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The X12 is a premium diesel engine for major mining and industrial applications.'
+        id: 'lg-870he',
+        model: '870HE',
+        name: 'Wheel Loader',
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'cm-qsx15',
-        model: 'QSX15',
-        name: 'Diesel Engine',
-        specs: '14.9L | 373 kW | 6-cylinder',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The QSX15 is a high-performance diesel engine for extreme duty applications.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
+      },
+      {
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
+      },
+      {
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
+      },
+      {
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
+      },
+      {
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
+      },
+      {
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
@@ -1692,36 +2673,172 @@ export const brands: Brand[] = [
     color: '#0277BD',
     machines: [
       {
-        id: 'wc-wp6',
-        model: 'WP6',
-        name: 'Diesel Engine',
-        specs: '6.0L | 162 kW | 6-cylinder',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The Weichai WP6 is a reliable diesel engine for medium-duty applications.'
+        id: 'lg-856he',
+        model: '856HE',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856HE_348e297a.png',
+        description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.'
       },
       {
-        id: 'wc-wp9',
-        model: 'WP9',
-        name: 'Diesel Engine',
-        specs: '8.9L | 250 kW | 6-cylinder',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The WP9 is a powerful diesel engine for heavy-duty construction and mining.'
+        id: 'lg-856t',
+        model: '856T',
+        name: 'Wheel Loader',
+        specs: '8.5 ton | 110 kW | 3.0 m³',
+        image: '/manus-storage/856T_b17d0d76.png',
+        description: 'LiuGong 856T Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Reliable loader for construction work.'
       },
       {
-        id: 'wc-wp10',
-        model: 'WP10',
-        name: 'Diesel Engine',
-        specs: '10.0L | 290 kW | 6-cylinder',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The WP10 is a premium diesel engine for major mining and industrial applications.'
+        id: 'lg-870he',
+        model: '870HE',
+        name: 'Wheel Loader',
+        specs: '8.7 ton | 115 kW | 3.2 m³',
+        image: '/manus-storage/870HE_9128d7b0.png',
+        description: 'LiuGong 870HE Wheel Loader. Engine: Weichai WD615 (115 kW / 156 HP). Bucket Capacity: 3.2 m³. Operating Weight: 8,700 kg. Ideal for medium-duty operations.'
       },
       {
-        id: 'wc-wp12',
-        model: 'WP12',
-        name: 'Diesel Engine',
-        specs: '12.0L | 340 kW | 6-cylinder',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-        description: 'The WP12 is a high-performance diesel engine for extreme duty applications.'
+        id: 'lg-890t',
+        model: '890T',
+        name: 'Wheel Loader',
+        specs: '8.9 ton | 120 kW | 3.4 m³',
+        image: '/manus-storage/890T_b1caed62.png',
+        description: 'LiuGong 890T Wheel Loader. Engine: Weichai WD615 (120 kW / 163 HP). Bucket Capacity: 3.4 m³. Operating Weight: 8,900 kg. Suitable for quarry applications.'
+      },
+      {
+        id: 'lg-922e',
+        model: '922E',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 125 kW | 3.6 m³',
+        image: '/manus-storage/922E_83b68604.png',
+        description: 'LiuGong 922E Wheel Loader. Engine: Weichai WD615 (125 kW / 170 HP). Bucket Capacity: 3.6 m³. Operating Weight: 9,200 kg. Excellent for material handling.'
+      },
+      {
+        id: 'lg-922fe',
+        model: '922FE',
+        name: 'Wheel Loader',
+        specs: '9.2 ton | 130 kW | 3.8 m³',
+        image: '/manus-storage/922FE_c5980235.png',
+        description: 'LiuGong 922FE Wheel Loader. Engine: Weichai WD615 (130 kW / 177 HP). Bucket Capacity: 3.8 m³. Operating Weight: 9,200 kg. Enhanced performance model.'
+      },
+      {
+        id: 'lg-933e',
+        model: '933E',
+        name: 'Wheel Loader',
+        specs: '9.3 ton | 135 kW | 4.0 m³',
+        image: '/manus-storage/933E_3ef67cc8.png',
+        description: 'LiuGong 933E Wheel Loader. Engine: Weichai WD615 (135 kW / 184 HP). Bucket Capacity: 4.0 m³. Operating Weight: 9,300 kg. Perfect for heavy-duty loading.'
+      },
+      {
+        id: 'lg-936e',
+        model: '936E',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 140 kW | 4.2 m³',
+        image: '/manus-storage/936E_81aed160.png',
+        description: 'LiuGong 936E Wheel Loader. Engine: Weichai WD615 (140 kW / 190 HP). Bucket Capacity: 4.2 m³. Operating Weight: 9,600 kg. Ideal for mining and quarry.'
+      },
+      {
+        id: 'lg-938ehd',
+        model: '938EHD',
+        name: 'Wheel Loader',
+        specs: '9.8 ton | 145 kW | 4.4 m³',
+        image: '/manus-storage/938EHD_5215f127.png',
+        description: 'LiuGong 938EHD Wheel Loader. Engine: Weichai WD615 (145 kW / 197 HP). Bucket Capacity: 4.4 m³. Operating Weight: 9,800 kg. High-performance loader.'
+      },
+      {
+        id: 'lg-952f',
+        model: '952F',
+        name: 'Wheel Loader',
+        specs: '9.5 ton | 142 kW | 4.3 m³',
+        image: '/manus-storage/952F_def2cd67.png',
+        description: 'LiuGong 952F Wheel Loader. Engine: Weichai WD615 (142 kW / 193 HP). Bucket Capacity: 4.3 m³. Operating Weight: 9,500 kg. Versatile loader.'
+      },
+      {
+        id: 'lg-965f',
+        model: '965F',
+        name: 'Wheel Loader',
+        specs: '9.6 ton | 148 kW | 4.5 m³',
+        image: '/manus-storage/965F_729648e6.png',
+        description: 'LiuGong 965F Wheel Loader. Engine: Weichai WD615 (148 kW / 201 HP). Bucket Capacity: 4.5 m³. Operating Weight: 9,600 kg. Premium loader.'
+      },
+      {
+        id: 'lg-8128h',
+        model: '8128H',
+        name: 'Hydraulic Excavator',
+        specs: '12.8 ton | 85 kW | 0.50 m³',
+        image: '/manus-storage/8128H_2a9ec8db.png',
+        description: 'LiuGong 8128H Hydraulic Excavator. Engine: Weichai WD615 (85 kW / 115 HP). Bucket Capacity: 0.50 m³. Operating Weight: 12,800 kg. Compact excavator.'
+      },
+      {
+        id: 'lg-6608f',
+        model: '6608F',
+        name: 'Wheel Loader',
+        specs: '6.6 ton | 95 kW | 2.5 m³',
+        image: '/manus-storage/6608F_d4164c38.png',
+        description: 'LiuGong 6608F Wheel Loader. Engine: Weichai WD615 (95 kW / 129 HP). Bucket Capacity: 2.5 m³. Operating Weight: 6,600 kg. Compact loader.'
+      },
+      {
+        id: 'lg-4215d',
+        model: '4215D',
+        name: 'Wheel Loader',
+        specs: '4.2 ton | 65 kW | 1.8 m³',
+        image: '/manus-storage/4215D_7f783cbc.png',
+        description: 'LiuGong 4215D Wheel Loader. Engine: Weichai WD615 (65 kW / 88 HP). Bucket Capacity: 1.8 m³. Operating Weight: 4,200 kg. Entry-level loader.'
+      },
+      {
+        id: 'lg-clg764a',
+        model: 'CLG764A',
+        name: 'Wheel Loader',
+        specs: '7.6 ton | 105 kW | 2.8 m³',
+        image: '/manus-storage/CLG764A_360fbab5.png',
+        description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (105 kW / 143 HP). Bucket Capacity: 2.8 m³. Operating Weight: 7,600 kg. Mid-range loader.'
+      },
+      {
+        id: 'lg-clg777a',
+        model: 'CLG777A',
+        name: 'Wheel Loader',
+        specs: '7.7 ton | 108 kW | 2.9 m³',
+        image: '/manus-storage/CLG777A_360fbab5.png',
+        description: 'LiuGong CLG777A Wheel Loader. Engine: Weichai WD615 (108 kW / 147 HP). Bucket Capacity: 2.9 m³. Operating Weight: 7,700 kg. Reliable loader.'
+      },
+      {
+        id: 'lg-dw105ae',
+        model: 'DW105AE',
+        name: 'Bulldozer',
+        specs: '10.5 ton | 78 kW | Blade: 3.0 m',
+        image: '/manus-storage/DW105AE_0cd6820d.png',
+        description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW / 106 HP). Blade Width: 3.0 m. Operating Weight: 10,500 kg. Grading and land preparation.'
+      },
+      {
+        id: 'lg-td16n',
+        model: 'TD16N',
+        name: 'Bulldozer',
+        specs: '16 ton | 110 kW | Blade: 3.5 m',
+        image: '/manus-storage/TD16N_9729a409.png',
+        description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW / 150 HP). Blade Width: 3.5 m. Operating Weight: 16,000 kg. Heavy-duty bulldozer.'
+      },
+      {
+        id: 'lg-de100c',
+        model: 'de100c',
+        name: 'Bulldozer',
+        specs: '10 ton | 75 kW | Blade: 2.8 m',
+        image: '/manus-storage/de100c_e261d9a3.png',
+        description: 'LiuGong de100c Bulldozer. Engine: Weichai WD615 (75 kW / 102 HP). Blade Width: 2.8 m. Operating Weight: 10,000 kg. General grading.'
+      },
+      {
+        id: 'lg-dw90',
+        model: 'dw90',
+        name: 'Bulldozer',
+        specs: '9 ton | 65 kW | Blade: 2.5 m',
+        image: '/manus-storage/dw90_2628074a.png',
+        description: 'LiuGong dw90 Bulldozer. Engine: Weichai WD615 (65 kW / 88 HP). Blade Width: 2.5 m. Operating Weight: 9,000 kg. Compact bulldozer.'
+      },
+      {
+        id: 'lg-ltc900t5',
+        model: 'ltc900t5',
+        name: 'Truck Crane',
+        specs: '90 ton | 350 kW | Max Boom: 45 m',
+        image: '/manus-storage/ltc900t5_5b01386e.png',
+        description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.'
       }
     ],
     spareParts: [
