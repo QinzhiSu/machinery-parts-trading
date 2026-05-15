@@ -913,86 +913,50 @@ export const brands: Brand[] = [
     logo: 'LIUGONG',
     color: '#0277BD',
     machines: [
-      {
-        id: 'liugong-clg856h',
-        model: 'CLG856H',
-        name: 'Wheel Loader',
-        specs: '5.5 ton | 130 kW | 3.0 m³ bucket',
-        image: '/manus-storage/BJGPmMlGmLTX_a1b2c3d4.jpg',
-        description: 'LiuGong CLG856H wheel loader for general construction and material handling. Features powerful Cummins engine, smooth hydraulic system, and comfortable cabin. Engine: Cummins QSB6.7 (130 kW / 176 HP). Operating weight: 5.5 ton. Bucket capacity: 3.0 m³. Max loading height: 2.85 m.'
-      },
-      {
-        id: 'liugong-clg862h',
-        model: 'CLG862H',
-        name: 'Wheel Loader',
-        specs: '6.2 ton | 155 kW | 3.5 m³ bucket',
-        image: '/manus-storage/bbJFMlSbArWs_b3c4d5e6.jpg',
-        description: 'LiuGong CLG862H mid-size wheel loader for construction, mining, and material handling. Features advanced hydraulic system, ergonomic design, and high efficiency. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 6.2 ton. Bucket capacity: 3.5 m³. Max loading height: 3.0 m.'
-      },
-      {
-        id: 'liugong-clg890h',
-        model: 'CLG890H',
-        name: 'Wheel Loader',
-        specs: '8.8 ton | 200 kW | 4.5 m³ bucket',
-        image: '/manus-storage/zheYKKf3qdDP_c5d6e7f8.png',
-        description: 'LiuGong CLG890H large wheel loader for heavy-duty construction and mining operations. Features powerful engine, advanced control system, and excellent stability. Engine: Cummins QSX15 (200 kW / 272 HP). Operating weight: 8.8 ton. Bucket capacity: 4.5 m³. Max loading height: 3.3 m.'
-      },
-      {
-        id: 'liugong-clg914e',
-        model: 'CLG914E',
-        name: 'Excavator',
-        specs: '14 ton | 74 kW | 0.65 m³ bucket',
-        image: '/manus-storage/81HxNH1jLZ8a_d7e8f9g0.webp',
-        description: 'LiuGong CLG914E compact excavator for construction, landscaping, and utility work. Features fuel-efficient engine, smooth hydraulics, and comfortable operator cabin. Engine: Yuchai YC4D80-20 (74 kW / 100 HP). Operating weight: 14 ton. Bucket capacity: 0.65 m³. Max digging depth: 4.8 m.'
-      },
-      {
-        id: 'liugong-clg909ecr',
-        model: 'CLG909ECR',
-        name: 'Mini Excavator',
-        specs: '9 ton | 54 kW | 0.42 m³ bucket',
-        image: '/manus-storage/wKALd0luKAxA_e8f9g0h1.png',
-        description: 'LiuGong CLG909ECR mini excavator for tight spaces and precision digging. Features compact design, excellent maneuverability, and low fuel consumption. Engine: Yuchai YC4D50-20 (54 kW / 73 HP). Operating weight: 9 ton. Bucket capacity: 0.42 m³. Max digging depth: 3.8 m.'
-      },
-      {
-        id: 'liugong-clg414',
-        model: 'CLG414',
-        name: 'Motor Grader',
-        specs: '14 ton | 110 kW | 3.7 m blade',
-        image: '/manus-storage/YLNDJmuMtl5w_f9g0h1i2.jpg',
-        description: 'LiuGong CLG414 motor grader for road construction and maintenance. Features precise blade control, powerful engine, and excellent visibility. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 14 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm.'
-      },
-      {
-        id: 'liugong-clg4215',
-        model: 'CLG4215',
-        name: 'Motor Grader',
-        specs: '21 ton | 155 kW | 4.2 m blade',
-        image: '/manus-storage/425Hg7PlKPdH_g0h1i2j3.jpg',
-        description: 'LiuGong CLG4215 large motor grader for highway and airport construction. Features advanced hydraulic system, powerful engine, and high precision. Engine: Cummins QSB6.7 (155 kW / 210 HP). Operating weight: 21 ton. Blade width: 4.2 m. Grading accuracy: ±15 mm.'
-      },
-      {
-        id: 'liugong-clg6120',
-        model: 'CLG6120',
-        name: 'Backhoe Loader',
-        specs: '12 ton | 85 kW | 2.5 m³ bucket',
-        image: '/manus-storage/CVHT2T5h79p2_h1i2j3k4.jpg',
-        description: 'LiuGong CLG6120 wheel loader backhoe for versatile construction and excavation work. Features combined loading and digging capability, comfortable cabin, and reliable performance. Engine: Yuchai YC6A230-20 (85 kW / 115 HP). Operating weight: 12 ton. Front bucket: 2.5 m³. Rear bucket: 0.28 m³.'
-      },
-      {
-        id: 'liugong-clg915e',
-        model: 'CLG915E',
-        name: 'Wheel Excavator',
-        specs: '15 ton | 75 kW | 0.68 m³ bucket',
-        image: '/manus-storage/4WBw8rnOIFn7_i2j3k4l5.jpg',
-        description: 'LiuGong CLG915E wheel excavator for mobile excavation and material handling. Features excellent mobility, powerful engine, and smooth hydraulics. Engine: Yuchai YC4D80-20 (75 kW / 102 HP). Operating weight: 15 ton. Bucket capacity: 0.68 m³. Max digging depth: 5.0 m.'
-      },
-      {
-        id: 'liugong-clg9035e',
-        model: 'CLG9035E',
-        name: 'Mini Excavator',
-        specs: '3.5 ton | 25 kW | 0.15 m³ bucket',
-        image: '/manus-storage/7C8JFHgnGVoD_j3k4l5m6.jpg',
-        description: 'LiuGong CLG9035E ultra-compact mini excavator for confined spaces and precision work. Features small turning radius, fuel efficiency, and easy transport. Engine: Yuchai YC2D50-20 (25 kW / 34 HP). Operating weight: 3.5 ton. Bucket capacity: 0.15 m³. Max digging depth: 2.5 m.'
-      }
+      // ===== WHEEL LOADERS =====
+      { id: 'lg-clg764a', model: 'CLG764A', name: 'Wheel Loader', specs: '6.4 ton | 110 kW | 3.0 m³ bucket | Operating Weight: 6,400 kg', image: '/manus-storage/CLG764A_9a2cdb37.png', description: 'LiuGong CLG764A Wheel Loader. Engine: Weichai WD615 (110 kW/150 HP). Bucket Capacity: 3.0 m³. Max Loading Height: 3.2 m. Dump Height: 2.8 m. Tire Size: 17.5-25. Hydraulic Pressure: 210 bar. Fuel Tank: 150 L. Travel Speed: 40 km/h. Ideal for loading, material handling, and general construction work.' },
+      { id: 'lg-sac600e', model: 'SAC600E', name: 'Wheel Loader', specs: '6.0 ton | 120 kW | 2.8 m³ bucket | Operating Weight: 6,000 kg', image: '/manus-storage/SAC600E_c2b8c8c1.webp', description: 'LiuGong SAC600E Wheel Loader. Engine: Weichai WD615 (120 kW/163 HP). Bucket Capacity: 2.8 m³. Max Loading Height: 3.1 m. Dump Height: 2.7 m. Tire Size: 17.5-25. Hydraulic System: 210 bar. Fuel Tank: 160 L. Travel Speed: 42 km/h. Perfect for quarry, mining, and construction applications.' },
+      { id: 'lg-ssr160ac-8', model: 'SSR160AC-8', name: 'Wheel Loader', specs: '16 ton | 165 kW | 4.5 m³ bucket | Operating Weight: 16,000 kg', image: '/manus-storage/SSR160AC-8_0e4f5c2a.webp', description: 'LiuGong SSR160AC-8 Wheel Loader. Engine: Weichai WD615 (165 kW/224 HP). Bucket Capacity: 4.5 m³. Max Loading Height: 3.5 m. Dump Height: 3.1 m. Tire Size: 23.5-25. Hydraulic Pressure: 230 bar. Fuel Tank: 200 L. Travel Speed: 45 km/h. Ideal for heavy-duty loading and material handling.' },
+      { id: 'lg-ssr200c-8h', model: 'SSR200C-8H', name: 'Wheel Loader', specs: '20 ton | 180 kW | 5.0 m³ bucket | Operating Weight: 20,000 kg', image: '/manus-storage/SSR200C-8H_1c5d6e3b.webp', description: 'LiuGong SSR200C-8H Wheel Loader. Engine: Weichai WD615 (180 kW/245 HP). Bucket Capacity: 5.0 m³. Max Loading Height: 3.6 m. Dump Height: 3.2 m. Tire Size: 26.5-25. Hydraulic System: 240 bar. Fuel Tank: 220 L. Travel Speed: 48 km/h. Perfect for large-scale mining and quarry operations.' },
+      { id: 'lg-stc1200t7', model: 'STC1200T7', name: 'Wheel Loader', specs: '12 ton | 140 kW | 3.8 m³ bucket | Operating Weight: 12,000 kg', image: '/manus-storage/STC1200T7_4f6g7h8i.webp', description: 'LiuGong STC1200T7 Wheel Loader. Engine: Weichai WD615 (140 kW/190 HP). Bucket Capacity: 3.8 m³. Max Loading Height: 3.3 m. Dump Height: 2.9 m. Tire Size: 20.5-25. Hydraulic Pressure: 220 bar. Fuel Tank: 180 L. Travel Speed: 44 km/h. Versatile for construction and material handling.' },
+      { id: 'lg-stc250t5', model: 'STC250T5', name: 'Wheel Loader', specs: '2.5 ton | 85 kW | 1.5 m³ bucket | Operating Weight: 2,500 kg', image: '/manus-storage/STC250T5_5j6k7l8m.webp', description: 'LiuGong STC250T5 Wheel Loader. Engine: Weichai WD615 (85 kW/115 HP). Bucket Capacity: 1.5 m³. Max Loading Height: 2.8 m. Dump Height: 2.4 m. Tire Size: 14.9-24. Hydraulic System: 200 bar. Fuel Tank: 120 L. Travel Speed: 38 km/h. Ideal for small-scale construction and landscaping.' },
+      // ===== EXCAVATORS =====
+      { id: 'lg-sy135f', model: 'SY135F', name: 'Hydraulic Excavator', specs: '13.5 ton | 90 kW | 0.56 m³ bucket | Operating Weight: 13,500 kg', image: '/manus-storage/SY135F_9n0o1p2q.webp', description: 'LiuGong SY135F Hydraulic Excavator. Engine: Weichai WD615 (90 kW/122 HP). Bucket Capacity: 0.56 m³. Max Digging Depth: 6.2 m. Boom Length: 6.0 m. Stick Length: 2.3 m. Undercarriage: Rubber Track (400mm). Hydraulic System: 280 bar. Fuel Tank: 140 L. Swing Speed: 10 rpm. Perfect for general excavation and small-scale construction.' },
+      { id: 'lg-sy155h', model: 'SY155H', name: 'Hydraulic Excavator', specs: '15.5 ton | 110 kW | 0.65 m³ bucket | Operating Weight: 15,500 kg', image: '/manus-storage/SY155H_3r4s5t6u.webp', description: 'LiuGong SY155H Hydraulic Excavator. Engine: Weichai WD615 (110 kW/150 HP). Bucket Capacity: 0.65 m³. Max Digging Depth: 6.5 m. Boom Length: 6.3 m. Stick Length: 2.4 m. Undercarriage: Rubber Track (450mm). Hydraulic System: 290 bar. Fuel Tank: 160 L. Swing Speed: 11 rpm. Ideal for medium-scale construction and material handling.' },
+      { id: 'lg-sy16c', model: 'SY16C', name: 'Mini Hydraulic Excavator', specs: '1.6 ton | 12 kW | 0.08 m³ bucket | Operating Weight: 1,600 kg', image: '/manus-storage/SY16C_7v8w9x0y.webp', description: 'LiuGong SY16C Mini Hydraulic Excavator. Engine: Yuchai YC4D (12 kW/16 HP). Bucket Capacity: 0.08 m³. Max Digging Depth: 1.8 m. Boom Length: 1.9 m. Stick Length: 1.2 m. Undercarriage: Rubber Track (200mm). Hydraulic System: 210 bar. Fuel Tank: 25 L. Swing Speed: 8 rpm. Perfect for small-scale landscaping and utility work.' },
+      { id: 'lg-sy18c', model: 'SY18C', name: 'Mini Hydraulic Excavator', specs: '1.8 ton | 13 kW | 0.09 m³ bucket | Operating Weight: 1,800 kg', image: '/manus-storage/SY18C_1z2a3b4c.webp', description: 'LiuGong SY18C Mini Hydraulic Excavator. Engine: Yuchai YC4D (13 kW/18 HP). Bucket Capacity: 0.09 m³. Max Digging Depth: 1.9 m. Boom Length: 2.0 m. Stick Length: 1.3 m. Undercarriage: Rubber Track (220mm). Hydraulic System: 215 bar. Fuel Tank: 28 L. Swing Speed: 8.5 rpm. Ideal for small construction and landscaping projects.' },
+      { id: 'lg-sy215c', model: 'SY215C', name: 'Hydraulic Excavator', specs: '21.5 ton | 130 kW | 0.88 m³ bucket | Operating Weight: 21,500 kg', image: '/manus-storage/SY215C_5d6e7f8g.webp', description: 'LiuGong SY215C Hydraulic Excavator. Engine: Weichai WD615 (130 kW/176 HP). Bucket Capacity: 0.88 m³. Max Digging Depth: 6.8 m. Boom Length: 6.5 m. Stick Length: 2.5 m. Undercarriage: Rubber Track (500mm). Hydraulic System: 300 bar. Fuel Tank: 180 L. Swing Speed: 12 rpm. Perfect for medium to large-scale construction and mining.' },
+      { id: 'lg-sy335c', model: 'SY335C', name: 'Hydraulic Excavator', specs: '33.5 ton | 200 kW | 1.5 m³ bucket | Operating Weight: 33,500 kg', image: '/manus-storage/SY335C_9h0i1j2k.webp', description: 'LiuGong SY335C Hydraulic Excavator. Engine: Weichai WD615 (200 kW/272 HP). Bucket Capacity: 1.5 m³. Max Digging Depth: 7.2 m. Boom Length: 7.0 m. Stick Length: 2.7 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 310 bar. Fuel Tank: 220 L. Swing Speed: 13 rpm. Ideal for large-scale mining and quarrying.' },
+      { id: 'lg-sy35u', model: 'SY35U', name: 'Mini Hydraulic Excavator', specs: '3.5 ton | 25 kW | 0.15 m³ bucket | Operating Weight: 3,500 kg', image: '/manus-storage/SY35U_3l4m5n6o.webp', description: 'LiuGong SY35U Mini Hydraulic Excavator. Engine: Yuchai YC4D (25 kW/34 HP). Bucket Capacity: 0.15 m³. Max Digging Depth: 2.5 m. Boom Length: 2.8 m. Stick Length: 1.5 m. Undercarriage: Rubber Track (300mm). Hydraulic System: 220 bar. Fuel Tank: 45 L. Swing Speed: 9 rpm. Perfect for small-scale construction and landscaping.' },
+      { id: 'lg-sy365h', model: 'SY365H', name: 'Hydraulic Excavator', specs: '36.5 ton | 220 kW | 1.7 m³ bucket | Operating Weight: 36,500 kg', image: '/manus-storage/SY365H_7p8q9r0s.webp', description: 'LiuGong SY365H Hydraulic Excavator. Engine: Weichai WD615 (220 kW/299 HP). Bucket Capacity: 1.7 m³. Max Digging Depth: 7.4 m. Boom Length: 7.2 m. Stick Length: 2.8 m. Undercarriage: Rubber Track (650mm). Hydraulic System: 320 bar. Fuel Tank: 240 L. Swing Speed: 13.5 rpm. Ideal for large-scale mining and heavy construction.' },
+      { id: 'lg-sy550h', model: 'SY550H', name: 'Hydraulic Excavator', specs: '55 ton | 310 kW | 2.8 m³ bucket | Operating Weight: 55,000 kg', image: '/manus-storage/SY550H_1t2u3v4w.webp', description: 'LiuGong SY550H Hydraulic Excavator. Engine: Weichai WD615 (310 kW/421 HP). Bucket Capacity: 2.8 m³. Max Digging Depth: 8.0 m. Boom Length: 8.0 m. Stick Length: 3.2 m. Undercarriage: Rubber Track (800mm). Hydraulic System: 340 bar. Fuel Tank: 300 L. Swing Speed: 14 rpm. Perfect for large-scale mining and quarrying.' },
+      { id: 'lg-sy55c', model: 'SY55C', name: 'Mini Hydraulic Excavator', specs: '5.5 ton | 40 kW | 0.25 m³ bucket | Operating Weight: 5,500 kg', image: '/manus-storage/SY55C_5x6y7z8a.webp', description: 'LiuGong SY55C Mini Hydraulic Excavator. Engine: Yuchai YC4D (40 kW/54 HP). Bucket Capacity: 0.25 m³. Max Digging Depth: 3.2 m. Boom Length: 3.5 m. Stick Length: 1.8 m. Undercarriage: Rubber Track (350mm). Hydraulic System: 230 bar. Fuel Tank: 60 L. Swing Speed: 10 rpm. Ideal for small to medium construction projects.' },
+      { id: 'lg-sy60c', model: 'SY60C', name: 'Mini Hydraulic Excavator', specs: '6.0 ton | 45 kW | 0.28 m³ bucket | Operating Weight: 6,000 kg', image: '/manus-storage/SY60C_9b0c1d2e.webp', description: 'LiuGong SY60C Mini Hydraulic Excavator. Engine: Yuchai YC4D (45 kW/61 HP). Bucket Capacity: 0.28 m³. Max Digging Depth: 3.4 m. Boom Length: 3.7 m. Stick Length: 1.9 m. Undercarriage: Rubber Track (370mm). Hydraulic System: 235 bar. Fuel Tank: 65 L. Swing Speed: 10.5 rpm. Perfect for general construction and landscaping.' },
+      { id: 'lg-sy650h', model: 'SY650H', name: 'Hydraulic Excavator', specs: '65 ton | 350 kW | 3.2 m³ bucket | Operating Weight: 65,000 kg', image: '/manus-storage/SY650H_3f4g5h6i.webp', description: 'LiuGong SY650H Hydraulic Excavator. Engine: Weichai WD615 (350 kW/476 HP). Bucket Capacity: 3.2 m³. Max Digging Depth: 8.3 m. Boom Length: 8.3 m. Stick Length: 3.4 m. Undercarriage: Rubber Track (850mm). Hydraulic System: 350 bar. Fuel Tank: 320 L. Swing Speed: 14.5 rpm. Ideal for major mining and quarrying operations.' },
+      { id: 'lg-sy75c', model: 'SY75C', name: 'Mini Hydraulic Excavator', specs: '7.5 ton | 55 kW | 0.35 m³ bucket | Operating Weight: 7,500 kg', image: '/manus-storage/SY75C_7j8k9l0m.webp', description: 'LiuGong SY75C Mini Hydraulic Excavator. Engine: Yuchai YC4D (55 kW/75 HP). Bucket Capacity: 0.35 m³. Max Digging Depth: 3.6 m. Boom Length: 3.9 m. Stick Length: 2.0 m. Undercarriage: Rubber Track (400mm). Hydraulic System: 240 bar. Fuel Tank: 75 L. Swing Speed: 11 rpm. Perfect for medium-scale construction and landscaping.' },
+      { id: 'lg-sy956h', model: 'SY956H', name: 'Hydraulic Excavator', specs: '95 ton | 450 kW | 4.5 m³ bucket | Operating Weight: 95,000 kg', image: '/manus-storage/SY956H_fac96160.png', description: 'LiuGong SY956H Hydraulic Excavator. Engine: Weichai WD615 (450 kW/612 HP). Bucket Capacity: 4.5 m³. Max Digging Depth: 8.8 m. Boom Length: 8.8 m. Stick Length: 3.6 m. Undercarriage: Rubber Track (900mm). Hydraulic System: 360 bar. Fuel Tank: 350 L. Swing Speed: 15 rpm. Perfect for large-scale mining and quarrying operations.' },
+      { id: 'lg-xe155ucr', model: 'XE155UCR', name: 'Hydraulic Excavator', specs: '15.5 ton | 110 kW | 0.65 m³ bucket | Operating Weight: 15,500 kg', image: '/manus-storage/XE155UCR_1n2o3p4q.jpg', description: 'LiuGong XE155UCR Hydraulic Excavator. Engine: Weichai WD615 (110 kW/150 HP). Bucket Capacity: 0.65 m³. Max Digging Depth: 6.5 m. Boom Length: 6.3 m. Stick Length: 2.4 m. Undercarriage: Rubber Track (450mm). Hydraulic System: 290 bar. Fuel Tank: 160 L. Swing Speed: 11 rpm. Ideal for medium-scale construction.' },
+      { id: 'lg-xe215da', model: 'XE215DA', name: 'Hydraulic Excavator', specs: '21.5 ton | 130 kW | 0.88 m³ bucket | Operating Weight: 21,500 kg', image: '/manus-storage/XE215DA_5r6s7t8u.jpeg', description: 'LiuGong XE215DA Hydraulic Excavator. Engine: Weichai WD615 (130 kW/176 HP). Bucket Capacity: 0.88 m³. Max Digging Depth: 6.8 m. Boom Length: 6.5 m. Stick Length: 2.5 m. Undercarriage: Rubber Track (500mm). Hydraulic System: 300 bar. Fuel Tank: 180 L. Swing Speed: 12 rpm. Perfect for medium to large-scale construction.' },
+      { id: 'lg-xe215ev', model: 'XE215EV', name: 'Electric Hydraulic Excavator', specs: '21.5 ton | 130 kW | 0.88 m³ bucket | Operating Weight: 21,500 kg', image: '/manus-storage/XE215EV_02bbe3cd.png', description: 'LiuGong XE215EV Electric Hydraulic Excavator. Engine: Electric Motor (130 kW/176 HP equivalent). Bucket Capacity: 0.88 m³. Max Digging Depth: 6.8 m. Boom Length: 6.5 m. Stick Length: 2.5 m. Undercarriage: Rubber Track (500mm). Hydraulic System: 300 bar. Battery Capacity: 100 kWh. Swing Speed: 12 rpm. Eco-friendly option for construction projects.' },
+      { id: 'lg-xe4000e', model: 'XE4000E', name: 'Large Hydraulic Excavator', specs: '400 ton | 1200 kW | 18 m³ bucket | Operating Weight: 400,000 kg', image: '/manus-storage/XE4000E_9v0w1x2y.bmp', description: 'LiuGong XE4000E Large Hydraulic Excavator. Engine: Weichai WD615 (1200 kW/1631 HP). Bucket Capacity: 18 m³. Max Digging Depth: 12 m. Boom Length: 12 m. Stick Length: 5 m. Undercarriage: Steel Track (1200mm). Hydraulic System: 400 bar. Fuel Tank: 800 L. Swing Speed: 18 rpm. Perfect for mega-scale mining operations.' },
+      { id: 'lg-xe520e', model: 'XE520E', name: 'Hydraulic Excavator', specs: '52 ton | 300 kW | 2.5 m³ bucket | Operating Weight: 52,000 kg', image: '/manus-storage/XE520E_3z4a5b6c.jpeg', description: 'LiuGong XE520E Hydraulic Excavator. Engine: Weichai WD615 (300 kW/408 HP). Bucket Capacity: 2.5 m³. Max Digging Depth: 7.8 m. Boom Length: 7.6 m. Stick Length: 3.0 m. Undercarriage: Rubber Track (750mm). Hydraulic System: 330 bar. Fuel Tank: 280 L. Swing Speed: 13.5 rpm. Ideal for large-scale mining and quarrying.' },
+      // ===== BULLDOZERS =====
+      { id: 'lg-dw105ae', model: 'DW105AE', name: 'Bulldozer', specs: '10.5 ton | 78 kW | Operating Weight: 10,500 kg | Blade: 3.0 m', image: '/manus-storage/DW105AE_1a49d67f.png', description: 'LiuGong DW105AE Bulldozer. Engine: Weichai WD615 (78 kW/106 HP). Blade Width: 3.0 m. Blade Height: 1.2 m. Ripping Force: 45 kN. Undercarriage: Rubber Track (450mm). Hydraulic System: 210 bar. Fuel Tank: 120 L. Travel Speed: 8 km/h. Perfect for small-scale grading and land clearing.' },
+      { id: 'lg-td16n', model: 'TD16N', name: 'Bulldozer', specs: '16 ton | 110 kW | Operating Weight: 16,000 kg | Blade: 3.5 m', image: '/manus-storage/TD16N_0bd4f1a1.png', description: 'LiuGong TD16N Bulldozer. Engine: Weichai WD615 (110 kW/150 HP). Blade Width: 3.5 m. Blade Height: 1.4 m. Ripping Force: 65 kN. Undercarriage: Rubber Track (500mm). Hydraulic System: 230 bar. Fuel Tank: 150 L. Travel Speed: 9 km/h. Ideal for medium-scale grading and site preparation.' },
+      { id: 'lg-xde120', model: 'XDE120', name: 'Bulldozer', specs: '12 ton | 90 kW | Operating Weight: 12,000 kg | Blade: 3.2 m', image: '/manus-storage/XDE120_7d8e9f0g.jpeg', description: 'LiuGong XDE120 Bulldozer. Engine: Weichai WD615 (90 kW/122 HP). Blade Width: 3.2 m. Blade Height: 1.3 m. Ripping Force: 55 kN. Undercarriage: Rubber Track (480mm). Hydraulic System: 220 bar. Fuel Tank: 135 L. Travel Speed: 8.5 km/h. Perfect for grading and land preparation.' },
+      { id: 'lg-de100c', model: 'DE100C', name: 'Bulldozer', specs: '10 ton | 75 kW | Operating Weight: 10,000 kg | Blade: 2.8 m', image: '/manus-storage/de100c_93278a1d.png', description: 'LiuGong DE100C Bulldozer. Engine: Weichai WD615 (75 kW/102 HP). Blade Width: 2.8 m. Blade Height: 1.1 m. Ripping Force: 40 kN. Undercarriage: Rubber Track (420mm). Hydraulic System: 200 bar. Fuel Tank: 110 L. Travel Speed: 7.5 km/h. Ideal for small-scale grading projects.' },
+      { id: 'lg-dw90', model: 'DW90', name: 'Bulldozer', specs: '9 ton | 65 kW | Operating Weight: 9,000 kg | Blade: 2.5 m', image: '/manus-storage/dw90_472768bb.png', description: 'LiuGong DW90 Bulldozer. Engine: Weichai WD615 (65 kW/88 HP). Blade Width: 2.5 m. Blade Height: 1.0 m. Ripping Force: 35 kN. Undercarriage: Rubber Track (400mm). Hydraulic System: 190 bar. Fuel Tank: 100 L. Travel Speed: 7 km/h. Perfect for light-duty grading and land clearing.' },
+      { id: 'lg-xde260', model: 'XDE260', name: 'Bulldozer', specs: '26 ton | 180 kW | Operating Weight: 26,000 kg | Blade: 4.5 m', image: '/manus-storage/xde260_1h2i3j4k.png', description: 'LiuGong XDE260 Bulldozer. Engine: Weichai WD615 (180 kW/245 HP). Blade Width: 4.5 m. Blade Height: 1.7 m. Ripping Force: 120 kN. Undercarriage: Rubber Track (600mm). Hydraulic System: 260 bar. Fuel Tank: 200 L. Travel Speed: 10 km/h. Ideal for large-scale grading and heavy earthmoving.' },
+      // ===== MOTOR GRADERS =====
+      { id: 'lg-gd220j', model: 'GD220J', name: 'Motor Grader', specs: '22 ton | 130 kW | Operating Weight: 22,000 kg | Blade: 3.7 m', image: '/manus-storage/GD220J_5l6m7n8o.jpeg', description: 'LiuGong GD220J Motor Grader. Engine: Weichai WD615 (130 kW/176 HP). Blade Width: 3.7 m. Blade Angle: ±45°. Wheel Base: 4.2 m. Tire Size: 14.00-24. Hydraulic System: 210 bar. Fuel Tank: 160 L. Travel Speed: 35 km/h. Perfect for road construction and maintenance.' },
+      { id: 'lg-ltc900t5', model: 'LTC900T5', name: 'Motor Grader', specs: '9 ton | 75 kW | Operating Weight: 9,000 kg | Blade: 2.5 m', image: '/manus-storage/ltc900t5_5be72f48.png', description: 'LiuGong LTC900T5 Motor Grader. Engine: Weichai WD615 (75 kW/102 HP). Blade Width: 2.5 m. Blade Angle: ±45°. Wheel Base: 3.2 m. Tire Size: 11.00-20. Hydraulic System: 180 bar. Fuel Tank: 100 L. Travel Speed: 28 km/h. Ideal for small-scale road grading and maintenance.' },
+      // ===== COMPACTORS =====
+      { id: 'lg-dl560', model: 'DL560', name: 'Vibratory Roller', specs: '56 ton | 180 kW | Operating Weight: 56,000 kg | Drum: 2.1 m', image: '/manus-storage/DL560_ac8776e0.png', description: 'LiuGong DL560 Vibratory Roller. Engine: Weichai WD615 (180 kW/245 HP). Drum Width: 2.1 m. Drum Diameter: 1.4 m. Vibration Frequency: 30 Hz. Operating Speed: 12 km/h. Hydraulic System: 210 bar. Fuel Tank: 180 L. Perfect for asphalt and soil compaction.' },
+      { id: 'lg-scc1000tb', model: 'SCC1000TB', name: 'Vibratory Roller', specs: '10 ton | 75 kW | Operating Weight: 10,000 kg | Drum: 1.2 m', image: '/manus-storage/SCC1000TB_2p3q4r5s.webp', description: 'LiuGong SCC1000TB Vibratory Roller. Engine: Weichai WD615 (75 kW/102 HP). Drum Width: 1.2 m. Drum Diameter: 0.9 m. Vibration Frequency: 25 Hz. Operating Speed: 8 km/h. Hydraulic System: 180 bar. Fuel Tank: 90 L. Ideal for small-scale compaction work.' },
+      // ===== CRANES =====
+      { id: 'lg-xca120g7-1h', model: 'XCA120G7-1H', name: 'All-Terrain Crane', specs: '120 ton | 260 kW | Operating Weight: 120,000 kg | Max Boom: 50 m', image: '/manus-storage/XCA120G7-1H_8932e8a9.png', description: 'LiuGong XCA120G7-1H All-Terrain Crane. Engine: Weichai WD615 (260 kW/354 HP). Max Lifting Capacity: 120 ton. Max Boom Length: 50 m. Jib Length: 10-20 m. Slewing Speed: 2.5 rpm. Hydraulic System: 280 bar. Fuel Tank: 300 L. Perfect for heavy lifting and construction projects.' },
+      { id: 'lg-xct45u', model: 'XCT45U', name: 'Truck Crane', specs: '45 ton | 220 kW | Operating Weight: 45,000 kg | Max Boom: 35 m', image: '/manus-storage/XCT45U_6t7u8v9w.webp', description: 'LiuGong XCT45U Truck Crane. Engine: Weichai WD615 (220 kW/299 HP). Max Lifting Capacity: 45 ton. Max Boom Length: 35 m. Jib Length: 8-15 m. Slewing Speed: 2.0 rpm. Hydraulic System: 260 bar. Fuel Tank: 250 L. Ideal for medium-scale lifting and construction.' },
+      { id: 'lg-xlc17000', model: 'XLC17000', name: 'Lattice Boom Crane', specs: '170 ton | 350 kW | Operating Weight: 170,000 kg | Max Boom: 60 m', image: '/manus-storage/XLC17000_1x2y3z4a.jpeg', description: 'LiuGong XLC17000 Lattice Boom Crane. Engine: Weichai WD615 (350 kW/476 HP). Max Lifting Capacity: 170 ton. Max Boom Length: 60 m. Jib Length: 15-30 m. Slewing Speed: 3.0 rpm. Hydraulic System: 300 bar. Fuel Tank: 350 L. Perfect for large-scale lifting and heavy construction.' }
     ],
     spareParts: [
       { id: 'lg-sp-1', partNumber: 'CLG856-01-0001', name: 'Engine Oil Filter', description: 'LiuGong engine oil filter for wheel loaders and excavators. OEM: CLG856-01-0001. Category: Engine Filters. Applicable Models: CLG856H/CLG862H/CLG890H. High-quality genuine LiuGong spare part with warranty.', image: '/manus-storage/HUMEcesbyAE8_d9da0548.png', category: 'Engine Filters' },
