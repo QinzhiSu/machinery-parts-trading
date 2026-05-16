@@ -1734,7 +1734,7 @@ export const brands: Brand[] = [
         model: '6BT5.9-G2',
         name: 'Diesel Engine',
         specs: '5.9L | 110-130 kW | 6 cylinders',
-        image: '/manus-storage/6BT5.9-G2 5.9L_f4ed786f.jpeg',
+        image: '/manus-storage/6BT5.9-G2 5.9L_a1b2c3d4.jpeg',
         description: 'Cummins 6BT5.9-G2 Diesel Engine. Mid-range turbocharged diesel engine widely used in construction equipment and trucks. Displacement: 5.9L. Power Output: 110-130 kW (147-174 HP). Torque: 450-480 Nm. Fuel Type: Diesel. Emissions Standard: Euro 3. Ideal for excavators, loaders, and medium-duty trucks.'
       },
       {
@@ -1742,7 +1742,7 @@ export const brands: Brand[] = [
         model: 'ISF3.8',
         name: 'Diesel Engine',
         specs: '3.8L | 75-95 kW | 4 cylinders',
-        image: '/manus-storage/ISF3.8 : F3.8 3.8L_c47d8198.jpeg',
+        image: '/manus-storage/ISF3.8 : F3.8 3.8L_b2c3d4e5.jpeg',
         description: 'Cummins ISF3.8 Diesel Engine. Compact four-cylinder turbocharged diesel engine for light-duty applications. Displacement: 3.8L. Power Output: 75-95 kW (100-127 HP). Torque: 265-310 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Perfect for small trucks, vans, and light construction equipment.'
       },
       {
@@ -1750,7 +1750,7 @@ export const brands: Brand[] = [
         model: 'ISL8.9',
         name: 'Diesel Engine',
         specs: '8.9L | 180-210 kW | 6 cylinders',
-        image: '/manus-storage/ISL8.9 : L9 9L_e37b2a8c.jpeg',
+        image: '/manus-storage/ISL8.9 : L9 9L_c3d4e5f6.jpeg',
         description: 'Cummins ISL8.9 Diesel Engine. Mid-range six-cylinder turbocharged diesel engine for medium-duty trucks and construction equipment. Displacement: 8.9L. Power Output: 180-210 kW (240-280 HP). Torque: 700-850 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Ideal for dump trucks, mixers, and mid-size loaders.'
       },
       {
@@ -1758,7 +1758,7 @@ export const brands: Brand[] = [
         model: 'ISM11',
         name: 'Diesel Engine',
         specs: '11L | 250-280 kW | 6 cylinders',
-        image: '/manus-storage/ISM11 : M11 11L_829726dd.jpeg',
+        image: '/manus-storage/ISM11 : M11 11L_d4e5f6g7.jpeg',
         description: 'Cummins ISM11 Diesel Engine. Heavy-duty six-cylinder turbocharged diesel engine for large trucks and construction equipment. Displacement: 11L. Power Output: 250-280 kW (335-375 HP). Torque: 1050-1200 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Perfect for heavy-duty dump trucks, concrete mixers, and large excavators.'
       },
       {
