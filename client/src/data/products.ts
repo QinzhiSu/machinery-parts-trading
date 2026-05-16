@@ -1325,14 +1325,6 @@ export const brands: Brand[] = [
     color: '#1565C0',
     machines: [
       {
-        id: 'komatsu-pc56-7',
-        model: 'PC56-7',
-        name: 'Mini Excavator',
-        specs: '5.6 ton | 38 kW | 0.22 m³ bucket | Operating Weight: 5,600 kg',
-        image: '/manus-storage/PC56-7_c074f303.jpg',
-        description: 'Komatsu PC56-7 Mini Excavator. Compact design perfect for tight spaces. Engine: 3D68E-1A (38 kW/51 HP). Bucket Capacity: 0.22 m³. Max Digging Depth: 3.5 m. Boom Length: 2.8 m. Stick Length: 1.8 m. Travel Speed: 3.0 km/h. Ideal for landscaping, utility work, and confined area excavation.',
-      },
-      {
         id: 'komatsu-pc60-8',
         model: 'PC60-8',
         name: 'Mini Excavator',
