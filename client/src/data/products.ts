@@ -1628,7 +1628,7 @@ export const brands: Brand[] = [
         model: 'HOWO 4×2',
         name: 'Tractor Truck',
         specs: '4×2 | 220-280 kW | 20-30 ton GVW',
-        image: '/manus-storage/sinotruck_howo_4x2_tractor_f2c8e5a1.jpeg',
+        image: '/manus-storage/sinotruck_howo_4x2_tractor_dc0be04d.jpeg',
         description: 'Sinotruck HOWO 4×2 Tractor Truck. Light to mid-range tractor truck for regional transport. Engine: Weichai or Cummins (220-280 kW). GVW: 20-30 ton. Transmission: Manual. Cabin: Standard cab. Fuel Tank: 400L. Ideal for short to medium-haul routes.'
       },
       {
@@ -1636,7 +1636,7 @@ export const brands: Brand[] = [
         model: 'HOWO 6×4',
         name: 'Dump Truck',
         specs: '6×4 | 280-350 kW | 30-40 ton GVW',
-        image: '/manus-storage/sinotruck_howo7_1a3b5c8d.jpeg',
+        image: '/manus-storage/sinotruck_howo7_6x4_dump_1388a4e8.jpeg',
         description: 'Sinotruck HOWO 6×4 Dump Truck. Heavy-duty dump truck for construction and mining. Engine: Weichai or Cummins (280-350 kW). GVW: 30-40 ton. Cargo Capacity: 18-22 m³. Hydraulic System: 280 bar. Perfect for large-scale earthmoving.'
       },
       {
@@ -1644,7 +1644,7 @@ export const brands: Brand[] = [
         model: 'HOWO 8×4',
         name: 'Dump Truck',
         specs: '8×4 | 320-380 kW | 40-50 ton GVW',
-        image: '/manus-storage/sinotruck_howo7_1a3b5c8d.jpeg',
+        image: '/manus-storage/sinotruck_howo7_8x4_dump_46b30147.jpeg',
         description: 'Sinotruck HOWO 8×4 Dump Truck. Ultra-heavy-duty dump truck for mining and large construction projects. Engine: Weichai or Cummins (320-380 kW). GVW: 40-50 ton. Cargo Capacity: 25-30 m³. Hydraulic System: 280 bar. Ideal for mining operations.'
       },
       {
@@ -1652,7 +1652,7 @@ export const brands: Brand[] = [
         model: 'SITRAK C7H',
         name: 'Tractor Truck',
         specs: '6×4 | 350-400 kW | 40-50 ton GVW',
-        image: '/manus-storage/sinotruck_sitrak_c7h.jpeg',
+        image: '/manus-storage/sinotruck_sitrak_c7h_37030db1.jpeg',
         description: 'Sinotruck SITRAK C7H Tractor Truck. Premium tractor truck for long-haul transport. Engine: Weichai (350-400 kW). GVW: 40-50 ton. Transmission: Automatic. Cabin: Luxury sleeper cab with air suspension. Fuel Tank: 700L. Perfect for international transport.'
       }
     ],
@@ -1734,7 +1734,7 @@ export const brands: Brand[] = [
         model: '6BT5.9-G2',
         name: 'Diesel Engine',
         specs: '5.9L | 110-130 kW | 6 cylinders',
-        image: '/manus-storage/cummins_6bt59_22588b1e.jpeg',
+        image: '/manus-storage/cummins_6bt59_d5b099df.jpeg',
         description: 'Cummins 6BT5.9-G2 Diesel Engine. Mid-range turbocharged diesel engine widely used in construction equipment and trucks. Displacement: 5.9L. Power Output: 110-130 kW (147-174 HP). Torque: 450-480 Nm. Fuel Type: Diesel. Emissions Standard: Euro 3. Ideal for excavators, loaders, and medium-duty trucks.'
       },
       {
@@ -1742,7 +1742,7 @@ export const brands: Brand[] = [
         model: 'ISF3.8',
         name: 'Diesel Engine',
         specs: '3.8L | 75-95 kW | 4 cylinders',
-        image: '/manus-storage/cummins_isf38_a98749d8.jpeg',
+        image: '/manus-storage/cummins_isf38_b0d46346.jpeg',
         description: 'Cummins ISF3.8 Diesel Engine. Compact four-cylinder turbocharged diesel engine for light-duty applications. Displacement: 3.8L. Power Output: 75-95 kW (100-127 HP). Torque: 265-310 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Perfect for small trucks, vans, and light construction equipment.'
       },
       {
@@ -1750,7 +1750,7 @@ export const brands: Brand[] = [
         model: 'ISL8.9',
         name: 'Diesel Engine',
         specs: '8.9L | 180-210 kW | 6 cylinders',
-        image: '/manus-storage/cummins_isl89_41c56fd5.jpeg',
+        image: '/manus-storage/cummins_isl89_b5f08827.jpeg',
         description: 'Cummins ISL8.9 Diesel Engine. Mid-range six-cylinder turbocharged diesel engine for medium-duty trucks and construction equipment. Displacement: 8.9L. Power Output: 180-210 kW (240-280 HP). Torque: 700-850 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Ideal for dump trucks, mixers, and mid-size loaders.'
       },
       {
@@ -1758,7 +1758,7 @@ export const brands: Brand[] = [
         model: 'ISM11',
         name: 'Diesel Engine',
         specs: '11L | 250-280 kW | 6 cylinders',
-        image: '/manus-storage/cummins_ism11_6c79981f.jpeg',
+        image: '/manus-storage/cummins_ism11_0f2c98f0.jpeg',
         description: 'Cummins ISM11 Diesel Engine. Heavy-duty six-cylinder turbocharged diesel engine for large trucks and construction equipment. Displacement: 11L. Power Output: 250-280 kW (335-375 HP). Torque: 1050-1200 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Perfect for heavy-duty dump trucks, concrete mixers, and large excavators.'
       },
       {
@@ -1766,7 +1766,7 @@ export const brands: Brand[] = [
         model: 'ISX15',
         name: 'Diesel Engine',
         specs: '15L | 330-380 kW | 6 cylinders',
-        image: '/manus-storage/ISX15 : X15 15L_8765dd22.jpeg',
+        image: '/manus-storage/cummins_isx15_d1619e50.jpeg',
         description: 'Cummins ISX15 Diesel Engine. Ultra-heavy-duty six-cylinder turbocharged diesel engine for maximum power applications. Displacement: 15L. Power Output: 330-380 kW (440-510 HP). Torque: 1400-1600 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Ideal for large dump trucks, concrete pump trucks, and mining equipment.'
       },
       {
@@ -1774,7 +1774,7 @@ export const brands: Brand[] = [
         model: 'KTA19',
         name: 'Diesel Engine',
         specs: '19L | 450-500 kW | 6 cylinders',
-        image: '/manus-storage/KTA19 : K19 19L_138d63b0.jpeg',
+        image: '/manus-storage/cummins_kta19_d20d2388.jpeg',
         description: 'Cummins KTA19 Diesel Engine. Premium ultra-heavy-duty six-cylinder turbocharged diesel engine for extreme power applications. Displacement: 19L. Power Output: 450-500 kW (600-670 HP). Torque: 1800-2000 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Perfect for mining trucks and large industrial equipment.'
       },
       {
@@ -1782,7 +1782,7 @@ export const brands: Brand[] = [
         model: 'QSB6.7',
         name: 'Diesel Engine',
         specs: '6.7L | 150-180 kW | 6 cylinders',
-        image: '/manus-storage/QSB6.7 : B6.7 6.7L_8c905df5.jpeg',
+        image: '/manus-storage/cummins_qsb67_e329b3a2.jpeg',
         description: 'Cummins QSB6.7 Diesel Engine. Mid-range six-cylinder turbocharged diesel engine for medium to heavy-duty applications. Displacement: 6.7L. Power Output: 150-180 kW (200-240 HP). Torque: 520-650 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Ideal for medium-duty trucks and construction equipment.'
       }
     ],
