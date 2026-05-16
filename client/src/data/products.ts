@@ -1554,56 +1554,78 @@ export const brands: Brand[] = [
     description: 'Leading Chinese heavy-duty truck manufacturer producing commercial vehicles for construction and logistics.',
     logo: 'SHACMAN',
     color: '#E53935',
-    machines: [
-      {
-        id: 'sha-f3000-6x4',
-        model: 'F3000 6×4',
+    machines: [      {
+        id: 'shac-f3000-6x4-tractor',
+        model: 'F3000 6×4 Tractor',
         name: 'Tractor Truck',
-        specs: '6×4 | 300-350 kW | 30-40 ton GVW',
-        image: '/manus-storage/shacman_f3000_6x4_tractor_2aee92c7.jpeg',
-        description: 'Shacman F3000 6×4 Tractor Truck. Mid-range tractor truck for long-haul transportation. Engine: Weichai or Cummins (300-350 kW). GVW: 30-40 ton. Transmission: Manual or Automatic. Cabin: Sleeper cab with air suspension. Fuel Tank: 600L. Perfect for highway transport and logistics.'
+        specs: '6×4 | 280-350 kW | 30-40 ton GVW',
+        image: '/manus-storage/shacman_f3000_6x4_tractor_f6b1a90f.jpeg',
+        description: 'Shacman F3000 6×4 Tractor Truck. Mid-range tractor truck for regional transport. Engine: Weichai or Cummins (280-350 kW). GVW: 30-40 ton. Transmission: Manual. Cabin: Standard cab. Fuel Tank: 450L. Ideal for medium-haul routes.'
       },
       {
-        id: 'sha-f3000-8x4',
-        model: 'F3000 8×4',
+        id: 'shac-f3000-8x4-dump',
+        model: 'F3000 8×4 Dump',
         name: 'Dump Truck',
-        specs: '8×4 | 300-350 kW | 35-45 ton GVW',
-        image: '/manus-storage/shacman_f3000_8x4_dump_1c7f523a.jpeg',
-        description: 'Shacman F3000 8×4 Dump Truck. Heavy-duty dump truck for construction and mining. Engine: Weichai or Cummins (300-350 kW). GVW: 35-45 ton. Cargo Capacity: 20-25 m³. Hydraulic System: 280 bar. Perfect for earthmoving and material transport.'
+        specs: '8×4 | 320-380 kW | 40-50 ton GVW',
+        image: '/manus-storage/shacman_f3000_8x4_dump_91cb04ea.jpeg',
+        description: 'Shacman F3000 8×4 Dump Truck. Heavy-duty dump truck for construction and mining. Engine: Weichai or Cummins (320-380 kW). GVW: 40-50 ton. Cargo Capacity: 22-26 m³. Hydraulic System: 280 bar. Perfect for large-scale earthmoving.'
       },
       {
-        id: 'sha-h3000-6x4',
-        model: 'H3000 6×4',
+        id: 'shac-f3000-h3000-mixer',
+        model: 'F3000/H3000 Mixer',
+        name: 'Concrete Mixer Truck',
+        specs: '8×4 | 320-380 kW | 40-50 ton GVW',
+        image: '/manus-storage/shacman_f3000_h3000_mixer_a2062d6e.jpeg',
+        description: 'Shacman F3000/H3000 Concrete Mixer Truck. Heavy-duty mixer truck for construction. Engine: Weichai or Cummins (320-380 kW). GVW: 40-50 ton. Mixer Capacity: 9-12 m³. Hydraulic System: 280 bar. Ideal for construction projects.'
+      },
+      {
+        id: 'shac-h3000-6x4-dump',
+        model: 'H3000 6×4 Dump',
         name: 'Dump Truck',
-        specs: '6×4 | 280-320 kW | 25-35 ton GVW',
-        image: '/manus-storage/shacman_h3000_6x4_dump_0fd5f321.jpeg',
-        description: 'Shacman H3000 6×4 Dump Truck. Mid-range dump truck for construction projects. Engine: Weichai or Cummins (280-320 kW). GVW: 25-35 ton. Cargo Capacity: 15-18 m³. Hydraulic System: 280 bar. Ideal for site preparation and material handling.'
+        specs: '6×4 | 280-350 kW | 30-40 ton GVW',
+        image: '/manus-storage/shacman_h3000_6x4_dump_edf8c6e7.jpeg',
+        description: 'Shacman H3000 6×4 Dump Truck. Mid-range dump truck for construction. Engine: Weichai or Cummins (280-350 kW). GVW: 30-40 ton. Cargo Capacity: 18-22 m³. Hydraulic System: 280 bar. Perfect for medium-scale projects.'
       },
       {
-        id: 'sha-x5000-6x4',
-        model: 'X5000 6×4',
+        id: 'shac-h3000-6x4-tractor',
+        model: 'H3000 6×4 Tractor',
         name: 'Tractor Truck',
+        specs: '6×4 | 280-350 kW | 30-40 ton GVW',
+        image: '/manus-storage/shacman_h3000_6x4_tractor_e130f2bc.jpeg',
+        description: 'Shacman H3000 6×4 Tractor Truck. Mid-range tractor truck for regional transport. Engine: Weichai or Cummins (280-350 kW). GVW: 30-40 ton. Transmission: Manual. Cabin: Standard cab. Fuel Tank: 450L. Ideal for medium-haul routes.'
+      },
+      {
+        id: 'shac-x3000-6x4-tractor',
+        model: 'X3000 6×4 Tractor',
+        name: 'Tractor Truck',
+        specs: '6×4 | 300-350 kW | 35-45 ton GVW',
+        image: '/manus-storage/shacman_x3000_6x4_tractor_0e4c3c29.jpeg',
+        description: 'Shacman X3000 6×4 Tractor Truck. Advanced tractor truck for long-haul transport. Engine: Weichai (300-350 kW). GVW: 35-45 ton. Transmission: Automatic. Cabin: Luxury cab with air suspension. Fuel Tank: 550L. Perfect for international routes.'
+      },
+      {
+        id: 'shac-x5000-6x4-dump',
+        model: 'X5000 6×4 Dump',
+        name: 'Dump Truck',
+        specs: '6×4 | 300-350 kW | 35-45 ton GVW',
+        image: '/manus-storage/shacman_x5000_6x4_dump_a2b42228.jpeg',
+        description: 'Shacman X5000 6×4 Dump Truck. Advanced dump truck for construction. Engine: Weichai (300-350 kW). GVW: 35-45 ton. Cargo Capacity: 20-24 m³. Cabin: Luxury cab. Ideal for modern construction projects.'
+      },
+      {
+        id: 'shac-x5000-6x4-tractor',
+        model: 'X5000 6×4 Tractor',
+        name: 'Tractor Truck',
+        specs: '6×4 | 300-350 kW | 35-45 ton GVW',
+        image: '/manus-storage/shacman_x5000_6x4_tractor_3433f0e8.jpeg',
+        description: 'Shacman X5000 6×4 Tractor Truck. Premium tractor truck for long-haul transport. Engine: Weichai (300-350 kW). GVW: 35-45 ton. Transmission: Automatic. Cabin: Luxury sleeper cab. Fuel Tank: 550L. Perfect for international transport.'
+      },
+      {
+        id: 'shac-x6000-6x4-tractor',
+        model: 'X6000 6×4 Tractor',
+        name: 'Premium Tractor Truck',
         specs: '6×4 | 350-400 kW | 40-50 ton GVW',
-        image: '/manus-storage/shacman_x5000_6x4_tractor_f1bb0602.jpeg',
-        description: 'Shacman X5000 6×4 Tractor Truck. Premium tractor truck for long-haul and heavy transport. Engine: Weichai or Cummins (350-400 kW). GVW: 40-50 ton. Transmission: Automatic. Cabin: Luxury sleeper cab with air suspension. Fuel Tank: 700L. Perfect for international logistics.'
-      },
-      {
-        id: 'sha-x5000-8x4',
-        model: 'X5000 8×4',
-        name: 'Dump Truck',
-        specs: '8×4 | 350-400 kW | 45-55 ton GVW',
-        image: '/manus-storage/shacman_x5000_6x4_dump_92835865.jpeg',
-        description: 'Shacman X5000 8×4 Dump Truck. Premium heavy-duty dump truck for large-scale mining and construction. Engine: Weichai or Cummins (350-400 kW). GVW: 45-55 ton. Cargo Capacity: 25-30 m³. Hydraulic System: 280 bar. Perfect for mining operations.'
-      },
-      {
-        id: 'sha-x6000-6x4',
-        model: 'X6000 6×4',
-        name: 'Tractor Truck',
-        specs: '6×4 | 400-450 kW | 50-60 ton GVW',
-        image: '/manus-storage/shacman_x6000_6x4_tractor_fd7a8dc3.jpeg',
-        description: 'Shacman X6000 6×4 Tractor Truck. Ultra-premium tractor truck for maximum payload and long-distance hauling. Engine: Weichai or Cummins (400-450 kW). GVW: 50-60 ton. Transmission: Automatic. Cabin: Premium sleeper cab with advanced suspension. Fuel Tank: 800L. Perfect for international heavy transport.'
-      }
-    ],
+        image: '/manus-storage/shacman_x6000_6x4_tractor_1e0e8036.jpeg',
+        description: 'Shacman X6000 6×4 Tractor Truck. Premium tractor truck for long-haul transport. Engine: Weichai (350-400 kW). GVW: 40-50 ton. Transmission: Automatic. Cabin: Luxury sleeper cab with advanced features. Fuel Tank: 600L. Perfect for premium international transport.'
+      }],
     spareParts: [
       { id: 'sm-sp-1', partNumber: 'DZ96189584001', name: 'Engine Oil Filter', description: 'Engine oil filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
       { id: 'sm-sp-2', partNumber: 'DZ96189584002', name: 'Fuel Filter', description: 'Fuel filter for Shacman diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
@@ -1622,40 +1644,102 @@ export const brands: Brand[] = [
     description: 'Leading Chinese heavy-duty truck manufacturer producing HOWO and other commercial vehicle brands.',
     logo: 'SINOTRUK',
     color: '#D32F2F',
-    machines: [
-      {
+    machines: [      {
         id: 'sino-howo-4x2',
         model: 'HOWO 4×2',
         name: 'Tractor Truck',
         specs: '4×2 | 220-280 kW | 20-30 ton GVW',
-        image: '/manus-storage/sinotruck_howo_4x2_tractor_dc0be04d.jpeg',
+        image: '/manus-storage/sinotruck_howo_4x2_tractor_e84d4439.jpeg',
         description: 'Sinotruck HOWO 4×2 Tractor Truck. Light to mid-range tractor truck for regional transport. Engine: Weichai or Cummins (220-280 kW). GVW: 20-30 ton. Transmission: Manual. Cabin: Standard cab. Fuel Tank: 400L. Ideal for short to medium-haul routes.'
       },
       {
-        id: 'sino-howo-6x4',
-        model: 'HOWO 6×4',
+        id: 'sino-howo-6x4-tanker',
+        model: 'HOWO 6×4 Tanker',
+        name: 'Tanker Truck',
+        specs: '6×4 | 280-350 kW | 30-40 ton GVW',
+        image: '/manus-storage/sinotruck_howo_6x4_tanker_ac5aa97d.jpeg',
+        description: 'Sinotruck HOWO 6×4 Tanker Truck. Heavy-duty tanker truck for liquid transport. Engine: Weichai or Cummins (280-350 kW). GVW: 30-40 ton. Tank Capacity: 15-25 m³. Hydraulic System: 280 bar. Perfect for fuel and chemical transport.'
+      },
+      {
+        id: 'sino-howo-6x4-dump',
+        model: 'HOWO 6×4 Dump',
         name: 'Dump Truck',
         specs: '6×4 | 280-350 kW | 30-40 ton GVW',
-        image: '/manus-storage/sinotruck_howo7_6x4_dump_1388a4e8.jpeg',
+        image: '/manus-storage/sinotruck_howo7_6x4_dump_33adf304.jpeg',
         description: 'Sinotruck HOWO 6×4 Dump Truck. Heavy-duty dump truck for construction and mining. Engine: Weichai or Cummins (280-350 kW). GVW: 30-40 ton. Cargo Capacity: 18-22 m³. Hydraulic System: 280 bar. Perfect for large-scale earthmoving.'
       },
       {
-        id: 'sino-howo-8x4',
-        model: 'HOWO 8×4',
+        id: 'sino-howo-8x4-mixer',
+        model: 'HOWO 8×4 Mixer',
+        name: 'Concrete Mixer Truck',
+        specs: '8×4 | 320-380 kW | 40-50 ton GVW',
+        image: '/manus-storage/sinotruck_howo_8x4_mixer_3b9cc575.jpeg',
+        description: 'Sinotruck HOWO 8×4 Concrete Mixer Truck. Ultra-heavy-duty mixer truck for construction. Engine: Weichai or Cummins (320-380 kW). GVW: 40-50 ton. Mixer Capacity: 8-12 m³. Hydraulic System: 280 bar. Ideal for large construction projects.'
+      },
+      {
+        id: 'sino-howo-8x4-dump',
+        model: 'HOWO 8×4 Dump',
         name: 'Dump Truck',
         specs: '8×4 | 320-380 kW | 40-50 ton GVW',
-        image: '/manus-storage/sinotruck_howo7_8x4_dump_46b30147.jpeg',
+        image: '/manus-storage/sinotruck_howo7_8x4_dump_57063461.jpeg',
         description: 'Sinotruck HOWO 8×4 Dump Truck. Ultra-heavy-duty dump truck for mining and large construction projects. Engine: Weichai or Cummins (320-380 kW). GVW: 40-50 ton. Cargo Capacity: 25-30 m³. Hydraulic System: 280 bar. Ideal for mining operations.'
+      },
+      {
+        id: 'sino-howo-t7s',
+        model: 'HOWO T7S',
+        name: 'Premium Dump Truck',
+        specs: '6×4 | 300-350 kW | 35-45 ton GVW',
+        image: '/manus-storage/sinotruck_howo_t7s_dump_15750202.jpeg',
+        description: 'Sinotruck HOWO T7S Premium Dump Truck. Advanced dump truck with improved comfort and efficiency. Engine: Weichai (300-350 kW). GVW: 35-45 ton. Cargo Capacity: 20-25 m³. Cabin: Luxury cab with air suspension. Ideal for modern construction projects.'
+      },
+      {
+        id: 'sino-howo-tx',
+        model: 'HOWO TX',
+        name: 'Tractor Truck',
+        specs: '6×4 | 350-400 kW | 40-50 ton GVW',
+        image: '/manus-storage/sinotruck_howo_tx_b9712232.jpeg',
+        description: 'Sinotruck HOWO TX Tractor Truck. Premium tractor truck for long-haul transport. Engine: Weichai (350-400 kW). GVW: 40-50 ton. Transmission: Automatic. Cabin: Luxury sleeper cab. Fuel Tank: 600L. Perfect for international transport.'
+      },
+      {
+        id: 'sino-howo-tx-dump',
+        model: 'HOWO TX Dump',
+        name: 'Dump Truck',
+        specs: '8×4 | 350-400 kW | 45-55 ton GVW',
+        image: '/manus-storage/sinotruck_howo_tx_dump_ac0a564b.jpeg',
+        description: 'Sinotruck HOWO TX Dump Truck. Premium dump truck with advanced features. Engine: Weichai (350-400 kW). GVW: 45-55 ton. Cargo Capacity: 28-32 m³. Cabin: Luxury cab with air suspension. Ideal for premium mining operations.'
+      },
+      {
+        id: 'sino-howo-t7h-concrete',
+        model: 'HOWO T7H Concrete',
+        name: 'Concrete Mixer Truck',
+        specs: '8×4 | 340-380 kW | 45-55 ton GVW',
+        image: '/manus-storage/sinotruck_howo_t7h_concrete_67c9ea13.webp',
+        description: 'Sinotruck HOWO T7H Concrete Mixer Truck. Premium concrete mixer truck for large projects. Engine: Weichai (340-380 kW). GVW: 45-55 ton. Mixer Capacity: 10-14 m³. Hydraulic System: 280 bar. Ideal for major construction projects.'
       },
       {
         id: 'sino-sitrak-c7h',
         model: 'SITRAK C7H',
         name: 'Tractor Truck',
         specs: '6×4 | 350-400 kW | 40-50 ton GVW',
-        image: '/manus-storage/sinotruck_sitrak_c7h_37030db1.jpeg',
+        image: '/manus-storage/sinotruck_sitrak_c7h_908612b6.jpeg',
         description: 'Sinotruck SITRAK C7H Tractor Truck. Premium tractor truck for long-haul transport. Engine: Weichai (350-400 kW). GVW: 40-50 ton. Transmission: Automatic. Cabin: Luxury sleeper cab with air suspension. Fuel Tank: 700L. Perfect for international transport.'
-      }
-    ],
+      },
+      {
+        id: 'sino-sitrak-c7h-mixer',
+        model: 'SITRAK C7H Mixer',
+        name: 'Concrete Mixer Truck',
+        specs: '8×4 | 350-400 kW | 45-55 ton GVW',
+        image: '/manus-storage/sinotruck_sitrak_c7h_mixer_c839b060.jpeg',
+        description: 'Sinotruck SITRAK C7H Concrete Mixer Truck. Premium concrete mixer with advanced features. Engine: Weichai (350-400 kW). GVW: 45-55 ton. Mixer Capacity: 10-14 m³. Cabin: Luxury cab. Ideal for premium construction projects.'
+      },
+      {
+        id: 'sino-howo-7',
+        model: 'HOWO 7',
+        name: 'Heavy Duty Truck',
+        specs: '8×4 | 380-430 kW | 50-60 ton GVW',
+        image: '/manus-storage/sinotruck_howo7_069ca297.jpeg',
+        description: 'Sinotruck HOWO 7 Heavy Duty Truck. Latest generation heavy-duty truck with maximum power. Engine: Weichai or Cummins (380-430 kW). GVW: 50-60 ton. Cargo Capacity: 30-35 m³. Advanced hydraulic system. Perfect for extreme mining and construction.'
+      }],
     spareParts: [
       { id: 'st-sp-1', partNumber: 'VG1560118229', name: 'Engine Oil Filter', description: 'Engine oil filter for Sinotruk HOWO trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
       { id: 'st-sp-2', partNumber: 'VG1560118230', name: 'Fuel Filter', description: 'Fuel filter for Sinotruk diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
