@@ -6,7 +6,8 @@ import { ArrowLeft, ChevronRight, Package, Wrench, Tag, Phone, Mail, MessageSqua
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import QuickInquiryDialog from '@/components/QuickInquiryDialog';
-import { getBrandById } from '@/data/products';
+import SparePartDetailModal from '@/components/SparePartDetailModal';
+import { getBrandById, SparePart } from '@/data/products';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
@@ -17,6 +18,8 @@ export default function BrandPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [inquiryDialogOpen, setInquiryDialogOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<{ model: string; name: string; specs?: string; type: 'machine' | 'spare-part' } | null>(null);
+  const [selectedPart, setSelectedPart] = useState<SparePart | null>(null);
+  const [partDetailOpen, setPartDetailOpen] = useState(false);
 
   const openInquiry = (product: { model: string; name: string; specs?: string; type: 'machine' | 'spare-part' }) => {
     setSelectedProduct(product);
@@ -293,11 +296,11 @@ export default function BrandPage() {
                     style={{ animationDelay: `${idx * 0.05}s` }}
                   >
                     {/* Part image */}
-                    <div className="relative h-40 overflow-hidden bg-gray-50">
+                    <div className="relative h-40 overflow-hidden bg-gray-50 cursor-pointer hover:opacity-90 transition-opacity" onClick={() => { setSelectedPart(part); setPartDetailOpen(true); }}>
                       <img
-                        src={PARTS_IMG}
+                        src={part.image}
                         alt={part.name}
-                        className="w-full h-full object-cover opacity-70"
+                        className="w-full h-full object-cover"
                       />
                       {/* Category badge */}
                       <div
@@ -331,18 +334,32 @@ export default function BrandPage() {
                         {part.description}
                       </p>
 
-                      <button
-                        onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
-                        className="flex items-center justify-center gap-1.5 w-full py-2 text-xs font-bold uppercase tracking-wider transition-all hover:opacity-90"
-                        style={{
-                          background: 'oklch(0.18 0.04 265)',
-                          color: 'white',
-                          fontFamily: 'var(--font-display)',
-                        }}
-                      >
-                        <MessageSquare size={11} />
-                        Quick Inquiry
-                      </button>
+                      <div className="flex gap-2">
+                        <button
+                          onClick={() => { setSelectedPart(part); setPartDetailOpen(true); }}
+                          className="flex-1 flex items-center justify-center gap-1.5 py-2 text-xs font-bold uppercase tracking-wider transition-all hover:opacity-90"
+                          style={{
+                            background: brand.color,
+                            color: 'white',
+                            fontFamily: 'var(--font-display)',
+                          }}
+                        >
+                          <Wrench size={11} />
+                          Details
+                        </button>
+                        <button
+                          onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
+                          className="flex-1 flex items-center justify-center gap-1.5 py-2 text-xs font-bold uppercase tracking-wider transition-all hover:opacity-90"
+                          style={{
+                            background: 'oklch(0.18 0.04 265)',
+                            color: 'white',
+                            fontFamily: 'var(--font-display)',
+                          }}
+                        >
+                          <MessageSquare size={11} />
+                          Inquiry
+                        </button>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -401,7 +418,17 @@ export default function BrandPage() {
           productInfo={selectedProduct}
         />
       )}
-
+      <SparePartDetailModal
+        part={selectedPart}
+        isOpen={partDetailOpen}
+        onClose={() => setPartDetailOpen(false)}
+        onInquiry={(part) => {
+          setSelectedProduct({ model: part.partNumber, name: part.name, type: 'spare-part' });
+          setInquiryDialogOpen(true);
+        }}
+        brandName={brand.name}
+        brandColor={brand.color}
+      />
       <Footer />
     </div>
   );
