@@ -1507,7 +1507,7 @@ export const brands: Brand[] = [
         model: '4HK1',
         name: 'Diesel Engine',
         specs: '5.2L | 130-150 kW | 4 cylinders',
-        image: '/manus-storage/4HK1 : 4HK1X 5.2L_c47d8198.jpeg',
+        image: '/manus-storage/isuzu_4hk1_c47d8198.jpeg',
         description: 'Isuzu 4HK1 Diesel Engine. Mid-range four-cylinder turbocharged diesel engine for medium-duty trucks and equipment. Displacement: 5.2L. Power Output: 130-150 kW (174-200 HP). Torque: 420-500 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Ideal for medium-duty dump trucks and loaders.'
       },
       {
@@ -1515,7 +1515,7 @@ export const brands: Brand[] = [
         model: '6HK1',
         name: 'Diesel Engine',
         specs: '7.8L | 190-220 kW | 6 cylinders',
-        image: '/manus-storage/6HK1 : 6HK1X 7.8L_b47c6f15.jpeg',
+        image: '/manus-storage/isuzu_6hk1_b47c6f15.jpeg',
         description: 'Isuzu 6HK1 Diesel Engine. Heavy-duty six-cylinder turbocharged diesel engine for large trucks and construction equipment. Displacement: 7.8L. Power Output: 190-220 kW (255-295 HP). Torque: 600-700 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Perfect for heavy-duty dump trucks and large loaders.'
       },
       {
@@ -1523,7 +1523,7 @@ export const brands: Brand[] = [
         model: '6UZ1',
         name: 'Diesel Engine',
         specs: '9.8L | 250-280 kW | 6 cylinders',
-        image: '/manus-storage/6UZ1 : 6UZ1X 9.8L_f96fd1e9.jpeg',
+        image: '/manus-storage/isuzu_6uz1_f96fd1e9.jpeg',
         description: 'Isuzu 6UZ1 Diesel Engine. Ultra-heavy-duty six-cylinder turbocharged diesel engine for maximum power applications. Displacement: 9.8L. Power Output: 250-280 kW (335-375 HP). Torque: 850-1000 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Ideal for mining trucks and large construction equipment.'
       },
       {
@@ -1531,7 +1531,7 @@ export const brands: Brand[] = [
         model: '6WG1',
         name: 'Diesel Engine',
         specs: '15.6L | 320-380 kW | 6 cylinders',
-        image: '/manus-storage/6WG1 : 6WG1T 15.6L_39b51ede.jpeg',
+        image: '/manus-storage/isuzu_6wg1_39b51ede.jpeg',
         description: 'Isuzu 6WG1 Diesel Engine. Premium six-cylinder turbocharged diesel engine for ultra-heavy-duty applications. Displacement: 15.6L. Power Output: 320-380 kW (428-510 HP). Torque: 1200-1500 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Perfect for large dump trucks and mining equipment.'
       }
     ],
@@ -1560,7 +1560,7 @@ export const brands: Brand[] = [
         model: 'F3000 6×4',
         name: 'Tractor Truck',
         specs: '6×4 | 300-350 kW | 30-40 ton GVW',
-        image: '/manus-storage/F3000 6×4 牵引车_92a83e71.jpeg',
+        image: '/manus-storage/shacman_f3000_6x4_tractor_92a83e71.jpeg',
         description: 'Shacman F3000 6×4 Tractor Truck. Mid-range tractor truck for long-haul transportation. Engine: Weichai or Cummins (300-350 kW). GVW: 30-40 ton. Transmission: Manual or Automatic. Cabin: Sleeper cab with air suspension. Fuel Tank: 600L. Perfect for highway transport and logistics.'
       },
       {
@@ -1568,7 +1568,7 @@ export const brands: Brand[] = [
         model: 'F3000 8×4',
         name: 'Dump Truck',
         specs: '8×4 | 300-350 kW | 35-45 ton GVW',
-        image: '/manus-storage/德龙 F3000 8×4 自卸车_9a52a982.jpeg',
+        image: '/manus-storage/shacman_f3000_8x4_dump_9a52a982.jpeg',
         description: 'Shacman F3000 8×4 Dump Truck. Heavy-duty dump truck for construction and mining. Engine: Weichai or Cummins (300-350 kW). GVW: 35-45 ton. Cargo Capacity: 20-25 m³. Hydraulic System: 280 bar. Perfect for earthmoving and material transport.'
       },
       {
@@ -1576,7 +1576,7 @@ export const brands: Brand[] = [
         model: 'H3000 6×4',
         name: 'Dump Truck',
         specs: '6×4 | 280-320 kW | 25-35 ton GVW',
-        image: '/manus-storage/德龙 H3000 6×4 自卸车_49b27879.jpeg',
+        image: '/manus-storage/shacman_h3000_6x4_dump_49b27879.jpeg',
         description: 'Shacman H3000 6×4 Dump Truck. Mid-range dump truck for construction projects. Engine: Weichai or Cummins (280-320 kW). GVW: 25-35 ton. Cargo Capacity: 15-18 m³. Hydraulic System: 280 bar. Ideal for site preparation and material handling.'
       },
       {
@@ -1584,7 +1584,7 @@ export const brands: Brand[] = [
         model: 'X5000 6×4',
         name: 'Tractor Truck',
         specs: '6×4 | 350-400 kW | 40-50 ton GVW',
-        image: '/manus-storage/德龙 X5000 6×4 牵引车_baaa585a.jpeg',
+        image: '/manus-storage/shacman_x5000_6x4_tractor_baaa585a.jpeg',
         description: 'Shacman X5000 6×4 Tractor Truck. Premium tractor truck for long-haul and heavy transport. Engine: Weichai or Cummins (350-400 kW). GVW: 40-50 ton. Transmission: Automatic. Cabin: Luxury sleeper cab with air suspension. Fuel Tank: 700L. Perfect for international logistics.'
       },
       {
@@ -1592,7 +1592,7 @@ export const brands: Brand[] = [
         model: 'X5000 8×4',
         name: 'Dump Truck',
         specs: '8×4 | 350-400 kW | 45-55 ton GVW',
-        image: '/manus-storage/德龙 X5000 6×4 自卸车_e5d7fcdc.jpeg',
+        image: '/manus-storage/shacman_x5000_6x4_dump_e5d7fcdc.jpeg',
         description: 'Shacman X5000 8×4 Dump Truck. Premium heavy-duty dump truck for large-scale mining and construction. Engine: Weichai or Cummins (350-400 kW). GVW: 45-55 ton. Cargo Capacity: 25-30 m³. Hydraulic System: 280 bar. Perfect for mining operations.'
       },
       {
@@ -1600,7 +1600,7 @@ export const brands: Brand[] = [
         model: 'X6000 6×4',
         name: 'Tractor Truck',
         specs: '6×4 | 400-450 kW | 50-60 ton GVW',
-        image: '/manus-storage/德龙 X6000 6×4 牵引车_35537f4e.jpeg',
+        image: '/manus-storage/shacman_x6000_6x4_tractor_35537f4e.jpeg',
         description: 'Shacman X6000 6×4 Tractor Truck. Ultra-premium tractor truck for maximum payload and long-distance hauling. Engine: Weichai or Cummins (400-450 kW). GVW: 50-60 ton. Transmission: Automatic. Cabin: Premium sleeper cab with advanced suspension. Fuel Tank: 800L. Perfect for international heavy transport.'
       }
     ],
@@ -1628,7 +1628,7 @@ export const brands: Brand[] = [
         model: 'HOWO 4×2',
         name: 'Tractor Truck',
         specs: '4×2 | 220-280 kW | 20-30 ton GVW',
-        image: '/manus-storage/HOWO 4×2 牵引车_88373007.jpeg',
+        image: '/manus-storage/sinotruck_howo_4x2_tractor_88373007.jpeg',
         description: 'Sinotruck HOWO 4×2 Tractor Truck. Light to mid-range tractor truck for regional transport. Engine: Weichai or Cummins (220-280 kW). GVW: 20-30 ton. Transmission: Manual. Cabin: Standard cab. Fuel Tank: 400L. Ideal for short to medium-haul routes.'
       },
       {
@@ -1636,7 +1636,7 @@ export const brands: Brand[] = [
         model: 'HOWO 6×4',
         name: 'Dump Truck',
         specs: '6×4 | 280-350 kW | 30-40 ton GVW',
-        image: '/manus-storage/HOWO 7 6×4 自卸车_88aded60.jpeg',
+        image: '/manus-storage/sinotruck_howo7_6x4_dump_88aded60.jpeg',
         description: 'Sinotruck HOWO 6×4 Dump Truck. Heavy-duty dump truck for construction and mining. Engine: Weichai or Cummins (280-350 kW). GVW: 30-40 ton. Cargo Capacity: 18-22 m³. Hydraulic System: 280 bar. Perfect for large-scale earthmoving.'
       },
       {
@@ -1644,7 +1644,7 @@ export const brands: Brand[] = [
         model: 'HOWO 8×4',
         name: 'Dump Truck',
         specs: '8×4 | 320-380 kW | 40-50 ton GVW',
-        image: '/manus-storage/HOWO 7 8×4 自卸车_777c6051.jpeg',
+        image: '/manus-storage/sinotruck_howo7_8x4_dump_777c6051.jpeg',
         description: 'Sinotruck HOWO 8×4 Dump Truck. Ultra-heavy-duty dump truck for mining and large construction projects. Engine: Weichai or Cummins (320-380 kW). GVW: 40-50 ton. Cargo Capacity: 25-30 m³. Hydraulic System: 280 bar. Ideal for mining operations.'
       },
       {
@@ -1681,7 +1681,7 @@ export const brands: Brand[] = [
         model: 'Hilux 4×4',
         name: 'Pickup Truck',
         specs: '2.8L Diesel | 130 kW | 1.5 ton payload',
-        image: '/manus-storage/Hilux 海拉克斯 4×4 皮卡_98b70711.jpeg',
+        image: '/manus-storage/toyota_hilux_4x4_98b70711.jpeg',
         description: 'Toyota Hilux 4×4 Pickup Truck. Legendary light-duty pickup truck for off-road and construction use. Engine: 2.8L Diesel (130 kW/174 HP). Transmission: Manual or Automatic. Payload: 1.5 ton. Towing Capacity: 3.5 ton. Perfect for remote site access and light material transport.'
       },
       {
@@ -1689,7 +1689,7 @@ export const brands: Brand[] = [
         model: 'Land Cruiser 70',
         name: 'SUV',
         specs: '4.5L Diesel | 151 kW | 7-seater',
-        image: '/manus-storage/Land Cruiser 70 系列（LC76:LC78:LC79）_6295c925.jpeg',
+        image: '/manus-storage/toyota_lc70_6295c925.jpeg',
         description: 'Toyota Land Cruiser 70 Series. Iconic heavy-duty SUV for extreme off-road conditions. Engine: 4.5L Diesel (151 kW/202 HP). Transmission: Manual. Seating: 7-9 passengers. Ground Clearance: 210mm. Perfect for expedition and remote area access.'
       },
       {
@@ -1697,7 +1697,7 @@ export const brands: Brand[] = [
         model: 'Land Cruiser Prado',
         name: 'SUV',
         specs: '2.8L Diesel | 130 kW | 7-seater',
-        image: '/manus-storage/Land Cruiser Prado 普拉多（霸道）150:250 系列_204516c4.jpeg',
+        image: '/manus-storage/toyota_prado_204516c4.jpeg',
         description: 'Toyota Land Cruiser Prado. Premium SUV combining luxury and off-road capability. Engine: 2.8L Diesel (130 kW/174 HP). Transmission: Automatic. Seating: 7-9 passengers. Ground Clearance: 200mm. Ideal for executive transport and adventure travel.'
       },
       {
@@ -1705,7 +1705,7 @@ export const brands: Brand[] = [
         model: 'Fortuner',
         name: 'SUV',
         specs: '2.8L Diesel | 130 kW | 7-seater',
-        image: '/manus-storage/Fortuner 穿越者_b1c92596.jpeg',
+        image: '/manus-storage/toyota_fortuner_b1c92596.jpeg',
         description: 'Toyota Fortuner. Mid-size SUV for family and commercial use. Engine: 2.8L Diesel (130 kW/174 HP). Transmission: Manual or Automatic. Seating: 7 passengers. Ground Clearance: 185mm. Perfect for family trips and light commercial transport.'
       }
     ],
@@ -1734,7 +1734,7 @@ export const brands: Brand[] = [
         model: '6BT5.9-G2',
         name: 'Diesel Engine',
         specs: '5.9L | 110-130 kW | 6 cylinders',
-        image: '/manus-storage/6BT5.9-G2 5.9L_a1b2c3d4.jpeg',
+        image: '/manus-storage/cummins_6bt59_22588b1e.jpeg',
         description: 'Cummins 6BT5.9-G2 Diesel Engine. Mid-range turbocharged diesel engine widely used in construction equipment and trucks. Displacement: 5.9L. Power Output: 110-130 kW (147-174 HP). Torque: 450-480 Nm. Fuel Type: Diesel. Emissions Standard: Euro 3. Ideal for excavators, loaders, and medium-duty trucks.'
       },
       {
@@ -1742,7 +1742,7 @@ export const brands: Brand[] = [
         model: 'ISF3.8',
         name: 'Diesel Engine',
         specs: '3.8L | 75-95 kW | 4 cylinders',
-        image: '/manus-storage/ISF3.8 : F3.8 3.8L_b2c3d4e5.jpeg',
+        image: '/manus-storage/cummins_isf38_a98749d8.jpeg',
         description: 'Cummins ISF3.8 Diesel Engine. Compact four-cylinder turbocharged diesel engine for light-duty applications. Displacement: 3.8L. Power Output: 75-95 kW (100-127 HP). Torque: 265-310 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Perfect for small trucks, vans, and light construction equipment.'
       },
       {
@@ -1750,7 +1750,7 @@ export const brands: Brand[] = [
         model: 'ISL8.9',
         name: 'Diesel Engine',
         specs: '8.9L | 180-210 kW | 6 cylinders',
-        image: '/manus-storage/ISL8.9 : L9 9L_c3d4e5f6.jpeg',
+        image: '/manus-storage/cummins_isl89_41c56fd5.jpeg',
         description: 'Cummins ISL8.9 Diesel Engine. Mid-range six-cylinder turbocharged diesel engine for medium-duty trucks and construction equipment. Displacement: 8.9L. Power Output: 180-210 kW (240-280 HP). Torque: 700-850 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Ideal for dump trucks, mixers, and mid-size loaders.'
       },
       {
@@ -1758,7 +1758,7 @@ export const brands: Brand[] = [
         model: 'ISM11',
         name: 'Diesel Engine',
         specs: '11L | 250-280 kW | 6 cylinders',
-        image: '/manus-storage/ISM11 : M11 11L_d4e5f6g7.jpeg',
+        image: '/manus-storage/cummins_ism11_6c79981f.jpeg',
         description: 'Cummins ISM11 Diesel Engine. Heavy-duty six-cylinder turbocharged diesel engine for large trucks and construction equipment. Displacement: 11L. Power Output: 250-280 kW (335-375 HP). Torque: 1050-1200 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Perfect for heavy-duty dump trucks, concrete mixers, and large excavators.'
       },
       {
@@ -1811,7 +1811,7 @@ export const brands: Brand[] = [
         model: 'WP6',
         name: 'Diesel Engine',
         specs: '6L | 110-150 kW | 6 cylinders',
-        image: '/manus-storage/WP6 6L_25ca7c16.jpeg',
+        image: '/manus-storage/weichai_wp6_25ca7c16.jpeg',
         description: 'Weichai WP6 Diesel Engine. Mid-range six-cylinder turbocharged diesel engine for construction and truck applications. Displacement: 6L. Power Output: 110-150 kW (147-200 HP). Torque: 400-600 Nm. Fuel Type: Diesel. Emissions Standard: Euro 3/4. Ideal for loaders, graders, and medium-duty trucks.'
       },
       {
@@ -1819,7 +1819,7 @@ export const brands: Brand[] = [
         model: 'WP10',
         name: 'Diesel Engine',
         specs: '10L | 220-280 kW | 6 cylinders',
-        image: '/manus-storage/WP10 10L_f4ed786f.jpeg',
+        image: '/manus-storage/weichai_wp10_f4ed786f.jpeg',
         description: 'Weichai WP10 Diesel Engine. Heavy-duty six-cylinder turbocharged diesel engine for large trucks and equipment. Displacement: 10L. Power Output: 220-280 kW (295-375 HP). Torque: 800-1000 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4. Perfect for dump trucks, mixers, and large excavators.'
       },
       {
@@ -1827,7 +1827,7 @@ export const brands: Brand[] = [
         model: 'WP12',
         name: 'Diesel Engine',
         specs: '12L | 280-350 kW | 6 cylinders',
-        image: '/manus-storage/WP12_a14de336.jpg',
+        image: '/manus-storage/weichai_wp12_a14de336.jpg',
         description: 'Weichai WP12 Diesel Engine. Ultra-heavy-duty six-cylinder turbocharged diesel engine for maximum power applications. Displacement: 12L. Power Output: 280-350 kW (375-470 HP). Torque: 1000-1200 Nm. Fuel Type: Diesel. Emissions Standard: Euro 4/5. Ideal for heavy-duty dump trucks and mining equipment.'
       },
       {
@@ -1835,7 +1835,7 @@ export const brands: Brand[] = [
         model: 'WP13',
         name: 'Diesel Engine',
         specs: '13L | 300-380 kW | 6 cylinders',
-        image: '/manus-storage/WP13_cdc22275.jpg',
+        image: '/manus-storage/weichai_wp13_cdc22275.jpg',
         description: 'Weichai WP13 Diesel Engine. Premium six-cylinder turbocharged diesel engine for ultra-heavy-duty applications. Displacement: 13L. Power Output: 300-380 kW (400-510 HP). Torque: 1100-1400 Nm. Fuel Type: Diesel. Emissions Standard: Euro 5. Perfect for large dump trucks, concrete pump trucks, and mining operations.'
       }
     ],
