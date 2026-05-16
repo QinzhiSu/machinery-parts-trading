@@ -1759,40 +1759,62 @@ export const brands: Brand[] = [
     description: 'Japanese automotive manufacturer known for reliable trucks and commercial vehicles.',
     logo: 'TOYOTA',
     color: '#EB0A1E',
-    machines: [
-      {
-        id: 'toy-hilux',
-        model: 'Hilux 4×4',
-        name: 'Pickup Truck',
-        specs: '2.8L Diesel | 130 kW | 1.5 ton payload',
-        image: '/manus-storage/toyota_hilux_4x4_37791d67.jpeg',
-        description: 'Toyota Hilux 4×4 Pickup Truck. Legendary light-duty pickup truck for off-road and construction use. Engine: 2.8L Diesel (130 kW/174 HP). Transmission: Manual or Automatic. Payload: 1.5 ton. Towing Capacity: 3.5 ton. Perfect for remote site access and light material transport.'
-      },
-      {
-        id: 'toy-lc70',
-        model: 'Land Cruiser 70',
+    machines: [      {
+        id: 'toyota-4runner',
+        model: '4Runner',
         name: 'SUV',
-        specs: '4.5L Diesel | 151 kW | 7-seater',
-        image: '/manus-storage/toyota_lc70_8a97804c.jpeg',
-        description: 'Toyota Land Cruiser 70 Series. Iconic heavy-duty SUV for extreme off-road conditions. Engine: 4.5L Diesel (151 kW/202 HP). Transmission: Manual. Seating: 7-9 passengers. Ground Clearance: 210mm. Perfect for expedition and remote area access.'
+        specs: '4×4 | 4.0L V6 | 215 kW | 4850 kg',
+        image: '/manus-storage/toyota_4runner_d3054dd7.jpeg',
+        description: 'Toyota 4Runner SUV. Premium off-road SUV for adventure and exploration. Engine: 4.0L V6 (215 kW). Transmission: Automatic. Seating: 7-8 passengers. Fuel Tank: 87L. Perfect for extreme terrain and family adventures.'
       },
       {
-        id: 'toy-prado',
-        model: 'Land Cruiser Prado',
-        name: 'SUV',
-        specs: '2.8L Diesel | 130 kW | 7-seater',
-        image: '/manus-storage/toyota_prado_f46babc8.jpeg',
-        description: 'Toyota Land Cruiser Prado. Premium SUV combining luxury and off-road capability. Engine: 2.8L Diesel (130 kW/174 HP). Transmission: Automatic. Seating: 7-9 passengers. Ground Clearance: 200mm. Ideal for executive transport and adventure travel.'
-      },
-      {
-        id: 'toy-fortuner',
+        id: 'toyota-fortuner',
         model: 'Fortuner',
         name: 'SUV',
-        specs: '2.8L Diesel | 130 kW | 7-seater',
-        image: '/manus-storage/toyota_fortuner_576808e6.jpeg',
-        description: 'Toyota Fortuner. Mid-size SUV for family and commercial use. Engine: 2.8L Diesel (130 kW/174 HP). Transmission: Manual or Automatic. Seating: 7 passengers. Ground Clearance: 185mm. Perfect for family trips and light commercial transport.'
-      }
-    ],
+        specs: '4×4 | 2.8L Diesel | 130 kW | 2755 kg',
+        image: '/manus-storage/toyota_fortuner_cee5d261.jpeg',
+        description: 'Toyota Fortuner SUV. Mid-size SUV for family and commercial use. Engine: 2.8L Diesel (130 kW). Transmission: Automatic. Seating: 7 passengers. Fuel Tank: 80L. Ideal for Southeast Asian markets and rugged terrain.'
+      },
+      {
+        id: 'toyota-hilux-4x4',
+        model: 'Hilux 4×4',
+        name: 'Pickup Truck',
+        specs: '4×4 | 2.8L Diesel | 130 kW | 1850 kg',
+        image: '/manus-storage/toyota_hilux_4x4_0507593e.jpeg',
+        description: 'Toyota Hilux 4×4 Pickup Truck. Heavy-duty pickup truck for construction and agriculture. Engine: 2.8L Diesel (130 kW). Transmission: Manual/Automatic. Payload: 1000 kg. Fuel Tank: 80L. Perfect for tough working conditions.'
+      },
+      {
+        id: 'toyota-lc70',
+        model: 'Land Cruiser 70',
+        name: 'SUV',
+        specs: '4×4 | 4.0L V6 | 155 kW | 2100 kg',
+        image: '/manus-storage/toyota_lc70_5f2a286f.jpeg',
+        description: 'Toyota Land Cruiser 70 SUV. Classic off-road SUV with legendary reliability. Engine: 4.0L V6 (155 kW). Transmission: Manual. Seating: 5-7 passengers. Fuel Tank: 85L. Perfect for extreme off-road expeditions.'
+      },
+      {
+        id: 'toyota-prado',
+        model: 'Prado',
+        name: 'SUV',
+        specs: '4×4 | 2.7L Petrol | 120 kW | 2300 kg',
+        image: '/manus-storage/toyota_prado_37be579f.jpeg',
+        description: 'Toyota Prado SUV. Premium mid-size SUV for family and adventure. Engine: 2.7L Petrol (120 kW). Transmission: Automatic. Seating: 7 passengers. Fuel Tank: 87L. Ideal for family travel and light off-roading.'
+      },
+      {
+        id: 'toyota-tacoma-4x4',
+        model: 'Tacoma 4×4',
+        name: 'Pickup Truck',
+        specs: '4×4 | 3.5L V6 | 205 kW | 1700 kg',
+        image: '/manus-storage/toyota_tacoma_4x4_86577193.jpeg',
+        description: 'Toyota Tacoma 4×4 Pickup Truck. Mid-size pickup truck for work and adventure. Engine: 3.5L V6 (205 kW). Transmission: Automatic. Payload: 1200 kg. Fuel Tank: 80L. Perfect for construction and outdoor enthusiasts.'
+      },
+      {
+        id: 'toyota-tundra',
+        model: 'Tundra',
+        name: 'Pickup Truck',
+        specs: '4×4 | 5.7L V8 | 280 kW | 2100 kg',
+        image: '/manus-storage/toyota_tundra_e9444b96.jpeg',
+        description: 'Toyota Tundra Pickup Truck. Full-size heavy-duty pickup truck. Engine: 5.7L V8 (280 kW). Transmission: Automatic. Payload: 1600 kg. Fuel Tank: 100L. Perfect for demanding work and heavy towing.'
+      }],
     spareParts: [
       { id: 'ty-sp-1', partNumber: '15600-29015', name: 'Engine Oil Filter', description: 'Engine oil filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
       { id: 'ty-sp-2', partNumber: '23390-64480', name: 'Fuel Filter', description: 'Fuel filter for Toyota diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
