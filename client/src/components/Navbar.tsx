@@ -4,6 +4,7 @@ import { Link, useLocation } from 'wouter';
 import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import { GlobalSearch } from './GlobalSearch';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -102,6 +103,7 @@ export default function Navbar() {
                 </Link>
               );
             })}
+            <GlobalSearch />
             <Link
               href="/contact"
               className="ml-4 px-5 py-2 text-sm font-bold uppercase tracking-wider text-white transition-all duration-200 hover:opacity-90"

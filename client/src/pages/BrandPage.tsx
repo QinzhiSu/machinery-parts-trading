@@ -1,7 +1,7 @@
 // Design: Industrial Minimalism
 // Brand page with machines + spare parts tabs, orange accent cards
-import { useState } from 'react';
-import { useParams, Link } from 'wouter';
+import { useState, useEffect } from 'react';
+import { useParams, Link, useSearch } from 'wouter';
 import { ArrowLeft, ChevronRight, Package, Wrench, Tag, Phone, Mail, MessageSquare } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -13,6 +13,10 @@ const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u
 
 export default function BrandPage() {
   const { brandId } = useParams<{ brandId: string }>();
+  const search = useSearch();
+  const params = new URLSearchParams(search);
+  const highlightPartId = params.get('partId');
+  
   const brand = getBrandById(brandId || '');
   const [activeTab, setActiveTab] = useState<'machines' | 'parts'>('machines');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -20,10 +24,36 @@ export default function BrandPage() {
   const [selectedProduct, setSelectedProduct] = useState<{ model: string; name: string; specs?: string; type: 'machine' | 'spare-part' } | null>(null);
   const [selectedPart, setSelectedPart] = useState<SparePart | null>(null);
   const [partDetailOpen, setPartDetailOpen] = useState(false);
+  const [highlightedPartId, setHighlightedPartId] = useState<string | null>(null);
+
+  // Auto-open part detail if coming from search
+  useEffect(() => {
+    if (highlightPartId && brand) {
+      const part = brand.spareParts.find(p => p.id === highlightPartId);
+      if (part) {
+        setSelectedPart(part);
+        setPartDetailOpen(true);
+        setActiveTab('parts');
+        setHighlightedPartId(highlightPartId);
+        // Scroll to the part
+        setTimeout(() => {
+          const element = document.getElementById(`part-${highlightPartId}`);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 100);
+      }
+    }
+  }, [highlightPartId, brand]);
 
   const openInquiry = (product: { model: string; name: string; specs?: string; type: 'machine' | 'spare-part' }) => {
     setSelectedProduct(product);
     setInquiryDialogOpen(true);
+  };
+
+  const handlePartDetailClose = () => {
+    setPartDetailOpen(false);
+    setHighlightedPartId(null);
   };
 
   if (!brand) {
@@ -292,7 +322,12 @@ export default function BrandPage() {
                 {filteredParts.map((part, idx) => (
                   <div
                     key={part.id}
-                    className="product-card animate-fade-in-up bg-white overflow-hidden"
+                    id={`part-${part.id}`}
+                    className={`product-card animate-fade-in-up overflow-hidden ${
+                      highlightedPartId === part.id
+                        ? 'bg-orange-50 ring-2 ring-orange-400'
+                        : 'bg-white'
+                    }`}
                     style={{ animationDelay: `${idx * 0.05}s` }}
                   >
                     {/* Part image */}
@@ -421,7 +456,7 @@ export default function BrandPage() {
       <SparePartDetailModal
         part={selectedPart}
         isOpen={partDetailOpen}
-        onClose={() => setPartDetailOpen(false)}
+        onClose={() => handlePartDetailClose()}
         onInquiry={(part) => {
           setSelectedProduct({ model: part.partNumber, name: part.name, type: 'spare-part' });
           setInquiryDialogOpen(true);

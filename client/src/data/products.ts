@@ -1564,7 +1564,8 @@ export const brands: Brand[] = [
     description: 'Leading Chinese heavy-duty truck manufacturer producing commercial vehicles for construction and logistics.',
     logo: 'SHACMAN',
     color: '#E53935',
-    machines: [      {
+    machines: [
+      {
         id: 'shac-f3000-6x4-tractor',
         model: 'F3000 6×4 Tractor',
         name: 'Tractor Truck',
