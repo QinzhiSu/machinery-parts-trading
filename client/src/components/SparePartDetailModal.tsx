@@ -143,7 +143,28 @@ export default function SparePartDetailModal({
             </div>
 
             {/* Compatible Models */}
-            {compatibleModels && (
+            {(part.compatibleModels && part.compatibleModels.length > 0) ? (
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
+                  Applicable Vehicle Models
+                </p>
+                <div className="grid grid-cols-2 gap-2">
+                  {part.compatibleModels.map((model, idx) => (
+                    <div
+                      key={idx}
+                      className="px-3 py-2 rounded text-sm font-semibold"
+                      style={{
+                        background: 'oklch(0.97 0.005 90)',
+                        color: brandColor,
+                        border: `1px solid ${brandColor}33`,
+                      }}
+                    >
+                      {model}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : compatibleModels ? (
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'oklch(0.5 0.02 265)' }}>
                   Compatible Vehicles
@@ -152,7 +173,7 @@ export default function SparePartDetailModal({
                   {compatibleModels}
                 </p>
               </div>
-            )}
+            ) : null}
 
             {/* Engine Models */}
             {engineModels && (

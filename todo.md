@@ -131,3 +131,12 @@
 - ✅ 支持跨品牌搜索
 - ✅ 配件高亮定位功能
 - ✅ 9 个单元测试全部通过
+
+
+## 配件适配车型展示功能
+
+- [x] 为 SparePart 接口添加 compatibleModels 字段
+- [x] 更新 SparePartDetailModal 组件显示适配车型列表
+- [x] 为所有配件数据添加 compatibleModels 数组（311 个配件）
+- [x] 测试适配车型列表显示效果
+- [x] 验证网站所有品牌页面显示正常
