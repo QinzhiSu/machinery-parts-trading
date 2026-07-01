@@ -1798,13 +1798,76 @@ export const brands: Brand[] = [
         description: 'Sinotruck HOWO 7 Heavy Duty Truck. Latest generation heavy-duty truck with maximum power. Engine: Weichai or Cummins (380-430 kW). GVW: 50-60 ton. Cargo Capacity: 30-35 m³. Advanced hydraulic system. Perfect for extreme mining and construction.'
       }],
     spareParts: [
-      { id: 'st-sp-1', partNumber: 'VG1560118229', name: 'Engine Oil Filter', description: 'Engine oil filter for Sinotruk HOWO trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'st-sp-2', partNumber: 'VG1560118230', name: 'Fuel Filter', description: 'Fuel filter for Sinotruk diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'st-sp-3', partNumber: 'VG1560118231', name: 'Air Filter', description: 'Air cleaner element for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'st-sp-4', partNumber: 'VG1560118232', name: 'Cabin Air Filter', description: 'Cabin air filter for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'st-sp-5', partNumber: 'VG1560118233', name: 'Transmission Filter', description: 'Transmission filter for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'st-sp-6', partNumber: 'VG1560118234', name: 'Brake Pad Set', description: 'Brake pad set for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
-      { id: 'st-sp-7', partNumber: 'VG1560118235', name: 'Alternator', description: 'Alternator for Sinotruk trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Electrical' },
+      // Lubrication System
+      { id: 'st-sp-1', partNumber: 'VG1560118229', name: '机油滤清器 (Engine Oil Filter)', description: '重汽豪沃原厂机油滤清器，高效过滤发动机机油中的杂质和金属颗粒，保护发动机。兼容车型：重汽 HOWO 4×2、6×4、8×4、T7S、TX、SITRAK C7H 等。发动机型号：潍柴 WD615、WD10、WD12 或康明斯。规格：纸质滤芯，流量 120L/min，工作温度 -40~120℃。', image: '/manus-storage/ucpUdUZdpIAr_0fcb9d5f.webp', category: 'Lubrication System' },
+      { id: 'st-sp-2', partNumber: 'VG1560080012', name: '机油泵 (Oil Pump)', description: '重汽豪沃机油泵，为发动机润滑系统供油。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：排量 8.5cc/rev，工作压力 0.5-0.8bar。', image: '/manus-storage/fcPGf6qqKLeF_220f6fb4.jpg', category: 'Lubrication System' },
+      { id: 'st-sp-3', partNumber: 'VG1560080013', name: '机油滤清器座 (Oil Filter Seat)', description: '重汽豪沃机油滤清器座，连接机油滤清器和发动机。兼容车型：重汽 HOWO 系列。规格：铸铁，工作压力 0.8bar。', image: '/manus-storage/8yoUd9lwI4QU_fb1bcb17.jpg', category: 'Lubrication System' },
+      
+      // Fuel System
+      { id: 'st-sp-4', partNumber: 'VG1560080012', name: '燃油滤清器 (Fuel Filter)', description: '重汽豪沃原厂燃油滤清器，精密过滤燃油中的杂质和水分，提高喷油精度。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：纸质滤芯，过滤精度 10μm，工作压力 0.3-0.5bar。', image: '/manus-storage/PdEw62cQZKqP_ac3ef499.webp', category: 'Fuel System' },
+      { id: 'st-sp-5', partNumber: 'WG9925551410', name: '燃油滤清器总成 (Fuel Filter Assembly)', description: '重汽豪沃燃油滤清器总成，含滤芯和座。兼容车型：重汽 HOWO 系列。规格：纸质滤芯，过滤精度 5μm，工作压力 0.5bar。', image: '/manus-storage/o9DYZg0gms0G_2a6014f9.jpg', category: 'Fuel System' },
+      { id: 'st-sp-6', partNumber: 'VG1560080011', name: '喷油器 (Fuel Injector)', description: '重汽豪沃原厂喷油器，精密喷射燃油到气缸。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：喷油压力 200bar，喷油量 50mm³/st。', image: '/manus-storage/3yVLeyGHnP5n_3fcfe09f.webp', category: 'Fuel System' },
+      { id: 'st-sp-7', partNumber: 'VG1560080010', name: '高压油管 (High Pressure Fuel Pipe)', description: '重汽豪沃高压燃油管，连接喷油泵和喷油器。兼容车型：重汽 HOWO 系列。规格：工作压力 200bar，长度 1.2m。', image: '/manus-storage/ZX4YdBMDdIvf_a58a6b13.jpg', category: 'Fuel System' },
+      
+      // Engine System
+      { id: 'st-sp-8', partNumber: 'VG1560118230', name: '空气滤清器 (Air Filter)', description: '重汽豪沃高效空气滤清器，有效过滤进气中的灰尘和颗粒，保证发动机进气清洁。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：纸质滤芯，过滤精度 5μm，流量 250m³/h。', image: '/manus-storage/keKWTf7psn43_42aec80d.jpg', category: 'Engine System' },
+      { id: 'st-sp-9', partNumber: 'VG1560118231', name: '活塞环套件 (Piston Ring Set)', description: '重汽豪沃原厂活塞环，精密加工，耐高温耐磨损，密封活塞和气缸，防止气体泄漏。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：铸铁，厚度 1.5-2mm，工作温度 300℃。', image: '/manus-storage/lqsRdwHew27F_d931e63d.jpg', category: 'Engine System' },
+      { id: 'st-sp-10', partNumber: 'VG1560118232', name: '气门油封 (Valve Oil Seal)', description: '重汽豪沃气门油封，防止机油进入气缸，保护发动机。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：氟橡胶油封，工作温度 -40~150℃。', image: '/manus-storage/QEmbgAIpztPF_520f4185.webp', category: 'Engine System' },
+      { id: 'st-sp-11', partNumber: 'VG1560118233', name: '进气门 (Intake Valve)', description: '重汽豪沃进气门，控制进气流量。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：钛合金，直径 45mm，工作温度 400℃。', image: '/manus-storage/yvtgySs57Yno_3df46036.webp', category: 'Engine System' },
+      { id: 'st-sp-12', partNumber: 'VG1560118234', name: '排气门 (Exhaust Valve)', description: '重汽豪沃排气门，排出燃烧废气。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：钛合金，直径 42mm，工作温度 450℃。', image: '/manus-storage/panh7ArNe8Kz_5454ef99.webp', category: 'Engine System' },
+      { id: 'st-sp-13', partNumber: 'VG1560118235', name: '缸盖垫 (Cylinder Head Gasket)', description: '重汽豪沃缸盖垫，密封气缸盖和缸体。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：石棉垫，厚度 1.5mm，工作压力 25bar。', image: '/manus-storage/dE26oJpkG7vY_85a0cb88.jpg', category: 'Engine System' },
+      { id: 'st-sp-14', partNumber: 'VG1560118236', name: '前油封 (Front Oil Seal)', description: '重汽豪沃曲轴前油封，防止机油泄漏。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：氟橡胶油封，工作温度 -40~150℃。', image: '/manus-storage/BHGlWOSjhU5w_9f29cc56.webp', category: 'Engine System' },
+      { id: 'st-sp-15', partNumber: 'VG1560118237', name: '后油封 (Rear Oil Seal)', description: '重汽豪沃曲轴后油封，防止机油泄漏。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：氟橡胶油封，工作温度 -40~150℃。', image: '/manus-storage/baN8ShRqAIuM_6af4f6db.webp', category: 'Engine System' },
+      
+      // Cooling System
+      { id: 'st-sp-16', partNumber: 'VG1560118238', name: '水泵总成 (Water Pump Assembly)', description: '重汽豪沃冷却水泵总成，高效循环冷却液，采用铝制泵体，保持发动机工作温度。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：铝制泵体，流量 100L/min，工作温度 -40~120℃。', image: '/manus-storage/ucpUdUZdpIAr_0fcb9d5f.webp', category: 'Cooling System' },
+      { id: 'st-sp-17', partNumber: 'VG1560118239', name: '节温器 (Thermostat)', description: '重汽豪沃冷却系统节温器，精确控制冷却液温度，提高发动机效率，降低油耗。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：黄铜阀芯，开启温度 82℃，工作压力 0.5bar。', image: '/manus-storage/QEmbgAIpztPF_520f4185.webp', category: 'Cooling System' },
+      { id: 'st-sp-18', partNumber: 'VG1560118240', name: '冷却液管 (Coolant Hose)', description: '重汽豪沃冷却液管，连接水泵、散热器和发动机。兼容车型：重汽 HOWO 系列。规格：橡胶管，直径 50mm，工作温度 -40~120℃。', image: '/manus-storage/panh7ArNe8Kz_5454ef99.webp', category: 'Cooling System' },
+      { id: 'st-sp-19', partNumber: 'VG1560118241', name: '散热器 (Radiator)', description: '重汽豪沃散热器，散发冷却液的热量。兼容车型：重汽 HOWO 系列。规格：铝制，散热面积 2.5m²，工作压力 0.5bar。', image: '/manus-storage/dE26oJpkG7vY_85a0cb88.jpg', category: 'Cooling System' },
+      { id: 'st-sp-20', partNumber: 'VG1560118242', name: '液压油冷却器 (Hydraulic Oil Cooler)', description: '重汽豪沃液压油冷却器，冷却液压系统油液。兼容车型：重汽 HOWO 系列。规格：铝制，散热面积 1.5m²，工作压力 280bar。', image: '/manus-storage/BHGlWOSjhU5w_9f29cc56.webp', category: 'Cooling System' },
+      
+      // Brake System
+      { id: 'st-sp-21', partNumber: 'VG1560118243', name: '制动垫片 (Brake Pad Set)', description: '重汽豪沃原厂制动垫片，高摩擦系数，耐高温耐磨损，确保制动安全。兼容车型：重汽 HOWO 系列。规格：半金属垫片，厚度 12-15mm，工作温度 -40~350℃。', image: '/manus-storage/baN8ShRqAIuM_6af4f6db.webp', category: 'Brake System' },
+      { id: 'st-sp-22', partNumber: 'WG9100443050', name: '前制动垫片 (Front Brake Pad)', description: '重汽豪沃前制动垫片，前轮制动。兼容车型：重汽 HOWO 系列。规格：半金属垫片，厚度 15mm，摩擦系数 0.45。', image: '/manus-storage/ucpUdUZdpIAr_0fcb9d5f.webp', category: 'Brake System' },
+      { id: 'st-sp-23', partNumber: 'VG1560118244', name: '制动盘 (Brake Disc)', description: '重汽豪沃制动盘，与制动垫片配合实现制动。兼容车型：重汽 HOWO 系列。规格：铸铁盘，厚度 30mm，直径 370mm。', image: '/manus-storage/PdEw62cQZKqP_ac3ef499.webp', category: 'Brake System' },
+      { id: 'st-sp-24', partNumber: 'VG1560118245', name: '制动蹄 (Brake Shoe)', description: '重汽豪沃制动蹄，鼓式制动系统。兼容车型：重汽 HOWO 系列。规格：铸铁蹄，厚度 8mm，工作温度 -40~350℃。', image: '/manus-storage/fcPGf6qqKLeF_220f6fb4.jpg', category: 'Brake System' },
+      { id: 'st-sp-25', partNumber: 'VG1560118246', name: '制动软管 (Brake Hose)', description: '重汽豪沃制动软管，传输制动液压。兼容车型：重汽 HOWO 系列。规格：橡胶管，直径 12mm，工作压力 280bar。', image: '/manus-storage/8yoUd9lwI4QU_fb1bcb17.jpg', category: 'Brake System' },
+      { id: 'st-sp-26', partNumber: 'VG1560118247', name: '制动总泵 (Brake Master Cylinder)', description: '重汽豪沃制动总泵，产生制动压力。兼容车型：重汽 HOWO 系列。规格：铸铁泵，直径 32mm，工作压力 280bar。', image: '/manus-storage/o9DYZg0gms0G_2a6014f9.jpg', category: 'Brake System' },
+      { id: 'st-sp-27', partNumber: 'VG1560118248', name: '制动分泵 (Brake Wheel Cylinder)', description: '重汽豪沃制动分泵，推动制动垫片。兼容车型：重汽 HOWO 系列。规格：铸铁泵，直径 28mm，工作压力 280bar。', image: '/manus-storage/3yVLeyGHnP5n_3fcfe09f.webp', category: 'Brake System' },
+      { id: 'st-sp-28', partNumber: 'VG1560118249', name: '空气压缩机 (Air Compressor)', description: '重汽豪沃空气压缩机，为气制动系统供气。兼容车型：重汽 HOWO 系列。规格：排气量 8.5L/min，工作压力 0.8bar。', image: '/manus-storage/ZX4YdBMDdIvf_a58a6b13.jpg', category: 'Brake System' },
+      
+      // Transmission System
+      { id: 'st-sp-29', partNumber: 'VG1560118250', name: '离合器片 (Clutch Plate)', description: '重汽豪沃原厂离合器片，高摩擦系数，耐高温，确保传动平稳。兼容车型：重汽 HOWO 系列。规格：铜基烧结，厚度 4.5mm，工作温度 -40~300℃。', image: '/manus-storage/keKWTf7psn43_42aec80d.jpg', category: 'Transmission System' },
+      { id: 'st-sp-30', partNumber: 'VG1560118251', name: '变速箱滤清器 (Transmission Filter)', description: '重汽豪沃变速箱滤清器，过滤变速箱油。兼容车型：重汽 HOWO 系列。规格：纸质滤芯，过滤精度 10μm，工作压力 0.5bar。', image: '/manus-storage/lqsRdwHew27F_d931e63d.jpg', category: 'Transmission System' },
+      { id: 'st-sp-31', partNumber: 'VG1560118252', name: '变速箱支架 (Gearbox Support)', description: '重汽豪沃变速箱支架，承载变速箱重量，减震降噪。兼容车型：重汽 HOWO 系列。规格：铸铁支架，重量 8kg，工作温度 -40~80℃。', image: '/manus-storage/QEmbgAIpztPF_520f4185.webp', category: 'Transmission System' },
+      { id: 'st-sp-32', partNumber: 'VG1560118253', name: '离合器压盘 (Clutch Pressure Plate)', description: '重汽豪沃离合器压盘，压紧离合器片。兼容车型：重汽 HOWO 系列。规格：铸铁盘，直径 350mm，工作温度 -40~300℃。', image: '/manus-storage/yvtgySs57Yno_3df46036.webp', category: 'Transmission System' },
+      { id: 'st-sp-33', partNumber: 'VG1560118254', name: '轴承套件 (Bearing Kit)', description: '重汽豪沃轴承套件，支撑变速箱轴。兼容车型：重汽 HOWO 系列。规格：滚珠轴承，直径 50mm，工作温度 -40~120℃。', image: '/manus-storage/panh7ArNe8Kz_5454ef99.webp', category: 'Transmission System' },
+      
+      // Suspension System
+      { id: 'st-sp-34', partNumber: 'VG1560118255', name: '后悬架 (Rear Suspension)', description: '重汽豪沃后悬架总成，采用钢板弹簧设计，提供稳定的悬挂效果。兼容车型：重汽 HOWO 系列。规格：钢板弹簧，承载能力 15吨，工作温度 -40~80℃。', image: '/manus-storage/dE26oJpkG7vY_85a0cb88.jpg', category: 'Suspension System' },
+      { id: 'st-sp-35', partNumber: 'VG1560118256', name: '悬架弹簧 (Leaf Spring)', description: '重汽豪沃悬架钢板弹簧，承载重量，缓冲颠簸。兼容车型：重汽 HOWO 系列。规格：锰钢弹簧，厚度 8mm，承载能力 10吨。', image: '/manus-storage/BHGlWOSjhU5w_9f29cc56.webp', category: 'Suspension System' },
+      { id: 'st-sp-36', partNumber: 'VG1560118257', name: '减震器 (Shock Absorber)', description: '重汽豪沃减震器，吸收悬架振动。兼容车型：重汽 HOWO 系列。规格：液压减震器，长度 600mm，工作压力 50bar。', image: '/manus-storage/baN8ShRqAIuM_6af4f6db.webp', category: 'Suspension System' },
+      { id: 'st-sp-37', partNumber: 'VG1560118258', name: '转向节销 (Kingpin)', description: '重汽豪沃转向节销，连接转向节和悬架。兼容车型：重汽 HOWO 系列。规格：铸铁销，直径 50mm，工作温度 -40~80℃。', image: '/manus-storage/ucpUdUZdpIAr_0fcb9d5f.webp', category: 'Suspension System' },
+      { id: 'st-sp-38', partNumber: 'VG1560118259', name: '转向节销套件 (Kingpin Repair Kit)', description: '重汽豪沃转向节销套件，含销和轴承。兼容车型：重汽 HOWO 系列。规格：铸铁销，直径 50mm，含轴承和垫片。', image: '/manus-storage/PdEw62cQZKqP_ac3ef499.webp', category: 'Suspension System' },
+      
+      // Electrical System
+      { id: 'st-sp-39', partNumber: 'VG1560118260', name: '交流发电机 (Alternator)', description: '重汽豪沃原厂交流发电机，为电气系统供电，保证车辆正常运行。兼容车型：重汽 HOWO 系列。规格：输出功率 120A，输出电压 14V，工作温度 -40~120℃。', image: '/manus-storage/fcPGf6qqKLeF_220f6fb4.jpg', category: 'Electrical System' },
+      { id: 'st-sp-40', partNumber: 'VG1560118261', name: '启动马达 (Starter Motor)', description: '重汽豪沃启动马达，快速启动发动机。兼容车型：重汽 HOWO 系列。规格：功率 5.5kW，转速 11000rpm，工作温度 -40~120℃。', image: '/manus-storage/8yoUd9lwI4QU_fb1bcb17.jpg', category: 'Electrical System' },
+      { id: 'st-sp-41', partNumber: 'VG1560118262', name: '电池 (Battery)', description: '重汽豪沃原厂蓄电池，提供启动电流，稳定供电。兼容车型：重汽 HOWO 系列。规格：12V 200Ah，冷启动电流 1500A，工作温度 -40~65℃。', image: '/manus-storage/o9DYZg0gms0G_2a6014f9.jpg', category: 'Electrical System' },
+      { id: 'st-sp-42', partNumber: 'VG1560118263', name: '点火开关 (Ignition Switch)', description: '重汽豪沃点火开关，控制发动机启动。兼容车型：重汽 HOWO 系列。规格：电流 15A，工作温度 -40~80℃。', image: '/manus-storage/3yVLeyGHnP5n_3fcfe09f.webp', category: 'Electrical System' },
+      { id: 'st-sp-43', partNumber: 'VG1560118264', name: '车灯总成 (Light Assembly)', description: '重汽豪沃车灯总成，包括前灯、后灯、转向灯等。兼容车型：重汽 HOWO 系列。规格：LED 灯，功率 55W，工作温度 -40~80℃。', image: '/manus-storage/ZX4YdBMDdIvf_a58a6b13.jpg', category: 'Electrical System' },
+      
+      // Steering System
+      { id: 'st-sp-44', partNumber: 'VG1560118265', name: '转向柱支撑轴承 (Steering Column Bearing)', description: '重汽豪沃转向柱支撑轴承，支撑转向柱。兼容车型：重汽 HOWO 系列。规格：滚珠轴承，直径 40mm，工作温度 -40~80℃。', image: '/manus-storage/keKWTf7psn43_42aec80d.jpg', category: 'Steering System' },
+      { id: 'st-sp-45', partNumber: 'VG1560118266', name: '转向节联轴节 (Steering Joint)', description: '重汽豪沃转向节联轴节，连接转向柱和转向齿轮。兼容车型：重汽 HOWO 系列。规格：铸铁联轴节，直径 30mm，工作温度 -40~80℃。', image: '/manus-storage/lqsRdwHew27F_d931e63d.jpg', category: 'Steering System' },
+      { id: 'st-sp-46', partNumber: 'VG1560118267', name: '转向拉杆 (Steering Tie Rod)', description: '重汽豪沃转向拉杆，连接转向节和转向齿轮。兼容车型：重汽 HOWO 系列。规格：铸铁杆，长度 1.2m，工作温度 -40~80℃。', image: '/manus-storage/QEmbgAIpztPF_520f4185.webp', category: 'Steering System' },
+      { id: 'st-sp-47', partNumber: 'VG1560118268', name: '转向齿轮 (Steering Gear)', description: '重汽豪沃转向齿轮，将转向柱的转动转换为轮胎的转向。兼容车型：重汽 HOWO 系列。规格：齿轮比 18:1，工作温度 -40~80℃。', image: '/manus-storage/yvtgySs57Yno_3df46036.webp', category: 'Steering System' },
+      { id: 'st-sp-48', partNumber: 'VG1560118269', name: '转向泵 (Steering Pump)', description: '重汽豪沃转向泵，为转向系统供油。兼容车型：重汽 HOWO 系列。规格：排量 8.5cc/rev，工作压力 150bar。', image: '/manus-storage/panh7ArNe8Kz_5454ef99.webp', category: 'Steering System' },
+      
+      // Other Components
+      { id: 'st-sp-49', partNumber: 'VG1560118270', name: '液压油滤清器 (Hydraulic Oil Filter)', description: '重汽豪沃液压油滤清器，过滤液压系统油液。兼容车型：重汽 HOWO 系列。规格：纸质滤芯，过滤精度 10μm，工作压力 280bar。', image: '/manus-storage/dE26oJpkG7vY_85a0cb88.jpg', category: 'Hydraulic System' },
+      { id: 'st-sp-50', partNumber: 'VG1560118271', name: '油箱盖 (Fuel Tank Cap)', description: '重汽豪沃油箱盖，密封油箱。兼容车型：重汽 HOWO 系列。规格：塑料盖，直径 80mm，工作温度 -40~80℃。', image: '/manus-storage/BHGlWOSjhU5w_9f29cc56.webp', category: 'Fuel System' },
+      { id: 'st-sp-51', partNumber: 'VG1560118272', name: '玻璃水储液罐盖 (Washer Reservoir Cap)', description: '重汽豪沃玻璃水储液罐盖，密封玻璃水储液罐。兼容车型：重汽 HOWO 系列。规格：塑料盖，直径 60mm，工作温度 -40~80℃。', image: '/manus-storage/baN8ShRqAIuM_6af4f6db.webp', category: 'Other' },
     ]
   },
   {
