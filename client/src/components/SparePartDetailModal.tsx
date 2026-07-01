@@ -2,6 +2,7 @@
 import { X, ChevronLeft, ChevronRight, Package, Wrench, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 import { SparePart } from '@/data/products';
+import ContactMethods from './ContactMethods';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -186,6 +187,11 @@ export default function SparePartDetailModal({
                 </p>
               </div>
             )}
+          </div>
+
+          {/* Contact Methods */}
+          <div className="mb-6">
+            <ContactMethods partName={part.name} partNumber={part.partNumber} compact={true} />
           </div>
 
           {/* Action Buttons */}
