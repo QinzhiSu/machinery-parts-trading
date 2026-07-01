@@ -15,6 +15,7 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import FAQPage from "./pages/FAQPage";
 import SearchResults from "./pages/SearchResults";
+import FavoritesPage from "./pages/FavoritesPage";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/about" component={AboutPage} />
       <Route path="/faq" component={FAQPage} />
       <Route path="/search" component={SearchResults} />
+      <Route path="/favorites" component={FavoritesPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

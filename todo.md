@@ -182,8 +182,8 @@
 
 - [x] 创建 Favorites 数据库表 - 存储用户收藏的配件
 - [x] 创建 useFavorites Hook - 管理收藏状态（需要添加验证保护）
-- [ ] 在 SparePartDetailModal 中添加收藏按钮
-- [ ] 创建收藏夹页面 - 显示所有收藏的配件
+- [x] 在 SparePartDetailModal 中添加收藏按钮
+- [x] 创建收藏夹页面 - 显示所有收藏的配件
 - [ ] 实现收藏夹持久化 - 使用 localStorage 或数据库
 - [ ] 添加收藏夹计数显示
 - [ ] 测试收藏夹功能

@@ -1,8 +1,10 @@
 // Spare Part Detail Modal with image gallery and full specifications
-import { X, ChevronLeft, ChevronRight, Package, Wrench, MessageSquare } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Package, Wrench, MessageSquare, Heart } from 'lucide-react';
 import { useState } from 'react';
 import { SparePart } from '@/data/products';
 import ContactMethods from './ContactMethods';
+import { useFavorites } from '@/_core/hooks/useFavorites';
+import { useAuth } from '@/_core/hooks/useAuth';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -22,6 +24,26 @@ export default function SparePartDetailModal({
   brandColor,
 }: SparePartDetailModalProps) {
   const [imageIndex, setImageIndex] = useState(0);
+  const { user } = useAuth();
+  const { isFavorite, addFavorite, removeFavorite } = useFavorites();
+  const [isLoadingFavorite, setIsLoadingFavorite] = useState(false);
+
+  const handleToggleFavorite = async () => {
+    if (!user || !part) return;
+    
+    setIsLoadingFavorite(true);
+    try {
+      if (isFavorite(part.partNumber)) {
+        await removeFavorite(part.partNumber);
+      } else {
+        await addFavorite(part.partNumber, part.name, brandName);
+      }
+    } catch (error) {
+      console.error('Failed to toggle favorite:', error);
+    } finally {
+      setIsLoadingFavorite(false);
+    }
+  };
 
   if (!isOpen || !part) return null;
 
@@ -149,30 +171,17 @@ export default function SparePartDetailModal({
                 <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
                   Applicable Vehicle Models
                 </p>
-                <div className="grid grid-cols-2 gap-2">
-                  {part.compatibleModels.map((model, idx) => (
-                    <div
-                      key={idx}
-                      className="px-3 py-2 rounded text-sm font-semibold"
-                      style={{
-                        background: 'oklch(0.97 0.005 90)',
-                        color: brandColor,
-                        border: `1px solid ${brandColor}33`,
-                      }}
+                <div className="flex flex-wrap gap-2">
+                  {part.compatibleModels.map((model) => (
+                    <span
+                      key={model}
+                      className="px-2 py-1 text-xs font-mono rounded"
+                      style={{ background: 'oklch(0.97 0.005 90)', color: brandColor, fontFamily: 'var(--font-mono)' }}
                     >
                       {model}
-                    </div>
+                    </span>
                   ))}
                 </div>
-              </div>
-            ) : compatibleModels ? (
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  Compatible Vehicles
-                </p>
-                <p className="text-sm" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                  {compatibleModels}
-                </p>
               </div>
             ) : null}
 
@@ -207,6 +216,22 @@ export default function SparePartDetailModal({
               <MessageSquare size={14} />
               Send Inquiry
             </button>
+            {user && (
+              <button
+                onClick={handleToggleFavorite}
+                disabled={isLoadingFavorite}
+                className="px-4 py-3 flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-wider transition-all rounded disabled:opacity-50"
+                style={{
+                  background: isFavorite(part.partNumber) ? brandColor : 'oklch(0.97 0.005 90)',
+                  color: isFavorite(part.partNumber) ? 'white' : 'oklch(0.45 0.02 265)',
+                  border: isFavorite(part.partNumber) ? 'none' : '1px solid oklch(0.88 0.008 90)',
+                  fontFamily: 'var(--font-display)',
+                }}
+                title={isFavorite(part.partNumber) ? 'Remove from favorites' : 'Add to favorites'}
+              >
+                <Heart size={14} fill={isFavorite(part.partNumber) ? 'currentColor' : 'none'} />
+              </button>
+            )}
             <button
               onClick={onClose}
               className="flex-1 py-3 text-sm font-bold uppercase tracking-wider transition-all rounded"
