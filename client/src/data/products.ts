@@ -1820,10 +1820,10 @@ export const brands: Brand[] = [
       { id: 'st-sp-15', partNumber: 'VG1560118237', name: '后油封 (Rear Oil Seal)', description: '重汽豪沃曲轴后油封，防止机油泄漏。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：氟橡胶油封，工作温度 -40~150℃。', image: '/manus-storage/baN8ShRqAIuM_6af4f6db.webp', category: 'Engine System' },
       
       // Cooling System
-      { id: 'st-sp-16', partNumber: 'VG1560118238', name: '水泵总成 (Water Pump Assembly)', description: '重汽豪沃冷却水泵总成，高效循环冷却液，采用铝制泵体，保持发动机工作温度。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：铝制泵体，流量 100L/min，工作温度 -40~120℃。', image: '/manus-storage/ucpUdUZdpIAr_0fcb9d5f.webp', category: 'Cooling System' },
-      { id: 'st-sp-17', partNumber: 'VG1560118239', name: '节温器 (Thermostat)', description: '重汽豪沃冷却系统节温器，精确控制冷却液温度，提高发动机效率，降低油耗。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：黄铜阀芯，开启温度 82℃，工作压力 0.5bar。', image: '/manus-storage/QEmbgAIpztPF_520f4185.webp', category: 'Cooling System' },
-      { id: 'st-sp-18', partNumber: 'VG1560118240', name: '冷却液管 (Coolant Hose)', description: '重汽豪沃冷却液管，连接水泵、散热器和发动机。兼容车型：重汽 HOWO 系列。规格：橡胶管，直径 50mm，工作温度 -40~120℃。', image: '/manus-storage/panh7ArNe8Kz_5454ef99.webp', category: 'Cooling System' },
-      { id: 'st-sp-19', partNumber: 'VG1560118241', name: '散热器 (Radiator)', description: '重汽豪沃散热器，散发冷却液的热量。兼容车型：重汽 HOWO 系列。规格：铝制，散热面积 2.5m²，工作压力 0.5bar。', image: '/manus-storage/dE26oJpkG7vY_85a0cb88.jpg', category: 'Cooling System' },
+      { id: 'st-sp-16', partNumber: 'VG1560118238', name: '水泵总成 (Water Pump Assembly)', description: '重汽豪沃冷却水泵总成，高效循环冷却液，采用铝制泵体，保持发动机工作温度。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：铝制泵体，流量 100L/min，工作温度 -40~120℃。', image: '/manus-storage/m5OZXX2sDczn_4cc5bbb3.webp', category: 'Cooling System' },
+      { id: 'st-sp-17', partNumber: 'VG1560118239', name: '节温器 (Thermostat)', description: '重汽豪沃冷却系统节温器，精确控制冷却液温度，提高发动机效率，降低油耗。兼容车型：重汽 HOWO 系列。发动机型号：潍柴或康明斯。规格：黄铜阀芯，开启温度 82℃，工作压力 0.5bar。', image: '/manus-storage/G0GeO0WrMAUD_64511560.webp', category: 'Cooling System' },
+      { id: 'st-sp-18', partNumber: 'VG1560118240', name: '冷却液管 (Coolant Hose)', description: '重汽豪沃冷却液管，连接水泵、散热器和发动机。兼容车型：重汽 HOWO 系列。规格：橡胶管，直径 50mm，工作温度 -40~120℃。', image: '/manus-storage/0P7QMn0UmDbr_370e6c09.jpg', category: 'Cooling System' },
+      { id: 'st-sp-19', partNumber: 'VG1560118241', name: '散热器 (Radiator)', description: '重汽豪沃散热器，散发冷却液的热量。兼容车型：重汽 HOWO 系列。规格：铝制，散热面积 2.5m²，工作压力 0.5bar。', image: '/manus-storage/dEjyxIKSGUQ9_da05659c.jpg', category: 'Cooling System' },
       { id: 'st-sp-20', partNumber: 'VG1560118242', name: '液压油冷却器 (Hydraulic Oil Cooler)', description: '重汽豪沃液压油冷却器，冷却液压系统油液。兼容车型：重汽 HOWO 系列。规格：铝制，散热面积 1.5m²，工作压力 280bar。', image: '/manus-storage/BHGlWOSjhU5w_9f29cc56.webp', category: 'Cooling System' },
       
       // Brake System
