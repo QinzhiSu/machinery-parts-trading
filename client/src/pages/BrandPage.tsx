@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import QuickInquiryDialog from '@/components/QuickInquiryDialog';
 import SparePartDetailModal from '@/components/SparePartDetailModal';
+import CategoryFilter from '@/components/CategoryFilter';
 import { getBrandById, SparePart } from '@/data/products';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
@@ -19,7 +20,7 @@ export default function BrandPage() {
   
   const brand = getBrandById(brandId || '');
   const [activeTab, setActiveTab] = useState<'machines' | 'parts'>('machines');
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [inquiryDialogOpen, setInquiryDialogOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<{ model: string; name: string; specs?: string; type: 'machine' | 'spare-part' } | null>(null);
   const [selectedPart, setSelectedPart] = useState<SparePart | null>(null);
@@ -71,10 +72,9 @@ export default function BrandPage() {
     );
   }
 
-  const categories = ['All', ...Array.from(new Set(brand.spareParts.map(p => p.category)))];
-  const filteredParts = selectedCategory === 'All'
+  const filteredParts = selectedCategories.length === 0
     ? brand.spareParts
-    : brand.spareParts.filter(p => p.category === selectedCategory);
+    : brand.spareParts.filter(p => selectedCategories.includes(p.category));
 
   const categoryPath = brand.category === 'construction' ? '/construction' : '/trucks';
   const categoryLabel = brand.category === 'construction' ? 'Construction Machinery' : 'Trucks & Engines';
@@ -285,38 +285,24 @@ export default function BrandPage() {
           {/* Spare Parts Tab */}
           {activeTab === 'parts' && (
             <div>
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                <div>
-                  <h2
-                    className="text-2xl font-bold uppercase tracking-wide"
-                    style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
-                  >
-                    {brand.name} — Spare Parts
-                  </h2>
-                  <p className="text-sm mt-1" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                    Wear parts and components with OEM part numbers. Contact us for pricing.
-                  </p>
-                </div>
-
-                {/* Category filter */}
-                <div className="flex flex-wrap gap-2">
-                  {categories.map(cat => (
-                    <button
-                      key={cat}
-                      onClick={() => setSelectedCategory(cat)}
-                      className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-all"
-                      style={{
-                        fontFamily: 'var(--font-display)',
-                        background: selectedCategory === cat ? 'oklch(0.68 0.18 42)' : 'white',
-                        color: selectedCategory === cat ? 'white' : 'oklch(0.45 0.02 265)',
-                        border: `1px solid ${selectedCategory === cat ? 'oklch(0.68 0.18 42)' : 'oklch(0.88 0.008 90)'}`,
-                      }}
-                    >
-                      {cat}
-                    </button>
-                  ))}
-                </div>
+              <div className="mb-6">
+                <h2
+                  className="text-2xl font-bold uppercase tracking-wide mb-2"
+                  style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
+                >
+                  {brand.name} — Spare Parts
+                </h2>
+                <p className="text-sm mb-4" style={{ color: 'oklch(0.5 0.02 265)' }}>
+                  Wear parts and components with OEM part numbers. Contact us for pricing.
+                </p>
               </div>
+
+              {/* Enhanced Category Filter */}
+              <CategoryFilter
+                parts={brand.spareParts}
+                selectedCategories={selectedCategories}
+                onCategoryChange={setSelectedCategories}
+              />
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {filteredParts.map((part, idx) => (
