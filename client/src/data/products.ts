@@ -1688,7 +1688,7 @@ export const brands: Brand[] = [
       { id: 'sm-sp-49', partNumber: 'DZ96189584049', name: '前轮毂轴承 (Front Wheel Hub Bearing)', description: '陕汽前轮毂轴承，支撑前轮，减少摩擦。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。规格：圆锥滚子轴承，工作温度 -40~120℃。', image: '/manus-storage/LqSXMYuT9rRz_c173962c.png', category: 'Suspension System' },
       { id: 'sm-sp-50', partNumber: 'DZ96189584050', name: '后轮毂轴承 (Rear Wheel Hub Bearing)', description: '陕汽后轮毂轴承，支撑后轮，减少摩擦。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。规格：圆锥滚子轴承，工作温度 -40~120℃。', image: '/manus-storage/XTo98a90f5zv_ac9d8409.png', category: 'Suspension System' },
       { id: 'sm-sp-51', partNumber: 'DZ96189584051', name: '转向拉杆 (Steering Tie Rod)', description: '陕汽转向拉杆，连接转向齿轮和转向节，传递转向力。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。规格：锻钢杆，长度 800mm，工作温度 -40~80℃。', image: '/manus-storage/ZqWLRktfi4E1_32ead5cf.png', category: 'Steering System' },
-      { id: 'sm-sp-52', partNumber: 'DZ96189584052', name: '转向拉杆端头 (Tie Rod End)', description: '陕汽转向拉杆端头，连接拉杆和转向节。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。规格：球头端头，螺纹 M20×1.5，工作温度 -40~80℃。', image: '/manus-storage/kBF28pSE4jo2_9634e685.png', category: 'Steering System' },
+      { id: 'sm-sp-52', partNumber: 'DZ96189584052', name: '转向拉杆端头 (Tie Rod End)', description: '陕汽转向拉杆端头，连接拉杆和转向节。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。规格：球头端头，螺纹 M20×1.5，工作温度 -40~80℃。', image: '/manus-storage/kBF28pSE4jo2_10cc9723.png', category: 'Steering System' },
       { id: 'sm-sp-53', partNumber: 'DZ96189584053', name: '转向齿轮 (Steering Gear)', description: '陕汽转向齿轮，将转向柱的旋转转换为拉杆的直线运动。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。规格：齿条齿轮式，传动比 16:1，工作温度 -40~80℃。', image: '/manus-storage/n4y9t1gRbigZ_f4160cdf.png', category: 'Steering System' },
     ]
   },
