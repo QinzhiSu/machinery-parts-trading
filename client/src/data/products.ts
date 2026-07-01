@@ -1637,12 +1637,14 @@ export const brands: Brand[] = [
         description: 'Shacman X6000 6×4 Tractor Truck. Premium tractor truck for long-haul transport. Engine: Weichai (350-400 kW). GVW: 40-50 ton. Transmission: Automatic. Cabin: Luxury sleeper cab with advanced features. Fuel Tank: 600L. Perfect for premium international transport.'
       }],
     spareParts: [
-      { id: 'sm-sp-1', partNumber: 'DZ96189584001', name: 'Engine Oil Filter', description: 'Engine oil filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sm-sp-2', partNumber: 'DZ96189584002', name: 'Fuel Filter', description: 'Fuel filter for Shacman diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sm-sp-3', partNumber: 'DZ96189584003', name: 'Air Filter', description: 'Air cleaner element for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sm-sp-4', partNumber: 'DZ96189584004', name: 'Cabin Air Filter', description: 'Cabin air filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sm-sp-5', partNumber: 'DZ96189584005', name: 'Transmission Filter', description: 'Transmission filter for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'sm-sp-6', partNumber: 'DZ96189584006', name: 'Brake Pad Set', description: 'Brake pad set for Shacman trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
+      { id: 'sm-sp-1', partNumber: 'DZ96189584001', name: '机油滤清器 (Engine Oil Filter)', description: '陕汽原厂机油滤清器，高效过滤发动机机油中的杂质和金属颗粒，保护发动机。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。发动机型号：潍柴 WD615、WD10、WD12 或康明斯 Cummins。规格：纸质滤芯，流量 80L/min，工作温度 -40~120℃。', image: '/manus-storage/e1SPKaMyXaFf_aadcedec.webp', category: 'Lubrication System' },
+      { id: 'sm-sp-2', partNumber: 'DZ96189584002', name: '燃油滤清器 (Fuel Filter)', description: '陕汽原厂燃油滤清器，精密过滤燃油中的杂质和水分，提高喷油精度。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。发动机型号：潍柴或康明斯。规格：纸质滤芯，过滤精度 10μm，工作压力 0.3-0.5bar。', image: '/manus-storage/eoA6y2Zpvbnr_66a73ae1.webp', category: 'Fuel System' },
+      { id: 'sm-sp-3', partNumber: 'DZ96189584003', name: '空气滤清器 (Air Filter)', description: '陕汽高效空气滤清器，有效过滤进气中的灰尘和颗粒，保证发动机进气清洁。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。发动机型号：潍柴或康明斯。规格：纸质滤芯，过滤精度 5μm，流量 250m³/h。', image: '/manus-storage/5HS49kYwkL3T_0bbdd691.jpg', category: 'Engine System' },
+      { id: 'sm-sp-4', partNumber: 'DZ96189584004', name: '活塞环套件 (Piston Ring Set)', description: '陕汽原厂活塞环，精密加工，耐高温耐磨损，密封活塞和气缸，防止气体泄漏。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。发动机型号：潍柴或康明斯。规格：铸铁，厚度 1.5-2mm，工作温度 300℃。', image: '/manus-storage/Py7BOJxipE3Q_11283bd0.jpg', category: 'Engine System' },
+      { id: 'sm-sp-5', partNumber: 'DZ96189584005', name: '油封组件 (Oil Seal Set)', description: '陕汽发动机油封组件，防止机油泄漏，保护发动机密封。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。发动机型号：潍柴或康明斯。规格：氟橡胶油封，工作温度 -40~150℃。', image: '/manus-storage/ehiFwnwf5Plz_f0449c38.jpg', category: 'Engine System' },
+      { id: 'sm-sp-6', partNumber: 'DZ96189584006', name: '水泵总成 (Water Pump Assembly)', description: '陕汽冷却水泵总成，高效循环冷却液，采用铝制泵体，保持发动机工作温度。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。发动机型号：潍柴或康明斯。规格：铝制泵体，流量 100L/min，工作温度 -40~120℃。', image: '/manus-storage/gK1ib54AVxRC_145dbadb.jpg', category: 'Cooling System' },
+      { id: 'sm-sp-7', partNumber: 'DZ96189584007', name: '节温器 (Thermostat)', description: '陕汽冷却系统节温器，精确控制冷却液温度，提高发动机效率，降低油耗。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。发动机型号：潍柴或康明斯。规格：黄铜阀芯，开启温度 82℃，工作压力 0.5bar。', image: '/manus-storage/lo6JlAgkaXRI_fefbb748.jpg', category: 'Cooling System' },
+      { id: 'sm-sp-8', partNumber: 'DZ96189584008', name: '制动垫片 (Brake Pad Set)', description: '陕汽原厂制动垫片，高摩擦系数，耐高温耐磨损，确保制动安全。兼容车型：陕汽 F3000、H3000、X3000、X5000、X6000 等。规格：半金属垫片，厚度 12-15mm，工作温度 -40~350℃。', image: '/manus-storage/H9y4FpXxw85c_bf54a1cc.png', category: 'Brake System' },
     ]
   },
   {
