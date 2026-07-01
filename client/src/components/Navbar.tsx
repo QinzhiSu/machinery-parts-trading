@@ -1,15 +1,17 @@
 // Design: Industrial Minimalism - Top navigation bar with navy background + orange accents
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
-import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import { GlobalSearch } from './GlobalSearch';
+import { CONTACT_METHODS } from '@/data/contact';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [location] = useLocation();
   const { t } = useLanguage();
+  const [wechatCopied, setWechatCopied] = useState(false);
 
   const navLinks = [
     { href: '/', label: t('nav.home') },
@@ -19,20 +21,30 @@ export default function Navbar() {
     { href: '/contact', label: t('nav.contact') },
   ];
 
+  const handleWechatCopy = () => {
+    navigator.clipboard.writeText(CONTACT_METHODS.wechat.id);
+    setWechatCopied(true);
+    setTimeout(() => setWechatCopied(false), 2000);
+  };
+
   return (
     <>
       {/* Top info bar */}
       <div className="hidden md:block" style={{ background: 'oklch(0.14 0.04 265)', borderBottom: '1px solid oklch(0.22 0.04 265)' }}>
         <div className="container flex items-center justify-between py-1.5">
           <div className="flex items-center gap-6 text-xs" style={{ color: 'oklch(0.7 0.02 265)', fontFamily: 'var(--font-body)' }}>
-            <a href="https://wa.me/224622497604?text=Hello%20VXZO" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
+            <a href={CONTACT_METHODS.whatsapp.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
               <Phone size={12} />
-              WhatsApp: +224 622 497 604
+              WhatsApp: {CONTACT_METHODS.whatsapp.phone}
             </a>
-            <a href="https://wa.me/224622497604?text=Hello%20VXZO" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
-              <Mail size={12} />
-              Contact via WhatsApp
-            </a>
+            <button
+              onClick={handleWechatCopy}
+              className="flex items-center gap-1.5 hover:text-orange-400 transition-colors cursor-pointer"
+              title="Click to copy WeChat ID"
+            >
+              <MessageCircle size={12} />
+              WeChat: {CONTACT_METHODS.wechat.id} {wechatCopied && <span className="text-orange-400 ml-1">✓</span>}
+            </button>
           </div>
           <div className="flex items-center gap-1.5 text-xs" style={{ color: 'oklch(0.7 0.02 265)' }}>
             <Globe size={12} />

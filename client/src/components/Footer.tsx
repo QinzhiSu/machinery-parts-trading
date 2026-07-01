@@ -1,13 +1,14 @@
 // Design: Industrial Minimalism - Dark navy footer with orange accents
 import { Link } from 'wouter';
 import { Phone, Mail, MapPin, Globe, ArrowRight } from 'lucide-react';
+import ContactMethods from './ContactMethods';
 
 export default function Footer() {
   return (
     <footer style={{ background: 'oklch(0.12 0.04 265)', borderTop: '3px solid oklch(0.68 0.18 42)' }}>
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+          {/* Company Info & Contact */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div
@@ -33,15 +34,11 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.6 0.02 265)' }}>
               Professional exporter of construction machinery, heavy trucks, and spare parts. Global offices in Beijing, Guinea, Madagascar, Hong Kong, and Shandong.
             </p>
-            <div className="flex flex-col gap-2">
-              <a href="https://wa.me/224622497604" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs transition-colors hover:text-orange-400" style={{ color: 'oklch(0.6 0.02 265)' }}>
-                <Phone size={12} style={{ color: 'oklch(0.68 0.18 42)' }} />
-                +224 622 497 604 (WhatsApp)
-              </a>
-              <div className="flex items-center gap-2 text-xs" style={{ color: 'oklch(0.6 0.02 265)' }}>
-                <MapPin size={12} style={{ color: 'oklch(0.68 0.18 42)' }} />
-                Beijing HQ | Global Export
-              </div>
+            <div className="mt-4 pt-4" style={{ borderTop: '1px solid oklch(0.22 0.04 265)' }}>
+              <h5 className="text-white font-bold uppercase tracking-wider mb-3 text-xs" style={{ fontFamily: 'var(--font-display)' }}>
+                Contact Us
+              </h5>
+              <ContactMethods compact={true} />
             </div>
           </div>
 
