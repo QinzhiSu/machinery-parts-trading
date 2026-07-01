@@ -1936,13 +1936,64 @@ export const brands: Brand[] = [
         description: 'Toyota Tundra Pickup Truck. Full-size heavy-duty pickup truck. Engine: 5.7L V8 (280 kW). Transmission: Automatic. Payload: 1600 kg. Fuel Tank: 100L. Perfect for demanding work and heavy towing.'
       }],
     spareParts: [
-      { id: 'ty-sp-1', partNumber: '15600-29015', name: 'Engine Oil Filter', description: 'Engine oil filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'ty-sp-2', partNumber: '23390-64480', name: 'Fuel Filter', description: 'Fuel filter for Toyota diesel engines', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'ty-sp-3', partNumber: '17801-54090', name: 'Air Filter', description: 'Air cleaner element for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'ty-sp-4', partNumber: '87139-02090', name: 'Cabin Air Filter', description: 'Cabin air filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'ty-sp-5', partNumber: '35330-60050', name: 'Transmission Filter', description: 'Transmission filter for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Filters' },
-      { id: 'ty-sp-6', partNumber: '04465-35090', name: 'Brake Pad Set', description: 'Brake pad set for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Brake System' },
-      { id: 'ty-sp-7', partNumber: '27060-28050', name: 'Alternator', description: 'Alternator for Toyota trucks', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', category: 'Electrical' },
+      // Lubrication System
+      { id: 'ty-sp-1', partNumber: '15600-29015', name: '機油滿油器 (Engine Oil Filter)', description: '丰田原廠機油滿油器，高效過溺發動機機油中的雜質和金屬顆粒，保護發動機。兼容车型：丰田 Hilux、4Runner、Land Cruiser、Fortuner、Tacoma、Tundra 等。發動機型号：2.8L柴油、4.0L V6、5.7L V8。规格：紙質滿油芯，流量 100L/min，工作温度 -40~120℃。', image: '/manus-storage/CaxCHBrIWosK_615ef53d.webp', category: 'Lubrication System' },
+      { id: 'ty-sp-2', partNumber: '90915-20004', name: '機油滿油器組合 (Oil Filter Set)', description: '丰田機油滿油器組合，整組供應，水泵、Tacoma、Tundra、4Runner、FJ Cruiser、Land Cruiser、Hilux、Fortuner 等兼容。规格：高效過溺，流量 120L/min。', image: '/manus-storage/DCUSG4lowAM6_c429826a.jpg', category: 'Lubrication System' },
+      { id: 'ty-sp-3', partNumber: '90915-20004-2', name: '機油滿油器雙件組 (Dual Oil Filter Pack)', description: '丰田機油滿油器雙件組，經濟實惠。兼容车型：丰田 Hilux、Tacoma、Tundra、4Runner、Land Cruiser、Fortuner 等。', image: '/manus-storage/BoFXFbcwtZDk_803a6975.jpg', category: 'Lubrication System' },
+      { id: 'ty-sp-4', partNumber: '04152-37010', name: '機油泵 (Oil Pan)', description: '丰田發動機機油泵，存儲發動機機油。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：铝制，容量 5.5L。', image: '/manus-storage/wndpHoCfDJpH_891ddd5e.webp', category: 'Lubrication System' },
+      { id: 'ty-sp-5', partNumber: '16100-09470', name: '水泵總成 (Water Pump Assembly)', description: '丰田冷却水泵總成，高效循環冷却液，提高發動機效率。兼容车型：丰田 4Runner、4.0L、Tacoma、5.0L、Tundra、5.7L V8 等。规格：铝制泵体，流量 150L/min。', image: '/manus-storage/JNAI0tJAIecg_ea841084.webp', category: 'Cooling System' },
+      { id: 'ty-sp-6', partNumber: '90916-03144', name: '节温器 (Thermostat)', description: '丰田冷却系统节温器，精確控制冷却液温度，提高發動機效率。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：黄铜阀芯，開啟温度 82℃。', image: '/manus-storage/OVoSRC85OgZP_a1b5e0cd.jpg', category: 'Cooling System' },
+      { id: 'ty-sp-7', partNumber: '16100-09525', name: '水泵總成帶水管 (Water Pump with Hose)', description: '丰田水泵總成帶水管，完整組件。兼容车型：丰田 2010-2019 车款。规格：铝制，流量 160L/min。', image: '/manus-storage/YPxsSOE7geR4_99054084.jpg', category: 'Cooling System' },
+      { id: 'ty-sp-8', partNumber: '16100-69357', name: '水泵總成柴油版 (Diesel Water Pump)', description: '丰田柴油發動機水泵總成，適用柴油车型。兼容车型：丰田 HiAce、Hilux、Surf、4Runner、Prado、Land Cruiser、Dyna 等。發動機型号：1KZT、1KZ-TE、1KD-FTV、2KD-FTV。', image: '/manus-storage/NGUokJ9xcsyu_49692f89.jpg', category: 'Cooling System' },
+      { id: 'ty-sp-9', partNumber: '16100-69356', name: '水泵總成柴油版-2 (Diesel Water Pump Alt)', description: '丰田柴油發動機水泵總成事版。兼容车型：丰田 HiAce、Hilux、Surf、4Runner、Prado、Land Cruiser 等。發動機型号：1KZT、1KZ-TE、1KD-FTV、2KD-FTV。', image: '/manus-storage/wz4PDFlwwrPh_285944d3.jpg', category: 'Cooling System' },
+      
+      // Fuel System
+      { id: 'ty-sp-10', partNumber: '23390-64480', name: '燈油滿油器 (Fuel Filter)', description: '丰田柴油發動機燈油滿油器，精密過溺燈油中的雜質和水分。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：紙質滿油芯，過溺精度 10μm。', image: '/manus-storage/CaxCHBrIWosK_615ef53d.webp', category: 'Fuel System' },
+      { id: 'ty-sp-11', partNumber: '23300-21030', name: '燈油水管滿油器 (Fuel Tank Filter)', description: '丰田燈油水管內滿油滿油器，保護燈油水管。兼容车型：丰田 Yaris〇4Runner、Rav4 等。规格：紙質滿油芯。', image: '/manus-storage/DCUSG4lowAM6_c429826a.jpg', category: 'Fuel System' },
+      { id: 'ty-sp-12', partNumber: '23300-62040', name: '燈油泵 (Fuel Tank)', description: '丰田燈油泵，存儲燈油。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：銅制，容量 80L。', image: '/manus-storage/BoFXFbcwtZDk_803a6975.jpg', category: 'Fuel System' },
+      { id: 'ty-sp-13', partNumber: '23210-75040', name: '燈油泵需水管 (Fuel Tank Filler Hose)', description: '丰田燈油泵需水管，連接燈油泵。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：橡胶管。', image: '/manus-storage/wndpHoCfDJpH_891ddd5e.webp', category: 'Fuel System' },
+      { id: 'ty-sp-14', partNumber: '23300-54130', name: '燈油泵需水管組件 (Fuel Tank Hose Assembly)', description: '丰田燈油泵需水管組件。兼容车型：丰田 Hilux、Tacoma、Tundra 等。', image: '/manus-storage/JNAI0tJAIecg_ea841084.webp', category: 'Fuel System' },
+      
+      // Engine System
+      { id: 'ty-sp-15', partNumber: '17801-54090', name: '空氣滿油器 (Air Filter)', description: '丰田空氣滿油器，有效過溺進氣中的灰塵和顆粒。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：紙質滿油芯，過溺精度 5μm。', image: '/manus-storage/OVoSRC85OgZP_a1b5e0cd.jpg', category: 'Engine System' },
+      { id: 'ty-sp-16', partNumber: '13011-54150', name: '活塞環套件 (Piston Ring Set)', description: '丰田發動機活塞環，精密加工，耐高溫耐磨搊。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵、厩度 1.5-2mm。', image: '/manus-storage/YPxsSOE7geR4_99054084.jpg', category: 'Engine System' },
+      { id: 'ty-sp-17', partNumber: '11012-54120', name: '氣門油封 (Valve Oil Seal)', description: '丰田氣門油封，防止機油進入氣缸。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：氟橡胶油封。', image: '/manus-storage/NGUokJ9xcsyu_49692f89.jpg', category: 'Engine System' },
+      { id: 'ty-sp-18', partNumber: '13101-54150', name: '進氣門 (Intake Valve)', description: '丰田發動機進氣門，控制進氣流量。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵合金、直径 45mm。', image: '/manus-storage/wz4PDFlwwrPh_285944d3.jpg', category: 'Engine System' },
+      { id: 'ty-sp-19', partNumber: '13111-54150', name: '排氣門 (Exhaust Valve)', description: '丰田發動機排氣門，排出燂烧废氣。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵合金、直径 42mm。', image: '/manus-storage/CaxCHBrIWosK_615ef53d.webp', category: 'Engine System' },
+      { id: 'ty-sp-20', partNumber: '11213-54120', name: '缸蓋墠 (Cylinder Head Gasket)', description: '丰田發動機缸蓋墠，密封氣缸蓋和氣体。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：石棒墠、厩度 1.5mm。', image: '/manus-storage/DCUSG4lowAM6_c429826a.jpg', category: 'Engine System' },
+      { id: 'ty-sp-21', partNumber: '90080-36002', name: '前油封 (Front Oil Seal)', description: '丰田發動機曲軸前油封，防止機油洩漏。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：氟橡胶油封。', image: '/manus-storage/BoFXFbcwtZDk_803a6975.jpg', category: 'Engine System' },
+      { id: 'ty-sp-22', partNumber: '90080-36052', name: '後油封 (Rear Oil Seal)', description: '丰田發動機曲軸後油封，防止機油洩漏。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：氟橡胶油封。', image: '/manus-storage/wndpHoCfDJpH_891ddd5e.webp', category: 'Engine System' },
+      { id: 'ty-sp-23', partNumber: '11213-54140', name: '氣門室蓋墠 (Valve Cover Gasket)', description: '丰田發動機氣門室蓋墠，密封氣門室。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：石棒墠、厩度 1.5mm。', image: '/manus-storage/JNAI0tJAIecg_ea841084.webp', category: 'Engine System' },
+      
+      // Brake System
+      { id: 'ty-sp-24', partNumber: '04465-35090', name: '制動境片 (Brake Pad Set)', description: '丰田原廠制動境片，高摩擦系數，耐高溫耐磨搊。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：半金屬境片、厩度 12-15mm。', image: '/manus-storage/OVoSRC85OgZP_a1b5e0cd.jpg', category: 'Brake System' },
+      { id: 'ty-sp-25', partNumber: '04465-12090', name: '前制動境片 (Front Brake Pad)', description: '丰田前輪制動境片。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：半金屬境片、厩度 15mm。', image: '/manus-storage/YPxsSOE7geR4_99054084.jpg', category: 'Brake System' },
+      { id: 'ty-sp-26', partNumber: '04465-35190', name: '後制動境片 (Rear Brake Pad)', description: '丰田後輪制動境片。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：半金屬境片、厩度 12mm。', image: '/manus-storage/NGUokJ9xcsyu_49692f89.jpg', category: 'Brake System' },
+      { id: 'ty-sp-27', partNumber: '43512-60080', name: '制動盤 (Brake Disc)', description: '丰田制動盤，與制動境片配合實現制動。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵盤、厩度 30mm、直径 370mm。', image: '/manus-storage/wz4PDFlwwrPh_285944d3.jpg', category: 'Brake System' },
+      { id: 'ty-sp-28', partNumber: '04945-60050', name: '制動軟管 (Brake Hose)', description: '丰田制動軟管，傳輸制動液壓。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：橡胶管、直径 12mm。', image: '/manus-storage/CaxCHBrIWosK_615ef53d.webp', category: 'Brake System' },
+      { id: 'ty-sp-29', partNumber: '47201-60050', name: '制動總泵 (Brake Master Cylinder)', description: '丰田制動總泵，產生制動壓力。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵泵、直径 32mm。', image: '/manus-storage/DCUSG4lowAM6_c429826a.jpg', category: 'Brake System' },
+      { id: 'ty-sp-30', partNumber: '47730-60050', name: '制動分泵 (Brake Wheel Cylinder)', description: '丰田制動分泵，推動制動境片。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵泵、直径 28mm。', image: '/manus-storage/BoFXFbcwtZDk_803a6975.jpg', category: 'Brake System' },
+      
+      // Transmission System
+      { id: 'ty-sp-31', partNumber: '31250-60050', name: '離合器片 (Clutch Plate)', description: '丰田原廠離合器片，高摩擦系數，耐高溫。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：銅基燒結、厩度 4.5mm。', image: '/manus-storage/wndpHoCfDJpH_891ddd5e.webp', category: 'Transmission System' },
+      { id: 'ty-sp-32', partNumber: '35330-60050', name: '變速箱滿油器 (Transmission Filter)', description: '丰田變速箱滿油器，過溺變速箱油。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：紙質滿油芯、過溺精度 10μm。', image: '/manus-storage/JNAI0tJAIecg_ea841084.webp', category: 'Transmission System' },
+      { id: 'ty-sp-33', partNumber: '12310-60050', name: '變速箱支架 (Gearbox Support)', description: '丰田變速箱支架，承載變速箱重量。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵支架、重量 8kg。', image: '/manus-storage/OVoSRC85OgZP_a1b5e0cd.jpg', category: 'Transmission System' },
+      { id: 'ty-sp-34', partNumber: '31330-60050', name: '離合器壓盤 (Clutch Pressure Plate)', description: '丰田離合器壓盤，壓緊離合器片。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵盤、直径 350mm。', image: '/manus-storage/YPxsSOE7geR4_99054084.jpg', category: 'Transmission System' },
+      { id: 'ty-sp-35', partNumber: '90080-36062', name: '軸承套件 (Bearing Kit)', description: '丰田軸承套件，支撑變速箱軸。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：溻珠軸承、直径 50mm。', image: '/manus-storage/NGUokJ9xcsyu_49692f89.jpg', category: 'Transmission System' },
+      
+      // Electrical System
+      { id: 'ty-sp-36', partNumber: '27060-28050', name: '交流發電機 (Alternator)', description: '丰田發動機交流發電機，為電氣系統供電。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：輸出力 100A、輸出電壓 14V。', image: '/manus-storage/wz4PDFlwwrPh_285944d3.jpg', category: 'Electrical System' },
+      { id: 'ty-sp-37', partNumber: '28100-54050', name: '啟動馬達 (Starter Motor)', description: '丰田啟動馬達，起動發動機。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：輸出力 3.5kW、輸出所需電壓 12V。', image: '/manus-storage/CaxCHBrIWosK_615ef53d.webp', category: 'Electrical System' },
+      { id: 'ty-sp-38', partNumber: '28800-54010', name: '電池 (Battery)', description: '丰田電池，為發動機供電。兼容车型：丰田 Hilux、Tacoma、Tundra、Land Cruiser 等。规格：電壓 12V、容量 100Ah。', image: '/manus-storage/DCUSG4lowAM6_c429826a.jpg', category: 'Electrical System' },
+      { id: 'ty-sp-39', partNumber: '84320-60050', name: '點火開關 (Ignition Switch)', description: '丰田點火開關，控制發動機點火。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：電壓 12V。', image: '/manus-storage/BoFXFbcwtZDk_803a6975.jpg', category: 'Electrical System' },
+      { id: 'ty-sp-40', partNumber: '81110-60050', name: '車燈總成 (Headlight Assembly)', description: '丰田車燈總成，提供夜間照明。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：電壓 12V、功率 55W。', image: '/manus-storage/wndpHoCfDJpH_891ddd5e.webp', category: 'Electrical System' },
+      
+      // Suspension System
+      { id: 'ty-sp-41', partNumber: '48080-60050', name: '減震器 (Shock Absorber)', description: '丰田減震器，吸收悸架振動。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：液壓減震器、長度 600mm。', image: '/manus-storage/JNAI0tJAIecg_ea841084.webp', category: 'Suspension System' },
+      { id: 'ty-sp-42', partNumber: '48131-60050', name: '上悸架控制臂 (Upper Control Arm)', description: '丰田上悸架控制臂，連接上悸架。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵臂。', image: '/manus-storage/OVoSRC85OgZP_a1b5e0cd.jpg', category: 'Suspension System' },
+      { id: 'ty-sp-43', partNumber: '48160-60050', name: '下悸架控制臂 (Lower Control Arm)', description: '丰田下悸架控制臂，連接下悸架。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鐵臂。', image: '/manus-storage/YPxsSOE7geR4_99054084.jpg', category: 'Suspension System' },
+      { id: 'ty-sp-44', partNumber: '48080-60090', name: '悸架彈簧 (Leaf Spring)', description: '丰田悸架鉄板彈簧，承載重量、緩衝顏笃。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鎖鉄彈簧、厩度 8mm。', image: '/manus-storage/NGUokJ9xcsyu_49692f89.jpg', category: 'Suspension System' },
+      { id: 'ty-sp-45', partNumber: '48090-60050', name: '後悸架 (Rear Suspension)', description: '丰田後悸架總成，採用鉄板彈簧設計，提供穩定的悸掙效果。兼容车型：丰田 Hilux、Tacoma、Tundra 等。规格：鉄板彈簧、承載能力 15吨。', image: '/manus-storage/wz4PDFlwwrPh_285944d3.jpg', category: 'Suspension System' },
     ]
   },
   {
