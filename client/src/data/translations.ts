@@ -1,6 +1,8 @@
 // Multi-language translations: English, Arabic, Russian
 export type Language = 'en' | 'ar' | 'ru' | 'fr' | 'zh' | 'pt' | 'es' | 'it';
 
+// Note: Spanish (es) translations are already included in the translations object below
+
 export const translations: Record<Language, Record<string, string>> = {
   en: {
     // Navigation

@@ -1,4 +1,4 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { int, mysqlEnum, mysqlTable, text, timestamp, varchar, index, unique } from "drizzle-orm/mysql-core";
 
 /**
  * Core user table backing auth flow.
@@ -24,5 +24,25 @@ export const users = mysqlTable("users", {
 
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
+
+// Favorites table for storing user's favorite spare parts
+export const favorites = mysqlTable(
+  "favorites",
+  {
+    id: int("id").autoincrement().primaryKey(),
+    userId: int("userId").notNull(),
+    partId: varchar("partId", { length: 255 }).notNull(), // References part ID from products
+    partName: text("partName"), // Store part name for quick access
+    brand: varchar("brand", { length: 100 }), // Store brand for quick access
+    createdAt: timestamp("createdAt").defaultNow().notNull(),
+  },
+  (table) => ({
+    userIdIdx: index("userId_idx").on(table.userId),
+    uniqueFavorite: unique("unique_user_part").on(table.userId, table.partId),
+  })
+);
+
+export type Favorite = typeof favorites.$inferSelect;
+export type InsertFavorite = typeof favorites.$inferInsert;
 
 // TODO: Add your tables here

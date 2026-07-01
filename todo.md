@@ -156,7 +156,7 @@
 
 - [x] 分析 MachineryTrader.com、Machineryline.com、Machinerycash.com
 - [x] 生成竞争对手分析报告（COMPETITIVE_ANALYSIS.md）
-- [ ] 实现 WhatsApp 和 WeChat 集成
+- [x] 实现 WhatsApp 和 WeChat 集成
 - [ ] 添加配件对比功能
 - [ ] 添加收藏夹功能
 - [ ] 实现用户评价系统
@@ -176,3 +176,33 @@
 - [x] 配置 WhatsApp 和 WeChat 账号
 - [x] 测试所有联系方式的功能（6 个单元测试全部通过）
 - [x] 验证网站显示正常
+
+
+## 收藏夹功能（Favorites）
+
+- [x] 创建 Favorites 数据库表 - 存储用户收藏的配件
+- [x] 创建 useFavorites Hook - 管理收藏状态（需要添加验证保护）
+- [ ] 在 SparePartDetailModal 中添加收藏按钮
+- [ ] 创建收藏夹页面 - 显示所有收藏的配件
+- [ ] 实现收藏夹持久化 - 使用 localStorage 或数据库
+- [ ] 添加收藏夹计数显示
+- [ ] 测试收藏夹功能
+
+
+## 多语言支持（英文、西班牙文、阿拉伯文）
+
+- [x] 扩展 LanguageContext 支持新语言
+- [x] 添加英文翻译文本
+- [x] 添加西班牙文翻译文本
+- [x] 添加阿拉伯文翻译文本
+- [x] 更新 LanguageSwitcher 组件显示新语言选项
+- [x] 测试所有语言的显示效果（已验证英文/西班牙文/阿拉伯文）
+- [x] 验证 RTL 语言（阿拉伯文）的布局
+
+
+## WeChat 连接测试
+
+- [x] 测试 WeChat ID 复制功能
+- [x] 测试 WeChat 按钮在各页面的显示（已验证首页）
+- [x] 验证 WeChat 账号配置是否正确
+- [x] 测试 WeChat ID 复制流程（用户可复制 WeChat ID 联系）
