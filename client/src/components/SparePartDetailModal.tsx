@@ -228,18 +228,18 @@ export default function SparePartDetailModal({
               >
                 <Heart size={14} fill={isFavorite(part.partNumber) ? 'currentColor' : 'none'} />
               </button>
-            <button
-              onClick={onClose}
-              className="flex-1 py-3 text-sm font-bold uppercase tracking-wider transition-all rounded"
-              style={{
-                background: 'oklch(0.97 0.005 90)',
-                color: 'oklch(0.45 0.02 265)',
-                border: '1px solid oklch(0.88 0.008 90)',
-                fontFamily: 'var(--font-display)',
-              }}
-            >
-              Close
-            </button>
+              <button
+                onClick={onClose}
+                className="flex-1 py-3 text-sm font-bold uppercase tracking-wider transition-all rounded"
+                style={{
+                  background: 'oklch(0.97 0.005 90)',
+                  color: 'oklch(0.45 0.02 265)',
+                  border: '1px solid oklch(0.88 0.008 90)',
+                  fontFamily: 'var(--font-display)',
+                }}
+              >
+                Close
+              </button>
           </div>
         </div>
       </div>
