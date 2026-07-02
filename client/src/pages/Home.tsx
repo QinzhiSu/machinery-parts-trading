@@ -183,8 +183,8 @@ export default function Home() {
                 className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
               >
                 <div
-                  className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
-                  style={{ background: brand.color, fontSize: '0.9rem' }}
+                  className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                  style={{ background: brand.color, fontSize: '1.4rem', lineHeight: '1' }}
                 >
                   {brand.logo}
                 </div>
@@ -225,8 +225,8 @@ export default function Home() {
                 className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
               >
                 <div
-                  className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
-                  style={{ background: brand.color, fontSize: '0.9rem' }}
+                  className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                  style={{ background: brand.color, fontSize: '1.4rem', lineHeight: '1' }}
                 >
                   {brand.logo}
                 </div>
