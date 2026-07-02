@@ -98,7 +98,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/construction"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-charcoal font-semibold rounded-lg hover:shadow-premium-lg transition-all duration-300 hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-charcoal font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 Browse Machinery <ArrowRight size={18} />
               </Link>
@@ -124,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section - Elegant Grid */}
-      <section className="py-20 bg-gray-50 border-b border-gray-200">
+      <section className="py-32 md:py-40 bg-gray-50 border-b border-gray-200">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {stats.map((stat, index) => (
@@ -139,7 +139,7 @@ export default function Home() {
       </section>
 
       {/* Features Section - Premium Cards */}
-      <section className="py-24 bg-white">
+      <section className="py-32 md:py-40 bg-white">
         <div className="container">
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl font-bold text-charcoal mb-4">Why Choose VXZO</h2>
@@ -152,7 +152,7 @@ export default function Home() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group p-8 bg-white border border-gray-200 rounded-lg hover:shadow-premium-lg hover:-translate-y-1 transition-all duration-300"
+                className="group p-8 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
                   <feature.icon size={24} className="text-gold" />
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* Construction Machinery Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-32 md:py-40 bg-gray-50">
         <div className="container">
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-charcoal mb-4">Construction Machinery</h2>
@@ -180,7 +180,7 @@ export default function Home() {
               <Link
                 key={brand.id}
                 href={`/brand/${brand.id}`}
-                className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-premium hover:-translate-y-1 transition-all duration-300 text-center"
+                className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
               >
                 <div
                   className="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-white text-xs font-bold rounded-lg"
@@ -222,7 +222,7 @@ export default function Home() {
               <Link
                 key={brand.id}
                 href={`/brand/${brand.id}`}
-                className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-premium hover:-translate-y-1 transition-all duration-300 text-center"
+                className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
               >
                 <div
                   className="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-white text-xs font-bold rounded-lg"
