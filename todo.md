@@ -207,3 +207,39 @@
 - [x] 测试 WeChat 按钮在各页面的显示（已验证首页）
 - [x] 验证 WeChat 账号配置是否正确
 - [x] 测试 WeChat ID 复制流程（用户可复制 WeChat ID 联系）
+
+
+## SEO 优化
+
+- [ ] 实现元标签优化 - 为每个页面添加 title、description、keywords
+- [ ] 添加 Open Graph 标签 - 优化社交媒体分享
+- [ ] 实现结构化数据 - 添加 Schema.org 标记（Organization、Product、LocalBusiness）
+- [ ] 生成网站地图 - 创建 sitemap.xml 供搜索引擎爬虫
+- [ ] 配置 Robots.txt - 指导搜索引擎爬虫
+- [ ] 性能优化 - 优化 Core Web Vitals（LCP、FID、CLS）
+- [ ] 内部链接优化 - 改进网站内部链接结构
+- [ ] 关键词优化 - 在内容中自然融入目标关键词
+- [ ] 验证 SEO 效果 - 使用 Google Search Console 等工具验证
+
+## SEO 优化完成
+
+- [x] 实现元标签优化 - 为每个页面添加 title、description、keywords
+- [x] 添加 Open Graph 标签 - 优化社交媒体分享
+- [x] 实现结构化数据 - 添加 Schema.org 标记（Organization、Product、LocalBusiness、BreadcrumbList）
+- [x] 生成网站地图 - 创建 sitemap.xml 供搜索引擎爬虫（4 个 sitemap）
+- [x] 配置 Robots.txt - 指导搜索引擎爬虫
+- [ ] 性能优化 - 优化 Core Web Vitals（LCP、FID、CLS）
+- [ ] 内部链接优化 - 改进网站内部链接结构
+- [ ] 关键词优化 - 在内容中自然融入目标关键词
+- [ ] 验证 SEO 效果 - 使用 Google Search Console 等工具验证
+
+**已实现的 SEO 功能：**
+- ✅ 增强的元标签（title、description、keywords）
+- ✅ Open Graph 社交分享标签
+- ✅ Twitter Card 标签
+- ✅ Canonical URL 标签
+- ✅ hreflang 多语言标签
+- ✅ Schema.org 结构化数据（Organization、LocalBusiness、BreadcrumbList）
+- ✅ 4 个 XML 网站地图（主页、品牌、产品、搜索）
+- ✅ Robots.txt 配置
+- ✅ SEO 工具函数库
