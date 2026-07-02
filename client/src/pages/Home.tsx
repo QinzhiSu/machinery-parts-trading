@@ -184,7 +184,7 @@ export default function Home() {
               >
                 <div
                   className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
-                  style={{ background: brand.color, fontSize: '1.4rem', lineHeight: '1' }}
+                  style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
                 >
                   {brand.logo}
                 </div>
@@ -226,7 +226,7 @@ export default function Home() {
               >
                 <div
                   className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
-                  style={{ background: brand.color, fontSize: '1.4rem', lineHeight: '1' }}
+                  style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
                 >
                   {brand.logo}
                 </div>

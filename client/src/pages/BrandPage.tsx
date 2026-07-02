@@ -113,8 +113,9 @@ export default function BrandPage() {
                 background: brand.color,
                 fontFamily: 'var(--font-display)',
                 letterSpacing: '0.05em',
-                fontSize: '2rem',
+                fontSize: '1.5rem',
                 lineHeight: '1',
+                padding: '1rem',
               }}
             >
               {brand.logo}
