@@ -96,6 +96,16 @@ export default function BrandPage() {
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: 'oklch(0.68 0.18 42)' }} />
 
         <div className="container relative z-10">
+          {/* Back to Home Button */}
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 mb-6 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-white/10 hover:bg-white/20 rounded-lg transition-colors duration-200"
+            style={{ fontFamily: 'var(--font-display)' }}
+          >
+            <ArrowLeft size={14} />
+            Back to Home
+          </Link>
+
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-6 text-xs" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
             <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">Home</Link>
