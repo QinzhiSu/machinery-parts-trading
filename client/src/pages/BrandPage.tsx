@@ -108,12 +108,12 @@ export default function BrandPage() {
           <div className="flex items-start gap-6">
             {/* Brand logo box */}
             <div
-              className="w-20 h-20 flex-shrink-0 flex items-center justify-center text-white font-bold text-sm"
+              className="w-32 h-32 flex-shrink-0 flex items-center justify-center text-white font-bold shadow-lg rounded-lg"
               style={{
                 background: brand.color,
                 fontFamily: 'var(--font-display)',
                 letterSpacing: '0.05em',
-                fontSize: '0.7rem',
+                fontSize: '1.5rem',
               }}
             >
               {brand.logo}

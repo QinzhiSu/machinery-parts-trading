@@ -70,11 +70,11 @@ export default function Navbar() {
         <div className="container flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-gold to-gold/80 rounded-lg font-bold text-charcoal text-sm">
+            <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-lg font-bold text-white text-base shadow-md group-hover:shadow-lg transition-shadow">
               VXZO
             </div>
             <div className="hidden sm:block">
-              <div className="text-sm font-bold text-charcoal leading-tight">VXZO</div>
+              <div className="text-base font-bold text-charcoal leading-tight">VXZO</div>
               <div className="text-xs text-gray-500">Global Machinery</div>
             </div>
           </Link>
