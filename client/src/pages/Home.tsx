@@ -12,6 +12,7 @@ import { useAuth } from '@/_core/hooks/useAuth';
 
 const constructionBrands = brands.filter(b => b.category === 'construction');
 const truckBrands = brands.filter(b => b.category === 'truck');
+const engineBrands = brands.filter(b => b.category === 'engine');
 
 const HERO_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/hero-machinery-nbwEngDndkYEV7YkbvbRje.webp';
 
@@ -244,6 +245,48 @@ export default function Home() {
               className="inline-flex items-center gap-2 text-gold font-semibold hover:gap-3 transition-all"
             >
               View All Trucks <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Diesel Engines Section */}
+      <section className="py-32 md:py-40 bg-white">
+        <div className="container">
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold text-charcoal mb-4">Diesel Engines</h2>
+            <p className="text-lg text-gray-600 max-w-2xl">
+              High-performance diesel engines from world-leading manufacturers for construction, trucks, and industrial applications.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {engineBrands.map((brand) => (
+              <Link
+                key={brand.id}
+                href={`/brand/${brand.id}`}
+                className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
+              >
+                <div
+                  className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                  style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
+                >
+                  {brand.logo}
+                </div>
+                <div className="font-semibold text-charcoal text-sm group-hover:text-accent transition-colors">
+                  {brand.name}
+                </div>
+                <div className="text-xs text-gray-500 mt-2">{brand.country}</div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link
+              href="/engines"
+              className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all"
+            >
+              View All Engines <ArrowRight size={18} />
             </Link>
           </div>
         </div>
