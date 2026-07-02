@@ -3,8 +3,7 @@ import { X, ChevronLeft, ChevronRight, Package, Wrench, MessageSquare, Heart } f
 import { useState } from 'react';
 import { SparePart } from '@/data/products';
 import ContactMethods from './ContactMethods';
-import { useFavorites } from '@/_core/hooks/useFavorites';
-import { useAuth } from '@/_core/hooks/useAuth';
+import { useFavoritesLocal } from '@/_core/hooks/useFavoritesLocal';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -24,19 +23,18 @@ export default function SparePartDetailModal({
   brandColor,
 }: SparePartDetailModalProps) {
   const [imageIndex, setImageIndex] = useState(0);
-  const { user } = useAuth();
-  const { isFavorite, addFavorite, removeFavorite } = useFavorites();
+  const { isFavorite, addFavorite, removeFavorite } = useFavoritesLocal();
   const [isLoadingFavorite, setIsLoadingFavorite] = useState(false);
 
-  const handleToggleFavorite = async () => {
-    if (!user || !part) return;
+  const handleToggleFavorite = () => {
+    if (!part) return;
     
     setIsLoadingFavorite(true);
     try {
       if (isFavorite(part.partNumber)) {
-        await removeFavorite(part.partNumber);
+        removeFavorite(part.partNumber);
       } else {
-        await addFavorite(part.partNumber, part.name, brandName);
+        addFavorite(part.partNumber, part.name, brandName);
       }
     } catch (error) {
       console.error('Failed to toggle favorite:', error);
@@ -216,8 +214,7 @@ export default function SparePartDetailModal({
               <MessageSquare size={14} />
               Send Inquiry
             </button>
-            {user && (
-              <button
+            <button
                 onClick={handleToggleFavorite}
                 disabled={isLoadingFavorite}
                 className="px-4 py-3 flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-wider transition-all rounded disabled:opacity-50"
@@ -231,7 +228,6 @@ export default function SparePartDetailModal({
               >
                 <Heart size={14} fill={isFavorite(part.partNumber) ? 'currentColor' : 'none'} />
               </button>
-            )}
             <button
               onClick={onClose}
               className="flex-1 py-3 text-sm font-bold uppercase tracking-wider transition-all rounded"
