@@ -84,7 +84,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Premium Machinery
               <br />
-              <span className="text-gradient" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #ffffff 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              <span className="text-gradient" style={{ background: 'linear-gradient(135deg, #c9a876 0%, #ffffff 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 Worldwide
               </span>
             </h1>
