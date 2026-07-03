@@ -34,6 +34,7 @@ export interface Brand {
   country: string;
   description: string;
   logo: string;
+  logoImage?: string;
   color: string;
   machines: Machine[];
   spareParts: SparePart[];
@@ -57,6 +58,7 @@ export const brands: Brand[] = [
     country: 'USA',
     description: 'World\'s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives.',
     logo: 'CAT',
+    logoImage: '/manus-storage/caterpillar-logo.png',
     color: '#F9A825',
     machines: [
       // ===== EXCAVATORS (Excavators) =====
