@@ -2137,7 +2137,7 @@ export const brands: Brand[] = [
     country: 'China',
     description: 'Leading Chinese diesel engine manufacturer for construction, mining, and power generation.',
     logo: 'WEICHAI',
-    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-weichai-ZoKLWw4ZWHDKNwkCdxCqKu.webp',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-weichai-blackred-TpcerzBHqPoBTB5uGxa54d.webp',
     color: '#0277BD',
     machines: [
       {
