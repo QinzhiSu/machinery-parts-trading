@@ -183,12 +183,20 @@ export default function Home() {
                 href={`/brand/${brand.id}`}
                 className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
               >
-                <div
-                  className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
-                  style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
-                >
-                  {brand.logo}
-                </div>
+                {brand.logoImage ? (
+                  <img
+                    src={brand.logoImage}
+                    alt={brand.name}
+                    className="w-24 h-24 mx-auto mb-4 object-contain rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                  />
+                ) : (
+                  <div
+                    className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                    style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
+                  >
+                    {brand.logo}
+                  </div>
+                )}
                 <div className="font-semibold text-charcoal text-sm group-hover:text-gold transition-colors">
                   {brand.name}
                 </div>
@@ -225,12 +233,20 @@ export default function Home() {
                 href={`/brand/${brand.id}`}
                 className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
               >
-                <div
-                  className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
-                  style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
-                >
-                  {brand.logo}
-                </div>
+                {brand.logoImage ? (
+                  <img
+                    src={brand.logoImage}
+                    alt={brand.name}
+                    className="w-24 h-24 mx-auto mb-4 object-contain rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                  />
+                ) : (
+                  <div
+                    className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                    style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
+                  >
+                    {brand.logo}
+                  </div>
+                )}
                 <div className="font-semibold text-charcoal text-sm group-hover:text-gold transition-colors">
                   {brand.name}
                 </div>
@@ -267,12 +283,20 @@ export default function Home() {
                 href={`/brand/${brand.id}`}
                 className="group p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
               >
-                <div
-                  className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
-                  style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
-                >
-                  {brand.logo}
-                </div>
+                {brand.logoImage ? (
+                  <img
+                    src={brand.logoImage}
+                    alt={brand.name}
+                    className="w-24 h-24 mx-auto mb-4 object-contain rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                  />
+                ) : (
+                  <div
+                    className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-white font-bold rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                    style={{ background: brand.color, fontSize: '1.1rem', lineHeight: '1', padding: '0.5rem' }}
+                  >
+                    {brand.logo}
+                  </div>
+                )}
                 <div className="font-semibold text-charcoal text-sm group-hover:text-accent transition-colors">
                   {brand.name}
                 </div>

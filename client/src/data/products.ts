@@ -58,7 +58,7 @@ export const brands: Brand[] = [
     country: 'USA',
     description: 'World\'s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives.',
     logo: 'CAT',
-    logoImage: '/manus-storage/caterpillar-logo.png',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-cat-bUo3q4ixt5ck3vq2PzfRkV.webp',
     color: '#F9A825',
     machines: [
       // ===== EXCAVATORS (Excavators) =====
@@ -211,6 +211,7 @@ export const brands: Brand[] = [
     country: 'China',
     description: 'China\'s largest bulldozer manufacturer and one of the world\'s top construction machinery brands, producing bulldozers, excavators, road machinery and more.',
     logo: 'SHANTUI',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-shantui-EpSrfWDZGfUrNmfakpiLVz.webp',
     color: '#E65100',
     machines: [
       {
@@ -705,6 +706,7 @@ export const brands: Brand[] = [
     country: 'China',
     description: 'One of China\'s largest and most comprehensive construction machinery manufacturers, producing cranes, excavators, loaders, road machinery, and more.',
     logo: 'XCMG',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-xcmg-Jxi8eA25WmnWeHreGHKWeS.webp',
     color: '#D32F2F',
     machines: [
       {
@@ -914,6 +916,7 @@ export const brands: Brand[] = [
     country: 'China',
     description: 'Leading Chinese manufacturer of construction machinery including wheel loaders, excavators, and bulldozers.',
     logo: 'LIUGONG',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-liugong-ksq6QwtKBFnDB9L5yA7mC4.webp',
     color: '#0277BD',
     machines: [
       { id: 'lg-856he', model: '856HE', name: 'Wheel Loader', specs: '8.5 ton | 110 kW | 3.0 m³', image: '/manus-storage/856HE_348e297a.png', description: 'LiuGong 856HE Wheel Loader. Engine: Weichai WD615 (110 kW / 150 HP). Bucket Capacity: 3.0 m³. Operating Weight: 8,500 kg. Max Loading Height: 3.2 m. Perfect for loading and material handling.' },
@@ -1025,6 +1028,7 @@ export const brands: Brand[] = [
     country: 'China',
     description: 'Global leader in heavy equipment manufacturing, producing excavators, concrete pumps, cranes, and more.',
     logo: 'SANY',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-sany-BzP4S9vNGuBFpnC2Q6cGdz.webp',
     color: '#F57C00',
     machines: [
       {
@@ -1325,6 +1329,7 @@ export const brands: Brand[] = [
     country: 'Japan',
     description: 'Japanese multinational corporation specializing in construction, mining, and military equipment.',
     logo: 'KOMATSU',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-komatsu-htXJjLxeofV9GSnx9KRgP2.webp',
     color: '#1565C0',
     machines: [
       {
@@ -1503,6 +1508,7 @@ export const brands: Brand[] = [
     country: 'Japan',
     description: 'Japanese commercial vehicle manufacturer known for reliable trucks and diesel engines.',
     logo: 'ISUZU',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-isuzu-M6UfEnac2WTSvbD5uCcpAW.webp',
     color: '#C41E3A',
     machines: [
       {
@@ -1582,6 +1588,7 @@ export const brands: Brand[] = [
     country: 'China',
     description: 'Leading Chinese heavy-duty truck manufacturer producing commercial vehicles for construction and logistics.',
     logo: 'SHACMAN',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-shacman-X3PB3ycsffgtiMvyASV9uJ.webp',
     color: '#E53935',
     machines: [
       {
@@ -1720,6 +1727,7 @@ export const brands: Brand[] = [
     country: 'China',
     description: 'Leading Chinese heavy-duty truck manufacturer producing HOWO and other commercial vehicle brands.',
     logo: 'SINOTRUK',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-sinotruk-5Uc3pUtJP4KqQPM8uJNjQL.webp',
     color: '#D32F2F',
     machines: [      {
         id: 'sino-howo-4x2',
@@ -1898,6 +1906,7 @@ export const brands: Brand[] = [
     country: 'Japan',
     description: 'Japanese automotive manufacturer known for reliable trucks and commercial vehicles.',
     logo: 'TOYOTA',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-toyota-eMCYaDmH4YRA9CcMUFVQDD.webp',
     color: '#EB0A1E',
     machines: [      {
         id: 'toyota-4runner',
@@ -2024,6 +2033,7 @@ export const brands: Brand[] = [
     country: 'USA',
     description: 'Leading manufacturer of diesel and natural gas engines for construction, mining, and power generation.',
     logo: 'CUMMINS',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-cummins-d4g3j7AHTBedhXHXo52c8E.webp',
     color: '#C41E3A',
     machines: [
       {
@@ -2127,6 +2137,7 @@ export const brands: Brand[] = [
     country: 'China',
     description: 'Leading Chinese diesel engine manufacturer for construction, mining, and power generation.',
     logo: 'WEICHAI',
+    logoImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/logo-weichai-ZoKLWw4ZWHDKNwkCdxCqKu.webp',
     color: '#0277BD',
     machines: [
       {
