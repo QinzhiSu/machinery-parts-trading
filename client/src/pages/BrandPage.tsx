@@ -12,7 +12,7 @@ import { getBrandById, SparePart } from '@/data/products';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ComparisonButton from '@/components/ComparisonButton';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
-import { useFullTranslation } from '@/hooks/useFullTranslation';
+import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
@@ -20,7 +20,7 @@ const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u
 export default function BrandPage() {
   const { t, language } = useLanguage();
   const { translateMachineDescription: translateMachineDescriptionPartial } = usePartTranslation();
-  const { translateMachineDescription } = useFullTranslation();
+  const { translateDescription } = useMachineTranslations();
   const { brandId } = useParams<{ brandId: string }>();
   const search = useSearch();
   const params = new URLSearchParams(search);
@@ -284,7 +284,7 @@ export default function BrandPage() {
                       </div>
 
                       <p className="text-xs leading-relaxed mb-4" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {translateMachineDescription(machine.description) || translateMachineDescriptionPartial(machine.description)}
+                        {translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description)}
                       </p>
 
                       <button
