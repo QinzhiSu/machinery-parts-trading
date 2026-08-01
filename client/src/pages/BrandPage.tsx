@@ -11,11 +11,13 @@ import CategoryFilter from '@/components/CategoryFilter';
 import { getBrandById, SparePart } from '@/data/products';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ComparisonButton from '@/components/ComparisonButton';
+import { usePartTranslation } from '@/hooks/usePartTranslation';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
 export default function BrandPage() {
   const { t } = useLanguage();
+  const { translateMachineDescription } = usePartTranslation();
   const { brandId } = useParams<{ brandId: string }>();
   const search = useSearch();
   const params = new URLSearchParams(search);
@@ -279,7 +281,7 @@ export default function BrandPage() {
                       </div>
 
                       <p className="text-xs leading-relaxed mb-4" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {machine.description}
+                        {translateMachineDescription(machine.description)}
                       </p>
 
                       <button
