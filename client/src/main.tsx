@@ -52,7 +52,13 @@ const trpcClient = trpc.createClient({
   ],
 });
 
-createRoot(document.getElementById("root")!).render(
+const rootElement = document.getElementById("root")!;
+rootElement.style.margin = "0";
+rootElement.style.padding = "0";
+rootElement.style.display = "flex";
+rootElement.style.flexDirection = "column";
+
+createRoot(rootElement).render(
   <trpc.Provider client={trpcClient} queryClient={queryClient}>
     <QueryClientProvider client={queryClient}>
       <App />
