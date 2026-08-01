@@ -285,7 +285,8 @@ export default function BrandPage() {
                       </div>
 
                       <MachineDescriptionTranslator
-                        description={translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description}
+                        description={machine.description}
+                        machineId={machine.id}
                         className="text-xs leading-relaxed mb-4"
                         style={{ color: 'oklch(0.5 0.02 265)' }}
                       />

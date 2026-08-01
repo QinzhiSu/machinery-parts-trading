@@ -31,6 +31,17 @@ const languageNames: Record<Language, string> = {
   it: 'Italian'
 };
 
+// Simple hash function for cache keys
+function hashText(text: string): string {
+  let hash = 0;
+  for (let i = 0; i < text.length; i++) {
+    const char = text.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  return Math.abs(hash).toString(36);
+}
+
 export function useAutoTranslate() {
   const { language } = useLanguage();
   const [isTranslating, setIsTranslating] = useState(false);
@@ -42,8 +53,8 @@ export function useAutoTranslate() {
         return text;
       }
 
-      // Check cache first
-      const cacheKey = text.substring(0, 100); // Use first 100 chars as key
+      // Use hash of full text as cache key to avoid collisions
+      const cacheKey = hashText(text);
       if (translationCache[targetLanguage][cacheKey]) {
         return translationCache[targetLanguage][cacheKey];
       }
@@ -71,7 +82,7 @@ export function useAutoTranslate() {
         const data = await response.json();
         const translatedText = data.result?.translation || text;
 
-        // Cache the translation
+        // Cache the translation using hash key
         translationCache[targetLanguage][cacheKey] = translatedText;
 
         return translatedText;
