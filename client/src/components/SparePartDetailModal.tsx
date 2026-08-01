@@ -9,6 +9,7 @@ import ComparisonButton from './ComparisonButton';
 import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
+import { getTranslatedPartDescription } from '@/data/partDescriptionTranslations';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -27,7 +28,7 @@ export default function SparePartDetailModal({
   brandName,
   brandColor,
 }: SparePartDetailModalProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [imageIndex, setImageIndex] = useState(0);
   const { isFavorite, addFavorite, removeFavorite } = useFavoritesLocal();
   const { translateDescription, translateCompatibleModels } = usePartTranslation();
