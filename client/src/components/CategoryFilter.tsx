@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { ChevronDown, X } from 'lucide-react';
 import { SparePart } from '@/data/products';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface CategoryFilterProps {
   parts: SparePart[];
@@ -15,6 +16,7 @@ export default function CategoryFilter({
   onCategoryChange,
   isExpanded = false,
 }: CategoryFilterProps) {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(isExpanded);
 
   // Get all unique categories with counts
@@ -58,7 +60,7 @@ export default function CategoryFilter({
             className="font-semibold text-sm uppercase tracking-wide"
             style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
           >
-            Filter by Category
+            按分类筛选
           </span>
           {selectedCount > 0 && (
             <span
@@ -87,14 +89,14 @@ export default function CategoryFilter({
             <div className="mb-4 pb-4 border-b border-border" style={{ borderColor: 'oklch(0.88 0.008 90)' }}>
               <div className="flex items-center justify-between mb-2">
                 <span className="text-xs font-semibold" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                  Active Filters
+                  已选筛选
                 </span>
                 <button
                   onClick={handleClearAll}
                   className="text-xs font-semibold text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-1"
                 >
                   <X size={12} />
-                  Clear All
+                  清除全部
                 </button>
               </div>
               <div className="flex flex-wrap gap-2">

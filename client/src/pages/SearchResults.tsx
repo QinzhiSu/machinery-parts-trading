@@ -4,8 +4,10 @@ import { Link, useSearch } from 'wouter';
 import { ChevronLeft } from 'lucide-react';
 import SparePartDetailModal from '@/components/SparePartDetailModal';
 import CategoryFilter from '@/components/CategoryFilter';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function SearchResults() {
+  const { t } = useLanguage();
   const search = useSearch();
   const params = new URLSearchParams(search);
   const query = params.get('q') || '';
@@ -31,11 +33,11 @@ export default function SearchResults() {
         <div className="container">
           <Link href="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-4">
             <ChevronLeft size={16} />
-            Back to Home
+            {t('common.backHome')}
           </Link>
-          <h1 className="text-3xl font-bold mb-2">Search Results</h1>
+          <h1 className="text-3xl font-bold mb-2">搜索结果</h1>
           <p className="text-muted-foreground">
-            {query ? `Results for "${query}"` : 'Enter a search query'}
+            {query ? `搜索结果: "${query}"` : '输入搜索词'}
           </p>
         </div>
       </div>
@@ -44,12 +46,12 @@ export default function SearchResults() {
       <div className="flex-1 container py-8">
         {searchQuery.isLoading ? (
           <div className="flex items-center justify-center py-12">
-            <div className="text-muted-foreground">Searching...</div>
+            <div className="text-muted-foreground">搜索中...</div>
           </div>
         ) : searchQuery.data && searchQuery.data.results.length > 0 ? (
           <div>
             <p className="text-sm text-muted-foreground mb-6">
-              Found {searchQuery.data.results.length} result{searchQuery.data.results.length !== 1 ? 's' : ''}
+              找到 {searchQuery.data.results.length} 个结果
             </p>
 
             <CategoryFilter
@@ -90,7 +92,7 @@ export default function SearchResults() {
                           setIsModalOpen(true);
                         }}
                       >
-                        View Details
+                        查看详情
                       </button>
                     </div>
                   </div>
@@ -100,7 +102,7 @@ export default function SearchResults() {
               <div className="flex items-center justify-center py-12">
                 <div className="text-center">
                   <p className="text-muted-foreground mb-4">
-                    No parts found in the selected categories
+                    所选分类中没有找到配件
                   </p>
                 </div>
               </div>
@@ -110,10 +112,10 @@ export default function SearchResults() {
           <div className="flex items-center justify-center py-12">
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
-                No parts found matching "{query}"
+                没有找到匹配的配件
               </p>
               <Link href="/" className="text-orange-600 hover:text-orange-700 font-semibold">
-                Back to Home
+                {t('common.backHome')}
               </Link>
             </div>
           </div>

@@ -9,10 +9,12 @@ import QuickInquiryDialog from '@/components/QuickInquiryDialog';
 import SparePartDetailModal from '@/components/SparePartDetailModal';
 import CategoryFilter from '@/components/CategoryFilter';
 import { getBrandById, SparePart } from '@/data/products';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
 export default function BrandPage() {
+  const { t } = useLanguage();
   const { brandId } = useParams<{ brandId: string }>();
   const search = useSearch();
   const params = new URLSearchParams(search);
@@ -77,7 +79,7 @@ export default function BrandPage() {
     : brand.spareParts.filter(p => selectedCategories.includes(p.category));
 
   const categoryPath = brand.category === 'construction' ? '/construction' : '/trucks';
-  const categoryLabel = brand.category === 'construction' ? 'Construction Machinery' : 'Trucks & Engines';
+  const categoryLabel = brand.category === 'construction' ? t('category.constructionMachinery') : t('category.trucksEngines');
 
   return (
     <div className="min-h-screen flex flex-col" role="main">
@@ -103,12 +105,12 @@ export default function BrandPage() {
             style={{ fontFamily: 'var(--font-display)' }}
           >
             <ArrowLeft size={14} />
-            Back to Home
+            {t('common.backHome')}
           </Link>
 
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-6 text-xs" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">Home</Link>
+            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">{t('nav.home')}</Link>
             <ChevronRight size={12} />
             <Link href={categoryPath} className="hover:text-orange-400 transition-colors uppercase tracking-wider">{categoryLabel}</Link>
             <ChevronRight size={12} />
@@ -136,7 +138,7 @@ export default function BrandPage() {
                 className="text-xs uppercase tracking-widest mb-1 font-semibold"
                 style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
               >
-                {brand.country} · {brand.category === 'construction' ? 'Construction Machinery' : brand.category === 'truck' ? 'Commercial Trucks' : 'Diesel Engines'}
+                {brand.country} · {brand.category === 'construction' ? t('category.constructionMachinery') : brand.category === 'truck' ? 'Commercial Trucks' : 'Diesel Engines'}
               </div>
               <h1
                 className="text-white uppercase leading-none mb-3"
@@ -158,7 +160,7 @@ export default function BrandPage() {
                     {brand.machines.length}
                   </div>
                   <div className="text-xs uppercase tracking-wider" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                    Machine Models
+                    {t('category.machineModels')}
                   </div>
                 </div>
                 <div className="w-px h-10" style={{ background: 'oklch(0.28 0.04 265)' }} />
@@ -167,7 +169,7 @@ export default function BrandPage() {
                     {brand.spareParts.length}
                   </div>
                   <div className="text-xs uppercase tracking-wider" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                    Spare Parts
+                    {t('brand.spareParts')}
                   </div>
                 </div>
               </div>
@@ -189,7 +191,7 @@ export default function BrandPage() {
             }}
           >
             <Package size={16} />
-            Whole Machines ({brand.machines.length})
+            {t('brand.wholeMachines')} ({brand.machines.length})
           </button>
           <button
             onClick={() => setActiveTab('parts')}
@@ -201,7 +203,7 @@ export default function BrandPage() {
             }}
           >
             <Wrench size={16} />
-            Spare Parts ({brand.spareParts.length})
+            {t('brand.spareParts')} ({brand.spareParts.length})
           </button>
         </div>
       </div>
@@ -218,10 +220,10 @@ export default function BrandPage() {
                   className="text-2xl font-bold uppercase tracking-wide"
                   style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                 >
-                  {brand.name} — Whole Machines
+                  {brand.name} — {t('brand.wholeMachines')}
                 </h2>
                 <p className="text-sm mt-1" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  Complete machines available for export. Contact us for pricing and availability.
+                  {t('brand.completeAvailable')}
                 </p>
               </div>
 
@@ -285,7 +287,7 @@ export default function BrandPage() {
                         style={{ background: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
                       >
                         <MessageSquare size={12} />
-                        Quick Inquiry
+                        {t('brand.quickInquiry')}
                       </button>
                     </div>
                   </div>
@@ -302,10 +304,10 @@ export default function BrandPage() {
                   className="text-2xl font-bold uppercase tracking-wide mb-2"
                   style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                 >
-                  {brand.name} — Spare Parts
+                  {brand.name} — {t('brand.spareParts')}
                 </h2>
                 <p className="text-sm mb-4" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  Wear parts and components with OEM part numbers. Contact us for pricing.
+                  {t('brand.wearParts')}
                 </p>
               </div>
 
