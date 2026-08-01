@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
+import { getTranslatedSparePartCategory, getTranslatedSparePartDescription } from '@/data/sparePartsTranslations';
 
 // Translation map for machine and spare part descriptions
 const machineDescriptionTranslations: Record<string, Record<string, string>> = {
@@ -148,6 +148,13 @@ export function usePartTranslation() {
   };
 
   const translateDescription = (description: string): string => {
+    // First try to use the comprehensive sparePartsTranslations
+    const translatedFromSparePartsTranslations = getTranslatedSparePartDescription(description, language);
+    if (translatedFromSparePartsTranslations !== description) {
+      return translatedFromSparePartsTranslations;
+    }
+    
+    // Fallback to the local partDescriptionTranslations
     const translations = partDescriptionTranslations[description];
     
     if (translations && translations[language]) {
