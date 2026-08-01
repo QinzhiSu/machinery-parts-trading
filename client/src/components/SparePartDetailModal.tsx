@@ -31,7 +31,7 @@ export default function SparePartDetailModal({
   const { t, language } = useLanguage();
   const [imageIndex, setImageIndex] = useState(0);
   const { isFavorite, addFavorite, removeFavorite } = useFavoritesLocal();
-  const { translateDescription, translateCompatibleModels } = usePartTranslation();
+  const { translateDescription, translateCompatibleModels, translatePartCategory } = usePartTranslation();
   const [isLoadingFavorite, setIsLoadingFavorite] = useState(false);
 
   const handleToggleFavorite = () => {
@@ -156,7 +156,7 @@ export default function SparePartDetailModal({
                   分类
                 </p>
                 <p className="text-sm font-semibold" style={{ color: 'oklch(0.18 0.04 265)' }}>
-                  {part.category}
+                  {translatePartCategory(part.category)}
                 </p>
               </div>
             </div>
