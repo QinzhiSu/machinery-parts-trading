@@ -120,8 +120,7 @@
   }
 
   body {
-    @apply text-foreground;
-    background-color: #1a1a1a;
+    @apply bg-white text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     font-size: 1.0625rem;
   }
