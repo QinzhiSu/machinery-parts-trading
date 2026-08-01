@@ -50,11 +50,10 @@ export default function Home() {
   const { user, loading, error, isAuthenticated, logout } = useAuth();
 
   return (
-    <div className="flex flex-col bg-white">
+    <>
       <Navbar />
-
       {/* Hero Section - Elegant Minimal */}
-      <section className="relative w-full flex items-center overflow-hidden" style={{ minHeight: 'calc(100vh - 56px)' }}>
+      <section className="relative w-full h-screen flex items-center overflow-hidden">
         {/* Background Image */}
         <img
           src={HERO_IMG}
@@ -341,6 +340,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </div>
+    </>
   );
 }
