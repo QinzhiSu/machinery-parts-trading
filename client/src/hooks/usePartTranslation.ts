@@ -147,9 +147,8 @@ export function usePartTranslation() {
   };
 
   const translateDescription = (description: string): string => {
-    if (language === 'zh') return description;
-    
     const translations = partDescriptionTranslations[description];
+    
     if (translations && translations[language]) {
       return translations[language];
     }

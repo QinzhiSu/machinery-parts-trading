@@ -375,7 +375,7 @@ export default function BrandPage() {
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {part.description}
+                        {translateMachineDescriptionPartial(part.description)}
                       </p>
 
                       <div className="flex gap-2">
