@@ -6,6 +6,8 @@ import ContactMethods from './ContactMethods';
 import { useFavoritesLocal } from '@/_core/hooks/useFavoritesLocal';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ComparisonButton from './ComparisonButton';
+import ReviewForm from './ReviewForm';
+import ReviewList from './ReviewList';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
