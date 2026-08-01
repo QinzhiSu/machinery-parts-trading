@@ -8,6 +8,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import ComparisonButton from './ComparisonButton';
 import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
+import { usePartTranslation } from '@/hooks/usePartTranslation';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -29,6 +30,7 @@ export default function SparePartDetailModal({
   const { t } = useLanguage();
   const [imageIndex, setImageIndex] = useState(0);
   const { isFavorite, addFavorite, removeFavorite } = useFavoritesLocal();
+  const { translateDescription, translateCompatibleModels } = usePartTranslation();
   const [isLoadingFavorite, setIsLoadingFavorite] = useState(false);
 
   const handleToggleFavorite = () => {
@@ -164,7 +166,7 @@ export default function SparePartDetailModal({
                 描述
               </p>
               <p className="text-sm leading-relaxed" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                {part.description}
+                {translateDescription(part.description)}
               </p>
             </div>
 
