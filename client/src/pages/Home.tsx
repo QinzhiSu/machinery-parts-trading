@@ -54,7 +54,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section - Elegant Minimal */}
-      <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden">
+      <section className="relative h-[calc(100vh-80px)] md:h-[calc(100vh-100px)] min-h-[600px] flex items-center overflow-hidden">
         {/* Background Image */}
         <img
           src={HERO_IMG}
