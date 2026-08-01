@@ -63,7 +63,20 @@ export default function MachineDescriptionTranslator({
           targetLanguage: getLanguageName(language),
         });
 
-        const translated = result.translation || description;
+        // Handle both string and array responses from LLM
+        let translated = description;
+        if (typeof result.translation === 'string') {
+          translated = result.translation;
+        } else if (Array.isArray(result.translation)) {
+          // If it's an array, extract text content
+          translated = result.translation
+            .map((item: any) => {
+              if (typeof item === 'string') return item;
+              if (item.type === 'text') return item.text;
+              return '';
+            })
+            .join('');
+        }
 
         // Cache the translation
         if (!globalTranslationCache[cacheKey]) {
