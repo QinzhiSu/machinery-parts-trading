@@ -1,13 +1,28 @@
-import { useMemo } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-// Cache for translated descriptions to avoid repeated translations
-const translationCache: Record<string, Record<string, string>> = {};
+type Language = 'en' | 'zh' | 'es' | 'ar' | 'ru' | 'fr' | 'pt' | 'it';
 
-// Language names for translation prompts
-const languageNames: Record<string, string> = {
-  zh: 'Simplified Chinese',
+interface TranslationCache {
+  [key: string]: string;
+}
+
+// Translation cache - stores translations to avoid repeated API calls
+const translationCache: Record<Language, TranslationCache> = {
+  en: {},
+  zh: {},
+  es: {},
+  ar: {},
+  ru: {},
+  fr: {},
+  pt: {},
+  it: {}
+};
+
+// Language names for the LLM
+const languageNames: Record<Language, string> = {
   en: 'English',
+  zh: 'Simplified Chinese',
   es: 'Spanish',
   ar: 'Arabic',
   ru: 'Russian',
@@ -18,42 +33,74 @@ const languageNames: Record<string, string> = {
 
 export function useAutoTranslate() {
   const { language } = useLanguage();
+  const [isTranslating, setIsTranslating] = useState(false);
 
-  const translateText = async (text: string, targetLanguage: string = language): Promise<string> => {
-    // If already English or target is English, return as-is
-    if (targetLanguage === 'en' || text.length === 0) {
-      return text;
-    }
+  const translateText = useCallback(
+    async (text: string, targetLanguage: Language = language as Language): Promise<string> => {
+      // If target language is English, return original text
+      if (targetLanguage === 'en' || !text) {
+        return text;
+      }
 
-    // Check cache first
-    if (translationCache[text]?.[targetLanguage]) {
-      return translationCache[text][targetLanguage];
-    }
+      // Check cache first
+      const cacheKey = text.substring(0, 100); // Use first 100 chars as key
+      if (translationCache[targetLanguage][cacheKey]) {
+        return translationCache[targetLanguage][cacheKey];
+      }
 
-    try {
-      // For now, return the original text
-      // In production, this would call a translation API
-      // Example: Google Translate API, DeepL, or Manus LLM
-      return text;
-    } catch (error) {
-      console.error('Translation error:', error);
-      return text;
-    }
-  };
+      setIsTranslating(true);
 
-  const translateDescription = (description: string): string => {
-    // For Chinese language, check if description is already in Chinese
-    if (language === 'zh' && /[\u4e00-\u9fff]/.test(description)) {
+      try {
+        const response = await fetch('/api/trpc/system.translate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            text,
+            targetLanguage: languageNames[targetLanguage],
+          }),
+          credentials: 'include',
+        });
+
+        if (!response.ok) {
+          console.error('Translation API error:', response.statusText);
+          return text; // Return original text on error
+        }
+
+        const data = await response.json();
+        const translatedText = data.result?.translation || text;
+
+        // Cache the translation
+        translationCache[targetLanguage][cacheKey] = translatedText;
+
+        return translatedText;
+      } catch (error) {
+        console.error('Translation error:', error);
+        return text; // Return original text on error
+      } finally {
+        setIsTranslating(false);
+      }
+    },
+    [language]
+  );
+
+  const translateDescription = useCallback(
+    (description: string): string => {
+      // For Chinese language, check if description is already in Chinese
+      if (language === 'zh' && /[\u4e00-\u9fff]/.test(description)) {
+        return description;
+      }
+
+      // For now, return original - async translation will happen in component
       return description;
-    }
-
-    // For other languages, return original (English) for now
-    // This will be enhanced with actual translation API
-    return description;
-  };
+    },
+    [language]
+  );
 
   return useMemo(() => ({
     translateText,
-    translateDescription
-  }), [language]);
+    translateDescription,
+    isTranslating
+  }), [language, isTranslating, translateText, translateDescription]);
 }

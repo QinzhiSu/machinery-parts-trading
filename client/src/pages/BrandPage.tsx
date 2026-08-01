@@ -14,6 +14,7 @@ import ComparisonButton from '@/components/ComparisonButton';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
+import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
@@ -283,9 +284,11 @@ export default function BrandPage() {
                         {machine.specs}
                       </div>
 
-                      <p className="text-xs leading-relaxed mb-4" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description)}
-                      </p>
+                      <MachineDescriptionTranslator
+                        description={translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description}
+                        className="text-xs leading-relaxed mb-4"
+                        style={{ color: 'oklch(0.5 0.02 265)' }}
+                      />
 
                       <button
                         onClick={() => openInquiry({ model: machine.model, name: machine.name, specs: machine.specs, type: 'machine' })}
