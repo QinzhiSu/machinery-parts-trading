@@ -192,11 +192,17 @@ export function usePartTranslation() {
     return translations ? (translations[language] || text) : text;
   };
 
+  const translatePartName = (name: string): string => {
+    if (language === 'zh') return name;
+    return name;
+  };
+
   return {
     translateMachineDescription,
     translateDescription,
     translateCompatibleModels,
     translatePartCategory,
-    translatePartButtonText
+    translatePartButtonText,
+    translatePartName
   };
 }

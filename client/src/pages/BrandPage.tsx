@@ -14,13 +14,14 @@ import ComparisonButton from '@/components/ComparisonButton';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
+import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
 export default function BrandPage() {
   const { t, language } = useLanguage();
-  const { translateMachineDescription: translateMachineDescriptionPartial, translatePartCategory, translatePartButtonText } = usePartTranslation();
+  const { translateMachineDescription: translateMachineDescriptionPartial, translatePartCategory, translatePartButtonText, translatePartName } = usePartTranslation();
   const { translateDescription } = useMachineTranslations();
   const { brandId } = useParams<{ brandId: string }>();
   const search = useSearch();
@@ -371,11 +372,11 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-sm mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {part.name}
+                        {getTranslatedSparePartName(part.name, language)}
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {translateMachineDescriptionPartial(part.description)}
+                        {getTranslatedSparePartDescription(part.description, language)}
                       </p>
 
                       <div className="flex gap-2">
@@ -389,7 +390,7 @@ export default function BrandPage() {
                           }}
                         >
                           <Wrench size={11} />
-                          {translatePartButtonText('查看详情')}
+                          {language === 'zh' ? '查看详情' : language === 'en' ? 'View Details' : language === 'es' ? 'Ver detalles' : language === 'ar' ? 'عرض التفاصيل' : language === 'ru' ? 'Просмотр деталей' : language === 'fr' ? 'Voir les détails' : language === 'pt' ? 'Ver detalhes' : 'Visualizza dettagli'}
                         </button>
                         <button
                           onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
@@ -401,7 +402,7 @@ export default function BrandPage() {
                           }}
                         >
                           <MessageSquare size={11} />
-                          {translatePartButtonText('询价')}
+                          {language === 'zh' ? '询价' : language === 'en' ? 'Inquiry' : language === 'es' ? 'Consulta' : language === 'ar' ? 'استفسار' : language === 'ru' ? 'Запрос' : language === 'fr' ? 'Demande' : language === 'pt' ? 'Consulta' : 'Richiesta'}
                         </button>
                         <ComparisonButton part={part} brandColor={brand.color} />
                       </div>

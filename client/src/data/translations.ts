@@ -40,6 +40,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'brand.wearParts': 'Wear parts and components with OEM part numbers. Contact us for pricing.',
     'brand.quickInquiry': 'Quick Inquiry',
     'brand.getPrice': 'Get Price',
+    'brand.filterByCategory': 'Filter by Category',
+    'brand.selectedFilters': 'Selected Filters',
+    'brand.clearAll': 'Clear All',
+    'brand.compare': 'Compare',
 
     // Quick Inquiry Dialog
     'inquiry.title': 'Quick Inquiry',
@@ -412,6 +416,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'brand.wearParts': 'Pièces d\'usure avec numéros OEM.',
     'brand.quickInquiry': 'Demande Rapide',
     'brand.getPrice': 'Obtenir le Prix',
+    'brand.filterByCategory': 'Filtrer par Catégorie',
+    'brand.selectedFilters': 'Filtres Sélectionnés',
+    'brand.clearAll': 'Effacer Tout',
+    'brand.compare': 'Comparer',
 
     // Quick Inquiry Dialog
     'inquiry.title': 'Demande Rapide',
@@ -754,6 +762,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'brand.wearParts': 'Piezas de desgaste y componentes.',
     'brand.quickInquiry': 'Consulta Rápida',
     'brand.getPrice': 'Obtener Precio',
+    'brand.filterByCategory': 'Filtrar por Categoría',
+    'brand.selectedFilters': 'Filtros Seleccionados',
+    'brand.clearAll': 'Limpiar Todo',
+    'brand.compare': 'Comparar',
 
     // Quick Inquiry Dialog
     'inquiry.title': 'Consulta Rápida',
