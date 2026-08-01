@@ -13,11 +13,12 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import ComparisonButton from '@/components/ComparisonButton';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { useFullTranslation } from '@/hooks/useFullTranslation';
+import { getTranslatedDescription } from '@/data/descriptionTranslations';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
 export default function BrandPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { translateMachineDescription: translateMachineDescriptionPartial } = usePartTranslation();
   const { translateMachineDescription } = useFullTranslation();
   const { brandId } = useParams<{ brandId: string }>();
