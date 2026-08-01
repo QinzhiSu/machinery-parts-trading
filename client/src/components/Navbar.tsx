@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <>
       {/* Top Info Bar - Premium */}
-      <div className="hidden bg-charcoal border-b border-gray-800 m-0 p-0">
+      <div className="bg-charcoal border-b border-gray-800 m-0 p-0">
         <div className="container flex items-center justify-between py-2.5 m-0 p-0">
           <div className="flex items-center gap-8 text-xs">
             <a
