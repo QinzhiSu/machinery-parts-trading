@@ -157,9 +157,9 @@
 - [x] 分析 MachineryTrader.com、Machineryline.com、Machinerycash.com
 - [x] 生成竞争对手分析报告（COMPETITIVE_ANALYSIS.md）
 - [x] 实现 WhatsApp 和 WeChat 集成
-- [ ] 添加配件对比功能
-- [ ] 添加收藏夹功能
-- [ ] 实现用户评价系统
+- [x] 添加配件对比功能
+- [x] 添加收藏夹功能
+- [x] 实现用户评价系统
 - [x] 添加多语言支持（英文、西班牙文、阿拉伯文）
 - [ ] 建立行业博客和新闻中心
 - [ ] 开发移动应用（iOS/Android）
