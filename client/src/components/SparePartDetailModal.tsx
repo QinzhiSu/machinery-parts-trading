@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { SparePart } from '@/data/products';
 import ContactMethods from './ContactMethods';
 import { useFavoritesLocal } from '@/_core/hooks/useFavoritesLocal';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -22,6 +23,7 @@ export default function SparePartDetailModal({
   brandName,
   brandColor,
 }: SparePartDetailModalProps) {
+  const { t } = useLanguage();
   const [imageIndex, setImageIndex] = useState(0);
   const { isFavorite, addFavorite, removeFavorite } = useFavoritesLocal();
   const [isLoadingFavorite, setIsLoadingFavorite] = useState(false);
@@ -129,7 +131,7 @@ export default function SparePartDetailModal({
               <Package size={16} style={{ color: brandColor, marginTop: '2px', flexShrink: 0 }} />
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  OEM Part Number
+                  OEM 编号
                 </p>
                 <p
                   className="text-sm font-bold font-mono"
@@ -145,7 +147,7 @@ export default function SparePartDetailModal({
               <Wrench size={16} style={{ color: brandColor, marginTop: '2px', flexShrink: 0 }} />
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  Category
+                  分类
                 </p>
                 <p className="text-sm font-semibold" style={{ color: 'oklch(0.18 0.04 265)' }}>
                   {part.category}
@@ -156,7 +158,7 @@ export default function SparePartDetailModal({
             {/* Full Description */}
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                Description
+                描述
               </p>
               <p className="text-sm leading-relaxed" style={{ color: 'oklch(0.45 0.02 265)' }}>
                 {part.description}
@@ -167,7 +169,7 @@ export default function SparePartDetailModal({
             {(part.compatibleModels && part.compatibleModels.length > 0) ? (
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  Applicable Vehicle Models
+                  适用车型
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {part.compatibleModels.map((model) => (
@@ -187,7 +189,7 @@ export default function SparePartDetailModal({
             {engineModels && (
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  Engine Models
+                  发动机型号
                 </p>
                 <p className="text-sm font-mono" style={{ fontFamily: 'var(--font-mono)', color: 'oklch(0.45 0.02 265)' }}>
                   {engineModels}
@@ -212,7 +214,7 @@ export default function SparePartDetailModal({
               style={{ background: brandColor, fontFamily: 'var(--font-display)' }}
             >
               <MessageSquare size={14} />
-              Send Inquiry
+              发送询价
             </button>
             <button
                 onClick={handleToggleFavorite}
@@ -224,7 +226,7 @@ export default function SparePartDetailModal({
                   border: isFavorite(part.partNumber) ? 'none' : '1px solid oklch(0.88 0.008 90)',
                   fontFamily: 'var(--font-display)',
                 }}
-                title={isFavorite(part.partNumber) ? 'Remove from favorites' : 'Add to favorites'}
+                title={isFavorite(part.partNumber) ? '从收藏夹中移除' : '添加到收藏夹'}
               >
                 <Heart size={14} fill={isFavorite(part.partNumber) ? 'currentColor' : 'none'} />
               </button>
@@ -238,7 +240,7 @@ export default function SparePartDetailModal({
                   fontFamily: 'var(--font-display)',
                 }}
               >
-                Close
+                关闭Close
               </button>
           </div>
         </div>

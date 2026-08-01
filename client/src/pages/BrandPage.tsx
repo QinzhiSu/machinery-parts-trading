@@ -380,7 +380,7 @@ export default function BrandPage() {
                           }}
                         >
                           <Wrench size={11} />
-                          Details
+                          查看详情
                         </button>
                         <button
                           onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
@@ -392,7 +392,7 @@ export default function BrandPage() {
                           }}
                         >
                           <MessageSquare size={11} />
-                          Inquiry
+                          询价
                         </button>
                       </div>
                     </div>
