@@ -1,6 +1,26 @@
 import { useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+// Translation map for machine and spare part descriptions
+const machineDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Toyota 4Runner SUV. Premium off-road SUV for adventure and exploration. Engine: 4.0L V6 (215 kW). Transmission: Automatic. Seating: 7-8 passengers. Fuel Tank: 87L. Perfect for extreme terrain and family adventures.': {
+    es: 'Toyota 4Runner SUV. SUV todoterreno premium para aventura y exploración. Motor: V6 4.0L (215 kW). Transmisión: Automática. Asientos: 7-8 pasajeros. Tanque de combustible: 87L. Perfecto para terrenos extremos y aventuras familiares.',
+    ar: 'تويوتا 4Runner SUV. سيارة دفع رباعي فاخرة للمغامرة والاستكشاف. المحرك: V6 4.0L (215 كيلوواط). ناقل الحركة: أوتوماتيكي. المقاعد: 7-8 ركاب. خزان الوقود: 87 لتر. مثالية للتضاريس القاسية والمغامرات العائلية.'
+  },
+  'Toyota Fortuner SUV. Mid-size SUV for family and commercial use. Engine: 2.8L Diesel (130 kW). Transmission: Automatic. Seating: 7 passengers. Fuel Tank: 80L. Ideal for Southeast Asian markets and rugged terrain.': {
+    es: 'Toyota Fortuner SUV. SUV de tamaño medio para uso familiar y comercial. Motor: Diesel 2.8L (130 kW). Transmisión: Automática. Asientos: 7 pasajeros. Tanque de combustible: 80L. Ideal para mercados del sudeste asiático y terrenos accidentados.',
+    ar: 'تويوتا Fortuner SUV. سيارة دفع رباعي متوسطة الحجم للاستخدام العائلي والتجاري. المحرك: ديزل 2.8L (130 كيلوواط). ناقل الحركة: أوتوماتيكي. المقاعد: 7 ركاب. خزان الوقود: 80 لتر. مثالية لأسواق جنوب شرق آسيا والتضاريس الوعرة.'
+  },
+  'Toyota Hilux 4×4 Pickup Truck. Heavy-duty pickup truck for construction and agriculture. Engine: 2.8L Diesel (130 kW). Transmission: Manual/Automatic. Payload: 1000 kg. Fuel Tank: 80L. Perfect for tough working conditions.': {
+    es: 'Toyota Hilux 4×4 Pickup Truck. Camión pickup resistente para construcción y agricultura. Motor: Diesel 2.8L (130 kW). Transmisión: Manual/Automática. Capacidad de carga: 1000 kg. Tanque de combustible: 80L. Perfecto para condiciones de trabajo difíciles.',
+    ar: 'تويوتا Hilux 4×4 Pickup Truck. شاحنة بيك أب ثقيلة للبناء والزراعة. المحرك: ديزل 2.8L (130 كيلوواط). ناقل الحركة: يدوي/أوتوماتيكي. حمولة: 1000 كجم. خزان الوقود: 80 لتر. مثالية لظروف العمل الصعبة.'
+  },
+  'Toyota Land Cruiser 70 SUV. Classic off-road SUV with legendary reliability. Engine: 4.0L V6 (155 kW). Transmission: Manual. Seating: 5-7 passengers. Fuel Tank: 85L. Perfect for extreme off-road expeditions.': {
+    es: 'Toyota Land Cruiser 70 SUV. SUV todoterreno clásico con confiabilidad legendaria. Motor: V6 4.0L (155 kW). Transmisión: Manual. Asientos: 5-7 pasajeros. Tanque de combustible: 85L. Perfecto para expediciones extremas fuera de carretera.',
+    ar: 'تويوتا Land Cruiser 70 SUV. سيارة دفع رباعي كلاسيكية بموثوقية أسطورية. المحرك: V6 4.0L (155 كيلوواط). ناقل الحركة: يدوي. المقاعد: 5-7 ركاب. خزان الوقود: 85 لتر. مثالية للرحلات الاستكشافية الشديدة خارج الطريق.'
+  },
+};
+
 // Simple translation map for common spare part descriptions
 const partDescriptionTranslations: Record<string, Record<string, string>> = {
   'CAT 零件。250-500小时随保养更换': {
@@ -113,6 +133,17 @@ const partDescriptionTranslations: Record<string, Record<string, string>> = {
 export function usePartTranslation() {
   const { language } = useLanguage();
 
+  const translateMachineDescription = (description: string): string => {
+    if (language === 'zh') return description;
+    
+    const translations = machineDescriptionTranslations[description];
+    if (translations && translations[language]) {
+      return translations[language];
+    }
+    
+    return description;
+  };
+
   const translateDescription = (description: string): string => {
     if (language === 'zh') return description;
     
@@ -133,6 +164,7 @@ export function usePartTranslation() {
   };
 
   return {
+    translateMachineDescription,
     translateDescription,
     translateCompatibleModels
   };
