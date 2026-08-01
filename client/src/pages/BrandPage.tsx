@@ -20,7 +20,7 @@ const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u
 
 export default function BrandPage() {
   const { t, language } = useLanguage();
-  const { translateMachineDescription: translateMachineDescriptionPartial } = usePartTranslation();
+  const { translateMachineDescription: translateMachineDescriptionPartial, translatePartCategory, translatePartButtonText } = usePartTranslation();
   const { translateDescription } = useMachineTranslations();
   const { brandId } = useParams<{ brandId: string }>();
   const search = useSearch();
@@ -351,7 +351,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {part.category}
+                        {translatePartCategory(part.category)}
                       </div>
                     </div>
 
@@ -389,7 +389,7 @@ export default function BrandPage() {
                           }}
                         >
                           <Wrench size={11} />
-                          查看详情
+                          {translatePartButtonText('查看详情')}
                         </button>
                         <button
                           onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
@@ -401,7 +401,7 @@ export default function BrandPage() {
                           }}
                         >
                           <MessageSquare size={11} />
-                          询价
+                          {translatePartButtonText('询价')}
                         </button>
                         <ComparisonButton part={part} brandColor={brand.color} />
                       </div>

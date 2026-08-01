@@ -164,9 +164,39 @@ export function usePartTranslation() {
     return models;
   };
 
+  const categoryTranslations: Record<string, Record<string, string>> = {
+    '保养/滤清系统': { en: 'Maintenance/Filtration', es: 'Mantenimiento/Filtración', ar: 'الصيانة/التصفية', ru: 'Техническое обслуживание/Фильтрация', fr: 'Entretien/Filtration', pt: 'Manutenção/Filtração', it: 'Manutenzione/Filtrazione' },
+    '传动/皮带': { en: 'Drivetrain/Belts', es: 'Transmisión/Correas', ar: 'نظام الدفع/الأحزمة', ru: 'Трансмиссия/Ремни', fr: 'Transmission/Courroies', pt: 'Transmissão/Correias', it: 'Trasmissione/Cinghie' },
+    '制动系统': { en: 'Braking System', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' },
+    '悬挂系统': { en: 'Suspension System', es: 'Sistema de suspensión', ar: 'نظام التعليق', ru: 'Система подвески', fr: 'Système de suspension', pt: 'Sistema de suspensão', it: 'Sistema di sospensione' },
+    '转向系统': { en: 'Steering System', es: 'Sistema de dirección', ar: 'نظام التوجيه', ru: 'Рулевая система', fr: 'Système de direction', pt: 'Sistema de direção', it: 'Sistema di sterzo' },
+    '轮毂/传动轴': { en: 'Wheels/Driveshaft', es: 'Ruedas/Eje de transmisión', ar: 'العجلات/عمود الدفع', ru: 'Колеса/Карданный вал', fr: 'Roues/Arbre de transmission', pt: 'Rodas/Eixo de transmissão', it: 'Ruote/Albero di trasmissione' },
+    '差速器/传动': { en: 'Differential/Transmission', es: 'Diferencial/Transmisión', ar: 'التفاضل/الناقل', ru: 'Дифференциал/Трансмиссия', fr: 'Différentiel/Transmission', pt: 'Diferencial/Transmissão', it: 'Differenziale/Trasmissione' },
+    '冷却系统': { en: 'Cooling System', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
+  };
+
+  const buttonTranslations: Record<string, Record<string, string>> = {
+    '查看详情': { en: 'View Details', es: 'Ver detalles', ar: 'عرض التفاصيل', ru: 'Просмотр деталей', fr: 'Voir les détails', pt: 'Ver detalhes', it: 'Visualizza dettagli' },
+    '询价': { en: 'Inquiry', es: 'Consulta', ar: 'استفسار', ru: 'Запрос', fr: 'Demande', pt: 'Consulta', it: 'Richiesta' },
+  };
+
+  const translatePartCategory = (category: string): string => {
+    if (language === 'zh') return category;
+    const translations = categoryTranslations[category];
+    return translations ? (translations[language] || category) : category;
+  };
+
+  const translatePartButtonText = (text: string): string => {
+    if (language === 'zh') return text;
+    const translations = buttonTranslations[text];
+    return translations ? (translations[language] || text) : text;
+  };
+
   return {
     translateMachineDescription,
     translateDescription,
-    translateCompatibleModels
+    translateCompatibleModels,
+    translatePartCategory,
+    translatePartButtonText
   };
 }
