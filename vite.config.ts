@@ -171,11 +171,7 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
     // Optimize for performance
-    minify: 'terser',
-    terserOptions: {
-      compress: true,
-      mangle: true,
-    } as any,
+    minify: 'esbuild',
     // Code splitting for better caching
     rollupOptions: {
       output: {
@@ -193,7 +189,7 @@ export default defineConfig({
     // Report compressed size
     reportCompressedSize: true,
     // Chunk size warnings
-    chunkSizeWarningLimit: 500,
+    chunkSizeWarningLimit: 500
   },
   server: {
     host: true,
