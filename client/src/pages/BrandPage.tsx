@@ -10,6 +10,7 @@ import SparePartDetailModal from '@/components/SparePartDetailModal';
 import CategoryFilter from '@/components/CategoryFilter';
 import { getBrandById, SparePart } from '@/data/products';
 import { useLanguage } from '@/contexts/LanguageContext';
+import ComparisonButton from '@/components/ComparisonButton';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
@@ -394,6 +395,7 @@ export default function BrandPage() {
                           <MessageSquare size={11} />
                           询价
                         </button>
+                        <ComparisonButton part={part} brandColor={brand.color} />
                       </div>
                     </div>
                   </div>
