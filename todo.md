@@ -199,6 +199,7 @@
 - [x] 更新 LanguageSwitcher 组件显示新语言选项
 - [x] 测试所有语言的显示效果（已验证英文/西班牙文/阿拉伯文）
 - [x] 验证 RTL 语言（阿拉伯文）的布局
+- [x] 为子网页添加完整翻译（BrandPage、SparePartDetailModal、CategoryFilter、SearchResults）
 
 
 ## WeChat 连接测试

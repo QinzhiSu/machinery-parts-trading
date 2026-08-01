@@ -5,6 +5,7 @@ import { SparePart } from '@/data/products';
 import ContactMethods from './ContactMethods';
 import { useFavoritesLocal } from '@/_core/hooks/useFavoritesLocal';
 import { useLanguage } from '@/contexts/LanguageContext';
+import ComparisonButton from './ComparisonButton';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -216,6 +217,7 @@ export default function SparePartDetailModal({
               <MessageSquare size={14} />
               发送询价
             </button>
+            <ComparisonButton part={part} brandColor={brandColor} />
             <button
                 onClick={handleToggleFavorite}
                 disabled={isLoadingFavorite}

@@ -16,6 +16,8 @@ import AboutPage from "./pages/AboutPage";
 import FAQPage from "./pages/FAQPage";
 import SearchResults from "./pages/SearchResults";
 import FavoritesPage from "./pages/FavoritesPage";
+import { ComparisonProvider } from "./contexts/ComparisonContext";
+import ComparisonPanel from "./components/ComparisonPanel";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -39,14 +41,17 @@ function App() {
   return (
     <ErrorBoundary>
       <LanguageProvider>
-        <ThemeProvider defaultTheme="light">
-          <TooltipProvider>
-            <Toaster />
-            <Router />
-            <WhatsAppButton />
-            <WeChatButton />
-          </TooltipProvider>
-        </ThemeProvider>
+        <ComparisonProvider>
+          <ThemeProvider defaultTheme="light">
+            <TooltipProvider>
+              <Toaster />
+              <Router />
+              <WhatsAppButton />
+              <WeChatButton />
+              <ComparisonPanel />
+            </TooltipProvider>
+          </ThemeProvider>
+        </ComparisonProvider>
       </LanguageProvider>
     </ErrorBoundary>
   );
