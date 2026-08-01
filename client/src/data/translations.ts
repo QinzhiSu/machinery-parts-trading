@@ -112,6 +112,20 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.fastResponse': 'Fast response time — reply within 24 hours',
     'about.longTermRelation': 'Long-term relationship focus with dedicated account service',
 
+    // Brand descriptions
+    'brand.caterpillar.description': 'World\'s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives.',
+    'brand.komatsu.description': 'Japanese manufacturer of construction equipment, mining equipment, and industrial machinery with global presence.',
+    'brand.xcmg.description': 'Leading Chinese manufacturer of construction machinery including excavators, loaders, and cranes.',
+    'brand.shantui.description': 'Chinese heavy equipment manufacturer specializing in bulldozers and earthmoving machinery.',
+    'brand.sany.description': 'Major Chinese construction equipment manufacturer with world-class technology and innovation.',
+    'brand.liugong.description': 'Chinese heavy machinery manufacturer known for wheel loaders and construction equipment.',
+    'brand.isuzu.description': 'Japanese manufacturer of commercial trucks and diesel engines for global markets.',
+    'brand.shacman.description': 'Chinese heavy-duty truck manufacturer serving construction and logistics industries.',
+    'brand.sinotruk.description': 'Leading Chinese heavy truck manufacturer with reliable commercial vehicles.',
+    'brand.toyota.description': 'Japanese automotive manufacturer known for reliable trucks and commercial vehicles.',
+    'brand.cummins.description': 'Global leader in diesel and natural gas engine manufacturing for industrial applications.',
+    'brand.weichai.description': 'Chinese diesel engine manufacturer serving construction and commercial vehicle markets.',
+
     // Common
     'common.loading': 'Loading...',
     'common.error': 'Error',
@@ -924,3 +938,4 @@ export const translations: Record<Language, Record<string, string>> = {
 export function t(key: string, lang: Language): string {
   return translations[lang][key] || key;
 }
+

@@ -153,7 +153,7 @@ export default function BrandPage() {
                 {brand.fullName}
               </h1>
               <p className="text-sm max-w-2xl leading-relaxed" style={{ color: 'oklch(0.7 0.02 265)' }}>
-                {brand.description}
+                {t(`brand.${brandId}.description`) || brand.description}
               </p>
               <div className="flex items-center gap-6 mt-4">
                 <div className="text-center">
