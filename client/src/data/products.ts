@@ -198,15 +198,15 @@ export const brands: Brand[] = [
       { id: 'cat-sp-26', partNumber: '9N-4353', name: '斗齿(J350摩擦磨损型)', description: "CAT 零件。磨损见底或断裂时更换,高频更换件", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘属性/GET(中型段)', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-27', partNumber: '7T-3402PT', name: '斗齿(J400/J460系列)', description: "CAT 零件。磨损见底或断裂时更换", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘属性/GET(大型段)', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-28', partNumber: '3G-6304', name: '斗齿(J300大修/推土机焊接型适配器)', description: "CAT 零件。随斗齿磨损,推土机松土齿高频更换件", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘属性/GET(大型段)', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-29', partNumber: '2159985', name: '斗杆油缸密封修理包', description: "CAT 零件。漏油/密封老化时更换", image: '/manus-storage/cat_ee9e5401.png', category: '液压缸/密封件', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-30', partNumber: '2344587', name: '铲斗油缸密封修理包', description: "CAT 零件。漏油/密封老化时更换", image: '/manus-storage/cat_ee9e5401.png', category: '液压缸/密封件', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-31', partNumber: '1589088', name: '铲斗油缸密封包(85mm杆/125mm缸径)', description: "CAT 零件。漏油/密封老化时更换", image: '/manus-storage/cat_ee9e5401.png', category: '液压缸/密封件', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-32', partNumber: '1709808', name: '铲斗油缸密封包(65mm杆,老款)', description: "CAT 零件。漏油/密封老化时更换", image: '/manus-storage/cat_ee9e5401.png', category: '液压缸/密封件', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-33', partNumber: '087-5805', name: '铲斗-斗杆连接销', description: "CAT 零件。异响/间隙过大时更换,高频保养更换件", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-34', partNumber: '087-5806', name: '连杆-斗杆连接销', description: "CAT 零件。异响/间隙过大时更换", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-35', partNumber: '087-5845', name: '连杆-油缸连接销', description: "CAT 零件。异响/间隙过大时更换", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-29', partNumber: '2159985', name: 'Boom Cylinder Seal Repair Kit', description: "CAT 零件。漏油/密封老化时更换", image: '/manus-storage/cat_ee9e5401.png', category: '液压缸/密封件', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-30', partNumber: '2344587', name: 'Bucket Cylinder Seal Repair Kit', description: "CAT 零件。漏油/密封老化时更换", image: '/manus-storage/cat_ee9e5401.png', category: '液压缸/密封件', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-31', partNumber: '1589088', name: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)', description: "CAT 零件。漏油/密封老化时更换", image: '/manus-storage/cat_ee9e5401.png', category: '液压缸/密封件', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-32', partNumber: '1709808', name: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)', description: "CAT 零件。漏油/密封老化时更换", image: '/manus-storage/cat_ee9e5401.png', category: '液压缸/密封件', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-33', partNumber: '087-5805', name: 'Bucket-Boom Connection Pin', description: "CAT 零件。异响/间隙过大时更换,高频保养更换件", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-34', partNumber: '087-5806', name: 'Rod-Boom Connection Pin', description: "CAT 零件。异响/间隙过大时更换", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-35', partNumber: '087-5845', name: 'Rod-Cylinder Connection Pin', description: "CAT 零件。异响/间隙过大时更换", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-36', partNumber: '163-3749', name: '斗杆连杆衬套', description: "CAT 零件。随销一起更换,高频磨损件", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-37', partNumber: '137-2919', name: '铲斗衬套(斗杆处)', description: "CAT 零件。随销一起更换,高频磨损件", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] }
+      { id: 'cat-sp-37', partNumber: '137-2919', name: 'Bucket Bushing (Boom Position)', description: "CAT 零件。随销一起更换,高频磨损件", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] }
     ]
   },
   {
