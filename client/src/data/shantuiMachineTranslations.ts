@@ -215,6 +215,30 @@ export const shantuiMachineDescriptions: Record<string, Record<string, string>> 
   }
 };
 
+// Short descriptions for machine cards
+export const shantuiMachineShortDescriptions: Record<string, Record<string, string>> = {
+  'Shantui SD16': { en: 'Excavadora Shantui SD16 - Bulldozer Shantui SD16 medio', es: 'Excavadora Shantui SD16 - Bulldozer Shantui SD16 medio', ar: 'جرافة شانتوي SD16 - بلدوزر متوسط', ru: 'Экскаватор Shantui SD16 - Бульдозер средний', fr: 'Excavatrice Shantui SD16 - Bulldozer moyen', pt: 'Escavadeira Shantui SD16 - Bulldozer médio', it: 'Escavatore Shantui SD16 - Bulldozer medio' },
+  'Shantui SD22': { en: 'Excavadora Shantui SD22 grande', es: 'Excavadora Shantui SD22 grande', ar: 'جرافة شانتوي SD22 كبيرة', ru: 'Экскаватор Shantui SD22 большой', fr: 'Excavatrice Shantui SD22 grande', pt: 'Escavadeira Shantui SD22 grande', it: 'Escavatore Shantui SD22 grande' },
+  'Shantui SD32': { en: 'Excavadora Shantui SD32 extra grande', es: 'Excavadora Shantui SD32 extra grande', ar: 'جرافة شانتوي SD32 فائقة الحجم', ru: 'Экскаватор Shantui SD32 очень большой', fr: 'Excavatrice Shantui SD32 très grande', pt: 'Escavadeira Shantui SD32 extra grande', it: 'Escavatore Shantui SD32 extra grande' },
+  'Shantui SE75': { en: 'Excavadora hidráulica Shantui SE75 pequeña', es: 'Excavadora hidráulica Shantui SE75 pequeña', ar: 'حفار هيدروليكي شانتوي SE75 صغير', ru: 'Экскаватор Shantui SE75 гидравлический малый', fr: 'Excavatrice hydraulique Shantui SE75 petite', pt: 'Escavadeira hidráulica Shantui SE75 pequena', it: 'Escavatore idraulico Shantui SE75 piccolo' },
+  'Shantui SE130': { en: 'Excavadora hidráulica Shantui SE130 media', es: 'Excavadora hidráulica Shantui SE130 media', ar: 'حفار هيدروليكي شانتوي SE130 متوسط', ru: 'Экскаватор Shantui SE130 гидравлический средний', fr: 'Excavatrice hydraulique Shantui SE130 moyenne', pt: 'Escavadeira hidráulica Shantui SE130 média', it: 'Escavatore idraulico Shantui SE130 medio' },
+  'Shantui SE215': { en: 'Excavadora hidráulica Shantui SE215 grande', es: 'Excavadora hidráulica Shantui SE215 grande', ar: 'حفار هيدروليكي شانتوي SE215 كبير', ru: 'Экскаватор Shantui SE215 гидравлический большой', fr: 'Excavatrice hydraulique Shantui SE215 grande', pt: 'Escavadeira hidráulica Shantui SE215 grande', it: 'Escavatore idraulico Shantui SE215 grande' },
+  'Shantui SE220': { en: 'Excavadora hidráulica Shantui SE220 grande', es: 'Excavadora hidráulica Shantui SE220 grande', ar: 'حفار هيدروليكي شانتوي SE220 كبير', ru: 'Экскаватор Shantui SE220 гидравлический большой', fr: 'Excavatrice hydraulique Shantui SE220 grande', pt: 'Escavadeira hidráulica Shantui SE220 grande', it: 'Escavatore idraulico Shantui SE220 grande' },
+  'Shantui L36-C3': { en: 'Cargador de ruedas Shantui L36-C3 medio', es: 'Cargador de ruedas Shantui L36-C3 medio', ar: 'محمل عجلات شانتوي L36-C3 متوسط', ru: 'Погрузчик Shantui L36-C3 колесный средний', fr: 'Chargeuse sur pneus Shantui L36-C3 moyenne', pt: 'Carregadeira de rodas Shantui L36-C3 média', it: 'Caricatore gommato Shantui L36-C3 medio' },
+  'Shantui L55-C5': { en: 'Cargador de ruedas Shantui L55-C5 grande', es: 'Cargador de ruedas Shantui L55-C5 grande', ar: 'محمل عجلات شانتوي L55-C5 كبير', ru: 'Погрузчик Shantui L55-C5 колесный большой', fr: 'Chargeuse sur pneus Shantui L55-C5 grande', pt: 'Carregadeira de rodas Shantui L55-C5 grande', it: 'Caricatore gommato Shantui L55-C5 grande' },
+  'Shantui SG19-C6': { en: 'Motoniveladora Shantui SG19-C6 media', es: 'Motoniveladora Shantui SG19-C6 media', ar: 'مسطحة شانتوي SG19-C6 متوسطة', ru: 'Автогрейдер Shantui SG19-C6 средний', fr: 'Niveleuse Shantui SG19-C6 moyenne', pt: 'Motoniveladora Shantui SG19-C6 média', it: 'Livellatrice Shantui SG19-C6 media' },
+  'Shantui SG21-B6': { en: 'Motoniveladora Shantui SG21-B6 grande', es: 'Motoniveladora Shantui SG21-B6 grande', ar: 'مسطحة شانتوي SG21-B6 كبيرة', ru: 'Автогрейдер Shantui SG21-B6 большой', fr: 'Niveleuse Shantui SG21-B6 grande', pt: 'Motoniveladora Shantui SG21-B6 grande', it: 'Livellatrice Shantui SG21-B6 grande' },
+  'Shantui DH10-C2': { en: 'Motor diésel Shantui DH10-C2 medio', es: 'Motor diésel Shantui DH10-C2 medio', ar: 'محرك ديزل شانتوي DH10-C2 متوسط', ru: 'Дизельный двигатель Shantui DH10-C2 средний', fr: 'Moteur diesel Shantui DH10-C2 moyen', pt: 'Motor diesel Shantui DH10-C2 médio', it: 'Motore diesel Shantui DH10-C2 medio' },
+  'Shantui DH13-C3': { en: 'Motor diésel Shantui DH13-C3 grande', es: 'Motor diésel Shantui DH13-C3 grande', ar: 'محرك ديزل شانتوي DH13-C3 كبير', ru: 'Дизельный двигатель Shantui DH13-C3 большой', fr: 'Moteur diesel Shantui DH13-C3 grand', pt: 'Motor diesel Shantui DH13-C3 grande', it: 'Motore diesel Shantui DH13-C3 grande' },
+  'Shantui DH46-C3': { en: 'Motor diésel Shantui DH46-C3 extra grande', es: 'Motor diésel Shantui DH46-C3 extra grande', ar: 'محرك ديزل شانتوي DH46-C3 فائق الحجم', ru: 'Дизельный двигатель Shantui DH46-C3 очень большой', fr: 'Moteur diesel Shantui DH46-C3 très grand', pt: 'Motor diesel Shantui DH46-C3 extra grande', it: 'Motore diesel Shantui DH46-C3 extra grande' }
+};
+
+export function getTranslatedShantuiMachineShortDescription(modelName: string, language: string = 'en'): string {
+  const descriptions = shantuiMachineShortDescriptions[modelName];
+  if (!descriptions) return '';
+  return descriptions[language] || descriptions['en'] || '';
+}
+
 export function getTranslatedShantuiMachineDescription(modelName: string, language: string = 'en'): string {
   const descriptions = shantuiMachineDescriptions[modelName];
   if (!descriptions) return '';
