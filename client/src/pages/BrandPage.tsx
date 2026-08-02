@@ -16,6 +16,8 @@ import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedCATMachineDescription } from '@/data/catMachineTranslations';
+import { getTranslatedShantuiMachineName } from '@/data/shantuiMachineTranslations';
+import { getTranslatedShantuiSparePartDescription } from '@/data/sparePartsTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
@@ -255,10 +257,10 @@ export default function BrandPage() {
                       />
                       {/* Model badge */}
                       <div
-                        className="absolute top-3 left-3 px-2 py-1 text-white text-xs font-bold uppercase tracking-wider"
-                        style={{ background: brand.color, fontFamily: 'var(--font-display)' }}
+                        className="text-xs font-semibold uppercase tracking-wider mb-2"
+                        style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
                       >
-                        {machine.model}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : machine.name}
                       </div>
                     </div>
 
@@ -287,7 +289,7 @@ export default function BrandPage() {
                       </div>
 
                       <MachineDescriptionTranslator
-                        description={brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : (translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description)}
+                        description={brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? (getTranslatedShantuiMachineName(machine.model, language) + ' - ' + machine.description) : (translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description)}
                         className="text-xs leading-relaxed mb-4"
                         style={{ color: 'oklch(0.5 0.02 265)' }}
                       />
@@ -377,7 +379,7 @@ export default function BrandPage() {
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {getTranslatedSparePartDescription(part.description, language)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : getTranslatedSparePartDescription(part.description, language)}
                       </p>
 
                       <div className="flex gap-2">
