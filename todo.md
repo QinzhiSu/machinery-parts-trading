@@ -376,18 +376,23 @@
 - [x] 分析翻译问题：零件名称翻译表只有中文→其他语言的映射，无法处理英文源数据
 - [x] 添加英文零件名称的反向翻译映射到 sparePartNameTranslations
 - [x] 修复 sparePartDescriptionTranslations 中所有 CAT 描述的中文翻译字段缺失
-- [x] 使用 Python 脚本自动为所有 CAT 描述添加 zh 字段
+- [x] 使用 sed 脚本批量替换所有英文键的中文翻译
+- [x] 添加缺失的翻译条目（杆-动臂连接销、杆-油缸连接销、杆-动臂连接衬套）
 - [x] 重启开发服务器应用修复
 - [x] 浏览器验证：所有 37 个 CAT 零件名称和描述现在在中文显示下正确翻译
 
 **修复的问题：**
 1. ✅ 零件名称翻译 - 添加英文→中文的反向映射
 2. ✅ 零件描述翻译 - 为所有 CAT 描述添加中文翻译字段
+3. ✅ 缺失翻译条目 - 添加 3 个缺失的翻译条目
 
-**修改文件：** `/home/ubuntu/machinery-parts-trading/client/src/data/sparePartsTranslations.ts`
+**修改文件：** 
+- `/home/ubuntu/machinery-parts-trading/client/src/data/sparePartsTranslations.ts`
+- `/home/ubuntu/machinery-parts-trading/client/src/hooks/usePartTranslation.ts`
 
 **修复结果：** 
-- 所有 37 个 Caterpillar 零件在中文显示下现在完全正确
-- 零件名称：✅ 正确翻译成中文（如"机油滤芯"、"燃油滤芯"等）
-- 零件描述：✅ 正确翻译成中文（如"CAT 零件。250-500小时随保养更换"等）
-- 翻译系统完全正常工作，支持所有 8 种语言
+- ✅ 所有 37 个 Caterpillar 零件在中文显示下现在完全正确
+- ✅ 零件名称：正确翻译成中文（如"机油滤芯"、"燃油滤芯"、"杆-动臂连接销"等）
+- ✅ 零件描述：正确翻译成中文（如"CAT 零件。250-500小时随保养更换"、"CAT 零件。异响/间隙过大时更换"等）
+- ✅ 翻译系统完全正常工作，支持所有 8 种语言
+- ✅ 浏览器验证通过：所有零件卡片显示中文翻译，包括之前缺失的 3 个零件
