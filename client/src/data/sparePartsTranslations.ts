@@ -387,3 +387,27 @@ Object.assign(sparePartDescriptionTranslations, {
 });
 
 // 添加缺失的翻译条目（这会导致语法错误，需要手动修复）
+// CAT spare part category translations
+export const catSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Обслуживание/Система фильтрации', fr: 'Maintenance/Système de filtration', pt: 'Manutenção/Sistema de filtragem', it: 'Manutenzione/Sistema di filtrazione' },
+  '冷却系统': { en: 'Cooling System', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
+  '增压/进气': { en: 'Turbocharger/Intake', es: 'Turbocompresor/Entrada', ar: 'مروحة فائقة/مدخل', ru: 'Турбонадув/Вход', fr: 'Turbocompresseur/Admission', pt: 'Turbocompressor/Entrada', it: 'Turbocompressore/Aspirazione' },
+  '底盘/履带系统': { en: 'Chassis/Track System', es: 'Chásis/Sistema de oruga', ar: 'الشاسي/نظام الجنزير', ru: 'Шасси/Гусеничная система', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de esteira', it: 'Telaio/Sistema cingolo' },
+  '挖掘属性/GET': { en: 'Excavation/Bucket Teeth', es: 'Excavación/Dientes de cucharón', ar: 'الحفر/أسنان الجرافة', ru: 'Экскавация/Зубья ковша', fr: 'Excavation/Dents de godet', pt: 'Escavação/Dentes da caçamba', it: 'Scavo/Denti benna' },
+  '水力控制': { en: 'Hydraulic Control', es: 'Control hidráulico', ar: 'التحكم الهيدروليكي', ru: 'Гидравлическое управление', fr: 'Contrôle hydraulique', pt: 'Controle hidráulico', it: 'Controllo idraulico' },
+  '水力气动': { en: 'Hydraulic/Pneumatic', es: 'Hidráulico/Neumático', ar: 'هيدروليكي/هوائي', ru: 'Гидравлический/Пневматический', fr: 'Hydraulique/Pneumatique', pt: 'Hidráulico/Pneumático', it: 'Idraulico/Pneumatico' },
+  '传动系统': { en: 'Transmission System', es: 'Sistema de transmisión', ar: 'نظام النقل', ru: 'Система трансмиссии', fr: 'Système de transmission', pt: 'Sistema de transmissão', it: 'Sistema di trasmissione' },
+  '液压缸/密封件': { en: 'Hydraulic Cylinder/Seals', es: 'Cilindro hidráulico/Sellos', ar: 'اسطوانة هيدروليكية/أختام', ru: 'Гидроцилиндр/Уплотнения', fr: 'Cylindre hydraulique/Joints', pt: 'Cilindro hidráulico/Selos', it: 'Cilindro idraulico/Sigilli' },
+  '挖掘臂销套系统': { en: 'Excavation Arm Pin System', es: 'Sistema de pasador de brazo de excavación', ar: 'نظام دبوس ذراع الحفر', ru: 'Система шпилек рукояти экскаватора', fr: 'Système de goupille de bras d\'excavation', pt: 'Sistema de pino de braço de escavação', it: 'Sistema di perni braccio scavo' },
+  '挖掘属性/GET(小型段)': { en: 'Excavation/Bucket Teeth (Small)', es: 'Excavación/Dientes de cucharón (Pequeño)', ar: 'الحفر/أسنان الجرافة (صغير)', ru: 'Экскавация/Зубья ковша (Малый)', fr: 'Excavation/Dents de godet (Petit)', pt: 'Escavação/Dentes da caçamba (Pequeno)', it: 'Scavo/Denti benna (Piccolo)' },
+  '挖掘属性/GET(中型段)': { en: 'Excavation/Bucket Teeth (Medium)', es: 'Excavación/Dientes de cucharón (Mediano)', ar: 'الحفر/أسنان الجرافة (متوسط)', ru: 'Экскавация/Зубья ковша (Средний)', fr: 'Excavation/Dents de godet (Moyen)', pt: 'Escavação/Dentes da caçamba (Médio)', it: 'Scavo/Denti benna (Medio)' },
+  '挖掘属性/GET(大型段)': { en: 'Excavation/Bucket Teeth (Large)', es: 'Excavación/Dientes de cucharón (Grande)', ar: 'الحفر/أسنان الجرافة (كبير)', ru: 'Экскавация/Зубья ковша (Большой)', fr: 'Excavation/Dents de godet (Grand)', pt: 'Escavação/Dentes da caçamba (Grande)', it: 'Scavo/Denti benna (Grande)' },
+};
+
+export function getTranslatedCATSparePartCategory(category: string, language: string): string {
+  const translations = catSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
