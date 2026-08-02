@@ -161,6 +161,10 @@ export function getTranslatedSparePartDescription(description: string, language:
   if (translations && translations[language]) {
     return translations[language];
   }
+  // If not found and language is not 'en', try to find the English version and return it
+  if (language !== 'en' && translations && translations['en']) {
+    return translations['en'];
+  }
   return description;
 }
 
@@ -262,7 +266,16 @@ export const sanySparePartTranslations: Record<string, Record<string, string>> =
   '连杆-斗杆连接销': { en: 'Connecting Rod-Boom Arm Connection Pin', es: 'Pasador de conexión varilla-pluma', ar: 'دبوس توصيل القضيب-الذراع', ru: 'Штифт соединения рычага-стрелы', fr: 'Goupille de connexion tige-flèche', pt: 'Pino conexão haste-lança', it: 'Perno connessione asta-braccio' },
   '连杆-油缸连接销': { en: 'Connecting Rod-Cylinder Connection Pin', es: 'Pasador de conexión varilla-cilindro', ar: 'دبوس توصيل القضيب-الأسطوانة', ru: 'Штифт соединения рычага-цилиндра', fr: 'Goupille de connexion tige-cylindre', pt: 'Pino conexão haste-cilindro', it: 'Perno connessione asta-cilindro' },
   '斗杆连杆衬套': { en: 'Boom Arm Connecting Rod Bushing', es: 'Casquillo de varilla de pluma', ar: 'بوشينج قضيب الذراع', ru: 'Втулка рычага стрелы', fr: 'Silentbloc tige flèche', pt: 'Bucha haste lança', it: 'Boccola asta braccio' },
-  '铲斗衬套(斗杆处)': { en: 'Bucket Bushing (Boom Arm Position)', es: 'Casquillo de cucharrón (ubicación de pluma)', ar: 'بوشينج الدلو (موقع الذراع)', ru: 'Втулка ковша (место стрелы)', fr: 'Silentbloc godet (emplacement flèche)', pt: 'Bucha caçamba (local lança)', it: 'Boccola benna (posizione braccio)' }
+  '铲斗衬套(斗杆处)': { en: 'Bucket Bushing (Boom Arm Position)', es: 'Casquillo de cucharrón (ubicación de pluma)', ar: 'بوشينج الدلو (موقع الذراع)', ru: 'Втулка ковша (место стрелы)', fr: 'Silentbloc godet (emplacement flèche)', pt: 'Bucha caçamba (local lança)', it: 'Boccola benna (posizione braccio)' },
+  // English names for CAT parts (for translation lookup)
+  'Boom Cylinder Seal Repair Kit': { zh: '斗杆油缸密封修理包', es: 'Kit de reparación de sello de cilindro de pluma', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
+  'Bucket Cylinder Seal Repair Kit': { zh: '铲斗油缸密封修理包', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم أسطوانة الدلو', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'étanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
+  'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)': { zh: '铲斗油缸密封包(85mm杆/125mm缸径)', es: 'Kit de sello de cilindro de cucharrón (vástago 85mm/diámetro cilindro 125mm)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 85 مم/قطر أسطوانة 125 مم)', ru: 'Набор уплотнений цилиндра ковша (шток 85 мм/диаметр цилиндра 125 мм)', fr: 'Kit d\'étanchéité cylindre godet (tige 85mm/alésage cylindre 125mm)', pt: 'Kit vedação cilindro caçamba (haste 85mm/diâmetro cilindro 125mm)', it: 'Kit sigillo cilindro benna (stelo 85mm/diametro cilindro 125mm)' },
+  'Bucket Cylinder Seal Kit (65mm Rod, Old Model)': { zh: '铲斗油缸密封包(65mm杆,老款)', es: 'Kit de sello de cilindro de cucharrón (vástago 65mm, modelo antiguo)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 65 مم، موديل قديم)', ru: 'Набор уплотнений цилиндра ковша (шток 65 мм, старая модель)', fr: 'Kit d\'étanchéité cylindre godet (tige 65mm, ancien modèle)', pt: 'Kit vedação cilindro caçamba (haste 65mm, modelo antigo)', it: 'Kit sigillo cilindro benna (stelo 65mm, modello vecchio)' },
+  'Bucket-Boom Connection Pin': { zh: '铲斗-斗杆连接销', es: 'Pasador de conexión cucharrón-pluma', ar: 'دبوس توصيل الدلو-الذراع', ru: 'Штифт соединения ковша-стрелы', fr: 'Goupille de connexion godet-flèche', pt: 'Pino conexão caçamba-lança', it: 'Perno connessione benna-braccio' },
+  'Rod-Boom Connection Pin': { zh: '连杆-斗杆连接销', es: 'Pasador de conexión varilla-pluma', ar: 'دبوس توصيل القضيب-الذراع', ru: 'Штифт соединения рычага-стрелы', fr: 'Goupille de connexion tige-flèche', pt: 'Pino conexão haste-lança', it: 'Perno connessione asta-braccio' },
+  'Rod-Cylinder Connection Pin': { zh: '连杆-油缸连接销', es: 'Pasador de conexión varilla-cilindro', ar: 'دبوس توصيل القضيب-الأسطوانة', ru: 'Штифт соединения рычага-цилиндра', fr: 'Goupille de connexion tige-cylindre', pt: 'Pino conexão haste-cilindro', it: 'Perno connessione asta-cilindro' },
+  'Bucket Bushing (Boom Position)': { zh: '铲斗衬套(斗杆处)', es: 'Casquillo de cucharrón (ubicación de pluma)', ar: 'بوشينج الدلو (موقع الذراع)', ru: 'Втулка ковша (место стрелы)', fr: 'Silentbloc godet (emplacement flèche)', pt: 'Bucha caçamba (local lança)', it: 'Boccola benna (posizione braccio)' }
 };
 
 export function getTranslatedSanySparePartDescription(description: string, language: string): string {
