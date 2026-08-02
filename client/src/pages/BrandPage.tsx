@@ -16,7 +16,7 @@ import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedCATMachineDescription } from '@/data/catMachineTranslations';
-import { getTranslatedShantuiMachineName } from '@/data/shantuiMachineTranslations';
+import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription } from '@/data/shantuiMachineTranslations';
 import { getTranslatedShantuiSparePartDescription } from '@/data/sparePartsTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
 
@@ -289,7 +289,7 @@ export default function BrandPage() {
                       </div>
 
                       <MachineDescriptionTranslator
-                        description={brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? (getTranslatedShantuiMachineName(machine.model, language) + ' - ' + machine.description) : (translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description)}
+                        description={brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineDescription(machine.model, language) || machine.description : (translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description)}
                         className="text-xs leading-relaxed mb-4"
                         style={{ color: 'oklch(0.5 0.02 265)' }}
                       />

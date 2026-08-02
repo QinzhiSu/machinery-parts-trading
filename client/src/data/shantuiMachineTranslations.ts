@@ -154,3 +154,23 @@ export function getTranslatedShantuiMachineName(modelName: string, language: str
   if (!translations) return modelName;
   return translations[language] || translations['en'] || modelName;
 }
+
+// Full machine descriptions for each model
+export const shantuiMachineDescriptions: Record<string, Record<string, string>> = {
+  'Shantui SD16': {
+    zh: '山推 SD16 中型推土机。发动机：潍柴 WD10G220 (162 kW/220 HP)。铲刀类型：标准直铲 (SU)。铲刀容量：3.5 m³。履带：钢履带 (457mm)。传动：静液压。牵引力：150 kN。行驶速度：10 km/h。油箱：180 L。适用于一般推土、土地平整和施工现场准备。',
+    en: 'Shantui SD16 Medium Bulldozer. Engine: Weichai WD10G220 (162 kW/220 HP). Blade Type: Standard Straight (SU). Blade Capacity: 3.5 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 150 kN. Travel Speed: 10 km/h. Fuel Tank: 180 L. Ideal for general dozing, land clearing, and construction site preparation.',
+    es: 'Excavadora Shantui SD16 - Bulldozer Shantui SD16 medio. Motor: Weichai WD10G220 (162 kW/220 HP). Tipo de cuchilla: Recta estándar (SU). Capacidad de cuchilla: 3.5 m³. Chasis: Oruga de acero (457mm). Transmisión: Hidrostática. Fuerza de tracción: 150 kN. Velocidad de desplazamiento: 10 km/h. Depósito de combustible: 180 L. Ideal para niveladoras generales, limpieza de terrenos y preparación de sitios de construcción.',
+    ar: 'جرافة شانتوي SD16 متوسطة. المحرك: ويتشاي WD10G220 (162 كيلووات/220 حصان). نوع الشفرة: مستقيم قياسي (SU). سعة الشفرة: 3.5 م³. الهيكل السفلي: مسار فولاذي (457 مم). الناقل: هيدروستاتي. قوة الجر: 150 كيلونيوتن. سرعة التنقل: 10 كم/س. خزان الوقود: 180 لتر. مثالية للتسوية العامة وتنظيف الأراضي وتحضير مواقع البناء.',
+    ru: 'Бульдозер Shantui SD16 средний. Двигатель: Weichai WD10G220 (162 кВт/220 л.с.). Тип отвала: Прямой стандартный (SU). Объем отвала: 3.5 м³. Ходовая часть: Стальная гусеница (457 мм). Трансмиссия: Гидростатическая. Тяговое усилие: 150 кН. Скорость движения: 10 км/ч. Топливный бак: 180 л. Идеален для общего бульдозирования, расчистки земель и подготовки строительных площадок.',
+    fr: 'Bulldozer Shantui SD16 moyen. Moteur: Weichai WD10G220 (162 kW/220 ch). Type de lame: Droit standard (SU). Capacité de lame: 3.5 m³. Châssis: Chaîne d\'acier (457 mm). Transmission: Hydrostatique. Force de traction: 150 kN. Vitesse de déplacement: 10 km/h. Réservoir de carburant: 180 L. Idéal pour le bulldozing général, le défrichage et la préparation des sites de construction.',
+    pt: 'Escavadeira Shantui SD16 média. Motor: Weichai WD10G220 (162 kW/220 HP). Tipo de lâmina: Reta padrão (SU). Capacidade da lâmina: 3.5 m³. Chassis: Esteira de aço (457 mm). Transmissão: Hidrostática. Força de tração: 150 kN. Velocidade de deslocamento: 10 km/h. Tanque de combustível: 180 L. Ideal para nivelação geral, limpeza de terras e preparação de locais de construção.',
+    it: 'Escavatore Shantui SD16 medio. Motore: Weichai WD10G220 (162 kW/220 HP). Tipo di lama: Dritta standard (SU). Capacità della lama: 3.5 m³. Telaio: Cingolo in acciaio (457 mm). Trasmissione: Idrostatica. Forza di trazione: 150 kN. Velocità di movimento: 10 km/h. Serbatoio carburante: 180 L. Ideale per livellamento generale, bonifica terreni e preparazione siti di costruzione.'
+  }
+};
+
+export function getTranslatedShantuiMachineDescription(modelName: string, language: string = 'en'): string {
+  const descriptions = shantuiMachineDescriptions[modelName];
+  if (!descriptions) return '';
+  return descriptions[language] || descriptions['en'] || '';
+}
