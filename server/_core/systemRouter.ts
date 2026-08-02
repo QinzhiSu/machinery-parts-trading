@@ -50,8 +50,16 @@ export const systemRouter = router({
           ],
         });
 
-        const translation =
-          response.choices[0]?.message?.content || input.text;
+        let translation = response.choices[0]?.message?.content || input.text;
+
+        if (Array.isArray(translation)) {
+          translation = translation.map(item => {
+            if (typeof item === 'object' && 'text' in item) {
+              return item.text;
+            }
+            return '';
+          }).join('');
+        }
 
         return {
           translation,
