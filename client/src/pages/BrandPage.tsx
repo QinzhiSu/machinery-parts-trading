@@ -15,7 +15,7 @@ import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
-import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs } from '@/data/catMachineTranslations';
+import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
 import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedSanySparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
@@ -273,7 +273,7 @@ export default function BrandPage() {
                         {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineTitle(`SANY ${machine.model}`, language) : `${brand.name} ${machine.model}`}
                       </h3>
                       <p className="text-sm font-semibold mb-2" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineType(machine.name, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : machine.name}
+                        {brand.id === 'caterpillar' ? getTranslatedCATMachineType(machine.name, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineType(machine.name, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : machine.name}
                       </p>
 
                       {/* Specs */}

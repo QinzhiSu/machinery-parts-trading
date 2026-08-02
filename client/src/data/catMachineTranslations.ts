@@ -317,3 +317,56 @@ export function getTranslatedCATMachineSpecs(model: string, language: string = '
   if (!specs) return '';
   return specs[language] || specs['en'] || '';
 }
+
+
+// Machine type translations for CAT machines
+export const catMachineTypeTranslations: Record<string, Record<string, string>> = {
+  'Hydraulic Excavator': {
+    zh: '液压挖掘机',
+    en: 'Hydraulic Excavator',
+    es: 'Excavadora Hidráulica',
+    ar: 'حفار هيدروليكي',
+    ru: 'Гидравлический экскаватор',
+    fr: 'Pelle Hydraulique',
+    pt: 'Escavadeira Hidráulica',
+    it: 'Escavatore Idraulico'
+  },
+  'Hydraulic Excavator (Gas Powered)': {
+    zh: '液压挖掘机（天然气动力）',
+    en: 'Hydraulic Excavator (Gas Powered)',
+    es: 'Excavadora Hidráulica (Alimentada por Gas)',
+    ar: 'حفار هيدروليكي (يعمل بالغاز)',
+    ru: 'Гидравлический экскаватор (на газе)',
+    fr: 'Pelle Hydraulique (Alimentée au Gaz)',
+    pt: 'Escavadeira Hidráulica (Alimentada por Gás)',
+    it: 'Escavatore Idraulico (Alimentato a Gas)'
+  },
+  'Bulldozer': {
+    zh: '推土机',
+    en: 'Bulldozer',
+    es: 'Buldócer',
+    ar: 'جرافة',
+    ru: 'Бульдозер',
+    fr: 'Bouteur',
+    pt: 'Trator de Esteira',
+    it: 'Ruspa'
+  },
+  'Wheel Loader': {
+    zh: '轮式装载机',
+    en: 'Wheel Loader',
+    es: 'Cargador de Ruedas',
+    ar: 'محمل عجلات',
+    ru: 'Колесный погрузчик',
+    fr: 'Chargeuse sur Pneus',
+    pt: 'Carregadeira de Rodas',
+    it: 'Caricatrice su Ruote'
+  }
+};
+
+export function getTranslatedCATMachineType(machineType: string, language: string = 'en'): string {
+  const translations = catMachineTypeTranslations[machineType];
+  if (!translations) {
+    return machineType; // Return original if not found
+  }
+  return translations[language] || translations['en'] || machineType;
+}
