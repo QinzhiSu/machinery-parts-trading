@@ -38,9 +38,10 @@ export function useAutoTranslate() {
 
 
 
-  const { mutateAsync, isLoading: isTranslating } = trpc.system.translate.useMutation();
+  const [isTranslating, setIsTranslating] = useState(false);
+  const { mutateAsync, isPending: isMutationPending } = trpc.system.translate.useMutation();
 
-  const translateText = useCallback(
+    const translateText = useCallback(
     async (text: string, targetLanguage: Language = language as Language): Promise<string> => {
       // If target language is English, return original text
       if (targetLanguage === 'en' || !text) {
@@ -53,7 +54,7 @@ export function useAutoTranslate() {
         return translationCache[targetLanguage][cacheKey];
       }
 
-
+      setIsTranslating(true);
 
       try {
         const { translation } = await mutateAsync({
@@ -68,6 +69,8 @@ export function useAutoTranslate() {
       } catch (error) {
         console.error("Translation error:", error);
         return text; // Return original text on error
+      } finally {
+        setIsTranslating(false);
       }
     },
     [language, mutateAsync]
@@ -87,6 +90,10 @@ export function useAutoTranslate() {
   );
 
 
+
+  useEffect(() => {
+    setIsTranslating(isMutationPending);
+  }, [isMutationPending]);
 
   return useMemo(() => ({
     translateText,
