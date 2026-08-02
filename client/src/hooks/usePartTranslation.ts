@@ -136,112 +136,112 @@ const partDescriptionTranslations: Record<string, Record<string, string>> = {
   'Oil Filter': {
     en: 'Oil Filter',
     zh: '机油滤芯',
-    es: 'Oil Filter',
-    ar: 'Oil Filter',
-    ru: 'Oil Filter',
-    fr: 'Oil Filter',
-    pt: 'Oil Filter',
-    it: 'Oil Filter'
+    es: "Filtro de aceite",
+    ar: "فلتر الزيت",
+    ru: "Масляный фильтр",
+    fr: "Filtre a huile",
+    pt: "Filtro de óleo",
+    it: "Filtro olio"
   },
   'Oil Filter (New Model)': {
     en: 'Oil Filter (New Model)',
     zh: '机油滤芯(新款)',
-    es: 'Oil Filter (New Model)',
-    ar: 'Oil Filter (New Model)',
-    ru: 'Oil Filter (New Model)',
-    fr: 'Oil Filter (New Model)',
-    pt: 'Oil Filter (New Model)',
-    it: 'Oil Filter (New Model)'
+    es: "Filtro de aceite (nuevo modelo)",
+    ar: "فلتر الزيت (نموذج جديد)",
+    ru: "Масляный фильтр (новая модель)",
+    fr: "Filtre a huile (nouveau modele)",
+    pt: "Filtro de óleo (novo modelo)",
+    it: "Filtro olio (nuovo modello)"
   },
   'Fuel Filter (Secondary/Fine)': {
     en: 'Fuel Filter (Secondary/Fine)',
     zh: '燃油滤芯(二级/精滤)',
-    es: 'Fuel Filter (Secondary/Fine)',
-    ar: 'Fuel Filter (Secondary/Fine)',
-    ru: 'Fuel Filter (Secondary/Fine)',
-    fr: 'Fuel Filter (Secondary/Fine)',
-    pt: 'Fuel Filter (Secondary/Fine)',
-    it: 'Fuel Filter (Secondary/Fine)'
+    es: "Filtro de combustible (secundario/fino)",
+    ar: "فلتر الوقود (ثانوي/دقيق)",
+    ru: "Топливный фильтр (вторичный/тонкий)",
+    fr: "Filtre a carburant (secondaire/fin)",
+    pt: "Filtro de combustível (secundário/fino)",
+    it: "Filtro carburante (secondario/fine)"
   },
   'Hydraulic Oil Filter': {
     en: 'Hydraulic Oil Filter',
     zh: '液压油滤芯',
-    es: 'Hydraulic Oil Filter',
-    ar: 'Hydraulic Oil Filter',
-    ru: 'Hydraulic Oil Filter',
-    fr: 'Hydraulic Oil Filter',
-    pt: 'Hydraulic Oil Filter',
-    it: 'Hydraulic Oil Filter'
+    es: "Filtro de aceite hidraulico",
+    ar: "فلتر الزيت الهيدروليكي",
+    ru: "Гидравлический масляный фильтр",
+    fr: "Filtre a huile hydraulique",
+    pt: "Filtro de óleo hidráulico",
+    it: "Filtro olio idraulico"
   },
   'Hydraulic Oil Filter (New Model)': {
     en: 'Hydraulic Oil Filter (New Model)',
     zh: '液压油滤芯(新款)',
-    es: 'Hydraulic Oil Filter (New Model)',
-    ar: 'Hydraulic Oil Filter (New Model)',
-    ru: 'Hydraulic Oil Filter (New Model)',
-    fr: 'Hydraulic Oil Filter (New Model)',
-    pt: 'Hydraulic Oil Filter (New Model)',
-    it: 'Hydraulic Oil Filter (New Model)'
+    es: "Filtro de aceite hidraulico (nuevo modelo)",
+    ar: "فلتر الزيت الهيدروليكي (نموذج جديد)",
+    ru: "Гидравлический масляный фильтр (новая модель)",
+    fr: "Filtre a huile hydraulique (nouveau modele)",
+    pt: "Filtro de óleo hidráulico (novo modelo)",
+    it: "Filtro olio idraulico (nuovo modello)"
   },
   'Hydraulic Return Oil Filter': {
     en: 'Hydraulic Return Oil Filter',
     zh: '液压回油滤芯',
-    es: 'Hydraulic Return Oil Filter',
-    ar: 'Hydraulic Return Oil Filter',
-    ru: 'Hydraulic Return Oil Filter',
-    fr: 'Hydraulic Return Oil Filter',
-    pt: 'Hydraulic Return Oil Filter',
-    it: 'Hydraulic Return Oil Filter'
+    es: "Filtro de retorno de aceite hidraulico",
+    ar: "فلتر عودة الزيت الهيدروليكي",
+    ru: "Фильтр возврата гидравлического масла",
+    fr: "Filtre de retour d'huile hydraulique",
+    pt: "Filtro de retorno de óleo hidráulico",
+    it: "Filtro di ritorno olio idraulico"
   },
   'Air Filter (Outer Element)': {
     en: 'Air Filter (Outer Element)',
     zh: '空气滤芯(外芯)',
-    es: 'Air Filter (Outer Element)',
-    ar: 'Air Filter (Outer Element)',
-    ru: 'Air Filter (Outer Element)',
-    fr: 'Air Filter (Outer Element)',
-    pt: 'Air Filter (Outer Element)',
-    it: 'Air Filter (Outer Element)'
+    es: "Filtro de aire (elemento exterior)",
+    ar: "فلتر الهواء (العنصر الخارجي)",
+    ru: "Воздушный фильтр (внешний элемент)",
+    fr: "Filtre a air (element externe)",
+    pt: "Filtro de ar (elemento externo)",
+    it: "Filtro aria (elemento esterno)"
   },
   'Air Filter (Inner Element)': {
     en: 'Air Filter (Inner Element)',
     zh: '空气滤芯(内芯)',
-    es: 'Air Filter (Inner Element)',
-    ar: 'Air Filter (Inner Element)',
-    ru: 'Air Filter (Inner Element)',
-    fr: 'Air Filter (Inner Element)',
-    pt: 'Air Filter (Inner Element)',
-    it: 'Air Filter (Inner Element)'
+    es: "Filtro de aire (elemento interior)",
+    ar: "فلتر الهواء (العنصر الداخلي)",
+    ru: "Воздушный фильтр (внутренний элемент)",
+    fr: "Filtre a air (element interne)",
+    pt: "Filtro de ar (elemento interno)",
+    it: "Filtro aria (elemento interno)"
   },
   'Radiator Water Tank Assembly': {
     en: 'Radiator Water Tank Assembly',
     zh: '散热器水箱总成',
-    es: 'Radiator Water Tank Assembly',
-    ar: 'Radiator Water Tank Assembly',
-    ru: 'Radiator Water Tank Assembly',
-    fr: 'Radiator Water Tank Assembly',
-    pt: 'Radiator Water Tank Assembly',
-    it: 'Radiator Water Tank Assembly'
+    es: "Conjunto de tanque de agua del radiador",
+    ar: "مجموعة خزان المياه بالمشع",
+    ru: "Сборка бака охлаждающей жидкости радиатора",
+    fr: "Ensemble de réservoir d'eau du radiateur",
+    pt: "Conjunto de tanque de água do radiador",
+    it: "Assemblaggio serbatoio acqua radiatore"
   },
   'Turbocharger': {
     en: 'Turbocharger',
     zh: '涡轮增压器',
-    es: 'Turbocharger',
-    ar: 'Turbocharger',
-    ru: 'Turbocharger',
-    fr: 'Turbocharger',
-    pt: 'Turbocharger',
-    it: 'Turbocharger'
+    es: "Turbocompresor",
+    ar: "شاحن توربيني",
+    ru: "Турбокомпрессор",
+    fr: "Turbocompresseur",
+    pt: "Turbocompressor",
+    it: "Turbocompressore"
   },
   'Track Chain Assembly': {
     en: 'Track Chain Assembly',
     zh: '履带链条总成',
-    es: 'Track Chain Assembly',
-    ar: 'Track Chain Assembly',
-    ru: 'Track Chain Assembly',
-    fr: 'Track Chain Assembly',
-    pt: 'Track Chain Assembly',
-    it: 'Track Chain Assembly'
+    es: "Conjunto de cadena de pista",
+    ar: "مجموعة سلسلة المسار",
+    ru: "Сборка цепи гусеницы",
+    fr: "Ensemble de chaine de piste",
+    pt: "Conjunto de corrente de pista",
+    it: "Assemblaggio catena pista"
   },
   'Track Roller': {
     en: 'Track Roller',
@@ -266,12 +266,12 @@ const partDescriptionTranslations: Record<string, Record<string, string>> = {
   'Drive Sprocket': {
     en: 'Drive Sprocket',
     zh: '驱动链轮(Drive Sprocket)',
-    es: 'Drive Sprocket',
-    ar: 'Drive Sprocket',
-    ru: 'Drive Sprocket',
-    fr: 'Drive Sprocket',
-    pt: 'Drive Sprocket',
-    it: 'Drive Sprocket'
+    es: "Piñón impulsor",
+    ar: "رف القيادة",
+    ru: "Ведущее колесо",
+    fr: "Pignon moteur",
+    pt: "Pinhão de acionamento",
+    it: "Pignone motore"
   },
   'Carrier Roller': {
     en: 'Carrier Roller',
@@ -286,82 +286,82 @@ const partDescriptionTranslations: Record<string, Record<string, string>> = {
   'Bucket Tooth (Universal J Series)': {
     en: 'Bucket Tooth (Universal J Series)',
     zh: '铲斗斗齿(通用J系列)',
-    es: 'Bucket Tooth (Universal J Series)',
-    ar: 'Bucket Tooth (Universal J Series)',
-    ru: 'Bucket Tooth (Universal J Series)',
-    fr: 'Bucket Tooth (Universal J Series)',
-    pt: 'Bucket Tooth (Universal J Series)',
-    it: 'Bucket Tooth (Universal J Series)'
+    es: "Diente de cucharón (serie J universal)",
+    ar: "سن الجرافة (سلسلة J عالمية)",
+    ru: "Зуб ковша (универсальная серия J)",
+    fr: "Dent de godet (serie J universelle)",
+    pt: "Dente de caçamba (série J universal)",
+    it: "Dente benna (serie J universale)"
   },
   'Bucket Tooth Adapter': {
     en: 'Bucket Tooth Adapter',
     zh: '斗齿适配器(Adapter)',
-    es: 'Bucket Tooth Adapter',
-    ar: 'Bucket Tooth Adapter',
-    ru: 'Bucket Tooth Adapter',
-    fr: 'Bucket Tooth Adapter',
-    pt: 'Bucket Tooth Adapter',
-    it: 'Bucket Tooth Adapter'
+    es: "Adaptador de diente de cucharón",
+    ar: "محول سن الجرافة",
+    ru: "Адаптер зуба ковша",
+    fr: "Adaptateur de dent de godet",
+    pt: "Adaptador de dente de caçamba",
+    it: "Adattatore dente benna"
   },
   'Bucket Tooth Pin/Lock Pin (G.E.T.)': {
     en: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
     zh: '斗齿销/锁定销(Pin-G.E.T.)',
-    es: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
-    ar: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
-    ru: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
-    fr: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
-    pt: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
-    it: 'Bucket Tooth Pin/Lock Pin (G.E.T.)'
+    es: "Pasador de diente de cucharón/pasador de bloqueo (G.E.T.)",
+    ar: "دبوس سن الجرافة/دبوس القفل (G.E.T.)",
+    ru: "Штифт зуба ковша/стопорный штифт (G.E.T.)",
+    fr: "Goupille de dent de godet/goupille de verrouillage (G.E.T.)",
+    pt: "Pino de dente de caçamba/pino de travamento (G.E.T.)",
+    it: "Spina dente benna/spina di blocco (G.E.T.)"
   },
   'Final Drive/Travel Reduction Gear Assembly': {
     en: 'Final Drive/Travel Reduction Gear Assembly',
     zh: '最终驱动/行走减速机总成',
-    es: 'Final Drive/Travel Reduction Gear Assembly',
-    ar: 'Final Drive/Travel Reduction Gear Assembly',
-    ru: 'Final Drive/Travel Reduction Gear Assembly',
-    fr: 'Final Drive/Travel Reduction Gear Assembly',
-    pt: 'Final Drive/Travel Reduction Gear Assembly',
-    it: 'Final Drive/Travel Reduction Gear Assembly'
+    es: "Conjunto de engranaje de reducción de marcha final/viaje",
+    ar: "مجموعة تروس التخفيض النهائي/السفر",
+    ru: "Сборка редуктора окончательного привода/хода",
+    fr: "Ensemble de reducteur de marche finale/voyage",
+    pt: "Conjunto de engrenagem de redução de marcha final/viagem",
+    it: "Assemblaggio riduttore marcia finale/viaggio"
   },
   'Travel (Track) Motor': {
     en: 'Travel (Track) Motor',
     zh: '行走(履带)马达',
-    es: 'Travel (Track) Motor',
-    ar: 'Travel (Track) Motor',
-    ru: 'Travel (Track) Motor',
-    fr: 'Travel (Track) Motor',
-    pt: 'Travel (Track) Motor',
-    it: 'Travel (Track) Motor'
+    es: "Motor de viaje (pista)",
+    ar: "محرك السفر (المسار)",
+    ru: "Мотор хода (гусеница)",
+    fr: "Moteur de voyage (piste)",
+    pt: "Motor de viagem (pista)",
+    it: "Motore di viaggio (pista)"
   },
   'Swing (Turntable) Motor and Reduction Gear': {
     en: 'Swing (Turntable) Motor and Reduction Gear',
     zh: '回转(转台)马达及减速机',
-    es: 'Swing (Turntable) Motor and Reduction Gear',
-    ar: 'Swing (Turntable) Motor and Reduction Gear',
-    ru: 'Swing (Turntable) Motor and Reduction Gear',
-    fr: 'Swing (Turntable) Motor and Reduction Gear',
-    pt: 'Swing (Turntable) Motor and Reduction Gear',
-    it: 'Swing (Turntable) Motor and Reduction Gear'
+    es: "Motor de giro (torreta) y engranaje de reducción",
+    ar: "محرك التأرجح (الدوران) وتروس التخفيض",
+    ru: "Мотор поворота (поворотная платформа) и редуктор",
+    fr: "Moteur de rotation (tourelle) et reducteur",
+    pt: "Motor de giro (plataforma giratória) e engrenagem de redução",
+    it: "Motore di rotazione (torretta) e riduttore"
   },
   'Bucket Tooth (J300 Series, V-Type)': {
     en: 'Bucket Tooth (J300 Series, V-Type)',
     zh: '斗齿(J300系列,V型)',
-    es: 'Bucket Tooth (J300 Series, V-Type)',
-    ar: 'Bucket Tooth (J300 Series, V-Type)',
-    ru: 'Bucket Tooth (J300 Series, V-Type)',
-    fr: 'Bucket Tooth (J300 Series, V-Type)',
-    pt: 'Bucket Tooth (J300 Series, V-Type)',
-    it: 'Bucket Tooth (J300 Series, V-Type)'
+    es: "Diente de cucharón (serie J300, tipo V)",
+    ar: "سن الجرافة (سلسلة J300، نوع V)",
+    ru: "Зуб ковша (серия J300, V-образный)",
+    fr: "Dent de godet (serie J300, type V)",
+    pt: "Dente de caçamba (série J300, tipo V)",
+    it: "Dente benna (serie J300, tipo V)"
   },
   'Bucket Tooth Adapter (J300 Side-Lock)': {
     en: 'Bucket Tooth Adapter (J300 Side-Lock)',
     zh: '斗齿适配器(J300侧销式)',
-    es: 'Bucket Tooth Adapter (J300 Side-Lock)',
-    ar: 'Bucket Tooth Adapter (J300 Side-Lock)',
-    ru: 'Bucket Tooth Adapter (J300 Side-Lock)',
-    fr: 'Bucket Tooth Adapter (J300 Side-Lock)',
-    pt: 'Bucket Tooth Adapter (J300 Side-Lock)',
-    it: 'Bucket Tooth Adapter (J300 Side-Lock)'
+    es: "Adaptador de diente de cucharón (bloqueo lateral J300)",
+    ar: "محول سن الجرافة (قفل جانبي J300)",
+    ru: "Адаптер зуба ковша (боковой замок J300)",
+    fr: "Adaptateur de dent de godet (verrouillage lateral J300)",
+    pt: "Adaptador de dente de caçamba (travamento lateral J300)",
+    it: "Adattatore dente benna (blocco laterale J300)"
   },
   'Bucket Tooth (J350 Series, HD Penetrating Type)': {
     en: 'Bucket Tooth (J350 Series, HD Penetrating Type)',
@@ -376,12 +376,12 @@ const partDescriptionTranslations: Record<string, Record<string, string>> = {
   'Bucket Tooth (J350 Series, Universal Type)': {
     en: 'Bucket Tooth (J350 Series, Universal Type)',
     zh: '斗齿(J350系列,通用型)',
-    es: 'Bucket Tooth (J350 Series, Universal Type)',
-    ar: 'Bucket Tooth (J350 Series, Universal Type)',
-    ru: 'Bucket Tooth (J350 Series, Universal Type)',
-    fr: 'Bucket Tooth (J350 Series, Universal Type)',
-    pt: 'Bucket Tooth (J350 Series, Universal Type)',
-    it: 'Bucket Tooth (J350 Series, Universal Type)'
+    es: "Diente de cucharón (serie J350, tipo universal)",
+    ar: "سن الجرافة (سلسلة J350، نوع عالمي)",
+    ru: "Зуб ковша (серия J350, универсальный тип)",
+    fr: "Dent de godet (serie J350, type universel)",
+    pt: "Dente de caçamba (série J350, tipo universal)",
+    it: "Dente benna (serie J350, tipo universale)"
   },
   'Bucket Tooth (J350 Friction/Wear Type)': {
     en: 'Bucket Tooth (J350 Friction/Wear Type)',
@@ -396,22 +396,22 @@ const partDescriptionTranslations: Record<string, Record<string, string>> = {
   'Bucket Tooth (J400/J460 Series)': {
     en: 'Bucket Tooth (J400/J460 Series)',
     zh: '斗齿(J400/J460系列)',
-    es: 'Bucket Tooth (J400/J460 Series)',
-    ar: 'Bucket Tooth (J400/J460 Series)',
-    ru: 'Bucket Tooth (J400/J460 Series)',
-    fr: 'Bucket Tooth (J400/J460 Series)',
-    pt: 'Bucket Tooth (J400/J460 Series)',
-    it: 'Bucket Tooth (J400/J460 Series)'
+    es: "Diente de cucharón (serie J400/J460)",
+    ar: "سن الجرافة (سلسلة J400/J460)",
+    ru: "Зуб ковша (серия J400/J460)",
+    fr: "Dent de godet (serie J400/J460)",
+    pt: "Dente de caçamba (série J400/J460)",
+    it: "Dente benna (serie J400/J460)"
   },
   'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': {
     en: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
     zh: '斗齿(J300大修/推土机焊接型适配器)',
-    es: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
-    ar: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
-    ru: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
-    fr: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
-    pt: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
-    it: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)'
+    es: "Diente de cucharón (adaptador soldado de reparación mayor/topadora J300)",
+    ar: "سن الجرافة (محول ملحوم بإصلاح رئيسي/جرافة J300)",
+    ru: "Зуб ковша (адаптер сварной для капитального ремонта/бульдозер J300)",
+    fr: "Dent de godet (adaptateur soude reparation majeure/bouteur J300)",
+    pt: "Dente de caçamba (adaptador soldado reparo maior/escavadeira J300)",
+    it: "Dente benna (adattatore saldato riparazione maggiore/bulldozer J300)"
   },
   'Boom Cylinder Seal Repair Kit': {
     en: 'Boom Cylinder Seal Repair Kit',
