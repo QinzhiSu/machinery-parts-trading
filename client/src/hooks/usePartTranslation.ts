@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getTranslatedSparePartCategory, getTranslatedSparePartDescription } from '@/data/sparePartsTranslations';
+import { getTranslatedSparePartCategory, getTranslatedSparePartDescription, getTranslatedShantuiSparePartDescription } from '@/data/sparePartsTranslations';
 
 // Translation map for machine and spare part descriptions
 const machineDescriptionTranslations: Record<string, Record<string, string>> = {
@@ -759,7 +759,13 @@ export function usePartTranslation() {
   };
 
   const translateDescription = (description: string): string => {
-    // First try to use the comprehensive sparePartsTranslations
+    // First try to use Shantui-specific translations
+    const shantuiTranslated = getTranslatedShantuiSparePartDescription(description, language);
+    if (shantuiTranslated !== description) {
+      return shantuiTranslated;
+    }
+    
+    // Then try to use the comprehensive sparePartsTranslations
     const translatedFromSparePartsTranslations = getTranslatedSparePartDescription(description, language);
     if (translatedFromSparePartsTranslations !== description) {
       return translatedFromSparePartsTranslations;
