@@ -170,17 +170,17 @@ export const brands: Brand[] = [
       }
     ],
     spareParts: [
-      { id: 'cat-sp-1', partNumber: '1R-0739', name: '机油滤芯', description: "CAT part. Replace during maintenance every 250-500 hours.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-1', partNumber: '1R-0739', name: 'Oil Filter', description: "CAT part. Replace during maintenance every 250-500 hours.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-2', partNumber: '322-3154', name: '机油滤芯(新款)', description: "CAT part. Replace during maintenance every 250-500 hours.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-3', partNumber: '1R-0750', name: '燃油滤芯(二级/精滤)', description: "CAT part. Replace every 250-500 hours or based on fuel quality.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-4', partNumber: '179-9806', name: '液压油滤芯', description: "CAT part. Replace every 500-1000 hours or based on fluid analysis results.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-4', partNumber: '179-9806', name: 'Hydraulic Oil Filter', description: "CAT part. Replace every 500-1000 hours or based on fluid analysis results.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-5', partNumber: '093-7521', name: '液压油滤芯(新款)', description: "CAT part. Replace every 500-1000 hours.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-6', partNumber: '209-6000', name: '液压回油滤芯', description: "CAT part. Replace every 500-1000 hours.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-6', partNumber: '209-6000', name: 'Hydraulic Return Oil Filter', description: "CAT part. Replace every 500-1000 hours.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-7', partNumber: '6I-2501', name: '空气滤芯(外芯)', description: "CAT part. Replace every 250-500 hours or based on dust environment.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-8', partNumber: '6I-2502', name: '空气滤芯(内芯)', description: "CAT part. Replace with outer element or replace inner element every 2 outer element changes.", image: '/manus-storage/cat_ee9e5401.png', category: '保养/滤清系统', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-9', partNumber: '193-2767', name: '散热器水箱总成', description: "CAT part. Replace if overheating or leaking.", image: '/manus-storage/cat_ee9e5401.png', category: '冷却系统', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-10', partNumber: '49178-00520', name: '涡轮增压器', description: "CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).", image: '/manus-storage/cat_ee9e5401.png', category: '增压/进气', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-11', partNumber: '9W-3137', name: '履带链条总成', description: "CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).", image: '/manus-storage/cat_ee9e5401.png', category: '底盘/履带系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-9', partNumber: '193-2767', name: 'Radiator Water Tank Assembly', description: "CAT part. Replace if overheating or leaking.", image: '/manus-storage/cat_ee9e5401.png', category: '冷却系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-10', partNumber: '49178-00520', name: 'Turbocharger', description: "CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).", image: '/manus-storage/cat_ee9e5401.png', category: '增压/进气', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-11', partNumber: '9W-3137', name: 'Track Chain Assembly', description: "CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).", image: '/manus-storage/cat_ee9e5401.png', category: '底盘/履带系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-12', partNumber: '348-1867', name: '下托链轮(track roller)', description: "CAT part. Replace if leaking or worn.", image: '/manus-storage/cat_ee9e5401.png', category: '底盘/履带系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-13', partNumber: '248-7143', name: '前导向轮(Front Idler)', description: "CAT part. Replace if worn or making abnormal noise.", image: '/manus-storage/cat_ee9e5401.png', category: '底盘/履带系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-14', partNumber: '', name: '驱动链轮(Drive Sprocket)', description: "CAT part. Replace when gear teeth are worn or broken.", image: '/manus-storage/cat_ee9e5401.png', category: '底盘/履带系统', compatibleModels: ["CAT 320", "CAT 320D"] },
@@ -188,7 +188,7 @@ export const brands: Brand[] = [
       { id: 'cat-sp-16', partNumber: '1U-3351', name: '铲斗斗齿(通用J系列)', description: "CAT part. Replace when worn to limit or cracked (high-frequency replacement part).", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘属性/GET', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-17', partNumber: '', name: '斗齿适配器(Adapter)', description: "CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘属性/GET', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-18', partNumber: '6Y-3394', name: '斗齿销/锁定销(Pin-G.E.T.)', description: "CAT part. Replace synchronously every time teeth are replaced.", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘属性/GET', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-19', partNumber: '499-0030', name: '最终驱动/行走减速机总成', description: "CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).", image: '/manus-storage/cat_ee9e5401.png', category: '传动系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-19', partNumber: '499-0030', name: 'Final Drive/Travel Reduction Gear Assembly', description: "CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).", image: '/manus-storage/cat_ee9e5401.png', category: '传动系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-20', partNumber: '', name: '行走(履带)马达', description: "CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).", image: '/manus-storage/cat_ee9e5401.png', category: '传动系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-21', partNumber: '', name: '回转(转台)马达及减速机', description: "CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).", image: '/manus-storage/cat_ee9e5401.png', category: '传动系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-22', partNumber: '183-5300 (1U3302V)', name: '斗齿(J300系列,V型)', description: "CAT part. Replace when worn to limit or cracked (high-frequency replacement part).", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘属性/GET(小型段)', compatibleModels: ["CAT 320", "CAT 320D"] },
@@ -205,7 +205,7 @@ export const brands: Brand[] = [
       { id: 'cat-sp-33', partNumber: '087-5805', name: 'Bucket-Boom Connection Pin', description: "CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-34', partNumber: '087-5806', name: 'Rod-Boom Connection Pin', description: "CAT part. Replace when abnormal noise or excessive clearance occurs.", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-35', partNumber: '087-5845', name: 'Rod-Cylinder Connection Pin', description: "CAT part. Replace when abnormal noise or excessive clearance occurs.", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
-      { id: 'cat-sp-36', partNumber: '163-3749', name: '斗杆连杆衬套', description: "CAT part. Replace with pin, high-frequency wear part.", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
+      { id: 'cat-sp-36', partNumber: '163-3749', name: 'Rod-Boom Connection Bushing', description: "CAT part. Replace with pin, high-frequency wear part.", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] },
       { id: 'cat-sp-37', partNumber: '137-2919', name: 'Bucket Bushing (Boom Position)', description: "CAT part. Replace with pin, high-frequency wear part.", image: '/manus-storage/cat_ee9e5401.png', category: '挖掘臂销套系统', compatibleModels: ["CAT 320", "CAT 320D"] }
     ]
   },
@@ -334,7 +334,7 @@ export const brands: Brand[] = [
       }
     ],
     spareParts: [
-      { id: 'shantui-sp-1', partNumber: '61000070005', name: '机油滤芯', description: "SHANTUI 零件。250-500小时随保养更换", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
+      { id: 'shantui-sp-1', partNumber: '61000070005', name: 'Oil Filter', description: "SHANTUI 零件。250-500小时随保养更换", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
       { id: 'shantui-sp-2', partNumber: '612600081334', name: '柴油滤芯', description: "SHANTUI 零件。250-500小时,雨季/劣质油缩短", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
       { id: 'shantui-sp-3', partNumber: '4070801 (FS1003)', name: '柴油滤芯(SD22)', description: "SHANTUI 零件。250-500小时", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
       { id: 'shantui-sp-4', partNumber: '3315843', name: '柴油粗滤器', description: "SHANTUI 零件。250-500小时", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
@@ -342,7 +342,7 @@ export const brands: Brand[] = [
       { id: 'shantui-sp-6', partNumber: '6127-81-7412T', name: '空气滤芯(SD22外芯)', description: "SHANTUI 零件。250-500小时", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
       { id: 'shantui-sp-7', partNumber: '16Y-75-23200', name: '转向液压油滤芯', description: "SHANTUI 零件。500-1000小时", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
       { id: 'shantui-sp-8', partNumber: '175-49-11580', name: '变速箱滤芯', description: "SHANTUI 零件。500-1000小时", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
-      { id: 'shantui-sp-9', partNumber: 'FY-5290', name: '液压油滤芯', description: "SHANTUI 零件。500-1000小时或视油液检测", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
+      { id: 'shantui-sp-9', partNumber: 'FY-5290', name: 'Hydraulic Oil Filter', description: "SHANTUI 零件。500-1000小时或视油液检测", image: '/manus-storage/shantui_679b20ec.png', category: '保养/滤清系统', compatibleModels: ["Shantui SD", "SD32"] },
       { id: 'shantui-sp-10', partNumber: '3016627', name: '蓄电池充电发电机(SD22)', description: "SHANTUI 零件。发电异常/异响时更换", image: '/manus-storage/shantui_679b20ec.png', category: '电气/启动', compatibleModels: ["Shantui SD", "SD32"] },
       { id: 'shantui-sp-11', partNumber: '通用件(可配Denso', name: '发电机总成(28V/45A通用)', description: "SHANTUI 零件。发电异常/异响时更换", image: '/manus-storage/shantui_679b20ec.png', category: '电气/启动', compatibleModels: ["Shantui SD", "SD32"] },
       { id: 'shantui-sp-12', partNumber: 'YJ355', name: '液力变矩器总成(SD16)', description: "SHANTUI 零件。异响/传动效率下降时更换(大修类)", image: '/manus-storage/shantui_679b20ec.png', category: '传动/变速系统', compatibleModels: ["Shantui SD", "SD32"] },
@@ -517,12 +517,12 @@ export const brands: Brand[] = [
       }
     ],
     spareParts: [
-      { id: 'xcmg-sp-1', partNumber: '860115046', name: '液压油滤芯', description: "XCMG 零件。500-1000小时或视油液检测", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
+      { id: 'xcmg-sp-1', partNumber: '860115046', name: 'Hydraulic Oil Filter', description: "XCMG 零件。500-1000小时或视油液检测", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
       { id: 'xcmg-sp-2', partNumber: '860117355', name: '空气滤芯', description: "XCMG 零件。250-500小时或视灰尘环境", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
-      { id: 'xcmg-sp-3', partNumber: '803164329 (SH60472)', name: '液压回油滤芯', description: "XCMG 零件。500-1000小时", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
+      { id: 'xcmg-sp-3', partNumber: '803164329 (SH60472)', name: 'Hydraulic Return Oil Filter', description: "XCMG 零件。500-1000小时", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
       { id: 'xcmg-sp-4', partNumber: '860130116', name: '空气滤芯套装(内外芯)', description: "XCMG 零件。随外芯周期同步更换内芯", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
       { id: 'xcmg-sp-5', partNumber: '803164591', name: '液压油滤芯(变体)', description: "XCMG 零件。500-1000小时", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
-      { id: 'xcmg-sp-6', partNumber: '860133763', name: '机油滤芯', description: "XCMG 零件。250-500小时随保养更换", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
+      { id: 'xcmg-sp-6', partNumber: '860133763', name: 'Oil Filter', description: "XCMG 零件。250-500小时随保养更换", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
       { id: 'xcmg-sp-7', partNumber: '803086817', name: '空气滤芯(ZL50)', description: "XCMG 零件。250-500小时", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
       { id: 'xcmg-sp-8', partNumber: '803300971', name: '机油滤芯(带锁止阀)', description: "XCMG 零件。250-500小时", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
       { id: 'xcmg-sp-9', partNumber: '803164216', name: '液压油滤芯(型号2)', description: "XCMG 零件。500-1000小时", image: '/manus-storage/xcmg_29a234a0.png', category: '保养/滤清系统', compatibleModels: ["XCMG ZL50G", "ZL50GN"] },
@@ -579,9 +579,9 @@ export const brands: Brand[] = [
       { id: 'lg-ltc900t5', model: 'ltc900t5', name: 'Truck Crane', specs: '90 ton | 350 kW | Max Boom: 45 m', image: '/manus-storage/ltc900t5_5b01386e.png', description: 'LiuGong ltc900t5 Truck Crane. Engine: Weichai WD615 (350 kW / 476 HP). Max Lifting Capacity: 90 ton. Max Boom Length: 45 m. Heavy lifting.' }
     ],
     spareParts: [
-      { id: 'liugong-sp-1', partNumber: '53C0005', name: '液压回油滤芯', description: "LIUGONG 零件。500-1000小时或视油液检测", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
-      { id: 'liugong-sp-2', partNumber: '53C0053', name: '机油滤芯', description: "LIUGONG 零件。250-500小时随保养更换", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
-      { id: 'liugong-sp-3', partNumber: '53C0953', name: '液压油滤芯', description: "LIUGONG 零件。500-1000小时", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
+      { id: 'liugong-sp-1', partNumber: '53C0005', name: 'Hydraulic Return Oil Filter', description: "LIUGONG 零件。500-1000小时或视油液检测", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
+      { id: 'liugong-sp-2', partNumber: '53C0053', name: 'Oil Filter', description: "LIUGONG 零件。250-500小时随保养更换", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
+      { id: 'liugong-sp-3', partNumber: '53C0953', name: 'Hydraulic Oil Filter', description: "LIUGONG 零件。500-1000小时", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
       { id: 'liugong-sp-4', partNumber: '53C0576', name: '柴油滤芯', description: "LIUGONG 零件。250-500小时或视油品", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
       { id: 'liugong-sp-5', partNumber: '53C0011 (SFM-516)', name: '液压回油滤芯(型号2)', description: "LIUGONG 零件。500-1000小时", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
       { id: 'liugong-sp-6', partNumber: '53C0167', name: '先导液压油滤芯', description: "LIUGONG 零件。500-1000小时", image: '/manus-storage/liugong1_81eaa09f.png', category: '保养/滤清系统', compatibleModels: ["Liugong CLG856", "CLG856H"] },
@@ -810,7 +810,7 @@ export const brands: Brand[] = [
     ],
     spareParts: [
       { id: 'sany-sp-1', partNumber: '60201217', name: '燃油滤芯', description: "SANY 零件。250-500小时随保养更换", image: '/manus-storage/sany_5f4793a0.png', category: '保养/滤清系统', compatibleModels: ["SANY SY", "SY365"] },
-      { id: 'sany-sp-2', partNumber: 'B222100000551', name: '机油滤芯', description: "SANY 零件。250-500小时随保养更换", image: '/manus-storage/sany_5f4793a0.png', category: '保养/滤清系统', compatibleModels: ["SANY SY", "SY365"] },
+      { id: 'sany-sp-2', partNumber: 'B222100000551', name: 'Oil Filter', description: "SANY 零件。250-500小时随保养更换", image: '/manus-storage/sany_5f4793a0.png', category: '保养/滤清系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-3', partNumber: '60033346', name: '燃油滤芯(老款)', description: "SANY 零件。250-500小时", image: '/manus-storage/sany_5f4793a0.png', category: '保养/滤清系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-4', partNumber: 'JM-2034', name: '机油滤芯(SY215C/225C系列)', description: "SANY 零件。250-500小时", image: '/manus-storage/sany_5f4793a0.png', category: '保养/滤清系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-5', partNumber: 'B222100000521', name: '燃油滤芯(新款9系)', description: "SANY 零件。250-500小时", image: '/manus-storage/sany_5f4793a0.png', category: '保养/滤清系统', compatibleModels: ["SANY SY", "SY365"] },
@@ -821,12 +821,12 @@ export const brands: Brand[] = [
       { id: 'sany-sp-10', partNumber: '', name: '驱动链轮', description: "SANY 零件。轮齿磨损/断齿时更换(大修类高价件)", image: '/manus-storage/sany_5f4793a0.png', category: '底盘/履带系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-11', partNumber: '', name: '下托链轮(Bottom Roller)', description: "SANY 零件。漏油/磨损时更换", image: '/manus-storage/sany_5f4793a0.png', category: '底盘/履带系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-12', partNumber: '', name: '上托轮(Top Roller/Carrier Roller)', description: "SANY 零件。漏油/磨损时更换", image: '/manus-storage/sany_5f4793a0.png', category: '底盘/履带系统', compatibleModels: ["SANY SY", "SY365"] },
-      { id: 'sany-sp-13', partNumber: '', name: '履带链条总成', description: "SANY 零件。履带松旷/磨损超限时更换(大修类高价件)", image: '/manus-storage/sany_5f4793a0.png', category: '底盘/履带系统', compatibleModels: ["SANY SY", "SY365"] },
+      { id: 'sany-sp-13', partNumber: '', name: 'Track Chain Assembly', description: "SANY 零件。履带松旷/磨损超限时更换(大修类高价件)", image: '/manus-storage/sany_5f4793a0.png', category: '底盘/履带系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-14', partNumber: 'Trasteel Track', name: '履带板/track shoe', description: "SANY 零件。磨损/断裂时更换", image: '/manus-storage/sany_5f4793a0.png', category: '底盘/履带系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-15', partNumber: 'A28VO130', name: '主液压泵(Rexroth型)', description: "SANY 零件。异响/供油不足/压力下降时更换(大修类高价件)", image: '/manus-storage/sany_5f4793a0.png', category: '液压系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-16', partNumber: '', name: '行走(履带)马达/最终驱动总成', description: "SANY 零件。异响/爬坡无力时更换(大修类高价件)", image: '/manus-storage/sany_5f4793a0.png', category: '液压系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-17', partNumber: 'KYB', name: '回转(转台)马达及减速机', description: "SANY 零件。转台异响/回转无力时更换(大修类)", image: '/manus-storage/sany_5f4793a0.png', category: '液压系统', compatibleModels: ["SANY SY", "SY365"] },
-      { id: 'sany-sp-18', partNumber: 'Cummins', name: '涡轮增压器', description: "SANY 零件。动力下降/异响/漏油时更换(大修类)", image: '/manus-storage/sany_5f4793a0.png', category: '发动机系统', compatibleModels: ["SANY SY", "SY365"] },
+      { id: 'sany-sp-18', partNumber: 'Cummins', name: 'Turbocharger', description: "SANY 零件。动力下降/异响/漏油时更换(大修类)", image: '/manus-storage/sany_5f4793a0.png', category: '发动机系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-19', partNumber: '', name: '发电机总成', description: "SANY 零件。发电异常/异响时更换", image: '/manus-storage/sany_5f4793a0.png', category: '发动机系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-20', partNumber: '', name: '起动机总成', description: "SANY 零件。启动无力/异响时更换", image: '/manus-storage/sany_5f4793a0.png', category: '发动机系统', compatibleModels: ["SANY SY", "SY365"] },
       { id: 'sany-sp-21', partNumber: '', name: '铲斗油缸密封修理包', description: "SANY 零件。漏油/密封老化时更换", image: '/manus-storage/sany_5f4793a0.png', category: '液压缸/密封件', compatibleModels: ["SANY SY", "SY365"] }
@@ -941,11 +941,11 @@ export const brands: Brand[] = [
       },
     ],
     spareParts: [
-      { id: 'komatsu-sp-1', partNumber: '600-211-5241(也作600-211-5240', name: '机油滤芯', description: "KOMATSU 零件。250-500小时随保养更换", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
+      { id: 'komatsu-sp-1', partNumber: '600-211-5241(也作600-211-5240', name: 'Oil Filter', description: "KOMATSU 零件。250-500小时随保养更换", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
       { id: 'komatsu-sp-2', partNumber: '6136-71-6120', name: '柴油滤芯', description: "KOMATSU 零件。250-500小时或视油品", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
       { id: 'komatsu-sp-3', partNumber: 'ST40611A', name: '空气滤芯(外芯)', description: "KOMATSU 零件。250-500小时或视灰尘环境", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
       { id: 'komatsu-sp-4', partNumber: 'ST40611B', name: '空气滤芯(内芯)', description: "KOMATSU 零件。随外芯周期同步更换", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
-      { id: 'komatsu-sp-5', partNumber: 'ST30805', name: '液压油滤芯', description: "KOMATSU 零件。500-1000小时或视油液检测", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
+      { id: 'komatsu-sp-5', partNumber: 'ST30805', name: 'Hydraulic Oil Filter', description: "KOMATSU 零件。500-1000小时或视油液检测", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
       { id: 'komatsu-sp-6', partNumber: 'ST30815', name: '先导液压滤芯', description: "KOMATSU 零件。500-1000小时", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
       { id: 'komatsu-sp-7', partNumber: '600-411-1151(WF2075)', name: '柴油滤芯(新款7/8系)', description: "KOMATSU 零件。250-500小时", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
       { id: 'komatsu-sp-8', partNumber: '600-311-9121', name: '柴油滤芯(通用型)', description: "KOMATSU 零件。250-500小时", image: '/manus-storage/komatsu_4cb14839.png', category: '保养/滤清系统', compatibleModels: ["Komatsu PC200", "PC200-8"] },
@@ -1011,19 +1011,19 @@ export const brands: Brand[] = [
       }
     ],
     spareParts: [
-      { id: 'isuzu-sp-1', partNumber: '1-87810-075-2', name: '机油滤芯', description: "ISUZU 零件。250-500小时随保养更换", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
+      { id: 'isuzu-sp-1', partNumber: '1-87810-075-2', name: 'Oil Filter', description: "ISUZU 零件。250-500小时随保养更换", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-2', partNumber: 'ST10716 (KRH0642', name: '机油滤芯(二级)', description: "ISUZU 零件。250-500小时", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-3', partNumber: 'ST10720 (KRH0643', name: '机油滤芯(型号2)', description: "ISUZU 零件。250-500小时", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-4', partNumber: 'ST20703 (KSP0281', name: '柴油滤芯', description: "ISUZU 零件。250-500小时或视油品", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-5', partNumber: 'ST40620AB (KRH0652+KRH1320)', name: '空气滤芯', description: "ISUZU 零件。250-500小时或视灰尘环境", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
-      { id: 'isuzu-sp-6', partNumber: 'ST30805 (71416241)', name: '液压油滤芯', description: "ISUZU 零件。500-1000小时或视油液检测", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
+      { id: 'isuzu-sp-6', partNumber: 'ST30805 (71416241)', name: 'Hydraulic Oil Filter', description: "ISUZU 零件。500-1000小时或视油液检测", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-7', partNumber: '30732 (83984918)', name: '液压油滤芯(型号2)', description: "ISUZU 零件。500-1000小时", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-8', partNumber: 'ST70810 (KRJ4008)', name: '液压油滤芯(型号3)', description: "ISUZU 零件。500-1000小时", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-9', partNumber: 'ST30813 (4294135)', name: '先导阀滤芯', description: "ISUZU 零件。500-1000小时", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-10', partNumber: '1-13200-487-2 (1132004872)', name: '机油滤芯(卡车版)', description: "ISUZU 零件。250-500小时", image: '/manus-storage/isuzu_208688e1.png', category: '保养/滤清系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-11', partNumber: '1-13610877-1', name: '水泵总成', description: "ISUZU 零件。冷却液渗漏/异响时更换", image: '/manus-storage/isuzu_208688e1.png', category: '冷却系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-12', partNumber: '1136500161 (1-13650016-1)', name: '水泵总成(型号2)', description: "ISUZU 零件。冷却液渗漏/异响时更换", image: '/manus-storage/isuzu_208688e1.png', category: '冷却系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
-      { id: 'isuzu-sp-13', partNumber: '114400-2720 (RHC62C)', name: '涡轮增压器', description: "ISUZU 零件。动力下降/异响/漏油时更换(大修类)", image: '/manus-storage/isuzu_208688e1.png', category: '进气/增压', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
+      { id: 'isuzu-sp-13', partNumber: '114400-2720 (RHC62C)', name: 'Turbocharger', description: "ISUZU 零件。动力下降/异响/漏油时更换(大修类)", image: '/manus-storage/isuzu_208688e1.png', category: '进气/增压', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-14', partNumber: '1-11310-199-0 (1113101990)', name: '机油泵总成', description: "ISUZU 零件。润滑不良/压力异常时更换(大修类)", image: '/manus-storage/isuzu_208688e1.png', category: '润滑系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-15', partNumber: '1-13100277-0 (1131002770)', name: '机油输送泵', description: "ISUZU 零件。润滑不良时更换", image: '/manus-storage/isuzu_208688e1.png', category: '润滑系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
       { id: 'isuzu-sp-16', partNumber: '898175-9510', name: '机油泵(高压型)', description: "ISUZU 零件。润滑不良/压力异常时更换", image: '/manus-storage/isuzu_208688e1.png', category: '润滑系统', compatibleModels: ["Isuzu 6BG1", "6HK1"] },
@@ -1134,7 +1134,7 @@ export const brands: Brand[] = [
         description: 'Shacman X6000 6×4 Tractor Truck. Premium tractor truck for long-haul transport. Engine: Weichai (350-400 kW). GVW: 40-50 ton. Transmission: Automatic. Cabin: Luxury sleeper cab with advanced features. Fuel Tank: 600L. Perfect for premium international transport.'
       }],
     spareParts: [
-      { id: 'shacman-sp-1', partNumber: '4110000556209', name: '机油滤芯', description: 'Shacman Delong 零件。5,000-10,000km随保养更换', image: '/manus-storage/shacman_273a0f44.png', category: '保养/滤清系统', compatibleModels: ["Shacman Delong", "Shacman X3000"] },
+      { id: 'shacman-sp-1', partNumber: '4110000556209', name: 'Oil Filter', description: 'Shacman Delong 零件。5,000-10,000km随保养更换', image: '/manus-storage/shacman_273a0f44.png', category: '保养/滤清系统', compatibleModels: ["Shacman Delong", "Shacman X3000"] },
       { id: 'shacman-sp-2', partNumber: '6126300080205', name: '柴油滤芯', description: 'Shacman Delong 零件。每20,000km或视油品', image: '/manus-storage/shacman_273a0f44.png', category: '保养/滤清系统', compatibleModels: ["Shacman Delong", "Shacman X3000"] },
       { id: 'shacman-sp-3', partNumber: '612630110319', name: '空气滤芯', description: 'Shacman Delong 零件。10,000-20,000km视路况', image: '/manus-storage/shacman_273a0f44.png', category: '保养/滤清系统', compatibleModels: ["Shacman Delong", "Shacman X3000"] },
       { id: 'shacman-sp-4', partNumber: 'DZ91189550169', name: '燃油粗滤器(油水分离器)', description: 'Shacman Delong 零件。5,000-10,000km,雨季/劣质油缩短', image: '/manus-storage/shacman_273a0f44.png', category: '保养/滤清系统', compatibleModels: ["Shacman Delong", "Shacman X3000"] },
@@ -1274,7 +1274,7 @@ export const brands: Brand[] = [
         description: 'Sinotruck HOWO 7 Heavy Duty Truck. Latest generation heavy-duty truck with maximum power. Engine: Weichai or Cummins (380-430 kW). GVW: 50-60 ton. Cargo Capacity: 30-35 m³. Advanced hydraulic system. Perfect for extreme mining and construction.'
       }],
     spareParts: [
-      { id: 'sinotruk-sp-1', partNumber: 'VG61000070005', name: '机油滤芯', description: "SINOTRUK 零件。5,000-10,000km随保养更换", image: '/manus-storage/sinotruck_d3e8e9bd.png', category: '保养/滤清系统', compatibleModels: ["Sinotruk HOWO", "WD615"] },
+      { id: 'sinotruk-sp-1', partNumber: 'VG61000070005', name: 'Oil Filter', description: "SINOTRUK 零件。5,000-10,000km随保养更换", image: '/manus-storage/sinotruck_d3e8e9bd.png', category: '保养/滤清系统', compatibleModels: ["Sinotruk HOWO", "WD615"] },
       { id: 'sinotruk-sp-2', partNumber: 'WG9725190055', name: '空气滤芯总成', description: "SINOTRUK 零件。视路况10,000-20,000km", image: '/manus-storage/sinotruck_d3e8e9bd.png', category: '保养/滤清系统', compatibleModels: ["Sinotruk HOWO", "WD615"] },
       { id: 'sinotruk-sp-3', partNumber: 'WG9925550110', name: '柴油粗滤器(油水分离器)', description: "SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期", image: '/manus-storage/sinotruck_d3e8e9bd.png', category: '保养/滤清系统', compatibleModels: ["Sinotruk HOWO", "WD615"] },
       { id: 'sinotruk-sp-4', partNumber: 'VG1560080012', name: '柴油精滤器', description: "SINOTRUK 零件。与粗滤器同步更换", image: '/manus-storage/sinotruck_d3e8e9bd.png', category: '保养/滤清系统', compatibleModels: ["Sinotruk HOWO", "WD615"] },
@@ -1386,7 +1386,7 @@ export const brands: Brand[] = [
         description: 'Toyota Tundra Pickup Truck. Full-size heavy-duty pickup truck. Engine: 5.7L V8 (280 kW). Transmission: Automatic. Payload: 1600 kg. Fuel Tank: 100L. Perfect for demanding work and heavy towing.'
       }],
     spareParts: [
-      { id: 'toyota-sp-1', partNumber: '90915-YZZJ3', name: '机油滤芯', description: 'Toyota Hilux 零件。5,000-10,000km随保养更换', image: '/manus-storage/toyota_parts_a1da12f5.png', category: '保养/滤清系统', compatibleModels: ["Hilux Revo", "Hilux Vigo"] },
+      { id: 'toyota-sp-1', partNumber: '90915-YZZJ3', name: 'Oil Filter', description: 'Toyota Hilux 零件。5,000-10,000km随保养更换', image: '/manus-storage/toyota_parts_a1da12f5.png', category: '保养/滤清系统', compatibleModels: ["Hilux Revo", "Hilux Vigo"] },
       { id: 'toyota-sp-2', partNumber: '17801-0L040', name: '空气滤芯', description: 'Toyota Hilux 零件。10,000-20,000km或视路况', image: '/manus-storage/toyota_parts_a1da12f5.png', category: '保养/滤清系统', compatibleModels: ["Hilux Revo", "Hilux Vigo"] },
       { id: 'toyota-sp-3', partNumber: '23390-0L090', name: '柴油滤芯(前置)', description: 'Toyota Hilux 零件。每20,000km,柴油车关键件', image: '/manus-storage/toyota_parts_a1da12f5.png', category: '保养/滤清系统', compatibleModels: ["Hilux Revo", "Hilux Vigo"] },
       { id: 'toyota-sp-4', partNumber: '87139-0K060', name: '空调/花粉滤芯', description: 'Toyota Hilux 零件。10,000-15,000km', image: '/manus-storage/toyota_parts_a1da12f5.png', category: '保养/滤清系统', compatibleModels: ["Hilux Revo", "Hilux Vigo"] },
@@ -1567,7 +1567,7 @@ export const brands: Brand[] = [
       }
     ],
     spareParts: [
-      { id: 'weichai-sp-1', partNumber: '61000070005(替代号W962', name: '机油滤芯', description: "WEICHAI 零件。250-500小时随保养更换", image: '/manus-storage/weichai_2cc7d2af.png', category: '保养/滤清系统', compatibleModels: ["Weichai WP10", "WP12"] },
+      { id: 'weichai-sp-1', partNumber: '61000070005(替代号W962', name: 'Oil Filter', description: "WEICHAI 零件。250-500小时随保养更换", image: '/manus-storage/weichai_2cc7d2af.png', category: '保养/滤清系统', compatibleModels: ["Weichai WP10", "WP12"] },
       { id: 'weichai-sp-2', partNumber: '612630080088(PRELINE 420,替代号PL420', name: '柴油滤芯(WP10专用)', description: "WEICHAI 零件。250-500小时或视油品", image: '/manus-storage/weichai_2cc7d2af.png', category: '保养/滤清系统', compatibleModels: ["Weichai WP10", "WP12"] },
       { id: 'weichai-sp-3', partNumber: '612600081334(替代号FF5622', name: '柴油滤芯(通用型)', description: "WEICHAI 零件。250-500小时", image: '/manus-storage/weichai_2cc7d2af.png', category: '保养/滤清系统', compatibleModels: ["Weichai WP10", "WP12"] },
       { id: 'weichai-sp-4', partNumber: '612630080087(替代号WDK11102', name: '柴油滤芯(型号2)', description: "WEICHAI 零件。250-500小时", image: '/manus-storage/weichai_2cc7d2af.png', category: '保养/滤清系统', compatibleModels: ["Weichai WP10", "WP12"] },

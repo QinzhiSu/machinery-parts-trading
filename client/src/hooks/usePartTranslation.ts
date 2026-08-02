@@ -132,7 +132,597 @@ const partDescriptionTranslations: Record<string, Record<string, string>> = {
     en: 'CAT part. Replace if abnormal noise or excessive clearance.',
     es: 'Pieza CAT. Reemplazar si hay ruido anormal o holgura excesiva.',
     ar: 'قطعة CAT. استبدل إذا كان هناك ضوضاء غير طبيعية أو فجوة مفرطة.'
-  }
+  },
+  'Oil Filter': {
+    en: 'Oil Filter',
+    zh: '机油滤芯',
+    es: 'Oil Filter',
+    ar: 'Oil Filter',
+    ru: 'Oil Filter',
+    fr: 'Oil Filter',
+    pt: 'Oil Filter',
+    it: 'Oil Filter'
+  },
+  'Oil Filter (New Model)': {
+    en: 'Oil Filter (New Model)',
+    zh: '机油滤芯(新款)',
+    es: 'Oil Filter (New Model)',
+    ar: 'Oil Filter (New Model)',
+    ru: 'Oil Filter (New Model)',
+    fr: 'Oil Filter (New Model)',
+    pt: 'Oil Filter (New Model)',
+    it: 'Oil Filter (New Model)'
+  },
+  'Fuel Filter (Secondary/Fine)': {
+    en: 'Fuel Filter (Secondary/Fine)',
+    zh: '燃油滤芯(二级/精滤)',
+    es: 'Fuel Filter (Secondary/Fine)',
+    ar: 'Fuel Filter (Secondary/Fine)',
+    ru: 'Fuel Filter (Secondary/Fine)',
+    fr: 'Fuel Filter (Secondary/Fine)',
+    pt: 'Fuel Filter (Secondary/Fine)',
+    it: 'Fuel Filter (Secondary/Fine)'
+  },
+  'Hydraulic Oil Filter': {
+    en: 'Hydraulic Oil Filter',
+    zh: '液压油滤芯',
+    es: 'Hydraulic Oil Filter',
+    ar: 'Hydraulic Oil Filter',
+    ru: 'Hydraulic Oil Filter',
+    fr: 'Hydraulic Oil Filter',
+    pt: 'Hydraulic Oil Filter',
+    it: 'Hydraulic Oil Filter'
+  },
+  'Hydraulic Oil Filter (New Model)': {
+    en: 'Hydraulic Oil Filter (New Model)',
+    zh: '液压油滤芯(新款)',
+    es: 'Hydraulic Oil Filter (New Model)',
+    ar: 'Hydraulic Oil Filter (New Model)',
+    ru: 'Hydraulic Oil Filter (New Model)',
+    fr: 'Hydraulic Oil Filter (New Model)',
+    pt: 'Hydraulic Oil Filter (New Model)',
+    it: 'Hydraulic Oil Filter (New Model)'
+  },
+  'Hydraulic Return Oil Filter': {
+    en: 'Hydraulic Return Oil Filter',
+    zh: '液压回油滤芯',
+    es: 'Hydraulic Return Oil Filter',
+    ar: 'Hydraulic Return Oil Filter',
+    ru: 'Hydraulic Return Oil Filter',
+    fr: 'Hydraulic Return Oil Filter',
+    pt: 'Hydraulic Return Oil Filter',
+    it: 'Hydraulic Return Oil Filter'
+  },
+  'Air Filter (Outer Element)': {
+    en: 'Air Filter (Outer Element)',
+    zh: '空气滤芯(外芯)',
+    es: 'Air Filter (Outer Element)',
+    ar: 'Air Filter (Outer Element)',
+    ru: 'Air Filter (Outer Element)',
+    fr: 'Air Filter (Outer Element)',
+    pt: 'Air Filter (Outer Element)',
+    it: 'Air Filter (Outer Element)'
+  },
+  'Air Filter (Inner Element)': {
+    en: 'Air Filter (Inner Element)',
+    zh: '空气滤芯(内芯)',
+    es: 'Air Filter (Inner Element)',
+    ar: 'Air Filter (Inner Element)',
+    ru: 'Air Filter (Inner Element)',
+    fr: 'Air Filter (Inner Element)',
+    pt: 'Air Filter (Inner Element)',
+    it: 'Air Filter (Inner Element)'
+  },
+  'Radiator Water Tank Assembly': {
+    en: 'Radiator Water Tank Assembly',
+    zh: '散热器水箱总成',
+    es: 'Radiator Water Tank Assembly',
+    ar: 'Radiator Water Tank Assembly',
+    ru: 'Radiator Water Tank Assembly',
+    fr: 'Radiator Water Tank Assembly',
+    pt: 'Radiator Water Tank Assembly',
+    it: 'Radiator Water Tank Assembly'
+  },
+  'Turbocharger': {
+    en: 'Turbocharger',
+    zh: '涡轮增压器',
+    es: 'Turbocharger',
+    ar: 'Turbocharger',
+    ru: 'Turbocharger',
+    fr: 'Turbocharger',
+    pt: 'Turbocharger',
+    it: 'Turbocharger'
+  },
+  'Track Chain Assembly': {
+    en: 'Track Chain Assembly',
+    zh: '履带链条总成',
+    es: 'Track Chain Assembly',
+    ar: 'Track Chain Assembly',
+    ru: 'Track Chain Assembly',
+    fr: 'Track Chain Assembly',
+    pt: 'Track Chain Assembly',
+    it: 'Track Chain Assembly'
+  },
+  'Track Roller': {
+    en: 'Track Roller',
+    zh: '下托链轮(track roller)',
+    es: 'Track Roller',
+    ar: 'Track Roller',
+    ru: 'Track Roller',
+    fr: 'Track Roller',
+    pt: 'Track Roller',
+    it: 'Track Roller'
+  },
+  'Front Idler': {
+    en: 'Front Idler',
+    zh: '前导向轮(Front Idler)',
+    es: 'Front Idler',
+    ar: 'Front Idler',
+    ru: 'Front Idler',
+    fr: 'Front Idler',
+    pt: 'Front Idler',
+    it: 'Front Idler'
+  },
+  'Drive Sprocket': {
+    en: 'Drive Sprocket',
+    zh: '驱动链轮(Drive Sprocket)',
+    es: 'Drive Sprocket',
+    ar: 'Drive Sprocket',
+    ru: 'Drive Sprocket',
+    fr: 'Drive Sprocket',
+    pt: 'Drive Sprocket',
+    it: 'Drive Sprocket'
+  },
+  'Carrier Roller': {
+    en: 'Carrier Roller',
+    zh: '上托轮(Carrier Roller)',
+    es: 'Carrier Roller',
+    ar: 'Carrier Roller',
+    ru: 'Carrier Roller',
+    fr: 'Carrier Roller',
+    pt: 'Carrier Roller',
+    it: 'Carrier Roller'
+  },
+  'Bucket Tooth (Universal J Series)': {
+    en: 'Bucket Tooth (Universal J Series)',
+    zh: '铲斗斗齿(通用J系列)',
+    es: 'Bucket Tooth (Universal J Series)',
+    ar: 'Bucket Tooth (Universal J Series)',
+    ru: 'Bucket Tooth (Universal J Series)',
+    fr: 'Bucket Tooth (Universal J Series)',
+    pt: 'Bucket Tooth (Universal J Series)',
+    it: 'Bucket Tooth (Universal J Series)'
+  },
+  'Bucket Tooth Adapter': {
+    en: 'Bucket Tooth Adapter',
+    zh: '斗齿适配器(Adapter)',
+    es: 'Bucket Tooth Adapter',
+    ar: 'Bucket Tooth Adapter',
+    ru: 'Bucket Tooth Adapter',
+    fr: 'Bucket Tooth Adapter',
+    pt: 'Bucket Tooth Adapter',
+    it: 'Bucket Tooth Adapter'
+  },
+  'Bucket Tooth Pin/Lock Pin (G.E.T.)': {
+    en: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
+    zh: '斗齿销/锁定销(Pin-G.E.T.)',
+    es: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
+    ar: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
+    ru: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
+    fr: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
+    pt: 'Bucket Tooth Pin/Lock Pin (G.E.T.)',
+    it: 'Bucket Tooth Pin/Lock Pin (G.E.T.)'
+  },
+  'Final Drive/Travel Reduction Gear Assembly': {
+    en: 'Final Drive/Travel Reduction Gear Assembly',
+    zh: '最终驱动/行走减速机总成',
+    es: 'Final Drive/Travel Reduction Gear Assembly',
+    ar: 'Final Drive/Travel Reduction Gear Assembly',
+    ru: 'Final Drive/Travel Reduction Gear Assembly',
+    fr: 'Final Drive/Travel Reduction Gear Assembly',
+    pt: 'Final Drive/Travel Reduction Gear Assembly',
+    it: 'Final Drive/Travel Reduction Gear Assembly'
+  },
+  'Travel (Track) Motor': {
+    en: 'Travel (Track) Motor',
+    zh: '行走(履带)马达',
+    es: 'Travel (Track) Motor',
+    ar: 'Travel (Track) Motor',
+    ru: 'Travel (Track) Motor',
+    fr: 'Travel (Track) Motor',
+    pt: 'Travel (Track) Motor',
+    it: 'Travel (Track) Motor'
+  },
+  'Swing (Turntable) Motor and Reduction Gear': {
+    en: 'Swing (Turntable) Motor and Reduction Gear',
+    zh: '回转(转台)马达及减速机',
+    es: 'Swing (Turntable) Motor and Reduction Gear',
+    ar: 'Swing (Turntable) Motor and Reduction Gear',
+    ru: 'Swing (Turntable) Motor and Reduction Gear',
+    fr: 'Swing (Turntable) Motor and Reduction Gear',
+    pt: 'Swing (Turntable) Motor and Reduction Gear',
+    it: 'Swing (Turntable) Motor and Reduction Gear'
+  },
+  'Bucket Tooth (J300 Series, V-Type)': {
+    en: 'Bucket Tooth (J300 Series, V-Type)',
+    zh: '斗齿(J300系列,V型)',
+    es: 'Bucket Tooth (J300 Series, V-Type)',
+    ar: 'Bucket Tooth (J300 Series, V-Type)',
+    ru: 'Bucket Tooth (J300 Series, V-Type)',
+    fr: 'Bucket Tooth (J300 Series, V-Type)',
+    pt: 'Bucket Tooth (J300 Series, V-Type)',
+    it: 'Bucket Tooth (J300 Series, V-Type)'
+  },
+  'Bucket Tooth Adapter (J300 Side-Lock)': {
+    en: 'Bucket Tooth Adapter (J300 Side-Lock)',
+    zh: '斗齿适配器(J300侧销式)',
+    es: 'Bucket Tooth Adapter (J300 Side-Lock)',
+    ar: 'Bucket Tooth Adapter (J300 Side-Lock)',
+    ru: 'Bucket Tooth Adapter (J300 Side-Lock)',
+    fr: 'Bucket Tooth Adapter (J300 Side-Lock)',
+    pt: 'Bucket Tooth Adapter (J300 Side-Lock)',
+    it: 'Bucket Tooth Adapter (J300 Side-Lock)'
+  },
+  'Bucket Tooth (J350 Series, HD Penetrating Type)': {
+    en: 'Bucket Tooth (J350 Series, HD Penetrating Type)',
+    zh: '斗齿(J350系列,HD穿透型)',
+    es: 'Bucket Tooth (J350 Series, HD Penetrating Type)',
+    ar: 'Bucket Tooth (J350 Series, HD Penetrating Type)',
+    ru: 'Bucket Tooth (J350 Series, HD Penetrating Type)',
+    fr: 'Bucket Tooth (J350 Series, HD Penetrating Type)',
+    pt: 'Bucket Tooth (J350 Series, HD Penetrating Type)',
+    it: 'Bucket Tooth (J350 Series, HD Penetrating Type)'
+  },
+  'Bucket Tooth (J350 Series, Universal Type)': {
+    en: 'Bucket Tooth (J350 Series, Universal Type)',
+    zh: '斗齿(J350系列,通用型)',
+    es: 'Bucket Tooth (J350 Series, Universal Type)',
+    ar: 'Bucket Tooth (J350 Series, Universal Type)',
+    ru: 'Bucket Tooth (J350 Series, Universal Type)',
+    fr: 'Bucket Tooth (J350 Series, Universal Type)',
+    pt: 'Bucket Tooth (J350 Series, Universal Type)',
+    it: 'Bucket Tooth (J350 Series, Universal Type)'
+  },
+  'Bucket Tooth (J350 Friction/Wear Type)': {
+    en: 'Bucket Tooth (J350 Friction/Wear Type)',
+    zh: '斗齿(J350摩擦磨损型)',
+    es: 'Bucket Tooth (J350 Friction/Wear Type)',
+    ar: 'Bucket Tooth (J350 Friction/Wear Type)',
+    ru: 'Bucket Tooth (J350 Friction/Wear Type)',
+    fr: 'Bucket Tooth (J350 Friction/Wear Type)',
+    pt: 'Bucket Tooth (J350 Friction/Wear Type)',
+    it: 'Bucket Tooth (J350 Friction/Wear Type)'
+  },
+  'Bucket Tooth (J400/J460 Series)': {
+    en: 'Bucket Tooth (J400/J460 Series)',
+    zh: '斗齿(J400/J460系列)',
+    es: 'Bucket Tooth (J400/J460 Series)',
+    ar: 'Bucket Tooth (J400/J460 Series)',
+    ru: 'Bucket Tooth (J400/J460 Series)',
+    fr: 'Bucket Tooth (J400/J460 Series)',
+    pt: 'Bucket Tooth (J400/J460 Series)',
+    it: 'Bucket Tooth (J400/J460 Series)'
+  },
+  'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': {
+    en: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+    zh: '斗齿(J300大修/推土机焊接型适配器)',
+    es: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+    ar: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+    ru: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+    fr: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+    pt: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+    it: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)'
+  },
+  'Boom Cylinder Seal Repair Kit': {
+    en: 'Boom Cylinder Seal Repair Kit',
+    zh: '斗杆油缸密封修理包',
+    es: 'Boom Cylinder Seal Repair Kit',
+    ar: 'Boom Cylinder Seal Repair Kit',
+    ru: 'Boom Cylinder Seal Repair Kit',
+    fr: 'Boom Cylinder Seal Repair Kit',
+    pt: 'Boom Cylinder Seal Repair Kit',
+    it: 'Boom Cylinder Seal Repair Kit'
+  },
+  'Bucket Cylinder Seal Repair Kit': {
+    en: 'Bucket Cylinder Seal Repair Kit',
+    zh: '铲斗油缸密封修理包',
+    es: 'Bucket Cylinder Seal Repair Kit',
+    ar: 'Bucket Cylinder Seal Repair Kit',
+    ru: 'Bucket Cylinder Seal Repair Kit',
+    fr: 'Bucket Cylinder Seal Repair Kit',
+    pt: 'Bucket Cylinder Seal Repair Kit',
+    it: 'Bucket Cylinder Seal Repair Kit'
+  },
+  'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)': {
+    en: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+    zh: '铲斗油缸密封修理包(85mm杆/125mm缸)',
+    es: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+    ar: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+    ru: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+    fr: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+    pt: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+    it: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)'
+  },
+  'Bucket Cylinder Seal Kit (65mm Rod, Old Model)': {
+    en: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+    zh: '铲斗油缸密封修理包(65mm杆,旧款)',
+    es: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+    ar: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+    ru: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+    fr: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+    pt: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+    it: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)'
+  },
+  'Bucket-Boom Connection Pin': {
+    en: 'Bucket-Boom Connection Pin',
+    zh: '斗杆连接销',
+    es: 'Bucket-Boom Connection Pin',
+    ar: 'Bucket-Boom Connection Pin',
+    ru: 'Bucket-Boom Connection Pin',
+    fr: 'Bucket-Boom Connection Pin',
+    pt: 'Bucket-Boom Connection Pin',
+    it: 'Bucket-Boom Connection Pin'
+  },
+  'Rod-Boom Connection Pin': {
+    en: 'Rod-Boom Connection Pin',
+    zh: '杆-斗杆连接销',
+    es: 'Rod-Boom Connection Pin',
+    ar: 'Rod-Boom Connection Pin',
+    ru: 'Rod-Boom Connection Pin',
+    fr: 'Rod-Boom Connection Pin',
+    pt: 'Rod-Boom Connection Pin',
+    it: 'Rod-Boom Connection Pin'
+  },
+  'Rod-Cylinder Connection Pin': {
+    en: 'Rod-Cylinder Connection Pin',
+    zh: '杆-油缸连接销',
+    es: 'Rod-Cylinder Connection Pin',
+    ar: 'Rod-Cylinder Connection Pin',
+    ru: 'Rod-Cylinder Connection Pin',
+    fr: 'Rod-Cylinder Connection Pin',
+    pt: 'Rod-Cylinder Connection Pin',
+    it: 'Rod-Cylinder Connection Pin'
+  },
+  'Rod-Boom Connection Bushing': {
+    en: 'Rod-Boom Connection Bushing',
+    zh: '斗杆连杆衬套',
+    es: 'Rod-Boom Connection Bushing',
+    ar: 'Rod-Boom Connection Bushing',
+    ru: 'Rod-Boom Connection Bushing',
+    fr: 'Rod-Boom Connection Bushing',
+    pt: 'Rod-Boom Connection Bushing',
+    it: 'Rod-Boom Connection Bushing'
+  },
+  'Bucket Bushing (Boom Position)': {
+    en: 'Bucket Bushing (Boom Position)',
+    zh: '斗一级支吊点连接销',
+    es: 'Bucket Bushing (Boom Position)',
+    ar: 'Bucket Bushing (Boom Position)',
+    ru: 'Bucket Bushing (Boom Position)',
+    fr: 'Bucket Bushing (Boom Position)',
+    pt: 'Bucket Bushing (Boom Position)',
+    it: 'Bucket Bushing (Boom Position)'
+  },
+  'CAT part. Replace during maintenance every 250-500 hours.': {
+    en: 'CAT part. Replace during maintenance every 250-500 hours.',
+    zh: 'CAT 零件。250-500小时随保养更换',
+    es: 'CAT part. Replace during maintenance every 250-500 hours.',
+    ar: 'CAT part. Replace during maintenance every 250-500 hours.',
+    ru: 'CAT part. Replace during maintenance every 250-500 hours.',
+    fr: 'CAT part. Replace during maintenance every 250-500 hours.',
+    pt: 'CAT part. Replace during maintenance every 250-500 hours.',
+    it: 'CAT part. Replace during maintenance every 250-500 hours.'
+  },
+  'CAT part. Replace every 250-500 hours or based on fuel quality.': {
+    en: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    zh: 'CAT 零件。250-500小时或视油品',
+    es: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    ar: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    ru: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    fr: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    pt: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    it: 'CAT part. Replace every 250-500 hours or based on fuel quality.'
+  },
+  'CAT part. Replace every 500-1000 hours or based on fluid analysis results.': {
+    en: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    zh: 'CAT 零件。500-1000小时或视油液检测结果',
+    es: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    ar: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    ru: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    fr: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    pt: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.'
+  },
+  'CAT part. Replace every 500-1000 hours.': {
+    en: 'CAT part. Replace every 500-1000 hours.',
+    zh: 'CAT 零件。500-1000小时',
+    es: 'CAT part. Replace every 500-1000 hours.',
+    ar: 'CAT part. Replace every 500-1000 hours.',
+    ru: 'CAT part. Replace every 500-1000 hours.',
+    fr: 'CAT part. Replace every 500-1000 hours.',
+    pt: 'CAT part. Replace every 500-1000 hours.',
+    it: 'CAT part. Replace every 500-1000 hours.'
+  },
+  'CAT part. Replace if overheating or leaking.': {
+    en: 'CAT part. Replace if overheating or leaking.',
+    zh: 'CAT 零件。过热/渗漏时更换',
+    es: 'CAT part. Replace if overheating or leaking.',
+    ar: 'CAT part. Replace if overheating or leaking.',
+    ru: 'CAT part. Replace if overheating or leaking.',
+    fr: 'CAT part. Replace if overheating or leaking.',
+    pt: 'CAT part. Replace if overheating or leaking.',
+    it: 'CAT part. Replace if overheating or leaking.'
+  },
+  'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).': {
+    en: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    zh: 'CAT 零件。动力下降/异响/漏油时更换(大修类)',
+    es: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    ar: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    ru: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    fr: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    pt: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    it: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).'
+  },
+  'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).': {
+    en: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    zh: 'CAT 零件。履带松旷/磨损超限时更换(大修类高价件)',
+    es: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    ar: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    ru: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    fr: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    pt: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    it: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).'
+  },
+  'CAT part. Replace if leaking or worn.': {
+    en: 'CAT part. Replace if leaking or worn.',
+    zh: 'CAT 零件。漏油/磨损时更换',
+    es: 'CAT part. Replace if leaking or worn.',
+    ar: 'CAT part. Replace if leaking or worn.',
+    ru: 'CAT part. Replace if leaking or worn.',
+    fr: 'CAT part. Replace if leaking or worn.',
+    pt: 'CAT part. Replace if leaking or worn.',
+    it: 'CAT part. Replace if leaking or worn.'
+  },
+  'CAT part. Replace if worn or making abnormal noise.': {
+    en: 'CAT part. Replace if worn or making abnormal noise.',
+    zh: 'CAT 零件。磨损/异响时更换',
+    es: 'CAT part. Replace if worn or making abnormal noise.',
+    ar: 'CAT part. Replace if worn or making abnormal noise.',
+    ru: 'CAT part. Replace if worn or making abnormal noise.',
+    fr: 'CAT part. Replace if worn or making abnormal noise.',
+    pt: 'CAT part. Replace if worn or making abnormal noise.',
+    it: 'CAT part. Replace if worn or making abnormal noise.'
+  },
+  'CAT part. Replace when gear teeth are worn or broken.': {
+    en: 'CAT part. Replace when gear teeth are worn or broken.',
+    zh: 'CAT 零件。轮齿磨损/断齿时更换',
+    es: 'CAT part. Replace when gear teeth are worn or broken.',
+    ar: 'CAT part. Replace when gear teeth are worn or broken.',
+    ru: 'CAT part. Replace when gear teeth are worn or broken.',
+    fr: 'CAT part. Replace when gear teeth are worn or broken.',
+    pt: 'CAT part. Replace when gear teeth are worn or broken.',
+    it: 'CAT part. Replace when gear teeth are worn or broken.'
+  },
+  'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).': {
+    en: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    zh: 'CAT 零件。磨损见底或断裂时更换,高频更换件',
+    es: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    ar: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    ru: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    fr: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    pt: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    it: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).'
+  },
+  'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.': {
+    en: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.',
+    zh: 'CAT 零件。随斗齿更换,寿命长于斗齿本身',
+    es: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.',
+    ar: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.',
+    ru: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.',
+    fr: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.',
+    pt: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.',
+    it: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.'
+  },
+  'CAT part. Replace synchronously every time teeth are replaced.': {
+    en: 'CAT part. Replace synchronously every time teeth are replaced.',
+    zh: 'CAT 零件。每次换齿时同步更换',
+    es: 'CAT part. Replace synchronously every time teeth are replaced.',
+    ar: 'CAT part. Replace synchronously every time teeth are replaced.',
+    ru: 'CAT part. Replace synchronously every time teeth are replaced.',
+    fr: 'CAT part. Replace synchronously every time teeth are replaced.',
+    pt: 'CAT part. Replace synchronously every time teeth are replaced.',
+    it: 'CAT part. Replace synchronously every time teeth are replaced.'
+  },
+  'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).': {
+    en: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    zh: 'CAT 零件。异响/漏油/爬升无力时更换(大修类高价件)',
+    es: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    ar: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    ru: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    fr: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    pt: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    it: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).'
+  },
+  'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).': {
+    en: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).',
+    zh: 'CAT 零件。异响/漏油/爬升无力时更换(大修类)',
+    es: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).',
+    ar: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).',
+    ru: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).',
+    fr: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).',
+    pt: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).',
+    it: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).'
+  },
+  'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).': {
+    en: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).',
+    zh: 'CAT 零件。转台异响/摇臂无力时更换(大修类)',
+    es: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).',
+    ar: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).',
+    ru: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).',
+    fr: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).',
+    pt: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).',
+    it: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).'
+  },
+  'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.': {
+    en: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    zh: 'CAT 零件。随斗齿磨损检查,寿命长于斗齿本身',
+    es: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    ar: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    ru: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    fr: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    pt: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    it: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.'
+  },
+  'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.': {
+    en: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    zh: 'CAT 零件。随斗齿磨损,推土机松土齿高频更换件',
+    es: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    ar: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    ru: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    fr: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    pt: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    it: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.'
+  },
+  'CAT part. Replace when leaking or seal aging occurs.': {
+    en: 'CAT part. Replace when leaking or seal aging occurs.',
+    zh: 'CAT 零件。渗漏/密封老化时更换',
+    es: 'CAT part. Replace when leaking or seal aging occurs.',
+    ar: 'CAT part. Replace when leaking or seal aging occurs.',
+    ru: 'CAT part. Replace when leaking or seal aging occurs.',
+    fr: 'CAT part. Replace when leaking or seal aging occurs.',
+    pt: 'CAT part. Replace when leaking or seal aging occurs.',
+    it: 'CAT part. Replace when leaking or seal aging occurs.'
+  },
+  'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).': {
+    en: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    zh: 'CAT 零件。异响/间隙过大时更换(高频保养更换件)',
+    es: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    ar: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    ru: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    fr: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    pt: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    it: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).'
+  },
+  'CAT part. Replace when abnormal noise or excessive clearance occurs.': {
+    en: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    zh: 'CAT 零件。异响/间隙过大时更换',
+    es: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    ar: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    ru: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    fr: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    pt: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    it: 'CAT part. Replace when abnormal noise or excessive clearance occurs.'
+  },
+  'CAT part. Replace with pin, high-frequency wear part.': {
+    en: 'CAT part. Replace with pin, high-frequency wear part.',
+    zh: 'CAT 零件。随销更换,高频磨损件',
+    es: 'CAT part. Replace with pin, high-frequency wear part.',
+    ar: 'CAT part. Replace with pin, high-frequency wear part.',
+    ru: 'CAT part. Replace with pin, high-frequency wear part.',
+    fr: 'CAT part. Replace with pin, high-frequency wear part.',
+    pt: 'CAT part. Replace with pin, high-frequency wear part.',
+    it: 'CAT part. Replace with pin, high-frequency wear part.'
+  },
 };
 
 export function usePartTranslation() {

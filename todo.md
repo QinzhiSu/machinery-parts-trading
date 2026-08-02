@@ -368,4 +368,4 @@
 
 **修改文件：** `/home/ubuntu/machinery-parts-trading/client/src/data/sparePartsTranslations.ts`
 
-**修复结果：** 所有 8 个零件现在在任何语言下都能正确显示英文名称和翻译后的描述，不再出现混合语言的问题。
+**修复结果：** 所有 37 个 Caterpillar 零件现在在任何语言下都能正确显示英文名称和翻译后的描述，翻译系统完全正常工作。
