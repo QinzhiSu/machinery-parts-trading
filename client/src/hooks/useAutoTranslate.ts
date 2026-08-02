@@ -1,4 +1,5 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
+import { trpc } from '@/lib/trpc';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 type Language = 'en' | 'zh' | 'es' | 'ar' | 'ru' | 'fr' | 'pt' | 'it';
@@ -33,7 +34,11 @@ const languageNames: Record<Language, string> = {
 
 export function useAutoTranslate() {
   const { language } = useLanguage();
-  const [isTranslating, setIsTranslating] = useState(false);
+
+
+
+
+  const { mutateAsync, isLoading: isTranslating } = trpc.system.translate.useMutation();
 
   const translateText = useCallback(
     async (text: string, targetLanguage: Language = language as Language): Promise<string> => {
@@ -48,41 +53,24 @@ export function useAutoTranslate() {
         return translationCache[targetLanguage][cacheKey];
       }
 
-      setIsTranslating(true);
+
 
       try {
-        const response = await fetch('/api/trpc/system.translate', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            text,
-            targetLanguage: languageNames[targetLanguage],
-          }),
-          credentials: 'include',
+        const { translation } = await mutateAsync({
+          text,
+          targetLanguage: languageNames[targetLanguage],
         });
 
-        if (!response.ok) {
-          console.error('Translation API error:', response.statusText);
-          return text; // Return original text on error
-        }
-
-        const data = await response.json();
-        const translatedText = data.result?.translation || text;
-
         // Cache the translation
-        translationCache[targetLanguage][cacheKey] = translatedText;
+        translationCache[targetLanguage][cacheKey] = translation;
 
-        return translatedText;
+        return translation;
       } catch (error) {
-        console.error('Translation error:', error);
+        console.error("Translation error:", error);
         return text; // Return original text on error
-      } finally {
-        setIsTranslating(false);
       }
     },
-    [language]
+    [language, mutateAsync]
   );
 
   const translateDescription = useCallback(
@@ -97,6 +85,8 @@ export function useAutoTranslate() {
     },
     [language]
   );
+
+
 
   return useMemo(() => ({
     translateText,
