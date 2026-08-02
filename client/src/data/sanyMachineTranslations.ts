@@ -653,8 +653,8 @@ export function getTranslatedSanyMachineDescription(description: string, languag
   return description;
 }
 
-// Additional SANY machine descriptions
-const additionalDescriptions = {
+// Merge additional descriptions into the main object
+Object.assign(sanyMachineDescriptionTranslations, {
   'SY215C': {
     zh: 'SANY SY215C 中大型液压挖掘机，适用于建筑和采矿。具有强大发动机、先进液压系统、高效率等特点。发动机：康明斯 QSB4.5（110 kW / 150 HP）。工作重量：21.5 吨。斗容：0.9 m³。最大挖掘深度：6.0 m。适用于一般建筑和采矿。',
     en: 'SANY SY215C popular mid-size excavator for construction and mining. Features powerful engine, advanced hydraulic system, and high efficiency. Engine: Cummins QSB4.5 (110 kW / 150 HP). Operating weight: 21.5 ton. Bucket capacity: 0.9 m³. Max digging depth: 6.0 m. Perfect for general construction and mining.',
@@ -695,4 +695,4 @@ const additionalDescriptions = {
     pt: 'Escavadeira super grande SANY SY550H para grandes operações de mineração. Motor Cummins potente, sistema hidráulico avançado e excelente eficiência. Motor: Cummins QSM11 (280 kW / 380 HP). Peso de operação: 55 toneladas. Capacidade da caçamba: 2,4 m³. Profundidade máxima de escavação: 8,0 m. Perfeita para projetos de mineração em larga escala.',
     it: 'Escavatore ultra-grande SANY SY550H per importanti operazioni di estrazione mineraria. Motore Cummins potente, sistema idraulico avanzato e efficienza eccellente. Motore: Cummins QSM11 (280 kW / 380 HP). Peso operativo: 55 tonnellate. Capacità della benna: 2,4 m³. Profondità massima di scavo: 8,0 m. Perfetto per progetti di estrazione mineraria su larga scala.'
   }
-};
+});
