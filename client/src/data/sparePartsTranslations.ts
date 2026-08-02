@@ -304,3 +304,12 @@ export function getTranslatedSanySparePartCategory(category: string, language: s
   }
   return category;
 }
+
+
+
+// Merge additional translations into sparePartDescriptionTranslations
+Object.assign(sparePartDescriptionTranslations, {
+  'Bucket Tooth Adapter (J300 Side-Lock)': { zh: '斗齿适配器(J300侧销式)', es: 'Adaptador diente de cucharrón (pasador lateral J300)', ar: 'محول سن الدلو (دبوس جانبي J300)', ru: 'Адаптер зуба ковша (боковой штифт J300)', fr: 'Adaptateur dent de godet (goupille latérale J300)', pt: 'Adaptador dente caçamba (pino lateral J300)', it: 'Adattatore dente benna (perno laterale J300)' },
+  'Bucket Tooth (J400/J460 Series)': { zh: '斗齿(J400/J460系列)', es: 'Diente de cucharrón (serie J400/J460)', ar: 'سن الدلو (سلسلة J400/J460)', ru: 'Зуб ковша (серия J400/J460)', fr: 'Dent de godet (série J400/J460)', pt: 'Dente caçamba (série J400/J460)', it: 'Dente benna (serie J400/J460)' },
+  'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': { zh: '斗齿(J300大修/推土机焊接型适配器)', es: 'Diente de cucharrón (adaptador soldado J300 gran reparación/bulldozer)', ar: 'سن الدلو (محول ملحوم J300 إصلاح كبير/جرافة)', ru: 'Зуб ковша (адаптер сварной J300 капремонт/бульдозер)', fr: 'Dent de godet (adaptateur soudé J300 grosse réparation/bulldozer)', pt: 'Dente caçamba (adaptador soldado J300 grande reparo/trator)', it: 'Dente benna (adattatore saldato J300 revisione maggiore/bulldozer)' }
+});
