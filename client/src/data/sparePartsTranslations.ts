@@ -273,10 +273,28 @@ export const shantuiSparePartTranslations: Record<string, Record<string, string>
 };
 
 export function getTranslatedShantuiSparePartDescription(description: string, language: string): string {
+  // First try to find the description in the translations table (for Chinese keys)
   const translations = shantuiSparePartTranslations[description];
   if (translations && translations[language]) {
     return translations[language];
   }
+  
+  // If not found and language is not 'en', try to find the English version and return it
+  if (language !== 'en' && translations && translations['en']) {
+    return translations['en'];
+  }
+  
+  // If the description is in English and not found in translations, look for a matching Chinese key
+  // by checking all keys in the translation table
+  if (language !== 'en') {
+    for (const [key, trans] of Object.entries(shantuiSparePartTranslations)) {
+      // Check if the English value matches the input description
+      if (trans['en'] === description && trans[language]) {
+        return trans[language];
+      }
+    }
+  }
+  
   return description;
 }
 
@@ -289,10 +307,23 @@ export const shantuiSparePartCategoryTranslations: Record<string, Record<string,
 };
 
 export function getTranslatedShantuiSparePartCategory(category: string, language: string): string {
+  // First try to find the category in the translations table (for Chinese keys)
   const translations = shantuiSparePartCategoryTranslations[category];
   if (translations && translations[language]) {
     return translations[language];
   }
+  
+  // If the category is in English and not found in translations, look for a matching Chinese key
+  // by checking all keys in the translation table
+  if (language !== 'en') {
+    for (const [key, trans] of Object.entries(shantuiSparePartCategoryTranslations)) {
+      // Check if the English value matches the input category
+      if (trans['en'] === category && trans[language]) {
+        return trans[language];
+      }
+    }
+  }
+  
   return category;
 }
 

@@ -423,3 +423,24 @@
 - [x] 添加种子数据或创建文章的 UI 以验证功能
 - [x] 为新的博客程序运行 Vitest 测试
 - [ ] 完成 todo.md 中与博客相关的剩余项 (过滤、搜索、错误状态)
+
+
+## 山推零件翻译修复
+
+- [x] 修复山推零件翻译问题 - 所有零件名称、编号、分类、描述改为英文
+- [x] 将 40 个山推零件的混合中文/英文数据改为完整英文
+- [x] 修复零件编号中的中文文本（如"通用件(可配Denso"改为"Universal (Compatible with Denso)"）
+- [x] 修复零件分类标签改为英文（如"保养/滤清系统"改为"Maintenance/Filtration System"）
+- [x] 修复零件描述改为英文（如"SHANTUI 零件。250-500小时随保养更换"改为"SHANTUI part. Replace during maintenance every 250-500 hours."）
+- [x] 重启开发服务器应用修复
+- [x] 浏览器验证：所有 40 个山推零件现在在英文页面显示完整英文内容
+
+**修改文件：** `/home/ubuntu/machinery-parts-trading/client/src/data/products.ts`
+
+**修复结果：** 
+- ✅ 所有 40 个 Shantui 零件现在显示完整英文
+- ✅ 零件名称：全部改为英文（Oil Filter、Diesel Filter、Air Filter 等）
+- ✅ 零件编号：修复了混合的中文编号，现在显示为英文或标准编号
+- ✅ 分类标签：全部改为英文（Maintenance/Filtration System、Electrical/Starting、Transmission/Gearbox System 等）
+- ✅ 描述信息：全部改为英文描述
+- ✅ 浏览器验证通过：英文页面显示完全正确
