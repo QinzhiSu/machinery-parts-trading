@@ -18,7 +18,7 @@ import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTrans
 import { getTranslatedCATMachineDescription } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
 import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedSanySparePartCategory } from '@/data/sparePartsTranslations';
-import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType } from '@/data/sanyMachineTranslations';
+import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
@@ -286,11 +286,11 @@ export default function BrandPage() {
                           borderLeft: '2px solid oklch(0.68 0.18 42)',
                         }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineSpecs(machine.model, language) : machine.specs}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineSpecs(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineSpecs(machine.model, language) : machine.specs}
                       </div>
 
                       <MachineDescriptionTranslator
-                        description={brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineShortDescription(machine.model, language) || machine.description : (translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description)}
+                        description={brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineShortDescription(machine.model, language) || machine.description : brand.id === 'sany' ? getTranslatedSanyMachineDescription(machine.description, language) : (translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description)}
                         className="text-xs leading-relaxed mb-4"
                         style={{ color: 'oklch(0.5 0.02 265)' }}
                       />
