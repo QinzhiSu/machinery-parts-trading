@@ -166,3 +166,154 @@ export function getTranslatedCATMachineDescription(description: string, language
   }
   return description;
 }
+
+
+// Caterpillar machine specs translations
+export const catMachineSpecsTranslations: Record<string, Record<string, string>> = {
+  'CAT 320D': {
+    zh: '20.5 吨 | 121 千瓦 | 1.19 立方米斗 | 工作重量：20,500 千克',
+    en: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
+    es: '20,5 toneladas | 121 kW | 1,19 m³ cucharón | Peso de operación: 20.500 kg',
+    ar: '20.5 طن | 121 كيلوواط | 1.19 م³ دلو | وزن التشغيل: 20.500 كجم',
+    ru: '20,5 тонн | 121 кВт | 1,19 м³ ковш | Рабочий вес: 20.500 кг',
+    fr: '20,5 tonnes | 121 kW | 1,19 m³ godet | Poids de fonctionnement: 20.500 kg',
+    pt: '20,5 toneladas | 121 kW | 1,19 m³ caçamba | Peso de operação: 20.500 kg',
+    it: '20,5 tonnellate | 121 kW | 1,19 m³ benna | Peso di esercizio: 20.500 kg'
+  },
+  'CAT 320D2': {
+    zh: '20.8 吨 | 121 千瓦 | 1.19 立方米斗 | 工作重量：20,800 千克',
+    en: '20.8 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,800 kg',
+    es: '20,8 toneladas | 121 kW | 1,19 m³ cucharón | Peso de operación: 20.800 kg',
+    ar: '20.8 طن | 121 كيلوواط | 1.19 م³ دلو | وزن التشغيل: 20.800 كجم',
+    ru: '20,8 тонн | 121 кВт | 1,19 м³ ковш | Рабочий вес: 20.800 кг',
+    fr: '20,8 tonnes | 121 kW | 1,19 m³ godet | Poids de fonctionnement: 20.800 kg',
+    pt: '20,8 toneladas | 121 kW | 1,19 m³ caçamba | Peso de operação: 20.800 kg',
+    it: '20,8 tonnellate | 121 kW | 1,19 m³ benna | Peso di esercizio: 20.800 kg'
+  },
+  'CAT 320 GC': {
+    zh: '20.5 吨 | 121 千瓦 | 1.19 立方米斗 | 工作重量：20,500 千克',
+    en: '20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg',
+    es: '20,5 toneladas | 121 kW | 1,19 m³ cucharón | Peso de operación: 20.500 kg',
+    ar: '20.5 طن | 121 كيلوواط | 1.19 م³ دلو | وزن التشغيل: 20.500 كجم',
+    ru: '20,5 тонн | 121 кВт | 1,19 м³ ковш | Рабочий вес: 20.500 кг',
+    fr: '20,5 tonnes | 121 kW | 1,19 m³ godet | Poids de fonctionnement: 20.500 kg',
+    pt: '20,5 toneladas | 121 kW | 1,19 m³ caçamba | Peso de operação: 20.500 kg',
+    it: '20,5 tonnellate | 121 kW | 1,19 m³ benna | Peso di esercizio: 20.500 kg'
+  },
+  'CAT 330C': {
+    zh: '30 吨 | 168 千瓦 | 1.69 立方米斗 | 工作重量：30,000 千克',
+    en: '30 ton | 168 kW | 1.69 m³ bucket | Operating Weight: 30,000 kg',
+    es: '30 toneladas | 168 kW | 1,69 m³ cucharón | Peso de operación: 30.000 kg',
+    ar: '30 طن | 168 كيلوواط | 1.69 م³ دلو | وزن التشغيل: 30.000 كجم',
+    ru: '30 тонн | 168 кВт | 1,69 м³ ковш | Рабочий вес: 30.000 кг',
+    fr: '30 tonnes | 168 kW | 1,69 m³ godet | Poids de fonctionnement: 30.000 kg',
+    pt: '30 toneladas | 168 kW | 1,69 m³ caçamba | Peso de operação: 30.000 kg',
+    it: '30 tonnellate | 168 kW | 1,69 m³ benna | Peso di esercizio: 30.000 kg'
+  },
+  'CAT 336D': {
+    zh: '36.5 吨 | 206 千瓦 | 2.1 立方米斗 | 工作重量：36,500 千克',
+    en: '36.5 ton | 206 kW | 2.1 m³ bucket | Operating Weight: 36,500 kg',
+    es: '36,5 toneladas | 206 kW | 2,1 m³ cucharón | Peso de operación: 36.500 kg',
+    ar: '36.5 طن | 206 كيلوواط | 2.1 م³ دلو | وزن التشغيل: 36.500 كجم',
+    ru: '36,5 тонн | 206 кВт | 2,1 м³ ковш | Рабочий вес: 36.500 кг',
+    fr: '36,5 tonnes | 206 kW | 2,1 m³ godet | Poids de fonctionnement: 36.500 kg',
+    pt: '36,5 toneladas | 206 kW | 2,1 m³ caçamba | Peso de operação: 36.500 kg',
+    it: '36,5 tonnellate | 206 kW | 2,1 m³ benna | Peso di esercizio: 36.500 kg'
+  },
+  'CAT D6R': {
+    zh: '18 吨 | 138 千瓦 | 直推刀 4.6 立方米 | 工作重量：18,000 千克',
+    en: '18 ton | 138 kW | SU blade 4.6 m³ | Operating Weight: 18,000 kg',
+    es: '18 toneladas | 138 kW | Cuchilla SU 4,6 m³ | Peso de operación: 18.000 kg',
+    ar: '18 طن | 138 كيلوواط | شفرة SU 4.6 م³ | وزن التشغيل: 18.000 كجم',
+    ru: '18 тонн | 138 кВт | Отвал SU 4,6 м³ | Рабочий вес: 18.000 кг',
+    fr: '18 tonnes | 138 kW | Lame SU 4,6 m³ | Poids de fonctionnement: 18.000 kg',
+    pt: '18 toneladas | 138 kW | Lâmina SU 4,6 m³ | Peso de operação: 18.000 kg',
+    it: '18 tonnellate | 138 kW | Lama SU 4,6 m³ | Peso di esercizio: 18.000 kg'
+  },
+  'CAT D6T': {
+    zh: '19 吨 | 149 千瓦 | 直推刀 4.6 立方米 | 工作重量：19,000 千克',
+    en: '19 ton | 149 kW | SU blade 4.6 m³ | Operating Weight: 19,000 kg',
+    es: '19 toneladas | 149 kW | Cuchilla SU 4,6 m³ | Peso de operación: 19.000 kg',
+    ar: '19 طن | 149 كيلوواط | شفرة SU 4.6 م³ | وزن التشغيل: 19.000 كجم',
+    ru: '19 тонн | 149 кВт | Отвал SU 4,6 м³ | Рабочий вес: 19.000 кг',
+    fr: '19 tonnes | 149 kW | Lame SU 4,6 m³ | Poids de fonctionnement: 19.000 kg',
+    pt: '19 toneladas | 149 kW | Lâmina SU 4,6 m³ | Peso de operação: 19.000 kg',
+    it: '19 tonnellate | 149 kW | Lama SU 4,6 m³ | Peso di esercizio: 19.000 kg'
+  },
+  'CAT D7R': {
+    zh: '28 吨 | 186 千瓦 | 直推刀 7.4 立方米 | 工作重量：28,000 千克',
+    en: '28 ton | 186 kW | SU blade 7.4 m³ | Operating Weight: 28,000 kg',
+    es: '28 toneladas | 186 kW | Cuchilla SU 7,4 m³ | Peso de operación: 28.000 kg',
+    ar: '28 طن | 186 كيلوواط | شفرة SU 7.4 م³ | وزن التشغيل: 28.000 كجم',
+    ru: '28 тонн | 186 кВт | Отвал SU 7,4 м³ | Рабочий вес: 28.000 кг',
+    fr: '28 tonnes | 186 kW | Lame SU 7,4 m³ | Poids de fonctionnement: 28.000 kg',
+    pt: '28 toneladas | 186 kW | Lâmina SU 7,4 m³ | Peso de operação: 28.000 kg',
+    it: '28 tonnellate | 186 kW | Lama SU 7,4 m³ | Peso di esercizio: 28.000 kg'
+  },
+  'CAT D8R': {
+    zh: '38 吨 | 231 千瓦 | 直推刀 10.5 立方米 | 工作重量：38,000 千克',
+    en: '38 ton | 231 kW | SU blade 10.5 m³ | Operating Weight: 38,000 kg',
+    es: '38 toneladas | 231 kW | Cuchilla SU 10,5 m³ | Peso de operación: 38.000 kg',
+    ar: '38 طن | 231 كيلوواط | شفرة SU 10.5 م³ | وزن التشغيل: 38.000 كجم',
+    ru: '38 тонн | 231 кВт | Отвал SU 10,5 м³ | Рабочий вес: 38.000 кг',
+    fr: '38 tonnes | 231 kW | Lame SU 10,5 m³ | Poids de fonctionnement: 38.000 kg',
+    pt: '38 toneladas | 231 kW | Lâmina SU 10,5 m³ | Peso de operação: 38.000 kg',
+    it: '38 tonnellate | 231 kW | Lama SU 10,5 m³ | Peso di esercizio: 38.000 kg'
+  },
+  'CAT 950H': {
+    zh: '20 吨 | 138 千瓦 | 2.2 立方米斗 | 工作重量：20,000 千克',
+    en: '20 ton | 138 kW | 2.2 m³ bucket | Operating Weight: 20,000 kg',
+    es: '20 toneladas | 138 kW | 2,2 m³ cucharón | Peso de operación: 20.000 kg',
+    ar: '20 طن | 138 كيلوواط | 2.2 م³ دلو | وزن التشغيل: 20.000 كجم',
+    ru: '20 тонн | 138 кВт | 2,2 м³ ковш | Рабочий вес: 20.000 кг',
+    fr: '20 tonnes | 138 kW | 2,2 m³ godet | Poids de fonctionnement: 20.000 kg',
+    pt: '20 toneladas | 138 kW | 2,2 m³ caçamba | Peso de operação: 20.000 kg',
+    it: '20 tonnellate | 138 kW | 2,2 m³ benna | Peso di esercizio: 20.000 kg'
+  },
+  'CAT 950L': {
+    zh: '21 吨 | 149 千瓦 | 2.4 立方米斗 | 工作重量：21,000 千克',
+    en: '21 ton | 149 kW | 2.4 m³ bucket | Operating Weight: 21,000 kg',
+    es: '21 toneladas | 149 kW | 2,4 m³ cucharón | Peso de operación: 21.000 kg',
+    ar: '21 طن | 149 كيلوواط | 2.4 م³ دلو | وزن التشغيل: 21.000 كجم',
+    ru: '21 тонна | 149 кВт | 2,4 м³ ковш | Рабочий вес: 21.000 кг',
+    fr: '21 tonnes | 149 kW | 2,4 m³ godet | Poids de fonctionnement: 21.000 kg',
+    pt: '21 toneladas | 149 kW | 2,4 m³ caçamba | Peso de operação: 21.000 kg',
+    it: '21 tonnellate | 149 kW | 2,4 m³ benna | Peso di esercizio: 21.000 kg'
+  },
+  'CAT 966H': {
+    zh: '25 吨 | 168 千瓦 | 2.8 立方米斗 | 工作重量：25,000 千克',
+    en: '25 ton | 168 kW | 2.8 m³ bucket | Operating Weight: 25,000 kg',
+    es: '25 toneladas | 168 kW | 2,8 m³ cucharón | Peso de operación: 25.000 kg',
+    ar: '25 طن | 168 كيلوواط | 2.8 م³ دلو | وزن التشغيل: 25.000 كجم',
+    ru: '25 тонн | 168 кВт | 2,8 м³ ковш | Рабочий вес: 25.000 кг',
+    fr: '25 tonnes | 168 kW | 2,8 m³ godet | Poids de fonctionnement: 25.000 kg',
+    pt: '25 toneladas | 168 kW | 2,8 m³ caçamba | Peso de operação: 25.000 kg',
+    it: '25 tonnellate | 168 kW | 2,8 m³ benna | Peso di esercizio: 25.000 kg'
+  },
+  'CAT 980H': {
+    zh: '28 吨 | 186 千瓦 | 3.2 立方米斗 | 工作重量：28,000 千克',
+    en: '28 ton | 186 kW | 3.2 m³ bucket | Operating Weight: 28,000 kg',
+    es: '28 toneladas | 186 kW | 3,2 m³ cucharón | Peso de operación: 28.000 kg',
+    ar: '28 طن | 186 كيلوواط | 3.2 م³ دلو | وزن التشغيل: 28.000 كجم',
+    ru: '28 тонн | 186 кВт | 3,2 м³ ковш | Рабочий вес: 28.000 кг',
+    fr: '28 tonnes | 186 kW | 3,2 m³ godet | Poids de fonctionnement: 28.000 kg',
+    pt: '28 toneladas | 186 kW | 3,2 m³ caçamba | Peso de operação: 28.000 kg',
+    it: '28 tonnellate | 186 kW | 3,2 m³ benna | Peso di esercizio: 28.000 kg'
+  },
+  'CAT 966L': {
+    zh: '25 吨 | 206 千瓦 | 3.1 立方米斗 | 工作重量：25,000 千克',
+    en: '25 ton | 206 kW | 3.1 m³ bucket | Operating Weight: 25,000 kg',
+    es: '25 toneladas | 206 kW | 3,1 m³ cucharón | Peso de operación: 25.000 kg',
+    ar: '25 طن | 206 كيلوواط | 3.1 م³ دلو | وزن التشغيل: 25.000 كجم',
+    ru: '25 тонн | 206 кВт | 3,1 м³ ковш | Рабочий вес: 25.000 кг',
+    fr: '25 tonnes | 206 kW | 3,1 m³ godet | Poids de fonctionnement: 25.000 kg',
+    pt: '25 toneladas | 206 kW | 3,1 m³ caçamba | Peso de operação: 25.000 kg',
+    it: '25 tonnellate | 206 kW | 3,1 m³ benna | Peso di esercizio: 25.000 kg'
+  }
+};
+
+export function getTranslatedCATMachineSpecs(model: string, language: string = 'en'): string {
+  const specs = catMachineSpecsTranslations[model];
+  if (!specs) return '';
+  return specs[language] || specs['en'] || '';
+}
