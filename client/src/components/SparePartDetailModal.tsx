@@ -10,11 +10,6 @@ import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { getTranslatedPartDescription } from '@/data/partDescriptionTranslations';
-import { getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePart } from '@/data/xcmgSparePartsTranslations';
-import { getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongSparePart } from '@/data/liugongSparePartsTranslations';
-import { getTranslatedKomatsumSparePartCategory, getTranslatedKomatsumSparePart } from '@/data/komatsumSparePartsTranslations';
-import { getTranslatedShacmanSparePartCategory, getTranslatedShacmanSparePart } from '@/data/shacmanSparePartsTranslations';
-import { getTranslatedToyotaSparePart, getTranslatedToyotaSparePartCategory, getTranslatedToyotaSparePartDescription } from '@/data/toyotaSparePartsTranslations';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -23,7 +18,6 @@ interface SparePartDetailModalProps {
   onInquiry: (part: SparePart) => void;
   brandName: string;
   brandColor: string;
-  brandId?: string;
 }
 
 export default function SparePartDetailModal({
@@ -33,7 +27,6 @@ export default function SparePartDetailModal({
   onInquiry,
   brandName,
   brandColor,
-  brandId = '',
 }: SparePartDetailModalProps) {
   const { t, language } = useLanguage();
   const [imageIndex, setImageIndex] = useState(0);
@@ -92,7 +85,7 @@ export default function SparePartDetailModal({
               {brandName} {part.partNumber}
             </h2>
             <p className="text-xs mt-1" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  {brandId === 'xcmg' ? getTranslatedXCMGSparePart(part.id, language).name : brandId === 'liugong' ? getTranslatedLiuGongSparePart(part.id, language).name : brandId === 'komatsu' ? getTranslatedKomatsumSparePart(part.id, language).name : brandId === 'shacman' ? getTranslatedShacmanSparePart(part.id, language).name : brandId === 'toyota' ? getTranslatedToyotaSparePart(part.name, language) : part.name}
+              {translatePartCategory(part.name)}
             </p>
           </div>
           <button
@@ -163,7 +156,7 @@ export default function SparePartDetailModal({
                   分类
                 </p>
                 <p className="text-sm font-semibold" style={{ color: 'oklch(0.18 0.04 265)' }}>
-                  {brandId === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brandId === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brandId === 'komatsu' ? getTranslatedKomatsumSparePartCategory(part.category, language) : brandId === 'shacman' ? getTranslatedShacmanSparePartCategory(part.category, language) : brandId === 'toyota' ? getTranslatedToyotaSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                  {translatePartCategory(part.category)}
                 </p>
               </div>
             </div>
@@ -174,7 +167,7 @@ export default function SparePartDetailModal({
                 描述
               </p>
               <p className="text-sm leading-relaxed" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                {brandId === 'xcmg' ? getTranslatedXCMGSparePart(part.id, language).description : brandId === 'liugong' ? getTranslatedLiuGongSparePart(part.id, language).description : brandId === 'komatsu' ? getTranslatedKomatsumSparePart(part.id, language).description : brandId === 'shacman' ? getTranslatedShacmanSparePart(part.id, language).description : brandId === 'toyota' ? getTranslatedToyotaSparePartDescription(part.name, language) : part.description}
+                {translateDescription(part.description)}
               </p>
             </div>
 

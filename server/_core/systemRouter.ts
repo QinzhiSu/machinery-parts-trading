@@ -50,7 +50,8 @@ export const systemRouter = router({
           ],
         });
 
-        const translation = String(response.choices[0]?.message?.content || input.text);
+        const translation =
+          response.choices[0]?.message?.content || input.text;
 
         return {
           translation,
