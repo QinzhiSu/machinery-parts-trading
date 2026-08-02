@@ -1,8 +1,8 @@
-import { useCallback, useMemo } from 'react';
-import { trpc } from '@/lib/trpc';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useCallback, useMemo } from "react";
+import { trpc } from "@/lib/trpc";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-type Language = 'en' | 'zh' | 'es' | 'ar' | 'ru' | 'fr' | 'pt' | 'it';
+type Language = "en" | "zh" | "es" | "ar" | "ru" | "fr" | "pt" | "it";
 
 interface TranslationCache {
   [key: string]: string;
@@ -22,14 +22,14 @@ const translationCache: Record<Language, TranslationCache> = {
 
 // Language names for the LLM
 const languageNames: Record<Language, string> = {
-  en: 'English',
-  zh: 'Simplified Chinese',
-  es: 'Spanish',
-  ar: 'Arabic',
-  ru: 'Russian',
-  fr: 'French',
-  pt: 'Portuguese',
-  it: 'Italian'
+  en: "English",
+  zh: "Simplified Chinese",
+  es: "Spanish",
+  ar: "Arabic",
+  ru: "Russian",
+  fr: "French",
+  pt: "Portuguese",
+  it: "Italian"
 };
 
 export function useAutoTranslate() {
@@ -39,7 +39,7 @@ export function useAutoTranslate() {
   const translateText = useCallback(
     async (text: string, targetLanguage: Language = language as Language): Promise<string> => {
       // If target language is English, return original text
-      if (targetLanguage === 'en' || !text) {
+      if (targetLanguage === "en" || !text) {
         return text;
       }
 
@@ -70,7 +70,7 @@ export function useAutoTranslate() {
   const translateDescription = useCallback(
     (description: string): string => {
       // For Chinese language, check if description is already in Chinese
-      if (language === 'zh' && /[\u4e00-\u9fff]/.test(description)) {
+      if (language === "zh" && /[\u4e00-\u9fff]/.test(description)) {
         return description;
       }
 
