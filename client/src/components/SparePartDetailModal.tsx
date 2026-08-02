@@ -85,7 +85,7 @@ export default function SparePartDetailModal({
               {brandName} {part.partNumber}
             </h2>
             <p className="text-xs mt-1" style={{ color: 'oklch(0.5 0.02 265)' }}>
-              {part.name}
+              {translatePartCategory(part.name)}
             </p>
           </div>
           <button
@@ -104,7 +104,7 @@ export default function SparePartDetailModal({
             <div className="relative bg-gray-50 rounded-lg overflow-hidden mb-3 h-64 flex items-center justify-center">
               <img
                 src={part.image}
-                alt={part.name}
+                alt={translatePartCategory(part.name)}
                 className="w-full h-full object-cover"
               />
               {/* Image navigation (placeholder for future multi-image support) */}

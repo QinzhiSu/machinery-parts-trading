@@ -208,6 +208,11 @@ export function usePartTranslation() {
 
   const translatePartName = (name: string): string => {
     if (language === 'zh') return name;
+    // Use sparePartsTranslations to translate part names
+    const translated = getTranslatedSparePartDescription(name, language);
+    if (translated !== name) {
+      return translated;
+    }
     return name;
   };
 

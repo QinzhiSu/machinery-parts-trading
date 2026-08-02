@@ -348,7 +348,7 @@ export default function BrandPage() {
                     <div className="relative h-40 overflow-hidden bg-gray-50 cursor-pointer hover:opacity-90 transition-opacity" onClick={() => { setSelectedPart(part); setPartDetailOpen(true); }}>
                       <img
                         src={part.image}
-                        alt={part.name}
+                        alt={getTranslatedSparePartName(part.name, language)}
                         className="w-full h-full object-cover"
                       />
                       {/* Category badge */}

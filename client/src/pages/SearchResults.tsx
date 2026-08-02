@@ -5,9 +5,10 @@ import { ChevronLeft } from 'lucide-react';
 import SparePartDetailModal from '@/components/SparePartDetailModal';
 import CategoryFilter from '@/components/CategoryFilter';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { getTranslatedSparePartName } from '@/data/sparePartsTranslations';
 
 export default function SearchResults() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const search = useSearch();
   const params = new URLSearchParams(search);
   const query = params.get('q') || '';
@@ -71,7 +72,7 @@ export default function SearchResults() {
                   >
                     <img
                       src={part.image}
-                      alt={part.name}
+                      alt={getTranslatedSparePartName(part.name, language)}
                       className="w-full h-48 object-cover bg-muted"
                     />
                     <div className="p-4">
@@ -132,7 +133,7 @@ export default function SearchResults() {
       {selectedPart && (
         <SparePartDetailModal
           part={selectedPart}
-          isOpen={isModalOpen}
+          isOpen={true}
           onClose={() => {
             setIsModalOpen(false);
             setSelectedPart(null);
