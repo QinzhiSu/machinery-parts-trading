@@ -330,3 +330,13 @@
 
 - [x] 为 Caterpillar 品牌的第一台机器 CAT 320D 添加完整 8 种语言翻译
 - [x] 验证 CAT 320D 在所有 8 种语言下的翻译显示效果（西班牙文验证通过）
+
+
+## Caterpillar 规格翻译和零件翻译修复
+
+- [x] 为 Caterpillar 所有 12 台机器添加 8 种语言规格翻译
+- [x] 更新 BrandPage.tsx 集成 Caterpillar 规格翻译函数
+- [x] 为 Caterpillar CAT 966L 添加规格翻译
+- [x] 从 Caterpillar 4 个零件的件号中删除中文说明（cat-sp-14、cat-sp-17、cat-sp-20、cat-sp-21）
+- [ ] 为 Caterpillar 37 个零件添加翻译（当前仍显示中文名称）
+- [ ] 验证 Caterpillar 所有零件在 8 种语言下的翻译显示效果
