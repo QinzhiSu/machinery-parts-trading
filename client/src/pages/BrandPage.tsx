@@ -16,7 +16,7 @@ import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedCATMachineDescription } from '@/data/catMachineTranslations';
-import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription } from '@/data/shantuiMachineTranslations';
+import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs } from '@/data/shantuiMachineTranslations';
 import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory } from '@/data/sparePartsTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
 
@@ -269,10 +269,10 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-base mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {brand.name} {machine.model}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : `${brand.name} ${machine.model}`}
                       </h3>
                       <p className="text-sm font-semibold mb-2" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                        {machine.name}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineType(machine.name, language) : machine.name}
                       </p>
 
                       {/* Specs */}
@@ -285,7 +285,7 @@ export default function BrandPage() {
                           borderLeft: '2px solid oklch(0.68 0.18 42)',
                         }}
                       >
-                        {machine.specs}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineSpecs(machine.model, language) : machine.specs}
                       </div>
 
                       <MachineDescriptionTranslator
