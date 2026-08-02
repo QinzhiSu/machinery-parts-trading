@@ -204,14 +204,17 @@ export function getTranslatedSparePartName(name: string, language: string): stri
   if (translations && translations[language]) {
     return translations[language];
   }
-  // If not found and language is Chinese, try to find English key and return its Chinese translation
-  if (language === 'zh') {
+  
+  // If not found, try to find the English key and return its translation in the target language
+  if (language !== 'en') {
     for (const [key, trans] of Object.entries(sparePartNameTranslations)) {
-      if (trans['en'] === name && trans['zh']) {
-        return trans['zh'];
+      // Check if the English value matches the input name
+      if (trans['en'] === name && trans[language]) {
+        return trans[language];
       }
     }
   }
+  
   return name;
 }
 
@@ -245,6 +248,17 @@ export function getTranslatedSparePartCategory(category: string, language: strin
   if (translations && translations[language]) {
     return translations[language];
   }
+  
+  // If not found, try to find the English key and return its translation in the target language
+  if (language !== 'en') {
+    for (const [key, trans] of Object.entries(sparePartCategoryTranslations)) {
+      // Check if the English value matches the input category
+      if (trans['en'] === category && trans[language]) {
+        return trans[language];
+      }
+    }
+  }
+  
   return category;
 }
 
