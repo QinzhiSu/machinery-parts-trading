@@ -185,8 +185,10 @@ export function getTranslatedShantuiSparePartDescription(description: string, la
 
 // Shantui spare part category translations
 export const shantuiSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Обслуживание/Система фильтрации', fr: 'Maintenance/Système de filtration', pt: 'Manutenção/Sistema de filtragem', it: 'Manutenzione/Sistema di filtrazione' },
   '电气/启动': { en: 'Electrical/Starting', es: 'Eléctrico/Arranque', ar: 'كهربائي/بدء التشغيل', ru: 'Электрический/Запуск', fr: 'Électrique/Démarrage', pt: 'Elétrico/Partida', it: 'Elettrico/Avviamento' },
   '传动/变速系统': { en: 'Transmission/Gearbox System', es: 'Transmisión/Sistema de cambios', ar: 'نظام الإرسال/علبة التروس', ru: 'Трансмиссия/Коробка передач', fr: 'Transmission/Système de boîte de vitesses', pt: 'Transmissão/Sistema de câmbio', it: 'Trasmissione/Sistema cambio' },
+  '底盘/履带系统': { en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الشاسي/نظام الجنزير', ru: 'Шасси/Гусеничная система', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de esteira', it: 'Telaio/Sistema cingolo' },
 };
 
 export function getTranslatedShantuiSparePartCategory(category: string, language: string): string {
