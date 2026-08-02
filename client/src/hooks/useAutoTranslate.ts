@@ -49,8 +49,6 @@ export function useAutoTranslate() {
         return translationCache[targetLanguage][cacheKey];
       }
 
-
-
       try {
         const { translation } = await mutateAsync({
           text,
