@@ -17,7 +17,8 @@ import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedCATMachineDescription } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory } from '@/data/sparePartsTranslations';
+import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedSanySparePartCategory } from '@/data/sparePartsTranslations';
+import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType } from '@/data/sanyMachineTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
@@ -260,7 +261,7 @@ export default function BrandPage() {
                         className="text-xs font-semibold uppercase tracking-wider mb-2"
                         style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : machine.name}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : machine.name}
                       </div>
                     </div>
 
@@ -269,10 +270,10 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-base mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : `${brand.name} ${machine.model}`}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineTitle(`SANY ${machine.model}`, language) : `${brand.name} ${machine.model}`}
                       </h3>
                       <p className="text-sm font-semibold mb-2" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineType(machine.name, language) : machine.name}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineType(machine.name, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : machine.name}
                       </p>
 
                       {/* Specs */}
@@ -355,7 +356,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSanySparePartCategory(part.category, language) : translatePartCategory(part.category)}
                       </div>
                     </div>
 
@@ -379,7 +380,7 @@ export default function BrandPage() {
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : getTranslatedSparePartDescription(part.description, language)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : getTranslatedSparePartDescription(part.description, language)}
                       </p>
 
                       <div className="flex gap-2">
