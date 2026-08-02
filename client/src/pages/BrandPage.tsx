@@ -17,7 +17,7 @@ import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedCATMachineDescription } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedShantuiSparePartDescription } from '@/data/sparePartsTranslations';
+import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory } from '@/data/sparePartsTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
@@ -355,7 +355,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {translatePartCategory(part.category)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                       </div>
                     </div>
 
