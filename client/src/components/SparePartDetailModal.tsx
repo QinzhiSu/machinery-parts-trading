@@ -137,7 +137,7 @@ export default function SparePartDetailModal({
               <Package size={16} style={{ color: brandColor, marginTop: '2px', flexShrink: 0 }} />
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  OEM 编号
+                  {language === 'en' ? 'OEM Number' : language === 'es' ? 'Número OEM' : language === 'ar' ? 'رقم OEM' : language === 'ru' ? 'Номер OEM' : language === 'fr' ? 'Numéro OEM' : language === 'pt' ? 'Número OEM' : language === 'it' ? 'Numero OEM' : 'OEM 编号'}
                 </p>
                 <p
                   className="text-sm font-bold font-mono"
@@ -153,7 +153,7 @@ export default function SparePartDetailModal({
               <Wrench size={16} style={{ color: brandColor, marginTop: '2px', flexShrink: 0 }} />
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  分类
+                  {language === 'en' ? 'Category' : language === 'es' ? 'Categoría' : language === 'ar' ? 'الفئة' : language === 'ru' ? 'Категория' : language === 'fr' ? 'Catégorie' : language === 'pt' ? 'Categoria' : language === 'it' ? 'Categoria' : '分类'}
                 </p>
                 <p className="text-sm font-semibold" style={{ color: 'oklch(0.18 0.04 265)' }}>
                   {translatePartCategory(part.category)}
@@ -164,7 +164,7 @@ export default function SparePartDetailModal({
             {/* Full Description */}
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                描述
+                {language === 'en' ? 'Description' : language === 'es' ? 'Descripción' : language === 'ar' ? 'الوصف' : language === 'ru' ? 'Описание' : language === 'fr' ? 'Description' : language === 'pt' ? 'Descrição' : language === 'it' ? 'Descrizione' : '描述'}
               </p>
               <p className="text-sm leading-relaxed" style={{ color: 'oklch(0.45 0.02 265)' }}>
                 {translateDescription(part.description)}
@@ -175,7 +175,7 @@ export default function SparePartDetailModal({
             {(part.compatibleModels && part.compatibleModels.length > 0) ? (
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  适用车型
+                  {language === 'en' ? 'Compatible Models' : language === 'es' ? 'Modelos Compatibles' : language === 'ar' ? 'النماذج المتوافقة' : language === 'ru' ? 'Совместимые модели' : language === 'fr' ? 'Modèles compatibles' : language === 'pt' ? 'Modelos compatíveis' : language === 'it' ? 'Modelli compatibili' : '适用车型'}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {part.compatibleModels.map((model) => (
@@ -195,7 +195,7 @@ export default function SparePartDetailModal({
             {engineModels && (
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  发动机型号
+                  {language === 'en' ? 'Engine Models' : language === 'es' ? 'Modelos de Motor' : language === 'ar' ? 'نماذج المحرك' : language === 'ru' ? 'Модели двигателя' : language === 'fr' ? 'Modèles de moteur' : language === 'pt' ? 'Modelos de motor' : language === 'it' ? 'Modelli di motore' : '发动机型号'}
                 </p>
                 <p className="text-sm font-mono" style={{ fontFamily: 'var(--font-mono)', color: 'oklch(0.45 0.02 265)' }}>
                   {engineModels}
@@ -220,7 +220,7 @@ export default function SparePartDetailModal({
               style={{ background: brandColor, fontFamily: 'var(--font-display)' }}
             >
               <MessageSquare size={14} />
-              发送询价
+              {language === 'en' ? 'Send Inquiry' : language === 'es' ? 'Enviar Consulta' : language === 'ar' ? 'إرسال استفسار' : language === 'ru' ? 'Отправить запрос' : language === 'fr' ? 'Envoyer une demande' : language === 'pt' ? 'Enviar consulta' : language === 'it' ? 'Invia richiesta' : '发送询价'}
             </button>
             <ComparisonButton part={part} brandColor={brandColor} />
             <button
@@ -247,7 +247,7 @@ export default function SparePartDetailModal({
                   fontFamily: 'var(--font-display)',
                 }}
               >
-                关闭Close
+{language === 'en' ? 'Close' : language === 'es' ? 'Cerrar' : language === 'ar' ? 'إغلاق' : language === 'ru' ? 'Закрыть' : language === 'fr' ? 'Fermer' : language === 'pt' ? 'Fechar' : language === 'it' ? 'Chiudi' : '关闭'}
               </button>
           </div>
         </div>
