@@ -289,11 +289,17 @@ export default function BrandPage() {
                         {brand.id === 'caterpillar' ? getTranslatedCATMachineSpecs(machine.model, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineSpecs(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineSpecs(machine.model, language) : machine.specs}
                       </div>
 
-                      <MachineDescriptionTranslator
-                        description={brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineShortDescription(machine.model, language) || machine.description : brand.id === 'sany' ? getTranslatedSanyMachineDescription(machine.description, language) : (translateDescription(machine.description) || translateMachineDescriptionPartial(machine.description) || machine.description)}
-                        className="text-xs leading-relaxed mb-4"
-                        style={{ color: 'oklch(0.5 0.02 265)' }}
-                      />
+                      {brand.id === 'caterpillar' || brand.id === 'shantui' || brand.id === 'sany' ? (
+                        <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.45 0.02 265)' }}>
+                          {brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.model, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineShortDescription(machine.model, language) : getTranslatedSanyMachineDescription(machine.model, language)}
+                        </p>
+                      ) : (
+                        <MachineDescriptionTranslator
+                          description={translateMachineDescriptionPartial(machine.description)}
+                          className="text-sm leading-relaxed mb-4"
+                          style={{ color: 'oklch(0.45 0.02 265)' }}
+                        />
+                      )}
 
                       <button
                         onClick={() => openInquiry({ model: machine.model, name: machine.name, specs: machine.specs, type: 'machine' })}

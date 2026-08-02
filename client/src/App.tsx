@@ -8,6 +8,8 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 import WhatsAppButton from "./components/WhatsAppButton";
 import WeChatButton from "./components/WeChatButton";
 import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import BrandPage from "./pages/BrandPage";
 import ConstructionPage from "./pages/ConstructionPage";
 import TrucksPage from "./pages/TrucksPage";
@@ -23,7 +25,9 @@ function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
-      <Route path="/" component={Home} />
+          <Route path="/" component={Home} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/construction" component={ConstructionPage} />
       <Route path="/trucks" component={TrucksPage} />
       <Route path="/brand/:brandId" component={BrandPage} />

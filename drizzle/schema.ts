@@ -1,4 +1,5 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar, index, unique } from "drizzle-orm/mysql-core";
+import { int, mysqlEnum, mysqlTable, text, timestamp, varchar, index, unique, primaryKey } from "drizzle-orm/mysql-core";
+import * as relations from "./relations";
 
 /**
  * Core user table backing auth flow.
@@ -44,5 +45,52 @@ export const favorites = mysqlTable(
 
 export type Favorite = typeof favorites.$inferSelect;
 export type InsertFavorite = typeof favorites.$inferInsert;
+
+// Blog Post table
+export const posts = mysqlTable("posts", {
+  id: int("id").autoincrement().primaryKey(),
+  title: varchar("title", { length: 255 }).notNull(),
+  slug: varchar("slug", { length: 255 }).notNull().unique(),
+  content: text("content").notNull(),
+  authorId: int("authorId").notNull(),
+  categoryId: int("categoryId").notNull(),
+  imageUrl: varchar("imageUrl", { length: 255 }),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type Post = typeof posts.$inferSelect;
+export type InsertPost = typeof posts.$inferInsert;
+
+// Categories table for blog posts
+export const categories = mysqlTable("categories", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 255 }).notNull().unique(),
+  slug: varchar("slug", { length: 255 }).notNull().unique(),
+});
+
+export type Category = typeof categories.$inferSelect;
+export type InsertCategory = typeof categories.$inferInsert;
+
+// Tags table for blog posts
+export const tags = mysqlTable("tags", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 255 }).notNull().unique(),
+  slug: varchar("slug", { length: 255 }).notNull().unique(),
+});
+
+export type Tag = typeof tags.$inferSelect;
+export type InsertTag = typeof tags.$inferInsert;
+
+// PostTags join table
+export const postTags = mysqlTable("postTags", {
+  postId: int("postId").notNull(),
+  tagId: int("tagId").notNull(),
+}, (table) => ({
+  pk: primaryKey(table.postId, table.tagId),
+}));
+
+export type PostTag = typeof postTags.$inferSelect;
+export type InsertPostTag = typeof postTags.$inferInsert;
 
 // TODO: Add your tables here
