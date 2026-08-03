@@ -787,3 +787,11 @@
 
 **修改文件：**
 - `/home/ubuntu/machinery-parts-trading/client/src/pages/BrandPage.tsx` - 添加 CAT 描述翻译函数导入和修正翻译逻辑
+
+- [x] 修复 9 个缺少 'en' 字段的山推零件翻译 (Cooling Fan Assembly, Cutting Edge/End Bit, Diesel Coarse Filter, Diesel Filter (SD22), Double-Sided Support Wheel, Dozer Blade Assembly, Drive Sprocket Segment, End Bit (Right), Final Drive Skeleton Oil Seal)
+- [x] 验证西班牙文语言下山推零件名称、分类、描述正确翻译
+
+**Shantui 零件翻译最终统计：**
+- ✅ 40 个零件 × 8 种语言 = 320+ 个翻译条目
+- ✅ 所有零件名称、分类、描述都已正确翻译
+- ✅ 已验证西班牙文、英文、中文等语言的翻译效果
