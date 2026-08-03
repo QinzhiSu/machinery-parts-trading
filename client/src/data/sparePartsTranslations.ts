@@ -709,3 +709,245 @@ export function getTranslatedCATSparePartName(name: string, language: string): s
   }
   return name;
 }
+
+// CAT Spare Part Description Translations
+export const catSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
+  'CAT part. Replace during maintenance every 250-500 hours.': {
+    'en': 'CAT part. Replace during maintenance every 250-500 hours.',
+    'zh': 'CAT零件。每250-500小时随保养更换。',
+    'es': 'Pieza CAT. Reemplazar durante el mantenimiento cada 250-500 horas.',
+    'ar': 'قطعة CAT. استبدال أثناء الصيانة كل 250-500 ساعة.',
+    'ru': 'Деталь CAT. Заменяйте при техническом обслуживании каждые 250-500 часов.',
+    'fr': 'Pièce CAT. Remplacer lors de l\'entretien tous les 250-500 heures.',
+    'pt': 'Peça CAT. Substituir durante a manutenção a cada 250-500 horas.',
+    'it': 'Pezzo CAT. Sostituire durante la manutenzione ogni 250-500 ore.'
+  },
+  'CAT part. Replace every 250-500 hours or based on fuel quality.': {
+    'en': 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    'zh': 'CAT零件。每250-500小时或根据燃油质量更换。',
+    'es': 'Pieza CAT. Reemplazar cada 250-500 horas o según la calidad del combustible.',
+    'ar': 'قطعة CAT. استبدال كل 250-500 ساعة أو بناءً على جودة الوقود.',
+    'ru': 'Деталь CAT. Заменяйте каждые 250-500 часов или в зависимости от качества топлива.',
+    'fr': 'Pièce CAT. Remplacer tous les 250-500 heures ou selon la qualité du carburant.',
+    'pt': 'Peça CAT. Substituir a cada 250-500 horas ou com base na qualidade do combustível.',
+    'it': 'Pezzo CAT. Sostituire ogni 250-500 ore o in base alla qualità del carburante.'
+  },
+  'CAT part. Replace every 500-1000 hours or based on fluid analysis results.': {
+    'en': 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    'zh': 'CAT零件。每500-1000小时或根据流体分析结果更换。',
+    'es': 'Pieza CAT. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluido.',
+    'ar': 'قطعة CAT. استبدال كل 500-1000 ساعة أو بناءً على نتائج تحليل السوائل.',
+    'ru': 'Деталь CAT. Заменяйте каждые 500-1000 часов или в зависимости от результатов анализа жидкости.',
+    'fr': 'Pièce CAT. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
+    'pt': 'Peça CAT. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluido.',
+    'it': 'Pezzo CAT. Sostituire ogni 500-1000 ore o in base ai risultati dell\'analisi del fluido.'
+  },
+  'CAT part. Replace every 500-1000 hours.': {
+    'en': 'CAT part. Replace every 500-1000 hours.',
+    'zh': 'CAT零件。每500-1000小时更换。',
+    'es': 'Pieza CAT. Reemplazar cada 500-1000 horas.',
+    'ar': 'قطعة CAT. استبدال كل 500-1000 ساعة.',
+    'ru': 'Деталь CAT. Заменяйте каждые 500-1000 часов.',
+    'fr': 'Pièce CAT. Remplacer tous les 500-1000 heures.',
+    'pt': 'Peça CAT. Substituir a cada 500-1000 horas.',
+    'it': 'Pezzo CAT. Sostituire ogni 500-1000 ore.'
+  },
+  'CAT part. Replace every 250-500 hours or based on dust environment.': {
+    'en': 'CAT part. Replace every 250-500 hours or based on dust environment.',
+    'zh': 'CAT零件。每250-500小时或根据粉尘环境更换。',
+    'es': 'Pieza CAT. Reemplazar cada 250-500 horas o según el ambiente de polvo.',
+    'ar': 'قطعة CAT. استبدال كل 250-500 ساعة أو بناءً على بيئة الغبار.',
+    'ru': 'Деталь CAT. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.',
+    'fr': 'Pièce CAT. Remplacer tous les 250-500 heures ou selon l\'environnement poussiéreux.',
+    'pt': 'Peça CAT. Substituir a cada 250-500 horas ou com base no ambiente de poeira.',
+    'it': 'Pezzo CAT. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.'
+  },
+  'CAT part. Replace with outer element or replace inner element every 2 outer element changes.': {
+    'en': 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.',
+    'zh': 'CAT零件。与外芯一起更换或每2次外芯更换时更换内芯。',
+    'es': 'Pieza CAT. Reemplazar con el elemento externo o reemplazar el elemento interno cada 2 cambios de elemento externo.',
+    'ar': 'قطعة CAT. استبدل مع العنصر الخارجي أو استبدل العنصر الداخلي كل تغييرين للعنصر الخارجي.',
+    'ru': 'Деталь CAT. Заменяйте вместе с наружным элементом или заменяйте внутренний элемент каждые 2 замены наружного элемента.',
+    'fr': 'Pièce CAT. Remplacer avec l\'élément externe ou remplacer l\'élément interne tous les 2 changements d\'élément externe.',
+    'pt': 'Peça CAT. Substituir com o elemento externo ou substituir o elemento interno a cada 2 mudanças de elemento externo.',
+    'it': 'Pezzo CAT. Sostituire con l\'elemento esterno o sostituire l\'elemento interno ogni 2 cambi di elemento esterno.'
+  },
+  'CAT part. Replace if overheating or leaking.': {
+    'en': 'CAT part. Replace if overheating or leaking.',
+    'zh': 'CAT零件。如果过热或泄漏，请更换。',
+    'es': 'Pieza CAT. Reemplazar si hay sobrecalentamiento o fugas.',
+    'ar': 'قطعة CAT. استبدل إذا كان هناك ارتفاع في درجة الحرارة أو تسرب.',
+    'ru': 'Деталь CAT. Заменяйте при перегреве или утечке.',
+    'fr': 'Pièce CAT. Remplacer en cas de surchauffe ou de fuite.',
+    'pt': 'Peça CAT. Substituir se houver superaquecimento ou vazamento.',
+    'it': 'Pezzo CAT. Sostituire in caso di surriscaldamento o perdita.'
+  },
+  'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).': {
+    'en': 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    'zh': 'CAT零件。当动力下降、异常噪音或油泄漏时更换（大修）。',
+    'es': 'Pieza CAT. Reemplazar cuando hay caída de potencia, ruido anormal o fugas de aceite (reparación mayor).',
+    'ar': 'قطعة CAT. استبدل عند انخفاض الطاقة أو الضوضاء غير الطبيعية أو تسرب الزيت (إصلاح رئيسي).',
+    'ru': 'Деталь CAT. Заменяйте при падении мощности, аномальном шуме или утечке масла (капитальный ремонт).',
+    'fr': 'Pièce CAT. Remplacer lorsque la puissance baisse, bruit anormal ou fuites d\'huile (réparation majeure).',
+    'pt': 'Peça CAT. Substituir quando há queda de potência, ruído anormal ou vazamento de óleo (reparo maior).',
+    'it': 'Pezzo CAT. Sostituire quando si verifica caduta di potenza, rumore anomalo o perdita di olio (riparazione importante).'
+  },
+  'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).': {
+    'en': 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    'zh': 'CAT零件。当履带松动或磨损超过限制时更换（大修，高成本零件）。',
+    'es': 'Pieza CAT. Reemplazar cuando la pista está suelta o el desgaste excede el límite (reparación mayor, pieza de alto costo).',
+    'ar': 'قطعة CAT. استبدل عند فك المسار أو تجاوز التآكل للحد (إصلاح رئيسي، قطعة عالية التكلفة).',
+    'ru': 'Деталь CAT. Заменяйте при ослаблении гусеницы или превышении предела износа (капитальный ремонт, дорогостоящая деталь).',
+    'fr': 'Pièce CAT. Remplacer lorsque la piste est desserrée ou l\'usure dépasse la limite (réparation majeure, pièce coûteuse).',
+    'pt': 'Peça CAT. Substituir quando a trilha está solta ou o desgaste excede o limite (reparo maior, peça de alto custo).',
+    'it': 'Pezzo CAT. Sostituire quando il cingolo è allentato o l\'usura supera il limite (riparazione importante, pezzo costoso).'
+  },
+  'CAT part. Replace if leaking or worn.': {
+    'en': 'CAT part. Replace if leaking or worn.',
+    'zh': 'CAT零件。如果泄漏或磨损，请更换。',
+    'es': 'Pieza CAT. Reemplazar si hay fuga o desgaste.',
+    'ar': 'قطعة CAT. استبدل إذا كان هناك تسرب أو تآكل.',
+    'ru': 'Деталь CAT. Заменяйте при утечке или износе.',
+    'fr': 'Pièce CAT. Remplacer en cas de fuite ou d\'usure.',
+    'pt': 'Peça CAT. Substituir se houver vazamento ou desgaste.',
+    'it': 'Pezzo CAT. Sostituire in caso di perdita o usura.'
+  },
+  'CAT part. Replace if worn or making abnormal noise.': {
+    'en': 'CAT part. Replace if worn or making abnormal noise.',
+    'zh': 'CAT零件。如果磨损或产生异常噪音，请更换。',
+    'es': 'Pieza CAT. Reemplazar si está desgastada o hace ruido anormal.',
+    'ar': 'قطعة CAT. استبدل إذا كان مرتديًا أو يصدر ضوضاء غير طبيعية.',
+    'ru': 'Деталь CAT. Заменяйте при износе или аномальном шуме.',
+    'fr': 'Pièce CAT. Remplacer si usée ou bruit anormal.',
+    'pt': 'Peça CAT. Substituir se desgastada ou fazendo ruído anormal.',
+    'it': 'Pezzo CAT. Sostituire se usurato o che fa rumore anomalo.'
+  },
+  'CAT part. Replace when gear teeth are worn or broken.': {
+    'en': 'CAT part. Replace when gear teeth are worn or broken.',
+    'zh': 'CAT零件。当齿轮齿磨损或断裂时更换。',
+    'es': 'Pieza CAT. Reemplazar cuando los dientes del engranaje estén desgastados o rotos.',
+    'ar': 'قطعة CAT. استبدل عند ارتداء أسنان التروس أو كسرها.',
+    'ru': 'Деталь CAT. Заменяйте при износе или поломке зубьев шестерни.',
+    'fr': 'Pièce CAT. Remplacer lorsque les dents d\'engrenage sont usées ou cassées.',
+    'pt': 'Peça CAT. Substituir quando os dentes da engrenagem estão desgastados ou quebrados.',
+    'it': 'Pezzo CAT. Sostituire quando i denti dell\'ingranaggio sono usurati o rotti.'
+  },
+  'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.': {
+    'en': 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.',
+    'zh': 'CAT零件。与斗齿一起更换，使用寿命比齿本身长。',
+    'es': 'Pieza CAT. Reemplazar con dientes de cucharón, vida útil más larga que los dientes mismos.',
+    'ar': 'قطعة CAT. استبدل مع أسنان الدلو، عمر أطول من الأسنان نفسها.',
+    'ru': 'Деталь CAT. Заменяйте вместе с зубьями ковша, более длительный срок службы, чем сами зубья.',
+    'fr': 'Pièce CAT. Remplacer avec les dents du godet, durée de vie plus longue que les dents elles-mêmes.',
+    'pt': 'Peça CAT. Substituir com dentes do balde, vida útil mais longa do que os dentes em si.',
+    'it': 'Pezzo CAT. Sostituire con i denti del secchio, durata più lunga dei denti stessi.'
+  },
+  'CAT part. Replace synchronously every time teeth are replaced.': {
+    'en': 'CAT part. Replace synchronously every time teeth are replaced.',
+    'zh': 'CAT零件。每次更换齿时同时更换。',
+    'es': 'Pieza CAT. Reemplazar sincronizadamente cada vez que se reemplazan los dientes.',
+    'ar': 'قطعة CAT. استبدل بشكل متزامن في كل مرة يتم استبدال الأسنان.',
+    'ru': 'Деталь CAT. Заменяйте синхронно каждый раз при замене зубьев.',
+    'fr': 'Pièce CAT. Remplacer de manière synchronisée chaque fois que les dents sont remplacées.',
+    'pt': 'Peça CAT. Substituir sincronizadamente toda vez que os dentes são substituídos.',
+    'it': 'Pezzo CAT. Sostituire sincronicamente ogni volta che i denti vengono sostituiti.'
+  },
+  'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).': {
+    'en': 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    'zh': 'CAT零件。当出现异常噪音、油泄漏或爬升困难时更换（大修，高成本零件）。',
+    'es': 'Pieza CAT. Reemplazar cuando hay ruido anormal, fugas de aceite o dificultad para subir (reparación mayor, pieza de alto costo).',
+    'ar': 'قطعة CAT. استبدل عند حدوث ضوضاء غير طبيعية أو تسرب زيت أو صعوبة في التسلق (إصلاح رئيسي، قطعة عالية التكلفة).',
+    'ru': 'Деталь CAT. Заменяйте при аномальном шуме, утечке масла или затруднении при подъеме (капитальный ремонт, дорогостоящая деталь).',
+    'fr': 'Pièce CAT. Remplacer en cas de bruit anormal, fuites d\'huile ou difficulté à monter (réparation majeure, pièce coûteuse).',
+    'pt': 'Peça CAT. Substituir quando há ruído anormal, vazamento de óleo ou dificuldade de subida (reparo maior, peça de alto custo).',
+    'it': 'Pezzo CAT. Sostituire quando si verifica rumore anomalo, perdita di olio o difficoltà di salita (riparazione importante, pezzo costoso).'
+  },
+  'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).': {
+    'en': 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).',
+    'zh': 'CAT零件。当出现异常噪音、油泄漏或爬升困难时更换（大修）。',
+    'es': 'Pieza CAT. Reemplazar cuando hay ruido anormal, fugas de aceite o dificultad para subir (reparación mayor).',
+    'ar': 'قطعة CAT. استبدل عند حدوث ضوضاء غير طبيعية أو تسرب زيت أو صعوبة في التسلق (إصلاح رئيسي).',
+    'ru': 'Деталь CAT. Заменяйте при аномальном шуме, утечке масла или затруднении при подъеме (капитальный ремонт).',
+    'fr': 'Pièce CAT. Remplacer en cas de bruit anormal, fuites d\'huile ou difficulté à monter (réparation majeure).',
+    'pt': 'Peça CAT. Substituir quando há ruído anormal, vazamento de óleo ou dificuldade de subida (reparo maior).',
+    'it': 'Pezzo CAT. Sostituire quando si verifica rumore anomalo, perdita di olio o difficoltà di salita (riparazione importante).'
+  },
+  'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).': {
+    'en': 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    'zh': 'CAT零件。当磨损至极限或开裂时更换（高频更换零件）。',
+    'es': 'Pieza CAT. Reemplazar cuando está desgastada al límite o agrietada (pieza de reemplazo de alta frecuencia).',
+    'ar': 'قطعة CAT. استبدل عند الارتداء إلى الحد أو التشقق (قطعة استبدال عالية التردد).',
+    'ru': 'Деталь CAT. Заменяйте при износе до предела или трещинах (часто заменяемая деталь).',
+    'fr': 'Pièce CAT. Remplacer lorsqu\'usée à la limite ou fissurée (pièce de remplacement haute fréquence).',
+    'pt': 'Peça CAT. Substituir quando desgastada até o limite ou rachada (peça de substituição de alta frequência).',
+    'it': 'Pezzo CAT. Sostituire quando usurato al limite o incrinato (pezzo di sostituzione ad alta frequenza).'
+  },
+  'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.': {
+    'en': 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    'zh': 'CAT零件。与斗齿一起检查磨损；使用寿命比齿本身长。',
+    'es': 'Pieza CAT. Verificar desgaste con dientes de cucharón; vida útil más larga que los dientes mismos.',
+    'ar': 'قطعة CAT. تحقق من التآكل مع أسنان الدلو؛ عمر أطول من الأسنان نفسها.',
+    'ru': 'Деталь CAT. Проверяйте износ вместе с зубьями ковша; более длительный срок службы, чем сами зубья.',
+    'fr': 'Pièce CAT. Vérifier l\'usure avec les dents du godet; durée de vie plus longue que les dents elles-mêmes.',
+    'pt': 'Peça CAT. Verificar desgaste com dentes do balde; vida útil mais longa do que os dentes em si.',
+    'it': 'Pezzo CAT. Controllare l\'usura con i denti del secchio; durata più lunga dei denti stessi.'
+  },
+  'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.': {
+    'en': 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    'zh': 'CAT零件。与斗齿一起检查磨损；推土机松动齿的高频更换零件。',
+    'es': 'Pieza CAT. Verificar desgaste con dientes de cucharón; pieza de reemplazo de alta frecuencia para dientes sueltos de bulldozer.',
+    'ar': 'قطعة CAT. تحقق من التآكل مع أسنان الدلو؛ قطعة استبدال عالية التردد لأسنان الجرافة المرتخية.',
+    'ru': 'Деталь CAT. Проверяйте износ вместе с зубьями ковша; часто заменяемая деталь для ослабления зубьев бульдозера.',
+    'fr': 'Pièce CAT. Vérifier l\'usure avec les dents du godet; pièce de remplacement haute fréquence pour les dents desserrées du bulldozer.',
+    'pt': 'Peça CAT. Verificar desgaste com dentes do balde; peça de substituição de alta frequência para dentes soltos de escavadeira.',
+    'it': 'Pezzo CAT. Controllare l\'usura con i denti del secchio; pezzo di sostituzione ad alta frequenza per i denti allentati del bulldozer.'
+  },
+  'CAT part. Replace when leaking or seal aging occurs.': {
+    'en': 'CAT part. Replace when leaking or seal aging occurs.',
+    'zh': 'CAT零件。当泄漏或密封老化时更换。',
+    'es': 'Pieza CAT. Reemplazar cuando hay fugas o envejecimiento del sello.',
+    'ar': 'قطعة CAT. استبدل عند حدوث تسرب أو شيخوخة الختم.',
+    'ru': 'Деталь CAT. Заменяйте при утечке или старении уплотнения.',
+    'fr': 'Pièce CAT. Remplacer en cas de fuite ou de vieillissement du joint.',
+    'pt': 'Peça CAT. Substituir quando há vazamento ou envelhecimento do selo.',
+    'it': 'Pezzo CAT. Sostituire quando si verifica perdita o invecchiamento della guarnizione.'
+  },
+  'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).': {
+    'en': 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    'zh': 'CAT零件。当出现异常噪音或过度间隙时更换（高频维护更换零件）。',
+    'es': 'Pieza CAT. Reemplazar cuando hay ruido anormal o holgura excesiva (pieza de reemplazo de mantenimiento de alta frecuencia).',
+    'ar': 'قطعة CAT. استبدل عند حدوث ضوضاء غير طبيعية أو خلوص مفرط (قطعة استبدال صيانة عالية التردد).',
+    'ru': 'Деталь CAT. Заменяйте при аномальном шуме или чрезмерном зазоре (часто заменяемая деталь при техническом обслуживании).',
+    'fr': 'Pièce CAT. Remplacer en cas de bruit anormal ou de jeu excessif (pièce de remplacement d\'entretien haute fréquence).',
+    'pt': 'Peça CAT. Substituir quando há ruído anormal ou folga excessiva (peça de substituição de manutenção de alta frequência).',
+    'it': 'Pezzo CAT. Sostituire quando si verifica rumore anomalo o gioco eccessivo (pezzo di sostituzione manutenzione ad alta frequenza).'
+  },
+  'CAT part. Replace when abnormal noise or excessive clearance occurs.': {
+    'en': 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    'zh': 'CAT零件。当出现异常噪音或过度间隙时更换。',
+    'es': 'Pieza CAT. Reemplazar cuando hay ruido anormal o holgura excesiva.',
+    'ar': 'قطعة CAT. استبدل عند حدوث ضوضاء غير طبيعية أو خلوص مفرط.',
+    'ru': 'Деталь CAT. Заменяйте при аномальном шуме или чрезмерном зазоре.',
+    'fr': 'Pièce CAT. Remplacer en cas de bruit anormal ou de jeu excessif.',
+    'pt': 'Peça CAT. Substituir quando há ruído anormal ou folga excessiva.',
+    'it': 'Pezzo CAT. Sostituire quando si verifica rumore anomalo o gioco eccessivo.'
+  },
+  'CAT part. Replace with pin, high-frequency wear part.': {
+    'en': 'CAT part. Replace with pin, high-frequency wear part.',
+    'zh': 'CAT零件。与销一起更换，高频磨损零件。',
+    'es': 'Pieza CAT. Reemplazar con pasador, pieza de desgaste de alta frecuencia.',
+    'ar': 'قطعة CAT. استبدل مع الدبوس، قطعة ارتداء عالية التردد.',
+    'ru': 'Деталь CAT. Заменяйте вместе с штифтом, часто изнашиваемая деталь.',
+    'fr': 'Pièce CAT. Remplacer avec goupille, pièce d\'usure haute fréquence.',
+    'pt': 'Peça CAT. Substituir com pino, peça de desgaste de alta frequência.',
+    'it': 'Pezzo CAT. Sostituire con perno, pezzo di usura ad alta frequenza.'
+  }
+};
+
+export function getTranslatedCATSparePartDescription(description: string, language: string): string {
+  const translations = catSparePartDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return description;
+}

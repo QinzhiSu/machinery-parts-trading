@@ -10,7 +10,7 @@ import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { getTranslatedPartDescription } from '@/data/partDescriptionTranslations';
-import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedCATSparePartCategory, getTranslatedCATSparePartName } from '@/data/sparePartsTranslations';
+import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedCATSparePartCategory, getTranslatedCATSparePartName, getTranslatedCATSparePartDescription } from '@/data/sparePartsTranslations';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -168,7 +168,7 @@ export default function SparePartDetailModal({
                 {language === 'en' ? 'Description' : language === 'es' ? 'Descripción' : language === 'ar' ? 'الوصف' : language === 'ru' ? 'Описание' : language === 'fr' ? 'Description' : language === 'pt' ? 'Descrição' : language === 'it' ? 'Descrizione' : '描述'}
               </p>
               <p className="text-sm leading-relaxed" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                {brandName === 'Shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brandName === 'SANY' ? getTranslatedSanySparePartDescription(part.description, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartDescription(part.description, language) : brandName === 'Caterpillar' ? getTranslatedCATSparePartName(part.description, language) : translateDescription(part.description)}
+                {brandName === 'Shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brandName === 'SANY' ? getTranslatedSanySparePartDescription(part.description, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartDescription(part.description, language) : brandName === 'Caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : translateDescription(part.description)}
               </p>
             </div>
 
