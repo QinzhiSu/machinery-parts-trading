@@ -414,7 +414,8 @@ export const sparePartNameTranslations: Record<string, Record<string, string>> =
 
   'CAT part. Replace when abnormal noise or excessive clearance occurs.': { en: 'CAT part. Replace when abnormal noise or excessive clearance occurs.', zh: 'CAT 零件。异响/间隙过大时更换', es: 'Pieza CAT. Reemplazar cuando hay ruido anormal o holgura excesiva.', ar: 'قطعة كاتربيلر. استبدل عند وجود ضوضاء غير طبيعية أو خلوص مفرط.', ru: 'Деталь CAT. Заменяйте при ненормальном шуме или чрезмерном зазоре.', fr: 'Pièce CAT. Remplacer en cas de bruit anormal ou de jeu excessif.', pt: 'Peça CAT. Substituir quando ruído anormal ou folga excessiva.', it: 'Pezzo CAT. Sostituire quando rumore anomalo o gioco eccessivo.' },
 
-  'CAT part. Replace with pin, high-frequency wear part.': { en: 'CAT part. Replace with pin, high-frequency wear part.', zh: 'CAT 零件。随销更换,高频磨损件', es: 'Pieza CAT. Reemplazar con pasador, pieza de desgaste de alta frecuencia.', ar: 'قطعة كاتربيلر. استبدل مع الدبوس، قطعة تآكل عالية التردد.', ru: 'Деталь CAT. Заменяйте с штифтом, часто изнашиваемая деталь.', fr: 'Pièce CAT. Remplacer avec goupille, pièce d\'usure haute fréquence.', pt: 'Peça CAT. Substituir com pino, peça de desgaste de alta frequência.', it: 'Pezzo CAT. Sostituire con perno, pezzo di usura ad alta frequenza.' }};export const sparePartCategoryTranslations: Record<string, Record<string, string>> = {  '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Техническое обслуживание/Система фильтрации', fr: 'Entretien/Système de filtration', pt: 'Manutenção/Sistema de filtração', it: 'Manutenzione/Sistema di filtrazione' },
+  'CAT part. Replace with pin, high-frequency wear part.': { en: 'CAT part. Replace with pin, high-frequency wear part.', zh: 'CAT 零件。随销更换,高频磨损件', es: 'Pieza CAT. Reemplazar con pasador, pieza de desgaste de alta frecuencia.', ar: 'قطعة كاتربيلر. استبدل مع الدبوس، قطعة تآكل عالية التردد.', ru: 'Деталь CAT. Заменяйте с штифтом, часто изнашиваемая деталь.', fr: 'Pièce CAT. Remplacer avec goupille, pièce d\'usure haute fréquence.', pt: 'Peça CAT. Substituir com pino, peça de desgaste de alta frequência.', it: 'Pezzo CAT. Sostituire con perno, pezzo di usura ad alta frequenza.' }};export const sparePartCategoryTranslations: Record<string, Record<string, string>> = {
+
 
   '传动/皮带': { en: 'Transmission/Belts', es: 'Transmisión/Correas', ar: 'الإرسال/الأحزمة', ru: 'Трансмиссия/Ремни', fr: 'Transmission/Courroies', pt: 'Transmissão/Correias', it: 'Trasmissione/Cinghie' },
 
@@ -440,11 +441,17 @@ export const sparePartNameTranslations: Record<string, Record<string, string>> =
 
   '挖掘属性/GET(中型段)': { en: 'Excavation Attachment/GET (Medium)', es: 'Accesorio de excavación/GET (mediano)', ar: 'ملحق الحفر/GET (متوسط)', ru: 'Экскаваторное оборудование/GET (среднее)', fr: 'Accessoire d\'excavation/GET (moyen)', pt: 'Acessório escavação/GET (médio)', it: 'Accessorio scavo/GET (medio)' },
 
-				  					  '挖掘属性/GET(大型段)': { en: 'Excavation Attachment/GET (Large)', es: 'Accesorio de excavación/GET (grande)', ar: 'ملحق الحفر/GET (كبير)', ru: 'Экскаваторное оборудование/GET (большое)', fr: 'Accessoire d\'excavation/GET (grand)', pt: 'Acessório escavação/GET (grande)', it: 'Accessorio scavo/GET (grande)' },
+  '挖掘属性/GET(大型段)': { en: 'Excavation Attachment/GET (Large)', es: 'Accesorio de excavación/GET (grande)', ar: 'ملحق الحفر/GET (كبير)', ru: 'Экскаваторное оборудование/GET (большое)', fr: 'Accessoire d\'excavation/GET (grand)', pt: 'Acessório escavação/GET (grande)', it: 'Accessorio scavo/GET (grande)' },
 
   '挖掘臂销套系统': { en: 'Boom Pin System', es: 'Sistema de pasador de pluma', ar: 'نظام دبوس الذراع', ru: 'Система штифта стрелы', fr: 'Système de goupille de fléche', pt: 'Sistema de pino de lana', it: 'Sistema di perno della freccia' },
-
   '液压缸/密封件': { en: 'Hydraulic Cylinder/Seals', es: 'Cilindro hidráulico/Sellos', ar: 'الاسطوانة الهيدروليكية/الأختام', ru: 'Гидравлический цилиндр/Уплотнения', fr: 'Vérin hydraulique/Joints', pt: 'Cilindro hidráulico/Selos', it: 'Cilindro idraulico/Sigilli' },
+  
+  // XCMG Categories
+  '保养/滤清系统': { zh: '保养/滤清系统', en: 'Maintenance/Filtration System', es: 'Sistema de Mantenimiento/Filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema de Manutenção/Filtração', it: 'Sistema di Manutenzione/Filtrazione' },
+  '电气/传感器': { zh: '电气/传感器', en: 'Electrical/Sensor', es: 'Eléctrico/Sensor', ar: 'كهربائي/مستشعر', ru: 'Электрика/Датчик', fr: 'Électrique/Capteur', pt: 'Elétrico/Sensor', it: 'Elettrico/Sensore' },
+  '传动/变速系统': { zh: '传动/变速系统', en: 'Transmission/Gearbox System', es: 'Sistema de Transmisión/Caja de Cambios', ar: 'نظام النقل/صندوق التروس', ru: 'Система трансмиссии/коробки передач', fr: 'Système de transmission/boîte de vitesses', pt: 'Sistema de Transmissão/Caixa de Câmbio', it: 'Sistema di Trasmissione/Cambio' },
+  '液压系统': { zh: '液压系统', en: 'Hydraulic System', es: 'Sistema Hidráulico', ar: 'نظام هيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema Hidráulico', it: 'Sistema Idraulico' },
+  '密封/传动件': { zh: '密封/传动件', en: 'Sealing/Transmission Parts', es: 'Piezas de Sellado/Transmisión', ar: 'أجزاء الختم/النقل', ru: 'Уплотнения/Детали трансмиссии', fr: 'Pièces d\'étanchéité/transmission', pt: 'Peças de Vedación/Transmisión', it: 'Parti di Tenuta/Trasmissione' }
 };
 
 export function getTranslatedSparePartName(name: string, language: string): string {
