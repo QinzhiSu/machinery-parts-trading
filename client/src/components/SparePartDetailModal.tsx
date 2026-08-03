@@ -10,7 +10,7 @@ import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { getTranslatedPartDescription } from '@/data/partDescriptionTranslations';
-import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory } from '@/data/sparePartsTranslations';
+import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartDescription, getTranslatedXCMGSparePartCategory } from '@/data/sparePartsTranslations';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -157,7 +157,7 @@ export default function SparePartDetailModal({
                   {language === 'en' ? 'Category' : language === 'es' ? 'Categoría' : language === 'ar' ? 'الفئة' : language === 'ru' ? 'Категория' : language === 'fr' ? 'Catégorie' : language === 'pt' ? 'Categoria' : language === 'it' ? 'Categoria' : '分类'}
                 </p>
                 <p className="text-sm font-semibold" style={{ color: 'oklch(0.18 0.04 265)' }}>
-                  {translatePartCategory(part.category)}
+                  {brandName === 'Shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function SparePartDetailModal({
                 {language === 'en' ? 'Description' : language === 'es' ? 'Descripción' : language === 'ar' ? 'الوصف' : language === 'ru' ? 'Описание' : language === 'fr' ? 'Description' : language === 'pt' ? 'Descrição' : language === 'it' ? 'Descrizione' : '描述'}
               </p>
               <p className="text-sm leading-relaxed" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                {brandName === 'Shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : translateDescription(part.description)}
+                {brandName === 'Shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brandName === 'SANY' ? getTranslatedSanySparePartDescription(part.description, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartDescription(part.description, language) : translateDescription(part.description)}
               </p>
             </div>
 

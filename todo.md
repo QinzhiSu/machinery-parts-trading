@@ -587,3 +587,19 @@
 - ✅ 15 个零件描述 × 8 种语言 = 120 个描述翻译
 - ✅ **总计：392 个徐工零件翻译条目**
 - ✅ 浏览器验证通过：所有零件名称、分类、描述都正确显示翻译
+
+
+## 徐工零件缺失翻译修复
+
+- [x] 修复 803086817 零件描述 - 更新为完整的英文描述
+- [x] 修复 803300971 零件描述 - 更新为完整的英文描述
+- [x] 在 sparePartDescriptionTranslations 中添加缺失的翻译 - 为 "XCMG part. Replace every 500-1000 hours or based on fluid analysis results." 添加了 8 种语言翻译
+- [ ] 验证 803300971 零件的描述是否在所有语言下都正确显示翻译 (可能需要清除浏览器缓存)
+
+**修复的零件：**
+- ✅ 803086817 - Filtro de aire (ZL50) - 西班牙文显示: "Pieza XCMG. Reemplazar cada 250-500 horas o según el ambiente de polvo."
+- ⚠️ 803300971 - Filtro de aceite (con válvula de bloqueo) - 翻译已添加但前端可能需要缓存清除
+
+**修改文件：**
+- `/home/ubuntu/machinery-parts-trading/client/src/data/products.ts` - 更新了两个零件的描述
+- `/home/ubuntu/machinery-parts-trading/client/src/data/sparePartsTranslations.ts` - 添加了新的翻译键
