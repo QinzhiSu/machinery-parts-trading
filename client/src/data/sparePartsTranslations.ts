@@ -861,7 +861,11 @@ Object.assign(sparePartDescriptionTranslations, {  'Bucket Tooth Adapter (J300 S
 
   'XCMG 零件。异响/抖动时更换': { en: 'XCMG part. Replace when abnormal noise or vibration occurs.', es: 'Pieza XCMG. Reemplazar cuando hay ruido anormal o vibración.', ar: 'قطعة XCMG. استبدل عند الضوضاء غير الطبيعية أو الاهتزاز.', ru: 'Деталь XCMG. Заменяйте при ненормальном шуме или вибрации.', fr: 'Pièce XCMG. Remplacer quand bruit anormal ou vibration.', pt: 'Peça XCMG. Substituir quando ruído anormal ou vibração.', it: 'Pezzo XCMG. Sostituire quando rumore anomalo o vibrazione.' },
 
-  'XCMG 零件。液压异常/压力不稳时更换': { en: 'XCMG part. Replace when hydraulic abnormality or pressure instability occurs.', es: 'Pieza XCMG. Reemplazar cuando hay anomalía hidráulica o inestabilidad de presión.', ar: 'قطعة XCMG. استبدل عند شذوذ هيدروليكي أو عدم استقرار الضغط.', ru: 'Деталь XCMG. Заменяйте при гидравлической аномалии или нестабильности давления.', fr: 'Pièce XCMG. Remplacer quand anomalie hydraulique ou instabilité de pression.', pt: 'Peça XCMG. Substituir quando anomalia hidráulica ou instabilidade de pressão.', it: 'Pezzo XCMG. Sostituire quando anomalia idraulica o instabilità pressione.' }
+  'XCMG 零件。液压异常/压力不稳时更换': { en: 'XCMG part. Replace when hydraulic abnormality or pressure instability occurs.', es: 'Pieza XCMG. Reemplazar cuando hay anomalía hidráulica o inestabilidad de presión.', ar: 'قطعة XCMG. استبدل عند شذوذ هيدروليكي أو عدم استقرار الضغط.', ru: 'Деталь XCMG. Заменяйте при гидравлической аномалии или нестабильности давления.', fr: 'Pièce XCMG. Remplacer quand anomalie hydraulique ou instabilité de pression.', pt: 'Peça XCMG. Substituir quando anomalia hidráulica ou instabilidade de pressão.', it: 'Pezzo XCMG. Sostituire quando anomalia idraulica o instabilità pressione.' },
+
+  'XCMG 零件。500-1000小时': { en: 'XCMG part. Replace every 500-1000 hours.', es: 'Pieza XCMG. Reemplazar cada 500-1000 horas.', ar: 'قطعة XCMG. استبدل كل 500-1000 ساعة.', ru: 'Деталь XCMG. Заменяйте каждые 500-1000 часов.', fr: 'Pièce XCMG. Remplacer tous les 500-1000 heures.', pt: 'Peça XCMG. Substituir a cada 500-1000 horas.', it: 'Pezzo XCMG. Sostituire ogni 500-1000 ore.' },
+
+  'XCMG 零件。250-500小时': { en: 'XCMG part. Replace every 250-500 hours.', es: 'Pieza XCMG. Reemplazar cada 250-500 horas.', ar: 'قطعة XCMG. استبدل كل 250-500 ساعة.', ru: 'Деталь XCMG. Заменяйте каждые 250-500 часов.', fr: 'Pièce XCMG. Remplacer tous les 250-500 heures.', pt: 'Peça XCMG. Substituir a cada 250-500 horas.', it: 'Pezzo XCMG. Sostituire ogni 250-500 ore.' }
 
 });
 
