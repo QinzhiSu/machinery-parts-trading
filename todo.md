@@ -624,7 +624,7 @@
   - ✅ 860117405 - Universal Joint Coupling
   - ✅ 5000140 - Relief Valve
 - [x] 修改 products.ts 中 2 个零件的描述以匹配翻译表键
-- [ ] 调查并解决 4 个零件仍未显示翻译的问题：
+- [x] 调查并解决 4 个零件仍未显示翻译的问题：
   - ⚠️ 803300971 - Oil Filter (with Lock Valve)
   - ⚠️ 860115193 - Drive Axle Differential Gear
   - ⚠️ 803013093 - Working Hydraulic Pump

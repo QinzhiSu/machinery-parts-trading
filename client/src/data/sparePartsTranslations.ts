@@ -416,8 +416,10 @@ export const xcmgSparePartCategoryTranslations: Record<string, Record<string, st
   'Transmission/Gearbox System': { zh: '传动/变速箱系统', en: 'Transmission/Gearbox System', es: 'Sistema de transmisión/caja de cambios', ar: 'نظام الإرسال/صندوق التروس', ru: 'Система передачи/коробка передач', fr: 'Système de transmission/boîte de vitesses', pt: 'Sistema de transmissão/caixa de câmbio', it: 'Sistema di trasmissione/scatola del cambio' },
   'Hydraulic System': { zh: '液压系统', en: 'Hydraulic System', es: 'Sistema hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema hidráulico', it: 'Sistema idraulico' },
   'Brake System': { zh: '制动系统', en: 'Brake System', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' },
-  'Sealing/Drive Components': { zh: '密封/传动件', en: 'Sealing/Drive Components', es: 'Componentes de sellado/transmisión', ar: 'مكونات الختم / النقل', ru: 'Компоненты уплотнения/передачи', fr: 'Composants d\'étanchéité/transmission', pt: 'Componentes de vedación/transmisión', it: 'Componenti di tenuta/trasmissione' }
-};
+  'Sealing/Drive Components': { zh: '密封/传动件', en: 'Sealing/Drive Components', es: 'Componentes de sellado/transmisión', ar: 'مكونات الختم / النقل', ru: 'Компоненты уплотнения/передачи', fr: 'Composants d\'étanchéité/transmission', pt: 'Componentes de vedación/transmisión', it: 'Componenti di tenuta/trasmissione' },
+  'Universal Joint Coupling': { zh: '万向节联轴器', en: 'Universal Joint Coupling', es: 'Acoplamiento de junta universal', ar: 'مقرن مفصل عام', ru: 'Муфта универсального шарнира', fr: 'Accouplement joint universel', pt: 'Acoplamento junta universal', it: 'Accoppiamento giunto universale' },
+  'Relief Valve': { zh: '溢流阀', en: 'Relief Valve', es: 'Válvula de alivio', ar: 'صمام الإغاثة', ru: 'Предохранительный клапан', fr: 'Soupape de soulagement', pt: 'Válvula de alívio', it: 'Valvola di scarico' }
+}
 
 export function getTranslatedSparePartName(name: string, language: string): string {
   // First, check if the input name is already a key in the translations table
