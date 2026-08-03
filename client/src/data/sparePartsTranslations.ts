@@ -650,6 +650,7 @@ export const catSparePartCategoryTranslations: Record<string, Record<string, str
   'Transmission System': { en: 'Transmission System', zh: '传动系统', es: 'Sistema de Transmisión', ar: 'نظام الإرسال', ru: 'Система трансмиссии', fr: 'Système de Transmission', pt: 'Sistema de Transmissão', it: 'Sistema di Trasmissione' },
   'Hydraulic Cylinder/Seals': { en: 'Hydraulic Cylinder/Seals', zh: '液压缸/密封件', es: 'Cilindro Hidráulico/Sellos', ar: 'أسطوانة هيدروليكية/أختام', ru: 'Гидроцилиндр/уплотнения', fr: 'Cylindre Hydraulique/Joints', pt: 'Cilindro Hidráulico/Vedações', it: 'Cilindro Idraulico/Sigilli' },
   'Boom Pin/Bushing System': { en: 'Boom Pin/Bushing System', zh: '臂销/衬套系统', es: 'Sistema Pasador/Casquillo de Pluma', ar: 'نظام دبوس/بوشينج الذراع', ru: 'Система штифта/втулки стрелы', fr: 'Système Goupille/Silentbloc Flèche', pt: 'Sistema Pino/Bucha Lança', it: 'Sistema Perno/Boccola Braccio' },
+  'Excavation/GET (Small)': { en: 'Excavation/GET (Small)', zh: '挖掘/GET(小型)', es: 'Excavación/GET (Pequeño)', ar: 'الحفر/GET (صغير)', ru: 'Экскавация/GET (Малый)', fr: 'Excavation/GET (Petit)', pt: 'Escavação/GET (Pequeno)', it: 'Scavo/GET (Piccolo)' },
 };
 
 export const catSparePartNameTranslations: Record<string, Record<string, string>> = {
