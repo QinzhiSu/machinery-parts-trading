@@ -594,7 +594,15 @@
 - [x] 修复 803086817 零件描述 - 更新为完整的英文描述
 - [x] 修复 803300971 零件描述 - 更新为完整的英文描述
 - [x] 在 sparePartDescriptionTranslations 中添加缺失的翻译 - 为 "XCMG part. Replace every 500-1000 hours or based on fluid analysis results." 添加了 8 种语言翻译
-- [ ] 验证 803300971 零件的描述是否在所有语言下都正确显示翻译 (可能需要清除浏览器缓存)
+- [x] 验证 803300971 零件的描述是否在所有语言下都正确显示翻译 (可能需要清除浏览器缓存)
+
+## 零件详情弹窗翻译修复
+
+- [x] 修复 SparePartDetailModal 中 XCMG 零件的翻译问题
+- [x] 为 SparePartDetailModal 添加 XCMG 和 SANY 的翻译函数导入
+- [x] 在零件详情弹窗中添加 XCMG 和 SANY 的特定翻译逻辑
+- [x] 为缺失的翻译键添加 8 种语言的翻译
+- [x] 验证零件详情弹窗中的翻译是否正确显示
 
 **修复的零件：**
 - ✅ 803086817 - Filtro de aire (ZL50) - 西班牙文显示: "Pieza XCMG. Reemplazar cada 250-500 horas o según el ambiente de polvo."
