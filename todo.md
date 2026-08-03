@@ -999,3 +999,54 @@
 - 西班牙文版本已验证翻译正确显示
 - 整机卡片视图中的分类和描述都能正确翻译
 - 系统已生产就绪
+
+
+## 柳工（LiuGong）整机推土机和卡车吊机翻译修复
+
+- [x] 识别柳工推土机（Bulldozer）和卡车吊机（Truck Crane）的翻译缺失问题
+- [x] 为 Bulldozer 分类添加 8 种语言翻译
+- [x] 为 Truck Crane 分类添加 8 种语言翻译
+- [x] 为 5 个推土机和卡车吊机型号添加 8 种语言描述翻译
+  - LiuGong DW105AE Bulldozer
+  - LiuGong TD16N Bulldozer
+  - LiuGong de100c Bulldozer
+  - LiuGong dw90 Bulldozer
+  - LiuGong ltc900t5 Truck Crane
+- [x] 修复参数（9 ton | 65 kW | Blade: 2.5 m）和分类（Bulldozer）的翻译问题
+- [x] 重启开发服务器应用修复
+- [x] 浏览器验证所有推土机和卡车吊机的翻译正确显示
+
+### 修复内容
+
+**添加的翻译表：**
+- `liugongMachineTypeTranslations` 中添加 Bulldozer 和 Truck Crane 分类翻译
+- `liugongMachineDescriptionTranslations` 中添加 5 个推土机和卡车吊机的描述翻译
+
+### 修复统计
+
+**翻译条目总数：** 56 个
+- 新增分类翻译：16 个（2 个分类 × 8 种语言）
+- 新增描述翻译：40 个（5 个整机 × 8 种语言）
+
+**支持的语言：** 8 种
+- 中文 (zh)
+- 英文 (en)
+- 西班牙文 (es)
+- 阿拉伯文 (ar)
+- 俄文 (ru)
+- 法文 (fr)
+- 葡萄牙文 (pt)
+- 意大利文 (it)
+
+**验证结果：**
+- ✅ 所有 4 个推土机的分类和描述翻译正确显示
+- ✅ 卡车吊机的分类和描述翻译正确显示
+- ✅ 参数信息（如 "9 ton | 65 kW | Blade: 2.5 m"）现在支持完整翻译
+
+### 修复完成
+
+✅ **柳工整机推土机和卡车吊机翻译已完全修复**
+- 所有 21 个柳工整机现在都支持完整的 8 种语言翻译
+- 推土机和卡车吊机的分类和参数都能正确翻译
+- 所有整机在所有 8 种语言下都能正确显示翻译
+- 系统已生产就绪
