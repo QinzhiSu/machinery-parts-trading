@@ -600,6 +600,18 @@ export const shantuiSparePartCategoryTranslations: Record<string, Record<string,
   '传动/变速系统': { zh: '传动/变速系统', en: 'Transmission/Gearbox System', es: 'Transmisión/Sistema de cambios', ar: 'نظام الإرسال/علبة التروس', ru: 'Трансмиссия/Коробка передач', fr: 'Transmission/Коробка передач', pt: 'Transmissão/Sistema de câmbio', it: 'Trasmissione/Sistema cambio' },
 
   '底盘/履带系统': { zh: '底盘/履带系统', en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الشاسي/نظام الجنزير', ru: 'Шасси/Гусеничная система', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de esteira', it: 'Telaio/Sistema cingolo' },
+
+  '冷却系统': { zh: '冷却系统', en: 'Cooling System', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
+
+  '推土铲/GET': { zh: '推土铲/GET', en: 'Dozer Blade/GET', es: 'Cuchilla de topadora/GET', ar: 'شفرة الجرافة/GET', ru: 'Отвал бульдозера/GET', fr: 'Lame de bouteur/GET', pt: 'Lâmina de trator/GET', it: 'Lama di bulldozer/GET' },
+
+  '液压系统': { zh: '液压系统', en: 'Hydraulic System', es: 'Sistema hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema hidráulico', it: 'Sistema idraulico' },
+
+  '转向/悬挂': { zh: '转向/悬挂', en: 'Steering/Suspension', es: 'Dirección/Suspensión', ar: 'التوجيه/التعليق', ru: 'Рулевое управление/Подвеска', fr: 'Direction/Suspension', pt: 'Direção/Suspensão', it: 'Sterzo/Sospensione' },
+
+  '传动系统': { zh: '传动系统', en: 'Transmission System', es: 'Sistema de transmisión', ar: 'نظام الإرسال', ru: 'Система трансмиссии', fr: 'Système de transmission', pt: 'Sistema de transmissão', it: 'Sistema di trasmissione' },
+
+  '传动/最终传动': { zh: '传动/最终传动', en: 'Transmission/Final Drive', es: 'Transmisión/Transmisión final', ar: 'الإرسال/الإرسال النهائي', ru: 'Трансмиссия/Главная передача', fr: 'Transmission/Transmission finale', pt: 'Transmissão/Transmissão final', it: 'Trasmissione/Trasmissione finale' },
 };
 
 export function getTranslatedShantuiSparePartCategory(category: string, language: string): string {
