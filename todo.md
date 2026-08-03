@@ -356,6 +356,9 @@
 - [x] 在 BrandPage.tsx 中集成山推零件名称翻译
 - [x] 在 SparePartDetailModal.tsx 中验证山推零件翻译显示
 - [x] 验证英文语言下山推零件名称正确翻译
+- [x] 为山推零件分类添加英文键 (主分类: Maintenance/Filtration System, Electrical/Starting, Transmission/Gearbox System, Chassis/Track System)
+- [x] 验证英文语言下山推零件分类正确翻译
+- [x] 验证英文语言下山推零件描述正确翻译
 
 **Shantui 零件名称翻译统计：**
 - ✅ 25 个零件 × 8 种语言 = 200 个翻译条目
