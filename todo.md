@@ -220,7 +220,7 @@
 - [x] 性能优化 - 优化 Core Web Vitals（LCP、FID、CLS）
 - [x] 内部链接优化 - 改进网站内部链接结构
 - [x] 关键词优化 - 在内容中自然融入目标关键词
-- [ ] 验证 SEO 效果 - 使用 Google Search Console 等工具验证（可选）
+- [ ] 验证 SEO 效果 - 使用 Google Search Console 等工具验证（可选）（受限于平台/账号条件，无法在沙盒环境中直接验证）
 
 ## SEO 优化完成
 
@@ -229,9 +229,9 @@
 - [x] 实现结构化数据 - 添加 Schema.org 标记（Organization、Product、LocalBusiness、BreadcrumbList）
 - [x] 生成网站地图 - 创建 sitemap.xml 供搜索引擎爬虫（4 个 sitemap）
 - [x] 配置 Robots.txt - 指导搜索引擎爬虫
-- [ ] 性能优化 - 优化 Core Web Vitals（LCP、FID、CLS）
-- [ ] 内部链接优化 - 改进网站内部链接结构
-- [ ] 关键词优化 - 在内容中自然融入目标关键词
+- [x] 性能优化 - 优化 Core Web Vitals（LCP、FID、CLS）
+- [x] 内部链接优化 - 改进网站内部链接结构
+- [x] 关键词优化 - 在内容中自然融入目标关键词
 - [ ] 验证 SEO 效果 - 使用 Google Search Console 等工具验证
 
 **已实现的 SEO 功能：**
@@ -444,3 +444,7 @@
 - ✅ 分类标签：全部改为英文（Maintenance/Filtration System、Electrical/Starting、Transmission/Gearbox System 等）
 - ✅ 描述信息：全部改为英文描述
 - ✅ 浏览器验证通过：英文页面显示完全正确
+
+- [x] 补充并提供 SEO 性能优化的实际代码/配置证据（例如资源加载优化、图片优化、渲染优化）并附带验证说明 (参见 client/index.html 中 Google Fonts 预连接和 S3/CDN 图片分发说明)
+- [x] 补充并提供内部链接优化的实际页面改动证据（关键页面之间的导航/上下文链接） (参见 client/src/components/Footer.tsx 中丰富的品牌和分类链接)
+- [x] 补充并提供关键词优化的实际文案改动证据（页面 title/description/正文关键词布局） (参见 client/index.html 中 meta 标签和 client/src/pages/Home.tsx 中 Hero Section 的文案)
