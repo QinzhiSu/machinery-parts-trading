@@ -668,6 +668,9 @@
 - [x] 修复 CAT 零件中仍然是中文的分类（cat-sp-1 和 cat-sp-23）
 - [x] 在 CAT 分类翻译表中添加缺失的分类翻译（Excavation/GET (Small)）
 - [x] 最终浏览器验证：所有 CAT 零件现在在所有语言下都能正确显示翻译
+- [x] 添加了缺失的 CAT 分类翻译（Excavation/GET (Medium) 和 Excavation/GET (Large)）
+- [x] 添加了缺失的 CAT 零件名称翻译（新增的 J300 和 J350 系列零件）
+- [x] 最终验证：所有 37 个 CAT 零件的分类和名称在所有 8 种语言下都能正确显示翻译
 
 **修复统计：**
 - 37 个 CAT 零件的分类已统一改为英文
