@@ -291,7 +291,7 @@ export default function BrandPage() {
 
                       {brand.id === 'caterpillar' || brand.id === 'shantui' || brand.id === 'sany' ? (
                         <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                          {brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.model, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineShortDescription(machine.model, language) : getTranslatedSanyMachineDescription(machine.model, language)}
+                          {brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineShortDescription(machine.model, language) : getTranslatedSanyMachineDescription(machine.model, language)}
                         </p>
                       ) : (
                         <MachineDescriptionTranslator
