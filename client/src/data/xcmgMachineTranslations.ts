@@ -1,6 +1,17 @@
 // XCMG Machine Translations
 // Xuzhou Construction Machinery Group (徐工)
 
+export const xcmgMachineSpecsTranslations: Record<string, Record<string, string>> = {
+  'ton': { zh: '吨', en: 'ton', es: 'ton', ar: 'طن', ru: 'тонн', fr: 'tonne', pt: 'ton', it: 'tonnellata' },
+  'kW': { zh: '千瓦', en: 'kW', es: 'kW', ar: 'كيلوواط', ru: 'кВт', fr: 'kW', pt: 'kW', it: 'kW' },
+  'HP': { zh: '马力', en: 'HP', es: 'HP', ar: 'حصان', ru: 'л.с.', fr: 'ch', pt: 'HP', it: 'CV' },
+  'm³ bucket': { zh: '立方米铲斗', en: 'm³ bucket', es: 'm³ de cuchara', ar: 'متر مكعب دلو', ru: 'м³ ковш', fr: 'm³ godet', pt: 'm³ caçamba', it: 'm³ benna' },
+  'm blade': { zh: '米铲刀', en: 'm blade', es: 'm de hoja', ar: 'متر شفرة', ru: 'м отвал', fr: 'm lame', pt: 'm lâmina', it: 'm lama' },
+  'm boom': { zh: '米臂长', en: 'm boom', es: 'm de pluma', ar: 'متر ذراع', ru: 'м стрела', fr: 'm flèche', pt: 'm lança', it: 'm braccio' },
+  'm drum': { zh: '米滚筒', en: 'm drum', es: 'm de tambor', ar: 'متر أسطوانة', ru: 'м валец', fr: 'm tambour', pt: 'm tambor', it: 'm rullo' },
+  'm depth': { zh: '米深度', en: 'm depth', es: 'm de profundidad', ar: 'متر عمق', ru: 'м глубина', fr: 'm profondeur', pt: 'm profundidade', it: 'm profondità' },
+};
+
 export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
   'XCMG XE155UCR compact hydraulic excavator designed for urban construction and tight spaces. Features advanced hydraulic system, fuel-efficient Cummins engine, and excellent maneuverability. Engine: Cummins 4BTA3.9-C130 (80 kW / 109 HP). Max digging depth: 6.2 m. Max reach height: 9.8 m.': {
     zh: 'XCMG XE155UCR 小型液压挖掘机，专为城市建筑和狭窄空间设计。具有先进的液压系统、燃油高效的康明斯发动机和优异的机动性。发动机：康明斯 4BTA3.9-C130（80 kW / 109 HP）。最大挖掘深度：6.2 m。最大到达高度：9.8 m。',
@@ -344,8 +355,15 @@ export function getTranslatedXCMGMachineType(machineType: string, language: stri
 }
 
 export function getTranslatedXCMGMachineSpecs(specs: string, language: string): string {
-  // Specs are typically in the format: "XX ton | XX kW | X.X m³ bucket" or similar
-  // For now, return as-is since specs are mostly technical numbers
-  // In a real scenario, you might want to translate unit labels
-  return specs;
+  const parts = specs.split(" | ");
+  const translatedParts = parts.map(part => {
+    let translatedPart = part;
+    for (const key in xcmgMachineSpecsTranslations) {
+      if (part.includes(key)) {
+        translatedPart = translatedPart.replace(key, xcmgMachineSpecsTranslations[key][language] || key);
+      }
+    }
+    return translatedPart;
+  });
+  return translatedParts.join(" | ");
 }
