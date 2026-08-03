@@ -825,7 +825,9 @@ export function usePartTranslation() {
 
   const translatePartName = (name: string): string => {
     // Use sparePartsTranslations to translate part names for all languages
+    console.log('[DEBUG translatePartName] Input:', { name, language });
     const translated = getTranslatedSparePartName(name, language);
+    console.log('[DEBUG translatePartName] Output:', { name, translated, language });
     if (translated !== name) {
       return translated;
     }

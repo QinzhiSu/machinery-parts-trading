@@ -352,16 +352,26 @@ export const xcmgSparePartCategoryTranslations: Record<string, Record<string, st
 };
 
 export function getTranslatedSparePartName(name: string, language: string): string {
-  // Debug: log the input
-  if (language === 'zh' && name.includes('Hydraulic')) {
-    console.log('[DEBUG] getTranslatedSparePartName:', { name, language, found: !!sparePartNameTranslations[name] });
-  }
-  
+  // First, check if the input name is already a key in the translations table
   const translations = sparePartNameTranslations[name];
   if (translations && translations[language]) {
     return translations[language];
   }
-  // If not found, try to find the English key and return its translation in the target language
+  
+  // If the input is Chinese, find the English name and translate to target language
+  if (language !== 'zh') {
+    for (const [englishName, translationMap] of Object.entries(sparePartNameTranslations)) {
+      if (translationMap['zh'] === name) {
+        // Found the Chinese name, return the translation in target language
+        const targetTranslation = translationMap[language];
+        if (targetTranslation) {
+          return targetTranslation;
+        }
+      }
+    }
+  }
+  
+  // If not found, try to find by English value
   if (language !== 'en') {
     for (const [key, trans] of Object.entries(sparePartNameTranslations)) {
       // Check if the English value matches the input name
@@ -370,6 +380,7 @@ export function getTranslatedSparePartName(name: string, language: string): stri
       }
     }
   }
+  
   return name;
 }
 
@@ -519,7 +530,14 @@ export const shantuiSparePartTranslations: Record<string, Record<string, string>
   'Boom Cylinder Seal Repair Kit': { zh: '斗杆油缸密封修理包', es: 'Kit de reparación de sello de cilindro de pluma', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
   '风扇/发电机V带': { en: 'Fan/Alternator V-Belt', es: 'Correa V ventilador/alternador', ar: 'حزام V مروحة/مولد كهربائي', ru: 'V-образный ремень вентилятора/генератора', fr: 'Courroie V ventilateur/alternateur', pt: 'Correia V ventilador/alternador', it: 'Cinghia V ventilatore/alternatore' },
   '驱动链轮': { en: 'Drive Sprocket', es: 'Piñón de mando', ar: 'رف الدفع', ru: 'Ведущая звездочка', fr: 'Pignon moteur', pt: 'Pinhão de acionamento', it: 'Pignone di azionamento' },
-  '驱动链轮(Drive Sprocket)': { en: 'Drive Sprocket', es: 'Piñón de mando', ar: 'رف الدفع', ru: 'Ведущая звездочка', fr: 'Pignon moteur', pt: 'Pinhão de acionamento', it: 'Pignone di azionamento' }
+  '驱动链轮(Drive Sprocket)': { en: 'Drive Sprocket', es: 'Piñón de mando', ar: 'رف الدفع', ru: 'Ведущая звездочка', fr: 'Pignon moteur', pt: 'Pinhão de acionamento', it: 'Pignone di azionamento' },
+  '空气滤芯总成(内外芯)': { en: 'Air Filter Assembly (Inner and Outer)', es: 'Conjunto de filtro de aire (interior y exterior)', ar: 'مجموعة فلتر الهواء (الداخلي والخارجي)', ru: 'Сборка воздушного фильтра (внутренний и внешний)', fr: 'Ensemble filtre à air (intérieur et extérieur)', pt: 'Conjunto filtro ar (interior e exterior)', it: 'Gruppo filtro aria (interno ed esterno)' },
+  '水温传感器': { en: 'Water Temperature Sensor', es: 'Sensor de temperatura del agua', ar: 'مستشعر درجة حرارة الماء', ru: 'Датчик температуры воды', fr: 'Capteur température eau', pt: 'Sensor temperatura água', it: 'Sensore temperatura acqua' },
+  '斗齿': { en: 'Bucket Teeth', es: 'Dientes de cucharón', ar: 'أسنان الدلو', ru: 'Зубья ковша', fr: 'Dents de godet', pt: 'Dentes da caçamba', it: 'Denti del secchio' },
+  '变速箱总成': { en: 'Transmission Assembly', es: 'Conjunto de caja de cambios', ar: 'مجموعة صندوق التروس', ru: 'Узел коробки передач', fr: 'Ensemble boîte de vitesses', pt: 'Conjunto caixa cambio', it: 'Gruppo scatola cambio' },
+  '制动片': { en: 'Brake Pads', es: 'Pastillas de freno', ar: 'وسادات الفرامل', ru: 'Тормозные колодки', fr: 'Plaquettes de frein', pt: 'Pastilhas freio', it: 'Pastiglie freno' },
+  '唇形密封圈': { en: 'Lip Seal', es: 'Sello de labios', ar: 'ختم الشفاه', ru: 'Уплотнение губное', fr: 'Joint à lèvres', pt: 'Vedação de lábios', it: 'Sigillo a labbra' },
+  '万向节联轴器': { en: 'Universal Joint Coupling', es: 'Acoplamiento de junta universal', ar: 'مقرن مفصل عام', ru: 'Муфта универсального шарнира', fr: 'Accouplement joint universel', pt: 'Acoplamento junta universal', it: 'Accoppiamento giunto universale' }
 };
 
 

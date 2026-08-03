@@ -383,7 +383,7 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-sm mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {getTranslatedSparePartName(part.name, language)}
+                        {translatePartName(part.name)}
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
