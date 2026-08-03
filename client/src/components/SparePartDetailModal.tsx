@@ -83,7 +83,7 @@ export default function SparePartDetailModal({
               className="text-lg font-bold uppercase tracking-wide"
               style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
             >
-              {brandName} {part.partNumber}
+              {language === 'en' ? brandName : language === 'es' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'ar' ? (brandName === 'XCMG' ? 'مجموعة XCMG' : brandName === 'Shantui' ? 'شانتوي' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'ru' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'fr' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'pt' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'it' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : brandName} {part.partNumber}
             </h2>
             <p className="text-xs mt-1" style={{ color: 'oklch(0.5 0.02 265)' }}>
               {brandName === 'Shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : translatePartCategory(part.category)}
