@@ -352,6 +352,11 @@ export const xcmgSparePartCategoryTranslations: Record<string, Record<string, st
 };
 
 export function getTranslatedSparePartName(name: string, language: string): string {
+  // Debug: log the input
+  if (language === 'zh' && name.includes('Hydraulic')) {
+    console.log('[DEBUG] getTranslatedSparePartName:', { name, language, found: !!sparePartNameTranslations[name] });
+  }
+  
   const translations = sparePartNameTranslations[name];
   if (translations && translations[language]) {
     return translations[language];
@@ -511,7 +516,7 @@ export const shantuiSparePartTranslations: Record<string, Record<string, string>
   '铲斗油缸密封包(85mm杆/125mm缸径)': { en: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)', es: 'Kit de sello de cilindro de cucharrón (vástago 85mm/diámetro cilindro 125mm)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 85 مم/قطر أسطوانة 125 مم)', ru: 'Набор уплотнений цилиндра ковша (шток 85 мм/диаметр цилиндра 125 мм)', fr: 'Kit d\'étanchéité cylindre godet (tige 85mm/alésage cylindre 125mm)', pt: 'Kit vedação cilindro caçamba (haste 85mm/diâmetro cilindro 125mm)', it: 'Kit sigillo cilindro benna (stelo 85mm/diametro cilindro 125mm)' },
   '铲斗衬套(斗杆处)': { en: 'Bucket Bushing (Boom Arm Position)', es: 'Casquillo de cucharrón (ubicación de pluma)', ar: 'بوشينج الدلو (موقع الذراع)', ru: 'Втулка ковша (место стрелы)', fr: 'Silentbloc godet (emplacement flèche)', pt: 'Bucha caçamba (local lança)', it: 'Boccola benna (posizione braccio)' },
 
-  // English names for CAT parts (for translation lookup)  'Boom Cylinder Seal Repair Kit': { zh: '斗杆油缸密封修理包', es: 'Kit de reparación de sello de cilindro de pluma', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
+  'Boom Cylinder Seal Repair Kit': { zh: '斗杆油缸密封修理包', es: 'Kit de reparación de sello de cilindro de pluma', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
   '风扇/发电机V带': { en: 'Fan/Alternator V-Belt', es: 'Correa V ventilador/alternador', ar: 'حزام V مروحة/مولد كهربائي', ru: 'V-образный ремень вентилятора/генератора', fr: 'Courroie V ventilateur/alternateur', pt: 'Correia V ventilador/alternador', it: 'Cinghia V ventilatore/alternatore' },
   '驱动链轮': { en: 'Drive Sprocket', es: 'Piñón de mando', ar: 'رف الدفع', ru: 'Ведущая звездочка', fr: 'Pignon moteur', pt: 'Pinhão de acionamento', it: 'Pignone di azionamento' },
   '驱动链轮(Drive Sprocket)': { en: 'Drive Sprocket', es: 'Piñón de mando', ar: 'رف الدفع', ru: 'Ведущая звездочка', fr: 'Pignon moteur', pt: 'Pinhão de acionamento', it: 'Pignone di azionamento' }

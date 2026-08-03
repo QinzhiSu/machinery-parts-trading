@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getTranslatedSparePartCategory, getTranslatedSparePartDescription, getTranslatedShantuiSparePartDescription } from '@/data/sparePartsTranslations';
+import { getTranslatedSparePartCategory, getTranslatedSparePartDescription, getTranslatedShantuiSparePartDescription, getTranslatedSparePartName } from '@/data/sparePartsTranslations';
 
 // Translation map for machine and spare part descriptions
 const machineDescriptionTranslations: Record<string, Record<string, string>> = {
@@ -824,9 +824,8 @@ export function usePartTranslation() {
   };
 
   const translatePartName = (name: string): string => {
-    if (language === 'zh') return name;
-    // Use sparePartsTranslations to translate part names
-    const translated = getTranslatedSparePartDescription(name, language);
+    // Use sparePartsTranslations to translate part names for all languages
+    const translated = getTranslatedSparePartName(name, language);
     if (translated !== name) {
       return translated;
     }
