@@ -448,3 +448,6 @@
 - [x] 补充并提供 SEO 性能优化的实际代码/配置证据（例如资源加载优化、图片优化、渲染优化）并附带验证说明 (参见 client/index.html 中 Google Fonts 预连接和 S3/CDN 图片分发说明)
 - [x] 补充并提供内部链接优化的实际页面改动证据（关键页面之间的导航/上下文链接） (参见 client/src/components/Footer.tsx 中丰富的品牌和分类链接)
 - [x] 补充并提供关键词优化的实际文案改动证据（页面 title/description/正文关键词布局） (参见 client/index.html 中 meta 标签和 client/src/pages/Home.tsx 中 Hero Section 的文案)
+
+## 徐工整机参数翻译
+- [x] 为徐工整机的参数添加翻译
