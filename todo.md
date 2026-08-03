@@ -347,6 +347,19 @@
 
 - [x] 直接修改 products.ts 中 8 个零件的名称从中文改为英文
 - [x] 修复的零件包括：2159985、2344587、1589088、1709808、087-5805、087-5806、087-5845、137-2919
+
+## Shantui 零件名称翻译
+
+- [x] 为 Shantui 品牌的 25 个零件添加英文名称翻译表 (shantuiSparePartNameTranslations)
+- [x] 支持 8 种语言翻译（中文、英文、西班牙文、阿拉伯文、俄文、法文、葡萄牙文、意大利文）
+- [x] 添加 getTranslatedShantuiSparePartName 函数用于翻译零件名称
+- [x] 在 BrandPage.tsx 中集成山推零件名称翻译
+- [x] 在 SparePartDetailModal.tsx 中验证山推零件翻译显示
+- [x] 验证英文语言下山推零件名称正确翻译
+
+**Shantui 零件名称翻译统计：**
+- ✅ 25 个零件 × 8 种语言 = 200 个翻译条目
+- ✅ 包含的零件：油滤芯、柴油滤芯、空气滤芯、转向液压油滤芯、传动滤芯、液压油滤芯、发电机总成、液力变矩器总成、转向离合器总成、转向泵总成、传动泵总成、履带链条总成、前导轮总成、履带导轮/托轮、推土刀片总成、切割刃/端部、松土器铲、驱动链轮齿片、万向节总成、液压升降缸维修包、散热器总成、冷却风扇总成、主销、最终驱动骨架油封
 - [x] 所有零件现在在任何语言（英文、西班牙语、阿拉伯语等）下都能正确显示
 - [x] 浏览器验证已确认所有修复生效
 - [x] 翻译系统正确应用，将英文名称翻译为对应语言
@@ -751,3 +764,23 @@
 **修改文件：**
 - `/home/ubuntu/machinery-parts-trading/client/src/data/sparePartsTranslations.ts` - 添加了 catSparePartDescriptionTranslations 和 getTranslatedCATSparePartDescription 函数
 - `/home/ubuntu/machinery-parts-trading/client/src/components/SparePartDetailModal.tsx` - 导入并使用了 getTranslatedCATSparePartDescription 函数
+
+
+## CAT 零件列表页面描述翻译修复（最终完成）
+
+- [x] 识别零件列表页面上 CAT 零件的描述仍然显示英文的问题
+- [x] 在 BrandPage.tsx 的导入中添加 getTranslatedCATSparePartDescription 函数
+- [x] 修正第 390 行的代码，使用 getTranslatedCATSparePartDescription 函数而不是 getTranslatedSparePartDescription
+- [x] 重启开发服务器应用修复
+- [x] 浏览器验证：零件列表页面上的 CAT 零件描述在所有语言下都能正确显示翻译
+
+**修复内容：**
+- 在 BrandPage.tsx 第 20 行添加了 getTranslatedCATSparePartDescription 函数导入
+- 在第 390 行修正了 CAT 零件描述的翻译逻辑
+
+**验证结果：**
+- 零件列表页面上的 CAT 零件描述现在显示中文翻译而不是英文
+- 所有 37 个 CAT 零件的列表页面描述在所有 8 种语言下都能正确显示翻译
+
+**修改文件：**
+- `/home/ubuntu/machinery-parts-trading/client/src/pages/BrandPage.tsx` - 添加 CAT 描述翻译函数导入和修正翻译逻辑
