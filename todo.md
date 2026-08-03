@@ -683,3 +683,26 @@
 **问题分析：**
 - CAT 零件的分类混杂：中文（保养/滤清系统、冷却系统、增压/进气、底盘/履带系统、挖掘属性/GET、传动系统）
 - CAT 零件的名称混杂：中文（机油滤芯、燃油滤芯、液压油滤芯、空气滤芯、下托链轮、前导向轮、驱动链轮、上托轮、铲斗斗齿、斗齿适配器、斗齿销、行走马达、回转马达）和英文（Oil Filter、Fuel Filter、Hydraulic Oil Filter、Air Filter、Track Chain Assembly、Radiator Water Tank Assembly、Turbocharger、Final Drive、Transmission Assembly）
+
+## 最后 11 个 CAT 零件名称翻译添加（最终完成）
+
+- [x] 识别最后 11 个 CAT 零件名称缺失翻译
+- [x] 为 11 个零件名称添加完整的 8 种语言翻译：
+  - ✅ Bucket Tooth (J400/J460 Series)
+  - ✅ Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)
+  - ✅ Boom Cylinder Seal Repair Kit
+  - ✅ Bucket Cylinder Seal Repair Kit
+  - ✅ Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)
+  - ✅ Bucket Cylinder Seal Kit (65mm Rod, Old Model)
+  - ✅ Bucket-Boom Connection Pin
+  - ✅ Rod-Boom Connection Pin
+  - ✅ Rod-Cylinder Connection Pin
+  - ✅ Rod-Boom Connection Bushing
+  - ✅ Bucket Bushing (Boom Position)
+- [x] 重启开发服务器应用修复
+- [x] 浏览器验证：最后 11 个零件名称在中文版本中都能正确显示翻译
+
+**修复统计：**
+- ✅ 11 个 CAT 零件名称 × 8 种语言 = 88 个翻译
+- ✅ 所有 37 个 CAT 零件现在在所有 8 种语言下都能正确显示翻译
+- ✅ CAT 零件的分类和名称翻译系统已完全正常工作
