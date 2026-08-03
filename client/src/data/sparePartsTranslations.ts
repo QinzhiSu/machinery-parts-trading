@@ -1,249 +1,450 @@
 // Chinese (zh), English (en), Spanish (es), Arabic (ar), Russian (ru), French (fr), Portuguese (pt), Italian (it)
 
-export const sparePartNameTranslations: Record<string, Record<string, string>> = {
-  '燃油滤芯': { en: 'Fuel Filter', es: 'Filtro de combustible', ar: 'فلتر الوقود', ru: 'Топливный фильтр', fr: 'Filtre à carburant', pt: 'Filtro combustível', it: 'Filtro carburante' },
+export const sparePartNameTranslations: Record<string, Record<string, string>> = {  '燃油滤芯': { en: 'Fuel Filter', es: 'Filtro de combustible', ar: 'فلتر الوقود', ru: 'Топливный фильтр', fr: 'Filtre à carburant', pt: 'Filtro combustível', it: 'Filtro carburante' },
+
   '机油滤芯': { en: 'Oil Filter', es: 'Filtro de aceite', ar: 'فلتر الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
+
   '空气滤芯': { en: 'Air Filter', es: 'Filtro de aire', ar: 'فلتر الهواء', ru: 'Воздушный фильтр', fr: 'Filtre à air', pt: 'Filtro de ar', it: 'Filtro aria' },
+
   '柴油滤芯(前置)': { en: 'Diesel Filter (Front)', es: 'Filtro diésel (frontal)', ar: 'فلتر الديزل (أمامي)', ru: 'Дизельный фильтр (передний)', fr: 'Filtre diesel (avant)', pt: 'Filtro diesel (frontal)', it: 'Filtro diesel (anteriore)' },
+
   '空调/花粉滤芯': { en: 'AC/Pollen Filter', es: 'Filtro de aire acondicionado/polen', ar: 'فلتر تكييف الهواء/حبوب اللقاح', ru: 'Фильтр кондиционера/пыльцы', fr: 'Filtre climatisation/pollen', pt: 'Filtro ar condicionado/pólen', it: 'Filtro aria condizionata/polline' },
+
   '燃油泵SCV阀': { en: 'Fuel Pump SCV Valve', es: 'Válvula SCV de bomba de combustible', ar: 'صمام SCV لمضخة الوقود', ru: 'Клапан SCV топливного насоса', fr: 'Soupape SCV pompe carburant', pt: 'Válvula SCV bomba combustível', it: 'Valvola SCV pompa carburante' },
+
   '风扇/发电机V带': { en: 'Fan/Alternator V-Belt', es: 'Correa V ventilador/alternador', ar: 'حزام V مروحة/مولد كهربائي', ru: 'V-образный ремень вентилятора/генератора', fr: 'Courroie V ventilateur/alternateur', pt: 'Correia V ventilador/alternador', it: 'Cinghia V ventilatore/alternatore' },
+
   '正时链条组件(非皮带)': { en: 'Timing Chain Assembly (Non-Belt)', es: 'Conjunto de cadena de distribución (sin correa)', ar: 'مجموعة سلسلة التوقيت (بدون حزام)', ru: 'Узел цепи ГРМ (без ремня)', fr: 'Ensemble chaîne de distribution (sans courroie)', pt: 'Conjunto corrente distribuição (sem correia)', it: 'Gruppo catena distribuzione (senza cinghia)' },
+
   '正时链条导轨': { en: 'Timing Chain Guide', es: 'Guía de cadena de distribución', ar: 'دليل سلسلة التوقيت', ru: 'Направляющая цепи ГРМ', fr: 'Guide chaîne de distribution', pt: 'Guia corrente distribuição', it: 'Guida catena distribuzione' },
+
   '曲轴正时齿轮': { en: 'Crankshaft Timing Gear', es: 'Engranaje de distribución del cigüeñal', ar: 'ترس توقيت العمود المرفقي', ru: 'Шестерня ГРМ коленвала', fr: 'Pignon de distribution vilebrequin', pt: 'Engrenagem distribuição comando', it: 'Ingranaggio distribuzione albero motore' },
+
   '前刹车片': { en: 'Front Brake Pads', es: 'Pastillas de freno delanteras', ar: 'وسادات الفرامل الأمامية', ru: 'Передние тормозные колодки', fr: 'Plaquettes de frein avant', pt: 'Pastilhas freio dianteiras', it: 'Pastiglie freno anteriori' },
+
   '后刹车蹄片': { en: 'Rear Brake Shoes', es: 'Zapatas de freno traseras', ar: 'حذاء الفرامل الخلفي', ru: 'Задние тормозные колодки', fr: 'Mâchoires de frein arrière', pt: 'Sapatas freio traseiras', it: 'Ganasce freno posteriori' },
+
   '刹车分泵总成(后)': { en: 'Rear Brake Caliper Assembly', es: 'Conjunto de cilindro de freno trasero', ar: 'مجموعة أسطوانة الفرامل الخلفية', ru: 'Задний тормозной суппорт в сборе', fr: 'Ensemble cylindre de frein arrière', pt: 'Conjunto cilindro freio traseiro', it: 'Gruppo cilindro freno posteriore' },
+
   '刹车分泵缸体(前)': { en: 'Front Brake Caliper Body', es: 'Cuerpo del cilindro de freno delantero', ar: 'جسم أسطوانة الفرامل الأمامية', ru: 'Передний тормозной суппорт', fr: 'Corps cylindre de freno avant', pt: 'Corpo cilindro freio dianteiro', it: 'Corpo cilindro freno anteriore' },
+
   '前减震器': { en: 'Front Shock Absorber', es: 'Amortiguador delantero', ar: 'ممتص الصدمات الأمامي', ru: 'Передний амортизатор', fr: 'Amortisseur avant', pt: 'Amortecedor dianteiro', it: 'Ammortizzatore anteriore' },
+
   '前下摆臂衬套': { en: 'Front Lower Control Arm Bushing', es: 'Casquillo de brazo de control inferior delantero', ar: 'بوشينج ذراع التحكم السفلى الأمامية', ru: 'Втулка нижнего рычага подвески', fr: 'Silentbloc bras inférieur avant', pt: 'Bucha braço controle inferior dianteiro', it: 'Boccola braccio controllo inferiore anteriore' },
+
   '后钢板弹簧吊耳衬套': { en: 'Rear Leaf Spring Shackle Bushing', es: 'Casquillo de horquilla de muelle de hoja trasero', ar: 'بوشينج معلق ورقة الزنبرك الخلفي', ru: 'Втулка задней рессоры', fr: 'Silentbloc ressort à lames arrière', pt: 'Bucha mola folha traseira', it: 'Boccola molla a balestra posteriore' },
+
   '减震器上支座(顶胶)': { en: 'Shock Absorber Top Mount (Bearing)', es: 'Soporte superior del amortiguador (cojinete)', ar: 'دعم أعلى ممتص الصدمات (محمل)', ru: 'Верхняя опора амортизатора', fr: 'Support supérieur amortisseur (roulement)', pt: 'Suporte superior amortecedor (rolamento)', it: 'Supporto superiore ammortizzatore (cuscinetto)' },
+
   '转向拉杆球头': { en: 'Steering Tie Rod Ball Joint', es: 'Rótula de barra de dirección', ar: 'كرة مفصل قضيب التوجيه', ru: 'Шаровой палец рулевой тяги', fr: 'Rotule de barre d\'accouplement', pt: 'Junta esférica barra direção', it: 'Snodo sferico barra sterzo' },
+
   '转向机拉杆端': { en: 'Steering Rack End', es: 'Extremo de cremallera de dirección', ar: 'نهاية رف التوجيه', ru: 'Конец рулевой рейки', fr: 'Extrémité de crémaillère de direction', pt: 'Extremidade cremalheira direção', it: 'Estremità cremagliera sterzo' },
+
   '转向节臂(羊角臂)': { en: 'Steering Knuckle Arm', es: 'Brazo de nudillo de dirección', ar: 'ذراع مفصل التوجيه', ru: 'Рычаг поворотного кулака', fr: 'Bras de fusée de direction', pt: 'Braço nó direção', it: 'Braccio nocca sterzo' },
+
   '前轮轴承总成': { en: 'Front Wheel Bearing Assembly', es: 'Conjunto de cojinete de rueda delantera', ar: 'مجموعة محمل العجلة الأمامية', ru: 'Передний ступичный подшипник в сборе', fr: 'Ensemble roulement roue avant', pt: 'Conjunto rolamento roda dianteira', it: 'Gruppo cuscinetto ruota anteriore' },
+
   '后轮轴承总成(含ABS环)': { en: 'Rear Wheel Bearing Assembly (with ABS Ring)', es: 'Conjunto de cojinete de rueda trasera (con anillo ABS)', ar: 'مجموعة محمل العجلة الخلفية (مع حلقة ABS)', ru: 'Задний ступичный подшипник в сборе (с кольцом ABS)', fr: 'Ensemble roulement roue arrière (avec anneau ABS)', pt: 'Conjunto rolamento roda traseira (com anel ABS)', it: 'Gruppo cuscinetto ruota posteriore (con anello ABS)' },
+
   '前CV等速万向节': { en: 'Front CV Constant Velocity Joint', es: 'Junta de velocidad constante CV delantera', ar: 'مفصل السرعة الثابتة CV الأمامي', ru: 'Передний шарнир равных угловых скоростей', fr: 'Joint homocinétique CV avant', pt: 'Junta velocidade constante CV dianteira', it: 'Giunto omocinetico CV anteriore' },
+
   '传动轴十字节(万向节)': { en: 'Driveshaft Universal Joint', es: 'Junta universal del eje de transmisión', ar: 'مفصل عام لعمود الدفع', ru: 'Универсальный шарнир карданного вала', fr: 'Joint universel arbre de transmission', pt: 'Junta universal eixo transmissão', it: 'Giunto universale albero trasmissione' },
+
   '前差速器壳体': { en: 'Front Differential Housing', es: 'Carcasa diferencial delantera', ar: 'علبة التفاضل الأمامية', ru: 'Передний корпус дифференциала', fr: 'Carter différentiel avant', pt: 'Carcaça diferencial dianteira', it: 'Scatola differenziale anteriore' },
+
   '差速器齿轮总成': { en: 'Differential Gear Assembly', es: 'Conjunto de engranaje diferencial', ar: 'مجموعة ترس التفاضل', ru: 'Узел шестерни дифференциала', fr: 'Ensemble pignon différentiel', pt: 'Conjunto engrenagem diferencial', it: 'Gruppo ingranaggio differenziale' },
+
   '水泵总成': { en: 'Water Pump Assembly', es: 'Conjunto de bomba de agua', ar: 'مجموعة مضخة المياه', ru: 'Узел водяного насоса', fr: 'Ensemble pompe à eau', pt: 'Conjunto bomba água', it: 'Gruppo pompa acqua' },
+
   '水路旁通管': { en: 'Water Bypass Hose', es: 'Manguera de derivación de agua', ar: 'خرطوم تجاوز المياه', ru: 'Водяной байпасный шланг', fr: 'Tuyau de dérivation d\'eau', pt: 'Mangueira bypass água', it: 'Tubo bypass acqua' },
+
   '散热器风扇罩': { en: 'Radiator Fan Shroud', es: 'Envolvente del ventilador del radiador', ar: 'غطاء مروحة المبرد', ru: 'Кожух вентилятора радиатора', fr: 'Carénage ventilateur radiateur', pt: 'Envolvimento ventilador radiador', it: 'Copertura ventilatore radiatore' },
+
   '散热器总成(参考)': { en: 'Radiator Assembly (Reference)', es: 'Conjunto de radiador (referencia)', ar: 'مجموعة المبرد (مرجع)', ru: 'Узел радиатора (справочный)', fr: 'Ensemble radiateur (référence)', pt: 'Conjunto radiador (referência)', it: 'Gruppo radiatore (riferimento)' },
+
   '柴油滤芯': { en: 'Diesel Filter', es: 'Filtro diesel', ar: 'فلتر الديزل', ru: 'Дизельный фильтр', fr: 'Filtre diesel', pt: 'Filtro diesel', it: 'Filtro diesel' },
+
   '柴油滤芯(SD22)': { en: 'Diesel Filter (SD22)', es: 'Filtro diesel (SD22)', ar: 'فلتر الديزل (SD22)', ru: 'Дизельный фильтр (SD22)', fr: 'Filtre diesel (SD22)', pt: 'Filtro diesel (SD22)', it: 'Filtro diesel (SD22)' },
+
   '柴油粗滤器': { en: 'Diesel Coarse Filter', es: 'Filtro diesel grueso', ar: 'فلتر الديزل الخشن', ru: 'Грубый дизельный фильтр', fr: 'Filtre diesel grossier', pt: 'Filtro diesel grosseiro', it: 'Filtro diesel grossolano' },
+
   '空气滤芯(SD16)': { en: 'Air Filter (SD16)', es: 'Filtro de aire (SD16)', ar: 'فلتر الهواء (SD16)', ru: 'Воздушный фильтр (SD16)', fr: 'Filtre a air (SD16)', pt: 'Filtro de ar (SD16)', it: 'Filtro aria (SD16)' },
+
   '空气滤芯(SD22外芯)': { en: 'Air Filter (SD22 Outer)', es: 'Filtro de aire (SD22 externo)', ar: 'فلتر الهواء (SD22 خارجي)', ru: 'Воздушный фильтр (SD22 внешний)', fr: 'Filtre a air (SD22 externe)', pt: 'Filtro de ar (SD22 externo)', it: 'Filtro aria (SD22 esterno)' },
+
   '转向液压油滤芯': { en: 'Steering Hydraulic Oil Filter', es: 'Filtro aceite hidraulico direccion', ar: 'فلتر زيت هيدروليكي التوجيه', ru: 'Фильтр рулевого гидравлического масла', fr: 'Filtre huile hydraulique direction', pt: 'Filtro oleo hidraulico direcao', it: 'Filtro olio idraulico sterzo' },
+
   '变速箱滤芯': { en: 'Transmission Filter', es: 'Filtro caja cambios', ar: 'فلتر صندوق التروس', ru: 'Фильтр коробки передач', fr: 'Filtre boite vitesses', pt: 'Filtro caixa cambio', it: 'Filtro scatola cambio' },
+
   '蓄电池充电发电机(SD22)': { en: 'Battery Charging Alternator (SD22)', es: 'Alternador carga bateria (SD22)', ar: 'مولد الشحن (SD22)', ru: 'Генератор зарядки аккумулятора (SD22)', fr: 'Alternateur charge batterie (SD22)', pt: 'Alternador carga bateria (SD22)', it: 'Alternatore carica batteria (SD22)' },
+
   '发电机总成(28V/45A通用)': { en: 'Alternator Assembly (28V/45A Universal)', es: 'Conjunto alternador (28V/45A universal)', ar: 'مجموعة المولد (28V/45A عام)', ru: 'Узел генератора (28V/45A универсальный)', fr: 'Ensemble alternateur (28V/45A universel)', pt: 'Conjunto alternador (28V/45A universal)', it: 'Gruppo alternatore (28V/45A universale)' },
+
   '液力变矩器总成(SD16)': { en: 'Torque Converter Assembly (SD16)', es: 'Conjunto convertidor par (SD16)', ar: 'مجموعة محول عزم الدوران (SD16)', ru: 'Узел гидротрансформатора (SD16)', fr: 'Ensemble convertisseur couple (SD16)', pt: 'Conjunto conversor torque (SD16)', it: 'Gruppo convertitore coppia (SD16)' },
+
   '液力变矩器总成(SD22)': { en: 'Torque Converter Assembly (SD22)', es: 'Conjunto convertidor par (SD22)', ar: 'مجموعة محول عزم الدوران (SD22)', ru: 'Узел гидротрансформатора (SD22)', fr: 'Ensemble convertisseur couple (SD22)', pt: 'Conjunto conversor torque (SD22)', it: 'Gruppo convertitore coppia (SD22)' },
+
   '变矩器冷却器': { en: 'Torque Converter Cooler', es: 'Enfriador convertidor par', ar: 'مبرد محول عزم الدوران', ru: 'Охладитель гидротрансформатора', fr: 'Refroidisseur convertisseur couple', pt: 'Resfriador conversor torque', it: 'Raffreddatore convertitore coppia' },
+
   '转向离合器总成': { en: 'Steering Clutch Assembly', es: 'Conjunto embrague direccion', ar: 'مجموعة قابض التوجيه', ru: 'Узел рулевого сцепления', fr: 'Ensemble embrayage direction', pt: 'Conjunto embreagem direcao', it: 'Gruppo frizione sterzo' },
+
   '转向制动带': { en: 'Steering Brake Band', es: 'Banda freno direccion', ar: 'حزام فرامل التوجيه', ru: 'Тормозная лента рулевого управления', fr: 'Bande frein direction', pt: 'Fita freio direcao', it: 'Banda freno sterzo' },
+
   '转向阀体': { en: 'Steering Valve Body', es: 'Cuerpo valvula direccion', ar: 'جسم صمام التوجيه', ru: 'Корпус рулевого клапана', fr: 'Corps soupape direction', pt: 'Corpo valvula direcao', it: 'Corpo valvola sterzo' },
+
   '转向泵总成': { en: 'Steering Pump Assembly', es: 'Conjunto bomba direccion', ar: 'مجموعة مضخة التوجيه', ru: 'Узел рулевого насоса', fr: 'Ensemble pompe direction', pt: 'Conjunto bomba direcao', it: 'Gruppo pompa sterzo' },
+
   '变速箱泵总成': { en: 'Transmission Pump Assembly', es: 'Conjunto bomba caja cambios', ar: 'مجموعة مضخة صندوق التروس', ru: 'Узел насоса коробки передач', fr: 'Ensemble pompe boite vitesses', pt: 'Conjunto bomba caixa cambio', it: 'Gruppo pompa scatola cambio' },
+
   '变速箱控制阀': { en: 'Transmission Control Valve', es: 'Valvula control caja cambios', ar: 'صمام التحكم في صندوق التروس', ru: 'Клапан управления коробкой передач', fr: 'Soupape controle boite vitesses', pt: 'Valvula controle caixa cambio', it: 'Valvola controllo scatola cambio' },
-  '履带链条总成(SD16)': { en: 'Track Chain Assembly (SD16)', es: 'Conjunto cadena oruga (SD16)', ar: 'مجموعة سلسلة المسار (SD16)', ru: 'Узел гусеничной цепи (SD16)', fr: 'Ensemble chaine chenille (SD16)', pt: 'Conjunto corrente trilha (SD16)', it: 'Gruppo catena cingolo (SD16)' },
+  '履带链条总成(SD16)': { en: 'Track Chain Assembly (SD16)', es: 'Conjunto cadena oruga (SD16)', ar: 'مجموعة سلسلة المسار (SD16)', ru: 'Узел гусeничной цепи (SD16)', fr: 'Ensemble chaine chenille (SD16)', pt: 'Conjunto corrente trilha (SD16)', it: 'Gruppo catena cingolo (SD16)' },
   '履带链条总成(SD22)': { en: 'Track Chain Assembly (SD22)', es: 'Conjunto cadena oruga (SD22)', ar: 'مجموعة سلسلة المسار (SD22)', ru: 'Узел гусеничной цепи (SD22)', fr: 'Ensemble chaine chenille (SD22)', pt: 'Conjunto corrente trilha (SD22)', it: 'Gruppo catena cingolo (SD22)' },
+
   '履带链条总成(SD32)': { en: 'Track Chain Assembly (SD32)', es: 'Conjunto cadena oruga (SD32)', ar: 'مجموعة سلسلة المسار (SD32)', ru: 'Узел гусеничной цепи (SD32)', fr: 'Ensemble chaine chenille (SD32)', pt: 'Conjunto corrente trilha (SD32)', it: 'Gruppo catena cingolo (SD32)' },
-  // Caterpillar parts
-  '机油滤芯(新款)': { en: 'Oil Filter (New Model)', es: 'Filtro de aceite (nuevo modelo)', ar: 'فلتر الزيت (الموديل الجديد)', ru: 'Масляный фильтр (новая модель)', fr: 'Filtre à huile (nouveau modèle)', pt: 'Filtro de óleo (novo modelo)', it: 'Filtro olio (nuovo modello)' },
+
+  // Caterpillar parts  '机油滤芯(新款)': { en: 'Oil Filter (New Model)', es: 'Filtro de aceite (nuevo modelo)', ar: 'فلتر الزيت (الموديل الجديد)', ru: 'Масляный фильтр (новая модель)', fr: 'Filtre à huile (nouveau modèle)', pt: 'Filtro de óleo (novo modelo)', it: 'Filtro olio (nuovo modello)' },
+
   '燃油滤芯(二级/精滤)': { en: 'Fuel Filter (Secondary/Fine)', es: 'Filtro de combustible (secundario/fino)', ar: 'فلتر الوقود (ثانوي/ناعم)', ru: 'Топливный фильтр (вторичный/тонкий)', fr: 'Filtre à carburant (secondaire/fin)', pt: 'Filtro combustível (secundário/fino)', it: 'Filtro carburante (secondario/fine)' },
+
   '液压油滤芯': { en: 'Hydraulic Oil Filter', es: 'Filtro de aceite hidráulico', ar: 'فلتر زيت هيدروليكي', ru: 'Гидравлический масляный фильтр', fr: 'Filtre à huile hydraulique', pt: 'Filtro óleo hidráulico', it: 'Filtro olio idraulico' },
+
   '液压油滤芯(新款)': { en: 'Hydraulic Oil Filter (New Model)', es: 'Filtro de aceite hidráulico (nuevo modelo)', ar: 'فلتر زيت هيدروليكي (الموديل الجديد)', ru: 'Гидравлический масляный фильтр (новая модель)', fr: 'Filtre à huile hydraulique (nouveau modèle)', pt: 'Filtro óleo hidráulico (novo modelo)', it: 'Filtro olio idraulico (nuovo modello)' },
+
   '液压回油滤芯': { en: 'Hydraulic Return Oil Filter', es: 'Filtro de aceite de retorno hidráulico', ar: 'فلتر زيت العودة الهيدروليكي', ru: 'Гидравлический фильтр масла возврата', fr: 'Filtre à huile de retour hydraulique', pt: 'Filtro óleo retorno hidráulico', it: 'Filtro olio ritorno idraulico' },
+
   '空气滤芯(外芯)': { en: 'Air Filter (Outer Element)', es: 'Filtro de aire (elemento externo)', ar: 'فلتر الهواء (العنصر الخارجي)', ru: 'Воздушный фильтр (внешний элемент)', fr: 'Filtre à air (élément externe)', pt: 'Filtro de ar (elemento externo)', it: 'Filtro aria (elemento esterno)' },
+
   '空气滤芯(内芯)': { en: 'Air Filter (Inner Element)', es: 'Filtro de aire (elemento interno)', ar: 'فلتر الهواء (العنصر الداخلي)', ru: 'Воздушный фильтр (внутренний элемент)', fr: 'Filtre à air (élément interne)', pt: 'Filtro de ar (elemento interno)', it: 'Filtro aria (elemento interno)' },
+
   '散热器水箱总成': { en: 'Radiator Water Tank Assembly', es: 'Conjunto del radiador tanque de agua', ar: 'مجموعة خزان ماء المبرد', ru: 'Узел радиатора бака охлаждающей жидкости', fr: 'Ensemble radiateur réservoir d\'eau', pt: 'Conjunto radiador tanque água', it: 'Gruppo radiatore serbatoio acqua' },
+
   '涡轮增压器': { en: 'Turbocharger', es: 'Turbocompresor', ar: 'شاحن توربيني', ru: 'Турбокомпрессор', fr: 'Turbocompresseur', pt: 'Turbocompressor', it: 'Turbocompressore' },
+
   '履带链条总成': { en: 'Track Chain Assembly', es: 'Conjunto de cadena de oruga', ar: 'مجموعة سلسلة المسار', ru: 'Узел гусеничной цепи', fr: 'Ensemble chaîne de chenille', pt: 'Conjunto corrente trilha', it: 'Gruppo catena cingolo' },
+
   '下托链轮(track roller)': { en: 'Track Roller (Lower)', es: 'Rodillo de oruga (inferior)', ar: 'بكرة المسار (السفلى)', ru: 'Нижний ролик гусеницы', fr: 'Galet de chaîne (inférieur)', pt: 'Rolo trilha (inferior)', it: 'Rullo cingolo (inferiore)' },
+
   '前导向轮(Front Idler)': { en: 'Front Idler Wheel', es: 'Rueda guía delantera', ar: 'عجلة موجهة أمامية', ru: 'Передний направляющий ролик', fr: 'Galet guide avant', pt: 'Roda guia frontal', it: 'Ruota guida anteriore' },
+
   '驱动链轮(Drive Sprocket)': { en: 'Drive Sprocket', es: 'Piñón de mando', ar: 'رف الدفع', ru: 'Ведущая звездочка', fr: 'Pignon moteur', pt: 'Pinhão de acionamento', it: 'Pignone di azionamento' },
+
   '上托轮(Carrier Roller)': { en: 'Carrier Roller (Upper)', es: 'Rodillo portador (superior)', ar: 'بكرة الناقل (العليا)', ru: 'Верхний опорный ролик', fr: 'Galet porteur (supérieur)', pt: 'Rolo portador (superior)', it: 'Rullo portante (superiore)' },
+
   '铲斗斗齿(通用J系列)': { en: 'Bucket Tooth (Universal J Series)', es: 'Diente de cucharón (serie J universal)', ar: 'سن الدلو (سلسلة J العامة)', ru: 'Зуб ковша (универсальная серия J)', fr: 'Dent de godet (série J universelle)', pt: 'Dente caçamba (série J universal)', it: 'Dente benna (serie J universale)' },
+
   '斗齿适配器(Adapter)': { en: 'Bucket Tooth Adapter', es: 'Adaptador de diente de cucharón', ar: 'محول سن الدلو', ru: 'Адаптер зуба ковша', fr: 'Adaptateur dent de godet', pt: 'Adaptador dente caçamba', it: 'Adattatore dente benna' },
+
   '斗齿销/锁定销(Pin-G.E.T.)': { en: 'Bucket Tooth Pin/Lock Pin (G.E.T.)', es: 'Pasador de diente/pasador de bloqueo (G.E.T.)', ar: 'دبوس سن الدلو/دبوس القفل (G.E.T.)', ru: 'Штифт зуба ковша/штифт блокировки (G.E.T.)', fr: 'Goupille dent/goupille de verrouillage (G.E.T.)', pt: 'Pino dente/pino trava (G.E.T.)', it: 'Spina dente/spina blocco (G.E.T.)' },
+
   '最终驱动/行走减速机总成': { en: 'Final Drive/Travel Reduction Gearbox Assembly', es: 'Conjunto de caja de reducción de marcha final/viaje', ar: 'مجموعة علبة التروس النهائية/السفر', ru: 'Узел конечной передачи/редуктора хода', fr: 'Ensemble boîte de réduction finale/marche', pt: 'Conjunto caixa redução final/deslocamento', it: 'Gruppo scatola riduzione finale/viaggio' },
+
   '行走(履带)马达': { en: 'Travel (Track) Motor', es: 'Motor de marcha (oruga)', ar: 'محرك السفر (المسار)', ru: 'Двигатель хода (гусеницы)', fr: 'Moteur de marche (chenille)', pt: 'Motor deslocamento (trilha)', it: 'Motore viaggio (cingolo)' },
+
   '回转(转台)马达及减速机': { en: 'Swing (Turntable) Motor and Reduction Gearbox', es: 'Motor de giro (plataforma giratoria) y caja de reducción', ar: 'محرك التأرجح (المنصة الدوارة) وعلبة التروس', ru: 'Двигатель поворота (поворотная платформа) и редуктор', fr: 'Moteur de rotation (plateau tournant) et boîte de réduction', pt: 'Motor giro (plataforma giratória) e caixa redução', it: 'Motore rotazione (piattaforma girevole) e scatola riduzione' },
+
   '斗齿(J300系列,V型)': { en: 'Bucket Tooth (J300 Series, V-Type)', es: 'Diente de cucharón (serie J300, tipo V)', ar: 'سن الدلو (سلسلة J300، نوع V)', ru: 'Зуб ковша (серия J300, V-образный)', fr: 'Dent de godet (série J300, type V)', pt: 'Dente caçamba (série J300, tipo V)', it: 'Dente benna (serie J300, tipo V)' },
+
   '斗齿适配器(J300侧销式)': { en: 'Bucket Tooth Adapter (J300 Side Pin Type)', es: 'Adaptador de diente de cucharón (tipo pasador lateral J300)', ar: 'محول سن الدلو (نوع دبوس جانبي J300)', ru: 'Адаптер зуба ковша (тип бокового штифта J300)', fr: 'Adaptateur dent de godet (type goupille latérale J300)', pt: 'Adaptador dente caçamba (tipo pino lateral J300)', it: 'Adattatore dente benna (tipo spina laterale J300)' },
+
   '斗齿(J350系列,HD穿透型)': { en: 'Bucket Tooth (J350 Series, HD Penetrating Type)', es: 'Diente de cucharón (serie J350, tipo penetrante HD)', ar: 'سن الدلو (سلسلة J350، نوع اختراق HD)', ru: 'Зуб ковша (серия J350, тип HD проникающий)', fr: 'Dent de godet (série J350, type pénétrant HD)', pt: 'Dente caçamba (série J350, tipo penetrante HD)', it: 'Dente benna (serie J350, tipo penetrante HD)' },
+
   '斗齿(J350系列,通用型)': { en: 'Bucket Tooth (J350 Series, Universal Type)', es: 'Diente de cucharón (serie J350, tipo universal)', ar: 'سن الدلو (سلسلة J350، نوع عام)', ru: 'Зуб ковша (серия J350, универсальный тип)', fr: 'Dent de godet (série J350, type universel)', pt: 'Dente caçamba (série J350, tipo universal)', it: 'Dente benna (serie J350, tipo universale)' },
+
   '斗齿(J350摩擦磨损型)': { en: 'Bucket Tooth (J350 Friction Wear Type)', es: 'Diente de cucharón (tipo de desgaste por fricción J350)', ar: 'سن الدلو (نوع تآكل الاحتكاك J350)', ru: 'Зуб ковша (тип износа трения J350)', fr: 'Dent de godet (type usure par friction J350)', pt: 'Dente caçamba (tipo desgaste fricção J350)', it: 'Dente benna (tipo usura attrito J350)' },
+
   '斗齿(J400/J460系列)': { en: 'Bucket Tooth (J400/J460 Series)', es: 'Diente de cucharón (serie J400/J460)', ar: 'سن الدلو (سلسلة J400/J460)', ru: 'Зуб ковша (серия J400/J460)', fr: 'Dent de godet (série J400/J460)', pt: 'Dente caçamba (série J400/J460)', it: 'Dente benna (serie J400/J460)' },
+
   '斗齿(J300大修/推土机焊接型适配器)': { en: 'Bucket Tooth (J300 Overhaul/Dozer Welded Adapter)', es: 'Diente de cucharón (adaptador soldado J300 revisión/topadora)', ar: 'سن الدلو (محول ملحوم J300 إصلاح شامل/جرافة)', ru: 'Зуб ковша (адаптер сварной J300 капремонт/бульдозер)', fr: 'Dent de godet (adaptateur soudé J300 révision/bouteur)', pt: 'Dente caçamba (adaptador soldado J300 revisão/trator)', it: 'Dente benna (adattatore saldato J300 revisione/bulldozer)' },
-  // SANY spare part names (additional specific models)
-  '燃油滤芯(老款)': { en: 'Fuel Filter (Old Model)', es: 'Filtro de combustible (modelo antiguo)', ar: 'فلتر الوقود (الموديل القديم)', ru: 'Топливный фильтр (старая модель)', fr: 'Filtre à carburant (ancien modèle)', pt: 'Filtro combustível (modelo antigo)', it: 'Filtro carburante (vecchio modello)' },
+
+  // SANY spare part names (additional specific models)  '燃油滤芯(老款)': { en: 'Fuel Filter (Old Model)', es: 'Filtro de combustible (modelo antiguo)', ar: 'فلتر الوقود (الموديل القديم)', ru: 'Топливный фильтр (старая модель)', fr: 'Filtre à carburant (ancien modèle)', pt: 'Filtro combustível (modelo antigo)', it: 'Filtro carburante (vecchio modello)' },
+
   '机油滤芯(SY215C/225C系列)': { en: 'Oil Filter (SY215C/225C Series)', es: 'Filtro de aceite (serie SY215C/225C)', ar: 'فلتر الزيت (سلسلة SY215C/225C)', ru: 'Масляный фильтр (серия SY215C/225C)', fr: 'Filtre à huile (série SY215C/225C)', pt: 'Filtro de óleo (série SY215C/225C)', it: 'Filtro olio (serie SY215C/225C)' },
+
   '燃油滤芯(新款9系)': { en: 'Fuel Filter (New 9 Series)', es: 'Filtro de combustible (nueva serie 9)', ar: 'فلتر الوقود (سلسلة 9 الجديدة)', ru: 'Топливный фильтр (новая серия 9)', fr: 'Filtre à carburant (nouvelle série 9)', pt: 'Filtro combustível (nova série 9)', it: 'Filtro carburante (nuova serie 9)' },
+
   '燃油滤芯(替代号)': { en: 'Fuel Filter (Alternative Part Number)', es: 'Filtro de combustible (número de pieza alternativo)', ar: 'فلتر الوقود (رقم قطعة بديل)', ru: 'Топливный фильтр (альтернативный номер детали)', fr: 'Filtre à carburant (numéro de pièce alternatif)', pt: 'Filtro combustível (número de peça alternativo)', it: 'Filtro carburante (numero di pezzo alternativo)' },
+
   '燃油滤芯(SY215C/225C新款)': { en: 'Fuel Filter (SY215C/225C New Model)', es: 'Filtro de combustible (SY215C/225C modelo nuevo)', ar: 'فلتر الوقود (SY215C/225C الموديل الجديد)', ru: 'Топливный фильтр (SY215C/225C новая модель)', fr: 'Filtre à carburant (SY215C/225C nouveau modèle)', pt: 'Filtro combustível (SY215C/225C novo modelo)', it: 'Filtro carburante (SY215C/225C nuovo modello)' },
+
   '铲斗斗齿': { en: 'Bucket Tooth', es: 'Diente de cucharón', ar: 'سن الدلو', ru: 'Зуб ковша', fr: 'Dent de godet', pt: 'Dente caçamba', it: 'Dente benna' },
+
   '前导向轮': { en: 'Front Idler Wheel', es: 'Rueda guía delantera', ar: 'عجلة موجهة أمامية', ru: 'Передний направляющий ролик', fr: 'Galet guide avant', pt: 'Roda guia frontal', it: 'Ruota guida anteriore' },
+
   '驱动链轮': { en: 'Drive Sprocket', es: 'Piñón de mando', ar: 'رف الدفع', ru: 'Ведущая звездочка', fr: 'Pignon moteur', pt: 'Pinhão de acionamento', it: 'Pignone di azionamento' },
+
   '下托链轮(Bottom Roller)': { en: 'Track Roller (Lower)', es: 'Rodillo de oruga (inferior)', ar: 'بكرة المسار (السفلى)', ru: 'Нижний ролик гусеницы', fr: 'Galet de chaîne (inférieur)', pt: 'Rolo trilha (inferior)', it: 'Rullo cingolo (inferiore)' },
+
   '上托轮(Top Roller/Carrier Roller)': { en: 'Carrier Roller (Upper)', es: 'Rodillo portador (superior)', ar: 'بكرة الناقل (العليا)', ru: 'Верхний опорный ролик', fr: 'Galet porteur (supérieur)', pt: 'Rolo portador (superior)', it: 'Rullo portante (superiore)' },
+
   '履带板/track shoe': { en: 'Track Shoe', es: 'Zapata de oruga', ar: 'حذاء المسار', ru: 'Гусеничная пластина', fr: 'Chaîne de chenille', pt: 'Sapata trilha', it: 'Pattino cingolo' },
+
   '主液压泵(Rexroth型)': { en: 'Main Hydraulic Pump (Rexroth Type)', es: 'Bomba hidráulica principal (tipo Rexroth)', ar: 'مضخة هيدروليكية رئيسية (نوع Rexroth)', ru: 'Главный гидравлический насос (тип Rexroth)', fr: 'Pompe hydraulique principale (type Rexroth)', pt: 'Bomba hidráulica principal (tipo Rexroth)', it: 'Pompa idraulica principale (tipo Rexroth)' },
+
   '行走(履带)马达/最终驱动总成': { en: 'Travel (Track) Motor/Final Drive Assembly', es: 'Motor de marcha (oruga)/Conjunto de transmisión final', ar: 'محرك السفر (المسار)/مجموعة الدفع النهائي', ru: 'Двигатель хода (гусеницы)/узел конечной передачи', fr: 'Moteur de marche (chenille)/ensemble de transmission finale', pt: 'Motor deslocamento (trilha)/conjunto transmissão final', it: 'Motore viaggio (cingolo)/gruppo trasmissione finale' },
 
   '发电机总成': { en: 'Alternator Assembly', es: 'Conjunto alternador', ar: 'مجموعة المولد', ru: 'Узел генератора', fr: 'Ensemble alternateur', pt: 'Conjunto alternador', it: 'Gruppo alternatore' },
+
   '起动机总成': { en: 'Starter Motor Assembly', es: 'Conjunto motor de arranque', ar: 'مجموعة محرك البدء', ru: 'Узел стартера', fr: 'Ensemble moteur de démarrage', pt: 'Conjunto motor partida', it: 'Gruppo motore avviamento' },
+
   '液压缸密封件': { en: 'Hydraulic Cylinder Seals', es: 'Sellos cilindro hidráulico', ar: 'أختام أسطوانة هيدروليكية', ru: 'Уплотнения гидравлического цилиндра', fr: 'Joints cylindre hydraulique', pt: 'Selos cilindro hidráulico', it: 'Sigilli cilindro idraulico' },
+
   '导油箱盖封闭垫圈': { en: 'Oil Tank Cover Seal Ring', es: 'Anillo de sello de tapa de tanque de aceite', ar: 'حلقة ختم غطاء خزان الزيت', ru: 'Кольцо уплотнения крышки масляного бака', fr: 'Bague d\'étanchéité du couvercle du réservoir d\'huile', pt: 'Anel de vedação da tampa do tanque de óleo', it: 'Anello di tenuta coperchio serbatoio olio' },
+
   '铲斗油缸密封修理包': { en: 'Bucket Cylinder Seal Repair Kit', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم الأسطوانة', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'étanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
-  // CAT 零件英文名称的反向映射（用于从英文源数据翻译到中文）
-  'Oil Filter': { zh: '机油滤芯', es: 'Filtro de aceite', ar: 'فلتر الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
+
+  // CAT 零件英文名称的反向映射（用于从英文源数据翻译到中文）  'Oil Filter': { zh: '机油滤芯', es: 'Filtro de aceite', ar: 'فلتر الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
+
   'Hydraulic Oil Filter': { zh: '液压油滤芯', es: 'Filtro de aceite hidráulico', ar: 'فلتر الزيت الهيدروليكي', ru: 'Гидравлический масляный фильтр', fr: 'Filtre à huile hydraulique', pt: 'Filtro de óleo hidráulico', it: 'Filtro olio idraulico' },
+
   'Hydraulic Return Oil Filter': { zh: '液压回油滤芯', es: 'Filtro de retorno de aceite hidráulico', ar: 'فلتر العودة الهيدروليكي', ru: 'Фильтр возврата гидравлического масла', fr: 'Filtre de retour d\'huile hydraulique', pt: 'Filtro de retorno de óleo hidráulico', it: 'Filtro di ritorno olio idraulico' },
+
   'Radiator Water Tank Assembly': { zh: '散热器水箱总成', es: 'Conjunto de tanque de agua del radiador', ar: 'مجموعة خزان ماء المبرد', ru: 'Узел водяного бака радиатора', fr: 'Ensemble réservoir d\'eau radiateur', pt: 'Conjunto tanque água radiador', it: 'Gruppo serbatoio acqua radiatore' },
+
   'Turbocharger': { zh: '涡轮增压器', es: 'Turbocompresor', ar: 'شاحن توربيني', ru: 'Турбокомпрессор', fr: 'Turbocompresseur', pt: 'Turbocompressor', it: 'Turbocompressore' },
+
   'Track Chain Assembly': { zh: '履带链条总成', es: 'Conjunto de cadena de orugas', ar: 'مجموعة سلسلة المسار', ru: 'Узел гусеничной цепи', fr: 'Ensemble chaîne de chenille', pt: 'Conjunto corrente trilha', it: 'Gruppo catena cingolo' },
+
   'Final Drive/Travel Reduction Gear Assembly': { zh: '行走减速机/最终驱动总成', es: 'Conjunto de engranaje de reducción de viaje/unidad final', ar: 'مجموعة ترس التخفيض النهائي/السفر', ru: 'Узел редуктора хода/конечного привода', fr: 'Ensemble réducteur de voyage/entraînement final', pt: 'Conjunto redutor de marcha/unidade final', it: 'Gruppo riduttore di marcia/azionamento finale' },
+
   'Bucket Tooth Adapter (J300 Side-Lock)': { zh: '斗齿适配器(J300侧锁)', es: 'Adaptador de diente de cucharrón (J300 Side-Lock)', ar: 'محول سن الجرافة (J300 Side-Lock)', ru: 'Адаптер зуба ковша (J300 Side-Lock)', fr: 'Adaptateur dent de godet (J300 Side-Lock)', pt: 'Adaptador dente caçamba (J300 Side-Lock)', it: 'Adattatore dente benna (J300 Side-Lock)' },
+
   'Bucket Tooth (J400/J460 Series)': { zh: '斗齿(J400/J460系列)', es: 'Diente de cucharrón (serie J400/J460)', ar: 'سن الجرافة (سلسلة J400/J460)', ru: 'Зуб ковша (серия J400/J460)', fr: 'Dent de godet (série J400/J460)', pt: 'Dente caçamba (série J400/J460)', it: 'Dente benna (serie J400/J460)' },
+
   'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': { zh: '斗齿(J300大修/推土机焊接适配器)', es: 'Diente de cucharrón (reparación mayor J300/adaptador soldado de bulldozer)', ar: 'سن الجرافة (إصلاح رئيسي J300/محول ملحوم بالجرافة)', ru: 'Зуб ковша (капремонт J300/сварной адаптер бульдозера)', fr: 'Dent de godet (réparation majeure J300/adaptateur soudé bulldozer)', pt: 'Dente caçamba (reparo maior J300/adaptador soldado escavadeira)', it: 'Dente benna (riparazione maggiore J300/adattatore saldato escavatore)' },
+
   'Boom Cylinder Seal Repair Kit': { zh: '动臂油缸密封修理包', es: 'Kit de reparación de sello de cilindro de brazo', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
+
   'Bucket Cylinder Seal Repair Kit': { zh: '铲斗油缸密封修理包', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم أسطوانة الجرافة', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'étanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
+
   'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)': { zh: '铲斗油缸密封修理包(85mm杆/125mm孔)', es: 'Kit de sello de cilindro de cucharrón (varilla 85 mm/orificio 125 mm)', ar: 'مجموعة ختم أسطوانة الجرافة (قضيب 85 مم/فتحة 125 مم)', ru: 'Набор уплотнений цилиндра ковша (шток 85 мм/отверстие 125 мм)', fr: 'Kit d\'étanchéité de cylindre de godet (tige 85 mm/alésage 125 mm)', pt: 'Kit de vedação de cilindro de caçamba (haste 85 mm/furo 125 mm)', it: 'Kit di tenuta cilindro benna (stelo 85 mm/foro 125 mm)' },
+
   'Bucket Cylinder Seal Kit (65mm Rod, Old Model)': { zh: '铲斗油缸密封修理包(65mm杆,旧款)', es: 'Kit de sello de cilindro de cucharrón (varilla 65 mm, modelo antiguo)', ar: 'مجموعة ختم أسطوانة الجرافة (قضيب 65 مم، موديل قديم)', ru: 'Набор уплотнений цилиндра ковша (шток 65 мм, старая модель)', fr: 'Kit d\'étanchéité de cylindre de godet (tige 65 mm, ancien modèle)', pt: 'Kit de vedação de cilindro de caçamba (haste 65 mm, modelo antigo)', it: 'Kit di tenuta cilindro benna (stelo 65 mm, modello vecchio)' },
+
   'Bucket-Boom Connection Pin': { zh: '铲斗-动臂连接销', es: 'Pasador de conexión cucharrón-brazo', ar: 'دبوس اتصال الجرافة والذراع', ru: 'Штифт соединения ковша и стрелы', fr: 'Goupille de connexion godet-flèche', pt: 'Pino de conexão caçamba-lança', it: 'Perno di collegamento benna-braccio' },
+
   'Rod-Boom Connection Pin': { zh: '杆-动臂连接销', es: 'Pasador de conexión varilla-brazo', ar: 'دبوس اتصال القضيب والذراع', ru: 'Штифт соединения штока и стрелы', fr: 'Goupille de connexion tige-flèche', pt: 'Pino de conexão haste-lança', it: 'Perno di collegamento asta-braccio' },
+
   'Rod-Cylinder Connection Pin': { zh: '杆-油缸连接销', es: 'Pasador de conexión varilla-cilindro', ar: 'دبوس اتصال القضيب والأسطوانة', ru: 'Штифт соединения штока и цилиндра', fr: 'Goupille de connexion tige-cylindre', pt: 'Pino de conexão haste-cilindro', it: 'Perno di collegamento asta-cilindro' },
+
   'Rod-Boom Connection Bushing': { zh: '杆-动臂连接衬套', es: 'Casquillo de conexión varilla-brazo', ar: 'بوشينج اتصال القضيب والذراع', ru: 'Втулка соединения штока и стрелы', fr: 'Silentbloc connexion tige-flèche', pt: 'Bucha de conexão haste-lança', it: 'Boccola di collegamento asta-braccio' },
+
   'Bucket Bushing (Boom Position)': { zh: '铲斗衬套(动臂位置)', es: 'Casquillo de cucharrón (posición de brazo)', ar: 'بوشينج الجرافة (موضع الذراع)', ru: 'Втулка ковша (положение стрелы)', fr: 'Silentbloc godet (position flèche)', pt: 'Bucha caçamba (posição lança)', it: 'Boccola benna (posizione braccio)' },
-  // Shantui spare parts translations
-  'Diesel Filter': { zh: '柴油滤芯', es: 'Filtro diesel', ar: 'فلتر الديزل', ru: 'Дизельный фильтр', fr: 'Filtre diesel', pt: 'Filtro diesel', it: 'Filtro diesel' },
+
+  // Shantui spare parts translations  'Diesel Filter': { zh: '柴油滤芯', es: 'Filtro diesel', ar: 'فلتر الديزل', ru: 'Дизельный фильтр', fr: 'Filtre diesel', pt: 'Filtro diesel', it: 'Filtro diesel' },
+
   'Diesel Filter (SD22)': { zh: '柴油滤芯(SD22)', es: 'Filtro diesel (SD22)', ar: 'فلتر الديزل (SD22)', ru: 'Дизельный фильтр (SD22)', fr: 'Filtre diesel (SD22)', pt: 'Filtro diesel (SD22)', it: 'Filtro diesel (SD22)' },
+
   'Diesel Coarse Filter': { zh: '柴油粗滤器', es: 'Filtro diesel grueso', ar: 'فلتر الديزل الخشن', ru: 'Грубый дизельный фильтр', fr: 'Filtre diesel grossier', pt: 'Filtro diesel grosseiro', it: 'Filtro diesel grossolano' },
+
   'Air Filter (SD16)': { zh: '空气滤芯(SD16)', es: 'Filtro de aire (SD16)', ar: 'فلتر الهواء (SD16)', ru: 'Воздушный фильтр (SD16)', fr: 'Filtre a air (SD16)', pt: 'Filtro de ar (SD16)', it: 'Filtro aria (SD16)' },
+
   'Air Filter (SD22 Outer)': { zh: '空气滤芯(SD22外芯)', es: 'Filtro de aire (SD22 externo)', ar: 'فلتر الهواء (SD22 خارجي)', ru: 'Воздушный фильтр (SD22 внешний)', fr: 'Filtre a air (SD22 externe)', pt: 'Filtro de ar (SD22 externo)', it: 'Filtro aria (SD22 esterno)' },
+
   'Steering Hydraulic Oil Filter': { zh: '转向液压油滤芯', es: 'Filtro de aceite hidráulico de dirección', ar: 'فلتر زيت هيدروليكي التوجيه', ru: 'Фильтр рулевого гидравлического масла', fr: 'Filtre huile hydraulique direction', pt: 'Filtro oleo hidraulico direcao', it: 'Filtro olio idraulico sterzo' },
+
   'Transmission Filter': { zh: '变速箱滤芯', es: 'Filtro de caja de cambios', ar: 'فلتر صندوق التروس', ru: 'Фильтр коробки передач', fr: 'Filtre boite vitesses', pt: 'Filtro caixa cambio', it: 'Filtro scatola cambio' },
+
   'Battery Charging Alternator (SD22)': { zh: '蓄电池充电发电机(SD22)', es: 'Alternador de carga de batería (SD22)', ar: 'مولد الشحن (SD22)', ru: 'Генератор зарядки аккумулятора (SD22)', fr: 'Alternateur charge batterie (SD22)', pt: 'Alternador carga bateria (SD22)', it: 'Alternatore carica batteria (SD22)' },
+
   'Alternator Assembly (28V/45A Universal)': { zh: '发电机总成(28V/45A通用)', es: 'Conjunto de alternador (28V/45A universal)', ar: 'مجموعة المولد (28V/45A عام)', ru: 'Узел генератора (28V/45A универсальный)', fr: 'Ensemble alternateur (28V/45A universel)', pt: 'Conjunto alternador (28V/45A universal)', it: 'Gruppo alternatore (28V/45A universale)' },
+
   'Torque Converter Assembly (SD16)': { zh: '液力变矩器总成(SD16)', es: 'Conjunto de convertidor de par (SD16)', ar: 'مجموعة محول عزم الدوران (SD16)', ru: 'Узел гидротрансформатора (SD16)', fr: 'Ensemble convertisseur couple (SD16)', pt: 'Conjunto conversor torque (SD16)', it: 'Gruppo convertitore coppia (SD16)' },
+
   'Torque Converter Assembly (SD22)': { zh: '液力变矩器总成(SD22)', es: 'Conjunto de convertidor de par (SD22)', ar: 'مجموعة محول عزم الدوران (SD22)', ru: 'Узел гидротрансформатора (SD22)', fr: 'Ensemble convertisseur couple (SD22)', pt: 'Conjunto conversor torque (SD22)', it: 'Gruppo convertitore coppia (SD22)' },
+
   'Torque Converter Cooler': { zh: '变矩器冷却器', es: 'Enfriador de convertidor de par', ar: 'مبرد محول عزم الدوران', ru: 'Охладитель гидротрансформатора', fr: 'Refroidisseur convertisseur couple', pt: 'Resfriador conversor torque', it: 'Raffreddatore convertitore coppia' },
+
   'Steering Clutch Assembly': { zh: '转向离合器总成', es: 'Conjunto de embrague de dirección', ar: 'مجموعة قابض التوجيه', ru: 'Узел рулевого сцепления', fr: 'Ensemble embrayage direction', pt: 'Conjunto embreagem direcao', it: 'Gruppo frizione sterzo' },
+
   'Steering Brake Band': { zh: '转向制动带', es: 'Banda de freno de dirección', ar: 'حزام فرامل التوجيه', ru: 'Тормозная лента рулевого управления', fr: 'Bande frein direction', pt: 'Fita freio direcao', it: 'Banda freno sterzo' },
+
   'Steering Valve Body': { zh: '转向阀体', es: 'Cuerpo de válvula de dirección', ar: 'جسم صمام التوجيه', ru: 'Корпус рулевого клапана', fr: 'Corps soupape direction', pt: 'Corpo valvula direcao', it: 'Corpo valvola sterzo' },
+
   'Steering Pump Assembly': { zh: '转向泵总成', es: 'Conjunto bomba direccion', ar: 'مجموعة مضخة التوجيه', ru: 'Узел рулевого насоса', fr: 'Ensemble pompe direction', pt: 'Conjunto bomba direcao', it: 'Gruppo pompa sterzo' },
+
   'Transmission Pump Assembly': { zh: '传动泵总成', es: 'Conjunto bomba transmisión', ar: 'مجموعة مضخة الإرسال', ru: 'Узел насоса трансмиссии', fr: 'Ensemble pompe transmission', pt: 'Conjunto bomba transmissão', it: 'Gruppo pompa trasmissione' },
+
   'Transmission Control Valve': { zh: '传动控制阀', es: 'Válvula control transmisión', ar: 'صمام التحكم في الإرسال', ru: 'Клапан управления трансмиссией', fr: 'Soupape contrôle transmission', pt: 'Válvula controle transmissão', it: 'Valvola controllo trasmissione' },
+
   'Track Chain Assembly (SD16)': { zh: '履带链条总成(SD16)', es: 'Conjunto cadena oruga (SD16)', ar: 'مجموعة سلسلة المسار (SD16)', ru: 'Узел цепи гусеницы (SD16)', fr: 'Ensemble chaîne chenille (SD16)', pt: 'Conjunto corrente esteira (SD16)', it: 'Gruppo catena cingolo (SD16)' },
+
   'Track Chain Assembly (SD22)': { zh: '履带链条总成(SD22)', es: 'Conjunto cadena oruga (SD22)', ar: 'مجموعة سلسلة المسار (SD22)', ru: 'Узел цепи гусеницы (SD22)', fr: 'Ensemble chaîne chenille (SD22)', pt: 'Conjunto corrente esteira (SD22)', it: 'Gruppo catena cingolo (SD22)' },
+
   'Track Chain Assembly (SD32)': { zh: '履带链条总成(SD32)', es: 'Conjunto cadena oruga (SD32)', ar: 'مجموعة سلسلة المسار (SD32)', ru: 'Узел цепи гусеницы (SD32)', fr: 'Ensemble chaîne chenille (SD32)', pt: 'Conjunto corrente esteira (SD32)', it: 'Gruppo catena cingolo (SD32)' },
+
   'Front Idler Wheel Assembly (SD22)': { zh: '前导轮总成(SD22)', es: 'Conjunto rueda guía delantera (SD22)', ar: 'مجموعة عجلة التوجيه الأمامية (SD22)', ru: 'Узел переднего ленивца (SD22)', fr: 'Ensemble roue folle avant (SD22)', pt: 'Conjunto roda guia dianteira (SD22)', it: 'Gruppo ruota guida anteriore (SD22)' },
+
   'Track Guide Wheel/Carrier Roller (SD16)': { zh: '履带导轮/托轮(SD16)', es: 'Rueda guía/rodillo portador oruga (SD16)', ar: 'عجلة توجيه المسار/أسطوانة الحامل (SD16)', ru: 'Направляющее колесо гусеницы/ролик (SD16)', fr: 'Roue guide/galet porteur chenille (SD16)', pt: 'Roda guia/rolo portador esteira (SD16)', it: 'Ruota guida/rullo portante cingolo (SD16)' },
+
   'Single-Sided Support Wheel (SD16)': { zh: '单侧支重轮(SD16)', es: 'Rueda soporte unilateral (SD16)', ar: 'عجلة دعم أحادية الجانب (SD16)', ru: 'Односторонний опорный ролик (SD16)', fr: 'Galet support unilatéral (SD16)', pt: 'Roda suporte unilateral (SD16)', it: 'Ruota supporto monolatero (SD16)' },
+
   'Double-Sided Support Wheel (SD16)': { zh: '双侧支重轮(SD16)', es: 'Rueda soporte bilateral (SD16)', ar: 'عجلة دعم ثنائية الجانب (SD16)', ru: 'Двусторонний опорный ролик (SD16)', fr: 'Galet support bilatéral (SD16)', pt: 'Roda suporte bilateral (SD16)', it: 'Ruota supporto bilaterale (SD16)' },
+
   'Track Shoe/Wetland Track Shoe Bolt (72 Long)': { zh: '履带鞋/沼泽履带鞋螺栓(72长)', es: 'Zapata oruga/perno zapata oruga pantano (72 largo)', ar: 'حذاء مسار/برغي حذاء مسار الأراضي الرطبة (72 طويل)', ru: 'Башмак гусеницы/болт башмака гусеницы болотистой (72 длинный)', fr: 'Sabot chenille/boulon sabot chenille marécage (72 long)', pt: 'Sapata esteira/parafuso sapata esteira pântano (72 longo)', it: 'Scarpa cingolo/bullone scarpa cingolo paludoso (72 lungo)' },
+
   'Track Shoe Bolt/Drive Sprocket Bolt': { zh: '履带鞋螺栓/驱动链轮螺栓', es: 'Perno zapata oruga/perno piñón motor', ar: 'برغي حذاء المسار/برغي الرقم المحرك', ru: 'Болт башмака гусеницы/болт ведущей звездочки', fr: 'Boulon sabot chenille/boulon pignon moteur', pt: 'Parafuso sapata esteira/parafuso pinhão motor', it: 'Bullone scarpa cingolo/bullone pignone motore' },
+
   'Dozer Blade Assembly': { zh: '推土刀片总成', es: 'Conjunto hoja topadora', ar: 'مجموعة شفرة الجرافة', ru: 'Узел отвала бульдозера', fr: 'Ensemble lame bulldozer', pt: 'Conjunto lâmina escavadeira', it: 'Gruppo lama livellatrice' },
+
   'Cutting Edge/End Bit': { zh: '切割刃/端齿', es: 'Filo cortante/diente final', ar: 'حافة القطع/سن النهاية', ru: 'Режущая кромка/концевой зуб', fr: 'Arête tranchante/dent finale', pt: 'Aresta cortante/dente final', it: 'Bordo tagliente/dente finale' },
+
   'End Bit (Right)': { zh: '端齿(右)', es: 'Diente final (derecha)', ar: 'سن النهاية (اليمين)', ru: 'Концевой зуб (правый)', fr: 'Dent finale (droite)', pt: 'Dente final (direita)', it: 'Dente finale (destra)' },
+
   'Ripper Shank': { zh: '松土器铲', es: 'Púa desgarrador', ar: 'ساق الممزق', ru: 'Стойка рыхлителя', fr: 'Dent de scarificateur', pt: 'Haste escarificador', it: 'Stelo scarificatore' },
+
   'Drive Sprocket Segment': { zh: '驱动链轮片', es: 'Segmento piñón motor', ar: 'قطاع الرقم المحرك', ru: 'Сегмент ведущей звездочки', fr: 'Segment pignon moteur', pt: 'Segmento pinhão motor', it: 'Segmento pignone motore' },
+
   'Universal Joint Assembly': { zh: '万向节总成', es: 'Conjunto junta universal', ar: 'مجموعة المفصل العام', ru: 'Узел универсального шарнира', fr: 'Ensemble joint universel', pt: 'Conjunto junta universal', it: 'Gruppo giunto universale' },
+
   'Hydraulic Lift Cylinder Repair Kit': { zh: '液压升降缸维修套件', es: 'Kit reparación cilindro levantamiento hidráulico', ar: 'مجموعة إصلاح أسطوانة الرفع الهيدروليكية', ru: 'Ремонтный комплект гидроцилиндра подъема', fr: 'Kit réparation cylindre levage hydraulique', pt: 'Kit reparo cilindro levantamento hidráulico', it: 'Kit riparazione cilindro sollevamento idraulico' },
+
   'Radiator Assembly': { zh: '散热器总成', es: 'Conjunto radiador', ar: 'مجموعة المبرد', ru: 'Узел радиатора', fr: 'Ensemble radiateur', pt: 'Conjunto radiador', it: 'Gruppo radiatore' },
+
   'Cooling Fan Assembly': { zh: '冷却风扇总成', es: 'Conjunto ventilador refrigeración', ar: 'مجموعة مروحة التبريد', ru: 'Узел вентилятора охлаждения', fr: 'Ensemble ventilateur refroidissement', pt: 'Conjunto ventilador resfriamento', it: 'Gruppo ventilatore raffreddamento' },
+
   'King Pin': { zh: '主销', es: 'Perno maestro', ar: 'دبوس الملك', ru: 'Главный палец', fr: 'Pivot de direction', pt: 'Pino mestre', it: 'Perno principale' },
+
   'Final Drive Skeleton Oil Seal': { zh: '最终驱动骨架油封', es: 'Sello aceite esqueleto transmisión final', ar: 'ختم زيت هيكل الدفع النهائي', ru: 'Уплотнение масла скелета финального привода', fr: 'Joint huile squelette transmission finale', pt: 'Vedação óleo esqueleto transmissão final', it: 'Sigillo olio scheletro trasmissione finale' },
-};
 
-export const sparePartDescriptionTranslations: Record<string, Record<string, string>> = {
-  'Toyota Hilux 零件。5,000-10,000km随保养更换': { en: 'Toyota Hilux part. Replace during maintenance every 5,000-10,000 km.', es: 'Pieza Toyota Hilux. Reemplazar durante el mantenimiento cada 5,000-10,000 km.', ar: 'قطعة تويوتا هايلوكس. استبدل أثناء الصيانة كل 5000-10000 كم.', ru: 'Деталь Toyota Hilux. Заменяйте при техническом обслуживании каждые 5000-10000 км.', fr: 'Pièce Toyota Hilux. Remplacer lors de l\'entretien tous les 5000-10000 km.', pt: 'Peça Toyota Hilux. Substituir durante manutenção a cada 5000-10000 km.', it: 'Pezzo Toyota Hilux. Sostituire durante la manutenzione ogni 5000-10000 km.' },
+};export const sparePartDescriptionTranslations: Record<string, Record<string, string>> = {  'Toyota Hilux 零件。5,000-10,000km随保养更换': { en: 'Toyota Hilux part. Replace during maintenance every 5,000-10,000 km.', es: 'Pieza Toyota Hilux. Reemplazar durante el mantenimiento cada 5,000-10,000 km.', ar: 'قطعة تويوتا هايلوكس. استبدل أثناء الصيانة كل 5000-10000 كم.', ru: 'Деталь Toyota Hilux. Заменяйте при техническом обслуживании каждые 5000-10000 км.', fr: 'Pièce Toyota Hilux. Remplacer lors de l\'entretien tous les 5000-10000 km.', pt: 'Peça Toyota Hilux. Substituir durante manutenção a cada 5000-10000 km.', it: 'Pezzo Toyota Hilux. Sostituire durante la manutenzione ogni 5000-10000 km.' },
+
   'Toyota Hilux 零件。10,000-20,000km或视路况': { en: 'Toyota Hilux part. Replace every 10,000-20,000 km or as needed based on road conditions.', es: 'Pieza Toyota Hilux. Reemplazar cada 10,000-20,000 km o según sea necesario según las condiciones de la carretera.', ar: 'قطعة تويوتا هايلوكس. استبدل كل 10000-20000 كم أو حسب الحاجة بناءً على ظروف الطريق.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 10000-20000 км или по мере необходимости в зависимости от условий дороги.', fr: 'Pièce Toyota Hilux. Remplacer tous les 10000-20000 km ou selon les conditions de la route.', pt: 'Peça Toyota Hilux. Substituir a cada 10000-20000 km ou conforme necessário com base nas condições da estrada.', it: 'Pezzo Toyota Hilux. Sostituire ogni 10000-20000 km o secondo necessità in base alle condizioni della strada.' },
+
   'CAT 零件。250-500小时随保养更换': { en: 'CAT part. Replace during maintenance every 250-500 hours.', zh: 'CAT 零件。250-500小时随保养更换', es: 'Pieza CAT. Reemplazar durante el mantenimiento cada 250-500 horas.', ar: 'قطعة كاتربيلر. استبدل أثناء الصيانة كل 250-500 ساعة.', ru: 'Деталь CAT. Заменяйте при техническом обслуживании каждые 250-500 часов.', fr: 'Pièce CAT. Remplacer lors de l\'entretien tous les 250-500 heures.', pt: 'Peça CAT. Substituir durante manutenção a cada 250-500 horas.', it: 'Pezzo CAT. Sostituire durante la manutenzione ogni 250-500 ore.' },
+
   'CAT 零件。500-1000小时检查': { en: 'CAT part. Inspect every 500-1000 hours.', zh: 'CAT 零件。500-1000小时检查', es: 'Pieza CAT. Inspeccionar cada 500-1000 horas.', ar: 'قطعة كاتربيلر. افحص كل 500-1000 ساعة.', ru: 'Деталь CAT. Проверяйте каждые 500-1000 часов.', fr: 'Pièce CAT. Inspecter tous les 500-1000 heures.', pt: 'Peça CAT. Inspecionar a cada 500-1000 horas.', it: 'Pezzo CAT. Ispezionare ogni 500-1000 ore.' },
+
   'CAT 零件。250-500小时或视油品': { en: 'CAT part. Replace every 250-500 hours or based on fuel quality.', zh: 'CAT 零件。250-500小时或视油品', es: 'Pieza CAT. Reemplazar cada 250-500 horas o según la calidad del combustible.', ar: 'قطعة كاتربيلر. استبدل كل 250-500 ساعة أو بناءً على جودة الوقود.', ru: 'Деталь CAT. Заменяйте каждые 250-500 часов или в зависимости от качества топлива.', fr: 'Pièce CAT. Remplacer tous les 250-500 heures ou selon la qualité du carburant.', pt: 'Peça CAT. Substituir a cada 250-500 horas ou com base na qualidade do combustível.', it: 'Pezzo CAT. Sostituire ogni 250-500 ore o in base alla qualità del carburante.' },
+
   'CAT 零件。500-1000小时或视油液检测结果': { en: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.', zh: 'CAT 零件。500-1000小时或视油液检测结果', es: 'Pieza CAT. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.', ar: 'قطعة كاتربيلر. استبدل كل 500-1000 ساعة أو بناءً على نتائج تحليل السوائل.', ru: 'Деталь CAT. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.', fr: 'Pièce CAT. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.', pt: 'Peça CAT. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.', it: 'Pezzo CAT. Sostituire ogni 500-1000 ore o in base ai risultati dell\'analisi dei fluidi.' },
+
   'CAT 零件。500-1000小时': { en: 'CAT part. Replace every 500-1000 hours.', zh: 'CAT 零件。500-1000小时', es: 'Pieza CAT. Reemplazar cada 500-1000 horas.', ar: 'قطعة كاتربيلر. استبدل كل 500-1000 ساعة.', ru: 'Деталь CAT. Заменяйте каждые 500-1000 часов.', fr: 'Pièce CAT. Remplacer tous les 500-1000 heures.', pt: 'Peça CAT. Substituir a cada 500-1000 horas.', it: 'Pezzo CAT. Sostituire ogni 500-1000 ore.' },
+
   'CAT 零件。过热/渗漏时更换': { en: 'CAT part. Replace if overheating or leaking.', zh: 'CAT 零件。过热/渗漏时更换', es: 'Pieza CAT. Reemplazar si se sobrecalienta o tiene fugas.', ar: 'قطعة كاتربيلر. استبدل إذا كان هناك ارتفاع في درجة الحرارة أو تسرب.', ru: 'Деталь CAT. Заменяйте при перегреве или утечке.', fr: 'Pièce CAT. Remplacer en cas de surchauffe ou de fuite.', pt: 'Peça CAT. Substituir se superaquecimento ou vazamento.', it: 'Pezzo CAT. Sostituire se surriscaldamento o perdita.' },
+
   'CAT 零件。250-500小时或视灰尘环境': { en: 'CAT part. Replace every 250-500 hours or based on dust environment.', zh: 'CAT 零件。250-500小时或视灰尘环境', es: 'Pieza CAT. Reemplazar cada 250-500 horas o según el entorno de polvo.', ar: 'قطعة كاتربيلر. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.', ru: 'Деталь CAT. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.', fr: 'Pièce CAT. Remplacer tous les 250-500 heures ou selon l\'environnement poussiéreux.', pt: 'Peça CAT. Substituir a cada 250-500 horas ou com base no ambiente de poeira.', it: 'Pezzo CAT. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.' },
+
   'CAT 零件。随外芯同步更换或每2次外芯更换1次内芯': { en: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.', zh: 'CAT 零件。随外芯同步更换或每2次外芯更换1次内芯', es: 'Pieza CAT. Reemplazar con elemento externo o reemplazar elemento interno cada 2 cambios de elemento externo.', ar: 'قطعة كاتربيلر. استبدل مع العنصر الخارجي أو استبدل العنصر الداخلي كل 2 تغييرات عنصر خارجي.', ru: 'Деталь CAT. Заменяйте с внешним элементом или заменяйте внутренний элемент каждые 2 смены внешнего элемента.', fr: 'Pièce CAT. Remplacer avec élément externe ou remplacer élément interne tous les 2 changements d\'élément externe.', pt: 'Peça CAT. Substituir com elemento externo ou substituir elemento interno a cada 2 mudanças de elemento externo.', it: 'Pezzo CAT. Sostituire con elemento esterno o sostituire elemento interno ogni 2 cambi di elemento esterno.' },
+
   'CAT 零件。需按底盘编号核实(E320D': { en: 'CAT part. Verify by chassis number (E320D series).', zh: 'CAT 零件。需按底盘编号核实(E320D', es: 'Pieza CAT. Verificar por número de chasis (serie E320D).', ar: 'قطعة كاتربيلر. تحقق من رقم الهيكل (سلسلة E320D).', ru: 'Деталь CAT. Проверьте по номеру шасси (серия E320D).', fr: 'Pièce CAT. Vérifier par numéro de châssis (série E320D).', pt: 'Peça CAT. Verificar por número do chassi (série E320D).', it: 'Pezzo CAT. Verificare per numero di telaio (serie E320D).' },
+
   'CAT 零件。需与斗齿配套核实(E320系列': { en: 'CAT part. Verify compatibility with bucket teeth (E320 series).', zh: 'CAT 零件。需与斗齿配套核实(E320系列', es: 'Pieza CAT. Verificar compatibilidad con dientes del cucharón (serie E320).', ar: 'قطعة كاتربيلر. تحقق من التوافق مع أسنان الجرافة (سلسلة E320).', ru: 'Деталь CAT. Проверьте совместимость с зубьями ковша (серия E320).', fr: 'Pièce CAT. Vérifier la compatibilité avec les dents de godet (série E320).', pt: 'Peça CAT. Verificar compatibilidade com dentes da caçamba (série E320).', it: 'Pezzo CAT. Verificare la compatibilità con i denti della benna (serie E320).' },
+
   'CAT 零件。需按具体底盘序列号核实': { en: 'CAT part. Verify by specific chassis serial number.', zh: 'CAT 零件。需按具体底盘序列号核实', es: 'Pieza CAT. Verificar por número de serie del chasis específico.', ar: 'قطعة كاتربيلر. تحقق من رقم سلسلة الهيكل المحدد.', ru: 'Деталь CAT. Проверьте по конкретному серийному номеру шасси.', fr: 'Pièce CAT. Vérifier par numéro de série de châssis spécifique.', pt: 'Peça CAT. Verificar por número de série do chassi específico.', it: 'Pezzo CAT. Verificare per numero di serie del telaio specifico.' },
+
   'CAT 零件。动力下降/异响/漏油时更换(大修类)': { en: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).', zh: 'CAT 零件。动力下降/异响/漏油时更换(大修类)', es: 'Pieza CAT. Reemplazar cuando haya pérdida de potencia, ruido anormal o fugas de aceite (reparación mayor).', ar: 'قطعة كاتربيلر. استبدل عند انخفاض الطاقة أو الضوضاء غير الطبيعية أو تسرب الزيت (إصلاح رئيسي).', ru: 'Деталь CAT. Заменяйте при падении мощности, ненормальном шуме или утечке масла (капремонт).', fr: 'Pièce CAT. Remplacer en cas de perte de puissance, bruit anormal ou fuite d\'huile (réparation majeure).', pt: 'Peça CAT. Substituir quando houver queda de potência, ruído anormal ou vazamento de óleo (reparo maior).', it: 'Pezzo CAT. Sostituire quando si verifica calo di potenza, rumore anomalo o perdita di olio (riparazione maggiore).' },
+
   'CAT 零件。履带松旷/磨损超限时更换(大修类高价件)': { en: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).', zh: 'CAT 零件。履带松旷/磨损超限时更换(大修类高价件)', es: 'Pieza CAT. Reemplazar cuando la pista esté suelta o el desgaste exceda el límite (reparación mayor, pieza de alto costo).', ar: 'قطعة كاتربيلر. استبدل عند فقدان الجنزير أو تجاوز البلى الحد (إصلاح رئيسي, قطعة عالية التكلفة).', ru: 'Деталь CAT. Заменяйте при ослаблении гусеницы или превышении исноса (капремонт, дорогостоящая деталь).', fr: 'Pièce CAT. Remplacer quand la chaîne est lâche ou l\'usure dépasse la limite (réparation majeure, pièce coûteuse).', pt: 'Peça CAT. Substituir quando corrente está solta ou desgaste excede limite (reparo maior, peça cara).', it: 'Pezzo CAT. Sostituire quando la catena è allentata o l\'usura supera il limite (riparazione maggiore, pezzo costoso).' },
+
   'CAT 零件。漏油/磨损时更换': { en: 'CAT part. Replace if leaking or worn.', zh: 'CAT 零件。漏油/磨损时更换', es: 'Pieza CAT. Reemplazar si tiene fugas o está desgastada.', ar: 'قطعة كاتربيلر. استبدل إذا كان هناك تسرب أو بلى.', ru: 'Деталь CAT. Заменяйте при утечке или исносе.', fr: 'Pièce CAT. Remplacer en cas de fuite ou d\'usure.', pt: 'Peça CAT. Substituir se vazamento ou desgaste.', it: 'Pezzo CAT. Sostituire se perdita o usura.' },
+
   'CAT 零件。磨损/异响时更换': { en: 'CAT part. Replace if worn or making abnormal noise.', zh: 'CAT 零件。磨损/异响时更换', es: 'Pieza CAT. Reemplazar si está desgastada o hace ruido anormal.', ar: 'قطعة كاتربيلر. استبدل إذا كان هناك بلى أو ضوضاء غير طبيعية.', ru: 'Деталь CAT. Заменяйте при исносе или ненормальном шуме.', fr: 'Pièce CAT. Remplacer si usée ou bruit anormal.', pt: 'Peça CAT. Substituir se desgastada ou ruído anormal.', it: 'Pezzo CAT. Sostituire se usura o rumore anomalo.' },
+
   'CAT 零件。轮齿磨损/断齿时更换': { en: 'CAT part. Replace when gear teeth are worn or broken.', zh: 'CAT 零件。轮齿磨损/断齿时更换', es: 'Pieza CAT. Reemplazar cuando los dientes del engranaje estén desgastados o rotos.', ar: 'قطعة كاتربيلر. استبدل عند بلى أسنان التروس أو كسرها.', ru: 'Деталь CAT. Заменяйте при исносе или поломке зубьев шестерни.', fr: 'Pièce CAT. Remplacer quand les dents de l\'engrenage sont usées ou cassées.', pt: 'Peça CAT. Substituir quando dentes da engrenagem estão desgastados ou quebrados.', it: 'Pezzo CAT. Sostituire quando i denti dell\'ingranaggio sono usurati o rotti.' },
+
   'CAT 零件。磨损见底或断裂时更换,高频更换件': { en: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).', zh: 'CAT 零件。磨损见底或断裂时更换,高频更换件', es: 'Pieza CAT. Reemplazar cuando esté desgastado al límite o agrietado (pieza de reemplazo de alta frecuencia).', ar: 'قطعة كاتربيلر. استبدل عند البلى الكامل أو التشقق (قطعة استبدال عالية التكرار).', ru: 'Деталь CAT. Заменяйте при полном исносе или трещинах (часто заменяемая деталь).', fr: 'Pièce CAT. Remplacer quand complètement usée ou fissurée (pièce de remplacement haute fréquence).', pt: 'Peça CAT. Substituir quando completamente desgastada ou rachada (peça de reposição de alta frequência).', it: 'Pezzo CAT. Sostituire quando completamente usurato o incrinato (pezzo di ricambio ad alta frequenza).' },
+
   'CAT 零件。随斗齿更换,寿命长于斗齿本身': { en: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.', zh: 'CAT 零件。随斗齿更换,寿命长于斗齿本身', es: 'Pieza CAT. Reemplazar con dientes del cucharón, vida útil más larga que los dientes mismos.', ar: 'قطعة كاتربيلر. استبدل مع أسنان الجرافة, عمر أطول من الأسنان نفسها.', ru: 'Деталь CAT. Заменяйте с зубьями ковша, более длительный срок службы, чем сами зубья.', fr: 'Pièce CAT. Remplacer avec dents de godet, durée de vie plus longue que les dents elles-mêmes.', pt: 'Peça CAT. Substituir com dentes da caçamba, vida útil mais longa que os dentes em si.', it: 'Pezzo CAT. Sostituire con denti della benna, durata più lunga dei denti stessi.' },
+
   'CAT 零件。每次换齿时同步更换': { en: 'CAT part. Replace synchronously every time teeth are replaced.', zh: 'CAT 零件。每次换齿时同步更换', es: 'Pieza CAT. Reemplazar sincrónicamente cada vez que se reemplacen los dientes.', ar: 'قطعة كاتربيلر. استبدل بشكل متزامن في كل مرة يتم استبدال الأسنان.', ru: 'Деталь CAT. Заменяйте синхронно каждый раз при замене зубьев.', fr: 'Pièce CAT. Remplacer de manière synchrone chaque fois que les dents sont remplacées.', pt: 'Peça CAT. Substituir sincronamente cada vez que os dentes são substituídos.', it: 'Pezzo CAT. Sostituire sincronamente ogni volta che i denti vengono sostituiti.' },
+
   'CAT 零件。异响/漏油/爬升无力时更换(大修类高价件)': { en: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).', zh: 'CAT 零件。异响/漏油/爬升无力时更换(大修类高价件)', es: 'Pieza CAT. Reemplazar cuando haya ruido anormal, fugas de aceite o dificultad para subir (reparación mayor, pieza de alto costo).', ar: 'قطعة كاتربيلر. استبدل عند الضوضاء غير الطبيعية أو تسرب الزيت أو صعوبة الصعود (إصلاح رئيسي, قطعة عالية التكلفة).', ru: 'Деталь CAT. Заменяйте при ненормальном шуме, утечке масла или затруднении подъема (капремонт, дорогостоящая деталь).', fr: 'Pièce CAT. Remplacer en cas de bruit anormal, fuite d\'huile ou difficulté à monter (réparation majeure, pièce coûteuse).', pt: 'Peça CAT. Substituir quando ruído anormal, vazamento de óleo ou dificuldade de subida (reparo maior, peça cara).', it: 'Pezzo CAT. Sostituire quando rumore anomalo, perdita di olio o difficoltà di salita (riparazione maggiore, pezzo costoso).' },
+
   'CAT 零件。异响/爬坡无力时更换(大修类)': { en: 'CAT part. Replace when abnormal noise or climbing difficulty occurs (major repair).', zh: 'CAT 零件。异响/爬坡无力时更换(大修类)', es: 'Pieza CAT. Reemplazar cuando haya ruido anormal o dificultad para subir (reparación mayor).', ar: 'قطعة كاتربيلر. استبدل عند الضوضاء غير الطبيعية أو صعوبة الصعود (إصلاح رئيسي).', ru: 'Деталь CAT. Заменяйте при ненормальном шуме или затруднении подъема (капремонт).', fr: 'Pièce CAT. Remplacer en cas de bruit anormal ou difficulté à monter (réparation majeure).', pt: 'Peça CAT. Substituir quando ruído anormal ou dificuldade de subida (reparo maior).', it: 'Pezzo CAT. Sostituire quando rumore anomalo o difficoltà di salita (riparazione maggiore).' },
+
   'CAT 零件。转台异响/回转无力时更换(大修类)': { en: 'CAT part. Replace when turntable makes noise or rotation is weak (major repair).', zh: 'CAT 零件。转台异响/回转无力时更换(大修类)', es: 'Pieza CAT. Reemplazar cuando la torreta hace ruido o la rotación es débil (reparación mayor).', ar: 'قطعة كاتربيلر. استبدل عند إصدار الدوران ضوضاء أو ضعف الدوران (إصلاح رئيسي).', ru: 'Деталь CAT. Заменяйте при шуме поворотной платформы или слабом вращении (капремонт).', fr: 'Pièce CAT. Remplacer quand la tourelle fait du bruit ou la rotation est faible (réparation majeure).', pt: 'Peça CAT. Substituir quando a torreta faz barulho ou rotação fraca (reparo maior).', it: 'Pezzo CAT. Sostituire quando la torretta fa rumore o rotazione debole (riparazione maggiore).' },
+
   'CAT part. Replace during maintenance every 250-500 hours.': { en: 'CAT part. Replace during maintenance every 250-500 hours.', zh: 'CAT 零件。250-500小时随保养更换', es: 'Pieza CAT. Reemplazar durante el mantenimiento cada 250-500 horas.', ar: 'قطعة كاتربيلر. استبدل أثناء الصيانة كل 250-500 ساعة.', ru: 'Деталь CAT. Заменяйте при техническом обслуживании каждые 250-500 часов.', fr: 'Pièce CAT. Remplacer lors de l\'entretien tous les 250-500 heures.', pt: 'Peça CAT. Substituir durante manutenção a cada 250-500 horas.', it: 'Pezzo CAT. Sostituire durante la manutenzione ogni 250-500 ore.' },
+
   'CAT part. Inspect every 500-1000 hours.': { en: 'CAT part. Inspect every 500-1000 hours.', zh: 'CAT 零件。500-1000小时检查', es: 'Pieza CAT. Inspeccionar cada 500-1000 horas.', ar: 'قطعة كاتربيلر. افحص كل 500-1000 ساعة.', ru: 'Деталь CAT. Проверяйте каждые 500-1000 часов.', fr: 'Pièce CAT. Inspecter tous les 500-1000 heures.', pt: 'Peça CAT. Inspecionar a cada 500-1000 horas.', it: 'Pezzo CAT. Ispezionare ogni 500-1000 ore.' },
+
   'CAT part. Replace every 250-500 hours or based on fuel quality.': { en: 'CAT part. Replace every 250-500 hours or based on fuel quality.', zh: 'CAT 零件。250-500小时或视油品', es: 'Pieza CAT. Reemplazar cada 250-500 horas o según la calidad del combustible.', ar: 'قطعة كاتربيلر. استبدل كل 250-500 ساعة أو بناءً على جودة الوقود.', ru: 'Деталь CAT. Заменяйте каждые 250-500 часов или в зависимости от качества топлива.', fr: 'Pièce CAT. Remplacer tous les 250-500 heures ou selon la qualité du carburant.', pt: 'Peça CAT. Substituir a cada 250-500 horas ou com base na qualidade do combustível.', it: 'Pezzo CAT. Sostituire ogni 250-500 ore o in base alla qualità del carburante.' },
+
   'CAT part. Replace every 500-1000 hours or based on fluid analysis results.': { en: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.', zh: 'CAT 零件。500-1000小时或视油液检测结果', es: 'Pieza CAT. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.', ar: 'قطعة كاتربيلر. استبدل كل 500-1000 ساعة أو بناءً على نتائج تحليل السوائل.', ru: 'Деталь CAT. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.', fr: 'Pièce CAT. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.', pt: 'Peça CAT. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.', it: 'Pezzo CAT. Sostituire ogni 500-1000 ore o in base ai risultati dell\'analisi dei fluidi.' },
+
   'CAT part. Replace every 500-1000 hours.': { en: 'CAT part. Replace every 500-1000 hours.', zh: 'CAT 零件。500-1000小时', es: 'Pieza CAT. Reemplazar cada 500-1000 horas.', ar: 'قطعة كاتربيلر. استبدل كل 500-1000 ساعة.', ru: 'Деталь CAT. Заменяйте каждые 500-1000 часов.', fr: 'Pièce CAT. Remplacer tous les 500-1000 heures.', pt: 'Peça CAT. Substituir a cada 500-1000 horas.', it: 'Pezzo CAT. Sostituire ogni 500-1000 ore.' },
+
   'CAT part. Replace if overheating or leaking.': { en: 'CAT part. Replace if overheating or leaking.', zh: 'CAT 零件。过热/渗漏时更换', es: 'Pieza CAT. Reemplazar si se sobrecalienta o tiene fugas.', ar: 'قطعة كاتربيلر. استبدل إذا كان هناك ارتفاع في درجة الحرارة أو تسرب.', ru: 'Деталь CAT. Заменяйте при перегреве или утечке.', fr: 'Pièce CAT. Remplacer en cas de surchauffe ou de fuite.', pt: 'Peça CAT. Substituir se superaquecimento ou vazamento.', it: 'Pezzo CAT. Sostituire se surriscaldamento o perdita.' },
+
   'CAT part. Replace every 250-500 hours or based on dust environment.': { en: 'CAT part. Replace every 250-500 hours or based on dust environment.', zh: 'CAT 零件。250-500小时或视尘埃环境', es: 'Pieza CAT. Reemplazar cada 250-500 horas o según el entorno de polvo.', ar: 'قطعة كاتربيلر. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.', ru: 'Деталь CAT. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.', fr: 'Pièce CAT. Remplacer tous les 250-500 heures ou selon l\'environnement poussiéreux.', pt: 'Peça CAT. Substituir a cada 250-500 horas ou com base no ambiente de poeira.', it: 'Pezzo CAT. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.' },
+
   'CAT part. Replace with outer element or replace inner element every 2 outer element changes.': { en: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.', zh: 'CAT 零件。随外芯更换或每2次外芯更换时更换内芯', es: 'Pieza CAT. Reemplazar con elemento externo o reemplazar elemento interno cada 2 cambios de elemento externo.', ar: 'قطعة كاتربيلر. استبدل مع العنصر الخارجي أو استبدل العنصر الداخلي كل 2 تغييرات عنصر خارجي.', ru: 'Деталь CAT. Заменяйте с внешним элементом или заменяйте внутренний элемент каждые 2 смены внешнего элемента.', fr: 'Pièce CAT. Remplacer avec élément externe ou remplacer élément interne tous les 2 changements d\'élément externe.', pt: 'Peça CAT. Substituir com elemento externo ou substituir elemento interno a cada 2 mudanças de elemento externo.', it: 'Pezzo CAT. Sostituire con elemento esterno o sostituire elemento interno ogni 2 cambi di elemento esterno.' },
+
   'CAT part. Verify by chassis number (E320D series).': { en: 'CAT part. Verify by chassis number (E320D series).', zh: 'CAT 零件。按底盘号核实(E320D系列)', es: 'Pieza CAT. Verificar por número de chasis (serie E320D).', ar: 'قطعة كاتربيلر. تحقق من رقم الهيكل (سلسلة E320D).', ru: 'Деталь CAT. Проверьте по номеру шасси (серия E320D).', fr: 'Pièce CAT. Vérifier par numéro de châssis (série E320D).', pt: 'Peça CAT. Verificar por número do chassi (série E320D).', it: 'Pezzo CAT. Verificare per numero di telaio (serie E320D).' },
+
   'CAT part. Verify compatibility with bucket teeth (E320 series).': { en: 'CAT part. Verify compatibility with bucket teeth (E320 series).', zh: 'CAT 零件。核实与斗齿的兼容性(E320系列)', es: 'Pieza CAT. Verificar compatibilidad con dientes del cucharón (serie E320).', ar: 'قطعة كاتربيلر. تحقق من التوافق مع أسنان الجرافة (سلسلة E320).', ru: 'Деталь CAT. Проверьте совместимость с зубьями ковша (серия E320).', fr: 'Pièce CAT. Vérifier la compatibilité avec les dents de godet (série E320).', pt: 'Peça CAT. Verificar compatibilidade com dentes da caçamba (série E320).', it: 'Pezzo CAT. Verificare la compatibilità con i denti della benna (serie E320).' },
+
   'CAT part. Verify by specific chassis serial number.': { en: 'CAT part. Verify by specific chassis serial number.', zh: 'CAT 零件。按特定底盘序列号核实', es: 'Pieza CAT. Verificar por número de serie del chasis específico.', ar: 'قطعة كاتربيلر. تحقق من رقم سلسلة الهيكل المحدد.', ru: 'Деталь CAT. Проверьте по конкретному серийному номеру шасси.', fr: 'Pièce CAT. Vérifier par numéro de série de châssis spécifique.', pt: 'Peça CAT. Verificar por número de série do chassi específico.', it: 'Pezzo CAT. Verificare per numero di serie del telaio specifico.' },
+
   'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).': { en: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).', zh: 'CAT 零件。动力下降/异响/漏油时更换(大修类)', es: 'Pieza CAT. Reemplazar cuando haya pérdida de potencia, ruido anormal o fugas de aceite (reparación mayor).', ar: 'قطعة كاتربيلر. استبدل عند انخفاض الطاقة أو الضوضاء غير الطبيعية أو تسرب الزيت (إصلاح رئيسي).', ru: 'Деталь CAT. Заменяйте при падении мощности, ненормальном шуме или утечке масла (капремонт).', fr: 'Pièce CAT. Remplacer en cas de perte de puissance, bruit anormal ou fuite d\'huile (réparation majeure).', pt: 'Peça CAT. Substituir quando houver queda de potência, ruído anormal ou vazamento de óleo (reparo maior).', it: 'Pezzo CAT. Sostituire quando si verifica calo di potenza, rumore anomalo o perdita di olio (riparazione maggiore).' },
+
   'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).': { en: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).', zh: 'CAT 零件。履带松旷/磨损超限时更换(大修类高价件)', es: 'Pieza CAT. Reemplazar cuando la pista esté suelta o el desgaste exceda el límite (reparación mayor, pieza de alto costo).', ar: 'قطعة كاتربيلر. استبدل عند فقدان الجنزير أو تجاوز البلى الحد (إصلاح رئيسي, قطعة عالية التكلفة).', ru: 'Деталь CAT. Заменяйте при ослаблении гусеницы или превышении исноса (капремонт, дорогостоящая деталь).', fr: 'Pièce CAT. Remplacer quand la chaîne est lâche ou l\'usure dépasse la limite (réparation majeure, pièce coûteuse).', pt: 'Peça CAT. Substituir quando corrente está solta ou desgaste excede limite (reparo maior, peça cara).', it: 'Pezzo CAT. Sostituire quando la catena è allentata o l\'usura supera il limite (riparazione maggiore, pezzo costoso).' },
+
   'CAT part. Replace if leaking or worn.': { en: 'CAT part. Replace if leaking or worn.', zh: 'CAT 零件。漏油/磨损时更换', es: 'Pieza CAT. Reemplazar si tiene fugas o está desgastada.', ar: 'قطعة كاتربيلر. استبدل إذا كان هناك تسرب أو بلى.', ru: 'Деталь CAT. Заменяйте при утечке или исносе.', fr: 'Pièce CAT. Remplacer en cas de fuite ou d\'usure.', pt: 'Peça CAT. Substituir se vazamento ou desgaste.', it: 'Pezzo CAT. Sostituire se perdita o usura.' },
+
   'CAT part. Replace if worn or making abnormal noise.': { en: 'CAT part. Replace if worn or making abnormal noise.', zh: 'CAT 零件。磨损/异响时更换', es: 'Pieza CAT. Reemplazar si está desgastada o hace ruido anormal.', ar: 'قطعة كاتربيلر. استبدل إذا كان هناك بلى أو ضوضاء غير طبيعية.', ru: 'Деталь CAT. Заменяйте при исносе или ненормальном шуме.', fr: 'Pièce CAT. Remplacer si usée ou bruit anormal.', pt: 'Peça CAT. Substituir se desgastada ou ruído anormal.', it: 'Pezzo CAT. Sostituire se usura o rumore anomalo.' },
+
   'CAT part. Replace when gear teeth are worn or broken.': { en: 'CAT part. Replace when gear teeth are worn or broken.', zh: 'CAT 零件。轮齿磨损/断齿时更换', es: 'Pieza CAT. Reemplazar cuando los dientes del engranaje estén desgastados o rotos.', ar: 'قطعة كاتربيلر. استبدل عند بلى أسنان التروس أو كسرها.', ru: 'Деталь CAT. Заменяйте при исносе или поломке зубьев шестерни.', fr: 'Pièce CAT. Remplacer quand les dents de l\'engrenage sont usées ou cassées.', pt: 'Peça CAT. Substituir quando dentes da engrenagem estão desgastados ou quebrados.', it: 'Pezzo CAT. Sostituire quando i denti dell\'ingranaggio sono usurati o rotti.' },
+
   'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).': { en: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).', zh: 'CAT 零件。磨损见底或断裂时更换,高频更换件', es: 'Pieza CAT. Reemplazar cuando esté desgastado al límite o agrietado (pieza de reemplazo de alta frecuencia).', ar: 'قطعة كاتربيلر. استبدل عند البلى الكامل أو التشقق (قطعة استبدال عالية التكرار).', ru: 'Деталь CAT. Заменяйте при полном исносе или трещинах (часто заменяемая деталь).', fr: 'Pièce CAT. Remplacer quand complètement usée ou fissurée (pièce de remplacement haute fréquence).', pt: 'Peça CAT. Substituir quando completamente desgastada ou rachada (peça de reposição de alta frequência).', it: 'Pezzo CAT. Sostituire quando completamente usurato o incrinato (pezzo di ricambio ad alta frequenza).' },
+
   'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.': { en: 'CAT part. Replace with bucket teeth, longer lifespan than teeth themselves.', zh: 'CAT 零件。随斗齿更换,寿命长于斗齿本身', es: 'Pieza CAT. Reemplazar con dientes del cucharón, vida útil más larga que los dientes mismos.', ar: 'قطعة كاتربيلر. استبدل مع أسنان الجرافة, عمر أطول من الأسنان نفسها.', ru: 'Деталь CAT. Заменяйте с зубьями ковша, более длительный срок службы, чем сами зубья.', fr: 'Pièce CAT. Remplacer avec dents de godet, durée de vie plus longue que les dents elles-mêmes.', pt: 'Peça CAT. Substituir com dentes da caçamba, vida útil mais longa que os dentes em si.', it: 'Pezzo CAT. Sostituire con denti della benna, durata più lunga dei denti stessi.' },
+
   'CAT part. Replace synchronously every time teeth are replaced.': { en: 'CAT part. Replace synchronously every time teeth are replaced.', zh: 'CAT 零件。每次换齿时同步更换', es: 'Pieza CAT. Reemplazar sincrónicamente cada vez que se reemplacen los dientes.', ar: 'قطعة كاتربيلر. استبدل بشكل متزامن في كل مرة يتم استبدال الأسنان.', ru: 'Деталь CAT. Заменяйте синхронно каждый раз при замене зубьев.', fr: 'Pièce CAT. Remplacer de manière synchrone chaque fois que les dents sont remplacées.', pt: 'Peça CAT. Substituir sincronamente cada vez que os dentes são substituídos.', it: 'Pezzo CAT. Sostituire sincronamente ogni volta che i denti vengono sostituiti.' },
+
   'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).': { en: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).', zh: 'CAT 零件。异响/漏油/爬升无力时更换(大修类高价件)', es: 'Pieza CAT. Reemplazar cuando haya ruido anormal, fugas de aceite o dificultad para subir (reparación mayor, pieza de alto costo).', ar: 'قطعة كاتربيلر. استبدل عند الضوضاء غير الطبيعية أو تسرب الزيت أو صعوبة الصعود (إصلاح رئيسي, قطعة عالية التكلفة).', ru: 'Деталь CAT. Заменяйте при ненормальном шуме, утечке масла или затруднении подъема (капремонт, дорогостоящая деталь).', fr: 'Pièce CAT. Remplacer en cas de bruit anormal, fuite d\'huile ou difficulté à monter (réparation majeure, pièce coûteuse).', pt: 'Peça CAT. Substituir quando ruído anormal, vazamento de óleo ou dificuldade de subida (reparo maior, peça cara).', it: 'Pezzo CAT. Sostituire quando rumore anomalo, perdita di olio o difficoltà di salita (riparazione maggiore, pezzo costoso).' },
+
   'CAT part. Replace when abnormal noise or climbing difficulty occurs (major repair).': { en: 'CAT part. Replace when abnormal noise or climbing difficulty occurs (major repair).', zh: 'CAT 零件。异响/爬坡无力时更换(大修类)', es: 'Pieza CAT. Reemplazar cuando haya ruido anormal o dificultad para subir (reparación mayor).', ar: 'قطعة كاتربيلر. استبدل عند الضوضاء غير الطبيعية أو صعوبة الصعود (إصلاح رئيسي).', ru: 'Деталь CAT. Заменяйте при ненормальном шуме или затруднении подъема (капремонт).', fr: 'Pièce CAT. Remplacer en cas de bruit anormal ou difficulté à monter (réparation majeure).', pt: 'Peça CAT. Substituir quando ruído anormal ou dificuldade de subida (reparo maior).', it: 'Pezzo CAT. Sostituire quando rumore anomalo o difficoltà di salita (riparazione maggiore).' },
+
   'CAT part. Replace when turntable makes noise or rotation is weak (major repair).': { en: 'CAT part. Replace when turntable makes noise or rotation is weak (major repair).', zh: 'CAT 零件。转台异响/回转无力时更换(大修类)', es: 'Pieza CAT. Reemplazar cuando la torreta hace ruido o la rotación es débil (reparación mayor).', ar: 'قطعة كاتربيلر. استبدل عند إصدار الدوران ضوضاء أو ضعف الدوران (إصلاح رئيسي).', ru: 'Деталь CAT. Заменяйте при шуме поворотной платформы или слабом вращении (капремонт).', fr: 'Pièce CAT. Remplacer quand la tourelle fait du bruit ou la rotation est faible (réparation majeure).', pt: 'Peça CAT. Substituir quando a torreta faz barulho ou rotação fraca (reparo maior).', it: 'Pezzo CAT. Sostituire quando la torretta fa rumore o rotazione debole (riparazione maggiore).' },
+
   'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).': { en: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair).', zh: 'CAT 零件。异响/漏油/爬升无力时更换(大修类)', es: 'Pieza CAT. Reemplazar cuando haya ruido anormal, fugas de aceite o dificultad para subir (reparación mayor).', ar: 'قطعة كاتربيلر. استبدل عند الضوضاء غير الطبيعية أو تسرب الزيت أو صعوبة الصعود (إصلاح رئيسي).', ru: 'Деталь CAT. Заменяйте при ненормальном шуме, утечке масла или затруднении подъема (капремонт).', fr: 'Pièce CAT. Remplacer en cas de bruit anormal, fuite d\'huile ou difficulté à monter (réparation majeure).', pt: 'Peça CAT. Substituir quando ruído anormal, vazamento de óleo ou dificuldade de subida (reparo maior).', it: 'Pezzo CAT. Sostituire quando rumore anomalo, perdita di olio o difficoltà di salita (riparazione maggiore).' },
+
   'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.': { en: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.', zh: 'CAT 零件。随斗齿更换,寿命长于斗齿本身', es: 'Pieza CAT. Verificar desgaste con dientes de cubo; vida útil más larga que los dientes mismos.', ar: 'قطعة كاتربيلر. تحقق من البلى مع أسنان الجرافة؛ عمر أطول من الأسنان نفسها.', ru: 'Деталь CAT. Проверяйте износ вместе с зубьями ковша; срок службы дольше самих зубьев.', fr: 'Pièce CAT. Vérifier l\'usure avec les dents du godet; durée de vie plus longue que les dents elles-mêmes.', pt: 'Peça CAT. Verificar desgaste com dentes do balde; vida útil mais longa que os próprios dentes.', it: 'Pezzo CAT. Verificare usura con denti del secchio; durata più lunga dei denti stessi.' },
+
   'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.': { en: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.', zh: 'CAT 零件。随斗齿更换,推土机松齿高频更换件', es: 'Pieza CAT. Verificar desgaste con dientes de cubo; pieza de reemplazo de alta frecuencia para aflojamiento de dientes de bulldozer.', ar: 'قطعة كاتربيلر. تحقق من البلى مع أسنان الجرافة؛ قطعة استبدال عالية التردد لفك أسنان الجرافة.', ru: 'Деталь CAT. Проверяйте износ вместе с зубьями ковша; часто заменяемая деталь для ослабления зубьев бульдозера.', fr: 'Pièce CAT. Vérifier l\'usure avec les dents du godet; pièce de remplacement haute fréquence pour relâchement des dents de bulldozer.', pt: 'Peça CAT. Verificar desgaste com dentes do balde; peça de substituição de alta frequência para afrouxamento de dentes de escavadeira.', it: 'Pezzo CAT. Verificare usura con denti del secchio; pezzo di sostituzione ad alta frequenza per allentamento denti bulldozer.' },
+
   'CAT part. Replace when leaking or seal aging occurs.': { en: 'CAT part. Replace when leaking or seal aging occurs.', zh: 'CAT 零件。漏油/密封老化时更换', es: 'Pieza CAT. Reemplazar cuando hay fugas o envejecimiento del sello.', ar: 'قطعة كاتربيلر. استبدل عند حدوث تسرب أو شيخوخة الختم.', ru: 'Деталь CAT. Заменяйте при утечке или старении уплотнения.', fr: 'Pièce CAT. Remplacer quand fuite ou vieillissement du joint.', pt: 'Peça CAT. Substituir quando vazamento ou envelhecimento do selo.', it: 'Pezzo CAT. Sostituire quando perdita o invecchiamento sigillo.' },
+
   'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).': { en: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).', zh: 'CAT 零件。转台异响/回转无力时更换(大修类)', es: 'Pieza CAT. Reemplazar cuando la torreta hace ruido anormal o el giro es débil (reparación mayor).', ar: 'قطعة كاتربيلر. استبدل عندما تصدر منصة الدوران ضوضاء غير طبيعية أو يكون الدوران ضعيفاً (إصلاح رئيسي).', ru: 'Деталь CAT. Заменяйте, когда поворотный стол издает ненормальный шум или поворот слабый (капремонт).', fr: 'Pièce CAT. Remplacer quand la tourelle fait du bruit anormal ou le pivotement est faible (réparation majeure).', pt: 'Peça CAT. Substituir quando a plataforma giratória faz ruído anormal ou o giro é fraco (reparo maior).', it: 'Pezzo CAT. Sostituire quando la torretta fa rumore anomalo o la rotazione è debole (riparazione maggiore).' },
+
   'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).': { en: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).', zh: 'CAT 零件。异响/间隙过大时更换(高频维护更换件)', es: 'Pieza CAT. Reemplazar cuando hay ruido anormal o holgura excesiva (pieza de reemplazo de mantenimiento de alta frecuencia).', ar: 'قطعة كاتربيلر. استبدل عند وجود ضوضاء غير طبيعية أو خلوص مفرط (قطعة استبدال صيانة عالية التردد).', ru: 'Деталь CAT. Заменяйте при ненормальном шуме или чрезмерном зазоре (часто заменяемая деталь обслуживания).', fr: 'Pièce CAT. Remplacer en cas de bruit anormal ou de jeu excessif (pièce de remplacement d\'entretien haute fréquence).', pt: 'Peça CAT. Substituir quando ruído anormal ou folga excessiva (peça de reposição de manutenção de alta frequência).', it: 'Pezzo CAT. Sostituire quando rumore anomalo o gioco eccessivo (pezzo di ricambio manutenzione ad alta frequenza).' },
+
   'CAT part. Replace when abnormal noise or excessive clearance occurs.': { en: 'CAT part. Replace when abnormal noise or excessive clearance occurs.', zh: 'CAT 零件。异响/间隙过大时更换', es: 'Pieza CAT. Reemplazar cuando hay ruido anormal o holgura excesiva.', ar: 'قطعة كاتربيلر. استبدل عند وجود ضوضاء غير طبيعية أو خلوص مفرط.', ru: 'Деталь CAT. Заменяйте при ненормальном шуме или чрезмерном зазоре.', fr: 'Pièce CAT. Remplacer en cas de bruit anormal ou de jeu excessif.', pt: 'Peça CAT. Substituir quando ruído anormal ou folga excessiva.', it: 'Pezzo CAT. Sostituire quando rumore anomalo o gioco eccessivo.' },
-  'CAT part. Replace with pin, high-frequency wear part.': { en: 'CAT part. Replace with pin, high-frequency wear part.', zh: 'CAT 零件。随销更换,高频磨损件', es: 'Pieza CAT. Reemplazar con pasador, pieza de desgaste de alta frecuencia.', ar: 'قطعة كاتربيلر. استبدل مع الدبوس، قطعة تآكل عالية التردد.', ru: 'Деталь CAT. Заменяйте с штифтом, часто изнашиваемая деталь.', fr: 'Pièce CAT. Remplacer avec goupille, pièce d\'usure haute fréquence.', pt: 'Peça CAT. Substituir com pino, peça de desgaste de alta frequência.', it: 'Pezzo CAT. Sostituire con perno, pezzo di usura ad alta frequenza.' }
 
-};
+  'CAT part. Replace with pin, high-frequency wear part.': { en: 'CAT part. Replace with pin, high-frequency wear part.', zh: 'CAT 零件。随销更换,高频磨损件', es: 'Pieza CAT. Reemplazar con pasador, pieza de desgaste de alta frecuencia.', ar: 'قطعة كاتربيلر. استبدل مع الدبوس، قطعة تآكل عالية التردد.', ru: 'Деталь CAT. Заменяйте с штифтом, часто изнашиваемая деталь.', fr: 'Pièce CAT. Remplacer avec goupille, pièce d\'usure haute fréquence.', pt: 'Peça CAT. Substituir com pino, peça de desgaste de alta frequência.', it: 'Pezzo CAT. Sostituire con perno, pezzo di usura ad alta frequenza.' }};export const sparePartCategoryTranslations: Record<string, Record<string, string>> = {  '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Техническое обслуживание/Система фильтрации', fr: 'Entretien/Système de filtration', pt: 'Manutenção/Sistema de filtração', it: 'Manutenzione/Sistema di filtrazione' },
 
-export const sparePartCategoryTranslations: Record<string, Record<string, string>> = {
-  '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Техническое обслуживание/Система фильтрации', fr: 'Entretien/Système de filtration', pt: 'Manutenção/Sistema de filtração', it: 'Manutenzione/Sistema di filtrazione' },
   '传动/皮带': { en: 'Transmission/Belts', es: 'Transmisión/Correas', ar: 'الإرسال/الأحزمة', ru: 'Трансмиссия/Ремни', fr: 'Transmission/Courroies', pt: 'Transmissão/Correias', it: 'Trasmissione/Cinghie' },
-  '制动系统': { en: 'Braking System', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' },
-  '悬挂系统': { en: 'Suspension System', es: 'Sistema de suspensión', ar: 'نظام التعليق', ru: 'Система подвески', fr: 'Système de suspension', pt: 'Sistema de suspensão', it: 'Sistema di sospensione' },
-  '转向系统': { en: 'Steering System', es: 'Sistema de dirección', ar: 'نظام التوجيه', ru: 'Система рулевого управления', fr: 'Système de direction', pt: 'Sistema de direção', it: 'Sistema di sterzo' },
-  '轮毂/传动轴': { en: 'Hub/Driveshaft', es: 'Cubo/Eje de transmisión', ar: 'المحور/عمود الدفع', ru: 'Ступица/Карданный вал', fr: 'Moyeu/Arbre de transmission', pt: 'Cubo/Eixo transmissão', it: 'Mozzo/Albero trasmissione' },
-  '冷却系统': { en: 'Cooling System', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
-  '增压/进气': { en: 'Turbocharging/Intake', es: 'Turboalimentación/Admisión', ar: 'الشحن التوربيني/المدخول', ru: 'Турбонаддув/Впуск', fr: 'Suralimentation/Admission', pt: 'Turboalimentação/Admissão', it: 'Sovralimentazione/Aspirazione' },
-  '底盘/履带系统': { en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الهيكل/نظام المسار', ru: 'Шасси/Система гусеницы', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de trilha', it: 'Telaio/Sistema cingolo' },
-  '挖掘属性/GET': { en: 'Excavation Attachment/GET', es: 'Accesorio de excavación/GET', ar: 'ملحق الحفر/GET', ru: 'Экскаваторное оборудование/GET', fr: 'Accessoire d\'excavation/GET', pt: 'Acessório escavação/GET', it: 'Accessorio scavo/GET' },
-  '传动系统': { en: 'Transmission System', es: 'Sistema de transmisión', ar: 'نظام الإرسال', ru: 'Система трансмиссии', fr: 'Système de transmission', pt: 'Sistema de transmissão', it: 'Sistema di trasmissione' },
-  '挖掘属性/GET(小型段)': { en: 'Excavation Attachment/GET (Small)', es: 'Accesorio de excavación/GET (pequeño)', ar: 'ملحق الحفر/GET (صغير)', ru: 'Экскаваторное оборудование/GET (малое)', fr: 'Accessoire d\'excavation/GET (petit)', pt: 'Acessório escavação/GET (pequeno)', it: 'Accessorio scavo/GET (piccolo)' },
-  '挖掘属性/GET(中型段)': { en: 'Excavation Attachment/GET (Medium)', es: 'Accesorio de excavación/GET (mediano)', ar: 'ملحق الحفر/GET (متوسط)', ru: 'Экскаваторное оборудование/GET (среднее)', fr: 'Accessoire d\'excavation/GET (moyen)', pt: 'Acessório escavação/GET (médio)', it: 'Accessorio scavo/GET (medio)' },
-  '挖掘属性/GET(大型段)': { en: 'Excavation Attachment/GET (Large)', es: 'Accesorio de excavación/GET (grande)', ar: 'ملحق الحفر/GET (كبير)', ru: 'Экскаваторное оборудование/GET (большое)', fr: 'Accessoire d\'excavation/GET (grand)', pt: 'Acessório escavação/GET (grande)', it: 'Accessorio scavo/GET (grande)' },
-};
 
+  '制动系统': { en: 'Braking System', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' },
+
+  '悬挂系统': { en: 'Suspension System', es: 'Sistema de suspensión', ar: 'نظام التعليق', ru: 'Система подвески', fr: 'Système de suspension', pt: 'Sistema de suspensão', it: 'Sistema di sospensione' },
+
+  '转向系统': { en: 'Steering System', es: 'Sistema de dirección', ar: 'نظام التوجيه', ru: 'Система рулевого управления', fr: 'Système de direction', pt: 'Sistema de direção', it: 'Sistema di sterzo' },
+
+  '轮毂/传动轴': { en: 'Hub/Driveshaft', es: 'Cubo/Eje de transmisión', ar: 'المحور/عمود الدفع', ru: 'Ступица/Карданный вал', fr: 'Moyeu/Arbre de transmission', pt: 'Cubo/Eixo transmissão', it: 'Mozzo/Albero trasmissione' },
+
+  '冷却系统': { en: 'Cooling System', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
+
+  '增压/进气': { en: 'Turbocharging/Intake', es: 'Turboalimentación/Admisión', ar: 'الشحن التوربيني/المدخول', ru: 'Турбонаддув/Впуск', fr: 'Suralimentation/Admission', pt: 'Turboalimentação/Admissão', it: 'Sovralimentazione/Aspirazione' },
+
+  '底盘/履带系统': { en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الهيكل/نظام المسار', ru: 'Шасси/Система гусеницы', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de trilha', it: 'Telaio/Sistema cingolo' },
+
+  '挖掘属性/GET': { en: 'Excavation Attachment/GET', es: 'Accesorio de excavación/GET', ar: 'ملحق الحفر/GET', ru: 'Экскаваторное оборудование/GET', fr: 'Accessoire d\'excavation/GET', pt: 'Acessório escavação/GET', it: 'Accessorio scavo/GET' },
+
+  '传动系统': { en: 'Transmission System', es: 'Sistema de transmisión', ar: 'نظام الإرسال', ru: 'Система трансмиссии', fr: 'Système de transmission', pt: 'Sistema de transmissão', it: 'Sistema di trasmissione' },
+
+  '挖掘属性/GET(小型段)': { en: 'Excavation Attachment/GET (Small)', es: 'Accesorio de excavación/GET (pequeño)', ar: 'ملحق الحفر/GET (صغير)', ru: 'Экскаваторное оборудование/GET (малое)', fr: 'Accessoire d\'excavation/GET (petit)', pt: 'Acessório escavação/GET (pequeno)', it: 'Accessorio scavo/GET (piccolo)' },
+
+  '挖掘属性/GET(中型段)': { en: 'Excavation Attachment/GET (Medium)', es: 'Accesorio de excavación/GET (mediano)', ar: 'ملحق الحفر/GET (متوسط)', ru: 'Экскаваторное оборудование/GET (среднее)', fr: 'Accessoire d\'excavation/GET (moyen)', pt: 'Acessório escavação/GET (médio)', it: 'Accessorio scavo/GET (medio)' },
+
+				  					  '挖掘属性/GET(大型段)': { en: 'Excavation Attachment/GET (Large)', es: 'Accesorio de excavación/GET (grande)', ar: 'ملحق الحفر/GET (كبير)', ru: 'Экскаваторное оборудование/GET (большое)', fr: 'Accessoire d\'excavation/GET (grand)', pt: 'Acessório escavação/GET (grande)', it: 'Accesorioscavo/GET (grande)' }};
 
 export function getTranslatedSparePartName(name: string, language: string): string {
   const translations = sparePartNameTranslations[name];
   if (translations && translations[language]) {
     return translations[language];
   }
-  
   // If not found, try to find the English key and return its translation in the target language
   if (language !== 'en') {
     for (const [key, trans] of Object.entries(sparePartNameTranslations)) {
@@ -253,7 +454,6 @@ export function getTranslatedSparePartName(name: string, language: string): stri
       }
     }
   }
-  
   return name;
 }
 
@@ -267,7 +467,6 @@ export function getTranslatedSparePartDescription(description: string, language:
   if (language !== 'en' && translations && translations['en']) {
     return translations['en'];
   }
-  
   // If the description is in English and not found in translations, look for a matching Chinese key
   // by checking all keys in the translation table
   if (language !== 'en') {
@@ -278,7 +477,6 @@ export function getTranslatedSparePartDescription(description: string, language:
       }
     }
   }
-  
   return description;
 }
 
@@ -287,7 +485,6 @@ export function getTranslatedSparePartCategory(category: string, language: strin
   if (translations && translations[language]) {
     return translations[language];
   }
-  
   // If not found, try to find the English key and return its translation in the target language
   if (language !== 'en') {
     for (const [key, trans] of Object.entries(sparePartCategoryTranslations)) {
@@ -297,32 +494,70 @@ export function getTranslatedSparePartCategory(category: string, language: strin
       }
     }
   }
-  
   return category;
 }
-
 
 // Shantui spare parts translations
 export const shantuiSparePartTranslations: Record<string, Record<string, string>> = {
   // Maintenance/Filtration
   'SHANTUI 零件。250-500小时随保养更换': { en: 'SHANTUI part. Replace during maintenance every 250-500 hours.', es: 'Pieza SHANTUI. Reemplazar durante el mantenimiento cada 250-500 horas.', ar: 'قطعة SHANTUI. استبدل أثناء الصيانة كل 250-500 ساعة.', ru: 'Деталь SHANTUI. Заменяйте при техническом обслуживании каждые 250-500 часов.', fr: 'Pièce SHANTUI. Remplacer lors de la maintenance tous les 250-500 heures.', pt: 'Peça SHANTUI. Substituir durante manutenção a cada 250-500 horas.', it: 'Pezzo SHANTUI. Sostituire durante la manutenzione ogni 250-500 ore.' },
+
   'SHANTUI 零件。250-500小时,雨季/劣质油缩短': { en: 'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.', es: 'Pieza SHANTUI. Reemplazar cada 250-500 horas, acortar en temporada de lluvia/aceite de baja calidad.', ar: 'قطعة SHANTUI. استبدل كل 250-500 ساعة، اختصر في موسم الأمطار/زيت منخفض الجودة.', ru: 'Деталь SHANTUI. Заменяйте каждые 250-500 часов, сократите в сезон дождей/масло низкого качества.', fr: 'Pièce SHANTUI. Remplacer tous les 250-500 heures, raccourcir en saison des pluies/huile de mauvaise qualité.', pt: 'Peça SHANTUI. Substituir a cada 250-500 horas, encurtar em estação chuvosa/óleo de baixa qualidade.', it: 'Pezzo SHANTUI. Sostituire ogni 250-500 ore, accorciare in stagione piovosa/olio di bassa qualità.' },
+
   'SHANTUI 零件。250-500小时或视灰尘环境': { en: 'SHANTUI part. Replace every 250-500 hours or based on dust environment.', es: 'Pieza SHANTUI. Reemplazar cada 250-500 horas o según el entorno de polvo.', ar: 'قطعة SHANTUI. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.', ru: 'Деталь SHANTUI. Заменяйте каждые 250-500 часов или в зависимости от окружающей среды с пылью.', fr: 'Pièce SHANTUI. Remplacer tous les 250-500 heures ou selon l\'environnement poussiéreux.', pt: 'Peça SHANTUI. Substituir a cada 250-500 horas ou com base no ambiente de poeira.', it: 'Pezzo SHANTUI. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.' },
+
   'SHANTUI 零件。500-1000小时': { en: 'SHANTUI part. Replace every 500-1000 hours.', es: 'Pieza SHANTUI. Reemplazar cada 500-1000 horas.', ar: 'قطعة SHANTUI. استبدل كل 500-1000 ساعة.', ru: 'Деталь SHANTUI. Заменяйте каждые 500-1000 часов.', fr: 'Pièce SHANTUI. Remplacer tous les 500-1000 heures.', pt: 'Peça SHANTUI. Substituir a cada 500-1000 horas.', it: 'Pezzo SHANTUI. Sostituire ogni 500-1000 ore.' },
+
   'SHANTUI 零件。500-1000小时或视油液检测': { en: 'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.', es: 'Pieza SHANTUI. Reemplazar cada 500-1000 horas o según análisis de fluidos.', ar: 'قطعة SHANTUI. استبدل كل 500-1000 ساعة أو بناءً على تحليل السوائل.', ru: 'Деталь SHANTUI. Заменяйте каждые 500-1000 часов или в зависимости от анализа жидкости.', fr: 'Pièce SHANTUI. Remplacer tous les 500-1000 heures ou selon l\'analyse des fluides.', pt: 'Peça SHANTUI. Substituir a cada 500-1000 horas ou com base na análise de fluidos.', it: 'Pezzo SHANTUI. Sostituire ogni 500-1000 ore o in base all\'analisi dei fluidi.' },
-  // Electrical/Starting
-  'SHANTUI 零件。发电异常/异响时更换': { en: 'SHANTUI part. Replace when abnormal charging/noise occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra carga anormal/ruido.', ar: 'قطعة SHANTUI. استبدل عند حدوث شحن غير طبيعي/ضوضاء.', ru: 'Деталь SHANTUI. Заменяйте при возникновении аномальной зарядки/шума.', fr: 'Pièce SHANTUI. Remplacer en cas de charge anormale/bruit.', pt: 'Peça SHANTUI. Substituir quando ocorrer carga anormal/ruído.', it: 'Pezzo SHANTUI. Sostituire quando si verifica carica anomala/rumore.' },
-  // Transmission/Gearbox
-  'SHANTUI 零件。异响/传动效率下降时更换(大修类)': { en: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).', es: 'Pieza SHANTUI. Reemplazar cuando ruido anormal/eficiencia de transmisión cae (reparación mayor).', ar: 'قطعة SHANTUI. استبدل عند انخفاض الضوضاء غير الطبيعية/كفاءة الإرسال (إصلاح رئيسي).', ru: 'Деталь SHANTUI. Заменяйте при аномальном шуме/снижении эффективности трансмиссии (капитальный ремонт).', fr: 'Pièce SHANTUI. Remplacer en cas de bruit anormal/baisse d\'efficacité de transmission (réparation majeure).', pt: 'Peça SHANTUI. Substituir quando ruído anormal/eficiência de transmissão cai (reparo maior).', it: 'Pezzo SHANTUI. Sostituire quando rumore anomalo/efficienza trasmissione cala (riparazione maggiore).' },
+
+  // Electrical/Starting  'SHANTUI 零件。发电异常/异响时更换': { en: 'SHANTUI part. Replace when abnormal charging/noise occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra carga anormal/ruido.', ar: 'قطعة SHANTUI. استبدل عند حدوث شحن غير طبيعي/ضوضاء.', ru: 'Деталь SHANTUI. Заменяйте при возникновении аномальной зарядки/шума.', fr: 'Pièce SHANTUI. Remplacer en cas de charge anormale/bruit.', pt: 'Peça SHANTUI. Substituir quando ocorrer carga anormal/ruído.', it: 'Pezzo SHANTUI. Sostituire quando si verifica carica anomala/rumore.' },
+
+  // Transmission/Gearbox  'SHANTUI 零件。异响/传动效率下降时更换(大修类)': { en: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).', es: 'Pieza SHANTUI. Reemplazar cuando ruido anormal/eficiencia de transmisión cae (reparación mayor).', ar: 'قطعة SHANTUI. استبدل عند انخفاض الضوضاء غير الطبيعية/كفاءة الإرسال (إصلاح رئيسي).', ru: 'Деталь SHANTUI. Заменяйте при аномальном шуме/снижении эффективности трансмиссии (капитальный ремонт).', fr: 'Pièce SHANTUI. Remplacer en cas de bruit anormal/baisse d\'efficacité de transmission (réparation majeure).', pt: 'Peça SHANTUI. Substituir quando ruído anormal/eficiência de transmissão cai (reparo maior).', it: 'Pezzo SHANTUI. Sostituire quando rumore anomalo/efficienza trasmissione cala (riparazione maggiore).' },
+
   'SHANTUI 零件。散热不良/传动油温过高时更换': { en: 'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.', es: 'Pieza SHANTUI. Reemplazar cuando disipación de calor deficiente/temperatura del aceite de transmisión es demasiado alta.', ar: 'قطعة SHANTUI. استبدل عند تبديد الحرارة السيئ/درجة حرارة زيت الإرسال مرتفعة جداً.', ru: 'Деталь SHANTUI. Заменяйте при плохом отводе тепла/температура масла трансмиссии слишком высока.', fr: 'Pièce SHANTUI. Remplacer en cas de mauvaise dissipation thermique/température de l\'huile de transmission trop élevée.', pt: 'Peça SHANTUI. Substituir quando dissipação de calor deficiente/temperatura do óleo de transmissão muito alta.', it: 'Pezzo SHANTUI. Sostituire quando dissipazione di calore scadente/temperatura olio trasmissione troppo alta.' },
+
   'SHANTUI 零件。250-500小时': { en: 'SHANTUI part. Replace every 250-500 hours.', es: 'Pieza SHANTUI. Reemplazar cada 250-500 horas.', ar: 'قطعة SHANTUI. استبدل كل 250-500 ساعة.', ru: 'Деталь SHANTUI. Заменяйте каждые 250-500 часов.', fr: 'Pièce SHANTUI. Remplacer tous les 250-500 heures.', pt: 'Peça SHANTUI. Substituir a cada 250-500 horas.', it: 'Pezzo SHANTUI. Sostituire ogni 250-500 ore.' },
+
   'SHANTUI 零件。转向异响/打滑时更换(大修类)': { en: 'SHANTUI part. Replace when steering noise/slippage occurs (major repair).', es: 'Pieza SHANTUI. Reemplazar cuando ocurra ruido de dirección/deslizamiento (reparación mayor).', ar: 'قطعة SHANTUI. استبدل عند حدوث ضوضاء التوجيه/الانزلاق (إصلاح رئيسي).', ru: 'Деталь SHANTUI. Заменяйте при возникновении шума рулевого управления/проскальзывания (капитальный ремонт).', fr: 'Pièce SHANTUI. Remplacer en cas de bruit de direction/glissement (réparation majeure).', pt: 'Peça SHANTUI. Substituir quando ocorrer ruído de direção/deslizamento (reparo maior).', it: 'Pezzo SHANTUI. Sostituire quando si verifica rumore dello sterzo/slittamento (riparazione maggiore).' },
+
   'SHANTUI 零件。制动效果下降/异响时更换': { en: 'SHANTUI part. Replace when braking effect drops/noise occurs.', es: 'Pieza SHANTUI. Reemplazar cuando efecto de frenado baja/ocurre ruido.', ar: 'قطعة SHANTUI. استبدل عند انخفاض فعالية الفرامل/حدوث ضوضاء.', ru: 'Деталь SHANTUI. Заменяйте при снижении эффективности торможения/возникновении шума.', fr: 'Pièce SHANTUI. Remplacer quand l\'effet de freinage baisse/bruit se produit.', pt: 'Peça SHANTUI. Substituir quando efeito de frenagem cai/ocorre ruído.', it: 'Pezzo SHANTUI. Sostituire quando effetto frenante cala/si verifica rumore.' },
+
   'SHANTUI 零件。转向异常/卡滞时更换': { en: 'SHANTUI part. Replace when steering abnormal/stuck occurs.', es: 'Pieza SHANTUI. Reemplazar cuando dirección anormal/atascada ocurre.', ar: 'قطعة SHANTUI. استبدل عند حدوث توجيه غير طبيعي/علق.', ru: 'Деталь SHANTUI. Заменяйте при аномальном рулевом управлении/заклинивании.', fr: 'Pièce SHANTUI. Remplacer quand direction anormale/coincée se produit.', pt: 'Peça SHANTUI. Substituir quando direção anormal/travada ocorre.', it: 'Pezzo SHANTUI. Sostituire quando si verifica direzione anomala/bloccata.' },
+
   'SHANTUI 零件。转向沉重/异响时更换': { en: 'SHANTUI part. Replace when steering heavy/noise occurs.', es: 'Pieza SHANTUI. Reemplazar cuando dirección pesada/ruido ocurre.', ar: 'قطعة SHANTUI. استبدل عند توجيه ثقيل/ضوضاء.', ru: 'Деталь SHANTUI. Заменяйте при тяжелом рулевом управлении/шуме.', fr: 'Pièce SHANTUI. Remplacer quand direction lourde/bruit se produit.', pt: 'Peça SHANTUI. Substituir quando direção pesada/ruído ocorre.', it: 'Pezzo SHANTUI. Sostituire quando direzione pesante/rumore si verifica.' },
-  'SHANTUI 零件。异响/供油不足时更换': { en: 'SHANTUI part. Replace when noise/insufficient oil supply occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ruido/suministro de aceite insuficiente ocurre.', ar: 'قطعة SHANTUI. استبدل عند حدوث ضوضاء/ربط زيت غير كاف.', ru: 'Деталь SHANTUI. Заменяйте при возникновении шума/недостаточного подачи масла.', fr: 'Pièce SHANTUI. Remplacer quand bruit/approvisionnement en huile insuffisant se produit.', pt: 'Peça SHANTUI. Substituir quando ruído/suprimento de óleo insuficiente ocorre.', it: 'Pezzo SHANTUI. Sostituire quando rumore/insufficiente fornitura di olio si verifica.' },
-  'SHANTUI 零件。换挡异常时更换': { en: 'SHANTUI part. Replace when gear shift abnormal occurs.', es: 'Pieza SHANTUI. Reemplazar cuando cambio de marcha anormal ocurre.', ar: 'قطعة SHANTUI. استبدل عند حدوث تغيير مروحة غير طبيعي.', ru: 'Деталь SHANTUI. Заменяйте при аномальном переключении передач.', fr: 'Pièce SHANTUI. Remplacer quand changement de vitesse anormal se produit.', pt: 'Peça SHANTUI. Substituir quando mudança de marcha anormal ocorre.', it: 'Pezzo SHANTUI. Sostituire quando cambio marcia anomalo si verifica.' },
-  'SHANTUI 零件。履带松旷/磨损超限时更换(大修类高价件)': { en: 'SHANTUI part. Replace when track loose/wear exceeds limit (major repair, high-cost part).', es: 'Pieza SHANTUI. Reemplazar cuando oruga suelta/desgaste excede límite (reparación mayor, pieza de alto costo).', ar: 'قطعة SHANTUI. استبدل عند المسار الرخو/البلى يتجاوز الحد (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SHANTUI. Заменяйте при ослаблении гусеницы/иснос превышает лимит (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SHANTUI. Remplacer quand chenille lâche/usure dépasse la limite (réparation majeure, pièce coûteuse).', pt: 'Peça SHANTUI. Substituir quando trilha solta/desgaste excede limite (reparo maior, peça de alto custo).', it: 'Pezzo SHANTUI. Sostituire quando cingolo allentato/usura supera limite (riparazione maggiore, pezzo costoso).' },
+
+  'SHANTUI 零件。异响/供油不足时更换': { en: 'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ruido/suministro de aceite insuficiente ocurre.', ar: 'قطعة SHANTUI. استبدل عند حدوث ضوضاء/ربط زيت غير كاف.', ru: 'Деталь SHANTUI. Заменяйте при возникновении шума/недостаточного подачи масла.', fr: 'Pièce SHANTUI. Remplacer quand bruit/approvisionnement en huile insuffisant se produit.', pt: 'Peça SHANTUI. Substituir quando ruído/suprimento de óleo insuficiente ocorre.', it: 'Pezzo SHANTUI. Sostituire quando rumore/insufficiente fornitura di olio si verifica.' },
+
+  'SHANTUI 零件。换挡异常时更换': { en: 'SHANTUI part. Replace when abnormal shift occurs.', es: 'Pieza SHANTUI. Reemplazar cuando cambio de marcha anormal ocurre.', ar: 'قطعة SHANTUI. استبدل عند حدوث تغيير مروحة غير طبيعي.', ru: 'Деталь SHANTUI. Заменяйте при аномальном переключении передач.', fr: 'Pièce SHANTUI. Remplacer quand changement de vitesse anormal se produit.', pt: 'Peça SHANTUI. Substituir quando mudança de marcha anormal ocorre.', it: 'Pezzo SHANTUI. Sostituire quando cambio marcia anomalo si verifica.' },
+
+  'SHANTUI 零件。履带松旷/磨损超限时更换(大修类高价件)': { zh: 'SHANTUI 零件。履带松旷/磨损超限时更换(大修类高价件)', en: 'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).', es: 'Pieza SHANTUI. Reemplazar cuando oruga suelta/desgaste excede límite (reparación mayor, pieza de alto costo).', ar: 'قطعة SHANTUI. استبدل عند المسار الرخو/البلى يتجاوز الحد (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SHANTUI. Заменяйте при ослаблении гусеницы/иснос превышает лимит (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SHANTUI. Remplacer quand chenille lâche/usure dépasse la limite (réparation majeure, pièce coûteuse).', pt: 'Peça SHANTUI. Substituir quando trilha solta/desgaste excede limite (reparo maior, peça de alto custo).', it: 'Pezzo SHANTUI. Sostituire quando cingolo allentato/usura supera limite (riparazione maggiore, pezzo costoso).' },
+
+  'SHANTUI part. Replace when leaking/wear occurs.': { zh: 'SHANTUI 零件。漏油/磨损时更换', en: 'SHANTUI part. Replace when leaking/wear occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra fuga/desgaste.', ar: 'قطعة SHANTUI. استبدل عند حدوث تسرب/تآكل.', ru: 'Деталь SHANTUI. Заменяйте при утечке/износе.', fr: 'Pièce SHANTUI. Remplacer en cas de fuite/usure.', pt: 'Peça SHANTUI. Substituir quando ocorrer vazamento/desgaste.', it: 'Pezzo SHANTUI. Sostituire quando si verifica perdita/usura.' },
+
+  'SHANTUI part. Replace with track shoe.': { zh: 'SHANTUI 零件。与履带板同时更换', en: 'SHANTUI part. Replace with track shoe.', es: 'Pieza SHANTUI. Reemplazar con zapata de oruga.', ar: 'قطعة SHANTUI. استبدل مع حذاء المسار.', ru: 'Деталь SHANTUI. Заменяйте вместе с гусеничной пластиной.', fr: 'Pièce SHANTUI. Remplacer avec patin de chenille.', pt: 'Peça SHANTUI. Substituir com sapata de esteira.', it: 'Pezzo SHANTUI. Sostituire con pattino cingolo.' },
+
+  'SHANTUI part. Replace simultaneously with component replacement.': { zh: 'SHANTUI 零件。与部件同时更换', en: 'SHANTUI part. Replace simultaneously with component replacement.', es: 'Pieza SHANTUI. Reemplazar simultáneamente con el reemplazo de componentes.', ar: 'قطعة SHANTUI. استبدل في نفس الوقت مع استبدال المكونات.', ru: 'Деталь SHANTUI. Заменяйте одновременно с заменой компонента.', fr: 'Pièce SHANTUI. Remplacer simultanément avec le remplacement des composants.', pt: 'Peça SHANTUI. Substituir simultaneamente com a substituição de componentes.', it: 'Pezzo SHANTUI. Sostituire contemporaneamente alla sostituzione dei componenti.' },
+
+  'SHANTUI part. Replace when wear reaches bottom/deformation occurs.': { zh: 'SHANTUI 零件。磨损到底/变形时更换', en: 'SHANTUI part. Replace when wear reaches bottom/deformation occurs.', es: 'Pieza SHANTUI. Reemplazar cuando el desgaste llega al fondo/ocurre deformación.', ar: 'قطعة SHANTUI. استبدل عند وصول التآكل إلى القاع/حدوث تشوه.', ru: 'Деталь SHANTUI. Заменяйте при износе до дна/деформации.', fr: 'Pièce SHANTUI. Remplacer quand l\'usure atteint le fond/déformation se produit.', pt: 'Peça SHANTUI. Substituir quando o desgaste atinge o fundo/ocorre deformação.', it: 'Pezzo SHANTUI. Sostituire quando si verifica usura/deformazione.' },
+
+  'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.': { zh: 'SHANTUI 零件。磨损到底。推土机高频易损件', en: 'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.', es: 'Pieza SHANTUI. Reemplazar cuando el desgaste llega al fondo. Pieza de desgaste de alta frecuencia para topadoras.', ar: 'قطعة SHANTUI. استبدل عند وصول التآكل إلى القاع. قطعة تآكل عالية التردد للجرافات.', ru: 'Деталь SHANTUI. Заменяйте при износе до дна. Высокочастотная изнашиваемая деталь для бульдозеров.', fr: 'Pièce SHANTUI. Remplacer quand l\'usure atteint le fond. Pièce d\'usure à haute fréquence pour bouteurs.', pt: 'Peça SHANTUI. Substituir quando o desgaste atinge o fundo. Peça de desgaste de alta frequência para tratores.', it: 'Pezzo SHANTUI. Sostituire quando l\'usura raggiunge il fondo. Pezzo di usura ad alta frequenza per bulldozer.' },
+
+  'SHANTUI part. Replace when wear/breakage occurs.': { zh: 'SHANTUI 零件。磨损/断裂时更换', en: 'SHANTUI part. Replace when wear/breakage occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra desgaste/rotura.', ar: 'قطعة SHANTUI. استبدل عند حدوث تآكل/كسر.', ru: 'Деталь SHANTUI. Заменяйте при износе/поломке.', fr: 'Pièce SHANTUI. Remplacer en cas d\'usure/rupture.', pt: 'Peça SHANTUI. Substituir quando ocorrer desgaste/quebra.', it: 'Pezzo SHANTUI. Sostituire quando si verifica usura/rotura.' },
+
+  'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).': { zh: 'SHANTUI 零件。齿部磨损/断裂时更换(大修类高价件)', en: 'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).', es: 'Pieza SHANTUI. Reemplazar cuando ocurra desgaste/rotura de dientes (reparación mayor, pieza de alto costo).', ar: 'قطعة SHANTUI. استبدل عند حدوث تآكل/كسر في الأسنان (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SHANTUI. Заменяйте при износе/поломке зубьев (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SHANTUI. Remplacer quand l\'usure/rupture des dents se produit (réparation majeure, pièce coûteuse).', pt: 'Peça SHANTUI. Substituir quando ocorrer desgaste/quebra de dentes (reparo maior, peça de alto custo).', it: 'Pezzo SHANTUI. Sostituire quando si verifica usura/rottura dei denti (riparazione maggiore, pezzo costoso).'},
+
+  'SHANTUI part. Replace when abnormal noise/vibration occurs.': { zh: 'SHANTUI 零件。异响/震动时更换', en: 'SHANTUI part. Replace when abnormal noise/vibration occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra ruido/vibración anormal.', ar: 'قطعة SHANTUI. استبدل عند حدوث ضوضاء/اهتزاز غير طبيعي.', ru: 'Деталь SHANTUI. Заменяйте при аномальном шуме/вибрации.', fr: 'Pièce SHANTUI. Remplacer quand bruit/vibration anormale se produit.', pt: 'Peça SHANTUI. Substituir quando ocorrer ruído/vibração anormal.', it: 'Pezzo SHANTUI. Sostituire quando si verifica rumore/vibrazione anomala.' },
+
+  'SHANTUI part. Replace when leaking/seal aging occurs.': { zh: 'SHANTUI 零件。漏油/密封老化时更换', en: 'SHANTUI part. Replace when leaking/seal aging occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra fuga/envejecimiento del sello.', ar: 'قطعة SHANTUI. استبدل عند حدوث تسرب/شيخوخة الختم.', ru: 'Деталь SHANTUI. Заменяйте при утечке/старении уплотнения.', fr: 'Pièce SHANTUI. Remplacer quand fuite/vieillissement du joint se produit.', pt: 'Peça SHANTUI. Substituir quando ocorrer vazamento/envelhecimento do selo.', it: 'Pezzo SHANTUI. Sostituire quando si verifica perdita/invecchiamento della guarnizione.' },
+
+  'SHANTUI part. Replace when overheating/leaking occurs.': { zh: 'SHANTUI 零件。过热/漏油时更换', en: 'SHANTUI part. Replace when overheating/leaking occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra sobrecalentamiento/fuga.', ar: 'قطعة SHANTUI. استبدل عند حدوث ارتفاع درجة الحرارة/تسرب.', ru: 'Деталь SHANTUI. Заменяйте при перегреве/утечке.', fr: 'Pièce SHANTUI. Remplacer quand surchauffe/fuite se produit.', pt: 'Peça SHANTUI. Substituir quando ocorrer superaquecimento/vazamento.', it: 'Pezzo SHANTUI. Sostituire quando si verifica surriscaldamento/perdita.' },
+
+  'SHANTUI part. Replace when abnormal noise/blade breakage occurs.': { zh: 'SHANTUI 零件。异响/叶片断裂时更换', en: 'SHANTUI part. Replace when abnormal noise/blade breakage occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra ruido anormal/rotura de la pala.', ar: 'قطعة SHANTUI. استبدل عند حدوث ضوضاء غير طبيعية/كسر في الشفرة.', ru: 'Деталь SHANTUI. Заменяйте при аномальном шуме/поломке лопасти.', fr: 'Pièce SHANTUI. Remplacer quand bruit anormal/rupture de pale se produit.', pt: 'Peça SHANTUI. Substituir quando ocorrer ruído anormal/quebra da pá.', it: 'Pezzo SHANTUI. Sostituire quando si verifica rumore anomalo/rottura della pala.' },
+
+  'SHANTUI part. Replace when steering noise/excessive clearance occurs.': { zh: 'SHANTUI 零件。转向异响/间隙过大时更换', en: 'SHANTUI part. Replace when steering noise/excessive clearance occurs.', es: 'Pieza SHANTUI. Reemplazar cuando ocurra ruido de dirección/holgura excesiva.', ar: 'قطعة SHANTUI. استبدل عند حدوث ضوضاء التوجيه/خلوص مفرط.', ru: 'Деталь SHANTUI. Заменяйте при шуме рулевого управления/чрезмерном зазоре.', fr: 'Pièce SHANTUI. Remplacer quand bruit de direction/jeu excessif se produit.', pt: 'Peça SHANTUI. Substituir quando ocorrer ruído de direção/folga excessiva.', it: 'Pezzo SHANTUI. Sostituire quando si verifica rumore dello sterzo/gioco eccessivo.' },
+
+  'SHANTUI part. Replace when leaking occurs (major repair).': { zh: 'SHANTUI 零件。漏油时更换(大修类)', en: 'SHANTUI part. Replace when leaking occurs (major repair).', es: 'Pieza SHANTUI. Reemplazar cuando ocurra fuga (reparación mayor).', ar: 'قطعة SHANTUI. استبدل عند حدوث تسرب (إصلاح رئيسي).', ru: 'Деталь SHANTUI. Заменяйте при утечке (капитальный ремонт).', fr: 'Pièce SHANTUI. Remplacer quand fuite se produit (réparation majeure).', pt: 'Peça SHANTUI. Substituir quando ocorrer vazamento (reparo maior).', it: 'Pezzo SHANTUI. Sostituire quando si verifica perdita (riparazione maggiore).' },
+
 };
 
 export function getTranslatedShantuiSparePartDescription(description: string, language: string): string {
@@ -331,12 +566,12 @@ export function getTranslatedShantuiSparePartDescription(description: string, la
   if (translations && translations[language]) {
     return translations[language];
   }
-  
+
   // If not found and language is not 'en', try to find the English version and return it
   if (language !== 'en' && translations && translations['en']) {
     return translations['en'];
   }
-  
+
   // If the description is in English and not found in translations, look for a matching Chinese key
   // by checking all keys in the translation table
   if (language !== 'en') {
@@ -347,15 +582,17 @@ export function getTranslatedShantuiSparePartDescription(description: string, la
       }
     }
   }
-  
   return description;
 }
 
 // Shantui spare part category translations
 export const shantuiSparePartCategoryTranslations: Record<string, Record<string, string>> = {
   '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Обслуживание/Система фильтрации', fr: 'Maintenance/Système de filtration', pt: 'Manutenção/Sistema de filtragem', it: 'Manutenzione/Sistema di filtrazione' },
+
   '电气/启动': { en: 'Electrical/Starting', es: 'Eléctrico/Arranque', ar: 'كهربائي/بدء التشغيل', ru: 'Электрический/Запуск', fr: 'Électrique/Démarrage', pt: 'Elétrico/Partida', it: 'Elettrico/Avviamento' },
-  '传动/变速系统': { en: 'Transmission/Gearbox System', es: 'Transmisión/Sistema de cambios', ar: 'نظام الإرسال/علبة التروس', ru: 'Трансмиссия/Коробка передач', fr: 'Transmission/Système de boîte de vitesses', pt: 'Transmissão/Sistema de câmbio', it: 'Trasmissione/Sistema cambio' },
+
+  '传动/变速系统': { en: 'Transmission/Gearbox System', es: 'Transmisión/Sistema de cambios', ar: 'نظام الإرسال/علبة التروس', ru: 'Трансмиссия/Коробка передач', fr: 'Transmission/Коробка передач', pt: 'Transmissão/Sistema de câmbio', it: 'Trasmissione/Sistema cambio' },
+
   '底盘/履带系统': { en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الشاسي/نظام الجنزير', ru: 'Шасси/Гусеничная система', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de esteira', it: 'Telaio/Sistema cingolo' },
 };
 
@@ -365,7 +602,7 @@ export function getTranslatedShantuiSparePartCategory(category: string, language
   if (translations && translations[language]) {
     return translations[language];
   }
-  
+
   // If the category is in English and not found in translations, look for a matching Chinese key
   // by checking all keys in the translation table
   if (language !== 'en') {
@@ -376,98 +613,123 @@ export function getTranslatedShantuiSparePartCategory(category: string, language
       }
     }
   }
-  
   return category;
 }
-
 
 // SANY spare parts translations
 export const sanySparePartTranslations: Record<string, Record<string, string>> = {
   // Maintenance/Filtration
   'SANY 零件。250-500小时随保养更换': { en: 'SANY part. Replace during maintenance every 250-500 hours.', es: 'Pieza SANY. Reemplazar durante el mantenimiento cada 250-500 horas.', ar: 'قطعة SANY. استبدل أثناء الصيانة كل 250-500 ساعة.', ru: 'Деталь SANY. Заменяйте при техническом обслуживании каждые 250-500 часов.', fr: 'Pièce SANY. Remplacer lors de la maintenance tous les 250-500 heures.', pt: 'Peça SANY. Substituir durante manutenção a cada 250-500 horas.', it: 'Pezzo SANY. Sostituire durante la manutenzione ogni 250-500 ore.' },
-  'SANY 零件。250-500小时': { en: 'SANY part. Replace every 250-500 hours.', es: 'Pieza SANY. Reemplazar cada 250-500 horas.', ar: 'قطعة SANY. استبدل كل 250-500 ساعة.', ru: 'Деталь SANY. Заменяйте каждые 250-500 часов.', fr: 'Pièce SANY. Remplacer tous les 250-500 heures.', pt: 'Peça SANY. Substituir a cada 250-500 horas.', it: 'Pezzo SANY. Sostituire ogni 250-500 ore.' },
-  // Bucket teeth and track components
-  'SANY 零件。磨损见底或断裂时更换,高频更换件': { en: 'SANY part. Replace when worn to bottom or broken, high-frequency replacement part.', es: 'Pieza SANY. Reemplazar cuando está desgastado o roto, pieza de reemplazo de alta frecuencia.', ar: 'قطعة SANY. استبدل عند الاهتراء أو الكسر، قطعة استبدال عالية التكرار.', ru: 'Деталь SANY. Заменяйте при износе или поломке, часто заменяемая деталь.', fr: 'Pièce SANY. Remplacer en cas d\'usure ou de casse, pièce de remplacement fréquent.', pt: 'Peça SANY. Substituir quando desgastado ou quebrado, peça de substituição frequente.', it: 'Pezzo SANY. Sostituire quando usurato o rotto, pezzo di sostituzione frequente.' },
-  'SANY 零件。磨损/异响时更换': { en: 'SANY part. Replace when worn or abnormal noise occurs.', es: 'Pieza SANY. Reemplazar cuando está desgastado o ocurre ruido anormal.', ar: 'قطعة SANY. استبدل عند الاهتراء أو حدوث ضوضاء غير طبيعية.', ru: 'Деталь SANY. Заменяйте при износе или возникновении аномального шума.', fr: 'Pièce SANY. Remplacer en cas d\'usure ou de bruit anormal.', pt: 'Peça SANY. Substituir quando desgastado ou ocorre ruído anormal.', it: 'Pezzo SANY. Sostituire quando usurato o si verifica rumore anomalo.' },
-  'SANY 零件。轮齿磨损/断齿时更换(大修类高价件)': { en: 'SANY part. Replace when wheel teeth worn/broken (major repair, high-cost part).', es: 'Pieza SANY. Reemplazar cuando dientes de rueda desgastados/rotos (reparación mayor, pieza de alto costo).', ar: 'قطعة SANY. استبدل عند تآكل/كسر أسنان العجلة (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SANY. Заменяйте при износе/поломке зубьев колеса (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SANY. Remplacer en cas d\'usure/casse des dents de roue (réparation majeure, pièce coûteuse).', pt: 'Peça SANY. Substituir quando dentes da roda desgastados/quebrados (reparo maior, peça de alto custo).', it: 'Pezzo SANY. Sostituire quando denti ruota usurati/rotti (riparazione maggiore, pezzo costoso).' },
-  'SANY 零件。漏油/磨损时更换': { en: 'SANY part. Replace when leaking or worn.', es: 'Pieza SANY. Reemplazar cuando fuga o desgaste.', ar: 'قطعة SANY. استبدل عند التسرب أو الاهتراء.', ru: 'Деталь SANY. Заменяйте при утечке или износе.', fr: 'Pièce SANY. Remplacer en cas de fuite ou d\'usure.', pt: 'Peça SANY. Substituir quando vaza ou desgasta.', it: 'Pezzo SANY. Sostituire quando perde o si usura.' },
-  'SANY 零件。履带松旷/磨损超限时更换(大修类高价件)': { en: 'SANY part. Replace when track loose/wear exceeds limit (major repair, high-cost part).', es: 'Pieza SANY. Reemplazar cuando oruga suelta/desgaste excede límite (reparación mayor, pieza de alto costo).', ar: 'قطعة SANY. استبدل عند المسار الرخو/البلى يتجاوز الحد (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SANY. Заменяйте при ослаблении гусеницы/иснос превышает лимит (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SANY. Remplacer quand chenille lâche/usure dépasse la limite (réparation majeure, pièce coûteuse).', pt: 'Peça SANY. Substituir quando trilha solta/desgaste excede limite (reparo maior, peça de alto custo).', it: 'Pezzo SANY. Sostituire quando cingolo allentato/usura supera limite (riparazione maggiore, pezzo costoso).' },
-  'SANY 零件。磨损/断裂时更换': { en: 'SANY part. Replace when worn or broken.', es: 'Pieza SANY. Reemplazar cuando está desgastado o roto.', ar: 'قطعة SANY. استبدل عند الاهتراء أو الكسر.', ru: 'Деталь SANY. Заменяйте при износе или поломке.', fr: 'Pièce SANY. Remplacer en cas d\'usure ou de casse.', pt: 'Peça SANY. Substituir quando desgastado ou quebrado.', it: 'Pezzo SANY. Sostituire quando usurato o rotto.' },
-  // Hydraulic system
-  'SANY 零件。异响/供油不足/压力下降时更换(大修类高价件)': { en: 'SANY part. Replace when noise/insufficient oil supply/pressure drops (major repair, high-cost part).', es: 'Pieza SANY. Reemplazar cuando ruido/suministro de aceite insuficiente/presión cae (reparación mayor, pieza de alto costo).', ar: 'قطعة SANY. استبدل عند الضوضاء/عدم كفاية إمدادات الزيت/انخفاض الضغط (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SANY. Заменяйте при шуме/недостаточной подаче масла/снижении давления (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SANY. Remplacer en cas de bruit/approvisionnement en huile insuffisant/baisse de pression (réparation majeure, pièce coûteuse).', pt: 'Peça SANY. Substituir quando ruído/suprimento de óleo insuficiente/queda de pressão (reparo maior, peça de alto custo).', it: 'Pezzo SANY. Sostituire quando rumore/insufficiente fornitura di olio/calo di pressione (riparazione maggiore, pezzo costoso).' },
-  'SANY 零件。异响/爬坡无力时更换(大修类高价件)': { en: 'SANY part. Replace when noise/climbing weakness occurs (major repair, high-cost part).', es: 'Pieza SANY. Reemplazar cuando ruido/debilidad de escalada (reparación mayor, pieza de alto costo).', ar: 'قطعة SANY. استبدل عند الضوضاء/ضعف التسلق (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SANY. Заменяйте при шуме/слабости при подъеме (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SANY. Remplacer en cas de bruit/faiblesse d\'escalade (réparation majeure, pièce coûteuse).', pt: 'Peça SANY. Substituir quando ruído/fraqueza de escalada (reparo maior, peça de alto custo).', it: 'Pezzo SANY. Sostituire quando rumore/debolezza di arrampicata (riparazione maggiore, pezzo costoso).' },
-  'SANY 零件。转台异响/回转无力时更换(大修类)': { en: 'SANY part. Replace when turntable noise/rotation weakness occurs (major repair).', es: 'Pieza SANY. Reemplazar cuando ruido de plataforma giratoria/debilidad de rotación (reparación mayor).', ar: 'قطعة SANY. استبدل عند ضوضاء الدوران/ضعف الدوران (إصلاح رئيسي).', ru: 'Деталь SANY. Заменяйте при шуме поворотного стола/слабости вращения (капитальный ремонт).', fr: 'Pièce SANY. Remplacer en cas de bruit de plateau/faiblesse de rotation (réparation majeure).', pt: 'Peça SANY. Substituir quando ruído de plataforma giratória/fraqueza de rotação (reparo maior).', it: 'Pezzo SANY. Sostituire quando rumore piatto girevole/debolezza di rotazione (riparazione maggiore).' },
-  // Engine system
-  'SANY 零件。动力下降/异响/漏油时更换(大修类)': { en: 'SANY part. Replace when power drops/noise/oil leak occurs (major repair).', es: 'Pieza SANY. Reemplazar cuando caída de potencia/ruido/fuga de aceite (reparación mayor).', ar: 'قطعة SANY. استبدل عند انخفاض الطاقة/الضوضاء/تسرب الزيت (إصلاح رئيسي).', ru: 'Деталь SANY. Заменяйте при снижении мощности/шуме/утечке масла (капитальный ремонт).', fr: 'Pièce SANY. Remplacer en cas de baisse de puissance/bruit/fuite d\'huile (réparation majeure).', pt: 'Peça SANY. Substituir quando queda de potência/ruído/vazamento de óleo (reparo maior).', it: 'Pezzo SANY. Sostituire quando calo di potenza/rumore/perdita di olio (riparazione maggiore).' },
-  'SANY 零件。发电异常/异响时更换': { en: 'SANY part. Replace when abnormal charging/noise occurs.', es: 'Pieza SANY. Reemplazar cuando carga anormal/ruido ocurre.', ar: 'قطعة SANY. استبدل عند الشحن غير الطبيعي/الضوضاء.', ru: 'Деталь SANY. Заменяйте при аномальной зарядке/шуме.', fr: 'Pièce SANY. Remplacer en cas de charge anormale/bruit.', pt: 'Peça SANY. Substituir quando carga anormal/ruído ocorre.', it: 'Pezzo SANY. Sostituire quando carica anomala/rumore si verifica.' },
-  'SANY 零件。启动无力/异响时更换': { en: 'SANY part. Replace when starting weakness/noise occurs.', es: 'Pieza SANY. Reemplazar cuando debilidad de arranque/ruido ocurre.', ar: 'قطعة SANY. استبدل عند ضعف البدء/الضوضاء.', ru: 'Деталь SANY. Заменяйте при слабости запуска/шуме.', fr: 'Pièce SANY. Remplacer en cas de faiblesse de démarrage/bruit.', pt: 'Peça SANY. Substituir quando fraqueza de partida/ruído ocorre.', it: 'Pezzo SANY. Sostituire quando debolezza di avviamento/rumore si verifica.' },
-  // Hydraulic cylinder seals
-  'SANY 零件。漏油/密封老化时更换': { en: 'SANY part. Replace when leaking or seal aging occurs.', es: 'Pieza SANY. Reemplazar cuando fuga o envejecimiento del sello ocurre.', ar: 'قطعة SANY. استبدل عند التسرب أو شيخوخة الختم.', ru: 'Деталь SANY. Заменяйте при утечке или старении уплотнения.', fr: 'Pièce SANY. Remplacer en cas de fuite ou de vieillissement du joint.', pt: 'Peça SANY. Substituir quando vazamento ou envelhecimento do selo ocorre.', it: 'Pezzo SANY. Sostituire quando perdita o invecchiamento sigillo si verifica.' },
-  // Caterpillar spare parts
-  '斗杆油缸': { en: 'Boom Cylinder', es: 'Cilindro de pluma', ar: 'أسطوانة الذراع', ru: 'Цилиндр стрелы', fr: 'Cylindre de flèche', pt: 'Cilindro de lança', it: 'Cilindro braccio' },
-  '行走(履带)马达/最终驱动总成': { en: 'Travel (Track) Motor/Final Drive Assembly', es: 'Motor de marcha (oruga)/Conjunto de transmisión final', ar: 'محرك السير (الجنزير)/مجموعة الدفع النهائي', ru: 'Двигатель хода (гусеница)/Узел финального привода', fr: 'Moteur de translation (chenille)/Ensemble transmission finale', pt: 'Motor de marcha (esteira)/Conjunto transmissão final', it: 'Motore marcia (cingolo)/Gruppo trasmissione finale' },
-  '回转(转台)马达及减速机': { en: 'Swing (Turntable) Motor and Reduction Gearbox', es: 'Motor de giro (plataforma giratoria) y caja de reducción', ar: 'محرك الدوران (المنصة الدوارة) وصندوق التخفيض', ru: 'Двигатель поворота (поворотная платформа) и редуктор', fr: 'Moteur de rotation (plateforme tournante) et réducteur', pt: 'Motor de giro (plataforma giratória) e caixa redução', it: 'Motore rotazione (piattaforma girevole) e riduttore' },
-  '斗齿(J300系列,V型)': { en: 'Bucket Tooth (J300 Series, V-Type)', es: 'Diente de cucharón (serie J300, tipo V)', ar: 'سن الدلو (سلسلة J300، نوع V)', ru: 'Зуб ковша (серия J300, V-образный)', fr: 'Dent de godet (série J300, type V)', pt: 'Dente caçamba (série J300, tipo V)', it: 'Dente benna (serie J300, tipo V)' },
-  '斗齿适配器(J300侧销式)': { en: 'Bucket Tooth Adapter (J300 Side Pin)', es: 'Adaptador diente de cucharón (pasador lateral J300)', ar: 'محول سن الدلو (دبوس جانبي J300)', ru: 'Адаптер зуба ковша (боковой штифт J300)', fr: 'Adaptateur dent de godet (goupille latérale J300)', pt: 'Adaptador dente caçamba (pino lateral J300)', it: 'Adattatore dente benna (perno laterale J300)' },
-  '斗齿(J350系列,HD穿透型)': { en: 'Bucket Tooth (J350 Series, HD Penetrating)', es: 'Diente de cucharón (serie J350, tipo penetración HD)', ar: 'سن الدلو (سلسلة J350، نوع اختراق HD)', ru: 'Зуб ковша (серия J350, HD проникающий)', fr: 'Dent de godet (série J350, type pénétration HD)', pt: 'Dente caçamba (série J350, tipo penetração HD)', it: 'Dente benna (serie J350, tipo penetrazione HD)' },
-  '斗齿(J350系列,通用型)': { en: 'Bucket Tooth (J350 Series, Universal)', es: 'Diente de cucharón (serie J350, universal)', ar: 'سن الدلو (سلسلة J350، عام)', ru: 'Зуб ковша (серия J350, универсальный)', fr: 'Dent de godet (série J350, universel)', pt: 'Dente caçamba (série J350, universal)', it: 'Dente benna (serie J350, universale)' },
-  '斗齿(J350摩擦磨损型)': { en: 'Bucket Tooth (J350 Friction Wear Type)', es: 'Diente de cucharón (tipo desgaste fricción J350)', ar: 'سن الدلو (نوع الاحتكاك J350)', ru: 'Зуб ковша (тип фрикционного износа J350)', fr: 'Dent de godet (type usure friction J350)', pt: 'Dente caçamba (tipo desgaste fricção J350)', it: 'Dente benna (tipo usura attrito J350)' },
-  '斗齿(J400/J460系列)': { en: 'Bucket Tooth (J400/J460 Series)', es: 'Diente de cucharón (serie J400/J460)', ar: 'سن الدلو (سلسلة J400/J460)', ru: 'Зуб ковша (серия J400/J460)', fr: 'Dent de godet (série J400/J460)', pt: 'Dente caçamba (série J400/J460)', it: 'Dente benna (serie J400/J460)' },
-  '斗齿(J300大修/推土机焊接型适配器)': { en: 'Bucket Tooth (J300 Major Repair/Bulldozer Welded Adapter)', es: 'Diente de cucharón (adaptador soldado J300 gran reparación/bulldozer)', ar: 'سن الدلو (محول ملحوم J300 إصلاح كبير/جرافة)', ru: 'Зуб ковша (адаптер сварной J300 капремонт/бульдозер)', fr: 'Dent de godet (adaptateur soudé J300 grosse réparation/bulldozer)', pt: 'Dente caçamba (adaptador soldado J300 grande reparo/trator)', it: 'Dente benna (adattatore saldato J300 revisione maggiore/bulldozer)' },
-  '斗杆油缸密封修理包': { en: 'Boom Cylinder Seal Repair Kit', es: 'Kit de reparación de sello de cilindro de pluma', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
-  '铲斗油缸密封修理包': { en: 'Bucket Cylinder Seal Repair Kit', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم أسطوانة الدلو', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'étanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
-  '铲斗油缸密封包(85mm杆/125mm缸径)': { en: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)', es: 'Kit de sello de cilindro de cucharrón (vástago 85mm/diámetro cilindro 125mm)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 85 مم/قطر أسطوانة 125 مم)', ru: 'Набор уплотнений цилиндра ковша (шток 85 мм/диаметр цилиндра 125 мм)', fr: 'Kit d\'étanchéité cylindre godet (tige 85mm/alésage cylindre 125mm)', pt: 'Kit vedação cilindro caçamba (haste 85mm/diâmetro cilindro 125mm)', it: 'Kit sigillo cilindro benna (stelo 85mm/diametro cilindro 125mm)' },
-  '铲斗油缸密封包(65mm杆,老款)': { en: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)', es: 'Kit de sello de cilindro de cucharrón (vástago 65mm, modelo antiguo)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 65 مم، موديل قديم)', ru: 'Набор уплотнений цилиндра ковша (шток 65 мм, старая модель)', fr: 'Kit d\'étanchéité cylindre godet (tige 65mm, ancien modèle)', pt: 'Kit vedação cilindro caçamba (haste 65mm, modelo antigo)', it: 'Kit sigillo cilindro benna (stelo 65mm, modello vecchio)' },
-  '铲斗-斗杆连接销': { en: 'Bucket-Boom Arm Connection Pin', es: 'Pasador de conexión cucharrón-pluma', ar: 'دبوس توصيل الدلو-الذراع', ru: 'Штифт соединения ковша-стрелы', fr: 'Goupille de connexion godet-flèche', pt: 'Pino conexão caçamba-lança', it: 'Perno connessione benna-braccio' },
-  '连杆-斗杆连接销': { en: 'Connecting Rod-Boom Arm Connection Pin', es: 'Pasador de conexión varilla-pluma', ar: 'دبوس توصيل القضيب-الذراع', ru: 'Штифт соединения рычага-стрелы', fr: 'Goupille de connexion tige-flèche', pt: 'Pino conexão haste-lança', it: 'Perno connessione asta-braccio' },
-  '连杆-油缸连接销': { en: 'Connecting Rod-Cylinder Connection Pin', es: 'Pasador de conexión varilla-cilindro', ar: 'دبوس توصيل القضيب-الأسطوانة', ru: 'Штифт соединения рычага-цилиндра', fr: 'Goupille de connexion tige-cylindre', pt: 'Pino conexão haste-cilindro', it: 'Perno connessione asta-cilindro' },
-  '斗杆连杆衬套': { en: 'Boom Arm Connecting Rod Bushing', es: 'Casquillo de varilla de pluma', ar: 'بوشينج قضيب الذراع', ru: 'Втулка рычага стрелы', fr: 'Silentbloc tige flèche', pt: 'Bucha haste lança', it: 'Boccola asta braccio' },
-  '铲斗衬套(斗杆处)': { en: 'Bucket Bushing (Boom Arm Position)', es: 'Casquillo de cucharrón (ubicación de pluma)', ar: 'بوشينج الدلو (موقع الذراع)', ru: 'Втулка ковша (место стрелы)', fr: 'Silentbloc godet (emplacement flèche)', pt: 'Bucha caçamba (local lança)', it: 'Boccola benna (posizione braccio)' },
-  // English names for CAT parts (for translation lookup)
-  'Boom Cylinder Seal Repair Kit': { zh: '斗杆油缸密封修理包', es: 'Kit de reparación de sello de cilindro de pluma', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
-  'Bucket Cylinder Seal Repair Kit': { zh: '铲斗油缸密封修理包', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم أسطوانة الدلو', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'étanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
-  'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)': { zh: '铲斗油缸密封包(85mm杆/125mm缸径)', es: 'Kit de sello de cilindro de cucharrón (vástago 85mm/diámetro cilindro 125mm)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 85 مم/قطر أسطوانة 125 مم)', ru: 'Набор уплотнений цилиндра ковша (шток 85 мм/диаметр цилиндра 125 мм)', fr: 'Kit d\'étanchéité cylindre godet (tige 85mm/alésage cylindre 125mm)', pt: 'Kit vedação cilindro caçamba (haste 85mm/diâmetro cilindro 125mm)', it: 'Kit sigillo cilindro benna (stelo 85mm/diametro cilindro 125mm)' },
-  'Bucket Cylinder Seal Kit (65mm Rod, Old Model)': { zh: '铲斗油缸密封包(65mm杆,老款)', es: 'Kit de sello de cilindro de cucharrón (vástago 65mm, modelo antiguo)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 65 مم، موديل قديم)', ru: 'Набор уплотнений цилиндра ковша (шток 65 мм, старая модель)', fr: 'Kit d\'étanchéité cylindre godet (tige 65mm, ancien modèle)', pt: 'Kit vedação cilindro caçamba (haste 65mm, modelo antigo)', it: 'Kit sigillo cilindro benna (stelo 65mm, modello vecchio)' },
-  'Bucket-Boom Connection Pin': { zh: '铲斗-斗杆连接销', es: 'Pasador de conexión cucharrón-pluma', ar: 'دبوس توصيل الدلو-الذراع', ru: 'Штифт соединения ковша-стрелы', fr: 'Goupille de connexion godet-flèche', pt: 'Pino conexão caçamba-lança', it: 'Perno connessione benna-braccio' },
-  'Rod-Boom Connection Pin': { zh: '连杆-斗杆连接销', es: 'Pasador de conexión varilla-pluma', ar: 'دبوس توصيل القضيب-الذراع', ru: 'Штифт соединения рычага-стрелы', fr: 'Goupille de connexion tige-flèche', pt: 'Pino conexão haste-lança', it: 'Perno connessione asta-braccio' },
-  'Rod-Cylinder Connection Pin': { zh: '连杆-油缸连接销', es: 'Pasador de conexión varilla-cilindro', ar: 'دبوس توصيل القضيب-الأسطوانة', ru: 'Штифт соединения рычага-цилиндра', fr: 'Goupille de connexion tige-cylindre', pt: 'Pino conexão haste-cilindro', it: 'Perno connessione asta-cilindro' },
-  'Bucket Bushing (Boom Position)': { zh: '铲斗衬套(斗杆处)', es: 'Casquillo de cucharrón (ubicación de pluma)', ar: 'بوشينج الدلو (موقع الذراع)', ru: 'Втулка ковша (место стрелы)', fr: 'Silentbloc godet (emplacement flèche)', pt: 'Bucha caçamba (local lança)', it: 'Boccola benna (posizione braccio)' }
-};
 
-export function getTranslatedSanySparePartDescription(description: string, language: string): string {
-  const translations = sanySparePartTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
+  'SANY 零件。250-500小时': { en: 'SANY part. Replace every 250-500 hours.', es: 'Pieza SANY. Reemplazar cada 250-500 horas.', ar: 'قطعة SANY. استبدل كل 250-500 ساعة.', ru: 'Деталь SANY. Заменяйте каждые 250-500 часов.', fr: 'Pièce SANY. Remplacer tous les 250-500 heures.', pt: 'Peça SANY. Substituir a cada 250-500 horas.', it: 'Pezzo SANY. Sostituire ogni 250-500 ore.' },
+
+  // Bucket teeth and track components  'SANY 零件。磨损见底或断裂时更换,高频更换件': { en: 'SANY part. Replace when worn to bottom or broken, high-frequency replacement part.', es: 'Pieza SANY. Reemplazar cuando está desgastado o roto, pieza de reemplazo de alta frecuencia.', ar: 'قطعة SANY. استبدل عند الاهتراء أو الكسر، قطعة استبدال عالية التكرار.', ru: 'Деталь SANY. Заменяйте при износе или поломке, часто заменяемая деталь.', fr: 'Pièce SANY. Remplacer en cas d\'usure ou de casse, pièce de remplacement fréquent.', pt: 'Peça SANY. Substituir quando desgastado ou quebrado, peça de substituição frequente.', it: 'Pezzo SANY. Sostituire quando usurato o rotto, pezzo di sostituzione frequente.' },
+
+  'SANY 零件。磨损/异响时更换': { en: 'SANY part. Replace when worn or abnormal noise occurs.', es: 'Pieza SANY. Reemplazar cuando está desgastado o ocurre ruido anormal.', ar: 'قطعة SANY. استبدل عند الاهتراء أو حدوث ضوضاء غير طبيعية.', ru: 'Деталь SANY. Заменяйте при износе или возникновении аномального шума.', fr: 'Pièce SANY. Remplacer en cas d\'usure ou de bruit anormal.', pt: 'Peça SANY. Substituir quando desgastado ou ocorre ruído anormal.', it: 'Pezzo SANY. Sostituire quando usurato o si verifica rumore anomalo.' },
+
+  'SANY 零件。轮齿磨损/断齿时更换(大修类高价件)': { en: 'SANY part. Replace when wheel teeth worn/broken (major repair, high-cost part).', es: 'Pieza SANY. Reemplazar cuando dientes de rueda desgastados/rotos (reparación mayor, pieza de alto costo).', ar: 'قطعة SANY. استبدل عند تآكل/كسر أسنان العجلة (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SANY. Заменяйте при износе/поломке зубьев колеса (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SANY. Remplacer en cas d\'usure/casse des dents de roue (réparation majeure, pièce coûteuse).', pt: 'Peça SANY. Substituir quando dentes da roda desgastados/quebrados (reparo maior, peça de alto custo).', it: 'Pezzo SANY. Sostituire quando denti ruota usurati/rotti (riparazione maggiore, pezzo costoso).' },
+
+  'SANY 零件。漏油/磨损时更换': { en: 'SANY part. Replace when leaking or worn.', es: 'Pieza SANY. Reemplazar cuando fuga o desgaste.', ar: 'قطعة SANY. استبدل عند التسرب أو الاهتراء.', ru: 'Деталь SANY. Заменяйте при утечке или износе.', fr: 'Pièce SANY. Remplacer en cas de fuite ou d\'usure.', pt: 'Peça SANY. Substituir quando vaza ou desgasta.', it: 'Pezzo SANY. Sostituire quando perde o si usura.' },
+
+  'SANY 零件。履带松旷/磨损超限时更换(大修类高价件)': { en: 'SANY part. Replace when track loose/wear exceeds limit (major repair, high-cost part).', es: 'Pieza SANY. Reemplazar cuando oruga suelta/desgaste excede límite (reparación mayor, pieza de alto costo).', ar: 'قطعة SANY. استبدل عند المسار الرخو/البلى يتجاوز الحد (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SANY. Заменяйте при ослаблении гусеницы/иснос превышает лимит (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SANY. Remplacer quand chenille lâche/usure dépasse la limite (réparation majeure, pièce coûteuse).', pt: 'Peça SANY. Substituir quando trilha solta/desgaste excede limite (reparo maior, peça de alto custo).', it: 'Pezzo SANY. Sostituire quando cingolo allentato/usura supera limite (riparazione maggiore, pezzo costoso).' },
+
+  'SANY 零件。磨损/断裂时更换': { en: 'SANY part. Replace when worn or broken.', es: 'Pieza SANY. Reemplazar cuando está desgastado o roto.', ar: 'قطعة SANY. استبدل عند الاهتراء أو الكسر.', ru: 'Деталь SANY. Заменяйте при износе или поломке.', fr: 'Pièce SANY. Remplacer en cas d\'usure ou de casse.', pt: 'Peça SANY. Substituir quando desgastado ou quebrado.', it: 'Pezzo SANY. Sostituire quando usurato o rotto.' },
+
+  // Hydraulic system  'SANY 零件。异响/供油不足/压力下降时更换(大修类高价件)': { en: 'SANY part. Replace when noise/insufficient oil supply/pressure drops (major repair, high-cost part).', es: 'Pieza SANY. Reemplazar cuando ruido/suministro de aceite insuficiente/presión cae (reparación mayor, pieza de alto costo).', ar: 'قطعة SANY. استبدل عند الضوضاء/عدم كفاية إمدادات الزيت/انخفاض الضغط (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SANY. Заменяйте при шуме/недостаточной подаче масла/снижении давления (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SANY. Remplacer en cas de bruit/approvisionnement en huile insuffisant/baisse de pression (réparation majeure, pièce coûteuse).', pt: 'Peça SANY. Substituir quando ruído/suprimento de óleo insuficiente/queda de pressão (reparo maior, peça de alto custo).', it: 'Pezzo SANY. Sostituire quando rumore/insufficiente fornitura di olio/calo di pressione (riparazione maggiore, pezzo costoso).' },
+
+  'SANY 零件。异响/爬坡无力时更换(大修类高价件)': { en: 'SANY part. Replace when noise/climbing weakness occurs (major repair, high-cost part).', es: 'Pieza SANY. Reemplazar cuando ruido/debilidad de escalada (reparación mayor, pieza de alto costo).', ar: 'قطعة SANY. استبدل عند الضوضاء/ضعف التسلق (إصلاح رئيسي, قطعة مرتفعة التكلفة).', ru: 'Деталь SANY. Заменяйте при шуме/слабости при подъеме (капитальный ремонт, дорогостоящая деталь).', fr: 'Pièce SANY. Remplacer en cas de bruit/faiblesse d\'escalade (réparation majeure, pièce coûteuse).', pt: 'Peça SANY. Substituir quando ruído/fraqueza de escalada (reparo maior, peça de alto custo).', it: 'Pezzo SANY. Sostituire quando rumore/debolezza di arrampicata (riparazione maggiore, pezzo costoso).' },
+
+  'SANY 零件。转台异响/回转无力时更换(大修类)': { en: 'SANY part. Replace when turntable noise/rotation weakness occurs (major repair).', es: 'Pieza SANY. Reemplazar cuando ruido de plataforma giratoria/debilidad de rotación (reparación mayor).', ar: 'قطعة SANY. استبدل عند ضوضاء الدوران/ضعف الدوران (إصلاح رئيسي).', ru: 'Деталь SANY. Заменяйте при шуме поворотного стола/слабости вращения (капитальный ремонт).', fr: 'Pièce SANY. Remplacer en cas de bruit de plateau/faiblesse de rotation (réparation majeure).', pt: 'Peça SANY. Substituir quando ruído de plataforma giratória/fraqueza de rotação (reparo maior).', it: 'Pezzo SANY. Sostituire quando rumore piatto girevole/debolezza di rotazione (riparazione maggiore).' },
+
+  // Engine system  'SANY 零件。动力下降/异响/漏油时更换(大修类)': { en: 'SANY part. Replace when power drops/noise/oil leak occurs (major repair).', es: 'Pieza SANY. Reemplazar cuando caída de potencia/ruido/fuga de aceite (reparación mayor).', ar: 'قطعة SANY. استبدل عند انخفاض الطاقة/الضوضاء/تسرب الزيت (إصلاح رئيسي).', ru: 'Деталь SANY. Заменяйте при снижении мощности/шуме/утечке масла (капитальный ремонт).', fr: 'Pièce SANY. Remplacer en cas de baisse de puissance/bruit/fuite d\'huile (réparation majeure).', pt: 'Peça SANY. Substituir quando queda de potência/ruído/vazamento de óleo (reparo maior).', it: 'Pezzo SANY. Sostituire quando calo di potenza/rumore/perdita di olio (riparazione maggiore).' },
+
+  'SANY 零件。发电异常/异响时更换': { en: 'SANY part. Replace when abnormal charging/noise occurs.', es: 'Pieza SANY. Reemplazar cuando carga anormal/ruido ocurre.', ar: 'قطعة SANY. استبدل عند الشحن غير الطبيعي/الضوضاء.', ru: 'Деталь SANY. Заменяйте при аномальной зарядке/шуме.', fr: 'Pièce SANY. Remplacer en cas de charge anormale/bruit.', pt: 'Peça SANY. Substituir quando carga anormal/ruído ocorre.', it: 'Pezzo SANY. Sostituire quando carica anomala/rumore si verifica.' },
+
+  'SANY 零件。启动无力/异响时更换': { en: 'SANY part. Replace when starting weakness/noise occurs.', es: 'Pieza SANY. Reemplazar cuando debilidad de arranque/ruido ocurre.', ar: 'قطعة SANY. استبدل عند ضعف البدء/الضوضاء.', ru: 'Деталь SANY. Заменяйте при слабости запуска/шуме.', fr: 'Pièce SANY. Remplacer en cas de faiblesse de démarrage/bruit.', pt: 'Peça SANY. Substituir quando fraqueza de partida/ruído ocorre.', it: 'Pezzo SANY. Sostituire quando debolezza di avviamento/rumore si verifica.' },
+
+  // Hydraulic cylinder seals  'SANY 零件。漏油/密封老化时更换': { en: 'SANY part. Replace when leaking or seal aging occurs.', es: 'Pieza SANY. Reemplazar cuando fuga o envejecimiento del sello ocurre.', ar: 'قطعة SANY. استبدل عند التسرب أو شيخوخة الختم.', ru: 'Деталь SANY. Заменяйте при утечке или старении уплотнения.', fr: 'Pièce SANY. Remplacer en cas de fuite ou de vieillissement du joint.', pt: 'Peça SANY. Substituir quando vazamento ou envelhecimento do selo ocorre.', it: 'Pezzo SANY. Sostituire quando perdita o invecchiamento sigillo si verifica.' },
+
+  // Caterpillar spare parts  '斗杆油缸': { en: 'Boom Cylinder', es: 'Cilindro de pluma', ar: 'أسطوانة الذراع', ru: 'Цилиндр стрелы', fr: 'Cylindre de flèche', pt: 'Cilindro de lança', it: 'Cilindro braccio' },
+
+  '行走(履带)马达/最终驱动总成': { en: 'Travel (Track) Motor/Final Drive Assembly', es: 'Motor de marcha (oruga)/Conjunto de transmisión final', ar: 'محرك السير (الجنزير)/مجموعة الدفع النهائي', ru: 'Двигатель хода (гусеница)/Узел финального привода', fr: 'Moteur de translation (chenille)/Ensemble transmission finale', pt: 'Motor de marcha (esteira)/Conjunto transmissão final', it: 'Motore marcia (cingolo)/Gruppo trasmissione finale' },
+
+  '回转(转台)马达及减速机': { en: 'Swing (Turntable) Motor and Reduction Gearbox', es: 'Motor de giro (plataforma giratoria) y caja de reducción', ar: 'محرك الدوران (المنصة الدوارة) وصندوق التخفيض', ru: 'Двигатель поворота (поворотная платформа) и редуктор', fr: 'Moteur de rotation (plateforme tournante) et réducteur', pt: 'Motor de giro (plataforma giratória) e caixa redução', it: 'Motore rotazione (piattaforma girevole) e riduttore' },
+
+  '斗齿(J300系列,V型)': { en: 'Bucket Tooth (J300 Series, V-Type)', es: 'Diente de cucharón (serie J300, tipo V)', ar: 'سن الدلو (سلسلة J300، نوع V)', ru: 'Зуб ковша (серия J300, V-образный)', fr: 'Dent de godet (série J300, type V)', pt: 'Dente caçamba (série J300, tipo V)', it: 'Dente benna (serie J300, tipo V)' },
+
+  '斗齿适配器(J300侧销式)': { en: 'Bucket Tooth Adapter (J300 Side Pin)', es: 'Adaptador diente de cucharón (pasador lateral J300)', ar: 'محول سن الدلو (دبوس جانبي J300)', ru: 'Адаптер зуба ковша (боковой штифт J300)', fr: 'Adaptateur dent de godet (goupille latérale J300)', pt: 'Adaptador dente caçamba (pino lateral J300)', it: 'Adattatore dente benna (perno laterale J300)' },
+
+  '斗齿(J350系列,HD穿透型)': { en: 'Bucket Tooth (J350 Series, HD Penetrating)', es: 'Diente de cucharón (serie J350, tipo penetración HD)', ar: 'سن الدلو (سلسلة J350، نوع اختراق HD)', ru: 'Зуб ковша (серия J350, HD проникающий)', fr: 'Dent de godet (série J350, type pénétration HD)', pt: 'Dente caçamba (série J350, tipo penetração HD)', it: 'Dente benna (serie J350, tipo penetrazione HD)' },
+
+  '斗齿(J350系列,通用型)': { en: 'Bucket Tooth (J350 Series, Universal)', es: 'Diente de cucharón (serie J350, universal)', ar: 'سن الدلو (سلسلة J350، عام)', ru: 'Зуб ковша (серия J350, универсальный)', fr: 'Dent de godet (série J350, universel)', pt: 'Dente caçamba (série J350, universal)', it: 'Dente benna (serie J350, universale)' },
+
+  '斗齿(J350摩擦磨损型)': { en: 'Bucket Tooth (J350 Friction Wear Type)', es: 'Diente de cucharón (tipo desgaste fricción J350)', ar: 'سن الدلو (نوع الاحتكاك J350)', ru: 'Зуб ковша (тип фрикционного износа J350)', fr: 'Dent de godet (type usure friction J350)', pt: 'Dente caçamba (tipo desgaste fricção J350)', it: 'Dente benna (tipo usura attrito J350)' },
+
+  '斗齿(J400/J460系列)': { en: 'Bucket Tooth (J400/J460 Series)', es: 'Diente de cucharón (serie J400/J460)', ar: 'سن الدلو (سلسلة J400/J460)', ru: 'Зуб ковша (серия J400/J460)', fr: 'Dent de godet (série J400/J460)', pt: 'Dente caçamba (série J400/J460)', it: 'Dente benna (serie J400/J460)' },
+
+  '斗齿(J300大修/推土机焊接型适配器)': { en: 'Bucket Tooth (J300 Major Repair/Bulldozer Welded Adapter)', es: 'Diente de cucharón (adaptador soldado J300 gran reparación/bulldozer)', ar: 'سن الدلو (محول ملحوم J300 إصلاح كبير/جرافة)', ru: 'Зуб ковша (адаптер сварной J300 капремонт/бульдозер)', fr: 'Dent de godet (adaptateur soudé J300 grosse réparation/bulldozer)', pt: 'Dente caçamba (adaptador soldado J300 grande reparo/trator)', it: 'Dente benna (adattatore saldato J300 revisione maggiore/bulldozer)' },
+
+  '斗杆油缸密封修理包': { en: 'Boom Cylinder Seal Repair Kit', es: 'Kit de reparación de sello de cilindro de pluma', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
+
+  '铲斗油缸密封修理包': { en: 'Bucket Cylinder Seal Repair Kit', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم أسطوانة الدلو', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'étanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
+
+  '铲斗油缸密封包(85mm杆/125mm缸径)': { en: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)', es: 'Kit de sello de cilindro de cucharrón (vástago 85mm/diámetro cilindro 125mm)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 85 مم/قطر أسطوانة 125 مم)', ru: 'Набор уплотнений цилиндра ковша (шток 85 мм/диаметр цилиндра 125 мм)', fr: 'Kit d\'étanchéité cylindre godet (tige 85mm/alésage cylindre 125mm)', pt: 'Kit vedação cilindro caçamba (haste 85mm/diâmetro cilindro 125mm)', it: 'Kit sigillo cilindro benna (stelo 85mm/diametro cilindro 125mm)' },
+
+  '铲斗油缸密封包(65mm杆,老款)': { en: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)', es: 'Kit de sello de cilindro de cucharrón (vástago 65mm, modelo antiguo)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 65 مم، موديل قديم)', ru: 'Набор уплотнений цилиндра ковша (шток 65 мм, старая модель)', fr: 'Kit d\'étanchéité cylindre godet (tige 65mm, ancien modèle)', pt: 'Kit vedação cilindro caçamba (haste 65mm, modelo antigo)', it: 'Kit sigillo cilindro benna (stelo 65mm, modello vecchio)' },
+
+  '铲斗-斗杆连接销': { en: 'Bucket-Boom Arm Connection Pin', es: 'Pasador de conexión cucharrón-pluma', ar: 'دبوس توصيل الدلو-الذراع', ru: 'Штифт соединения ковша-стрелы', fr: 'Goupille de connexion godet-flèche', pt: 'Pino conexão caçamba-lança', it: 'Perno connessione benna-braccio' },
+
+  '连杆-斗杆连接销': { en: 'Connecting Rod-Boom Arm Connection Pin', es: 'Pasador de conexión varilla-pluma', ar: 'دبوس توصيل القضيب-الذراع', ru: 'Штифт соединения рычага-стрелы', fr: 'Goupille de connexion tige-flèche', pt: 'Pino conexão haste-lança', it: 'Perno connessione asta-braccio' },
+
+  '连杆-油缸连接销': { en: 'Connecting Rod-Cylinder Connection Pin', es: 'Pasador de conexión varilla-cilindro', ar: 'دبوس توصيل القضيب-الأسطوانة', ru: 'Штифт соединения рычага-цилиндра', fr: 'Goupille de connexion tige-cylindre', pt: 'Pino conexão haste-cilindro', it: 'Perno connessione asta-cilindro' },
+
+  '斗杆连杆衬套': { en: 'Boom Arm Connecting Rod Bushing', es: 'Casquillo de varilla de pluma', ar: 'بوشينج قضيب الذراع', ru: 'Втулка рычага стрелы', fr: 'Silentbloc tige flèche', pt: 'Bucha haste lança', it: 'Boccola asta braccio' },
+
+  '铲斗衬套(斗杆处)': { en: 'Bucket Bushing (Boom Arm Position)', es: 'Casquillo de cucharrón (ubicación de pluma)', ar: 'بوشينج الدلو (موقع الذراع)', ru: 'Втулка ковша (место стрелы)', fr: 'Silentbloc godet (emplacement flèche)', pt: 'Bucha caçamba (local lança)', it: 'Boccola benna (posizione braccio)' },
+
+  // English names for CAT parts (for translation lookup)  'Boom Cylinder Seal Repair Kit': { zh: '斗杆油缸密封修理包', es: 'Kit de reparación de sello de cilindro de pluma', ar: 'مجموعة إصلاح ختم أسطوانة الذراع', ru: 'Набор для ремонта уплотнения цилиндра стрелы', fr: 'Kit de réparation d\'étanchéité de cylindre de flèche', pt: 'Kit de reparo de vedação de cilindro de lança', it: 'Kit di riparazione sigillo cilindro braccio' },
+
+  'Bucket Cylinder Seal Repair Kit': { zh: '铲斗油缸密封修理包', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم أسطوانة الدلو', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'étanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
+
+  'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)': { zh: '铲斗油缸密封包(85mm杆/125mm缸径)', es: 'Kit de sello de cilindro de cucharrón (vástago 85mm/diámetro cilindro 125mm)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 85 مم/قطر أسطوانة 125 مم)', ru: 'Набор уплотнений цилиндра ковша (шток 85 мм/диаметр цилиндра 125 мм)', fr: 'Kit d\'étanchéité cylindre godet (tige 85mm/alésage cylindre 125mm)', pt: 'Kit vedação cilindro caçamba (haste 85mm/diâmetro cilindro 125mm)', it: 'Kit sigillo cilindro benna (stelo 85mm/diametro cilindro 125mm)' },
+
+  'Bucket Cylinder Seal Kit (65mm Rod, Old Model)': { zh: '铲斗油缸密封包(65mm杆,老款)', es: 'Kit de sello de cilindro de cucharrón (vástago 65mm, modelo antiguo)', ar: 'مجموعة ختم أسطوانة الدلو (قضيب 65 مم، موديل قديم)', ru: 'Набор уплотнений цилиндра ковша (шток 65 мм, старая модель)', fr: 'Kit d\'étanchéité cylindre godet (tige 65mm, ancien modèle)', pt: 'Kit vedação cilindro caçamba (haste 65mm, modelo antigo)', it: 'Kit sigillo cilindro benna (stelo 65mm, modello vecchio)' },
+
+  'Bucket-Boom Connection Pin': { zh: '铲斗-斗杆连接销', es: 'Pasador de conexión cucharrón-pluma', ar: 'دبوس توصيل الدلو-الذراع', ru: 'Штифт соединения ковша-стрелы', fr: 'Goupille de connexion godet-flèche', pt: 'Pino conexão caçamba-lança', it: 'Perno connessione benna-braccio' },
+
+  'Rod-Boom Connection Pin': { zh: '连杆-斗杆连接销', es: 'Pasador de conexión varilla-pluma', ar: 'دبوس توصيل القضيب-الذراع', ru: 'Штифт соединения рычага-стрелы', fr: 'Goupille de connexion tige-flèche', pt: 'Pino conexão haste-lança', it: 'Perno connessione asta-braccio' },
+
+  'Rod-Cylinder Connection Pin': { zh: '连杆-油缸连接销', es: 'Pasador de conexión varilla-cilindro', ar: 'دبوس توصيل القضيب-الأسطوانة', ru: 'Штифт соединения рычага-цилиндра', fr: 'Goupille de connexion tige-cylindre', pt: 'Pino conexão haste-cilindro', it: 'Perno connessione asta-cilindro' },
+
+  'Bucket Bushing (Boom Position)': { zh: '铲斗衬套(斗杆处)', es: 'Casquillo de cucharrón (ubicación de pluma)', ar: 'بوشينج الدلو (موقع الذراع)', ru: 'Втулка ковша (место стрелы)', fr: 'Silentbloc godet (emplacement flèche)', pt: 'Bucha caçamba (local lança)', it: 'Boccola benna (posizione braccio)' }};
+export function getTranslatedSanySparePartDescription(description: string, language: string): string {  const translations = sanySparePartTranslations[description];  if (translations && translations[language]) {    return translations[language];  }  return description;
 }
 
 // SANY spare part category translations
 export const sanySparePartCategoryTranslations: Record<string, Record<string, string>> = {
-  '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Обслуживание/Система фильтрации', fr: 'Maintenance/Système de filtration', pt: 'Manutenção/Sistema de filtragem', it: 'Manutenzione/Sistema di filtrazione' },
-  '挖掘属性/GET': { en: 'Excavation/Bucket Teeth', es: 'Excavación/Dientes de cucharón', ar: 'الحفر/أسنان الجرافة', ru: 'Экскавация/Зубья ковша', fr: 'Excavation/Dents de godet', pt: 'Escavação/Dentes da caçamba', it: 'Scavo/Denti benna' },
-  '底盘/履带系统': { en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الشاسي/نظام الجنزير', ru: 'Шасси/Гусеничная система', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de esteira', it: 'Telaio/Sistema cingolo' },
-  '液压系统': { en: 'Hydraulic System', es: 'Sistema hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema hidráulico', it: 'Sistema idraulico' },
-  '发动机系统': { en: 'Engine System', es: 'Sistema del motor', ar: 'نظام المحرك', ru: 'Система двигателя', fr: 'Système moteur', pt: 'Sistema do motor', it: 'Sistema motore' },
-  '液压缸/密封件': { en: 'Hydraulic Cylinder/Seals', es: 'Cilindro hidráulico/Sellos', ar: 'أسطوانة هيدروليكية/أختام', ru: 'Гидравлический цилиндр/Уплотнения', fr: 'Cylindre hydraulique/Joints', pt: 'Cilindro hidráulico/Selos', it: 'Cilindro idraulico/Sigilli' },
-  '铲斗油缸密封修理包': { en: 'Bucket Cylinder Seal Repair Kit', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم الأسطوانة', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'\u00e9tanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
-};
+  '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Обслуживание/Система фильترции', fr: 'Maintenance/Système de filtration', pt: 'Manutenção/Sistema de filtragem', it: 'Manutenzione/Sistema di filtrazione' },
 
-export function getTranslatedSanySparePartCategory(category: string, language: string): string {
-  const translations = sanySparePartCategoryTranslations[category];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return category;
+  '挖掘属性/GET': { en: 'Excavation/Bucket Teeth', es: 'Excavación/Dientes de cucharón', ar: 'الحفر/أسنان الجرافة', ru: 'Экскавация/Зубья ковша', fr: 'Excavation/Dents de godet', pt: 'Escavação/Dentes da caçamba', it: 'Scavo/Denti benna' },
+
+  '底盘/履带系统': { en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الشاسي/نظام الجنزير', ru: 'Шасси/Гусеничная система', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de esteira', it: 'Telaio/Sistema cingolo' },
+
+  '液压系统': { en: 'Hydraulic System', es: 'Sistema hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema hidráulico', it: 'Sistema idraulico' },
+
+  '发动机系统': { en: 'Engine System', es: 'Sistema del motor', ar: 'نظام المحرك', ru: 'Система двигателя', fr: 'Système moteur', pt: 'Sistema do motor', it: 'Sistema motore' },
+
+  '液压缸/密封件': { en: 'Hydraulic Cylinder/Seals', es: 'Cilindro hidráulico/Sellos', ar: 'أسطوانة هيدروليكية/أختام', ru: 'Гидравлический цилиндр/Уплотнения', fr: 'Cylindre hydraulique/Joints', pt: 'Cilindro hidráulico/Selos', it: 'Cilindro idraulico/Sigilli' },
+
+  '铲斗油缸密封修理包': { en: 'Bucket Cylinder Seal Repair Kit', es: 'Kit de reparación de sello de cilindro de cucharrón', ar: 'مجموعة إصلاح ختم الأسطوانة', ru: 'Набор для ремонта уплотнения цилиндра ковша', fr: 'Kit de réparation d\'\u00e9tanchéité de cylindre de godet', pt: 'Kit de reparo de vedação de cilindro de caçamba', it: 'Kit di riparazione sigillo cilindro benna' },
+
+};
+export function getTranslatedSanySparePartCategory(category: string, language: string): string {  const translations = sanySparePartCategoryTranslations[category];  if (translations && translations[language]) {    return translations[language];  }  return category;
 }
 
-
-
 // Merge additional translations into sparePartDescriptionTranslations
-Object.assign(sparePartDescriptionTranslations, {
-  'Bucket Tooth Adapter (J300 Side-Lock)': { zh: '斗齿适配器(J300侧销式)', es: 'Adaptador diente de cucharrón (pasador lateral J300)', ar: 'محول سن الدلو (دبوس جانبي J300)', ru: 'Адаптер зуба ковша (боковой штифт J300)', fr: 'Adaptateur dent de godet (goupille latérale J300)', pt: 'Adaptador dente caçamba (pino lateral J300)', it: 'Adattatore dente benna (perno laterale J300)' },
-  'Bucket Tooth (J400/J460 Series)': { zh: '斗齿(J400/J460系列)', es: 'Diente de cucharrón (serie J400/J460)', ar: 'سن الدلو (سلسلة J400/J460)', ru: 'Зуб ковша (серия J400/J460)', fr: 'Dent de godet (série J400/J460)', pt: 'Dente caçamba (série J400/J460)', it: 'Dente benna (serie J400/J460)' },
-  'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': { zh: '斗齿(J300大修/推土机焊接型适配器)', es: 'Diente de cucharrón (adaptador soldado J300 gran reparación/bulldozer)', ar: 'سن الدلو (محول ملحوم J300 إصلاح كبير/جرافة)', ru: 'Зуб ковша (адаптер сварной J300 капремонт/бульдозер)', fr: 'Dent de godet (adaptateur soudé J300 grosse réparation/bulldozer)', pt: 'Dente caçamba (adaptador soldado J300 grande reparo/trator)', it: 'Dente benna (adattatore saldato J300 revisione maggiore/bulldozer)' }
-});
+Object.assign(sparePartDescriptionTranslations, {  'Bucket Tooth Adapter (J300 Side-Lock)': { zh: '斗齿适配器(J300侧销式)', es: 'Adaptador diente de cucharrón (pasador lateral J300)', ar: 'محول سن الدلو (دبوس جانبي J300)', ru: 'Адаптер зуба ковша (боковой штифт J300)', fr: 'Adaptateur dent de godet (goupille latérale J300)', pt: 'Adaptador dente caçamba (pino lateral J300)', it: 'Adattatore dente benna (perno laterale J300)' },
 
-// 添加缺失的翻译条目（这会导致语法错误，需要手动修复）
+  'Bucket Tooth (J400/J460 Series)': { zh: '斗齿(J400/J460系列)', es: 'Diente de cucharrón (serie J400/J460)', ar: 'سن الدلو (سلسلة J400/J460)', ru: 'Зуб ковша (серия J400/J460)', fr: 'Dent de godet (série J400/J460)', pt: 'Dente caçamba (série J400/J460)', it: 'Dente benna (serie J400/J460)' },
+
+  'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': { zh: '斗齿(J300大修/推土机焊接型适配器)', es: 'Diente de cucharrón (adaptador soldado J300 gran reparación/bulldozer)', ar: 'سن الدلو (محول ملحوم J300 إصلاح كبير/جرافة)', ru: 'Зуб ковша (адаптер сварной J300 капремонт/бульдозер)', fr: 'Dent de godet (adaptateur soudé J300 grosse réparation/bulldozer)', pt: 'Dente caçamba (adaptador soldado J300 grande reparo/trator)', it: 'Dente benna (adattatore saldato J300 revisione maggiore/bulldozer)' }
+
+});
