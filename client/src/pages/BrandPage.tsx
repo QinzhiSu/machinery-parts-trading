@@ -262,7 +262,7 @@ export default function BrandPage() {
                         className="text-xs font-semibold uppercase tracking-wider mb-2"
                         style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : machine.name}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongMachineType(machine.name, language) : machine.name}
                       </div>
                     </div>
 
