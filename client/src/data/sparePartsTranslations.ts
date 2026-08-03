@@ -97,6 +97,7 @@ export const sparePartNameTranslations: Record<string, Record<string, string>> =
   '变速箱泵总成': { en: 'Transmission Pump Assembly', es: 'Conjunto bomba caja cambios', ar: 'مجموعة مضخة صندوق التروس', ru: 'Узел насоса коробки передач', fr: 'Ensemble pompe boite vitesses', pt: 'Conjunto bomba caixa cambio', it: 'Gruppo pompa scatola cambio' },
 
   '变速箱控制阀': { en: 'Transmission Control Valve', es: 'Valvula control caja cambios', ar: 'صمام التحكم في صندوق التروس', ru: 'Клапан управления коробкой передач', fr: 'Soupape controle boite vitesses', pt: 'Valvula controle caixa cambio', it: 'Valvola controllo scatola cambio' },
+
   '履带链条总成(SD16)': { en: 'Track Chain Assembly (SD16)', es: 'Conjunto cadena oruga (SD16)', ar: 'مجموعة سلسلة المسار (SD16)', ru: 'Узел гусеничной цепи (SD16)', fr: 'Ensemble chaine chenille (SD16)', pt: 'Conjunto corrente trilha (SD16)', it: 'Gruppo catena cingolo (SD16)' },
   '履带链条总成(SD22)': { en: 'Track Chain Assembly (SD22)', es: 'Conjunto cadena oruga (SD22)', ar: 'مجموعة سلسلة المسار (SD22)', ru: 'Узел гусеничной цепи (SD22)', fr: 'Ensemble chaine chenille (SD22)', pt: 'Conjunto corrente trilha (SD22)', it: 'Gruppo catena cingolo (SD22)' },
 
@@ -588,13 +589,13 @@ export function getTranslatedShantuiSparePartDescription(description: string, la
 
 // Shantui spare part category translations
 export const shantuiSparePartCategoryTranslations: Record<string, Record<string, string>> = {
-  '保养/滤清系统': { en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Обслуживание/Система фильтрации', fr: 'Maintenance/Système de filtration', pt: 'Manutenção/Sistema de filtragem', it: 'Manutenzione/Sistema di filtrazione' },
+  '保养/滤清系统': { zh: '保养/滤清系统', en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Обслуживание/Система фильтрации', fr: 'Maintenance/Système de filtration', pt: 'Manutenção/Sistema de filtragem', it: 'Manutenzione/Sistema di filtrazione' },
 
-  '电气/启动': { en: 'Electrical/Starting', es: 'Eléctrico/Arranque', ar: 'كهربائي/بدء التشغيل', ru: 'Электрический/Запуск', fr: 'Électrique/Démarrage', pt: 'Elétrico/Partida', it: 'Elettrico/Avviamento' },
+  '电气/启动': { zh: '电气/启动', en: 'Electrical/Starting', es: 'Eléctrico/Arranque', ar: 'كهربائي/بدء التشغيل', ru: 'Электрический/Запуск', fr: 'Électrique/Démarrage', pt: 'Elétrico/Partida', it: 'Elettrico/Avviamento' },
 
-  '传动/变速系统': { en: 'Transmission/Gearbox System', es: 'Transmisión/Sistema de cambios', ar: 'نظام الإرسال/علبة التروس', ru: 'Трансмиссия/Коробка передач', fr: 'Transmission/Коробка передач', pt: 'Transmissão/Sistema de câmbio', it: 'Trasmissione/Sistema cambio' },
+  '传动/变速系统': { zh: '传动/变速系统', en: 'Transmission/Gearbox System', es: 'Transmisión/Sistema de cambios', ar: 'نظام الإرسال/علبة التروس', ru: 'Трансмиссия/Коробка передач', fr: 'Transmission/Коробка передач', pt: 'Transmissão/Sistema de câmbio', it: 'Trasmissione/Sistema cambio' },
 
-  '底盘/履带系统': { en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الشاسي/نظام الجنزير', ru: 'Шасси/Гусеничная система', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de esteira', it: 'Telaio/Sistema cingolo' },
+  '底盘/履带系统': { zh: '底盘/履带系统', en: 'Chassis/Track System', es: 'Chasis/Sistema de oruga', ar: 'الشاسي/نظام الجنزير', ru: 'Шасси/Гусеничная система', fr: 'Châssis/Système de chenille', pt: 'Chassi/Sistema de esteira', it: 'Telaio/Sistema cingolo' },
 };
 
 export function getTranslatedShantuiSparePartCategory(category: string, language: string): string {
