@@ -758,6 +758,29 @@ Object.assign(sparePartDescriptionTranslations, {  'Bucket Tooth Adapter (J300 S
 
   'Bucket Tooth (J400/J460 Series)': { zh: '斗齿(J400/J460系列)', es: 'Diente de cucharrón (serie J400/J460)', ar: 'سن الدلو (سلسلة J400/J460)', ru: 'Зуб ковша (серия J400/J460)', fr: 'Dent de godet (série J400/J460)', pt: 'Dente caçamba (série J400/J460)', it: 'Dente benna (serie J400/J460)' },
 
-  'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': { zh: '斗齿(J300大修/推土机焊接型适配器)', es: 'Diente de cucharrón (adaptador soldado J300 gran reparación/bulldozer)', ar: 'سن الدلو (محول ملحوم J300 إصلاح كبير/جرافة)', ru: 'Зуб ковша (адаптер сварной J300 капремонт/бульдозер)', fr: 'Dent de godet (adaptateur soudé J300 grosse réparation/bulldozer)', pt: 'Dente caçamba (adaptador soldado J300 grande reparo/trator)', it: 'Dente benna (adattatore saldato J300 revisione maggiore/bulldozer)' }
+  'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': { zh: '斗齿(J300大修/推土机焊接型适配器)', es: 'Diente de cucharrón (adaptador soldado J300 gran reparación/bulldozer)', ar: 'سن الدلو (محول ملحوم J300 إصلاح كبير/جرافة)', ru: 'Зуб ковша (адаптер сварной J300 капремонт/бульдозер)', fr: 'Dent de godet (adaptateur soudé J300 grosse réparation/bulldozer)', pt: 'Dente caçamba (adaptador soldado J300 grande reparo/trator)', it: 'Dente benna (adattatore saldato J300 revisione maggiore/bulldozer)' },
+
+  // XCMG Spare Parts Translations
+  'Hydraulic Oil Filter': { zh: '液压油滤芯', es: 'Filtro de aceite hidráulico', ar: 'فلتر الزيت الهيدروليكي', ru: 'Гидравлический масляный фильтр', fr: 'Filtre à huile hydraulique', pt: 'Filtro óleo hidráulico', it: 'Filtro olio idraulico' },
+  'Air Filter': { zh: '空气滤芯', es: 'Filtro de aire', ar: 'فلتر الهواء', ru: 'Воздушный фильтр', fr: 'Filtre à air', pt: 'Filtro de ar', it: 'Filtro aria' },
+  'Hydraulic Return Oil Filter': { zh: '液压回油滤芯', es: 'Filtro de aceite de retorno hidráulico', ar: 'فلتر الزيت العائد الهيدروليكي', ru: 'Гидравлический фильтр масла возврата', fr: 'Filtre retour huile hydraulique', pt: 'Filtro retorno óleo hidráulico', it: 'Filtro ritorno olio idraulico' },
+  'Oil Filter': { zh: '机油滤芯', es: 'Filtro de aceite', ar: 'فلتر الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
+  'Water Temperature Sensor': { zh: '水温传感器', es: 'Sensor de temperatura del agua', ar: 'مستشعر درجة حرارة الماء', ru: 'Датчик температуры воды', fr: 'Capteur température eau', pt: 'Sensor temperatura água', it: 'Sensore temperatura acqua' },
+  'Bucket Teeth': { zh: '铲斗斗齿', es: 'Dientes de cucharón', ar: 'أسنان الدلو', ru: 'Зубья ковша', fr: 'Dents de godet', pt: 'Dentes caçamba', it: 'Denti benna' },
+  'Right Bucket Tooth': { zh: '右侧斗齿', es: 'Diente de cucharón derecho', ar: 'سن الدلو الأيمن', ru: 'Правый зуб ковша', fr: 'Dent de godet droit', pt: 'Dente caçamba direito', it: 'Dente benna destro' },
+  'Left Bucket Tooth': { zh: '左侧斗齿', es: 'Diente de cucharón izquierdo', ar: 'سن الدلو الأيسر', ru: 'Левый зуб ковша', fr: 'Dent de godet gauche', pt: 'Dente caçamba esquerdo', it: 'Dente benna sinistro' },
+  'Tooth Holder': { zh: '斗齿座', es: 'Soporte de dientes', ar: 'حامل الأسنان', ru: 'Держатель зубьев', fr: 'Support dents', pt: 'Suporte dentes', it: 'Supporto denti' },
+  'Transmission Assembly': { zh: '变速箱总成', es: 'Conjunto de transmisión', ar: 'مجموعة الإرسالية', ru: 'Узел коробки передач', fr: 'Ensemble transmission', pt: 'Conjunto transmissão', it: 'Gruppo trasmissione' },
+  'Transmission Control Valve': { zh: '变速箱控制阀', es: 'Válvula de control de transmisión', ar: 'صمام التحكم في الإرسالية', ru: 'Клапан управления коробкой передач', fr: 'Soupape contrôle transmission', pt: 'Válvula controle transmissão', it: 'Valvola controllo trasmissione' },
+  'Transmission Reverse Piston': { zh: '变速箱倒挡活塞', es: 'Pistón de marcha atrás de transmisión', ar: 'مكبس عكس الإرسالية', ru: 'Поршень заднего хода коробки передач', fr: 'Piston marche arrière transmission', pt: 'Pistão marcha ré transmissão', it: 'Pistone retromarcia trasmissione' },
+  'Drive Axle Differential Gear': { zh: '驱动桥半轴齿轮', es: 'Engranaje diferencial del eje motriz', ar: 'ترس التفاضل للمحور المحرك', ru: 'Шестерня дифференциала ведущего моста', fr: 'Engrenage différentiel essieu moteur', pt: 'Engrenagem diferencial eixo motor', it: 'Ingranaggio differenziale asse motore' },
+  'Working Hydraulic Pump': { zh: '工作液压泵', es: 'Bomba hidráulica de trabajo', ar: 'مضخة هيدروليكية عاملة', ru: 'Рабочий гидравлический насос', fr: 'Pompe hydraulique de travail', pt: 'Bomba hidráulica de trabalho', it: 'Pompa idraulica di lavoro' },
+  'Brake Pads': { zh: '刹车片', es: 'Pastillas de freno', ar: 'وسادات الفرامل', ru: 'Тормозные колодки', fr: 'Plaquettes de frein', pt: 'Pastilhas de freio', it: 'Pastiglie freno' },
+  'Brake Disc': { zh: '制动盘', es: 'Disco de freno', ar: 'قرص الفرامل', ru: 'Тормозной диск', fr: 'Disque de frein', pt: 'Disco de freio', it: 'Disco freno' },
+  'Hand Brake Valve': { zh: '手刹阀', es: 'Válvula de freno de mano', ar: 'صمام الفرامل اليدوية', ru: 'Клапан ручного тормоза', fr: 'Soupape frein à main', pt: 'Válvula freio de mão', it: 'Valvola freno a mano' },
+  'Brake Drum': { zh: '制动鼓', es: 'Tambor de freno', ar: 'أسطوانة الفرامل', ru: 'Тормозной барабан', fr: 'Tambour de frein', pt: 'Tambor de freio', it: 'Tamburo freno' },
+  'Lip Seal': { zh: '唇形油封', es: 'Sello de labio', ar: 'ختم الشفاه', ru: 'Уплотнение с губкой', fr: 'Joint à lèvre', pt: 'Vedação de lábio', it: 'Guarnizione a labbro' },
+  'Universal Joint Coupling': { zh: '万向节联轴器', es: 'Acoplamiento de junta universal', ar: 'مقرن المفصل العام', ru: 'Муфта универсального шарнира', fr: 'Accouplement joint universel', pt: 'Acoplamento junta universal', it: 'Accoppiamento giunto universale' },
+  'Relief Valve': { zh: '溢流阀', es: 'Válvula de alivio', ar: 'صمام الإغاثة', ru: 'Предохранительный клапан', fr: 'Soupape de soulagement', pt: 'Válvula de alívio', it: 'Valvola di scarico' }
 
 });
