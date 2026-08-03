@@ -408,7 +408,8 @@ export const xcmgSparePartCategoryTranslations: Record<string, Record<string, st
   'Excavation/Bucket Teeth': { zh: '挖掘/铲齿', en: 'Excavation/Bucket Teeth', es: 'Excavación/Dientes de cucharón', ar: 'التنقيب/أسنان الدلو', ru: 'Экскавация/Зубья ковша', fr: 'Excavation/Dents de godet', pt: 'Escavação/Dentes de concha', it: 'Scavo/Denti di benna' },
   'Transmission/Gearbox System': { zh: '传动/变速箱系统', en: 'Transmission/Gearbox System', es: 'Sistema de transmisión/caja de cambios', ar: 'نظام الإرسال/صندوق التروس', ru: 'Система передачи/коробка передач', fr: 'Système de transmission/boîte de vitesses', pt: 'Sistema de transmissão/caixa de câmbio', it: 'Sistema di trasmissione/scatola del cambio' },
   'Hydraulic System': { zh: '液压系统', en: 'Hydraulic System', es: 'Sistema hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema hidráulico', it: 'Sistema idraulico' },
-  'Brake System': { zh: '制动系统', en: 'Brake System', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' }
+  'Brake System': { zh: '制动系统', en: 'Brake System', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' },
+  'Sealing/Drive Components': { zh: '密封/传动件', en: 'Sealing/Drive Components', es: 'Componentes de sellado/transmisión', ar: 'مكونات الختم / النقل', ru: 'Компоненты уплотнения/передачи', fr: 'Composants d\'étanchéité/transmission', pt: 'Componentes de vedación/transmisión', it: 'Componenti di tenuta/trasmissione' }
 };
 
 export function getTranslatedSparePartName(name: string, language: string): string {
