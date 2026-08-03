@@ -102,7 +102,8 @@ export const sparePartNameTranslations: Record<string, Record<string, string>> =
 
   '履带链条总成(SD32)': { en: 'Track Chain Assembly (SD32)', es: 'Conjunto cadena oruga (SD32)', ar: 'مجموعة سلسلة المسار (SD32)', ru: 'Узел гусеничной цепи (SD32)', fr: 'Ensemble chaine chenille (SD32)', pt: 'Conjunto corrente trilha (SD32)', it: 'Gruppo catena cingolo (SD32)' },
 
-  // Caterpillar parts  '机油滤芯(新款)': { en: 'Oil Filter (New Model)', es: 'Filtro de aceite (nuevo modelo)', ar: 'فلتر الزيت (الموديل الجديد)', ru: 'Масляный фильтр (новая модель)', fr: 'Filtre à huile (nouveau modèle)', pt: 'Filtro de óleo (novo modelo)', it: 'Filtro olio (nuovo modello)' },
+  // Caterpillar parts
+  '机油滤芯(新款)': { en: 'Oil Filter (New Model)', es: 'Filtro de aceite (nuevo modelo)', ar: 'فلتر الزيت (الموديل الجديد)', ru: 'Масляный фильтр (новая модель)', fr: 'Filtre à huile (nouveau modèle)', pt: 'Filtro de óleo (novo modelo)', it: 'Filtro olio (nuovo modello)' },
 
   '燃油滤芯(二级/精滤)': { en: 'Fuel Filter (Secondary/Fine)', es: 'Filtro de combustible (secundario/fino)', ar: 'فلتر الوقود (ثانوي/ناعم)', ru: 'Топливный фильтр (вторичный/тонкий)', fr: 'Filtre à carburant (secondaire/fin)', pt: 'Filtro combustível (secundário/fino)', it: 'Filtro carburante (secondario/fine)' },
 
