@@ -440,7 +440,12 @@ export const sparePartNameTranslations: Record<string, Record<string, string>> =
 
   '挖掘属性/GET(中型段)': { en: 'Excavation Attachment/GET (Medium)', es: 'Accesorio de excavación/GET (mediano)', ar: 'ملحق الحفر/GET (متوسط)', ru: 'Экскаваторное оборудование/GET (среднее)', fr: 'Accessoire d\'excavation/GET (moyen)', pt: 'Acessório escavação/GET (médio)', it: 'Accessorio scavo/GET (medio)' },
 
-				  					  '挖掘属性/GET(大型段)': { en: 'Excavation Attachment/GET (Large)', es: 'Accesorio de excavación/GET (grande)', ar: 'ملحق الحفر/GET (كبير)', ru: 'Экскаваторное оборудование/GET (большое)', fr: 'Accessoire d\'excavation/GET (grand)', pt: 'Acessório escavação/GET (grande)', it: 'Accesorioscavo/GET (grande)' }};
+				  					  '挖掘属性/GET(大型段)': { en: 'Excavation Attachment/GET (Large)', es: 'Accesorio de excavación/GET (grande)', ar: 'ملحق الحفر/GET (كبير)', ru: 'Экскаваторное оборудование/GET (большое)', fr: 'Accessoire d\'excavation/GET (grand)', pt: 'Acessório escavação/GET (grande)', it: 'Accessorio scavo/GET (grande)' },
+
+  '挖掘臂销套系统': { en: 'Boom Pin System', es: 'Sistema de pasador de pluma', ar: 'نظام دبوس الذراع', ru: 'Система штифта стрелы', fr: 'Système de goupille de fléche', pt: 'Sistema de pino de lana', it: 'Sistema di perno della freccia' },
+
+  '液压缸/密封件': { en: 'Hydraulic Cylinder/Seals', es: 'Cilindro hidráulico/Sellos', ar: 'الاسطوانة الهيدروليكية/الأختام', ru: 'Гидравлический цилиндр/Уплотнения', fr: 'Vérin hydraulique/Joints', pt: 'Cilindro hidráulico/Selos', it: 'Cilindro idraulico/Sigilli' },
+};
 
 export function getTranslatedSparePartName(name: string, language: string): string {
   const translations = sparePartNameTranslations[name];
