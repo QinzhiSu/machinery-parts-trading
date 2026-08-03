@@ -495,3 +495,26 @@
 - ✅ 每个条目包含 8 种语言的完整翻译
 - ✅ 所有徐工零件现在在西班牙文、英文、阿拉伯文等所有语言下都能正确显示翻译版本
 - ✅ 浏览器验证通过：西班牙文页面显示完全正确
+
+## 徐工零件名称翻译修复（英文名称补充）
+
+- [x] 识别缺失的徐工零件名称翻译条目（英文源名称）
+- [x] 添加 5 个英文零件名称的翻译映射到 sparePartNameTranslations
+- [x] 为每个英文名称提供 8 种语言的完整翻译
+- [x] 重启开发服务器应用修复
+- [x] 浏览器验证：所有徐工零件名称现在在西班牙文页面显示正确翻译
+
+**修复的零件名称：**
+- ✅ Air Filter Assembly (Inner and Outer) → "Conjunto de filtro de aire (interno y externo)"
+- ✅ Hydraulic Oil Filter (Variant) → "Filtro de aceite hidráulico (variante)"
+- ✅ Air Filter (ZL50) → "Filtro de aire (ZL50)"
+- ✅ Oil Filter (with Lock Valve) → "Filtro de aceite (con válvula de bloqueo)"
+- ✅ Hydraulic Oil Filter (Model 2) → "Filtro de aceite hidráulico (modelo 2)"
+
+**修改文件：** `/home/ubuntu/machinery-parts-trading/client/src/data/sparePartsTranslations.ts`
+
+**修复结果：**
+- ✅ 添加了 5 个新的零件名称翻译条目
+- ✅ 每个条目包含 8 种语言的完整翻译（中文、英文、西班牙文、阿拉伯文、俄文、法文、葡萄牙文、意大利文）
+- ✅ 所有徐工零件名称现在在所有语言下都能正确显示翻译版本
+- ✅ 浏览器验证通过：西班牙文页面显示零件名称完全翻译

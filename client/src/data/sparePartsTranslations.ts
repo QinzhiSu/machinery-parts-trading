@@ -819,6 +819,17 @@ Object.assign(sparePartDescriptionTranslations, {  'Bucket Tooth Adapter (J300 S
   'Relief Valve': { zh: '溢流阀', es: 'Válvula de alivio', ar: 'صمام الإغاثة', ru: 'Предохранительный клапан', fr: 'Soupape de soulagement', pt: 'Válvula de alívio', it: 'Valvola di scarico' },
 
   // XCMG spare parts descriptions
+  // XCMG spare parts names
+  'Air Filter Assembly (Inner and Outer)': { zh: '空气滤芯总成(内外)', es: 'Conjunto de filtro de aire (interno y externo)', ar: 'مجموعة مرشح الهواء (الداخلي والخارجي)', ru: 'Узел воздушного фильтра (внутренний и внешний)', fr: 'Ensemble filtre à air (interne et externe)', pt: 'Conjunto filtro ar (interno e externo)', it: 'Gruppo filtro aria (interno ed esterno)' },
+
+  'Hydraulic Oil Filter (Variant)': { zh: '液压油滤芯(变型)', es: 'Filtro de aceite hidráulico (variante)', ar: 'فلتر زيت هيدروليكي (متغير)', ru: 'Гидравлический масляный фильтр (вариант)', fr: 'Filtre à huile hydraulique (variante)', pt: 'Filtro óleo hidráulico (variante)', it: 'Filtro olio idraulico (variante)' },
+
+  'Air Filter (ZL50)': { zh: '空气滤芯(ZL50)', es: 'Filtro de aire (ZL50)', ar: 'فلتر الهواء (ZL50)', ru: 'Воздушный фильтр (ZL50)', fr: 'Filtre à air (ZL50)', pt: 'Filtro de ar (ZL50)', it: 'Filtro aria (ZL50)' },
+
+  'Oil Filter (with Lock Valve)': { zh: '机油滤芯(带锁定阀)', es: 'Filtro de aceite (con válvula de bloqueo)', ar: 'فلتر الزيت (مع صمام الحد)', ru: 'Масляный фильтр (с запорным клапаном)', fr: 'Filtre à huile (avec soupape de blocage)', pt: 'Filtro de óleo (com válvula de bloqueio)', it: 'Filtro olio (con valvola di blocco)' },
+
+  'Hydraulic Oil Filter (Model 2)': { zh: '液压油滤芯(型号2)', es: 'Filtro de aceite hidráulico (modelo 2)', ar: 'فلتر زيت هيدروليكي (الموديل 2)', ru: 'Гидравлический масляный фильтр (модель 2)', fr: 'Filtre à huile hydraulique (modèle 2)', pt: 'Filtro óleo hidráulico (modelo 2)', it: 'Filtro olio idraulico (modello 2)' },
+
   'XCMG 零件。500-1000小时或视油液检测': { en: 'XCMG part. Replace every 500-1000 hours or based on fluid analysis.', es: 'Pieza XCMG. Reemplazar cada 500-1000 horas o según análisis de fluido.', ar: 'قطعة XCMG. استبدل كل 500-1000 ساعة أو بناءً على تحليل السوائل.', ru: 'Деталь XCMG. Заменяйте каждые 500-1000 часов или на основе анализа жидкости.', fr: 'Pièce XCMG. Remplacer tous les 500-1000 heures ou selon l\'analyse des fluides.', pt: 'Peça XCMG. Substituir a cada 500-1000 horas ou com base na análise de fluidos.', it: 'Pezzo XCMG. Sostituire ogni 500-1000 ore o in base all\'analisi dei fluidi.' },
 
   'XCMG 零件。250-500小时或视灰尘环境': { en: 'XCMG part. Replace every 250-500 hours or based on dust environment.', es: 'Pieza XCMG. Reemplazar cada 250-500 horas o según el entorno de polvo.', ar: 'قطعة XCMG. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.', ru: 'Деталь XCMG. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.', fr: 'Pièce XCMG. Remplacer tous les 250-500 heures ou selon l\'environnement poussiéreux.', pt: 'Peça XCMG. Substituir a cada 250-500 horas ou com base no ambiente de poeira.', it: 'Pezzo XCMG. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.' },
