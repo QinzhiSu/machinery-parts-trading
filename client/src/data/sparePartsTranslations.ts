@@ -640,3 +640,53 @@ export function getTranslatedXCMGSparePartDescription(description: string, langu
   }
   return description;
 }
+
+export const catSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  'Maintenance/Filtration System': { en: 'Maintenance/Filtration System', zh: '维护/过滤系统', es: 'Sistema de Mantenimiento/Filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système Maintenance/Filtration', pt: 'Sistema Manutenção/Filtração', it: 'Sistema Manutenzione/Filtrazione' },
+  'Cooling System': { en: 'Cooling System', zh: '冷却系统', es: 'Sistema de Refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de Refroidissement', pt: 'Sistema de Resfriamento', it: 'Sistema di Raffreddamento' },
+  'Turbocharging/Intake System': { en: 'Turbocharging/Intake System', zh: '增压/进气系统', es: 'Sistema de Sobrealimentación/Admisión', ar: 'نظام الشاحن التوربيني/الدخول', ru: 'Система турбонаддува/впуска', fr: 'Système Turbo/Admission', pt: 'Sistema Turbo/Admissão', it: 'Sistema Turbo/Aspirazione' },
+  'Chassis/Track System': { en: 'Chassis/Track System', zh: '底盘/履带系统', es: 'Sistema de Chasis/Orugas', ar: 'نظام الهيكل/المسار', ru: 'Система шасси/гусеницы', fr: 'Système Châssis/Chenilles', pt: 'Sistema Chassi/Esteiras', it: 'Sistema Telaio/Cingoli' },
+  'Excavation/GET': { en: 'Excavation/GET', zh: '挖掘/GET', es: 'Excavación/GET', ar: 'الحفر/GET', ru: 'Экскавация/GET', fr: 'Excavation/GET', pt: 'Escavação/GET', it: 'Scavo/GET' },
+  'Transmission System': { en: 'Transmission System', zh: '传动系统', es: 'Sistema de Transmisión', ar: 'نظام الإرسال', ru: 'Система трансмиссии', fr: 'Système de Transmission', pt: 'Sistema de Transmissão', it: 'Sistema di Trasmissione' },
+  'Hydraulic Cylinder/Seals': { en: 'Hydraulic Cylinder/Seals', zh: '液压缸/密封件', es: 'Cilindro Hidráulico/Sellos', ar: 'أسطوانة هيدروليكية/أختام', ru: 'Гидроцилиндр/уплотнения', fr: 'Cylindre Hydraulique/Joints', pt: 'Cilindro Hidráulico/Vedações', it: 'Cilindro Idraulico/Sigilli' },
+  'Boom Pin/Bushing System': { en: 'Boom Pin/Bushing System', zh: '臂销/衬套系统', es: 'Sistema Pasador/Casquillo de Pluma', ar: 'نظام دبوس/بوشينج الذراع', ru: 'Система штифта/втулки стрелы', fr: 'Système Goupille/Silentbloc Flèche', pt: 'Sistema Pino/Bucha Lança', it: 'Sistema Perno/Boccola Braccio' },
+};
+
+export const catSparePartNameTranslations: Record<string, Record<string, string>> = {
+  'Oil Filter': { en: 'Oil Filter', zh: '机油滤芯', es: 'Filtro de Aceite', ar: 'فلتر الزيت', ru: 'Масляный фильтр', fr: 'Filtre à Huile', pt: 'Filtro de Óleo', it: 'Filtro Olio' },
+  'Oil Filter (New Model)': { en: 'Oil Filter (New Model)', zh: '机油滤芯(新款)', es: 'Filtro de Aceite (Modelo Nuevo)', ar: 'فلتر الزيت (الموديل الجديد)', ru: 'Масляный фильтр (новая модель)', fr: 'Filtre à Huile (Nouveau Modèle)', pt: 'Filtro de Óleo (Modelo Novo)', it: 'Filtro Olio (Nuovo Modello)' },
+  'Fuel Filter (Secondary/Fine Filter)': { en: 'Fuel Filter (Secondary/Fine Filter)', zh: '燃油滤芯(二级/精滤)', es: 'Filtro de Combustible (Secundario/Filtro Fino)', ar: 'فلتر الوقود (ثانوي/فلتر ناعم)', ru: 'Топливный фильтр (вторичный/тонкий)', fr: 'Filtre à Carburant (Secondaire/Fin)', pt: 'Filtro de Combustível (Secundário/Fino)', it: 'Filtro Carburante (Secondario/Fine)' },
+  'Hydraulic Oil Filter': { en: 'Hydraulic Oil Filter', zh: '液压油滤芯', es: 'Filtro de Aceite Hidráulico', ar: 'فلتر الزيت الهيدروليكي', ru: 'Гидравлический масляный фильтр', fr: 'Filtre à Huile Hydraulique', pt: 'Filtro de Óleo Hidráulico', it: 'Filtro Olio Idraulico' },
+  'Hydraulic Oil Filter (New Model)': { en: 'Hydraulic Oil Filter (New Model)', zh: '液压油滤芯(新款)', es: 'Filtro de Aceite Hidráulico (Modelo Nuevo)', ar: 'فلتر الزيت الهيدروليكي (الموديل الجديد)', ru: 'Гидравлический масляный фильтр (новая модель)', fr: 'Filtre à Huile Hydraulique (Nouveau Modèle)', pt: 'Filtro de Óleo Hidráulico (Modelo Novo)', it: 'Filtro Olio Idraulico (Nuovo Modello)' },
+  'Air Filter (Outer Element)': { en: 'Air Filter (Outer Element)', zh: '空气滤芯(外芯)', es: 'Filtro de Aire (Elemento Externo)', ar: 'فلتر الهواء (العنصر الخارجي)', ru: 'Воздушный фильтр (внешний элемент)', fr: 'Filtre à Air (Élément Externe)', pt: 'Filtro de Ar (Elemento Externo)', it: 'Filtro Aria (Elemento Esterno)' },
+  'Air Filter (Inner Element)': { en: 'Air Filter (Inner Element)', zh: '空气滤芯(内芯)', es: 'Filtro de Aire (Elemento Interno)', ar: 'فلتر الهواء (العنصر الداخلي)', ru: 'Воздушный фильтр (внутренний элемент)', fr: 'Filtre à Air (Élément Interne)', pt: 'Filtro de Ar (Elemento Interno)', it: 'Filtro Aria (Elemento Interno)' },
+  'Track Roller': { en: 'Track Roller', zh: '下托链轮', es: 'Rodillo de Orugas', ar: 'بكرة المسار', ru: 'Опорный каток', fr: 'Galet de Chaîne', pt: 'Rolo de Esteira', it: 'Rullo Cingolo' },
+  'Front Idler': { en: 'Front Idler', zh: '前导向轮', es: 'Rueda Guía Frontal', ar: 'بكرة التوجيه الأمامية', ru: 'Передний направляющий каток', fr: 'Galet Tendeur Avant', pt: 'Roda Guia Frontal', it: 'Rullo Guida Anteriore' },
+  'Drive Sprocket': { en: 'Drive Sprocket', zh: '驱动链轮', es: 'Piñón de Mando', ar: 'رف الدفع', ru: 'Ведущая звездочка', fr: 'Pignon Moteur', pt: 'Pinhão de Acionamento', it: 'Pignone di Azionamento' },
+  'Carrier Roller': { en: 'Carrier Roller', zh: '上托轮', es: 'Rodillo Portador', ar: 'بكرة الناقل', ru: 'Верхний опорный каток', fr: 'Galet Porteur', pt: 'Rolo Portador', it: 'Rullo Portante' },
+  'Bucket Teeth (Universal J Series)': { en: 'Bucket Teeth (Universal J Series)', zh: '铲斗斗齿(通用J系列)', es: 'Dientes de Cucharón (Serie J Universal)', ar: 'أسنان الدلو (سلسلة J العامة)', ru: 'Зубья ковша (универсальная серия J)', fr: 'Dents de Godet (Série J Universelle)', pt: 'Dentes de Caçamba (Série J Universal)', it: 'Denti Benna (Serie J Universale)' },
+  'Bucket Teeth Adapter': { en: 'Bucket Teeth Adapter', zh: '斗齿适配器', es: 'Adaptador de Dientes de Cucharón', ar: 'محول أسنان الدلو', ru: 'Адаптер зубьев ковша', fr: 'Adaptateur Dents de Godet', pt: 'Adaptador de Dentes de Caçamba', it: 'Adattatore Denti Benna' },
+  'Bucket Teeth Pin/Lock Pin': { en: 'Bucket Teeth Pin/Lock Pin', zh: '斗齿销/锁定销', es: 'Pasador de Dientes/Pasador de Bloqueo', ar: 'دبوس أسنان الدلو/دبوس القفل', ru: 'Штифт зубьев ковша/штифт блокировки', fr: 'Goupille Dents/Goupille de Verrouillage', pt: 'Pino de Dentes/Pino de Bloqueio', it: 'Perno Denti/Perno di Blocco' },
+  'Travel (Track) Motor': { en: 'Travel (Track) Motor', zh: '行走马达', es: 'Motor de Desplazamiento (Orugas)', ar: 'محرك الحركة (المسار)', ru: 'Мотор хода (гусеницы)', fr: 'Moteur de Déplacement (Chaînes)', pt: 'Motor de Deslocamento (Esteiras)', it: 'Motore di Movimento (Cingoli)' },
+  'Swing (Turntable) Motor and Reducer': { en: 'Swing (Turntable) Motor and Reducer', zh: '回转马达及减速机', es: 'Motor de Giro (Plataforma Giratoria) y Reductor', ar: 'محرك الدوران (الطاولة الدوارة) والمخفض', ru: 'Мотор поворота (поворотной стол) и редуктор', fr: 'Moteur de Rotation (Plateau Tournant) et Réducteur', pt: 'Motor de Giro (Plataforma Giratória) e Redutor', it: 'Motore di Rotazione (Piattaforma Girevole) e Riduttore' },
+  'Radiator Water Tank Assembly': { en: 'Radiator Water Tank Assembly', zh: '散热器水箱总成', es: 'Conjunto de Tanque de Agua del Radiador', ar: 'مجموعة خزان ماء المبرد', ru: 'Сборка водяного бака радиатора', fr: 'Ensemble Réservoir Eau Radiateur', pt: 'Conjunto Tanque Água Radiador', it: 'Gruppo Serbatoio Acqua Radiatore' },
+  'Turbocharger': { en: 'Turbocharger', zh: '涡轮增压器', es: 'Turbocompresor', ar: 'شاحن توربيني', ru: 'Турбокомпрессор', fr: 'Turbocompresseur', pt: 'Turbocompressor', it: 'Turbocompressore' },
+  'Track Chain Assembly': { en: 'Track Chain Assembly', zh: '履带链条总成', es: 'Conjunto de Cadena de Orugas', ar: 'مجموعة سلسلة المسار', ru: 'Сборка гусеничной цепи', fr: 'Ensemble Chaîne de Chenilles', pt: 'Conjunto Corrente Esteira', it: 'Gruppo Catena Cingolo' },
+  'Final Drive/Travel Reduction Gear Assembly': { en: 'Final Drive/Travel Reduction Gear Assembly', zh: '最终驱动/行走减速齿轮总成', es: 'Conjunto de Engranaje de Reducción de Transmisión Final/Desplazamiento', ar: 'مجموعة ترس تقليل الدفع النهائي/السفر', ru: 'Сборка редуктора хода конечной передачи', fr: 'Ensemble Réducteur Transmission Finale/Déplacement', pt: 'Conjunto Redutor Transmissão Final/Deslocamento', it: 'Gruppo Riduttore Trasmissione Finale/Movimento' },
+};
+
+export function getTranslatedCATSparePartCategory(category: string, language: string): string {
+  const translations = catSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
+
+export function getTranslatedCATSparePartName(name: string, language: string): string {
+  const translations = catSparePartNameTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}

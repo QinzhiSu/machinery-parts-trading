@@ -17,7 +17,7 @@ import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription } from '@/data/sparePartsTranslations';
+import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription, getTranslatedCATSparePartCategory, getTranslatedCATSparePartName } from '@/data/sparePartsTranslations';
 import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
 import { getTranslatedXCMGMachineDescription, getTranslatedXCMGMachineType, getTranslatedXCMGMachineSpecs } from '@/data/xcmgMachineTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
@@ -363,7 +363,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                       </div>
                     </div>
 
@@ -383,11 +383,11 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-sm mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {translatePartName(part.name)}
+                        {brand.id === 'caterpillar' ? getTranslatedCATSparePartName(part.name, language) : translatePartName(part.name)}
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.name, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.name, language) : getTranslatedSparePartDescription(part.description, language)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.name, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.name, language) : brand.id === 'caterpillar' ? getTranslatedSparePartDescription(part.description, language) : getTranslatedSparePartDescription(part.description, language)}
                       </p>
 
                       <div className="flex gap-2">
