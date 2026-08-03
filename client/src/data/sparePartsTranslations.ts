@@ -644,6 +644,41 @@ export function getTranslatedShantuiSparePartCategory(category: string, language
   return category;
 }
 
+// XCMG spare part category translations
+export const xcmgSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  'Maintenance/Filtration System': { zh: '保养/滤清系统', en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de filtración', ar: 'الصيانة/نظام الترشيح', ru: 'Обслуживание/Система фильтрации', fr: 'Maintenance/Système de filtration', pt: 'Manutenção/Sistema de filtragem', it: 'Manutenzione/Sistema di filtrazione' },
+
+  'Electrical/Sensor System': { zh: '电气/传感器', en: 'Electrical/Sensor System', es: 'Eléctrico/Sistema de sensores', ar: 'كهربائي/نظام المستشعرات', ru: 'Электрический/Система датчиков', fr: 'Électrique/Système de capteurs', pt: 'Elétrico/Sistema de sensores', it: 'Elettrico/Sistema sensori' },
+
+  'Excavation/Bucket Teeth': { zh: '挖掘属性/GET', en: 'Excavation/Bucket Teeth', es: 'Excavación/Dientes de cucharón', ar: 'الحفر/أسنان الدلو', ru: 'Экскавация/Зубья ковша', fr: 'Excavation/Dents de godet', pt: 'Escavação/Dentes de caçamba', it: 'Scavo/Denti benna' },
+
+  'Transmission/Gearbox System': { zh: '传动/变速系统', en: 'Transmission/Gearbox System', es: 'Transmisión/Sistema de cambios', ar: 'نقل الحركة/نظام علبة التروس', ru: 'Трансмиссия/Коробка передач', fr: 'Transmission/Système de boîte de vitesses', pt: 'Transmissão/Sistema de caixa de câmbio', it: 'Trasmissione/Sistema di cambio' },
+
+  'Hydraulic System': { zh: '液压系统', en: 'Hydraulic System', es: 'Sistema hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema hidráulico', it: 'Sistema idraulico' },
+
+  'Brake System': { zh: '制动系统', en: 'Brake System', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' },
+
+  'Sealing/Drive Components': { zh: '密封/传动件', en: 'Sealing/Drive Components', es: 'Sellado/Componentes de transmisión', ar: 'الختم/مكونات الإرسال', ru: 'Уплотнение/Компоненты привода', fr: 'Scellement/Composants de transmission', pt: 'Vedação/Componentes de transmissão', it: 'Sigillatura/Componenti di trasmissione' },
+};
+
+export function getTranslatedXCMGSparePartCategory(category: string, language: string): string {
+  // First try to find the category in the translations table (for English keys)
+  const translations = xcmgSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+
+  // If the category is in Chinese and not found in translations, look for a matching English key
+  // by checking all keys in the translation table
+  for (const [key, trans] of Object.entries(xcmgSparePartCategoryTranslations)) {
+    // Check if the Chinese value matches the input category
+    if (trans['zh'] === category && trans[language]) {
+      return trans[language];
+    }
+  }
+  return category;
+}
+
 // SANY spare parts translations
 export const sanySparePartTranslations: Record<string, Record<string, string>> = {
   // Maintenance/Filtration
