@@ -634,7 +634,7 @@ export const shantuiSparePartTranslations: Record<string, Record<string, string>
 
 
 export function getTranslatedXCMGSparePartDescription(description: string, language: string): string {
-  const translations = sparePartDescriptionTranslations[description];
+  const translations = xcmgSparePartDescriptionTranslations[description];
   if (translations && translations[language]) {
     return translations[language];
   }

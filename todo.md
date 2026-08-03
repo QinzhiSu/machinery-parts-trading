@@ -655,3 +655,17 @@
 - ✅ 所有 XCMG 零件的分类现在在所有语言下都能正确显示
 - ✅ 零件详情弹窗翻译系统完全正常工作
 - ✅ 浏览器验证通过：阿拉伯文、西班牙文等所有语言显示正确
+
+
+## CAT 零件中英混杂翻译问题
+
+- [ ] 识别 CAT 零件中所有中英混杂的分类和名称
+- [ ] 修改 products.ts 中 CAT 零件的分类和名称，统一使用英文
+- [ ] 为 CAT 零件的分类添加完整的 8 种语言翻译
+- [ ] 为 CAT 零件的名称添加完整的 8 种语言翻译
+- [ ] 重启开发服务器应用修复
+- [ ] 浏览器验证：所有 CAT 零件的分类和名称在所有 8 种语言下都能正确显示翻译
+
+**问题分析：**
+- CAT 零件的分类混杂：中文（保养/滤清系统、冷却系统、增压/进气、底盘/履带系统、挖掘属性/GET、传动系统）
+- CAT 零件的名称混杂：中文（机油滤芯、燃油滤芯、液压油滤芯、空气滤芯、下托链轮、前导向轮、驱动链轮、上托轮、铲斗斗齿、斗齿适配器、斗齿销、行走马达、回转马达）和英文（Oil Filter、Fuel Filter、Hydraulic Oil Filter、Air Filter、Track Chain Assembly、Radiator Water Tank Assembly、Turbocharger、Final Drive、Transmission Assembly）
