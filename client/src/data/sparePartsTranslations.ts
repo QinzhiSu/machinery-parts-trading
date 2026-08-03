@@ -858,3 +858,12 @@ Object.assign(sparePartDescriptionTranslations, {  'Bucket Tooth Adapter (J300 S
   'XCMG 零件。定期检查,磨损时更换': { en: 'XCMG part. Check regularly, replace when worn.', es: 'Pieza XCMG. Revisar regularmente, reemplazar cuando esté desgastada.', ar: 'قطعة XCMG. تحقق بانتظام، استبدل عند البلى.', ru: 'Деталь XCMG. Проверяйте регулярно, заменяйте при исносе.', fr: 'Pièce XCMG. Vérifier régulièrement, remplacer quand usée.', pt: 'Peça XCMG. Verificar regularmente, substituir quando desgastada.', it: 'Pezzo XCMG. Controllare regolarmente, sostituire quando usura.' }
 
 });
+
+
+export function getTranslatedXCMGSparePartDescription(description: string, language: string): string {
+  const translations = sparePartDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return description;
+}
