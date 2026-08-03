@@ -17,7 +17,7 @@ import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedSanySparePartCategory, getTranslatedXCMGSparePartCategory } from '@/data/sparePartsTranslations';
+import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedSanySparePartCategory, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription } from '@/data/sparePartsTranslations';
 import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
 import { getTranslatedXCMGMachineDescription, getTranslatedXCMGMachineType, getTranslatedXCMGMachineSpecs } from '@/data/xcmgMachineTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
