@@ -409,7 +409,7 @@ export default function BrandPage() {
                           }}
                         >
                           <Wrench size={11} />
-                          {language === 'zh' ? '查看详情' : language === 'en' ? 'View Details' : language === 'es' ? 'Ver detalles' : language === 'ar' ? 'عرض التفاصيل' : language === 'ru' ? 'Просмотр деталей' : language === 'fr' ? 'Voir les détails' : language === 'pt' ? 'Ver detalhes' : 'Visualizza dettagli'}
+                          {language === 'zh' ? '查看详情' : language === 'en' ? 'View Details' : language === 'es' ? 'Ver detalles' : language === 'ar' ? 'عرض التفاصيل' : language === 'ru' ? 'Просмотр деталей' : language === 'fr' ? 'Voir les détails' : language === 'pt' ? 'Ver detalhes' : language === 'de' ? 'Details anzeigen' : language === 'ja' ? '詳細を表示' : 'Visualizza dettagli'}
                         </button>
                         <button
                           onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
@@ -421,7 +421,7 @@ export default function BrandPage() {
                           }}
                         >
                           <MessageSquare size={11} />
-                          {language === 'zh' ? '询价' : language === 'en' ? 'Inquiry' : language === 'es' ? 'Consulta' : language === 'ar' ? 'استفسار' : language === 'ru' ? 'Запрос' : language === 'fr' ? 'Demande' : language === 'pt' ? 'Consulta' : 'Richiesta'}
+                          {language === 'zh' ? '询价' : language === 'en' ? 'Inquiry' : language === 'es' ? 'Consulta' : language === 'ar' ? 'استفسار' : language === 'ru' ? 'Запрос' : language === 'fr' ? 'Demande' : language === 'pt' ? 'Consulta' : language === 'de' ? 'Anfrage' : language === 'ja' ? 'お問い合わせ' : 'Richiesta'}
                         </button>
                         <ComparisonButton part={part} brandColor={brand.color} />
                       </div>

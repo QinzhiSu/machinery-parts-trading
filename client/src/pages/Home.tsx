@@ -9,6 +9,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { brands } from '@/data/products';
 import { useAuth } from '@/_core/hooks/useAuth';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/data/translations';
 
 const constructionBrands = brands.filter(b => b.category === 'construction');
 const truckBrands = brands.filter(b => b.category === 'truck');
@@ -48,6 +50,8 @@ const features = [
 
 export default function Home() {
   const { user, loading, error, isAuthenticated, logout } = useAuth();
+  const { language } = useLanguage();
+  const t = (key: string) => translations[language as keyof typeof translations]?.[key as keyof typeof translations.en] || key;
 
   return (
     <>
@@ -76,22 +80,18 @@ export default function Home() {
             {/* Subtitle */}
             <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
               <span className="text-sm font-semibold text-white/80 uppercase tracking-wider">
-                Global Machinery Trading
+                {t('home.tagline')}
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Premium Machinery
-              <br />
-              <span className="text-gradient" style={{ background: 'linear-gradient(135deg, #c9a876 0%, #ffffff 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                Worldwide
-              </span>
+              {t('home.hero.title')}
             </h1>
 
             {/* Description */}
             <p className="text-lg text-white/80 mb-8 max-w-xl leading-relaxed">
-              Professional exporter of construction machinery, heavy trucks, and spare parts to Africa, Middle East, Central Asia, South America, and Russia.
+              {t('home.hero.subtitle')}
             </p>
 
             {/* CTA Buttons */}
@@ -100,13 +100,13 @@ export default function Home() {
                 href="/construction"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-charcoal font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
-                Browse Machinery <ArrowRight size={18} />
+                {t('home.browse')} <ArrowRight size={18} />
               </Link>
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
               >
-                Get a Quote
+                {t('home.getQuote')}
               </Link>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function Home() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
           <div className="flex flex-col items-center gap-2 text-white/60">
-            <span className="text-sm uppercase tracking-widest">Scroll</span>
+            <span className="text-sm uppercase tracking-widest">SCROLL</span>
             <div className="w-6 h-10 border-2 border-white/40 rounded-full flex items-start justify-center p-2">
               <div className="w-1 h-2 bg-white/60 rounded-full animate-bounce" />
             </div>

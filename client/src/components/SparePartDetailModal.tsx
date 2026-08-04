@@ -145,7 +145,7 @@ export default function SparePartDetailModal({
               <Package size={16} style={{ color: brandColor, marginTop: '2px', flexShrink: 0 }} />
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  {language === 'en' ? 'OEM Number' : language === 'es' ? 'Número OEM' : language === 'ar' ? 'رقم OEM' : language === 'ru' ? 'Номер OEM' : language === 'fr' ? 'Numéro OEM' : language === 'pt' ? 'Número OEM' : language === 'it' ? 'Numero OEM' : 'OEM 编号'}
+                  {language === 'en' ? 'OEM Number' : language === 'es' ? 'Número OEM' : language === 'ar' ? 'رقم OEM' : language === 'ru' ? 'Номер OEM' : language === 'fr' ? 'Numéro OEM' : language === 'pt' ? 'Número OEM' : language === 'it' ? 'Numero OEM' : language === 'de' ? 'OEM-Nummer' : language === 'ja' ? 'OEM番号' : 'OEM 编号'}
                 </p>
                 <p
                   className="text-sm font-bold font-mono"
@@ -161,7 +161,7 @@ export default function SparePartDetailModal({
               <Wrench size={16} style={{ color: brandColor, marginTop: '2px', flexShrink: 0 }} />
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  {language === 'en' ? 'Category' : language === 'es' ? 'Categoría' : language === 'ar' ? 'الفئة' : language === 'ru' ? 'Категория' : language === 'fr' ? 'Catégorie' : language === 'pt' ? 'Categoria' : language === 'it' ? 'Categoria' : '分类'}
+                  {language === 'en' ? 'Category' : language === 'es' ? 'Categoría' : language === 'ar' ? 'الفئة' : language === 'ru' ? 'Категория' : language === 'fr' ? 'Catégorie' : language === 'pt' ? 'Categoria' : language === 'it' ? 'Categoria' : language === 'de' ? 'Kategorie' : language === 'ja' ? 'カテゴリ' : '分类'}
                 </p>
                 <p className="text-sm font-semibold" style={{ color: 'oklch(0.18 0.04 265)' }}>
                   {brandName === 'Shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartCategory(part.category, language) : brandName === 'Caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brandName === 'LiuGong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : translatePartCategory(part.category)}
@@ -172,7 +172,7 @@ export default function SparePartDetailModal({
             {/* Full Description */}
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                {language === 'en' ? 'Description' : language === 'es' ? 'Descripción' : language === 'ar' ? 'الوصف' : language === 'ru' ? 'Описание' : language === 'fr' ? 'Description' : language === 'pt' ? 'Descrição' : language === 'it' ? 'Descrizione' : '描述'}
+                {language === 'en' ? 'Description' : language === 'es' ? 'Descripción' : language === 'ar' ? 'الوصف' : language === 'ru' ? 'Описание' : language === 'fr' ? 'Description' : language === 'pt' ? 'Descrição' : language === 'it' ? 'Descrizione' : language === 'de' ? 'Beschreibung' : language === 'ja' ? '説明' : '描述'}
               </p>
               <p className="text-sm leading-relaxed" style={{ color: 'oklch(0.45 0.02 265)' }}>
                 {brandName === 'Shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brandName === 'SANY' ? getTranslatedSanySparePartDescription(part.description, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartDescription(part.description, language) : brandName === 'Caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : brandName === 'LiuGong' ? getTranslatedLiuGongSparePartDescription(part.description, language) : brandName === 'Komatsu' ? getTranslatedKomatsuSparePartDescription(part.description, language) : brandName === 'Isuzu' ? getTranslatedIsuzuSparePartDescription(part.description, language) : brandName === 'Shacman' ? getTranslatedShacmanSparePartDescription(part.description, language) : brandName === 'Sinotruk' ? getTranslatedSinotrukSparePartDescription(part.description, language) : brandName === 'Toyota' ? getTranslatedToyotaSparePartDescription(part.description, language) : brandName === 'Cummins' ? getTranslatedCumminsSparePartDescription(part.description, language) : brandName === 'Weichai' ? getTranslatedWeichaiSparePartDescription(part.description, language) : translateDescription(part.description)}
@@ -183,7 +183,7 @@ export default function SparePartDetailModal({
             {(part.compatibleModels && part.compatibleModels.length > 0) ? (
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  {language === 'en' ? 'Compatible Models' : language === 'es' ? 'Modelos Compatibles' : language === 'ar' ? 'النماذج المتوافقة' : language === 'ru' ? 'Совместимые модели' : language === 'fr' ? 'Modèles compatibles' : language === 'pt' ? 'Modelos compatíveis' : language === 'it' ? 'Modelli compatibili' : '适用车型'}
+                  {language === 'en' ? 'Compatible Models' : language === 'es' ? 'Modelos Compatibles' : language === 'ar' ? 'النماذج المتوافقة' : language === 'ru' ? 'Совместимые модели' : language === 'fr' ? 'Modèles compatibles' : language === 'pt' ? 'Modelos compatíveis' : language === 'it' ? 'Modelli compatibili' : language === 'de' ? 'Kompatible Modelle' : language === 'ja' ? '互換性のあるモデル' : '适用车型'}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {part.compatibleModels.map((model) => (
