@@ -874,10 +874,88 @@ export function getTranslatedSinotrukSparePartDescription(description: string, l
 }
 
 // Cummins and Weichai use generic translations (same as other brands)
-export const getTranslatedCumminsSparePartName = getTranslatedIsuzuSparePartName;
-export const getTranslatedCumminsSparePartCategory = getTranslatedIsuzuSparePartCategory;
-export const getTranslatedCumminsSparePartDescription = getTranslatedIsuzuSparePartDescription;
 
-export const getTranslatedWeichaiSparePartName = getTranslatedIsuzuSparePartName;
-export const getTranslatedWeichaiSparePartCategory = getTranslatedIsuzuSparePartCategory;
-export const getTranslatedWeichaiSparePartDescription = getTranslatedIsuzuSparePartDescription;
+
+
+// Cummins spare parts translations (complete)
+const cumminsSparePartNameTranslations: Record<string, Record<string, string>> = {
+  'Turbocharger Hose': { en: 'Turbocharger Hose', zh: '涡轮增压器软管', es: 'Manguera del turbocompresor', ar: 'خرطوم الشاحن التوربيني', ru: 'Шланг турбокомпрессора', fr: 'Tuyau du turbocompresseur', pt: 'Mangueira do turbocompressor', it: 'Tubo turbocompressore' },
+  'Connecting Rod Bearing': { en: 'Connecting Rod Bearing', zh: '连杆瓦', es: 'Cojinete de biela', ar: 'محمل قضيب التوصيل', ru: 'Подшипник шатуна', fr: 'Palier de bielle', pt: 'Mancal da biela', it: 'Cuscinetto biella' },
+  'Connecting Rod Bolt': { en: 'Connecting Rod Bolt', zh: '连杆螺栓', es: 'Perno de biela', ar: 'برغي قضيب التوصيل', ru: 'Болт шатуна', fr: 'Boulon de bielle', pt: 'Parafuso da biela', it: 'Bullone biella' },
+  'Water Pump Seal Ring': { en: 'Water Pump Seal Ring', zh: '水泵密封圈', es: 'Anillo de sello de bomba de agua', ar: 'حلقة ختم مضخة المياه', ru: 'Кольцо уплотнения водяного насоса', fr: 'Bague d\'étanchéité de pompe à eau', pt: 'Anel de vedação da bomba de água', it: 'Anello di tenuta pompa acqua' },
+  'Oil Filter': { en: 'Oil Filter', zh: '机油滤清器', es: 'Filtro de aceite', ar: 'مرشح الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
+  'Intake Valve': { en: 'Intake Valve', zh: '进气门', es: 'Válvula de admisión', ar: 'صمام السحب', ru: 'Впускной клапан', fr: 'Soupape d\'admission', pt: 'Válvula de admissão', it: 'Valvola di aspirazione' },
+  'Fuel Shutoff Solenoid': { en: 'Fuel Shutoff Solenoid', zh: '熄火电磁阀', es: 'Solenoide de corte de combustible', ar: 'ملف إيقاف الوقود', ru: 'Электромагнитный клапан отсечки топлива', fr: 'Solénoïde d\'arrêt de carburant', pt: 'Solenoide de corte de combustível', it: 'Solenoide di arresto carburante' },
+  'Intake Gasket': { en: 'Intake Gasket', zh: '进气垫片', es: 'Junta de admisión', ar: 'حشية السحب', ru: 'Прокладка впуска', fr: 'Joint d\'admission', pt: 'Junta de admissão', it: 'Guarnizione aspirazione' },
+  'Intake Pipe Gasket': { en: 'Intake Pipe Gasket', zh: '进气管垫片', es: 'Junta de tubo de admisión', ar: 'حشية أنبوب السحب', ru: 'Прокладка впускного трубопровода', fr: 'Joint de tuyau d\'admission', pt: 'Junta de tubo de admissão', it: 'Guarnizione tubo aspirazione' },
+  'Fuel Pump Gasket': { en: 'Fuel Pump Gasket', zh: '燃油泵垫片', es: 'Junta de bomba de combustible', ar: 'حشية مضخة الوقود', ru: 'Прокладка топливного насоса', fr: 'Joint de pompe à carburant', pt: 'Junta da bomba de combustível', it: 'Guarnizione pompa carburante' },
+  'Fuel Overflow Valve': { en: 'Fuel Overflow Valve', zh: '燃油溢流阀', es: 'Válvula de rebose de combustible', ar: 'صمام تجاوز الوقود', ru: 'Клапан перелива топлива', fr: 'Soupape de débordement de carburant', pt: 'Válvula de transbordamento de combustível', it: 'Valvola di scarico carburante' },
+  'Main Bearing Set': { en: 'Main Bearing Set', zh: '主轴承套件', es: 'Conjunto de cojinete principal', ar: 'مجموعة المحمل الرئيسي', ru: 'Комплект основного подшипника', fr: 'Ensemble palier principal', pt: 'Conjunto de mancal principal', it: 'Insieme cuscinetto principale' },
+  'Oil Pan Gasket': { en: 'Oil Pan Gasket', zh: '油底壳垫片', es: 'Junta de bandeja de aceite', ar: 'حشية حوض الزيت', ru: 'Прокладка поддона масла', fr: 'Joint de carter d\'huile', pt: 'Junta da bandeja de óleo', it: 'Guarnizione coppa olio' },
+  'Cylinder Head Gasket': { en: 'Cylinder Head Gasket', zh: '汽缸垫', es: 'Junta de culata', ar: 'حشية رأس الأسطوانة', ru: 'Прокладка головки цилиндра', fr: 'Joint de culasse', pt: 'Junta de cabeçote', it: 'Guarnizione testata' },
+  'Front Oil Seal': { en: 'Front Oil Seal', zh: '前油封', es: 'Sello de aceite frontal', ar: 'ختم الزيت الأمامي', ru: 'Передний масляный сальник', fr: 'Joint d\'huile avant', pt: 'Vedação de óleo frontal', it: 'Tenuta olio anteriore' },
+  'Exhaust Valve Push Rod': { en: 'Exhaust Valve Push Rod', zh: '排气门推杆', es: 'Varilla de empuje de válvula de escape', ar: 'قضيب دفع صمام العادم', ru: 'Толкатель выпускного клапана', fr: 'Tige de poussée de soupape d\'échappement', pt: 'Haste de empuxo da válvula de escape', it: 'Asta di spinta valvola scarico' },
+  'Belt Tensioner': { en: 'Belt Tensioner', zh: '皮带张紧器', es: 'Tensor de correa', ar: 'مشدد الحزام', ru: 'Натяжитель ремня', fr: 'Tendeur de courroie', pt: 'Tensor de correia', it: 'Tenditore cinghia' },
+  'Oil Pressure Sensor': { en: 'Oil Pressure Sensor', zh: '机油压力传感器', es: 'Sensor de presión de aceite', ar: 'مستشعر ضغط الزيت', ru: 'Датчик давления масла', fr: 'Capteur de pression d\'huile', pt: 'Sensor de pressão de óleo', it: 'Sensore pressione olio' },
+  'High Pressure Oil Tube': { en: 'High Pressure Oil Tube', zh: '高压油管', es: 'Tubo de aceite de alta presión', ar: 'أنبوب الزيت عالي الضغط', ru: 'Трубка высокого давления масла', fr: 'Tube d\'huile haute pression', pt: 'Tubo de óleo de alta pressão', it: 'Tubo olio alta pressione' },
+  'Fuel Tube': { en: 'Fuel Tube', zh: '燃油管', es: 'Tubo de combustible', ar: 'أنبوب الوقود', ru: 'Топливопровод', fr: 'Tube de carburant', pt: 'Tubo de combustível', it: 'Tubo carburante' },
+  'Fan Belt': { en: 'Fan Belt', zh: '风扇皮带', es: 'Correa de ventilador', ar: 'حزام المروحة', ru: 'Ремень вентилятора', fr: 'Courroie de ventilateur', pt: 'Correia do ventilador', it: 'Cinghia ventilatore' },
+  'Piston Assembly': { en: 'Piston Assembly', zh: '活塞组件', es: 'Conjunto de pistón', ar: 'مجموعة المكبس', ru: 'Узел поршня', fr: 'Ensemble piston', pt: 'Conjunto de pistão', it: 'Insieme pistone' },
+  'Piston Cooling Nozzle': { en: 'Piston Cooling Nozzle', zh: '活塞冷却喷嘴', es: 'Boquilla de enfriamiento de pistón', ar: 'فوهة تبريد المكبس', ru: 'Форсунка охлаждения поршня', fr: 'Buse de refroidissement de piston', pt: 'Bico de resfriamento do pistão', it: 'Ugello raffreddamento pistone' },
+  'Cylinder Head Bolt': { en: 'Cylinder Head Bolt', zh: '缸盖螺栓', es: 'Perno de culata', ar: 'برغي رأس الأسطوانة', ru: 'Болт головки цилиндра', fr: 'Boulon de culasse', pt: 'Parafuso do cabeçote', it: 'Bullone testata' },
+  'Connecting Rod Assembly': { en: 'Connecting Rod Assembly', zh: '连杆总成', es: 'Conjunto de biela', ar: 'مجموعة قضيب التوصيل', ru: 'Узел шатуна', fr: 'Ensemble bielle', pt: 'Conjunto de biela', it: 'Insieme biella' },
+  'Main Bearing': { en: 'Main Bearing', zh: '主轴瓦', es: 'Cojinete principal', ar: 'محمل رئيسي', ru: 'Основной подшипник', fr: 'Palier principal', pt: 'Mancal principal', it: 'Cuscinetto principale' },
+  'Thrust Washer': { en: 'Thrust Washer', zh: '止推片', es: 'Arandela de empuje', ar: 'حلقة الدفع', ru: 'Упорная шайба', fr: 'Rondelle de butée', pt: 'Arruela de empuxo', it: 'Rondella di spinta' },
+};
+
+const cumminsSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  'Engine System': { en: 'Engine System', zh: '发动机系统', es: 'Sistema de motor', ar: 'نظام المحرك', ru: 'Система двигателя', fr: 'Système moteur', pt: 'Sistema de motor', it: 'Sistema motore' },
+  'Cooling System': { en: 'Cooling System', zh: '冷却系统', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
+  'Fuel System': { en: 'Fuel System', zh: '燃油系统', es: 'Sistema de combustible', ar: 'نظام الوقود', ru: 'Топливная система', fr: 'Système de carburant', pt: 'Sistema de combustível', it: 'Sistema di carburante' },
+};
+
+const cumminsSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Cummins engine part': { en: 'Cummins engine part', zh: 'Cummins 发动机零件', es: 'Pieza del motor Cummins', ar: 'قطعة محرك Cummins', ru: 'Деталь двигателя Cummins', fr: 'Pièce moteur Cummins', pt: 'Peça do motor Cummins', it: 'Pezzo motore Cummins' },
+};
+
+export function getTranslatedCumminsSparePartName(name: string, language: string): string {
+  const translations = cumminsSparePartNameTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}
+
+export function getTranslatedCumminsSparePartCategory(category: string, language: string): string {
+  const translations = cumminsSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
+
+export function getTranslatedCumminsSparePartDescription(description: string, language: string): string {
+  const translations = cumminsSparePartDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return description;
+}
+
+// 更新导出（移除旧的别名）
+// export const getTranslatedCumminsSparePartName = getTranslatedIsuzuSparePartName;
+// export const getTranslatedCumminsSparePartCategory = getTranslatedIsuzuSparePartCategory;
+// export const getTranslatedCumminsSparePartDescription = getTranslatedIsuzuSparePartDescription;
+
+// Weichai spare parts translations (using Cummins translations as base)
+export function getTranslatedWeichaiSparePartName(name: string, language: string): string {
+  return getTranslatedCumminsSparePartName(name, language);
+}
+
+export function getTranslatedWeichaiSparePartCategory(category: string, language: string): string {
+  return getTranslatedCumminsSparePartCategory(category, language);
+}
+
+export function getTranslatedWeichaiSparePartDescription(description: string, language: string): string {
+  return getTranslatedCumminsSparePartDescription(description, language);
+}
