@@ -10,7 +10,7 @@ import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { getTranslatedPartDescription } from '@/data/partDescriptionTranslations';
-import { getTranslatedSanySparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongSparePartDescription } from '@/data/sparePartsTranslations';
+import { getTranslatedSanySparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartDescription } from '@/data/sparePartsTranslations';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -157,7 +157,7 @@ export default function SparePartDetailModal({
                   {language === 'en' ? 'Category' : language === 'es' ? 'Categoría' : language === 'ar' ? 'الفئة' : language === 'ru' ? 'Категория' : language === 'fr' ? 'Catégorie' : language === 'pt' ? 'Categoria' : language === 'it' ? 'Categoria' : '分类'}
                 </p>
                 <p className="text-sm font-semibold" style={{ color: 'oklch(0.18 0.04 265)' }}>
-                  {brandName === 'LiuGong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                  {brandName === 'LiuGong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brandName === 'Shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function SparePartDetailModal({
                 {language === 'en' ? 'Description' : language === 'es' ? 'Descripción' : language === 'ar' ? 'الوصف' : language === 'ru' ? 'Описание' : language === 'fr' ? 'Description' : language === 'pt' ? 'Descrição' : language === 'it' ? 'Descrizione' : '描述'}
               </p>
               <p className="text-sm leading-relaxed" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                {brandName === 'SANY' ? getTranslatedSanySparePartDescription(part.name, language) : brandName === 'LiuGong' ? getTranslatedLiuGongSparePartDescription(part.name, language) : translateDescription(part.description)}
+                {brandName === 'SANY' ? getTranslatedSanySparePartDescription(part.name, language) : brandName === 'LiuGong' ? getTranslatedLiuGongSparePartDescription(part.name, language) : brandName === 'Shantui' ? getTranslatedShantuiSparePartDescription(part.name, language) : translateDescription(part.description)}
               </p>
             </div>
 
