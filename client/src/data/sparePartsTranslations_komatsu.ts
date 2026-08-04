@@ -289,6 +289,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça Komatsu. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
     ru: 'Деталь Komatsu. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
     ja: 'Komatsu部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
+    ar: 'Komatsu part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Komatsu part. Replace every 500-1000 hours or based on fluid analysis results.',
   },
 };
 

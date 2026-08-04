@@ -13,6 +13,8 @@ const LANGUAGES = [
   { code: 'pt', label: 'Português', flag: '🇧🇷' },
   { code: 'es', label: 'Español', flag: '🇪🇸' },
   { code: 'it', label: 'Italiano', flag: '🇮🇹' },
+  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  { code: 'ja', label: '日本語', flag: '🇯🇵' },
 ] as const;
 
 export default function LanguageSwitcher() {

@@ -1,0 +1,53 @@
+// Spare parts descriptions for Shantui - 10 languages
+// DO NOT EDIT MANUALLY
+
+export const shantuiPartDescriptions: Record<string, Record<string, string>> = {
+  'Hydraulic Return Oil Filter': {
+    en: 'High-quality hydraulic return oil filter for construction machinery. Removes contaminants and extends hydraulic system life. Compatible with all major brands.',
+    zh: '高质量液压回油滤芯，适用于工程机械。去除污染物，延长液压系统寿命。与所有主要品牌兼容。',
+    es: 'Filtro de aceite de retorno hidráulico de alta calidad para maquinaria de construcción. Elimina contaminantes y prolonga la vida útil del sistema hidráulico. Compatible con todas las marcas principales.',
+    fr: 'Filtre à huile de retour hydraulique de haute qualité pour les machines de construction. Élimine les contaminants et prolonge la durée de vie du système hydraulique. Compatible avec toutes les grandes marques.',
+    de: 'Hochwertiger Hydraulischer Rückführölfilter für Baumaschinen. Entfernt Verschmutzungen und verlängert die Lebensdauer des Hydrauliksystems. Kompatibel mit allen großen Marken.',
+    pt: 'Filtro de óleo de retorno hidráulico de alta qualidade para máquinas de construção. Remove contaminantes e prolonga a vida útil do sistema hidráulico. Compatível com todas as principais marcas.',
+    ru: 'Высокачественный гидравлический фильтр обратного масла для строительной техники. Удаляет загрязнения и продлевает срок службы гидравлической системы. Совместим со всеми основными марками.',
+    ja: '建設機械用の高品質油圧リターンオイルフィルター。汚染物質を除去し、油圧システムの寿命を延ばします。すべての主要ブランドと互換性があります。',
+    ar: 'مرشح زيت هيدروليكي عائد عالي الجودة لآلات البناء. يزيل الملوثات ويطيل عمر نظام الهيدروليك. متوافق مع جميع العلامات التجارية الرئيسية.',
+    it: 'Filtro olio di ritorno idraulico di alta qualità per macchinari da costruzione. Rimuove i contaminanti e prolunga la vita del sistema idraulico. Compatibile con tutti i principali marchi.',
+  },
+  'Oil Filter': {
+    en: 'Premium engine oil filter for heavy machinery. Ensures clean oil circulation and optimal engine performance. Long service life and high filtration efficiency.',
+    zh: '重型机械用优质发动机油滤芯。确保清洁的油液循环和最佳发动机性能。使用寿命长，过滤效率高。',
+    es: 'Filtro de aceite de motor premium para maquinaria pesada. Garantiza una circulación de aceite limpio y un rendimiento óptimo del motor. Larga vida útil y alta eficiencia de filtración.',
+    fr: 'Filtre à huile moteur premium pour les machines lourdes. Assure une circulation d\'huile propre et des performances optimales du moteur. Longue durée de vie et haute efficacité de filtration.',
+    de: 'Premium-Motorölfilter für schwere Maschinen. Gewährleistet eine saubere Ölzirkulation und optimale Motorleistung. Lange Lebensdauer und hohe Filtereffizienz.',
+    pt: 'Filtro de óleo de motor premium para máquinas pesadas. Garante circulação de óleo limpo e desempenho ótimo do motor. Longa vida útil e alta eficiência de filtração.',
+    ru: 'Премиум фильтр моторного масла для тяжелой техники. Обеспечивает чистую циркуляцию масла и оптимальную производительность двигателя. Долгий срок службы и высокая эффективность фильтрации.',
+    ja: '重型機械用プレミアムエンジンオイルフィルター。清潔なオイル循環と最適なエンジン性能を確保します。長い耐用年数と高い濾過効率。',
+    ar: 'مرشح زيت محرك فاخر لآلات ثقيلة. يضمن تدوير زيت نظيف وأداء محرك مثالي. عمر خدمة طويل وكفاءة ترشيح عالية.',
+    it: 'Filtro olio motore premium per macchinari pesanti. Garantisce una circolazione dell\'olio pulito e prestazioni ottimali del motore. Lunga durata di servizio e alta efficienza di filtrazione.',
+  },
+  'Air Filter': {
+    en: 'Heavy-duty air filter for construction equipment. Protects engine from dust and contaminants. Easy installation and maintenance.',
+    zh: '建筑设备用重型空气滤芯。保护发动机免受灰尘和污染物。易于安装和维护。',
+    es: 'Filtro de aire resistente para equipos de construcción. Protege el motor del polvo y los contaminantes. Fácil instalación y mantenimiento.',
+    fr: 'Filtre à air robuste pour les équipements de construction. Protège le moteur de la poussière et des contaminants. Installation et entretien faciles.',
+    de: 'Robuster Luftfilter für Bauausrüstung. Schützt den Motor vor Staub und Verschmutzungen. Einfache Installation und Wartung.',
+    pt: 'Filtro de ar resistente para equipamentos de construção. Protege o motor de poeira e contaminantes. Instalação e manutenção fáceis.',
+    ru: 'Прочный воздушный фильтр для строительного оборудования. Защищает двигатель от пыли и загрязнений. Легкая установка и обслуживание.',
+    ja: '建設機器用耐久性エアフィルター。エンジンをほこりと汚染物質から保護します。簡単な取り付けと保守。',
+    ar: 'مرشح هواء قوي لمعدات البناء. يحمي المحرك من الغبار والملوثات. تركيب وصيانة سهلة.',
+    it: 'Filtro aria resistente per attrezzature da costruzione. Protegge il motore da polvere e contaminanti. Installazione e manutenzione facili.',
+  },
+  'Fuel Filter': {
+    en: 'Reliable fuel filter for diesel engines. Removes water and impurities from fuel. Improves fuel system efficiency and engine longevity.',
+    zh: '柴油发动机用可靠燃油滤芯。去除燃油中的水分和杂质。提高燃油系统效率和发动机寿命。',
+    es: 'Filtro de combustible confiable para motores diésel. Elimina agua e impurezas del combustible. Mejora la eficiencia del sistema de combustible y la longevidad del motor.',
+    fr: 'Filtre à carburant fiable pour moteurs diesel. Élimine l\'eau et les impuretés du carburant. Améliore l\'efficacité du système de carburant et la longévité du moteur.',
+    de: 'Zuverlässiger Kraftstofffilter für Dieselmotoren. Entfernt Wasser und Verunreinigungen aus dem Kraftstoff. Verbessert die Effizienz des Kraftstoffsystems und die Motorlebensdauer.',
+    pt: 'Filtro de combustível confiável para motores diesel. Remove água e impurezas do combustível. Melhora a eficiência do sistema de combustível e a longevidade do motor.',
+    ru: 'Надежный топливный фильтр для дизельных двигателей. Удаляет воду и примеси из топлива. Улучшает эффективность топливной системы и долговечность двигателя.',
+    ja: 'ディーゼルエンジン用の信頼できる燃料フィルター。燃料から水と不純物を除去します。燃料システムの効率とエンジンの寿命を向上させます。',
+    ar: 'مرشح وقود موثوق لمحركات الديزل. يزيل الماء والشوائب من الوقود. يحسن كفاءة نظام الوقود وطول عمر المحرك.',
+    it: 'Filtro carburante affidabile per motori diesel. Rimuove acqua e impurità dal carburante. Migliora l\'efficienza del sistema di carburante e la longevità del motore.',
+  },
+};

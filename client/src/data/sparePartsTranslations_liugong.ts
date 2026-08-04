@@ -11,6 +11,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de óleo de retorno hidráulico',
     ru: 'Гидравлический фильтр обратного масла',
     ja: '油圧リターンオイルフィルター',
+    ar: 'مرشح الزيت الهيدروليكي العائد',
+    it: 'Filtro olio di ritorno idraulico',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -21,6 +23,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de óleo',
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Hydraulic Oil Filter': {
     en: 'Hydraulic Oil Filter',
@@ -31,6 +35,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de óleo hidráulico',
     ru: 'Гидравлический масляный фильтр',
     ja: '油圧オイルフィルター',
+    ar: 'مرشح الزيت الهيدروليكي',
+    it: 'Filtro olio idraulico',
   },
   'Diesel Filter': {
     en: 'Diesel Filter',
@@ -41,6 +47,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de diesel',
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
+    ar: 'Diesel Filter',
+    it: 'Diesel Filter',
   },
   'Hydraulic Return Oil Filter(型号2)': {
     en: 'Hydraulic Return Oil Filter (Model 2)',
@@ -51,6 +59,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de óleo de retorno hidráulico (Modelo 2)',
     ru: 'Гидравлический фильтр обратного масла (Модель 2)',
     ja: '油圧リターンオイルフィルター (モデル 2)',
+    ar: 'Hydraulic Return Oil Filter (Model 2)',
+    it: 'Hydraulic Return Oil Filter (Model 2)',
   },
   '先导Hydraulic Oil Filter': {
     en: 'Pilot Hydraulic Oil Filter',
@@ -61,6 +71,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de óleo hidráulico piloto',
     ru: 'Пилотный гидравлический масляный фильтр',
     ja: 'パイロット油圧オイルフィルター',
+    ar: 'Pilot Hydraulic Oil Filter',
+    it: 'Pilot Hydraulic Oil Filter',
   },
   'Air Filter': {
     en: 'Air Filter',
@@ -71,6 +83,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de ar',
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
+    ar: 'مرشح الهواء',
+    it: 'Filtro aria',
   },
   'Diesel Filter(通用型)': {
     en: 'Diesel Filter (Universal Type)',
@@ -81,6 +95,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de diesel (Tipo universal)',
     ru: 'Дизельный фильтр (универсальный тип)',
     ja: 'ディーゼルフィルター (ユニバーサルタイプ)',
+    ar: 'Diesel Filter (Universal Type)',
+    it: 'Diesel Filter (Universal Type)',
   },
   'Oil Filter(型号2)': {
     en: 'Oil Filter (Model 2)',
@@ -91,6 +107,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de óleo (Modelo 2)',
     ru: 'Масляный фильтр (Модель 2)',
     ja: 'オイルフィルター (モデル 2)',
+    ar: 'Oil Filter (Model 2)',
+    it: 'Oil Filter (Model 2)',
   },
   'Air Filter(型号2)': {
     en: 'Air Filter (Model 2)',
@@ -101,6 +119,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de ar (Modelo 2)',
     ru: 'Воздушный фильтр (Модель 2)',
     ja: 'エアフィルター (モデル 2)',
+    ar: 'Air Filter (Model 2)',
+    it: 'Air Filter (Model 2)',
   },
   'Hydraulic Return Oil Filter(型号3)': {
     en: 'Hydraulic Return Oil Filter (Model 3)',
@@ -111,6 +131,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Filtro de óleo de retorno hidráulico (Modelo 3)',
     ru: 'Гидравлический фильтр обратного масла (Модель 3)',
     ja: '油圧リターンオイルフィルター (モデル 3)',
+    ar: 'Hydraulic Return Oil Filter (Model 3)',
+    it: 'Hydraulic Return Oil Filter (Model 3)',
   },
   '铲斗斗齿': {
     en: 'Bucket Tooth',
@@ -121,6 +143,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Dente do balde',
     ru: 'Зуб ковша',
     ja: 'バケットティース',
+    ar: 'Bucket Tooth',
+    it: 'Bucket Tooth',
   },
   '转向油泵(齿轮泵)': {
     en: 'Steering Oil Pump (Gear Pump)',
@@ -131,6 +155,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Bomba de óleo de direção (Bomba de engrenagens)',
     ru: 'Насос рулевого масла (Шестеренчатый насос)',
     ja: 'ステアリングオイルポンプ (ギアポンプ)',
+    ar: 'Steering Oil Pump (Gear Pump)',
+    it: 'Steering Oil Pump (Gear Pump)',
   },
   '左转向油缸': {
     en: 'Left Steering Cylinder',
@@ -141,6 +167,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Cilindro de direção esquerdo',
     ru: 'Левый рулевой цилиндр',
     ja: '左ステアリングシリンダー',
+    ar: 'Left Steering Cylinder',
+    it: 'Left Steering Cylinder',
   },
   '制动助力器(brake booster)': {
     en: 'Brake Booster',
@@ -151,6 +179,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Amplificador de freio',
     ru: 'Усилитель тормоза',
     ja: 'ブレーキブースター',
+    ar: 'Brake Booster',
+    it: 'Brake Booster',
   },
   '刹车片(摩擦衬片)': {
     en: 'Brake Pad (Friction Lining)',
@@ -161,6 +191,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Pastilha de freio (Forro de fricção)',
     ru: 'Тормозная колодка (Фрикционная накладка)',
     ja: 'ブレーキパッド (摩擦ライニング)',
+    ar: 'Brake Pad (Friction Lining)',
+    it: 'Brake Pad (Friction Lining)',
   },
   '变速箱总成(ZF/柳工自研)': {
     en: 'Transmission Assembly (ZF/LiuGong Self-developed)',
@@ -171,6 +203,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Conjunto de transmissão (ZF/Autoinvestigação da LiuGong)',
     ru: 'Трансмиссионный узел (ZF/Собственная разработка LiuGong)',
     ja: 'トランスミッションアセンブリ (ZF/柳工自社開発)',
+    ar: 'Transmission Assembly (ZF/LiuGong Self-developed)',
+    it: 'Transmission Assembly (ZF/LiuGong Self-developed)',
   },
   '变速箱控制单元(ZF)': {
     en: 'Transmission Control Unit (ZF)',
@@ -181,6 +215,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Unidade de controle de transmissão (ZF)',
     ru: 'Блок управления трансмиссией (ZF)',
     ja: 'トランスミッション制御ユニット (ZF)',
+    ar: 'Transmission Control Unit (ZF)',
+    it: 'Transmission Control Unit (ZF)',
   },
   '散热器总成': {
     en: 'Radiator Assembly',
@@ -191,6 +227,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Conjunto do radiador',
     ru: 'Радиаторный узел',
     ja: 'ラジエーターアセンブリ',
+    ar: 'Radiator Assembly',
+    it: 'Radiator Assembly',
   },
   '风扇支架': {
     en: 'Fan Bracket',
@@ -201,6 +239,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Suporte do ventilador',
     ru: 'Кронштейн вентилятора',
     ja: 'ファンブラケット',
+    ar: 'Fan Bracket',
+    it: 'Fan Bracket',
   },
   '倒车报警器': {
     en: 'Reversing Alarm',
@@ -211,6 +251,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Alarme de marcha ré',
     ru: 'Сигнал заднего хода',
     ja: 'バックアラーム',
+    ar: 'Reversing Alarm',
+    it: 'Reversing Alarm',
   },
   '保险丝盒': {
     en: 'Fuse Box',
@@ -221,6 +263,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Caixa de fusíveis',
     ru: 'Блок предохранителей',
     ja: 'ヒューズボックス',
+    ar: 'Fuse Box',
+    it: 'Fuse Box',
   },
   '柴油发动机总成参考': {
     en: 'Diesel Engine Assembly Reference',
@@ -231,6 +275,8 @@ export const liugongNameTranslations: Record<string, Record<string, string>> = {
     pt: 'Referência do conjunto do motor diesel',
     ru: 'Справка по дизельному двигателю',
     ja: 'ディーゼルエンジンアセンブリ参照',
+    ar: 'Diesel Engine Assembly Reference',
+    it: 'Diesel Engine Assembly Reference',
   },
 };
 
@@ -244,6 +290,8 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     pt: 'Sistema de manutenção/filtração',
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/ろ過システム',
+    ar: 'Maintenance/Filtration System',
+    it: 'Maintenance/Filtration System',
   },
   '挖掘属性/GET': {
     en: 'Excavation Attributes/GET',
@@ -254,6 +302,8 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     pt: 'Atributos de escavação/GET',
     ru: 'Атрибуты раскопок/GET',
     ja: '掘削属性/GET',
+    ar: 'Excavation Attributes/GET',
+    it: 'Excavation Attributes/GET',
   },
   '转向/液压系统': {
     en: 'Steering/Hydraulic System',
@@ -264,6 +314,8 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     pt: 'Sistema de direção/hidráulico',
     ru: 'Система рулевого управления/гидравлическая',
     ja: 'ステアリング/油圧システム',
+    ar: 'Steering/Hydraulic System',
+    it: 'Steering/Hydraulic System',
   },
   'Braking System': {
     en: 'Braking System',
@@ -274,6 +326,8 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     pt: 'Sistema de frenagem',
     ru: 'Тормозная система',
     ja: 'ブレーキシステム',
+    ar: 'Braking System',
+    it: 'Braking System',
   },
   '传动/变速系统': {
     en: 'Transmission/Gearbox System',
@@ -284,6 +338,8 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     pt: 'Sistema de transmissão/caixa de câmbio',
     ru: 'Система трансмиссии/коробки передач',
     ja: 'トランスミッション/ギアボックスシステム',
+    ar: 'Transmission/Gearbox System',
+    it: 'Transmission/Gearbox System',
   },
   'Cooling System': {
     en: 'Cooling System',
@@ -294,6 +350,8 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     pt: 'Sistema de resfriamento',
     ru: 'Система охлаждения',
     ja: '冷却システム',
+    ar: 'Cooling System',
+    it: 'Cooling System',
   },
   '电气系统': {
     en: 'Electrical System',
@@ -304,6 +362,8 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     pt: 'Sistema elétrico',
     ru: 'Электрическая система',
     ja: '電気システム',
+    ar: 'Electrical System',
+    it: 'Electrical System',
   },
   '发动机系统': {
     en: 'Engine System',
@@ -314,6 +374,8 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     pt: 'Sistema do motor',
     ru: 'Система двигателя',
     ja: 'エンジンシステム',
+    ar: 'Engine System',
+    it: 'Engine System',
   },
 };
 
@@ -327,6 +389,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
     ru: 'Деталь LiuGong. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
     ja: '柳工部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
+    ar: 'LiuGong part. Replace every 500-1000 hours or based on fluid analysis.',
+    it: 'LiuGong part. Replace every 500-1000 hours or based on fluid analysis.',
   },
   'LiuGong part. Replace during maintenance every 250-500 hours.': {
     en: 'LiuGong part. Replace during maintenance every 250-500 hours.',
@@ -337,6 +401,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir durante a manutenção a cada 250-500 horas.',
     ru: 'Деталь LiuGong. Заменяйте во время обслуживания каждые 250-500 часов.',
     ja: '柳工部品。メンテナンス中に250～500時間ごとに交換してください。',
+    ar: 'LiuGong part. Replace during maintenance every 250-500 hours.',
+    it: 'LiuGong part. Replace during maintenance every 250-500 hours.',
   },
   'LiuGong part. Replace every 500-1000 hours.': {
     en: 'LiuGong part. Replace every 500-1000 hours.',
@@ -347,6 +413,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir a cada 500-1000 horas.',
     ru: 'Деталь LiuGong. Заменяйте каждые 500-1000 часов.',
     ja: '柳工部品。500～1000時間ごとに交換してください。',
+    ar: 'LiuGong part. Replace every 500-1000 hours.',
+    it: 'LiuGong part. Replace every 500-1000 hours.',
   },
   'LiuGong part. Replace every 250-500 hours or based on oil quality.': {
     en: 'LiuGong part. Replace every 250-500 hours or based on oil quality.',
@@ -357,6 +425,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir a cada 250-500 horas ou com base na qualidade do óleo.',
     ru: 'Деталь LiuGong. Заменяйте каждые 250-500 часов или в зависимости от качества масла.',
     ja: '柳工部品。250～500時間ごと、または油の品質に基づいて交換してください。',
+    ar: 'LiuGong part. Replace every 250-500 hours or based on oil quality.',
+    it: 'LiuGong part. Replace every 250-500 hours or based on oil quality.',
   },
   'LiuGong part. Replace every 250-500 hours or based on dust environment.': {
     en: 'LiuGong part. Replace every 250-500 hours or based on dust environment.',
@@ -367,6 +437,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir a cada 250-500 horas ou com base no ambiente de poeira.',
     ru: 'Деталь LiuGong. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.',
     ja: '柳工部品。250～500時間ごと、または粉塵環境に基づいて交換してください。',
+    ar: 'LiuGong part. Replace every 250-500 hours or based on dust environment.',
+    it: 'LiuGong part. Replace every 250-500 hours or based on dust environment.',
   },
   'LiuGong part. Replace when worn to bottom or cracked (high-frequency replacement).': {
     en: 'LiuGong part. Replace when worn to bottom or cracked (high-frequency replacement).',
@@ -377,6 +449,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir quando desgastada até o fundo ou rachada (substituição de alta frequência).',
     ru: 'Деталь LiuGong. Заменяйте при износе до дна или трещинах (высокочастотная замена).',
     ja: '柳工部品。底部まで摩耗したり割れたりした場合は交換してください（高頻度交換）。',
+    ar: 'LiuGong part. Replace when worn to bottom or cracked (high-frequency replacement).',
+    it: 'LiuGong part. Replace when worn to bottom or cracked (high-frequency replacement).',
   },
   'LiuGong part. Replace when steering heavy or abnormal noise occurs.': {
     en: 'LiuGong part. Replace when steering heavy or abnormal noise occurs.',
@@ -387,6 +461,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir quando a direção fica pesada ou ocorrem ruídos anormais.',
     ru: 'Деталь LiuGong. Заменяйте, когда рулевое управление тяжелое или возникают ненормальные шумы.',
     ja: '柳工部品。ステアリングが重くなったり、異常な音が発生した場合は交換してください。',
+    ar: 'LiuGong part. Replace when steering heavy or abnormal noise occurs.',
+    it: 'LiuGong part. Replace when steering heavy or abnormal noise occurs.',
   },
   'LiuGong part. Replace when oil leaks or steering abnormal noise occurs.': {
     en: 'LiuGong part. Replace when oil leaks or steering abnormal noise occurs.',
@@ -397,6 +473,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir quando há vazamento de óleo ou ruído anormal na direção.',
     ru: 'Деталь LiuGong. Заменяйте при утечке масла или ненормальных звуках рулевого управления.',
     ja: '柳工部品。オイル漏れまたはステアリングの異常な音が発生した場合は交換してください。',
+    ar: 'LiuGong part. Replace when oil leaks or steering abnormal noise occurs.',
+    it: 'LiuGong part. Replace when oil leaks or steering abnormal noise occurs.',
   },
   'LiuGong part. Repair or replace when braking response slows or fails.': {
     en: 'LiuGong part. Repair or replace when braking response slows or fails.',
@@ -407,6 +485,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Reparar ou substituir quando a resposta de frenagem fica lenta ou falha.',
     ru: 'Деталь LiuGong. Отремонтируйте или замените, если ответ торможения замедляется или отказывает.',
     ja: '柳工部品。ブレーキ応答が遅くなったり失敗した場合は修理または交換してください。',
+    ar: 'LiuGong part. Repair or replace when braking response slows or fails.',
+    it: 'LiuGong part. Repair or replace when braking response slows or fails.',
   },
   'LiuGong part. Replace every 30,000-50,000 km or based on wear.': {
     en: 'LiuGong part. Replace every 30,000-50,000 km or based on wear.',
@@ -417,6 +497,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir a cada 30.000-50.000 km ou com base no desgaste.',
     ru: 'Деталь LiuGong. Заменяйте каждые 30 000-50 000 км или в зависимости от износа.',
     ja: '柳工部品。30,000～50,000 kmごと、または摩耗に基づいて交換してください。',
+    ar: 'LiuGong part. Replace every 30,000-50,000 km or based on wear.',
+    it: 'LiuGong part. Replace every 30,000-50,000 km or based on wear.',
   },
   'LiuGong part. Replace when abnormal noise or transmission efficiency drops (major repair).': {
     en: 'LiuGong part. Replace when abnormal noise or transmission efficiency drops (major repair).',
@@ -427,6 +509,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir quando há ruído anormal ou queda na eficiência de transmissão (reparo maior).',
     ru: 'Деталь LiuGong. Заменяйте при ненормальных шумах или снижении эффективности передачи (капитальный ремонт).',
     ja: '柳工部品。異常な音が発生したり、トランスミッション効率が低下した場合は交換してください（大修理）。',
+    ar: 'LiuGong part. Replace when abnormal noise or transmission efficiency drops (major repair).',
+    it: 'LiuGong part. Replace when abnormal noise or transmission efficiency drops (major repair).',
   },
   'LiuGong part. Replace when shifting abnormal or electrical control failure occurs.': {
     en: 'LiuGong part. Replace when shifting abnormal or electrical control failure occurs.',
@@ -437,6 +521,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir quando há mudança anormal ou falha de controle elétrico.',
     ru: 'Деталь LiuGong. Заменяйте при ненормальном переключении или отказе электрического управления.',
     ja: '柳工部品。異常なシフトまたは電気制御の故障が発生した場合は交換してください。',
+    ar: 'LiuGong part. Replace when shifting abnormal or electrical control failure occurs.',
+    it: 'LiuGong part. Replace when shifting abnormal or electrical control failure occurs.',
   },
   'LiuGong part. Replace when overheating or leaking occurs.': {
     en: 'LiuGong part. Replace when overheating or leaking occurs.',
@@ -447,6 +533,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir quando ocorre superaquecimento ou vazamento.',
     ru: 'Деталь LiuGong. Заменяйте при перегреве или утечке.',
     ja: '柳工部品。過熱またはリークが発生した場合は交換してください。',
+    ar: 'LiuGong part. Replace when overheating or leaking occurs.',
+    it: 'LiuGong part. Replace when overheating or leaking occurs.',
   },
   'LiuGong part. Replace when abnormal noise or cracking occurs.': {
     en: 'LiuGong part. Replace when abnormal noise or cracking occurs.',
@@ -457,6 +545,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir quando ocorre ruído anormal ou rachaduras.',
     ru: 'Деталь LiuGong. Заменяйте при ненормальных шумах или трещинах.',
     ja: '柳工部品。異常な音が発生したり、ひびが入った場合は交換してください。',
+    ar: 'LiuGong part. Replace when abnormal noise or cracking occurs.',
+    it: 'LiuGong part. Replace when abnormal noise or cracking occurs.',
   },
   'LiuGong part. Replace when alarm fails.': {
     en: 'LiuGong part. Replace when alarm fails.',
@@ -467,6 +557,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Substituir quando o alarme falha.',
     ru: 'Деталь LiuGong. Заменяйте при отказе сигнализации.',
     ja: '柳工部品。アラームが故障した場合は交換してください。',
+    ar: 'LiuGong part. Replace when alarm fails.',
+    it: 'LiuGong part. Replace when alarm fails.',
   },
   'LiuGong part. Repair or replace when circuit abnormal occurs.': {
     en: 'LiuGong part. Repair or replace when circuit abnormal occurs.',
@@ -477,6 +569,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Reparar ou substituir quando ocorre anomalia no circuito.',
     ru: 'Деталь LiuGong. Отремонтируйте или замените при возникновении аномалии цепи.',
     ja: '柳工部品。回路の異常が発生した場合は修理または交換してください。',
+    ar: 'LiuGong part. Repair or replace when circuit abnormal occurs.',
+    it: 'LiuGong part. Repair or replace when circuit abnormal occurs.',
   },
   'LiuGong part. Major repair class, for engine model reference only.': {
     en: 'LiuGong part. Major repair class, for engine model reference only.',
@@ -487,6 +581,8 @@ export const liugongDescriptionTranslations: Record<string, Record<string, strin
     pt: 'Peça LiuGong. Classe de reparo maior, apenas para referência do modelo do motor.',
     ru: 'Деталь LiuGong. Класс капитального ремонта, только для справки по модели двигателя.',
     ja: '柳工部品。大修理クラス、エンジンモデル参照用のみ。',
+    ar: 'LiuGong part. Major repair class, for engine model reference only.',
+    it: 'LiuGong part. Major repair class, for engine model reference only.',
   },
 };
 

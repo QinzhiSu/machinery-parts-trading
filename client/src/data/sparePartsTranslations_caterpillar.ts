@@ -499,6 +499,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
     pt: 'Peça Caterpillar. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
     ru: 'Деталь Caterpillar. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
     ja: 'キャタピラー部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
+    ar: 'Caterpillar part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Caterpillar part. Replace every 500-1000 hours or based on fluid analysis results.',
   },
 };
 

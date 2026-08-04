@@ -449,6 +449,8 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
     pt: 'Peça Isuzu. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
     ru: 'Деталь Isuzu. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
     ja: 'Isuzu部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
+    ar: 'Isuzu part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Isuzu part. Replace every 500-1000 hours or based on fluid analysis results.',
   },
 };
 
