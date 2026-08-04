@@ -6,7 +6,7 @@ import { ArrowLeft, ChevronRight, Package, Wrench, Tag, Phone, Mail, MessageSqua
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import QuickInquiryDialog from '@/components/QuickInquiryDialog';
-import SparePartDetailModal from '@/components/SparePartDetailModal';
+
 import CategoryFilter from '@/components/CategoryFilter';
 import { getBrandById, SparePart } from '@/data/products';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -14,10 +14,10 @@ import ComparisonButton from '@/components/ComparisonButton';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
-import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
+
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartName, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription, getTranslatedCATSparePartCategory, getTranslatedCATSparePartName, getTranslatedCATSparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory } from '@/data/sparePartsTranslations';
+import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartName, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription, getTranslatedCATSparePartCategory, getTranslatedCATSparePartName, getTranslatedCATSparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory } from '@/data/sparePartsTranslations_liugong';
 import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
 import { getTranslatedXCMGMachineDescription, getTranslatedXCMGMachineType, getTranslatedXCMGMachineSpecs } from '@/data/xcmgMachineTranslations';
 import { getTranslatedLiuGongMachineName, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineSpecs, getTranslatedLiuGongMachineDescription } from '@/data/liugongMachineTranslations';
@@ -363,7 +363,7 @@ export default function BrandPage() {
                     <div className="relative h-40 overflow-hidden bg-gray-50 cursor-pointer hover:opacity-90 transition-opacity" onClick={() => { setSelectedPart(part); setPartDetailOpen(true); }}>
                       <img
                         src={part.image}
-                        alt={getTranslatedSparePartName(part.name, language)}
+                        alt={brand.id === 'shantui' ? getTranslatedShantuiSparePartName(part.name, language) : brand.id === 'sany' ? getTranslatedSanySparePartName(part.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartName(part.name, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartName(part.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartName(part.name, language) : translatePartName(part.name)}
                         className="w-full h-full object-cover"
                       />
                       {/* Category badge */}
@@ -371,7 +371,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSanySparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : translatePartCategory(part.category) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                       </div>
                     </div>
 
@@ -395,7 +395,7 @@ export default function BrandPage() {
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.description, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.description, language) : getTranslatedSparePartDescription(part.description, language)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.description, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.description, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.description, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.description, language) : translatePartDescription(part.description)}
                       </p>
 
                       <div className="flex gap-2">
@@ -483,17 +483,7 @@ export default function BrandPage() {
           productInfo={selectedProduct}
         />
       )}
-      <SparePartDetailModal
-        part={selectedPart}
-        isOpen={partDetailOpen}
-        onClose={() => handlePartDetailClose()}
-        onInquiry={(part) => {
-          setSelectedProduct({ model: part.partNumber, name: part.name, type: 'spare-part' });
-          setInquiryDialogOpen(true);
-        }}
-        brandName={brand.name}
-        brandColor={brand.color}
-      />
+
       <Footer />
     </div>
   );
