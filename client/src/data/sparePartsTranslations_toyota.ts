@@ -599,7 +599,24 @@ export function getTranslatedToyotaSparePartName(name: string, language: string 
   return translations?.[language] || name;
 }
 
+export const toyotaDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Toyota part. Replace every 500-1000 hours or based on fluid analysis results.': {
+    en: 'Toyota part. Replace every 500-1000 hours or based on fluid analysis results.',
+    zh: '丰田零件。500-1000小时或视油液检测结果更换',
+    es: 'Pieza Toyota. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
+    fr: 'Pièce Toyota. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
+    de: 'Toyota-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
+    pt: 'Peça Toyota. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
+    ru: 'Деталь Toyota. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
+    ja: 'Toyota部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
+  },
+};
+
 export function getTranslatedToyotaSparePartDescription(description: string, language: string = 'zh'): string {
-  // Description translations would be handled separately
+  const translations = toyotaDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
   return description;
 }
+

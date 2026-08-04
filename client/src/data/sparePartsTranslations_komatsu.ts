@@ -279,7 +279,24 @@ export function getTranslatedKomatsuSparePartName(name: string, language: string
   return translations?.[language] || name;
 }
 
+export const komatsuDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Komatsu part. Replace every 500-1000 hours or based on fluid analysis results.': {
+    en: 'Komatsu part. Replace every 500-1000 hours or based on fluid analysis results.',
+    zh: '小松零件。500-1000小时或视油液检测结果更换',
+    es: 'Pieza Komatsu. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
+    fr: 'Pièce Komatsu. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
+    de: 'Komatsu-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
+    pt: 'Peça Komatsu. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
+    ru: 'Деталь Komatsu. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
+    ja: 'Komatsu部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
+  },
+};
+
 export function getTranslatedKomatsuSparePartDescription(description: string, language: string = 'zh'): string {
-  // Description translations would be handled separately
+  const translations = komatsuDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
   return description;
 }
+

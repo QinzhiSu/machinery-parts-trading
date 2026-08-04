@@ -599,7 +599,24 @@ export function getTranslatedSinotrukSparePartName(name: string, language: strin
   return translations?.[language] || name;
 }
 
+export const sinotrukDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Sinotruk part. Replace every 500-1000 hours or based on fluid analysis results.': {
+    en: 'Sinotruk part. Replace every 500-1000 hours or based on fluid analysis results.',
+    zh: '中国重汽零件。500-1000小时或视油液检测结果更换',
+    es: 'Pieza Sinotruk. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
+    fr: 'Pièce Sinotruk. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
+    de: 'Sinotruk-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
+    pt: 'Peça Sinotruk. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
+    ru: 'Деталь Sinotruk. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
+    ja: 'Sinotruk部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
+  },
+};
+
 export function getTranslatedSinotrukSparePartDescription(description: string, language: string = 'zh'): string {
-  // Description translations would be handled separately
+  const translations = sinotrukDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
   return description;
 }
+
