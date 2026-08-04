@@ -1,24 +1,21 @@
-import { eq, and } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import * as schema from "../drizzle/schema";
-import * as relations from "../drizzle/relations";
 import { InsertUser, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
-const combinedSchema = { ...schema, ...relations };
-export let db: ReturnType<typeof drizzle<typeof combinedSchema>> | null = null;
+let _db: ReturnType<typeof drizzle> | null = null;
 
 // Lazily create the drizzle instance so local tooling can run without a DB.
 export async function getDb() {
-  if (!db && process.env.DATABASE_URL) {
+  if (!_db && process.env.DATABASE_URL) {
     try {
-      db = drizzle(process.env.DATABASE_URL, { schema: combinedSchema, mode: 'default' });
+      _db = drizzle(process.env.DATABASE_URL);
     } catch (error) {
       console.warn("[Database] Failed to connect:", error);
-      db = null;
+      _db = null;
     }
   }
-  return db;
+  return _db;
 }
 
 export async function upsertUser(user: InsertUser): Promise<void> {
@@ -93,110 +90,3 @@ export async function getUserByOpenId(openId: string) {
 }
 
 // TODO: add feature queries here as your schema grows.
-
-
-// ===== Favorites Management =====
-
-import { favorites } from "../drizzle/schema";
-
-export async function addFavorite(userId: number, partId: string, partName: string, brand: string): Promise<void> {
-  const db = await getDb();
-  if (!db) {
-    console.warn("[Database] Cannot add favorite: database not available");
-    return;
-  }
-
-  try {
-    await db.insert(favorites).values({
-      userId,
-      partId,
-      partName,
-      brand,
-    }).onDuplicateKeyUpdate({
-      set: {
-        partName,
-        brand,
-      },
-    });
-  } catch (error) {
-    console.error("[Database] Failed to add favorite:", error);
-    throw error;
-  }
-}
-
-export async function removeFavorite(userId: number, partId: string): Promise<void> {
-  const db = await getDb();
-  if (!db) {
-    console.warn("[Database] Cannot remove favorite: database not available");
-    return;
-  }
-
-  try {
-    await db.delete(favorites).where(
-      and(
-        eq(favorites.userId, userId),
-        eq(favorites.partId, partId)
-      )
-    );
-  } catch (error) {
-    console.error("[Database] Failed to remove favorite:", error);
-    throw error;
-  }
-}
-
-export async function getFavorites(userId: number) {
-  const db = await getDb();
-  if (!db) {
-    console.warn("[Database] Cannot get favorites: database not available");
-    return [];
-  }
-
-  try {
-    const result = await db.select().from(favorites).where(
-      eq(favorites.userId, userId)
-    );
-    return result;
-  } catch (error) {
-    console.error("[Database] Failed to get favorites:", error);
-    return [];
-  }
-}
-
-export async function isFavorite(userId: number, partId: string): Promise<boolean> {
-  const db = await getDb();
-  if (!db) {
-    console.warn("[Database] Cannot check favorite: database not available");
-    return false;
-  }
-
-  try {
-    const result = await db.select().from(favorites).where(
-      and(
-        eq(favorites.userId, userId),
-        eq(favorites.partId, partId)
-      )
-    );
-    return result.length > 0;
-  } catch (error) {
-    console.error("[Database] Failed to check favorite:", error);
-    return false;
-  }
-}
-
-export async function getFavoritesCount(userId: number): Promise<number> {
-  const db = await getDb();
-  if (!db) {
-    console.warn("[Database] Cannot get favorites count: database not available");
-    return 0;
-  }
-
-  try {
-    const result = await db.select().from(favorites).where(
-      eq(favorites.userId, userId)
-    );
-    return result.length;
-  } catch (error) {
-    console.error("[Database] Failed to get favorites count:", error);
-    return 0;
-  }
-}

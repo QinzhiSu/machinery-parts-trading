@@ -1,8 +1,6 @@
 // Multi-language translations: English, Arabic, Russian
 export type Language = 'en' | 'ar' | 'ru' | 'fr' | 'zh' | 'pt' | 'es' | 'it';
 
-// Note: Spanish (es) translations are already included in the translations object below
-
 export const translations: Record<Language, Record<string, string>> = {
   en: {
     // Navigation
@@ -40,10 +38,6 @@ export const translations: Record<Language, Record<string, string>> = {
     'brand.wearParts': 'Wear parts and components with OEM part numbers. Contact us for pricing.',
     'brand.quickInquiry': 'Quick Inquiry',
     'brand.getPrice': 'Get Price',
-    'brand.filterByCategory': 'Filter by Category',
-    'brand.selectedFilters': 'Selected Filters',
-    'brand.clearAll': 'Clear All',
-    'brand.compare': 'Compare',
 
     // Quick Inquiry Dialog
     'inquiry.title': 'Quick Inquiry',
@@ -115,20 +109,6 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.technicalSupport': 'Technical support for part number identification',
     'about.fastResponse': 'Fast response time — reply within 24 hours',
     'about.longTermRelation': 'Long-term relationship focus with dedicated account service',
-
-    // Brand descriptions
-    'brand.caterpillar.description': 'World\'s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives.',
-    'brand.komatsu.description': 'Japanese manufacturer of construction equipment, mining equipment, and industrial machinery with global presence.',
-    'brand.xcmg.description': 'Leading Chinese manufacturer of construction machinery including excavators, loaders, and cranes.',
-    'brand.shantui.description': 'Chinese heavy equipment manufacturer specializing in bulldozers and earthmoving machinery.',
-    'brand.sany.description': 'Major Chinese construction equipment manufacturer with world-class technology and innovation.',
-    'brand.liugong.description': 'Chinese heavy machinery manufacturer known for wheel loaders and construction equipment.',
-    'brand.isuzu.description': 'Japanese manufacturer of commercial trucks and diesel engines for global markets.',
-    'brand.shacman.description': 'Chinese heavy-duty truck manufacturer serving construction and logistics industries.',
-    'brand.sinotruk.description': 'Leading Chinese heavy truck manufacturer with reliable commercial vehicles.',
-    'brand.toyota.description': 'Japanese automotive manufacturer known for reliable trucks and commercial vehicles.',
-    'brand.cummins.description': 'Global leader in diesel and natural gas engine manufacturing for industrial applications.',
-    'brand.weichai.description': 'Chinese diesel engine manufacturer serving construction and commercial vehicle markets.',
 
     // Common
     'common.loading': 'Loading...',
@@ -244,20 +224,6 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.technicalSupport': 'الدعم الفني لتحديد رقم الجزء',
     'about.fastResponse': 'وقت استجابة سريع — الرد في غضون 24 ساعة',
     'about.longTermRelation': 'التركيز على العلاقات طويلة الأجل مع خدمة حساب مخصصة',
-
-    // Brand descriptions
-    'brand.caterpillar.description': 'الشركة المصنعة الرائدة عالميًا لمعدات البناء والتعدين والمحركات والتوربينات الصناعية.',
-    'brand.komatsu.description': 'الشركة المصنعة اليابانية لمعدات البناء والتعدين والآلات الصناعية.',
-    'brand.xcmg.description': 'الشركة المصنعة الصينية الرائدة لمعدات البناء بما في ذلك الحفارات والمحملات والرافعات.',
-    'brand.shantui.description': 'الشركة المصنعة الصينية لمعدات ثقيلة متخصصة في الجرافات وآلات تسوية الأرض.',
-    'brand.sany.description': 'الشركة المصنعة الصينية الرائدة لمعدات البناء بتكنولوجيا عالمية.',
-    'brand.liugong.description': 'الشركة المصنعة الصينية لمعدات ثقيلة معروفة بمحملات العجلات ومعدات البناء.',
-    'brand.isuzu.description': 'الشركة المصنعة اليابانية للشاحنات التجارية والمحركات الديزل.',
-    'brand.shacman.description': 'الشركة المصنعة الصينية للشاحنات الثقيلة في قطاع البناء واللوجستيات.',
-    'brand.sinotruk.description': 'الشركة المصنعة الصينية الرائدة للشاحنات الثقيلة الموثوقة.',
-    'brand.toyota.description': 'الشركة المصنعة اليابانية المعروفة بالشاحنات والمركبات التجارية الموثوقة.',
-    'brand.cummins.description': 'الشركة الرائدة عالميًا في تصنيع محركات الديزل والغاز الطبيعي.',
-    'brand.weichai.description': 'الشركة المصنعة الصينية لمحركات الديزل لقطاع البناء والمركبات التجارية.',
 
     // Common
     'common.loading': 'جاري التحميل...',
@@ -416,10 +382,6 @@ export const translations: Record<Language, Record<string, string>> = {
     'brand.wearParts': 'Pièces d\'usure avec numéros OEM.',
     'brand.quickInquiry': 'Demande Rapide',
     'brand.getPrice': 'Obtenir le Prix',
-    'brand.filterByCategory': 'Filtrer par Catégorie',
-    'brand.selectedFilters': 'Filtres Sélectionnés',
-    'brand.clearAll': 'Effacer Tout',
-    'brand.compare': 'Comparer',
 
     // Quick Inquiry Dialog
     'inquiry.title': 'Demande Rapide',
@@ -762,10 +724,6 @@ export const translations: Record<Language, Record<string, string>> = {
     'brand.wearParts': 'Piezas de desgaste y componentes.',
     'brand.quickInquiry': 'Consulta Rápida',
     'brand.getPrice': 'Obtener Precio',
-    'brand.filterByCategory': 'Filtrar por Categoría',
-    'brand.selectedFilters': 'Filtros Seleccionados',
-    'brand.clearAll': 'Limpiar Todo',
-    'brand.compare': 'Comparar',
 
     // Quick Inquiry Dialog
     'inquiry.title': 'Consulta Rápida',
@@ -964,4 +922,3 @@ export const translations: Record<Language, Record<string, string>> = {
 export function t(key: string, lang: Language): string {
   return translations[lang][key] || key;
 }
-

@@ -1,0 +1,42 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [
+    "db",
+    "server",
+    "user"
+  ],
+  "dev_command": "pnpm run dev",
+  "env_vars": {
+    "DATABASE_URL": "mysql://2ByovnkBFXs1NUJ.root:cl82m4BY8oMLZO3TRid3@gateway06.us-east-1.prod.aws.tidbcloud.com:4000/Wp4u9iGenLAr7MSPhkcAHT?ssl={\"rejectUnauthorized\":true}"
+  },
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT",
+    "access_key_id": "ASIAZV3A2ECZLN6MHXAX",
+    "secret_access_key": "VJqsMrZWHORyHSPgynVz4cWd1jlIrOO03e5Pi71W",
+    "session_token": "IQoJb3JpZ2luX2VjEGMaCXVzLWVhc3QtMSJIMEYCIQCyvLs6u2C8ue7yKHoBrVfvopVC2HrMzs/98QDBFkBq0gIhAIJeFRmc0GzdKs7cnJFbS7QkwfutETTRL9zWFG7BdDGRKvYDCCwQBBoMNjY1Mzg2MDk4ODY2IgxDQ4f0hpLKgRIcB2kq0wN/3A36h+3wbLExdXG+aNDO5uMVNNUUIeezLm1jini67FNuB/OLs5+jJJfXVdbgxFoxPpza1+IsLVRJxMXn+dx+EjA4wUHtjgx360/bftbIlAbFLcpXbVreIFmf66hRPFdMgiyiE3ElfV8opOkWi+02tCqFsNJnNk9Vel21XicVifG9/IKswjWO3WGYV7aArDbUx078+irpYSt76we+sVkY+ZVqHPNl8ql+SMDllXRY07T/MDKZPnwo6IooQzdx51ujLNycStbUP4a4bwdVwDpWOwUFJ8pcLKoTHZk75FD4BIn9/w4N1RwgnuhcuDYRRDH1VRYhMJOQsTrkewD61FNmuarc0jHQNe9OFUMTDy7OcrH37HcCw2nP8gRY3JQU2WXlLpWVWcMzV+wrnL+Y8ACA93f+hSMxR0zmLfwilhYEFcfC3ES4J2OeUnkIaCHEIExd9T8AnKLJUpY0mKlQHgiDhNigQ5J9Ui27ApOV2vwjz1DqhJFwpLa+Sp9kZwSXITablV8vV0Zq49EtFhijzoaCOLw4jeXYmlwKob4ig3c4OYDs5mfEsUGgYS8JaPC71xp0t4Oib62hbj6yKqEr3wjcg5H5PucIomp6nTPlq9AV+iArZzCZ6JXTBjqcAViqgnR8ynCsbRyk2Za6gPcYL9cDxP2/Mz0jmoo18HGsEkbLeYVeCvqX4YqCMvXYWHi5qtP06DsmbiOLKkbdG4/b47oYHYuQ2FGsPip651nrZOlGWDqlx64QdhVv0hOiMxYwLl1c21zNOhGu5FTpapJY7P+YQ4zTkRvF4jz3d1uLdXJkD2ZuZL1OuQi9CeHxNxVFzJKdpMGDVprGcQ==",
+    "expiration": "2026-07-26T14:42:33.000Z",
+    "backend": "GIT_BACKEND_S3"
+  },
+  "name": "machinery-parts-trading",
+  "path": "/home/ubuntu/machinery-parts-trading",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "FFi7pSS2vBngz7EZrFgR7w",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "bpcLsikisX7BzHqRSSTpc9",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "秦之 苏",
+    "OWNER_OPEN_ID": "oH9ovrGrfRBTySGhg3HAVt",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "7ab0ebdb-c2d8-4ed6-8712-856408aceb90",
+    "VITE_APP_ID": "Wp4u9iGenLAr7MSPhkcAHT",
+    "VITE_APP_LOGO": "https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663644782615/pxKLSXYXuEpogoju.png",
+    "VITE_APP_TITLE": "Global Machinery \u0026 Parts Trading",
+    "VITE_FRONTEND_FORGE_API_KEY": "AgzwisF7UngAnpwrPNYHQb",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-db-user",
+  "test_command": "pnpm test"
+}

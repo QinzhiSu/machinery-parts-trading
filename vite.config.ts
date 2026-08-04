@@ -150,7 +150,7 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
   plugins,
@@ -164,32 +164,9 @@ export default defineConfig({
   envDir: path.resolve(import.meta.dirname),
   root: path.resolve(import.meta.dirname, "client"),
   publicDir: path.resolve(import.meta.dirname, "client", "public"),
-  ssr: {
-    noExternal: ['@trpc/client', '@trpc/react-query'],
-  },
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
-    // Optimize for performance
-    minify: 'esbuild',
-    // Code splitting for better caching
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'vendor': ['react', 'react-dom', '@tanstack/react-query'],
-          'ui': ['@radix-ui/react-dialog', '@radix-ui/react-select', 'lucide-react'],
-          'trpc': ['@trpc/client', '@trpc/react-query', '@trpc/server'],
-        },
-      },
-    },
-    // Optimize CSS
-    cssCodeSplit: true,
-    // Source maps only in dev
-    sourcemap: false,
-    // Report compressed size
-    reportCompressedSize: true,
-    // Chunk size warnings
-    chunkSizeWarningLimit: 500
   },
   server: {
     host: true,
@@ -212,5 +189,4 @@ export default defineConfig({
       port: 443,
     },
   },
-
 });

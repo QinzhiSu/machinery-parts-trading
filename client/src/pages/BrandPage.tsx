@@ -1,75 +1,26 @@
 // Design: Industrial Minimalism
 // Brand page with machines + spare parts tabs, orange accent cards
-import { useState, useEffect } from 'react';
-import { useParams, Link, useSearch } from 'wouter';
+import { useState } from 'react';
+import { useParams, Link } from 'wouter';
 import { ArrowLeft, ChevronRight, Package, Wrench, Tag, Phone, Mail, MessageSquare } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import QuickInquiryDialog from '@/components/QuickInquiryDialog';
-import SparePartDetailModal from '@/components/SparePartDetailModal';
-import CategoryFilter from '@/components/CategoryFilter';
-import { getBrandById, SparePart } from '@/data/products';
-import { useLanguage } from '@/contexts/LanguageContext';
-import ComparisonButton from '@/components/ComparisonButton';
-import { usePartTranslation } from '@/hooks/usePartTranslation';
-import { useMachineTranslations } from '@/hooks/useMachineTranslations';
-import { getTranslatedDescription } from '@/data/descriptionTranslations';
-
-import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
-import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedSanySparePartDescription, getTranslatedSanySparePartName, getTranslatedSanySparePartCategory, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartName, getTranslatedCATSparePartCategory, getTranslatedCATSparePartDescription, getTranslatedCATSparePartName, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription, getTranslatedXCMGSparePartName, getTranslatedKomatsuSparePartCategory, getTranslatedKomatsuSparePartDescription, getTranslatedKomatsuSparePartName, getTranslatedShacmanSparePartCategory, getTranslatedShacmanSparePartDescription, getTranslatedShacmanSparePartName } from '@/data/sparePartsTranslations';
-import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
-import { getTranslatedXCMGMachineDescription, getTranslatedXCMGMachineType, getTranslatedXCMGMachineSpecs } from '@/data/xcmgMachineTranslations';
-import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
+import { getBrandById } from '@/data/products';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
 export default function BrandPage() {
-  const { t, language } = useLanguage();
-  const { translateMachineDescription: translateMachineDescriptionPartial, translatePartCategory, translatePartButtonText, translatePartName } = usePartTranslation();
-  const { translateDescription } = useMachineTranslations();
   const { brandId } = useParams<{ brandId: string }>();
-  const search = useSearch();
-  const params = new URLSearchParams(search);
-  const highlightPartId = params.get('partId');
-  
   const brand = getBrandById(brandId || '');
   const [activeTab, setActiveTab] = useState<'machines' | 'parts'>('machines');
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [inquiryDialogOpen, setInquiryDialogOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<{ model: string; name: string; specs?: string; type: 'machine' | 'spare-part' } | null>(null);
-  const [selectedPart, setSelectedPart] = useState<SparePart | null>(null);
-  const [partDetailOpen, setPartDetailOpen] = useState(false);
-  const [highlightedPartId, setHighlightedPartId] = useState<string | null>(null);
-
-  // Auto-open part detail if coming from search
-  useEffect(() => {
-    if (highlightPartId && brand) {
-      const part = brand.spareParts.find(p => p.id === highlightPartId);
-      if (part) {
-        setSelectedPart(part);
-        setPartDetailOpen(true);
-        setActiveTab('parts');
-        setHighlightedPartId(highlightPartId);
-        // Scroll to the part
-        setTimeout(() => {
-          const element = document.getElementById(`part-${highlightPartId}`);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }
-        }, 100);
-      }
-    }
-  }, [highlightPartId, brand]);
 
   const openInquiry = (product: { model: string; name: string; specs?: string; type: 'machine' | 'spare-part' }) => {
     setSelectedProduct(product);
     setInquiryDialogOpen(true);
-  };
-
-  const handlePartDetailClose = () => {
-    setPartDetailOpen(false);
-    setHighlightedPartId(null);
   };
 
   if (!brand) {
@@ -87,12 +38,13 @@ export default function BrandPage() {
     );
   }
 
-  const filteredParts = selectedCategories.length === 0
+  const categories = ['All', ...Array.from(new Set(brand.spareParts.map(p => p.category)))];
+  const filteredParts = selectedCategory === 'All'
     ? brand.spareParts
-    : brand.spareParts.filter(p => selectedCategories.includes(p.category));
+    : brand.spareParts.filter(p => p.category === selectedCategory);
 
   const categoryPath = brand.category === 'construction' ? '/construction' : '/trucks';
-  const categoryLabel = brand.category === 'construction' ? t('category.constructionMachinery') : t('category.trucksEngines');
+  const categoryLabel = brand.category === 'construction' ? 'Construction Machinery' : 'Trucks & Engines';
 
   return (
     <div className="min-h-screen flex flex-col" role="main">
@@ -111,19 +63,9 @@ export default function BrandPage() {
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: 'oklch(0.68 0.18 42)' }} />
 
         <div className="container relative z-10">
-          {/* Back to Home Button */}
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 mb-6 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-white/10 hover:bg-white/20 rounded-lg transition-colors duration-200"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
-            <ArrowLeft size={14} />
-            {t('common.backHome')}
-          </Link>
-
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-6 text-xs" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">{t('nav.home')}</Link>
+            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">Home</Link>
             <ChevronRight size={12} />
             <Link href={categoryPath} className="hover:text-orange-400 transition-colors uppercase tracking-wider">{categoryLabel}</Link>
             <ChevronRight size={12} />
@@ -133,14 +75,12 @@ export default function BrandPage() {
           <div className="flex items-start gap-6">
             {/* Brand logo box */}
             <div
-              className="w-24 h-24 flex-shrink-0 flex items-center justify-center text-white font-bold shadow-md rounded-lg"
+              className="w-20 h-20 flex-shrink-0 flex items-center justify-center text-white font-bold text-sm"
               style={{
                 background: brand.color,
                 fontFamily: 'var(--font-display)',
                 letterSpacing: '0.05em',
-                fontSize: '1.1rem',
-                lineHeight: '1',
-                padding: '0.5rem',
+                fontSize: '0.7rem',
               }}
             >
               {brand.logo}
@@ -151,7 +91,7 @@ export default function BrandPage() {
                 className="text-xs uppercase tracking-widest mb-1 font-semibold"
                 style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
               >
-                {brand.country} · {brand.category === 'construction' ? t('category.constructionMachinery') : brand.category === 'truck' ? 'Commercial Trucks' : 'Diesel Engines'}
+                {brand.country} · {brand.category === 'construction' ? 'Construction Machinery' : brand.category === 'truck' ? 'Commercial Trucks' : 'Diesel Engines'}
               </div>
               <h1
                 className="text-white uppercase leading-none mb-3"
@@ -165,7 +105,7 @@ export default function BrandPage() {
                 {brand.fullName}
               </h1>
               <p className="text-sm max-w-2xl leading-relaxed" style={{ color: 'oklch(0.7 0.02 265)' }}>
-                {t(`brand.${brandId?.toLowerCase()}.description`) !== `brand.${brandId?.toLowerCase()}.description` ? t(`brand.${brandId?.toLowerCase()}.description`) : brand.description}
+                {brand.description}
               </p>
               <div className="flex items-center gap-6 mt-4">
                 <div className="text-center">
@@ -173,7 +113,7 @@ export default function BrandPage() {
                     {brand.machines.length}
                   </div>
                   <div className="text-xs uppercase tracking-wider" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                    {t('category.machineModels')}
+                    Machine Models
                   </div>
                 </div>
                 <div className="w-px h-10" style={{ background: 'oklch(0.28 0.04 265)' }} />
@@ -182,7 +122,7 @@ export default function BrandPage() {
                     {brand.spareParts.length}
                   </div>
                   <div className="text-xs uppercase tracking-wider" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                    {t('brand.spareParts')}
+                    Spare Parts
                   </div>
                 </div>
               </div>
@@ -204,7 +144,7 @@ export default function BrandPage() {
             }}
           >
             <Package size={16} />
-            {t('brand.wholeMachines')} ({brand.machines.length})
+            Whole Machines ({brand.machines.length})
           </button>
           <button
             onClick={() => setActiveTab('parts')}
@@ -216,7 +156,7 @@ export default function BrandPage() {
             }}
           >
             <Wrench size={16} />
-            {t('brand.spareParts')} ({brand.spareParts.length})
+            Spare Parts ({brand.spareParts.length})
           </button>
         </div>
       </div>
@@ -233,10 +173,10 @@ export default function BrandPage() {
                   className="text-2xl font-bold uppercase tracking-wide"
                   style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                 >
-                  {brand.name} — {t('brand.wholeMachines')}
+                  {brand.name} — Whole Machines
                 </h2>
                 <p className="text-sm mt-1" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  {t('brand.completeAvailable')}
+                  Complete machines available for export. Contact us for pricing and availability.
                 </p>
               </div>
 
@@ -259,10 +199,10 @@ export default function BrandPage() {
                       />
                       {/* Model badge */}
                       <div
-                        className="text-xs font-semibold uppercase tracking-wider mb-2"
-                        style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
+                        className="absolute top-3 left-3 px-2 py-1 text-white text-xs font-bold uppercase tracking-wider"
+                        style={{ background: brand.color, fontFamily: 'var(--font-display)' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongMachineType(machine.name, language) : machine.name}
+                        {machine.model}
                       </div>
                     </div>
 
@@ -271,10 +211,10 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-base mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineTitle(`SANY ${machine.model}`, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineType(machine.name, language) : `${brand.name} ${machine.model}`}
+                        {brand.name} {machine.model}
                       </h3>
                       <p className="text-sm font-semibold mb-2" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                        {brand.id === 'caterpillar' ? getTranslatedCATMachineType(machine.name, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineType(machine.name, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineType(machine.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongMachineType(machine.name, language) : machine.name}
+                        {machine.name}
                       </p>
 
                       {/* Specs */}
@@ -287,20 +227,12 @@ export default function BrandPage() {
                           borderLeft: '2px solid oklch(0.68 0.18 42)',
                         }}
                       >
-                        {brand.id === 'caterpillar' ? getTranslatedCATMachineSpecs(machine.model, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineSpecs(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineSpecs(machine.model, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineSpecs(machine.specs, language) : machine.specs}
+                        {machine.specs}
                       </div>
 
-                      {brand.id === 'caterpillar' || brand.id === 'shantui' || brand.id === 'sany' || brand.id === 'xcmg' || brand.id === 'liugong' ? (
-                        <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                          {brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineDescription(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineDescription(machine.model, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineDescription(machine.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongMachineDescription(machine.description, language) : null}
-                        </p>
-                      ) : (
-                        <MachineDescriptionTranslator
-                          description={translateMachineDescriptionPartial(machine.description)}
-                          className="text-sm leading-relaxed mb-4"
-                          style={{ color: 'oklch(0.45 0.02 265)' }}
-                        />
-                      )}
+                      <p className="text-xs leading-relaxed mb-4" style={{ color: 'oklch(0.5 0.02 265)' }}>
+                        {machine.description}
+                      </p>
 
                       <button
                         onClick={() => openInquiry({ model: machine.model, name: machine.name, specs: machine.specs, type: 'machine' })}
@@ -308,7 +240,7 @@ export default function BrandPage() {
                         style={{ background: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
                       >
                         <MessageSquare size={12} />
-                        {t('brand.quickInquiry')}
+                        Quick Inquiry
                       </button>
                     </div>
                   </div>
@@ -320,50 +252,59 @@ export default function BrandPage() {
           {/* Spare Parts Tab */}
           {activeTab === 'parts' && (
             <div>
-              <div className="mb-6">
-                <h2
-                  className="text-2xl font-bold uppercase tracking-wide mb-2"
-                  style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
-                >
-                  {brand.name} — {t('brand.spareParts')}
-                </h2>
-                <p className="text-sm mb-4" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                  {t('brand.wearParts')}
-                </p>
-              </div>
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                  <h2
+                    className="text-2xl font-bold uppercase tracking-wide"
+                    style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
+                  >
+                    {brand.name} — Spare Parts
+                  </h2>
+                  <p className="text-sm mt-1" style={{ color: 'oklch(0.5 0.02 265)' }}>
+                    Wear parts and components with OEM part numbers. Contact us for pricing.
+                  </p>
+                </div>
 
-              {/* Enhanced Category Filter */}
-              <CategoryFilter
-                parts={brand.spareParts}
-                selectedCategories={selectedCategories}
-                onCategoryChange={setSelectedCategories}
-              />
+                {/* Category filter */}
+                <div className="flex flex-wrap gap-2">
+                  {categories.map(cat => (
+                    <button
+                      key={cat}
+                      onClick={() => setSelectedCategory(cat)}
+                      className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-all"
+                      style={{
+                        fontFamily: 'var(--font-display)',
+                        background: selectedCategory === cat ? 'oklch(0.68 0.18 42)' : 'white',
+                        color: selectedCategory === cat ? 'white' : 'oklch(0.45 0.02 265)',
+                        border: `1px solid ${selectedCategory === cat ? 'oklch(0.68 0.18 42)' : 'oklch(0.88 0.008 90)'}`,
+                      }}
+                    >
+                      {cat}
+                    </button>
+                  ))}
+                </div>
+              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {filteredParts.map((part, idx) => (
                   <div
                     key={part.id}
-                    id={`part-${part.id}`}
-                    className={`product-card animate-fade-in-up overflow-hidden ${
-                      highlightedPartId === part.id
-                        ? 'bg-orange-50 ring-2 ring-orange-400'
-                        : 'bg-white'
-                    }`}
+                    className="product-card animate-fade-in-up bg-white overflow-hidden"
                     style={{ animationDelay: `${idx * 0.05}s` }}
                   >
                     {/* Part image */}
-                    <div className="relative h-40 overflow-hidden bg-gray-50 cursor-pointer hover:opacity-90 transition-opacity" onClick={() => { setSelectedPart(part); setPartDetailOpen(true); }}>
+                    <div className="relative h-40 overflow-hidden bg-gray-50">
                       <img
-                        src={part.image}
+                        src={PARTS_IMG}
                         alt={part.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover opacity-70"
                       />
                       {/* Category badge */}
                       <div
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSanySparePartCategory(part.category, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brand.id === 'komatsu' ? getTranslatedKomatsuSparePartCategory(part.category, language) : brand.id === 'shacman' ? getTranslatedShacmanSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                        {part.category}
                       </div>
                     </div>
 
@@ -383,40 +324,25 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-sm mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartName(part.name, language) : brand.id === 'sany' ? getTranslatedSanySparePartName(part.name, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartName(part.name, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartName(part.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartName(part.name, language) : brand.id === 'komatsu' ? getTranslatedKomatsuSparePartName(part.name, language) : brand.id === 'shacman' ? getTranslatedShacmanSparePartName(part.name, language) : translatePartName(part.name)}
+                        {part.name}
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.name, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.name, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.name, language) : brand.id === 'komatsu' ? getTranslatedKomatsuSparePartDescription(part.name, language) : brand.id === 'shacman' ? getTranslatedShacmanSparePartDescription(part.name, language) : translateDescription(part.description)}
+                        {part.description}
                       </p>
 
-                      <div className="flex gap-2">
-                        <button
-                          onClick={() => { setSelectedPart(part); setPartDetailOpen(true); }}
-                          className="flex-1 flex items-center justify-center gap-1.5 py-2 text-xs font-bold uppercase tracking-wider transition-all hover:opacity-90"
-                          style={{
-                            background: brand.color,
-                            color: 'white',
-                            fontFamily: 'var(--font-display)',
-                          }}
-                        >
-                          <Wrench size={11} />
-                          {language === 'zh' ? '查看详情' : language === 'en' ? 'View Details' : language === 'es' ? 'Ver detalles' : language === 'ar' ? 'عرض التفاصيل' : language === 'ru' ? 'Просмотр деталей' : language === 'fr' ? 'Voir les détails' : language === 'pt' ? 'Ver detalhes' : 'Visualizza dettagli'}
-                        </button>
-                        <button
-                          onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
-                          className="flex-1 flex items-center justify-center gap-1.5 py-2 text-xs font-bold uppercase tracking-wider transition-all hover:opacity-90"
-                          style={{
-                            background: 'oklch(0.18 0.04 265)',
-                            color: 'white',
-                            fontFamily: 'var(--font-display)',
-                          }}
-                        >
-                          <MessageSquare size={11} />
-                          {language === 'zh' ? '询价' : language === 'en' ? 'Inquiry' : language === 'es' ? 'Consulta' : language === 'ar' ? 'استفسار' : language === 'ru' ? 'Запрос' : language === 'fr' ? 'Demande' : language === 'pt' ? 'Consulta' : 'Richiesta'}
-                        </button>
-                        <ComparisonButton part={part} brandColor={brand.color} />
-                      </div>
+                      <button
+                        onClick={() => openInquiry({ model: part.partNumber, name: part.name, type: 'spare-part' })}
+                        className="flex items-center justify-center gap-1.5 w-full py-2 text-xs font-bold uppercase tracking-wider transition-all hover:opacity-90"
+                        style={{
+                          background: 'oklch(0.18 0.04 265)',
+                          color: 'white',
+                          fontFamily: 'var(--font-display)',
+                        }}
+                      >
+                        <MessageSquare size={11} />
+                        Quick Inquiry
+                      </button>
                     </div>
                   </div>
                 ))}
@@ -475,17 +401,7 @@ export default function BrandPage() {
           productInfo={selectedProduct}
         />
       )}
-      <SparePartDetailModal
-        part={selectedPart}
-        isOpen={partDetailOpen}
-        onClose={() => handlePartDetailClose()}
-        onInquiry={(part) => {
-          setSelectedProduct({ model: part.partNumber, name: part.name, type: 'spare-part' });
-          setInquiryDialogOpen(true);
-        }}
-        brandName={brand.name}
-        brandColor={brand.color}
-      />
+
       <Footer />
     </div>
   );

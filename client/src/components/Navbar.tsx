@@ -1,20 +1,14 @@
-/**
- * VXZO Navbar - Elegant Minimalist Design
- */
-
+// Design: Industrial Minimalism - Top navigation bar with navy background + orange accents
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
-import { Menu, X, Phone, MessageCircle, Globe, Search } from 'lucide-react';
+import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
-import { GlobalSearch } from './GlobalSearch';
-import { CONTACT_METHODS } from '@/data/contact';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [location] = useLocation();
   const { t } = useLanguage();
-  const [wechatCopied, setWechatCopied] = useState(false);
 
   const navLinks = [
     { href: '/', label: t('nav.home') },
@@ -24,141 +18,137 @@ export default function Navbar() {
     { href: '/contact', label: t('nav.contact') },
   ];
 
-  const handleWechatCopy = () => {
-    navigator.clipboard.writeText(CONTACT_METHODS.wechat.id);
-    setWechatCopied(true);
-    setTimeout(() => setWechatCopied(false), 2000);
-  };
-
-  const isActive = (href: string) => location === href;
-
   return (
     <>
-      {/* Top Info Bar - Premium */}
-      <div className="bg-charcoal border-b border-gray-800 m-0 p-0">
-        <div className="container flex items-center justify-between py-2.5 m-0 p-0">
-          <div className="flex items-center gap-8 text-xs">
-            <a
-              href={CONTACT_METHODS.whatsapp.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-400 hover:text-gold transition-colors"
-            >
-              <Phone size={14} />
-              <span>WhatsApp: {CONTACT_METHODS.whatsapp.phone}</span>
+      {/* Top info bar */}
+      <div className="hidden md:block" style={{ background: 'oklch(0.14 0.04 265)', borderBottom: '1px solid oklch(0.22 0.04 265)' }}>
+        <div className="container flex items-center justify-between py-1.5">
+          <div className="flex items-center gap-6 text-xs" style={{ color: 'oklch(0.7 0.02 265)', fontFamily: 'var(--font-body)' }}>
+            <a href="https://wa.me/224622497604?text=Hello%20VXZO" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
+              <Phone size={12} />
+              WhatsApp: +224 622 497 604
             </a>
-            <button
-              onClick={handleWechatCopy}
-              className="flex items-center gap-2 text-gray-400 hover:text-gold transition-colors cursor-pointer"
-              title="Click to copy WeChat ID"
-            >
-              <MessageCircle size={14} />
-              <span>
-                WeChat: {CONTACT_METHODS.wechat.id} {wechatCopied && <span className="text-gold ml-1">✓</span>}
-              </span>
-            </button>
+            <a href="https://wa.me/224622497604?text=Hello%20VXZO" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
+              <Mail size={12} />
+              Contact via WhatsApp
+            </a>
           </div>
-          <div className="flex items-center gap-2 text-xs text-gray-400">
-            <Globe size={14} />
-            <span>Global Export • Worldwide Shipping</span>
+          <div className="flex items-center gap-1.5 text-xs" style={{ color: 'oklch(0.7 0.02 265)' }}>
+            <Globe size={12} />
+            <span>Global Export | Worldwide Shipping</span>
           </div>
         </div>
       </div>
 
-      {/* Main Navbar */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+      {/* Main navbar */}
+      <nav
+        className="sticky top-0 z-50 shadow-lg"
+        style={{ background: 'oklch(0.18 0.04 265)' }}
+      >
         <div className="container flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-lg font-bold text-white text-base shadow-md group-hover:shadow-lg transition-shadow">
-              VXZO
+            <div
+              className="flex items-center justify-center w-10 h-10 font-bold text-white text-sm"
+              style={{
+                background: 'oklch(0.68 0.18 42)',
+                fontFamily: 'var(--font-display)',
+                clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0 100%)',
+                paddingRight: '6px',
+                letterSpacing: '0.05em'
+              }}
+            >
+              GM
             </div>
-            <div className="hidden sm:block">
-              <div className="text-base font-bold text-charcoal leading-tight">VXZO</div>
-              <div className="text-xs text-gray-500">Global Machinery</div>
+            <div>
+              <div
+                className="text-white font-bold leading-none"
+                style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem', letterSpacing: '0.08em' }}
+              >
+                GLOBAL MACHINERY
+              </div>
+              <div
+                className="text-xs leading-none mt-0.5"
+                style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-body)', letterSpacing: '0.1em' }}
+              >
+                & PARTS TRADING
+              </div>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-1">
+            {navLinks.map((link) => {
+              const isActive = location === link.href || (link.href !== '/' && location.startsWith(link.href));
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="relative px-4 py-2 text-sm font-semibold uppercase tracking-wider transition-all duration-200"
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    color: isActive ? 'oklch(0.68 0.18 42)' : 'oklch(0.82 0.01 265)',
+                    letterSpacing: '0.08em',
+                    fontSize: '0.8rem',
+                  }}
+                >
+                  {isActive && (
+                    <span
+                      className="absolute bottom-0 left-0 right-0 h-0.5"
+                      style={{ background: 'oklch(0.68 0.18 42)' }}
+                    />
+                  )}
+                  <span className="hover:text-orange-400 transition-colors">{link.label}</span>
+                </Link>
+              );
+            })}
+            <Link
+              href="/contact"
+              className="ml-4 px-5 py-2 text-sm font-bold uppercase tracking-wider text-white transition-all duration-200 hover:opacity-90"
+              style={{
+                background: 'oklch(0.68 0.18 42)',
+                fontFamily: 'var(--font-display)',
+                letterSpacing: '0.08em',
+                fontSize: '0.8rem',
+              }}
+            >
+              {t('nav.getQuote')}
+            </Link>
+            <div className="ml-3 pl-3 border-l" style={{ borderColor: 'oklch(0.3 0.04 265)' }}>
+              <LanguageSwitcher />
+            </div>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden p-2 text-white"
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile menu */}
+        {mobileOpen && (
+          <div style={{ background: 'oklch(0.15 0.04 265)', borderTop: '1px solid oklch(0.25 0.04 265)' }}>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  isActive(link.href)
-                    ? 'text-gold border-b-2 border-gold pb-0.5'
-                    : 'text-charcoal hover:text-gold'
-                }`}
+                className="block px-6 py-3 text-sm font-semibold uppercase tracking-wider border-b"
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  color: 'oklch(0.82 0.01 265)',
+                  borderColor: 'oklch(0.22 0.04 265)',
+                  letterSpacing: '0.08em',
+                }}
+                onClick={() => setMobileOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
-          </div>
-
-          {/* Right Section */}
-          <div className="flex items-center gap-4">
-            {/* Search */}
-            <div className="hidden md:block">
-              <GlobalSearch />
-            </div>
-
-            {/* Language Switcher */}
-            <LanguageSwitcher />
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-charcoal hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Navigation */}
-        {mobileOpen && (
-          <div className="lg:hidden border-t border-gray-200 bg-white">
-            <div className="container py-4 space-y-3">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={`block px-4 py-2 rounded-lg transition-colors ${
-                    isActive(link.href)
-                      ? 'bg-gold/10 text-gold font-medium'
-                      : 'text-charcoal hover:bg-gray-100'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-
-              {/* Mobile Search */}
-              <div className="px-4 py-2">
-                <GlobalSearch />
-              </div>
-
-              {/* Mobile Contact Info */}
-              <div className="px-4 py-3 border-t border-gray-200 space-y-2 text-sm">
-                <a
-                  href={CONTACT_METHODS.whatsapp.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-charcoal hover:text-gold transition-colors"
-                >
-                  <Phone size={16} />
-                  <span>WhatsApp</span>
-                </a>
-                <button
-                  onClick={handleWechatCopy}
-                  className="flex items-center gap-2 text-charcoal hover:text-gold transition-colors w-full"
-                >
-                  <MessageCircle size={16} />
-                  <span>WeChat {wechatCopied && <span className="text-gold ml-1">✓</span>}</span>
-                </button>
-              </div>
+            <div className="px-6 py-3 border-t" style={{ borderColor: 'oklch(0.22 0.04 265)' }}>
+              <LanguageSwitcher />
             </div>
           </div>
         )}
