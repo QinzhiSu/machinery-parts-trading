@@ -1,0 +1,31 @@
+// Auto-generated file for XCMG spare parts
+// DO NOT EDIT MANUALLY
+
+export const xcmgSpareParts = [
+  { id: 'xcmg-sp-1', partNumber: '860115046', name: 'Hydraulic Oil Filter', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-2', partNumber: '860117355', name: 'Air Filter', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-3', partNumber: '803164329 (SH60472)', name: 'Hydraulic Return Oil Filter', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-4', partNumber: '860130116 / 860130117', name: 'Air Filter套装(内外芯)', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-5', partNumber: '803164591', name: 'Hydraulic Oil Filter(变体)', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-6', partNumber: '860133763', name: 'Oil Filter', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-7', partNumber: '803086817', name: 'Air Filter(ZL50)', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-8', partNumber: '803300971', name: 'Oil Filter(带锁止阀)', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-9', partNumber: '803164216', name: 'Hydraulic Oil Filter(型号2)', description: "", image: '', category: 'Maintenance/Filtration System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-10', partNumber: 'WG1371E1 / 250100117', name: '水温传感器', description: "", image: '', category: '电气/传感器', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-11', partNumber: '252101813', name: '铲斗斗齿', description: "", image: '', category: '挖掘属性/GET', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-12', partNumber: '252101812', name: '右侧斗齿', description: "", image: '', category: '挖掘属性/GET', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-13', partNumber: '252101811', name: '左侧斗齿', description: "", image: '', category: '挖掘属性/GET', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-14', partNumber: '252109213 (Z5G.8.1XI.1-3)', name: '斗齿座(Tooth Holder)', description: "", image: '', category: '挖掘属性/GET', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-15', partNumber: '272200753 (2BS315A) / 272200259', name: '变速箱总成(带变矩器)', description: "", image: '', category: '传动/变速系统', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-16', partNumber: '250200147 (ZL40.6.18A)', name: '变速箱控制阀(变速阀)', description: "", image: '', category: '传动/变速系统', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-17', partNumber: '2BS315.30.3-1 / 272200124 / 272200549', name: '变速箱倒挡活塞', description: "", image: '', category: '传动/变速系统', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-18', partNumber: '860115193 / 75201275', name: '驱动桥半轴齿轮(差速器齿轮)', description: "", image: '', category: '传动/变速系统', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-19', partNumber: '803013093 (P7260-100/10) / 1151412009', name: '工作液压泵', description: "", image: '', category: '液压系统', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-20', partNumber: '275100191', name: '刹车片(SOMA制动衬片)', description: "", image: '', category: 'Braking System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-21', partNumber: '275101789', name: '制动盘(刹车盘)', description: "", image: '', category: 'Braking System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-22', partNumber: '252115198', name: '手刹阀', description: "", image: '', category: 'Braking System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-23', partNumber: '250200519 (ZL40A.13A.1)', name: '手刹鼓(制动鼓)', description: "", image: '', category: 'Braking System', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-24', partNumber: '803164070', name: '唇形油封', description: "", image: '', category: '密封/传动件', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-25', partNumber: '860117405', name: '万向节联轴器', description: "", image: '', category: '密封/传动件', compatibleModels: ["XCMG"] },
+  { id: 'xcmg-sp-26', partNumber: '5000140', name: '溢流阀(继动阀)', description: "", image: '', category: '液压系统', compatibleModels: ["XCMG"] },
+];

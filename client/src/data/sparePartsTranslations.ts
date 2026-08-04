@@ -1166,3 +1166,4 @@ export function getTranslatedLiuGongSparePartCategory(category: string, language
   if (!translations) return category;
   return translations[language] || translations['en'] || category;
 }
+
