@@ -623,3 +623,82 @@ export function getTranslatedShacmanSparePartDescription(description: string, la
   }
   return description;
 }
+
+// Toyota spare part name translations
+const toyotaSparePartNameTranslations: Record<string, Record<string, string>> = {
+  'Oil Filter': { en: 'Oil Filter', zh: '油滤芯', es: 'Filtro de aceite', ar: 'فلتر الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
+  '空气滤芯': { en: 'Air Filter', zh: '空气滤芯', es: 'Filtro de aire', ar: 'فلتر الهواء', ru: 'Воздушный фильтр', fr: 'Filtre à air', pt: 'Filtro de ar', it: 'Filtro aria' },
+  '柴油滤芯(前置)': { en: 'Diesel Filter (Front)', zh: '柴油滤芯(前置)', es: 'Filtro de diésel (frontal)', ar: 'فلتر الديزل (أمامي)', ru: 'Дизельный фильтр (передний)', fr: 'Filtre diesel (avant)', pt: 'Filtro diesel (frontal)', it: 'Filtro diesel (anteriore)' },
+  '空调/花粉滤芯': { en: 'AC/Pollen Filter', zh: '空调/花粉滤芯', es: 'Filtro de aire acondicionado/polen', ar: 'فلتر تكييف الهواء/حبوب اللقاح', ru: 'Фильтр кондиционера/пыльцы', fr: 'Filtre climatisation/pollen', pt: 'Filtro ar condicionado/pólen', it: 'Filtro aria condizionata/polline' },
+  '火花塞': { en: 'Spark Plug', zh: '火花塞', es: 'Bujía', ar: 'شمعة الإشعال', ru: 'Свеча зажигания', fr: 'Bougie d\'allumage', pt: 'Vela de ignição', it: 'Candela di accensione' },
+  '冷却液': { en: 'Coolant', zh: '冷却液', es: 'Refrigerante', ar: 'سائل التبريد', ru: 'Охлаждающая жидкость', fr: 'Liquide de refroidissement', pt: 'Líquido de arrefecimento', it: 'Liquido refrigerante' },
+  '制动液': { en: 'Brake Fluid', zh: '制动液', es: 'Líquido de frenos', ar: 'سائل الفرامل', ru: 'Тормозная жидкость', fr: 'Liquide de frein', pt: 'Líquido de freio', it: 'Liquido freni' },
+  '变速箱油': { en: 'Transmission Fluid', zh: '变速箱油', es: 'Aceite de transmisión', ar: 'زيت ناقل الحركة', ru: 'Трансмиссионное масло', fr: 'Huile de transmission', pt: 'Óleo de transmissão', it: 'Olio trasmissione' },
+  '差速器油': { en: 'Differential Oil', zh: '差速器油', es: 'Aceite diferencial', ar: 'زيت التفاضل', ru: 'Масло дифференциала', fr: 'Huile différentiel', pt: 'Óleo diferencial', it: 'Olio differenziale' },
+  '制动片': { en: 'Brake Pads', zh: '制动片', es: 'Pastillas de freno', ar: 'وسادات الفرامل', ru: 'Тормозные колодки', fr: 'Plaquettes de frein', pt: 'Pastilhas de freio', it: 'Pastiglie freno' },
+  '制动盘': { en: 'Brake Disc', zh: '制动盘', es: 'Disco de freno', ar: 'قرص الفرامل', ru: 'Тормозной диск', fr: 'Disque de frein', pt: 'Disco de freio', it: 'Disco freno' },
+  '制动鼓': { en: 'Brake Drum', zh: '制动鼓', es: 'Tambor de freno', ar: 'أسطوانة الفرامل', ru: 'Тормозной барабан', fr: 'Tambour de frein', pt: 'Tambor de freio', it: 'Tamburo freno' },
+  '悬挂减震器': { en: 'Shock Absorber', zh: '悬挂减震器', es: 'Amortiguador', ar: 'ممتص الصدمات', ru: 'Амортизатор', fr: 'Amortisseur', pt: 'Amortecedor', it: 'Ammortizzatore' },
+  '弹簧': { en: 'Spring', zh: '弹簧', es: 'Resorte', ar: 'نابض', ru: 'Пружина', fr: 'Ressort', pt: 'Mola', it: 'Molla' },
+  '转向球头': { en: 'Steering Ball Joint', zh: '转向球头', es: 'Rótula de dirección', ar: 'كرة التوجيه', ru: 'Шаровой шарнир рулевой тяги', fr: 'Rotule de direction', pt: 'Rótula de direção', it: 'Sfera dello sterzo' },
+  '转向拉杆': { en: 'Steering Tie Rod', zh: '转向拉杆', es: 'Barra de acoplamiento', ar: 'قضيب التوجيه', ru: 'Рулевая тяга', fr: 'Barre d\'accouplement', pt: 'Barra de acoplamento', it: 'Barra di accoppiamento' },
+  '轮毂轴承': { en: 'Wheel Hub Bearing', zh: '轮毂轴承', es: 'Rodamiento del cubo de rueda', ar: 'محمل محور العجلة', ru: 'Подшипник ступицы колеса', fr: 'Roulement moyeu de roue', pt: 'Rolamento cubo de roda', it: 'Cuscinetto mozzo ruota' },
+  '传动轴': { en: 'Drive Shaft', zh: '传动轴', es: 'Eje de transmisión', ar: 'عمود الدفع', ru: 'Карданный вал', fr: 'Arbre de transmission', pt: 'Eixo de transmissão', it: 'Albero di trasmissione' },
+  '万向节': { en: 'Universal Joint', zh: '万向节', es: 'Junta universal', ar: 'مفصل عام', ru: 'Карданный шарнир', fr: 'Joint universel', pt: 'Junta universal', it: 'Giunto cardanico' },
+  '皮带': { en: 'Belt', zh: '皮带', es: 'Correa', ar: 'حزام', ru: 'Ремень', fr: 'Courroie', pt: 'Correia', it: 'Cinghia' },
+  '皮带轮': { en: 'Pulley', zh: '皮带轮', es: 'Polea', ar: 'بكرة', ru: 'Шкив', fr: 'Poulie', pt: 'Polia', it: 'Puleggia' },
+  '发电机': { en: 'Alternator', zh: '发电机', es: 'Alternador', ar: 'مولد كهربائي', ru: 'Генератор', fr: 'Alternateur', pt: 'Alternador', it: 'Alternatore' },
+  '起动马达': { en: 'Starter Motor', zh: '起动马达', es: 'Motor de arranque', ar: 'محرك البدء', ru: 'Стартер', fr: 'Moteur de démarrage', pt: 'Motor de partida', it: 'Motore di avviamento' },
+  '水泵': { en: 'Water Pump', zh: '水泵', es: 'Bomba de agua', ar: 'مضخة المياه', ru: 'Водяной насос', fr: 'Pompe à eau', pt: 'Bomba de água', it: 'Pompa acqua' },
+  '节温器': { en: 'Thermostat', zh: '节温器', es: 'Termostato', ar: 'منظم الحرارة', ru: 'Термостат', fr: 'Thermostat', pt: 'Termostato', it: 'Termostato' },
+  '散热器': { en: 'Radiator', zh: '散热器', es: 'Radiador', ar: 'مشعاع', ru: 'Радиатор', fr: 'Radiateur', pt: 'Radiador', it: 'Radiatore' },
+  '风扇': { en: 'Fan', zh: '风扇', es: 'Ventilador', ar: 'مروحة', ru: 'Вентилятор', fr: 'Ventilateur', pt: 'Ventilador', it: 'Ventilatore' },
+  '电池': { en: 'Battery', zh: '电池', es: 'Batería', ar: 'بطارية', ru: 'Аккумулятор', fr: 'Batterie', pt: 'Bateria', it: 'Batteria' },
+  '雨刮片': { en: 'Wiper Blade', zh: '雨刮片', es: 'Hoja de limpiaparabrisas', ar: 'شفرة ممسحة الزجاج', ru: 'Щетка стеклоочистителя', fr: 'Balai d\'essuie-glace', pt: 'Lâmina limpador', it: 'Pala tergicristallo' },
+  '灯泡': { en: 'Light Bulb', zh: '灯泡', es: 'Bombilla', ar: 'لمبة', ru: 'Лампочка', fr: 'Ampoule', pt: 'Lâmpada', it: 'Lampadina' },
+  '传感器': { en: 'Sensor', zh: '传感器', es: 'Sensor', ar: 'مستشعر', ru: 'Датчик', fr: 'Capteur', pt: 'Sensor', it: 'Sensore' },
+};
+
+// Toyota spare part category translations
+const toyotaSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  '保养/滤清系统': { en: 'Maintenance/Filtration System', zh: '保养/滤清系统', es: 'Sistema de mantenimiento/filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema manutenção/filtração', it: 'Sistema manutenzione/filtrazione' },
+  '冷却系统': { en: 'Cooling System', zh: '冷却系统', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
+  '制动系统': { en: 'Brake System', zh: '制动系统', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de freios', it: 'Sistema frenante' },
+  '悬挂系统': { en: 'Suspension System', zh: '悬挂系统', es: 'Sistema de suspensión', ar: 'نظام التعليق', ru: 'Система подвески', fr: 'Système de suspension', pt: 'Sistema de suspensão', it: 'Sistema di sospensione' },
+  '转向系统': { en: 'Steering System', zh: '转向系统', es: 'Sistema de dirección', ar: 'نظام التوجيه', ru: 'Система рулевого управления', fr: 'Système de direction', pt: 'Sistema de direção', it: 'Sistema di sterzo' },
+  '轮毂/传动轴': { en: 'Wheel Hub/Drive Shaft', zh: '轮毂/传动轴', es: 'Cubo de rueda/eje de transmisión', ar: 'محور العجلة/عمود الدفع', ru: 'Ступица колеса/карданный вал', fr: 'Moyeu de roue/arbre de transmission', pt: 'Cubo de roda/eixo de transmissão', it: 'Mozzo ruota/albero di trasmissione' },
+  '传动/皮带': { en: 'Transmission/Belt', zh: '传动/皮带', es: 'Transmisión/correa', ar: 'ناقل الحركة/حزام', ru: 'Передача/ремень', fr: 'Transmission/courroie', pt: 'Transmissão/correia', it: 'Trasmissione/cinghia' },
+  '差速器/传动': { en: 'Differential/Transmission', zh: '差速器/传动', es: 'Diferencial/transmisión', ar: 'التفاضل/ناقل الحركة', ru: 'Дифференциал/передача', fr: 'Différentiel/transmission', pt: 'Diferencial/transmissão', it: 'Differenziale/trasmissione' },
+};
+
+// Toyota spare part description translations
+const toyotaSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Toyota Hilux 零件。5,000-10,000km随保养更换': { en: 'Toyota Hilux part. Replace every 5,000-10,000km during maintenance.', zh: 'Toyota Hilux 零件。5,000-10,000km随保养更换', es: 'Pieza Toyota Hilux. Reemplazar cada 5,000-10,000km durante el mantenimiento.', ar: 'قطعة Toyota Hilux. استبدل كل 5,000-10,000 كم أثناء الصيانة.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 5000-10000 км при обслуживании.', fr: 'Pièce Toyota Hilux. Remplacer tous les 5000-10000 km lors de l\'entretien.', pt: 'Peça Toyota Hilux. Substituir a cada 5.000-10.000 km durante a manutenção.', it: 'Pezzo Toyota Hilux. Sostituire ogni 5.000-10.000 km durante la manutenzione.' },
+  'Toyota Hilux 零件。10,000-20,000km或视路况': { en: 'Toyota Hilux part. Replace every 10,000-20,000km or based on road conditions.', zh: 'Toyota Hilux 零件。10,000-20,000km或视路况', es: 'Pieza Toyota Hilux. Reemplazar cada 10,000-20,000km o según las condiciones de la carretera.', ar: 'قطعة Toyota Hilux. استبدل كل 10,000-20,000 كم أو بناءً على ظروف الطريق.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 10000-20000 км или в зависимости от условий дороги.', fr: 'Pièce Toyota Hilux. Remplacer tous les 10000-20000 km ou selon les conditions de la route.', pt: 'Peça Toyota Hilux. Substituir a cada 10.000-20.000 km ou com base nas condições da estrada.', it: 'Pezzo Toyota Hilux. Sostituire ogni 10.000-20.000 km o in base alle condizioni stradali.' },
+  'Toyota Hilux 零件。每20,000km,柴油车关键件': { en: 'Toyota Hilux part. Replace every 20,000km, critical for diesel vehicles.', zh: 'Toyota Hilux 零件。每20,000km,柴油车关键件', es: 'Pieza Toyota Hilux. Reemplazar cada 20,000km, crítico para vehículos diésel.', ar: 'قطعة Toyota Hilux. استبدل كل 20,000 كم، حرج للمركبات ذات الديزل.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 20000 км, критично для дизельных автомобилей.', fr: 'Pièce Toyota Hilux. Remplacer tous les 20000 km, critique pour les véhicules diesel.', pt: 'Peça Toyota Hilux. Substituir a cada 20.000 km, crítico para veículos diesel.', it: 'Pezzo Toyota Hilux. Sostituire ogni 20.000 km, critico per i veicoli diesel.' },
+  'Toyota Hilux 零件。10,000-15,000km': { en: 'Toyota Hilux part. Replace every 10,000-15,000km.', zh: 'Toyota Hilux 零件。10,000-15,000km', es: 'Pieza Toyota Hilux. Reemplazar cada 10,000-15,000km.', ar: 'قطعة Toyota Hilux. استبدل كل 10,000-15,000 كم.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 10000-15000 км.', fr: 'Pièce Toyota Hilux. Remplacer tous les 10000-15000 km.', pt: 'Peça Toyota Hilux. Substituir a cada 10.000-15.000 km.', it: 'Pezzo Toyota Hilux. Sostituire ogni 10.000-15.000 km.' },
+};
+
+export function getTranslatedToyotaSparePartName(name: string, language: string): string {
+  const translations = toyotaSparePartNameTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}
+
+export function getTranslatedToyotaSparePartCategory(category: string, language: string): string {
+  const translations = toyotaSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
+
+export function getTranslatedToyotaSparePartDescription(description: string, language: string): string {
+  const translations = toyotaSparePartDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return description;
+}
