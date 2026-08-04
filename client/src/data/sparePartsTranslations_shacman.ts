@@ -465,8 +465,8 @@ export const shacmanNameTranslations = {
 };
 
 export function getTranslatedShacmanSparePartName(name: string, language: string = 'zh'): string {
-  const translations = shacmanNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = shacmanNameTranslations[name as keyof typeof shacmanNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const shacmanDescriptionTranslations: Record<string, Record<string, string>> = {

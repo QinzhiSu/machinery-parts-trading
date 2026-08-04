@@ -275,8 +275,8 @@ export const sanyNameTranslations = {
 };
 
 export function getTranslatedSanySparePartName(name: string, language: string = 'zh'): string {
-  const translations = sanyNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = sanyNameTranslations[name as keyof typeof sanyNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const sanyDescriptionTranslations: Record<string, Record<string, string>> = {

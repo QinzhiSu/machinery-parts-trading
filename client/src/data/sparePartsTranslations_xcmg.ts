@@ -335,8 +335,8 @@ export const xcmgNameTranslations = {
 };
 
 export function getTranslatedXcmgSparePartName(name: string, language: string = 'zh'): string {
-  const translations = xcmgNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = xcmgNameTranslations[name as keyof typeof xcmgNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const xcmgDescriptionTranslations: Record<string, Record<string, string>> = {

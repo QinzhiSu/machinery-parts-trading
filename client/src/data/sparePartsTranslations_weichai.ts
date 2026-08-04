@@ -395,8 +395,8 @@ export const weichaiNameTranslations = {
 };
 
 export function getTranslatedWeichaiSparePartName(name: string, language: string = 'zh'): string {
-  const translations = weichaiNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = weichaiNameTranslations[name as keyof typeof weichaiNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const weichaiDescriptionTranslations: Record<string, Record<string, string>> = {

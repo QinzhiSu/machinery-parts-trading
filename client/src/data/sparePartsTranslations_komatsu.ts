@@ -275,8 +275,8 @@ export const komatsuNameTranslations = {
 };
 
 export function getTranslatedKomatsuSparePartName(name: string, language: string = 'zh'): string {
-  const translations = komatsuNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = komatsuNameTranslations[name as keyof typeof komatsuNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const komatsuDescriptionTranslations: Record<string, Record<string, string>> = {

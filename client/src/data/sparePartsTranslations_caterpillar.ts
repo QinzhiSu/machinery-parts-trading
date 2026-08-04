@@ -485,8 +485,8 @@ export const caterpillarNameTranslations = {
 };
 
 export function getTranslatedCaterpillarSparePartName(name: string, language: string = 'zh'): string {
-  const translations = caterpillarNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = caterpillarNameTranslations[name as keyof typeof caterpillarNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const caterpillarDescriptionTranslations: Record<string, Record<string, string>> = {

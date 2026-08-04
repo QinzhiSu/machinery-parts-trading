@@ -435,8 +435,8 @@ export const isuzuNameTranslations = {
 };
 
 export function getTranslatedIsuzuSparePartName(name: string, language: string = 'zh'): string {
-  const translations = isuzuNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = isuzuNameTranslations[name as keyof typeof isuzuNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const isuzuDescriptionTranslations: Record<string, Record<string, string>> = {

@@ -345,8 +345,8 @@ export const cumminsNameTranslations = {
 };
 
 export function getTranslatedCumminsSparePartName(name: string, language: string = 'zh'): string {
-  const translations = cumminsNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = cumminsNameTranslations[name as keyof typeof cumminsNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const cumminsDescriptionTranslations: Record<string, Record<string, string>> = {

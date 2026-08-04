@@ -505,8 +505,8 @@ export const shantuiNameTranslations = {
 };
 
 export function getTranslatedShantuiSparePartName(name: string, language: string = 'zh'): string {
-  const translations = shantuiNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = shantuiNameTranslations[name as keyof typeof shantuiNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const shantuiDescriptionTranslations: Record<string, Record<string, string>> = {

@@ -595,8 +595,8 @@ export const sinotrukNameTranslations = {
 };
 
 export function getTranslatedSinotrukSparePartName(name: string, language: string = 'zh'): string {
-  const translations = sinotrukNameTranslations[name];
-  return translations?.[language] || name;
+  const translations = sinotrukNameTranslations[name as keyof typeof sinotrukNameTranslations];
+  return translations?.[language as keyof typeof translations] || name;
 }
 
 export const sinotrukDescriptionTranslations: Record<string, Record<string, string>> = {
