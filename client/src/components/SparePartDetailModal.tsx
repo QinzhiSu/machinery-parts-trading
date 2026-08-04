@@ -11,7 +11,13 @@ import ReviewList from './ReviewList';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { getTranslatedPartDescription } from '@/data/partDescriptionTranslations';
 import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedCATSparePartCategory, getTranslatedCATSparePartName, getTranslatedCATSparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory } from '@/data/sparePartsTranslations';
-import { getTranslatedKomatsuSparePartDescription, getTranslatedIsuzuSparePartDescription, getTranslatedShacmanSparePartDescription, getTranslatedSinotrukSparePartDescription, getTranslatedToyotaSparePartDescription, getTranslatedCumminsSparePartDescription, getTranslatedWeichaiSparePartDescription } from '@/data/sparePartsTranslations';
+import { getTranslatedKomatsuSparePartDescription } from '@/data/sparePartsTranslations_komatsu';
+import { getTranslatedIsuzuSparePartDescription } from '@/data/sparePartsTranslations_isuzu';
+import { getTranslatedShacmanSparePartDescription } from '@/data/sparePartsTranslations_shacman';
+import { getTranslatedSinotrukSparePartDescription } from '@/data/sparePartsTranslations_sinotruk';
+import { getTranslatedToyotaSparePartDescription } from '@/data/sparePartsTranslations_toyota';
+import { getTranslatedCumminsSparePartDescription } from '@/data/sparePartsTranslations_cummins';
+import { getTranslatedWeichaiSparePartDescription } from '@/data/sparePartsTranslations_weichai';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
