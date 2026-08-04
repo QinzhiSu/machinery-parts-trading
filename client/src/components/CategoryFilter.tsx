@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { ChevronDown, X } from 'lucide-react';
 import { SparePart } from '@/data/products';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
+
 
 interface CategoryFilterProps {
   parts: SparePart[];
@@ -107,7 +107,7 @@ export default function CategoryFilter({
                     className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-full text-white"
                     style={{ background: 'oklch(0.68 0.18 42)' }}
                   >
-                    {getTranslatedSparePartCategory(cat, language || 'zh')}
+                    {cat}
                     <button
                       onClick={() => handleCategoryToggle(cat)}
                       className="hover:opacity-80 transition-opacity"
@@ -138,7 +138,7 @@ export default function CategoryFilter({
                     border: `1px solid ${isSelected ? 'oklch(0.68 0.18 42)' : 'oklch(0.88 0.008 90)'}`,
                   }}
                 >
-                  <span>{cat === 'All' ? (language === 'en' ? 'All' : language === 'es' ? 'Todos' : language === 'ar' ? 'الكل' : language === 'ru' ? 'Все' : language === 'fr' ? 'Tous' : language === 'pt' ? 'Todos' : 'Tutti') : getTranslatedSparePartCategory(cat, language || 'zh')}</span>
+                  <span>{cat === 'All' ? (language === 'en' ? 'All' : language === 'es' ? 'Todos' : language === 'ar' ? 'الكل' : language === 'ru' ? 'Все' : language === 'fr' ? 'Tous' : language === 'pt' ? 'Todos' : 'Tutti') : cat}</span>
                   <span
                     className="ml-2 px-1.5 py-0.5 rounded text-xs font-bold"
                     style={{

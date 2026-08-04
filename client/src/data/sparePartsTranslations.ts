@@ -272,3 +272,31 @@ export function getTranslatedLiuGongMachineDescription(description: string, lang
   }
   return description;
 }
+
+
+// Shantui spare part translations
+const shantuiSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  'Maintenance/Filtration System': { zh: '保养/滤清系统', en: 'Maintenance/Filtration System', es: 'Mantenimiento/Sistema de Filtración', ar: 'الصيانة/نظام التصفية', ru: 'Техническое обслуживание/Система фильтрации', fr: 'Entretien/Système de filtration', pt: 'Manutenção/Sistema de Filtração', it: 'Manutenzione/Sistema di filtrazione' },
+  'Chassis/Track System': { zh: '底盘/履带系统', en: 'Chassis/Track System', es: 'Chasis/Sistema de Orugas', ar: 'الهيكل/نظام المسارات', ru: 'Шасси/Система гусениц', fr: 'Châssis/Système de chenilles', pt: 'Chassis/Sistema de Esteiras', it: 'Telaio/Sistema di cingoli' },
+  'Hydraulic System': { zh: '液压系统', en: 'Hydraulic System', es: 'Sistema Hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema Hidráulico', it: 'Sistema idraulico' },
+};
+
+const shantuiSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Fuel Filter': { zh: 'Shantui零件。250-500小时随保养更换', en: 'Shantui part. Replace every 250-500 hours during maintenance.', es: 'Pieza Shantui. Reemplazar cada 250-500 horas durante el mantenimiento.', ar: 'قطعة Shantui. استبدل كل 250-500 ساعة أثناء الصيانة.', ru: 'Деталь Shantui. Заменяйте каждые 250-500 часов при техническом обслуживании.', fr: 'Pièce Shantui. Remplacer tous les 250-500 heures lors de l\'entretien.', pt: 'Peça Shantui. Substituir a cada 250-500 horas durante a manutenção.', it: 'Pezzo Shantui. Sostituire ogni 250-500 ore durante la manutenzione.' },
+};
+
+export function getTranslatedShantuiSparePartCategory(category: string, language: string): string {
+  const translations = shantuiSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
+
+export function getTranslatedShantuiSparePartDescription(name: string, language: string): string {
+  const translations = shantuiSparePartDescriptionTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}

@@ -14,7 +14,7 @@ import ComparisonButton from '@/components/ComparisonButton';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 import { getTranslatedDescription } from '@/data/descriptionTranslations';
-import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
+
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
 import { getTranslatedSanySparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineDescription } from '@/data/sparePartsTranslations';
@@ -355,7 +355,7 @@ export default function BrandPage() {
                     <div className="relative h-40 overflow-hidden bg-gray-50 cursor-pointer hover:opacity-90 transition-opacity" onClick={() => { setSelectedPart(part); setPartDetailOpen(true); }}>
                       <img
                         src={part.image}
-                        alt={getTranslatedSparePartName(part.name, language)}
+                        alt={part.name}
                         className="w-full h-full object-cover"
                       />
                       {/* Category badge */}
@@ -363,7 +363,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'sany' ? getTranslatedSparePartCategory(part.category, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                       </div>
                     </div>
 
@@ -387,7 +387,7 @@ export default function BrandPage() {
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.name, language) : getTranslatedSparePartDescription(part.description, language)}
+                        {brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.name, language) : translateDescription(part.description)}
                       </p>
 
                       <div className="flex gap-2">
