@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getTranslatedSparePartCategory, getTranslatedSparePartDescription, getTranslatedShantuiSparePartDescription, getTranslatedSparePartName } from '@/data/sparePartsTranslations';
+
 
 // Translation map for machine and spare part descriptions
 const machineDescriptionTranslations: Record<string, Record<string, string>> = {

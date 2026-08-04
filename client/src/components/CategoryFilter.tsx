@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { ChevronDown, X } from 'lucide-react';
 import { SparePart } from '@/data/products';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
+
 
 interface CategoryFilterProps {
   parts: SparePart[];

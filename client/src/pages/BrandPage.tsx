@@ -13,7 +13,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import ComparisonButton from '@/components/ComparisonButton';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { useMachineTranslations } from '@/hooks/useMachineTranslations';
-import { getTranslatedDescription } from '@/data/descriptionTranslations';
+
 
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
@@ -395,7 +395,7 @@ export default function BrandPage() {
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.description, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.description, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.description, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.description, language) : translatePartDescription(part.description)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.description, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.description, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.description, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.description, language) : translatePartCategory(part.description)}
                       </p>
 
                       <div className="flex gap-2">
