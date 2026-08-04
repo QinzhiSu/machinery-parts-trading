@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-
+import { getTranslatedSparePartCategory, getTranslatedSparePartDescription, getTranslatedShantuiSparePartDescription, getTranslatedSparePartName } from '@/data/sparePartsTranslations';
 
 // Translation map for machine and spare part descriptions
 const machineDescriptionTranslations: Record<string, Record<string, string>> = {
@@ -759,6 +759,18 @@ export function usePartTranslation() {
   };
 
   const translateDescription = (description: string): string => {
+    // First try to use Shantui-specific translations
+    const shantuiTranslated = getTranslatedShantuiSparePartDescription(description, language);
+    if (shantuiTranslated !== description) {
+      return shantuiTranslated;
+    }
+    
+    // Then try to use the comprehensive sparePartsTranslations
+    const translatedFromSparePartsTranslations = getTranslatedSparePartDescription(description, language);
+    if (translatedFromSparePartsTranslations !== description) {
+      return translatedFromSparePartsTranslations;
+    }
+    
     // Fallback to the local partDescriptionTranslations
     const translations = partDescriptionTranslations[description];
     
@@ -795,6 +807,11 @@ export function usePartTranslation() {
 
   const translatePartCategory = (category: string): string => {
     if (language === 'zh') return category;
+    // First try to use the comprehensive translation from sparePartsTranslations
+    const translated = getTranslatedSparePartCategory(category, language);
+    if (translated !== category) {
+      return translated;
+    }
     // Fallback to local categoryTranslations
     const translations = categoryTranslations[category];
     return translations ? (translations[language] || category) : category;
@@ -809,7 +826,11 @@ export function usePartTranslation() {
   const translatePartName = (name: string): string => {
     // Use sparePartsTranslations to translate part names for all languages
     console.log('[DEBUG translatePartName] Input:', { name, language });
-    console.log('[DEBUG translatePartName] Output:', { name, language });
+    const translated = getTranslatedSparePartName(name, language);
+    console.log('[DEBUG translatePartName] Output:', { name, translated, language });
+    if (translated !== name) {
+      return translated;
+    }
     return name;
   };
 
