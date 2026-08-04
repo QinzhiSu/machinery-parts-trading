@@ -1,9 +1,10 @@
 /* ============================================================
- * Design Philosophy: Industrial Minimalism
- * Colors: Deep Navy #1A1A2E + Engineering Orange #F97316
- * Background: Warm Gray #F5F5F0
- * Typography: Barlow Condensed (headings) + Source Sans 3 (body) + Roboto Mono (part numbers)
- * Layout: Asymmetric - left sidebar nav + right content
+ * VXZO - Global Machinery & Parts Trading
+ * Design Philosophy: Elegant Minimalism
+ * Colors: Deep Charcoal #1a1a1a + Soft Gold #d4af37 + Clean White
+ * Background: Pure White + Subtle Gray Accents
+ * Typography: Modern Sans-serif with refined hierarchy
+ * Layout: Clean, spacious, premium feel
  * ============================================================ */
 
 @import "tailwindcss";
@@ -49,190 +50,318 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Custom Industrial tokens */
-  --font-display: 'Barlow Condensed', sans-serif;
-  --font-body: 'Source Sans 3', sans-serif;
+  /* Custom Premium tokens */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+  --font-accent: 'Inter', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
 }
 
 :root {
-  --radius: 0.25rem;
+  --radius: 0.5rem;
 
-  /* Industrial color palette */
-  --navy: oklch(0.18 0.04 265);
-  --navy-light: oklch(0.22 0.04 265);
-  --orange: oklch(0.68 0.18 42);
-  --orange-dark: oklch(0.58 0.18 42);
-  --warm-gray: oklch(0.97 0.005 90);
-  --steel: oklch(0.45 0.02 265);
+  /* Low-Saturation Premium Color Palette */
+  --charcoal: oklch(0.15 0.01 265);
+  --charcoal-light: oklch(0.28 0.008 265);
+  --gold: oklch(0.68 0.08 70);
+  --gold-light: oklch(0.82 0.05 70);
+  --white: oklch(0.98 0.001 90);
+  --gray-50: oklch(0.97 0.002 90);
+  --gray-100: oklch(0.95 0.002 90);
+  --gray-200: oklch(0.92 0.003 90);
+  --gray-300: oklch(0.88 0.004 90);
+  --gray-400: oklch(0.78 0.006 90);
+  --gray-500: oklch(0.62 0.008 90);
 
-  /* Theme variables */
-  --background: oklch(0.97 0.005 90);
-  --foreground: oklch(0.15 0.02 265);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.02 265);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.02 265);
-  --primary: oklch(0.68 0.18 42);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.18 0.04 265);
-  --secondary-foreground: oklch(0.97 0.005 90);
-  --muted: oklch(0.92 0.005 90);
-  --muted-foreground: oklch(0.5 0.02 265);
-  --accent: oklch(0.68 0.18 42);
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.88 0.008 90);
-  --input: oklch(0.88 0.008 90);
-  --ring: oklch(0.68 0.18 42);
-  --chart-1: oklch(0.68 0.18 42);
-  --chart-2: oklch(0.18 0.04 265);
-  --chart-3: oklch(0.45 0.02 265);
-  --chart-4: oklch(0.58 0.18 42);
-  --chart-5: oklch(0.22 0.04 265);
-  --sidebar: oklch(0.18 0.04 265);
-  --sidebar-foreground: oklch(0.97 0.005 90);
-  --sidebar-primary: oklch(0.68 0.18 42);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.22 0.04 265);
-  --sidebar-accent-foreground: oklch(0.97 0.005 90);
-  --sidebar-border: oklch(0.25 0.04 265);
-  --sidebar-ring: oklch(0.68 0.18 42);
+  /* Theme variables - Low-Saturation Premium */
+  --background: oklch(0.98 0.001 90);
+  --foreground: oklch(0.15 0.01 265);
+  --card: oklch(0.99 0 0);
+  --card-foreground: oklch(0.15 0.01 265);
+  --popover: oklch(0.99 0 0);
+  --popover-foreground: oklch(0.15 0.01 265);
+  --primary: oklch(0.68 0.08 70);
+  --primary-foreground: oklch(0.15 0.01 265);
+  --secondary: oklch(0.15 0.01 265);
+  --secondary-foreground: oklch(0.98 0.001 90);
+  --muted: oklch(0.95 0.002 90);
+  --muted-foreground: oklch(0.58 0.006 90);
+  --accent: oklch(0.68 0.08 70);
+  --accent-foreground: oklch(0.15 0.01 265);
+  --destructive: oklch(0.58 0.12 27);
+  --destructive-foreground: oklch(0.98 0.001 90);
+  --border: oklch(0.92 0.003 90);
+  --input: oklch(0.97 0.002 90);
+  --ring: oklch(0.68 0.08 70);
+  --chart-1: oklch(0.68 0.08 70);
+  --chart-2: oklch(0.15 0.01 265);
+  --chart-3: oklch(0.58 0.006 90);
+  --chart-4: oklch(0.82 0.05 70);
+  --chart-5: oklch(0.28 0.008 265);
+  --sidebar: oklch(0.15 0.01 265);
+  --sidebar-foreground: oklch(0.98 0.001 90);
+  --sidebar-primary: oklch(0.68 0.08 70);
+  --sidebar-primary-foreground: oklch(0.15 0.01 265);
+  --sidebar-accent: oklch(0.68 0.08 70);
+  --sidebar-accent-foreground: oklch(0.98 0.001 90);
+  --sidebar-border: oklch(0.22 0.008 265);
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
   body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-body);
+    @apply bg-white text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-size: 1.0625rem;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-display);
-    letter-spacing: 0.02em;
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
   }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
+
+  /* Ensure Navbar is flush to top */
+  nav {
+    top: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Premium Typography */
+  h1 {
+    @apply font-display font-bold tracking-tight;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    @apply font-display font-bold tracking-tight;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+
+  h3 {
+    @apply font-display font-semibold tracking-tight;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    @apply font-display font-semibold;
+    font-size: 1.375rem;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    @apply font-body text-lg leading-relaxed;
+    color: oklch(0.45 0.008 90);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  p + p {
+    margin-top: 1rem;
+  }
+
+  a {
+    @apply text-accent hover:text-accent/80 transition-colors;
+  }
+
+  /* Premium Buttons */
+  button {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  button:hover {
+    @apply transform hover:scale-105;
+  }
+
+  /* Premium Cards */
+  .card {
+    @apply bg-card rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  /* Premium Inputs */
+  input,
+  textarea,
+  select {
+    @apply bg-input border border-border rounded-md px-3 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all;
+  }
+
+  /* Container with premium spacing */
+  .container {
+    @apply mx-auto max-w-7xl px-6 sm:px-8 lg:px-12;
+  }
+
+  /* Premium Section Spacing */
+  section:not([aria-label="Notifications alt+T"]) {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  section + section {
+    margin-top: 2rem;
+  }
+
+  /* Premium Grid and List Spacing */
+  .grid {
+    @apply gap-8 md:gap-10 lg:gap-12;
+  }
+
+  /* Premium Card Spacing */
+  .card {
+    @apply p-8 md:p-10 lg:p-12;
+  }
+
+  /* Premium Divider */
+  hr {
+    @apply border-t border-border;
+  }
+
+  /* Smooth Transitions */
+  * {
+    @apply transition-colors duration-200;
   }
 }
 
 @layer components {
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  /* Premium Button Variants */
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all;
   }
 
-  .flex {
-    min-height: 0;
-    min-width: 0;
+  .btn-secondary {
+    @apply px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all;
   }
 
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-border text-foreground font-semibold rounded-lg hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring transition-all;
   }
 
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      max-width: 1400px;
-    }
+  /* Premium Badge */
+  .badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium;
   }
 
-  /* Industrial design utilities */
-  .font-display {
-    font-family: var(--font-display);
-  }
-  .font-mono-industrial {
-    font-family: var(--font-mono);
+  /* Premium Shadow */
+  .shadow-premium {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   }
 
-  /* Orange diagonal accent */
-  .diagonal-accent {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  .shadow-premium-lg {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
   }
 
-  /* Product card with orange left border */
-  .product-card {
-    @apply relative bg-white border border-border overflow-hidden transition-all duration-300;
-    border-left: 3px solid oklch(0.68 0.18 42);
-  }
-  .product-card:hover {
-    @apply shadow-lg;
-    transform: translateY(-2px);
+  /* Premium Gradient */
+  .gradient-gold {
+    background: linear-gradient(135deg, oklch(0.72 0.15 70) 0%, oklch(0.85 0.08 70) 100%);
   }
 
-  /* Part number badge */
-  .part-number {
-    font-family: var(--font-mono);
-    @apply text-xs bg-secondary text-secondary-foreground px-2 py-0.5 rounded-sm;
+  /* Premium Text Gradient */
+  .text-gradient {
+    background: linear-gradient(135deg, oklch(0.72 0.15 70) 0%, oklch(0.12 0.02 265) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
-  /* Sidebar nav item */
-  .nav-item {
-    @apply relative flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition-all duration-200;
-    font-family: var(--font-display);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-size: 0.85rem;
+  /* Premium Hover Effects */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   }
-  .nav-item:hover {
-    background: oklch(0.22 0.04 265);
+  
+  .hover-lift:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
   }
-  .nav-item.active {
-    background: oklch(0.22 0.04 265);
+
+  /* Premium Underline */
+  .underline-gold {
+    position: relative;
+    display: inline-block;
   }
-  .nav-item.active::before {
+
+  .underline-gold::after {
     content: '';
     position: absolute;
+    bottom: -4px;
     left: 0;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: oklch(0.68 0.18 42);
+    width: 100%;
+    height: 2px;
+    background: oklch(0.72 0.15 70);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
   }
 
-  /* Section heading with orange underline */
-  .section-heading {
-    @apply text-4xl font-bold uppercase tracking-wide;
-    font-family: var(--font-display);
-  }
-  .section-heading::after {
-    content: '';
-    display: block;
-    width: 3rem;
-    height: 3px;
-    background: oklch(0.68 0.18 42);
-    margin-top: 0.5rem;
+  .underline-gold:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 
-  /* Category badge */
-  .category-badge {
-    @apply text-xs uppercase tracking-widest px-2 py-0.5 font-semibold;
-    font-family: var(--font-display);
-    background: oklch(0.68 0.18 42 / 0.12);
-    color: oklch(0.58 0.18 42);
-    border: 1px solid oklch(0.68 0.18 42 / 0.3);
+  /* Premium Grid */
+  .grid-premium {
+    @apply grid gap-6 md:gap-8;
+  }
+
+  /* Premium Flex */
+  .flex-premium {
+    @apply flex items-center justify-between gap-4;
+  }
+
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Selection Color */
+  ::selection {
+    @apply bg-accent text-accent-foreground;
+  }
+
+  ::-moz-selection {
+    @apply bg-accent text-accent-foreground;
   }
 }
 
-/* Animations */
+/* Responsive Typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  section {
+    @apply py-12;
+  }
+}
+
+/* Premium Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -244,11 +373,69 @@
   }
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.5s ease-out forwards;
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.animate-delay-100 { animation-delay: 0.1s; opacity: 0; }
-.animate-delay-200 { animation-delay: 0.2s; opacity: 0; }
-.animate-delay-300 { animation-delay: 0.3s; opacity: 0; }
-.animate-delay-400 { animation-delay: 0.4s; opacity: 0; }
+@keyframes pulse-subtle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+/* Premium Focus Styles */
+:focus-visible {
+  @apply outline-none ring-2 ring-ring ring-offset-2;
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full hover:bg-gray-500;
+}
+
+/* Premium Print Styles */
+@media print {
+  @page {
+    margin: 2cm;
+  }
+
+  body {
+    @apply bg-white text-black;
+  }
+
+  a {
+    @apply text-black underline;
+  }
+}

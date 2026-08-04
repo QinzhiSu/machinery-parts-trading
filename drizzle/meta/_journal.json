@@ -8,6 +8,20 @@
       "when": 1778464186249,
       "tag": "0000_smiling_malcolm_colcord",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1782929100737,
+      "tag": "0001_fine_yellow_claw",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1785687577506,
+      "tag": "0002_fluffy_praxagora",
+      "breakpoints": true
     }
   ]
 }
