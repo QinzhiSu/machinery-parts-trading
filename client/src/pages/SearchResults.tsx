@@ -5,7 +5,7 @@ import { ChevronLeft } from 'lucide-react';
 import SparePartDetailModal from '@/components/SparePartDetailModal';
 import CategoryFilter from '@/components/CategoryFilter';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getTranslatedSparePartName } from '@/data/sparePartsTranslations';
+
 
 export default function SearchResults() {
   const { t, language } = useLanguage();
@@ -72,7 +72,7 @@ export default function SearchResults() {
                   >
                     <img
                       src={part.image}
-                      alt={getTranslatedSparePartName(part.name, language)}
+                      alt={part.name}
                       className="w-full h-48 object-cover bg-muted"
                     />
                     <div className="p-4">
