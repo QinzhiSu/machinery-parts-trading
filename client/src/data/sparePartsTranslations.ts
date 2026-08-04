@@ -803,3 +803,81 @@ export function getTranslatedIsuzuSparePartDescription(description: string, lang
   }
   return description;
 }
+
+
+// Sinotruk, Cummins, Weichai spare parts translations (simplified for brevity)
+const sinotrukSparePartNameTranslations: Record<string, Record<string, string>> = {
+  'Oil Filter': { en: 'Oil Filter', zh: '机油滤芯', es: 'Filtro de aceite', ar: 'مرشح الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
+  'Air Filter Assembly': { en: 'Air Filter Assembly', zh: '空气滤芯总成', es: 'Conjunto de filtro de aire', ar: 'مجموعة مرشح الهواء', ru: 'Узел воздушного фильтра', fr: 'Ensemble filtre à air', pt: 'Conjunto filtro de ar', it: 'Insieme filtro aria' },
+  'Diesel Coarse Filter (Water Separator)': { en: 'Diesel Coarse Filter (Water Separator)', zh: '柴油粗滤器(油水分离器)', es: 'Filtro grueso de diésel (separador de agua)', ar: 'مرشح الديزل الخشن (فاصل الماء)', ru: 'Грубый фильтр дизеля (водоотделитель)', fr: 'Filtre à carburant grossier (séparateur d\'eau)', pt: 'Filtro diesel grosseiro (separador de água)', it: 'Filtro diesel grossolano (separatore acqua)' },
+  'Diesel Fine Filter': { en: 'Diesel Fine Filter', zh: '柴油精滤器', es: 'Filtro fino de diésel', ar: 'مرشح الديزل الدقيق', ru: 'Тонкий фильтр дизеля', fr: 'Filtre à carburant fin', pt: 'Filtro diesel fino', it: 'Filtro diesel fine' },
+  'Alternator (28V/70A)': { en: 'Alternator (28V/70A)', zh: '发电机(28V/70A)', es: 'Alternador (28V/70A)', ar: 'مولد التيار المتردد (28V/70A)', ru: 'Генератор (28V/70A)', fr: 'Alternateur (28V/70A)', pt: 'Alternador (28V/70A)', it: 'Alternatore (28V/70A)' },
+  'Starter Motor Assembly': { en: 'Starter Motor Assembly', zh: '起动机总成', es: 'Conjunto de motor de arranque', ar: 'مجموعة محرك البدء', ru: 'Узел стартера', fr: 'Ensemble moteur de démarrage', pt: 'Conjunto motor de partida', it: 'Insieme motore di avviamento' },
+  'Air Compressor (Twin Cylinder Water Cooled)': { en: 'Air Compressor (Twin Cylinder Water Cooled)', zh: '空气压缩机(双缸水冷)', es: 'Compresor de aire (doble cilindro refrigerado por agua)', ar: 'ضاغط الهواء (أسطوانة مزدوجة مبردة بالماء)', ru: 'Воздушный компрессор (двойной цилиндр с водяным охлаждением)', fr: 'Compresseur d\'air (double cylindre refroidi par eau)', pt: 'Compressor de ar (cilindro duplo refrigerado a água)', it: 'Compressore aria (cilindro doppio raffreddato ad acqua)' },
+  'Front Brake Shoe Assembly': { en: 'Front Brake Shoe Assembly', zh: '前刹车蹄片总成', es: 'Conjunto de zapata de freno frontal', ar: 'مجموعة حذاء الفرامل الأمامي', ru: 'Узел передней тормозной колодки', fr: 'Ensemble garniture de frein avant', pt: 'Conjunto pastilha de freio dianteira', it: 'Insieme ceppo freno anteriore' },
+  'Rear Brake Shoe (with Friction Pad)': { en: 'Rear Brake Shoe (with Friction Pad)', zh: '后刹车蹄片(带摩擦片)', es: 'Zapata de freno trasera (con pastilla de fricción)', ar: 'حذاء الفرامل الخلفي (مع وسادة احتكاك)', ru: 'Задняя тормозная колодка (с фрикционной накладкой)', fr: 'Garniture de frein arrière (avec plaquette de friction)', pt: 'Pastilha de freio traseira (com pastilha de fricção)', it: 'Ceppo freno posteriore (con pastiglia di attrito)' },
+  'Brake Camshaft (Left)': { en: 'Brake Camshaft (Left)', zh: '制动凸轮轴(左)', es: 'Eje de levas de freno (izquierda)', ar: 'عمود الكامات للفرامل (يسار)', ru: 'Распределительный вал тормоза (левый)', fr: 'Arbre à cames de frein (gauche)', pt: 'Comando de válvulas de freio (esquerda)', it: 'Albero a camme freno (sinistra)' },
+  'Brake Gap Auto Adjuster Arm': { en: 'Brake Gap Auto Adjuster Arm', zh: '刹车间隙自动调整臂', es: 'Brazo ajustador automático de espaciador de freno', ar: 'ذراع مضبوط الفجوة التلقائي للفرامل', ru: 'Рычаг автоматического регулятора зазора тормоза', fr: 'Bras de réglage automatique de l\'écartement des freins', pt: 'Braço ajustador automático de folga de freio', it: 'Braccio regolatore automatico gioco freno' },
+  'Brake Air Chamber (Front Axle)': { en: 'Brake Air Chamber (Front Axle)', zh: '制动气室(前桥)', es: 'Cámara de aire de freno (eje delantero)', ar: 'حجرة الهواء للفرامل (المحور الأمامي)', ru: 'Тормозная воздушная камера (передний мост)', fr: 'Chambre d\'air de frein (essieu avant)', pt: 'Câmara de ar de freio (eixo dianteiro)', it: 'Camera aria freno (asse anteriore)' },
+  'Brake Disc': { en: 'Brake Disc', zh: '刹车盘', es: 'Disco de freno', ar: 'قرص الفرامل', ru: 'Тормозной диск', fr: 'Disque de frein', pt: 'Disco de freio', it: 'Disco freno' },
+  'Clutch Pressure Plate Assembly': { en: 'Clutch Pressure Plate Assembly', zh: '离合器压盘总成', es: 'Conjunto de placa de presión de embrague', ar: 'مجموعة صفيحة الضغط للقابض', ru: 'Узел нажимного диска сцепления', fr: 'Ensemble plateau de pression d\'embrayage', pt: 'Conjunto placa de pressão de embreagem', it: 'Insieme piatto di pressione frizione' },
+  'Clutch Release Bearing (Power Assist)': { en: 'Clutch Release Bearing (Power Assist)', zh: '离合器分离轴承(助力泵)', es: 'Rodamiento de liberación de embrague (asistencia de potencia)', ar: 'محمل تحرير القابض (مساعدة الطاقة)', ru: 'Подшипник выключения сцепления (гидравлический привод)', fr: 'Roulement de débrayage (assistance hydraulique)', pt: 'Rolamento de liberação de embreagem (assistência hidráulica)', it: 'Cuscinetto di rilascio frizione (assistenza idraulica)' },
+  'V-shaped Thrust Rod (Stabilizer Link)': { en: 'V-shaped Thrust Rod (Stabilizer Link)', zh: 'V型推力杆(稳定杆连杆)', es: 'Varilla de empuje en forma de V (enlace estabilizador)', ar: 'قضيب الدفع على شكل V (وصلة المثبت)', ru: 'V-образный тяговый стержень (стабилизирующая тяга)', fr: 'Barre de poussée en V (lien stabilisateur)', pt: 'Barra de empuxo em V (elo estabilizador)', it: 'Asta di spinta a V (collegamento stabilizzatore)' },
+  'Steering Knuckle Arm (Left)': { en: 'Steering Knuckle Arm (Left)', zh: '转向节臂/羊角(左)', es: 'Brazo de articulación de dirección (izquierda)', ar: 'ذراع مفصل التوجيه (يسار)', ru: 'Рычаг поворотного кулака (левый)', fr: 'Bras de fusée de direction (gauche)', pt: 'Braço de articulação de direção (esquerda)', it: 'Braccio nocca sterzo (sinistra)' },
+  'Front Leaf Spring Eye Pin': { en: 'Front Leaf Spring Eye Pin', zh: '前钢板弹簧卷耳销', es: 'Pasador de ojo de resorte de hoja frontal', ar: 'دبوس عين نابض الورقة الأمامي', ru: 'Штифт ушка передней листовой рессоры', fr: 'Goupille d\'œil de ressort à lames avant', pt: 'Pino de olho de mola de folha dianteira', it: 'Perno occhio molla a balestra anteriore' },
+  'Front Leaf Spring Hanger': { en: 'Front Leaf Spring Hanger', zh: '前钢板弹簧吊耳', es: 'Soporte de resorte de hoja frontal', ar: 'علاقة نابض الورقة الأمامي', ru: 'Кронштейн передней листовой рессоры', fr: 'Support de ressort à lames avant', pt: 'Suporte de mola de folha dianteira', it: 'Supporto molla a balestra anteriore' },
+  'King Pin Bushing': { en: 'King Pin Bushing', zh: 'king pin主销衬套', es: 'Casquillo de pasador maestro', ar: 'بوشة دبوس الملك', ru: 'Втулка шкворня', fr: 'Bague de pivot', pt: 'Bucha de pino mestre', it: 'Boccola perno maestro' },
+  'Front Suspension Shock Absorber Assembly': { en: 'Front Suspension Shock Absorber Assembly', zh: '前悬挂减震器总成', es: 'Conjunto de amortiguador de suspensión frontal', ar: 'مجموعة ممتص الصدمات للتعليق الأمامي', ru: 'Узел переднего амортизатора подвески', fr: 'Ensemble amortisseur de suspension avant', pt: 'Conjunto amortecedor de suspensão dianteira', it: 'Insieme ammortizzatore sospensione anteriore' },
+  'Rear Suspension Shock Absorber Assembly': { en: 'Rear Suspension Shock Absorber Assembly', zh: '后悬挂减震器总成', es: 'Conjunto de amortiguador de suspensión trasera', ar: 'مجموعة ممتص الصدمات للتعليق الخلفي', ru: 'Узел заднего амортизатора подвески', fr: 'Ensemble amortisseur de suspension arrière', pt: 'Conjunto amortecedor de suspensão traseira', it: 'Insieme ammortizzatore sospensione posteriore' },
+  'Rear Leaf Spring Assembly': { en: 'Rear Leaf Spring Assembly', zh: '后钢板弹簧总成', es: 'Conjunto de resorte de hoja trasera', ar: 'مجموعة نابض الورقة الخلفي', ru: 'Узел задней листовой рессоры', fr: 'Ensemble ressort à lames arrière', pt: 'Conjunto mola de folha traseira', it: 'Insieme molla a balestra posteriore' },
+  'Leaf Spring U-bolt Clamp Plate': { en: 'Leaf Spring U-bolt Clamp Plate', zh: '钢板弹簧U型螺栓压板', es: 'Placa de sujeción de perno en U de resorte de hoja', ar: 'لوحة ربط مسمار U لنابض الورقة', ru: 'Пластина зажима U-образного болта листовой рессоры', fr: 'Plaque de serrage de boulon en U de ressort à lames', pt: 'Placa de fixação de parafuso U de mola de folha', it: 'Piastra di serraggio bullone U molla a balestra' },
+};
+
+const sinotrukSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  'Maintenance/Filtration System': { en: 'Maintenance/Filtration System', zh: '保养/滤清系统', es: 'Sistema de mantenimiento/filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema manutenção/filtração', it: 'Sistema manutenzione/filtrazione' },
+  'Electrical/Starting System': { en: 'Electrical/Starting System', zh: '电气/启动', es: 'Sistema eléctrico/arranque', ar: 'نظام كهربائي/بدء التشغيل', ru: 'Электрическая система/запуск', fr: 'Système électrique/démarrage', pt: 'Sistema elétrico/partida', it: 'Sistema elettrico/avviamento' },
+  'Braking System': { en: 'Braking System', zh: '制动系统', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' },
+  'Transmission/Clutch': { en: 'Transmission/Clutch', zh: '传动/离合器', es: 'Transmisión/Embrague', ar: 'نقل الحركة/القابض', ru: 'Трансмиссия/сцепление', fr: 'Transmission/embrayage', pt: 'Transmissão/embreagem', it: 'Trasmissione/frizione' },
+  'Steering/Suspension': { en: 'Steering/Suspension', zh: '转向/悬挂', es: 'Dirección/Suspensión', ar: 'التوجيه/التعليق', ru: 'Рулевое управление/подвеска', fr: 'Direction/suspension', pt: 'Direção/suspensão', it: 'Sterzo/sospensione' },
+  'Suspension/Shock Absorber': { en: 'Suspension/Shock Absorber', zh: '悬挂减震', es: 'Suspensión/Amortiguador', ar: 'التعليق/ممتص الصدمات', ru: 'Подвеска/амортизатор', fr: 'Suspension/amortisseur', pt: 'Suspensão/amortecedor', it: 'Sospensione/ammortizzatore' },
+  'Intake/Boost System': { en: 'Intake/Boost System', zh: '进气/增压', es: 'Sistema de admisión/sobrealimentación', ar: 'نظام السحب/الشحن', ru: 'Система впуска/наддува', fr: 'Système d\'admission/suralimentation', pt: 'Sistema de admissão/sobrealimentação', it: 'Sistema di aspirazione/sovralimentazione' },
+};
+
+const sinotrukSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
+  'SINOTRUK 零件。5,000-10,000km随保养更换': { en: 'SINOTRUK part. Replace every 5,000-10,000 km during maintenance.', zh: 'SINOTRUK 零件。5,000-10,000km随保养更换', es: 'Pieza SINOTRUK. Reemplazar cada 5,000-10,000 km durante el mantenimiento.', ar: 'قطعة SINOTRUK. استبدل كل 5,000-10,000 كم أثناء الصيانة.', ru: 'Деталь SINOTRUK. Заменяйте каждые 5,000-10,000 км при обслуживании.', fr: 'Pièce SINOTRUK. Remplacer tous les 5,000-10,000 km lors de l\'entretien.', pt: 'Peça SINOTRUK. Substituir a cada 5,000-10,000 km durante a manutenção.', it: 'Pezzo SINOTRUK. Sostituire ogni 5,000-10,000 km durante la manutenzione.' },
+  'SINOTRUK 零件。视路况10,000-20,000km': { en: 'SINOTRUK part. Replace every 10,000-20,000 km depending on road conditions.', zh: 'SINOTRUK 零件。视路况10,000-20,000km', es: 'Pieza SINOTRUK. Reemplazar cada 10,000-20,000 km según las condiciones de la carretera.', ar: 'قطعة SINOTRUK. استبدل كل 10,000-20,000 كم حسب ظروف الطريق.', ru: 'Деталь SINOTRUK. Заменяйте каждые 10,000-20,000 км в зависимости от условий дороги.', fr: 'Pièce SINOTRUK. Remplacer tous les 10,000-20,000 km selon les conditions de la route.', pt: 'Peça SINOTRUK. Substituir a cada 10,000-20,000 km dependendo das condições da estrada.', it: 'Pezzo SINOTRUK. Sostituire ogni 10,000-20,000 km a seconda delle condizioni della strada.' },
+  'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期': { en: 'SINOTRUK part. Replace every 5,000-10,000 km, shorten interval in rainy season or with poor fuel quality.', zh: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期', es: 'Pieza SINOTRUK. Reemplazar cada 5,000-10,000 km, acortar intervalo en temporada de lluvia o con combustible de baja calidad.', ar: 'قطعة SINOTRUK. استبدل كل 5,000-10,000 كم، قصر الفترة في موسم الأمطار أو مع وقود منخفض الجودة.', ru: 'Деталь SINOTRUK. Заменяйте каждые 5,000-10,000 км, сокращайте интервал в сезон дождей или при низком качестве топлива.', fr: 'Pièce SINOTRUK. Remplacer tous les 5,000-10,000 km, raccourcir l\'intervalle en saison des pluies ou avec un carburant de mauvaise qualité.', pt: 'Peça SINOTRUK. Substituir a cada 5,000-10,000 km, encurtar intervalo na estação chuvosa ou com combustível de baixa qualidade.', it: 'Pezzo SINOTRUK. Sostituire ogni 5,000-10,000 km, accorciare l\'intervallo nella stagione delle piogge o con carburante di bassa qualità.' },
+};
+
+export function getTranslatedSinotrukSparePartName(name: string, language: string): string {
+  const translations = sinotrukSparePartNameTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}
+
+export function getTranslatedSinotrukSparePartCategory(category: string, language: string): string {
+  const translations = sinotrukSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
+
+export function getTranslatedSinotrukSparePartDescription(description: string, language: string): string {
+  const translations = sinotrukSparePartDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return description;
+}
+
+// Cummins and Weichai use generic translations (same as other brands)
+export const getTranslatedCumminsSparePartName = getTranslatedIsuzuSparePartName;
+export const getTranslatedCumminsSparePartCategory = getTranslatedIsuzuSparePartCategory;
+export const getTranslatedCumminsSparePartDescription = getTranslatedIsuzuSparePartDescription;
+
+export const getTranslatedWeichaiSparePartName = getTranslatedIsuzuSparePartName;
+export const getTranslatedWeichaiSparePartCategory = getTranslatedIsuzuSparePartCategory;
+export const getTranslatedWeichaiSparePartDescription = getTranslatedIsuzuSparePartDescription;
