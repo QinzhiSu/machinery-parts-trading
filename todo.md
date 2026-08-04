@@ -809,23 +809,6 @@
 - ✅ 浏览器验证通过：西班牙文页面所有零件显示完全翻译
 
 
-## Toyota 零件翻译系统完成
-
-- [x] 为 Toyota 品牌的 30 个零件创建完整的 8 种语言翻译表
-- [x] 为 Toyota 零件名称添加 8 种语言翻译（toyotaSparePartNameTranslations）
-- [x] 为 Toyota 零件分类添加 8 种语言翻译（toyotaSparePartCategoryTranslations）
-- [x] 为 Toyota 零件描述添加 8 种语言翻译（toyotaSparePartDescriptionTranslations）
-- [x] 创建 Toyota 翻译函数（getTranslatedToyotaSparePartName、getTranslatedToyotaSparePartCategory、getTranslatedToyotaSparePartDescription）
-- [x] 在 BrandPage.tsx 中集成 Toyota 零件翻译
-- [x] 在 SparePartDetailModal.tsx 中集成 Toyota 零件翻译
-- [x] 验证西班牙文版本的 Toyota 零件分类翻译效果
-
-**Toyota 零件翻译统计：**
-- ✅ 30 个零件 × 8 种语言 = 240 个零件名称翻译
-- ✅ 8 个零件分类 × 8 种语言 = 64 个分类翻译
-- ✅ 30 个零件描述 × 8 种语言 = 240 个描述翻译
-- ✅ **总计：544 个 Toyota 零件翻译条目**
-
 ## 山推零件翻译系统最终完成
 
 - [x] 修复 sparePartsTranslations.ts 中第 991 行和第 998 行缺失的逗号
@@ -1067,17 +1050,3 @@
 - 推土机和卡车吊机的分类和参数都能正确翻译
 - 所有整机在所有 8 种语言下都能正确显示翻译
 - 系统已生产就绪
-
-
-## 所有品牌零件翻译系统完整修复
-
-- [ ] 诊断所有品牌的零件翻译问题（Komatsu、LiuGong、Isuzu、Shacman、Sinotruk、Cummins、Weichai）
-- [ ] 修复 Komatsu 品牌：将所有中文零件名称改为英文，添加完整的 8 种语言翻译
-- [ ] 修复 LiuGong 品牌：将所有中文零件名称改为英文，添加完整的 8 种语言翻译
-- [ ] 修复 Isuzu 品牌：将所有中文零件名称改为英文，添加完整的 8 种语言翻译
-- [ ] 修复 Shacman 品牌：将所有中文零件名称改为英文，添加完整的 8 种语言翻译
-- [ ] 修复 Sinotruk 品牌：将所有中文零件名称改为英文，添加完整的 8 种语言翻译
-- [ ] 修复 Cummins 品牌：将所有中文零件名称改为英文，添加完整的 8 种语言翻译
-- [ ] 修复 Weichai 品牌：将所有中文零件名称改为英文，添加完整的 8 种语言翻译
-- [ ] 验证所有品牌零件在所有 8 种语言下的翻译效果
-- [ ] 保存最终检查点
