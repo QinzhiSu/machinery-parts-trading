@@ -300,3 +300,59 @@ export function getTranslatedShantuiSparePartDescription(name: string, language:
   }
   return name;
 }
+
+// CAT spare part translations
+const catSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  'Maintenance/Filtration System': { zh: '维护/过滤系统', en: 'Maintenance/Filtration System', es: 'Sistema de Mantenimiento/Filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema de Manutenção/Filtração', it: 'Sistema di manutenzione/filtrazione' },
+  'Cooling System': { zh: '冷却系统', en: 'Cooling System', es: 'Sistema de Refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de Refrigeração', it: 'Sistema di raffreddamento' },
+  'Turbocharging/Intake System': { zh: '涡轮增压/进气系统', en: 'Turbocharging/Intake System', es: 'Sistema de Sobrealimentación/Admisión', ar: 'نظام الشاحن التوربيني/السحب', ru: 'Система турбонаддува/впуска', fr: 'Système de suralimentation/admission', pt: 'Sistema de Turboalimentação/Admissão', it: 'Sistema di sovralimentazione/aspirazione' },
+  'Chassis/Track System': { zh: '底盘/履带系统', en: 'Chassis/Track System', es: 'Sistema de Chasis/Orugas', ar: 'نظام الهيكل/الجنزير', ru: 'Система шасси/гусеницы', fr: 'Système de châssis/chenilles', pt: 'Sistema de Chassi/Esteiras', it: 'Sistema di telaio/cingoli' },
+  'Excavation/GET': { zh: '挖掘/斗齿', en: 'Excavation/Bucket Teeth', es: 'Excavación/Dientes de Cucharón', ar: 'الحفر/أسنان الدلو', ru: 'Экскавация/зубья ковша', fr: 'Excavation/Dents de godet', pt: 'Escavação/Dentes de Caçamba', it: 'Scavo/Denti del secchio' },
+  'Transmission System': { zh: '传动系统', en: 'Transmission System', es: 'Sistema de Transmisión', ar: 'نظام النقل', ru: 'Система трансмиссии', fr: 'Système de transmission', pt: 'Sistema de Transmissão', it: 'Sistema di trasmissione' },
+};
+
+const catSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Fuel Filter': { zh: 'CAT零件。250-500小时随保养更换', en: 'CAT part. Replace every 250-500 hours during maintenance.', es: 'Pieza CAT. Reemplazar cada 250-500 horas durante el mantenimiento.', ar: 'قطعة CAT. استبدل كل 250-500 ساعة أثناء الصيانة.', ru: 'Деталь CAT. Заменяйте каждые 250-500 часов при техническом обслуживании.', fr: 'Pièce CAT. Remplacer tous les 250-500 heures lors de l\'entretien.', pt: 'Peça CAT. Substituir a cada 250-500 horas durante a manutenção.', it: 'Pezzo CAT. Sostituire ogni 250-500 ore durante la manutenzione.' },
+};
+
+export function getTranslatedCATSparePartCategory(category: string, language: string): string {
+  const translations = catSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
+
+export function getTranslatedCATSparePartDescription(name: string, language: string): string {
+  const translations = catSparePartDescriptionTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}
+
+// XCMG spare part category translations (for spare parts)
+const xcmgSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  'Maintenance/Filtration System': { zh: '维护/过滤系统', en: 'Maintenance/Filtration System', es: 'Sistema de Mantenimiento/Filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema de Manutenção/Filtração', it: 'Sistema di manutenzione/filtrazione' },
+  'Electrical/Sensor System': { zh: '电气/传感器系统', en: 'Electrical/Sensor System', es: 'Sistema Eléctrico/Sensor', ar: 'نظام كهربائي/استشعار', ru: 'Электрическая/сенсорная система', fr: 'Système électrique/capteur', pt: 'Sistema Elétrico/Sensor', it: 'Sistema elettrico/sensore' },
+  'Excavation/Bucket Teeth': { zh: '挖掘/斗齿', en: 'Excavation/Bucket Teeth', es: 'Excavación/Dientes de Cucharón', ar: 'الحفر/أسنان الدلو', ru: 'Экскавация/зубья ковша', fr: 'Excavation/Dents de godet', pt: 'Escavação/Dentes de Caçamba', it: 'Scavo/Denti del secchio' },
+  'Transmission/Gearbox System': { zh: '传动/变速箱系统', en: 'Transmission/Gearbox System', es: 'Sistema de Transmisión/Caja de Cambios', ar: 'نظام النقل/علبة التروس', ru: 'Система трансмиссии/коробка передач', fr: 'Système de transmission/boîte de vitesses', pt: 'Sistema de Transmissão/Caixa de Câmbio', it: 'Sistema di trasmissione/cambio' },
+  'Hydraulic System': { zh: '液压系统', en: 'Hydraulic System', es: 'Sistema Hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema Hidráulico', it: 'Sistema idraulico' },
+  'Brake System': { zh: '制动系统', en: 'Brake System', es: 'Sistema de Frenos', ar: 'نظام الكبح', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de Freios', it: 'Sistema frenante' },
+};
+
+export function getTranslatedXCMGSparePartCategory(category: string, language: string): string {
+  const translations = xcmgSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
+
+export function getTranslatedXCMGSparePartDescription(name: string, language: string): string {
+  const translations = xcmgSparePartDescriptionTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}

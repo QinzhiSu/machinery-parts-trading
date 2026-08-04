@@ -17,7 +17,7 @@ import { getTranslatedDescription } from '@/data/descriptionTranslations';
 
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedSanySparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartDescription } from '@/data/sparePartsTranslations';
+import { getTranslatedSanySparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartDescription, getTranslatedCATSparePartCategory, getTranslatedCATSparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription } from '@/data/sparePartsTranslations';
 import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
 import { getTranslatedXCMGMachineDescription, getTranslatedXCMGMachineType, getTranslatedXCMGMachineSpecs } from '@/data/xcmgMachineTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
@@ -363,7 +363,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                       </div>
                     </div>
 
@@ -387,7 +387,7 @@ export default function BrandPage() {
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.name, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.name, language) : translateDescription(part.description)}
+                        {brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.name, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.name, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.name, language) : translateDescription(part.description)}
                       </p>
 
                       <div className="flex gap-2">
