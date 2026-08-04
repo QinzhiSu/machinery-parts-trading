@@ -55,7 +55,7 @@ export default function TrucksPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-              {truckBrands.map((brand: typeof truckBrands[0]) => (
+              {truckBrands.map((brand) => (
                 <Link
                   key={brand.id}
                   href={`/brand/${brand.id}`}
@@ -99,7 +99,7 @@ export default function TrucksPage() {
                       {brand.description.substring(0, 90)}...
                     </p>
                     <div className="flex flex-wrap gap-1 mb-3">
-                      {brand.machines.slice(0, 3).map((m: typeof brand.machines[0]) => (
+                      {brand.machines.slice(0, 3).map(m => (
                         <span key={m.id} className="text-xs px-1.5 py-0.5" style={{ background: 'oklch(0.97 0.005 90)', color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-mono)', border: '1px solid oklch(0.88 0.008 90)', fontSize: '0.65rem' }}>
                           {m.model}
                         </span>
@@ -129,7 +129,7 @@ export default function TrucksPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {engineBrands.map((brand: typeof engineBrands[0]) => (
+              {engineBrands.map((brand) => (
                 <Link
                   key={brand.id}
                   href={`/brand/${brand.id}`}
@@ -157,7 +157,7 @@ export default function TrucksPage() {
                           {brand.description.substring(0, 120)}...
                         </p>
                         <div className="flex flex-wrap gap-1.5 mb-3">
-                          {brand.machines.map((m: typeof brand.machines[0]) => (
+                          {brand.machines.map(m => (
                             <span key={m.id} className="text-xs px-2 py-0.5" style={{ background: 'oklch(0.97 0.005 90)', color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-mono)', border: '1px solid oklch(0.88 0.008 90)' }}>
                               {m.model}
                             </span>
