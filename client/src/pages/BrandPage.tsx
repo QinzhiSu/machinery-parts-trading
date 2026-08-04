@@ -17,7 +17,7 @@ import { getTranslatedDescription } from '@/data/descriptionTranslations';
 import { getTranslatedSparePartName, getTranslatedSparePartDescription, getTranslatedSparePartCategory } from '@/data/sparePartsTranslations';
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartName, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription, getTranslatedCATSparePartCategory, getTranslatedCATSparePartName, getTranslatedCATSparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineDescription } from '@/data/sparePartsTranslations';
+import { getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartName, getTranslatedSanySparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription, getTranslatedCATSparePartCategory, getTranslatedCATSparePartName, getTranslatedCATSparePartDescription } from '@/data/sparePartsTranslations';
 import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
 import { getTranslatedXCMGMachineDescription, getTranslatedXCMGMachineType, getTranslatedXCMGMachineSpecs } from '@/data/xcmgMachineTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
@@ -262,7 +262,7 @@ export default function BrandPage() {
                         className="text-xs font-semibold uppercase tracking-wider mb-2"
                         style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongMachineType(machine.name, language) : machine.name}
+                        {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : machine.name}
                       </div>
                     </div>
 
@@ -274,7 +274,7 @@ export default function BrandPage() {
                         {brand.id === 'shantui' ? getTranslatedShantuiMachineName(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineTitle(`SANY ${machine.model}`, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineType(machine.name, language) : `${brand.name} ${machine.model}`}
                       </h3>
                       <p className="text-sm font-semibold mb-2" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                        {brand.id === 'caterpillar' ? getTranslatedCATMachineType(machine.name, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineType(machine.name, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineType(machine.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongMachineType(machine.name, language) : machine.name}
+                        {brand.id === 'caterpillar' ? getTranslatedCATMachineType(machine.name, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineType(machine.name, language) : brand.id === 'sany' ? getTranslatedSanyMachineType(machine.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineType(machine.name, language) : machine.name}
                       </p>
 
                       {/* Specs */}
@@ -290,9 +290,9 @@ export default function BrandPage() {
                         {brand.id === 'caterpillar' ? getTranslatedCATMachineSpecs(machine.model, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineSpecs(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineSpecs(machine.model, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineSpecs(machine.specs, language) : machine.specs}
                       </div>
 
-                      {brand.id === 'caterpillar' || brand.id === 'shantui' || brand.id === 'sany' || brand.id === 'xcmg' || brand.id === 'liugong' ? (
+                      {brand.id === 'caterpillar' || brand.id === 'shantui' || brand.id === 'sany' || brand.id === 'xcmg' ? (
                         <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                          {brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineDescription(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineDescription(machine.model, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineDescription(machine.description, language) : brand.id === 'liugong' ? getTranslatedLiuGongMachineDescription(machine.description, language) : null}
+                          {brand.id === 'caterpillar' ? getTranslatedCATMachineDescription(machine.description, language) : brand.id === 'shantui' ? getTranslatedShantuiMachineDescription(machine.model, language) : brand.id === 'sany' ? getTranslatedSanyMachineDescription(machine.model, language) : brand.id === 'xcmg' ? getTranslatedXCMGMachineDescription(machine.description, language) : null}
                         </p>
                       ) : (
                         <MachineDescriptionTranslator
@@ -363,7 +363,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                       </div>
                     </div>
 
@@ -383,11 +383,11 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-sm mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartName(part.name, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartName(part.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartName(part.name, language) : translatePartName(part.name)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartName(part.name, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartName(part.name, language) : translatePartName(part.name)}
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.name, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.name, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.name, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartDescription(part.name, language) : getTranslatedSparePartDescription(part.description, language)}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartDescription(part.description, language) : brand.id === 'sany' ? getTranslatedSanySparePartDescription(part.description, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartDescription(part.description, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartDescription(part.description, language) : getTranslatedSparePartDescription(part.description, language)}
                       </p>
 
                       <div className="flex gap-2">
