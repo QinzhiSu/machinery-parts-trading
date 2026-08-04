@@ -17,7 +17,7 @@ import { getTranslatedDescription } from '@/data/descriptionTranslations';
 
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedSanySparePartDescription, getTranslatedSanySparePartName, getTranslatedSanySparePartCategory, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartName, getTranslatedCATSparePartCategory, getTranslatedCATSparePartDescription, getTranslatedCATSparePartName, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription, getTranslatedXCMGSparePartName } from '@/data/sparePartsTranslations';
+import { getTranslatedSanySparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartDescription, getTranslatedCATSparePartCategory, getTranslatedCATSparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription } from '@/data/sparePartsTranslations';
 import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
 import { getTranslatedXCMGMachineDescription, getTranslatedXCMGMachineType, getTranslatedXCMGMachineSpecs } from '@/data/xcmgMachineTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
@@ -363,7 +363,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSanySparePartCategory(part.category, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                       </div>
                     </div>
 
@@ -383,7 +383,7 @@ export default function BrandPage() {
                         className="font-bold uppercase tracking-wide text-sm mb-1"
                         style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                       >
-                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartName(part.name, language) : brand.id === 'sany' ? getTranslatedSanySparePartName(part.name, language) : brand.id === 'shantui' ? getTranslatedShantuiSparePartName(part.name, language) : brand.id === 'caterpillar' ? getTranslatedCATSparePartName(part.name, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartName(part.name, language) : translatePartName(part.name)}
+                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartName(part.name, language) : translatePartName(part.name)}
                       </h3>
 
                       <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.5 0.02 265)' }}>

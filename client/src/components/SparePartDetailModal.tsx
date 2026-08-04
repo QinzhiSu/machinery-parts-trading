@@ -10,7 +10,7 @@ import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
 import { usePartTranslation } from '@/hooks/usePartTranslation';
 import { getTranslatedPartDescription } from '@/data/partDescriptionTranslations';
-import { getTranslatedSanySparePartDescription, getTranslatedSanySparePartName, getTranslatedSanySparePartCategory, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartName, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartName, getTranslatedCATSparePartCategory, getTranslatedCATSparePartDescription, getTranslatedCATSparePartName, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription, getTranslatedXCMGSparePartName } from '@/data/sparePartsTranslations';
+import { getTranslatedSanySparePartDescription, getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongSparePartDescription, getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartDescription, getTranslatedCATSparePartCategory, getTranslatedCATSparePartDescription, getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartDescription } from '@/data/sparePartsTranslations';
 
 interface SparePartDetailModalProps {
   part: SparePart | null;
@@ -83,7 +83,7 @@ export default function SparePartDetailModal({
               className="text-lg font-bold uppercase tracking-wide"
               style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
             >
-              {brandName === 'SANY' ? getTranslatedSanySparePartName(part.name, language) : brandName === 'LiuGong' ? getTranslatedLiuGongSparePartName(part.name, language) : brandName === 'Shantui' ? getTranslatedShantuiSparePartName(part.name, language) : brandName === 'Caterpillar' ? getTranslatedCATSparePartName(part.name, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartName(part.name, language) : part.name}
+              {language === 'en' ? brandName : language === 'es' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'ar' ? (brandName === 'XCMG' ? 'مجموعة XCMG' : brandName === 'Shantui' ? 'شانتوي' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'ru' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'fr' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'pt' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : language === 'it' ? (brandName === 'XCMG' ? 'XCMG' : brandName === 'Shantui' ? 'Shantui' : brandName === 'SANY' ? 'SANY' : brandName) : brandName} {part.partNumber}
             </h2>
             <p className="text-xs mt-1" style={{ color: 'oklch(0.5 0.02 265)' }}>
               {translatePartCategory(part.category)}
@@ -157,7 +157,7 @@ export default function SparePartDetailModal({
                   {language === 'en' ? 'Category' : language === 'es' ? 'Categoría' : language === 'ar' ? 'الفئة' : language === 'ru' ? 'Категория' : language === 'fr' ? 'Catégorie' : language === 'pt' ? 'Categoria' : language === 'it' ? 'Categoria' : '分类'}
                 </p>
                 <p className="text-sm font-semibold" style={{ color: 'oklch(0.18 0.04 265)' }}>
-                  {brandName === 'SANY' ? getTranslatedSanySparePartCategory(part.category, language) : brandName === 'LiuGong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brandName === 'Shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brandName === 'Caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartCategory(part.category, language) : translatePartCategory(part.category)}
+                  {brandName === 'LiuGong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brandName === 'Shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brandName === 'Caterpillar' ? getTranslatedCATSparePartCategory(part.category, language) : brandName === 'XCMG' ? getTranslatedXCMGSparePartCategory(part.category, language) : translatePartCategory(part.category)}
                 </p>
               </div>
             </div>
