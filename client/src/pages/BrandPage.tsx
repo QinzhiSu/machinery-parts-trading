@@ -17,18 +17,18 @@ import { useMachineTranslations } from '@/hooks/useMachineTranslations';
 
 import { getTranslatedCATMachineDescription, getTranslatedCATMachineSpecs, getTranslatedCATMachineType } from '@/data/catMachineTranslations';
 import { getTranslatedShantuiMachineName, getTranslatedShantuiMachineDescription, getTranslatedShantuiMachineType, getTranslatedShantuiMachineSpecs, getTranslatedShantuiMachineShortDescription } from '@/data/shantuiMachineTranslations';
-import { getTranslatedShantuiSparePartName, getTranslatedShantuiSparePartDescription } from '@/data/sparePartsTranslations_shantui';
-import { getTranslatedSanySparePartName, getTranslatedSanySparePartDescription } from '@/data/sparePartsTranslations_sany';
-import { getTranslatedXcmgSparePartName, getTranslatedXcmgSparePartDescription } from '@/data/sparePartsTranslations_xcmg';
-import { getTranslatedCaterpillarSparePartName, getTranslatedCaterpillarSparePartDescription } from '@/data/sparePartsTranslations_caterpillar';
+import { getTranslatedShantuiSparePartName, getTranslatedShantuiSparePartDescription, getTranslatedShantuiSparePartCategory } from '@/data/sparePartsTranslations_shantui';
+import { getTranslatedSanySparePartName, getTranslatedSanySparePartDescription, getTranslatedSANYSparePartCategory } from '@/data/sparePartsTranslations_sany';
+import { getTranslatedXcmgSparePartName, getTranslatedXcmgSparePartDescription, getTranslatedXCMGSparePartCategory } from '@/data/sparePartsTranslations_xcmg';
+import { getTranslatedCaterpillarSparePartName, getTranslatedCaterpillarSparePartDescription, getTranslatedCaterpillarSparePartCategory } from '@/data/sparePartsTranslations_caterpillar';
 import { getTranslatedLiuGongSparePartName, getTranslatedLiuGongSparePartDescription, getTranslatedLiuGongSparePartCategory } from '@/data/sparePartsTranslations_liugong';
-import { getTranslatedKomatsuSparePartName, getTranslatedKomatsuSparePartDescription } from '@/data/sparePartsTranslations_komatsu';
-import { getTranslatedIsuzuSparePartName, getTranslatedIsuzuSparePartDescription } from '@/data/sparePartsTranslations_isuzu';
-import { getTranslatedShacmanSparePartName, getTranslatedShacmanSparePartDescription } from '@/data/sparePartsTranslations_shacman';
-import { getTranslatedSinotrukSparePartName, getTranslatedSinotrukSparePartDescription } from '@/data/sparePartsTranslations_sinotruk';
-import { getTranslatedToyotaSparePartName, getTranslatedToyotaSparePartDescription } from '@/data/sparePartsTranslations_toyota';
-import { getTranslatedCumminsSparePartName, getTranslatedCumminsSparePartDescription } from '@/data/sparePartsTranslations_cummins';
-import { getTranslatedWeichaiSparePartName, getTranslatedWeichaiSparePartDescription } from '@/data/sparePartsTranslations_weichai';
+import { getTranslatedKomatsuSparePartName, getTranslatedKomatsuSparePartDescription, getTranslatedKomatsuSparePartCategory } from '@/data/sparePartsTranslations_komatsu';
+import { getTranslatedIsuzuSparePartName, getTranslatedIsuzuSparePartDescription, getTranslatedIsuzuSparePartCategory } from '@/data/sparePartsTranslations_isuzu';
+import { getTranslatedShacmanSparePartName, getTranslatedShacmanSparePartDescription, getTranslatedShacmanSparePartCategory } from '@/data/sparePartsTranslations_shacman';
+import { getTranslatedSinotrukSparePartName, getTranslatedSinotrukSparePartDescription, getTranslatedSinotrukSparePartCategory } from '@/data/sparePartsTranslations_sinotruk';
+import { getTranslatedToyotaSparePartName, getTranslatedToyotaSparePartDescription, getTranslatedToyotaSparePartCategory } from '@/data/sparePartsTranslations_toyota';
+import { getTranslatedCumminsSparePartName, getTranslatedCumminsSparePartDescription, getTranslatedCumminsSparePartCategory } from '@/data/sparePartsTranslations_cummins';
+import { getTranslatedWeichaiSparePartName, getTranslatedWeichaiSparePartDescription, getTranslatedWeichaiSparePartCategory } from '@/data/sparePartsTranslations_weichai';
 import { getTranslatedSanyMachineTitle, getTranslatedSanyMachineType, getTranslatedSanyMachineSpecs, getTranslatedSanyMachineDescription } from '@/data/sanyMachineTranslations';
 import { getTranslatedXCMGMachineDescription, getTranslatedXCMGMachineType, getTranslatedXCMGMachineSpecs } from '@/data/xcmgMachineTranslations';
 import { getTranslatedLiuGongMachineName, getTranslatedLiuGongMachineType, getTranslatedLiuGongMachineSpecs, getTranslatedLiuGongMachineDescription } from '@/data/liugongMachineTranslations';
@@ -382,7 +382,7 @@ export default function BrandPage() {
                         className="absolute top-2 right-2 px-2 py-0.5 text-white text-xs font-bold uppercase tracking-wider"
                         style={{ background: 'oklch(0.18 0.04 265 / 0.85)', fontFamily: 'var(--font-display)', fontSize: '0.65rem' }}
                       >
-                        {brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : part.category}
+                        {brand.id === 'shantui' ? getTranslatedShantuiSparePartCategory(part.category, language) : brand.id === 'sany' ? getTranslatedSANYSparePartCategory(part.category, language) : brand.id === 'xcmg' ? getTranslatedXCMGSparePartCategory(part.category, language) : brand.id === 'caterpillar' ? getTranslatedCaterpillarSparePartCategory(part.category, language) : brand.id === 'liugong' ? getTranslatedLiuGongSparePartCategory(part.category, language) : brand.id === 'komatsu' ? getTranslatedKomatsuSparePartCategory(part.category, language) : brand.id === 'isuzu' ? getTranslatedIsuzuSparePartCategory(part.category, language) : brand.id === 'shacman' ? getTranslatedShacmanSparePartCategory(part.category, language) : brand.id === 'sinotruk' ? getTranslatedSinotrukSparePartCategory(part.category, language) : brand.id === 'toyota' ? getTranslatedToyotaSparePartCategory(part.category, language) : brand.id === 'cummins' ? getTranslatedCumminsSparePartCategory(part.category, language) : brand.id === 'weichai' ? getTranslatedWeichaiSparePartCategory(part.category, language) : part.category}
                       </div>
                     </div>
 

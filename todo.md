@@ -996,6 +996,16 @@
 
 
 
+## TypeScript 编译错误修复
+
+- [x] 修复 BrandPage.tsx 中的零件翻译函数导入（从各自的品牌文件导入）
+- [x] 修复 XCMG 机械翻译函数名大小写问题
+- [x] 修复 CAT 零件翻译函数名（CAT -> Caterpillar）
+- [x] 修复 CategoryFilter.tsx 中对已删除文件的导入
+- [x] 修复 usePartTranslation.ts 中的函数调用
+- [x] 验证所有 TypeScript 编译错误已清除
+- [x] 验证开发服务器正常运行
+
 ## 零件详情弹窗翻译修复
 
 - [ ] 为 SparePartDetailModal.tsx 中的所有硬编码文本添加翻译键
