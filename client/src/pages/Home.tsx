@@ -25,26 +25,26 @@ const stats = [
   { value: '50+', label: 'Countries', icon: '🚀' },
 ];
 
-const features = [
+const getFeatures = (t: (key: string) => string) => [
   {
     icon: Shield,
-    title: 'Premium Quality',
-    desc: 'Genuine OEM and high-quality aftermarket parts with complete warranty and traceability.',
+    title: t('home.premiumQuality'),
+    desc: t('home.premiumQualityDesc'),
   },
   {
     icon: Globe,
-    title: 'Global Reach',
-    desc: 'Professional export to Africa, Middle East, Central Asia, South America, and Russia.',
+    title: t('home.globalReach'),
+    desc: t('home.globalReachDesc'),
   },
   {
     icon: Package,
-    title: 'Complete Inventory',
-    desc: 'Comprehensive selection of machinery, engines, and high-frequency replacement parts.',
+    title: t('home.completeInventory'),
+    desc: t('home.completeInventoryDesc'),
   },
   {
     icon: Wrench,
-    title: 'Expert Support',
-    desc: 'Professional technical consultation for equipment selection and part identification.',
+    title: t('home.expertSupport'),
+    desc: t('home.expertSupportDesc'),
   },
 ];
 
@@ -52,6 +52,7 @@ export default function Home() {
   const { user, loading, error, isAuthenticated, logout } = useAuth();
   const { language } = useLanguage();
   const t = (key: string) => translations[language as keyof typeof translations]?.[key as keyof typeof translations.en] || key;
+  const features = getFeatures(t);
 
   return (
     <>
@@ -142,9 +143,9 @@ export default function Home() {
       <section className="py-32 md:py-40 bg-white">
         <div className="container">
           <div className="max-w-3xl mb-16">
-            <h2 className="text-4xl font-bold text-charcoal mb-4">Why Choose VXZO</h2>
+            <h2 className="text-4xl font-bold text-charcoal mb-4">{t('home.whyChoose')}</h2>
             <p className="text-lg text-gray-600">
-              We combine quality, expertise, and professional service to deliver the best machinery and parts solutions for your business.
+              {t('home.whyChooseDesc')}
             </p>
           </div>
 
@@ -169,9 +170,9 @@ export default function Home() {
       <section className="py-32 md:py-40 bg-gray-50">
         <div className="container">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold text-charcoal mb-4">Construction Machinery</h2>
+            <h2 className="text-4xl font-bold text-charcoal mb-4">{t('home.constructionMachinery')}</h2>
             <p className="text-lg text-gray-600 max-w-2xl">
-              Excavators, wheel loaders, bulldozers, and more from world-leading brands.
+              {t('home.constructionMachineryDesc')}
             </p>
           </div>
 
@@ -209,7 +210,7 @@ export default function Home() {
               href="/construction"
               className="inline-flex items-center gap-2 text-gold font-semibold hover:gap-3 transition-all"
             >
-              View All Brands <ArrowRight size={18} />
+              {t('home.viewAllBrands')} <ArrowRight size={18} />
             </Link>
           </div>
         </div>
@@ -219,9 +220,9 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold text-charcoal mb-4">Heavy Trucks & Engines</h2>
+            <h2 className="text-4xl font-bold text-charcoal mb-4">{t('home.heavyTrucks')}</h2>
             <p className="text-lg text-gray-600 max-w-2xl">
-              Commercial vehicles and industrial engines for construction, mining, and logistics.
+              {t('home.heavyTrucksDesc')}
             </p>
           </div>
 
@@ -259,7 +260,7 @@ export default function Home() {
               href="/trucks"
               className="inline-flex items-center gap-2 text-gold font-semibold hover:gap-3 transition-all"
             >
-              View All Trucks <ArrowRight size={18} />
+              {t('home.viewAllTrucks')} <ArrowRight size={18} />
             </Link>
           </div>
         </div>
@@ -269,9 +270,9 @@ export default function Home() {
       <section className="py-32 md:py-40 bg-white">
         <div className="container">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold text-charcoal mb-4">Diesel Engines</h2>
+            <h2 className="text-4xl font-bold text-charcoal mb-4">{t('home.dieselEngines')}</h2>
             <p className="text-lg text-gray-600 max-w-2xl">
-              High-performance diesel engines from world-leading manufacturers for construction, trucks, and industrial applications.
+              {t('home.dieselEnginesDesc')}
             </p>
           </div>
 
@@ -309,7 +310,7 @@ export default function Home() {
               href="/engines"
               className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all"
             >
-              View All Engines <ArrowRight size={18} />
+              {t('home.viewAllEngines')} <ArrowRight size={18} />
             </Link>
           </div>
         </div>
@@ -318,22 +319,22 @@ export default function Home() {
       {/* CTA Section - Premium */}
       <section className="py-24 bg-charcoal text-white">
         <div className="container max-w-3xl text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+          <h2 className="text-4xl font-bold mb-6">{t('home.readyToStart')}</h2>
           <p className="text-lg text-white/80 mb-8">
-            Contact our team today for a professional quote. We respond quickly via WhatsApp, WeChat, email, or phone.
+            {t('home.readyToStartDesc')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-charcoal font-semibold rounded-lg hover:shadow-premium-lg transition-all duration-300 hover:-translate-y-1"
             >
-              Get a Quote <ArrowRight size={18} />
+              {t('home.getQuote')} <ArrowRight size={18} />
             </Link>
             <Link
               href="/favorites"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
             >
-              View Favorites
+              {t('home.viewFavorites')}
             </Link>
           </div>
         </div>
