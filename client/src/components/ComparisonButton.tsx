@@ -36,6 +36,9 @@ export default function ComparisonButton({ part, brandColor, language: propLangu
         case 'fr': return 'Comparé';
         case 'pt': return 'Comparado';
         case 'it': return 'Confrontato';
+        case 'de': return 'Verglichen';
+        case 'ja': return '比較済み';
+        case 'zh': return '已对比';
         default: return '已对比';
       }
     } else {
@@ -47,6 +50,9 @@ export default function ComparisonButton({ part, brandColor, language: propLangu
         case 'fr': return 'Comparer';
         case 'pt': return 'Comparar';
         case 'it': return 'Confronta';
+        case 'de': return 'Vergleichen';
+        case 'ja': return '比較';
+        case 'zh': return '对比';
         default: return '对比';
       }
     }
@@ -62,6 +68,9 @@ export default function ComparisonButton({ part, brandColor, language: propLangu
         case 'fr': return `Max ${maxComparisons} pièces`;
         case 'pt': return `Máx ${maxComparisons} peças`;
         case 'it': return `Max ${maxComparisons} pezzi`;
+        case 'de': return `Max ${maxComparisons} Teile`;
+        case 'ja': return `最大 ${maxComparisons} 部品`;
+        case 'zh': return `最多只能对比 ${maxComparisons} 个配件`;
         default: return `最多只能对比 ${maxComparisons} 个配件`;
       }
     } else if (isCompared) {
@@ -73,6 +82,9 @@ export default function ComparisonButton({ part, brandColor, language: propLangu
         case 'fr': return 'Retirer de la comparaison';
         case 'pt': return 'Remover da comparação';
         case 'it': return 'Rimuovi dal confronto';
+        case 'de': return 'Aus dem Vergleich entfernen';
+        case 'ja': return '比較から削除';
+        case 'zh': return '从对比中移除';
         default: return '从对比中移除';
       }
     } else {
@@ -84,6 +96,9 @@ export default function ComparisonButton({ part, brandColor, language: propLangu
         case 'fr': return 'Ajouter à la comparaison';
         case 'pt': return 'Adicionar à comparação';
         case 'it': return 'Aggiungi al confronto';
+        case 'de': return 'Zum Vergleich hinzufügen';
+        case 'ja': return '比較に追加';
+        case 'zh': return '添加到对比';
         default: return '添加到对比';
       }
     }
