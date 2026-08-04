@@ -436,6 +436,83 @@ export function getTranslatedXCMGSparePartName(name: string, language: string): 
   return name;
 }
 
+// Komatsu spare part name translations
+const komatsuSparePartNameTranslations: Record<string, Record<string, string>> = {
+  'Oil Filter': { en: 'Oil Filter', zh: '油滤芯', es: 'Filtro de aceite', ar: 'فلتر الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
+  '柴油滤芯': { en: 'Diesel Filter', zh: '柴油滤芯', es: 'Filtro de diésel', ar: 'فلتر الديزل', ru: 'Дизельный фильтр', fr: 'Filtre à gazole', pt: 'Filtro diesel', it: 'Filtro diesel' },
+  '空气滤芯(外芯)': { en: 'Air Filter (Outer Element)', zh: '空气滤芯(外芯)', es: 'Filtro de aire (elemento exterior)', ar: 'فلتر الهواء (عنصر خارجي)', ru: 'Воздушный фильтр (внешний элемент)', fr: 'Filtre à air (élément extérieur)', pt: 'Filtro de ar (elemento externo)', it: 'Filtro aria (elemento esterno)' },
+  '空气滤芯(内芯)': { en: 'Air Filter (Inner Element)', zh: '空气滤芯(内芯)', es: 'Filtro de aire (elemento interior)', ar: 'فلتر الهواء (عنصر داخلي)', ru: 'Воздушный фильтр (внутренний элемент)', fr: 'Filtre à air (élément intérieur)', pt: 'Filtro de ar (elemento interno)', it: 'Filtro aria (elemento interno)' },
+  'Hydraulic Oil Filter': { en: 'Hydraulic Oil Filter', zh: '液压油滤芯', es: 'Filtro de aceite hidráulico', ar: 'فلتر الزيت الهيدروليكي', ru: 'Гидравлический масляный фильтр', fr: 'Filtre à huile hydraulique', pt: 'Filtro de óleo hidráulico', it: 'Filtro olio idraulico' },
+  '先导液压滤芯': { en: 'Pilot Hydraulic Filter', zh: '先导液压滤芯', es: 'Filtro hidráulico piloto', ar: 'فلتر هيدروليكي تجريبي', ru: 'Пилотный гидравлический фильтр', fr: 'Filtre hydraulique pilote', pt: 'Filtro hidráulico piloto', it: 'Filtro idraulico pilota' },
+  '驱动链轮(旧款)': { en: 'Drive Sprocket (Old Model)', zh: '驱动链轮(旧款)', es: 'Piñón de accionamiento (modelo antiguo)', ar: 'ترس الدفع (الموديل القديم)', ru: 'Ведущая звездочка (старая модель)', fr: 'Pignon moteur (ancien modèle)', pt: 'Pinhão de acionamento (modelo antigo)', it: 'Pignone motore (modello vecchio)' },
+  '驱动链轮(7/8系)': { en: 'Drive Sprocket (7/8 Series)', zh: '驱动链轮(7/8系)', es: 'Piñón de accionamiento (serie 7/8)', ar: 'ترس الدفع (سلسلة 7/8)', ru: 'Ведущая звездочка (серия 7/8)', fr: 'Pignon moteur (série 7/8)', pt: 'Pinhão de acionamento (série 7/8)', it: 'Pignone motore (serie 7/8)' },
+  '履带板总成': { en: 'Track Shoe Assembly', zh: '履带板总成', es: 'Conjunto de zapata de oruga', ar: 'مجموعة حذاء المسار', ru: 'Сборка траковой башмака', fr: 'Ensemble de chaîne de chenille', pt: 'Conjunto de sapata de esteira', it: 'Gruppo pattino cingolo' },
+  '下托链轮(Track Roller,PC300-7参考)': { en: 'Bottom Roller (Track Roller)', zh: '下托链轮', es: 'Rodillo inferior (rodillo de orugas)', ar: 'أسطوانة سفلية (أسطوانة المسار)', ru: 'Нижний ролик (ролик гусеницы)', fr: 'Rouleau inférieur (rouleau de chaîne)', pt: 'Rolo inferior (rolo de esteira)', it: 'Rullo inferiore (rullo cingolo)' },
+  '上托轮(Carrier Roller,PC400-7参考)': { en: 'Top Roller (Carrier Roller)', zh: '上托轮', es: 'Rodillo superior (rodillo portador)', ar: 'أسطوانة علوية (أسطوانة حاملة)', ru: 'Верхний ролик (ролик-носитель)', fr: 'Rouleau supérieur (rouleau porteur)', pt: 'Rolo superior (rolo portador)', it: 'Rullo superiore (rullo portante)' },
+  '铲斗斗齿(K25系列)': { en: 'Bucket Teeth (K25 Series)', zh: '铲斗斗齿(K25系列)', es: 'Dientes de cucharón (serie K25)', ar: 'أسنان الدلو (سلسلة K25)', ru: 'Зубья ковша (серия K25)', fr: 'Dents de godet (série K25)', pt: 'Dentes da caçamba (série K25)', it: 'Denti del secchio (serie K25)' },
+  '斗齿锁定销': { en: 'Bucket Tooth Lock Pin', zh: '斗齿锁定销', es: 'Pasador de bloqueo de diente de cucharón', ar: 'دبوس قفل سن الدلو', ru: 'Штифт блокировки зуба ковша', fr: 'Goupille de verrouillage de dent de godet', pt: 'Pino de travamento do dente da caçamba', it: 'Perno di bloccaggio dente del secchio' },
+  '主液压泵总成': { en: 'Main Hydraulic Pump Assembly', zh: '主液压泵总成', es: 'Conjunto de bomba hidráulica principal', ar: 'مجموعة المضخة الهيدروليكية الرئيسية', ru: 'Сборка главного гидравлического насоса', fr: 'Ensemble pompe hydraulique principale', pt: 'Conjunto da bomba hidráulica principal', it: 'Gruppo pompa idraulica principale' },
+  '主液压泵(型号2)': { en: 'Main Hydraulic Pump (Model 2)', zh: '主液压泵(型号2)', es: 'Bomba hidráulica principal (modelo 2)', ar: 'المضخة الهيدروليكية الرئيسية (الموديل 2)', ru: 'Главный гидравлический насос (модель 2)', fr: 'Pompe hydraulique principale (modèle 2)', pt: 'Bomba hidráulica principal (modelo 2)', it: 'Pompa idraulica principale (modello 2)' },
+  '回转(转台)马达总成': { en: 'Swing (Turntable) Motor Assembly', zh: '回转(转台)马达总成', es: 'Conjunto del motor de giro (plataforma giratoria)', ar: 'مجموعة محرك الدوران (منصة دوارة)', ru: 'Сборка поворотного (поворотного) двигателя', fr: 'Ensemble moteur de rotation (plateau tournant)', pt: 'Conjunto do motor de giro (plataforma giratória)', it: 'Gruppo motore di rotazione (piattaforma rotante)' },
+  '安全阀(溢流阀)': { en: 'Safety Valve (Relief Valve)', zh: '安全阀(溢流阀)', es: 'Válvula de seguridad (válvula de alivio)', ar: 'صمام الأمان (صمام الإغاثة)', ru: 'Предохранительный клапан (клапан сброса)', fr: 'Soupape de sécurité (soupape de soulagement)', pt: 'Válvula de segurança (válvula de alívio)', it: 'Valvola di sicurezza (valvola di scarico)' },
+  '点火钥匙开关总成': { en: 'Ignition Key Switch Assembly', zh: '点火钥匙开关总成', es: 'Conjunto del interruptor de llave de encendido', ar: 'مجموعة مفتاح الإشعال', ru: 'Сборка выключателя зажигания', fr: 'Ensemble interrupteur de clé d\'allumage', pt: 'Conjunto do interruptor de chave de ignição', it: 'Gruppo interruttore chiave accensione' },
+  '点火钥匙开关(老款)': { en: 'Ignition Key Switch (Old Model)', zh: '点火钥匙开关(老款)', es: 'Interruptor de llave de encendido (modelo antiguo)', ar: 'مفتاح الإشعال (الموديل القديم)', ru: 'Выключатель зажигания (старая модель)', fr: 'Interrupteur de clé d\'allumage (ancien modèle)', pt: 'Interruptor de chave de ignição (modelo antigo)', it: 'Interruttore chiave accensione (modello vecchio)' },
+};
+
+const komatsuSparePartCategoryTranslations: Record<string, Record<string, string>> = {
+  '保养/滤清系统': { en: 'Maintenance/Filtration System', zh: '保养/滤清系统', es: 'Sistema de mantenimiento/filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema de manutenção/filtração', it: 'Sistema di manutenzione/filtrazione' },
+  '底盘/履带系统': { en: 'Chassis/Track System', zh: '底盘/履带系统', es: 'Sistema de chasis/orugas', ar: 'نظام الهيكل/المسار', ru: 'Система шасси/гусеницы', fr: 'Système châssis/chaîne', pt: 'Sistema de chassis/esteira', it: 'Sistema telaio/cingolo' },
+  '挖掘属性/GET': { en: 'Excavation/GET', zh: '挖掘属性/GET', es: 'Excavación/GET', ar: 'الحفر/GET', ru: 'Экскавация/GET', fr: 'Excavation/GET', pt: 'Escavação/GET', it: 'Scavo/GET' },
+  '液压系统': { en: 'Hydraulic System', zh: '液压系统', es: 'Sistema hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema hidráulico', it: 'Sistema idraulico' },
+  '电气系统': { en: 'Electrical System', zh: '电气系统', es: 'Sistema eléctrico', ar: 'النظام الكهربائي', ru: 'Электрическая система', fr: 'Système électrique', pt: 'Sistema elétrico', it: 'Sistema elettrico' },
+};
+
+export function getTranslatedKomatsuSparePartName(name: string, language: string): string {
+  const translations = komatsuSparePartNameTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}
+
+export function getTranslatedKomatsuSparePartCategory(category: string, language: string): string {
+  const translations = komatsuSparePartCategoryTranslations[category];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return category;
+}
+
+// Komatsu spare part description translations
+const komatsuSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
+  'Oil Filter': { en: 'KOMATSU part. Replace every 250-500 hours during maintenance.', zh: 'KOMATSU 零件。250-500小时随保养更换', es: 'Pieza KOMATSU. Reemplazar cada 250-500 horas durante el mantenimiento.', ar: 'قطعة KOMATSU. استبدل كل 250-500 ساعة أثناء الصيانة.', ru: 'Деталь KOMATSU. Заменяйте каждые 250-500 часов при обслуживании.', fr: 'Pièce KOMATSU. Remplacer tous les 250-500 heures lors de l\'entretien.', pt: 'Peça KOMATSU. Substituir a cada 250-500 horas durante a manutenção.', it: 'Pezzo KOMATSU. Sostituire ogni 250-500 ore durante la manutenzione.' },
+  '柴油滤芯': { en: 'KOMATSU part. Replace every 250-500 hours or based on fuel quality.', zh: 'KOMATSU 零件。250-500小时或视油品质量更换', es: 'Pieza KOMATSU. Reemplazar cada 250-500 horas o según la calidad del combustible.', ar: 'قطعة KOMATSU. استبدل كل 250-500 ساعة أو بناءً على جودة الوقود.', ru: 'Деталь KOMATSU. Заменяйте каждые 250-500 часов или в зависимости от качества топлива.', fr: 'Pièce KOMATSU. Remplacer tous les 250-500 heures ou selon la qualité du carburant.', pt: 'Peça KOMATSU. Substituir a cada 250-500 horas ou com base na qualidade do combustível.', it: 'Pezzo KOMATSU. Sostituire ogni 250-500 ore o in base alla qualità del carburante.' },
+  '空气滤芯(外芯)': { en: 'KOMATSU part. Replace every 250-500 hours or based on dust environment.', zh: 'KOMATSU 零件。250-500小时或视灰尘环境更换', es: 'Pieza KOMATSU. Reemplazar cada 250-500 horas o según el entorno de polvo.', ar: 'قطعة KOMATSU. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.', ru: 'Деталь KOMATSU. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.', fr: 'Pièce KOMATSU. Remplacer tous les 250-500 heures ou selon l\'environnement poussiéreux.', pt: 'Peça KOMATSU. Substituir a cada 250-500 horas ou com base no ambiente de poeira.', it: 'Pezzo KOMATSU. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.' },
+  '空气滤芯(内芯)': { en: 'KOMATSU part. Replace synchronously with outer element.', zh: 'KOMATSU 零件。随外芯周期同步更换', es: 'Pieza KOMATSU. Reemplazar sincrónicamente con el elemento exterior.', ar: 'قطعة KOMATSU. استبدل بالتزامن مع العنصر الخارجي.', ru: 'Деталь KOMATSU. Заменяйте синхронно с внешним элементом.', fr: 'Pièce KOMATSU. Remplacer en synchronisation avec l\'élément extérieur.', pt: 'Peça KOMATSU. Substituir sincronamente com o elemento externo.', it: 'Pezzo KOMATSU. Sostituire sincronamente con l\'elemento esterno.' },
+  'Hydraulic Oil Filter': { en: 'KOMATSU part. Replace every 500-1000 hours or based on fluid analysis.', zh: 'KOMATSU 零件。500-1000小时或视油液检测更换', es: 'Pieza KOMATSU. Reemplazar cada 500-1000 horas o según el análisis de fluidos.', ar: 'قطعة KOMATSU. استبدل كل 500-1000 ساعة أو بناءً على تحليل السوائل.', ru: 'Деталь KOMATSU. Заменяйте каждые 500-1000 часов или на основе анализа жидкости.', fr: 'Pièce KOMATSU. Remplacer tous les 500-1000 heures ou selon l\'analyse des fluides.', pt: 'Peça KOMATSU. Substituir a cada 500-1000 horas ou com base na análise de fluidos.', it: 'Pezzo KOMATSU. Sostituire ogni 500-1000 ore o in base all\'analisi dei fluidi.' },
+  '先导液压滤芯': { en: 'KOMATSU part. Replace every 500-1000 hours.', zh: 'KOMATSU 零件。500-1000小时更换', es: 'Pieza KOMATSU. Reemplazar cada 500-1000 horas.', ar: 'قطعة KOMATSU. استبدل كل 500-1000 ساعة.', ru: 'Деталь KOMATSU. Заменяйте каждые 500-1000 часов.', fr: 'Pièce KOMATSU. Remplacer tous les 500-1000 heures.', pt: 'Peça KOMATSU. Substituir a cada 500-1000 horas.', it: 'Pezzo KOMATSU. Sostituire ogni 500-1000 ore.' },
+  '驱动链轮(旧款)': { en: 'KOMATSU part. Replace when teeth wear or break (major overhaul item).', zh: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando los dientes se desgastan o se rompen (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند تآكل الأسنان أو كسرها (عنصر مراجعة رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при износе или поломке зубьев (предмет капитального ремонта).', fr: 'Pièce KOMATSU. Remplacer en cas d\'usure ou de rupture des dents (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando os dentes se desgastam ou quebram (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando i denti si usurano o si rompono (elemento di revisione maggiore).' },
+  '驱动链轮(7/8系)': { en: 'KOMATSU part. Replace when teeth wear or break (major overhaul item).', zh: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando los dientes se desgastan o se rompen (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند تآكل الأسنان أو كسرها (عنصر مراجعة رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при износе или поломке зубьев (предмет капитального ремонта).', fr: 'Pièce KOMATSU. Remplacer en cas d\'usure ou de rupture des dents (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando os dentes se desgastam ou quebram (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando i denti si usurano o si rompono (elemento di revisione maggiore).' },
+  '履带板总成': { en: 'KOMATSU part. Replace when worn or cracked (major overhaul item).', zh: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando está desgastado o agrietado (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند التآكل أو التشقق (عنصر مراجعة رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при износе или трещинах (предмет капитального ремонта).', fr: 'Pièce KOMATSU. Remplacer en cas d\'usure ou de fissure (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando desgastado ou rachado (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando usurato o incrinato (elemento di revisione maggiore).' },
+  '下托链轮(Track Roller,PC300-7参考)': { en: 'KOMATSU part. Replace when leaking or worn.', zh: 'KOMATSU 零件。漏油/磨损时更换', es: 'Pieza KOMATSU. Reemplazar cuando hay fugas o desgaste.', ar: 'قطعة KOMATSU. استبدل عند التسريب أو التآكل.', ru: 'Деталь KOMATSU. Заменяйте при утечках или износе.', fr: 'Pièce KOMATSU. Remplacer en cas de fuite ou d\'usure.', pt: 'Peça KOMATSU. Substituir quando há vazamento ou desgaste.', it: 'Pezzo KOMATSU. Sostituire quando c\'è perdita o usura.' },
+  '上托轮(Carrier Roller,PC400-7参考)': { en: 'KOMATSU part. Replace when leaking or worn.', zh: 'KOMATSU 零件。漏油/磨损时更换', es: 'Pieza KOMATSU. Reemplazar cuando hay fugas o desgaste.', ar: 'قطعة KOMATSU. استبدل عند التسريب أو التآكل.', ru: 'Деталь KOMATSU. Заменяйте при утечках или износе.', fr: 'Pièce KOMATSU. Remplacer en cas de fuite ou d\'usure.', pt: 'Peça KOMATSU. Substituir quando há vazamento ou desgaste.', it: 'Pezzo KOMATSU. Sostituire quando c\'è perdita o usura.' },
+  '铲斗斗齿(K25系列)': { en: 'KOMATSU part. Replace when worn to bottom or cracked (high-frequency replacement item).', zh: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件', es: 'Pieza KOMATSU. Reemplazar cuando se desgasta hasta el fondo o se agrieta (artículo de reemplazo de alta frecuencia).', ar: 'قطعة KOMATSU. استبدل عند التآكل إلى القاع أو التشقق (عنصر استبدال عالي التكرار).', ru: 'Деталь KOMATSU. Заменяйте при износе до дна или трещинах (предмет частой замены).', fr: 'Pièce KOMATSU. Remplacer en cas d\'usure jusqu\'au fond ou de fissure (article de remplacement haute fréquence).', pt: 'Peça KOMATSU. Substituir quando desgastado até o fundo ou rachado (item de substituição de alta frequência).', it: 'Pezzo KOMATSU. Sostituire quando usurato fino al fondo o incrinato (elemento di sostituzione ad alta frequenza).' },
+  '斗齿锁定销': { en: 'KOMATSU part. Replace synchronously when bucket teeth are replaced.', zh: 'KOMATSU 零件。随斗齿更换时同步更换', es: 'Pieza KOMATSU. Reemplazar sincrónicamente cuando se reemplazan los dientes del cucharón.', ar: 'قطعة KOMATSU. استبدل بالتزامن عند استبدال أسنان الدلو.', ru: 'Деталь KOMATSU. Заменяйте синхронно при замене зубьев ковша.', fr: 'Pièce KOMATSU. Remplacer en synchronisation lors du remplacement des dents de godet.', pt: 'Peça KOMATSU. Substituir sincronamente quando os dentes da caçamba são substituídos.', it: 'Pezzo KOMATSU. Sostituire sincronamente quando i denti del secchio vengono sostituiti.' },
+  '主液压泵总成': { en: 'KOMATSU part. Replace when abnormal noise, insufficient supply, or pressure drop occurs (major overhaul item).', zh: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando hay ruido anormal, suministro insuficiente o caída de presión (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند حدوث ضوضاء غير طبيعية أو إمداد غير كافٍ أو انخفاض الضغط (عنصر مراجعة رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при аномальном шуме, недостаточной подаче или падении давления (предмет капитального ремонта).', fr: 'Pièce KOMATSU. Remplacer en cas de bruit anormal, d\'approvisionnement insuffisant ou de chute de pression (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando há ruído anormal, suprimento insuficiente ou queda de pressão (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando c\'è rumore anomalo, fornitura insufficiente o calo di pressione (elemento di revisione maggiore).' },
+  '主液压泵(型号2)': { en: 'KOMATSU part. Replace when abnormal noise or insufficient supply occurs (major overhaul item).', zh: 'KOMATSU 零件。异响/供油不足时更换(大修类)', es: 'Pieza KOMATSU. Reemplazar cuando hay ruido anormal o suministro insuficiente (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند حدوث ضوضاء غير طبيعية أو إمداد غير كافٍ (عنصر مراجعة رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при аномальном шуме или недостаточной подаче (предмет капитального ремонта).', fr: 'Pièce KOMATSU. Remplacer en cas de bruit anormal ou d\'approvisionnement insuffisant (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando há ruído anormal ou suprimento insuficiente (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando c\'è rumore anomalo o fornitura insufficiente (elemento di revisione maggiore).' },
+  '回转(转台)马达总成': { en: 'KOMATSU part. Replace when abnormal noise or weak rotation occurs (major overhaul item).', zh: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando hay ruido anormal o rotación débil (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند حدوث ضوضاء غير طبيعية أو دوران ضعيف (عنصر مراجعة رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при аномальном шуме или слабом вращении (предмет капитального ремонта).', fr: 'Pièce KOMATSU. Remplacer en cas de bruit anormal ou de rotation faible (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando há ruído anormal ou rotação fraca (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando c\'è rumore anomalo o rotazione debole (elemento di revisione maggiore).' },
+  '安全阀(溢流阀)': { en: 'KOMATSU part. Replace when abnormal hydraulic pressure or instability occurs.', zh: 'KOMATSU 零件。液压异常/压力不稳时更换', es: 'Pieza KOMATSU. Reemplazar cuando hay presión hidráulica anormal o inestabilidad.', ar: 'قطعة KOMATSU. استبدل عند حدوث ضغط هيدروليكي غير طبيعي أو عدم استقرار.', ru: 'Деталь KOMATSU. Заменяйте при аномальном гидравлическом давлении или нестабильности.', fr: 'Pièce KOMATSU. Remplacer en cas de pression hydraulique anormale ou d\'instabilité.', pt: 'Peça KOMATSU. Substituir quando há pressão hidráulica anormal ou instabilidade.', it: 'Pezzo KOMATSU. Sostituire quando c\'è pressione idraulica anomala o instabilità.' },
+  '点火钥匙开关总成': { en: 'KOMATSU part. Replace when key is worn or switch fails.', zh: 'KOMATSU 零件。钥匙磨损/开关失效时更换', es: 'Pieza KOMATSU. Reemplazar cuando la llave está desgastada o el interruptor falla.', ar: 'قطعة KOMATSU. استبدل عند تآكل المفتاح أو فشل المفتاح.', ru: 'Деталь KOMATSU. Заменяйте при износе ключа или отказе переключателя.', fr: 'Pièce KOMATSU. Remplacer en cas d\'usure de la clé ou de défaillance du commutateur.', pt: 'Peça KOMATSU. Substituir quando a chave está desgastada ou o interruptor falha.', it: 'Pezzo KOMATSU. Sostituire quando la chiave è usurata o l\'interruttore si guasta.' },
+  '点火钥匙开关(老款)': { en: 'KOMATSU part. Replace when key is worn or switch fails.', zh: 'KOMATSU 零件。钥匙磨损/开关失效时更换', es: 'Pieza KOMATSU. Reemplazar cuando la llave está desgastada o el interruptor falla.', ar: 'قطعة KOMATSU. استبدل عند تآكل المفتاح أو فشل المفتاح.', ru: 'Деталь KOMATSU. Заменяйте при износе ключа или отказе переключателя.', fr: 'Pièce KOMATSU. Remplacer en cas d\'usure de la clé ou de défaillance du commutateur.', pt: 'Peça KOMATSU. Substituir quando a chave está desgastada ou o interruptor falha.', it: 'Pezzo KOMATSU. Sostituire quando la chiave è usurata o l\'interruttore si guasta.' },
+};
+
+export function getTranslatedKomatsuSparePartDescription(description: string, language: string): string {
+  const translations = komatsuSparePartDescriptionTranslations[description];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return description;
+}
 
 // Shacman spare part name translations
 const shacmanSparePartNameTranslations: Record<string, Record<string, string>> = {
@@ -545,417 +622,4 @@ export function getTranslatedShacmanSparePartDescription(description: string, la
     return translations[language];
   }
   return description;
-}
-
-// Toyota spare part name translations
-const toyotaSparePartNameTranslations: Record<string, Record<string, string>> = {
-  'Oil Filter': { en: 'Oil Filter', zh: '油滤芯', es: 'Filtro de aceite', ar: 'فلتر الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
-  '空气滤芯': { en: 'Air Filter', zh: '空气滤芯', es: 'Filtro de aire', ar: 'فلتر الهواء', ru: 'Воздушный фильтр', fr: 'Filtre à air', pt: 'Filtro de ar', it: 'Filtro aria' },
-  '柴油滤芯(前置)': { en: 'Diesel Filter (Front)', zh: '柴油滤芯(前置)', es: 'Filtro de diésel (frontal)', ar: 'فلتر الديزل (أمامي)', ru: 'Дизельный фильтр (передний)', fr: 'Filtre diesel (avant)', pt: 'Filtro diesel (frontal)', it: 'Filtro diesel (anteriore)' },
-  '空调/花粉滤芯': { en: 'AC/Pollen Filter', zh: '空调/花粉滤芯', es: 'Filtro de aire acondicionado/polen', ar: 'فلتر تكييف الهواء/حبوب اللقاح', ru: 'Фильтр кондиционера/пыльцы', fr: 'Filtre climatisation/pollen', pt: 'Filtro ar condicionado/pólen', it: 'Filtro aria condizionata/polline' },
-  '火花塞': { en: 'Spark Plug', zh: '火花塞', es: 'Bujía', ar: 'شمعة الإشعال', ru: 'Свеча зажигания', fr: 'Bougie d\'allumage', pt: 'Vela de ignição', it: 'Candela di accensione' },
-  '冷却液': { en: 'Coolant', zh: '冷却液', es: 'Refrigerante', ar: 'سائل التبريد', ru: 'Охлаждающая жидкость', fr: 'Liquide de refroidissement', pt: 'Líquido de arrefecimento', it: 'Liquido refrigerante' },
-  '制动液': { en: 'Brake Fluid', zh: '制动液', es: 'Líquido de frenos', ar: 'سائل الفرامل', ru: 'Тормозная жидкость', fr: 'Liquide de frein', pt: 'Líquido de freio', it: 'Liquido freni' },
-  '变速箱油': { en: 'Transmission Fluid', zh: '变速箱油', es: 'Aceite de transmisión', ar: 'زيت ناقل الحركة', ru: 'Трансмиссионное масло', fr: 'Huile de transmission', pt: 'Óleo de transmissão', it: 'Olio trasmissione' },
-  '差速器油': { en: 'Differential Oil', zh: '差速器油', es: 'Aceite diferencial', ar: 'زيت التفاضل', ru: 'Масло дифференциала', fr: 'Huile différentiel', pt: 'Óleo diferencial', it: 'Olio differenziale' },
-  '制动片': { en: 'Brake Pads', zh: '制动片', es: 'Pastillas de freno', ar: 'وسادات الفرامل', ru: 'Тормозные колодки', fr: 'Plaquettes de frein', pt: 'Pastilhas de freio', it: 'Pastiglie freno' },
-  '制动盘': { en: 'Brake Disc', zh: '制动盘', es: 'Disco de freno', ar: 'قرص الفرامل', ru: 'Тормозной диск', fr: 'Disque de frein', pt: 'Disco de freio', it: 'Disco freno' },
-  '制动鼓': { en: 'Brake Drum', zh: '制动鼓', es: 'Tambor de freno', ar: 'أسطوانة الفرامل', ru: 'Тормозной барабан', fr: 'Tambour de frein', pt: 'Tambor de freio', it: 'Tamburo freno' },
-  '悬挂减震器': { en: 'Shock Absorber', zh: '悬挂减震器', es: 'Amortiguador', ar: 'ممتص الصدمات', ru: 'Амортизатор', fr: 'Amortisseur', pt: 'Amortecedor', it: 'Ammortizzatore' },
-  '弹簧': { en: 'Spring', zh: '弹簧', es: 'Resorte', ar: 'نابض', ru: 'Пружина', fr: 'Ressort', pt: 'Mola', it: 'Molla' },
-  '转向球头': { en: 'Steering Ball Joint', zh: '转向球头', es: 'Rótula de dirección', ar: 'كرة التوجيه', ru: 'Шаровой шарнир рулевой тяги', fr: 'Rotule de direction', pt: 'Rótula de direção', it: 'Sfera dello sterzo' },
-  '转向拉杆': { en: 'Steering Tie Rod', zh: '转向拉杆', es: 'Barra de acoplamiento', ar: 'قضيب التوجيه', ru: 'Рулевая тяга', fr: 'Barre d\'accouplement', pt: 'Barra de acoplamento', it: 'Barra di accoppiamento' },
-  '轮毂轴承': { en: 'Wheel Hub Bearing', zh: '轮毂轴承', es: 'Rodamiento del cubo de rueda', ar: 'محمل محور العجلة', ru: 'Подшипник ступицы колеса', fr: 'Roulement moyeu de roue', pt: 'Rolamento cubo de roda', it: 'Cuscinetto mozzo ruota' },
-  '传动轴': { en: 'Drive Shaft', zh: '传动轴', es: 'Eje de transmisión', ar: 'عمود الدفع', ru: 'Карданный вал', fr: 'Arbre de transmission', pt: 'Eixo de transmissão', it: 'Albero di trasmissione' },
-  '万向节': { en: 'Universal Joint', zh: '万向节', es: 'Junta universal', ar: 'مفصل عام', ru: 'Карданный шарнир', fr: 'Joint universel', pt: 'Junta universal', it: 'Giunto cardanico' },
-  '皮带': { en: 'Belt', zh: '皮带', es: 'Correa', ar: 'حزام', ru: 'Ремень', fr: 'Courroie', pt: 'Correia', it: 'Cinghia' },
-  '皮带轮': { en: 'Pulley', zh: '皮带轮', es: 'Polea', ar: 'بكرة', ru: 'Шкив', fr: 'Poulie', pt: 'Polia', it: 'Puleggia' },
-  '发电机': { en: 'Alternator', zh: '发电机', es: 'Alternador', ar: 'مولد كهربائي', ru: 'Генератор', fr: 'Alternateur', pt: 'Alternador', it: 'Alternatore' },
-  '起动马达': { en: 'Starter Motor', zh: '起动马达', es: 'Motor de arranque', ar: 'محرك البدء', ru: 'Стартер', fr: 'Moteur de démarrage', pt: 'Motor de partida', it: 'Motore di avviamento' },
-  '水泵': { en: 'Water Pump', zh: '水泵', es: 'Bomba de agua', ar: 'مضخة المياه', ru: 'Водяной насос', fr: 'Pompe à eau', pt: 'Bomba de água', it: 'Pompa acqua' },
-  '节温器': { en: 'Thermostat', zh: '节温器', es: 'Termostato', ar: 'منظم الحرارة', ru: 'Термостат', fr: 'Thermostat', pt: 'Termostato', it: 'Termostato' },
-  '散热器': { en: 'Radiator', zh: '散热器', es: 'Radiador', ar: 'مشعاع', ru: 'Радиатор', fr: 'Radiateur', pt: 'Radiador', it: 'Radiatore' },
-  '风扇': { en: 'Fan', zh: '风扇', es: 'Ventilador', ar: 'مروحة', ru: 'Вентилятор', fr: 'Ventilateur', pt: 'Ventilador', it: 'Ventilatore' },
-  '电池': { en: 'Battery', zh: '电池', es: 'Batería', ar: 'بطارية', ru: 'Аккумулятор', fr: 'Batterie', pt: 'Bateria', it: 'Batteria' },
-  '雨刮片': { en: 'Wiper Blade', zh: '雨刮片', es: 'Hoja de limpiaparabrisas', ar: 'شفرة ممسحة الزجاج', ru: 'Щетка стеклоочистителя', fr: 'Balai d\'essuie-glace', pt: 'Lâmina limpador', it: 'Pala tergicristallo' },
-  '灯泡': { en: 'Light Bulb', zh: '灯泡', es: 'Bombilla', ar: 'لمبة', ru: 'Лампочка', fr: 'Ampoule', pt: 'Lâmpada', it: 'Lampadina' },
-  '传感器': { en: 'Sensor', zh: '传感器', es: 'Sensor', ar: 'مستشعر', ru: 'Датчик', fr: 'Capteur', pt: 'Sensor', it: 'Sensore' },
-};
-
-// Toyota spare part category translations
-const toyotaSparePartCategoryTranslations: Record<string, Record<string, string>> = {
-  '保养/滤清系统': { en: 'Maintenance/Filtration System', zh: '保养/滤清系统', es: 'Sistema de mantenimiento/filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema manutenção/filtração', it: 'Sistema manutenzione/filtrazione' },
-  '冷却系统': { en: 'Cooling System', zh: '冷却系统', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
-  '制动系统': { en: 'Brake System', zh: '制动系统', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de freios', it: 'Sistema frenante' },
-  '悬挂系统': { en: 'Suspension System', zh: '悬挂系统', es: 'Sistema de suspensión', ar: 'نظام التعليق', ru: 'Система подвески', fr: 'Système de suspension', pt: 'Sistema de suspensão', it: 'Sistema di sospensione' },
-  '转向系统': { en: 'Steering System', zh: '转向系统', es: 'Sistema de dirección', ar: 'نظام التوجيه', ru: 'Система рулевого управления', fr: 'Système de direction', pt: 'Sistema de direção', it: 'Sistema di sterzo' },
-  '轮毂/传动轴': { en: 'Wheel Hub/Drive Shaft', zh: '轮毂/传动轴', es: 'Cubo de rueda/eje de transmisión', ar: 'محور العجلة/عمود الدفع', ru: 'Ступица колеса/карданный вал', fr: 'Moyeu de roue/arbre de transmission', pt: 'Cubo de roda/eixo de transmissão', it: 'Mozzo ruota/albero di trasmissione' },
-  '传动/皮带': { en: 'Transmission/Belt', zh: '传动/皮带', es: 'Transmisión/correa', ar: 'ناقل الحركة/حزام', ru: 'Передача/ремень', fr: 'Transmission/courroie', pt: 'Transmissão/correia', it: 'Trasmissione/cinghia' },
-  '差速器/传动': { en: 'Differential/Transmission', zh: '差速器/传动', es: 'Diferencial/transmisión', ar: 'التفاضل/ناقل الحركة', ru: 'Дифференциал/передача', fr: 'Différentiel/transmission', pt: 'Diferencial/transmissão', it: 'Differenziale/trasmissione' },
-};
-
-// Toyota spare part description translations
-const toyotaSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
-  'Toyota Hilux 零件。5,000-10,000km随保养更换': { en: 'Toyota Hilux part. Replace every 5,000-10,000km during maintenance.', zh: 'Toyota Hilux 零件。5,000-10,000km随保养更换', es: 'Pieza Toyota Hilux. Reemplazar cada 5,000-10,000km durante el mantenimiento.', ar: 'قطعة Toyota Hilux. استبدل كل 5,000-10,000 كم أثناء الصيانة.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 5000-10000 км при обслуживании.', fr: 'Pièce Toyota Hilux. Remplacer tous les 5000-10000 km lors de l\'entretien.', pt: 'Peça Toyota Hilux. Substituir a cada 5.000-10.000 km durante a manutenção.', it: 'Pezzo Toyota Hilux. Sostituire ogni 5.000-10.000 km durante la manutenzione.' },
-  'Toyota Hilux 零件。10,000-20,000km或视路况': { en: 'Toyota Hilux part. Replace every 10,000-20,000km or based on road conditions.', zh: 'Toyota Hilux 零件。10,000-20,000km或视路况', es: 'Pieza Toyota Hilux. Reemplazar cada 10,000-20,000km o según las condiciones de la carretera.', ar: 'قطعة Toyota Hilux. استبدل كل 10,000-20,000 كم أو بناءً على ظروف الطريق.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 10000-20000 км или в зависимости от условий дороги.', fr: 'Pièce Toyota Hilux. Remplacer tous les 10000-20000 km ou selon les conditions de la route.', pt: 'Peça Toyota Hilux. Substituir a cada 10.000-20.000 km ou com base nas condições da estrada.', it: 'Pezzo Toyota Hilux. Sostituire ogni 10.000-20.000 km o in base alle condizioni stradali.' },
-  'Toyota Hilux 零件。每20,000km,柴油车关键件': { en: 'Toyota Hilux part. Replace every 20,000km, critical for diesel vehicles.', zh: 'Toyota Hilux 零件。每20,000km,柴油车关键件', es: 'Pieza Toyota Hilux. Reemplazar cada 20,000km, crítico para vehículos diésel.', ar: 'قطعة Toyota Hilux. استبدل كل 20,000 كم، حرج للمركبات ذات الديزل.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 20000 км, критично для дизельных автомобилей.', fr: 'Pièce Toyota Hilux. Remplacer tous les 20000 km, critique pour les véhicules diesel.', pt: 'Peça Toyota Hilux. Substituir a cada 20.000 km, crítico para veículos diesel.', it: 'Pezzo Toyota Hilux. Sostituire ogni 20.000 km, critico per i veicoli diesel.' },
-  'Toyota Hilux 零件。10,000-15,000km': { en: 'Toyota Hilux part. Replace every 10,000-15,000km.', zh: 'Toyota Hilux 零件。10,000-15,000km', es: 'Pieza Toyota Hilux. Reemplazar cada 10,000-15,000km.', ar: 'قطعة Toyota Hilux. استبدل كل 10,000-15,000 كم.', ru: 'Деталь Toyota Hilux. Заменяйте каждые 10000-15000 км.', fr: 'Pièce Toyota Hilux. Remplacer tous les 10000-15000 km.', pt: 'Peça Toyota Hilux. Substituir a cada 10.000-15.000 km.', it: 'Pezzo Toyota Hilux. Sostituire ogni 10.000-15.000 km.' },
-};
-
-export function getTranslatedToyotaSparePartName(name: string, language: string): string {
-  const translations = toyotaSparePartNameTranslations[name];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return name;
-}
-
-export function getTranslatedToyotaSparePartCategory(category: string, language: string): string {
-  const translations = toyotaSparePartCategoryTranslations[category];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return category;
-}
-
-export function getTranslatedToyotaSparePartDescription(description: string, language: string): string {
-  const translations = toyotaSparePartDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
-}
-
-
-// Komatsu spare part name translations
-const komatsuSparePartNameTranslations: Record<string, Record<string, string>> = {
-  'Oil Filter': { en: 'Oil Filter', zh: '机油滤芯', es: 'Filtro de aceite', ar: 'مرشح الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
-  'Diesel Filter': { en: 'Diesel Filter', zh: '柴油滤芯', es: 'Filtro de diésel', ar: 'مرشح الديزل', ru: 'Дизельный фильтр', fr: 'Filtre à carburant', pt: 'Filtro de diesel', it: 'Filtro diesel' },
-  'Air Filter (Outer Element)': { en: 'Air Filter (Outer Element)', zh: '空气滤芯(外芯)', es: 'Filtro de aire (elemento exterior)', ar: 'مرشح الهواء (العنصر الخارجي)', ru: 'Воздушный фильтр (внешний элемент)', fr: 'Filtre à air (élément extérieur)', pt: 'Filtro de ar (elemento externo)', it: 'Filtro aria (elemento esterno)' },
-  'Air Filter (Inner Element)': { en: 'Air Filter (Inner Element)', zh: '空气滤芯(内芯)', es: 'Filtro de aire (elemento interior)', ar: 'مرشح الهواء (العنصر الداخلي)', ru: 'Воздушный фильтр (внутренний элемент)', fr: 'Filtre à air (élément intérieur)', pt: 'Filtro de ar (elemento interno)', it: 'Filtro aria (elemento interno)' },
-  'Hydraulic Oil Filter': { en: 'Hydraulic Oil Filter', zh: '液压油滤芯', es: 'Filtro de aceite hidráulico', ar: 'مرشح الزيت الهيدروليكي', ru: 'Гидравлический масляный фильтр', fr: 'Filtre hydraulique', pt: 'Filtro de óleo hidráulico', it: 'Filtro olio idraulico' },
-  'Pilot Hydraulic Filter': { en: 'Pilot Hydraulic Filter', zh: '先导液压滤芯', es: 'Filtro hidráulico piloto', ar: 'مرشح الهيدروليك الرئيسي', ru: 'Пилотный гидравлический фильтр', fr: 'Filtre hydraulique pilote', pt: 'Filtro hidráulico piloto', it: 'Filtro idraulico pilota' },
-  'Diesel Filter (New Series 7/8)': { en: 'Diesel Filter (New Series 7/8)', zh: '柴油滤芯(新款7/8系)', es: 'Filtro de diésel (serie nueva 7/8)', ar: 'مرشح الديزل (السلسلة الجديدة 7/8)', ru: 'Дизельный фильтр (новая серия 7/8)', fr: 'Filtre à carburant (nouvelle série 7/8)', pt: 'Filtro de diesel (nova série 7/8)', it: 'Filtro diesel (nuova serie 7/8)' },
-  'Diesel Filter (Universal)': { en: 'Diesel Filter (Universal)', zh: '柴油滤芯(通用型)', es: 'Filtro de diésel (universal)', ar: 'مرشح الديزل (عام)', ru: 'Дизельный фильтр (универсальный)', fr: 'Filtre à carburant (universel)', pt: 'Filtro de diesel (universal)', it: 'Filtro diesel (universale)' },
-  'Oil Filter (6D102 Engine)': { en: 'Oil Filter (6D102 Engine)', zh: '机油滤芯(6D102发动机)', es: 'Filtro de aceite (motor 6D102)', ar: 'مرشح الزيت (محرك 6D102)', ru: 'Масляный фильтр (двигатель 6D102)', fr: 'Filtre à huile (moteur 6D102)', pt: 'Filtro de óleo (motor 6D102)', it: 'Filtro olio (motore 6D102)' },
-  'Drive Sprocket (Old Model)': { en: 'Drive Sprocket (Old Model)', zh: '驱动链轮(旧款)', es: 'Piñón de accionamiento (modelo antiguo)', ar: 'رف القيادة (نموذج قديم)', ru: 'Ведущая звездочка (старая модель)', fr: 'Pignon d\'entraînement (ancien modèle)', pt: 'Pinhão de acionamento (modelo antigo)', it: 'Pignone di azionamento (modello vecchio)' },
-  'Drive Sprocket (Series 7/8)': { en: 'Drive Sprocket (Series 7/8)', zh: '驱动链轮(7/8系)', es: 'Piñón de accionamiento (serie 7/8)', ar: 'رف القيادة (سلسلة 7/8)', ru: 'Ведущая звездочка (серия 7/8)', fr: 'Pignon d\'entraînement (série 7/8)', pt: 'Pinhão de acionamento (série 7/8)', it: 'Pignone di azionamento (serie 7/8)' },
-  'Track Shoe Assembly': { en: 'Track Shoe Assembly', zh: '履带板总成', es: 'Conjunto de zapata de oruga', ar: 'مجموعة حذاء المسار', ru: 'Узел звена гусеницы', fr: 'Ensemble de maillon de chaîne', pt: 'Conjunto de sapata de trilho', it: 'Insieme di scarpa cingolo' },
-  'Track Roller (Lower)': { en: 'Track Roller (Lower)', zh: '下托链轮', es: 'Rodillo inferior (rodillo de orugas)', ar: 'بكرة المسار (السفلى)', ru: 'Нижний ролик гусеницы', fr: 'Galet inférieur', pt: 'Rolo de trilho (inferior)', it: 'Rullo cingolo (inferiore)' },
-  'Carrier Roller (Upper)': { en: 'Carrier Roller (Upper)', zh: '上托轮', es: 'Rodillo superior (rodillo portador)', ar: 'بكرة الناقل (العليا)', ru: 'Верхний ролик гусеницы', fr: 'Galet supérieur', pt: 'Rolo portador (superior)', it: 'Rullo portante (superiore)' },
-  'Bucket Tooth (K25 Series)': { en: 'Bucket Tooth (K25 Series)', zh: '铲斗斗齿(K25系列)', es: 'Dientes de cucharón (serie K25)', ar: 'أسنان الجرافة (سلسلة K25)', ru: 'Зуб ковша (серия K25)', fr: 'Dent de godet (série K25)', pt: 'Dente de caçamba (série K25)', it: 'Dente benna (serie K25)' },
-  'Bucket Tooth Lock Pin': { en: 'Bucket Tooth Lock Pin', zh: '斗齿锁定销', es: 'Pasador de bloqueo de diente de cucharón', ar: 'دبوس قفل أسنان الجرافة', ru: 'Штифт блокировки зуба ковша', fr: 'Goupille de verrouillage de dent de godet', pt: 'Pino de travamento de dente de caçamba', it: 'Spinotto di bloccaggio dente benna' },
-  'Main Hydraulic Pump Assembly': { en: 'Main Hydraulic Pump Assembly', zh: '主液压泵总成', es: 'Conjunto de bomba hidráulica principal', ar: 'مجموعة مضخة هيدروليكية رئيسية', ru: 'Узел основного гидравлического насоса', fr: 'Ensemble de pompe hydraulique principale', pt: 'Conjunto de bomba hidráulica principal', it: 'Insieme pompa idraulica principale' },
-  'Main Hydraulic Pump (Model 2)': { en: 'Main Hydraulic Pump (Model 2)', zh: '主液压泵(型号2)', es: 'Bomba hidráulica principal (modelo 2)', ar: 'مضخة هيدروليكية رئيسية (نموذج 2)', ru: 'Основной гидравлический насос (модель 2)', fr: 'Pompe hydraulique principale (modèle 2)', pt: 'Bomba hidráulica principal (modelo 2)', it: 'Pompa idraulica principale (modello 2)' },
-  'Swing Motor Assembly': { en: 'Swing Motor Assembly', zh: '回转马达总成', es: 'Conjunto de motor de giro', ar: 'مجموعة محرك الدوران', ru: 'Узел поворотного двигателя', fr: 'Ensemble de moteur de rotation', pt: 'Conjunto de motor de giro', it: 'Insieme motore di rotazione' },
-  'Relief Valve': { en: 'Relief Valve', zh: '安全阀', es: 'Válvula de alivio', ar: 'صمام الإغاثة', ru: 'Предохранительный клапан', fr: 'Soupape de décharge', pt: 'Válvula de alívio', it: 'Valvola di scarico' },
-  'Ignition Key Switch Assembly': { en: 'Ignition Key Switch Assembly', zh: '点火钥匙开关总成', es: 'Conjunto de interruptor de llave de encendido', ar: 'مجموعة مفتاح تشغيل الإشعال', ru: 'Узел переключателя зажигания', fr: 'Ensemble de commutateur de clé d\'allumage', pt: 'Conjunto de interruptor de chave de ignição', it: 'Insieme interruttore chiave accensione' },
-  'Ignition Key Switch (Old Model)': { en: 'Ignition Key Switch (Old Model)', zh: '点火钥匙开关(老款)', es: 'Interruptor de llave de encendido (modelo antiguo)', ar: 'مفتاح تشغيل الإشعال (نموذج قديم)', ru: 'Переключатель зажигания (старая модель)', fr: 'Commutateur de clé d\'allumage (ancien modèle)', pt: 'Interruptor de chave de ignição (modelo antigo)', it: 'Interruttore chiave accensione (modello vecchio)' },
-};
-
-// Komatsu spare part category translations
-const komatsuSparePartCategoryTranslations: Record<string, Record<string, string>> = {
-  'Maintenance/Filtration System': { en: 'Maintenance/Filtration System', zh: '保养/滤清系统', es: 'Sistema de mantenimiento/filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema manutenção/filtração', it: 'Sistema manutenzione/filtrazione' },
-  'Chassis/Track System': { en: 'Chassis/Track System', zh: '底盘/履带系统', es: 'Sistema de chasis/orugas', ar: 'نظام الهيكل/المسار', ru: 'Система шасси/гусеницы', fr: 'Système de châssis/chaîne', pt: 'Sistema chassi/trilho', it: 'Sistema telaio/cingolo' },
-  'Excavation/GET': { en: 'Excavation/GET', zh: '挖掘属性/GET', es: 'Excavación/GET', ar: 'الحفر/GET', ru: 'Экскавация/GET', fr: 'Excavation/GET', pt: 'Escavação/GET', it: 'Scavo/GET' },
-  'Hydraulic System': { en: 'Hydraulic System', zh: '液压系统', es: 'Sistema hidráulico', ar: 'النظام الهيدروليكي', ru: 'Гидравлическая система', fr: 'Système hydraulique', pt: 'Sistema hidráulico', it: 'Sistema idraulico' },
-  'Electrical System': { en: 'Electrical System', zh: '电气系统', es: 'Sistema eléctrico', ar: 'النظام الكهربائي', ru: 'Электрическая система', fr: 'Système électrique', pt: 'Sistema elétrico', it: 'Sistema elettrico' },
-};
-
-// Komatsu spare part description translations
-const komatsuSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
-  'KOMATSU part. Replace every 250-500 hours during maintenance.': { en: 'KOMATSU part. Replace every 250-500 hours during maintenance.', zh: 'KOMATSU 零件。250-500小时随保养更换', es: 'Pieza KOMATSU. Reemplazar cada 250-500 horas durante el mantenimiento.', ar: 'قطعة KOMATSU. استبدل كل 250-500 ساعة أثناء الصيانة.', ru: 'Деталь KOMATSU. Заменяйте каждые 250-500 часов при обслуживании.', fr: 'Pièce KOMATSU. Remplacer tous les 250-500 heures lors de l\'entretien.', pt: 'Peça KOMATSU. Substituir a cada 250-500 horas durante a manutenção.', it: 'Pezzo KOMATSU. Sostituire ogni 250-500 ore durante la manutenzione.' },
-  'KOMATSU part. Replace every 250-500 hours or based on fuel quality.': { en: 'KOMATSU part. Replace every 250-500 hours or based on fuel quality.', zh: 'KOMATSU 零件。250-500小时或视油品', es: 'Pieza KOMATSU. Reemplazar cada 250-500 horas o según la calidad del combustible.', ar: 'قطعة KOMATSU. استبدل كل 250-500 ساعة أو بناءً على جودة الوقود.', ru: 'Деталь KOMATSU. Заменяйте каждые 250-500 часов или в зависимости от качества топлива.', fr: 'Pièce KOMATSU. Remplacer tous les 250-500 heures ou selon la qualité du carburant.', pt: 'Peça KOMATSU. Substituir a cada 250-500 horas ou com base na qualidade do combustível.', it: 'Pezzo KOMATSU. Sostituire ogni 250-500 ore o in base alla qualità del carburante.' },
-  'KOMATSU part. Replace every 250-500 hours or based on dust environment.': { en: 'KOMATSU part. Replace every 250-500 hours or based on dust environment.', zh: 'KOMATSU 零件。250-500小时或视灰尘环境', es: 'Pieza KOMATSU. Reemplazar cada 250-500 horas o según el entorno de polvo.', ar: 'قطعة KOMATSU. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.', ru: 'Деталь KOMATSU. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.', fr: 'Pièce KOMATSU. Remplacer tous les 250-500 heures ou selon l\'environnement poussiéreux.', pt: 'Peça KOMATSU. Substituir a cada 250-500 horas ou com base no ambiente de poeira.', it: 'Pezzo KOMATSU. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.' },
-  'KOMATSU part. Replace synchronously with outer element.': { en: 'KOMATSU part. Replace synchronously with outer element.', zh: 'KOMATSU 零件。随外芯周期同步更换', es: 'Pieza KOMATSU. Reemplazar sincrónicamente con el elemento exterior.', ar: 'قطعة KOMATSU. استبدل بشكل متزامن مع العنصر الخارجي.', ru: 'Деталь KOMATSU. Заменяйте синхронно с внешним элементом.', fr: 'Pièce KOMATSU. Remplacer en synchronisation avec l\'élément extérieur.', pt: 'Peça KOMATSU. Substituir sincronicamente com o elemento externo.', it: 'Pezzo KOMATSU. Sostituire sincronicamente con l\'elemento esterno.' },
-  'KOMATSU part. Replace every 500-1000 hours or based on fluid analysis.': { en: 'KOMATSU part. Replace every 500-1000 hours or based on fluid analysis.', zh: 'KOMATSU 零件。500-1000小时或视油液检测', es: 'Pieza KOMATSU. Reemplazar cada 500-1000 horas o según el análisis de fluidos.', ar: 'قطعة KOMATSU. استبدل كل 500-1000 ساعة أو بناءً على تحليل السوائل.', ru: 'Деталь KOMATSU. Заменяйте каждые 500-1000 часов или в зависимости от анализа жидкости.', fr: 'Pièce KOMATSU. Remplacer tous les 500-1000 heures ou selon l\'analyse des fluides.', pt: 'Peça KOMATSU. Substituir a cada 500-1000 horas ou com base na análise de fluidos.', it: 'Pezzo KOMATSU. Sostituire ogni 500-1000 ore o in base all\'analisi dei fluidi.' },
-  'KOMATSU part. Replace every 500-1000 hours.': { en: 'KOMATSU part. Replace every 500-1000 hours.', zh: 'KOMATSU 零件。500-1000小时', es: 'Pieza KOMATSU. Reemplazar cada 500-1000 horas.', ar: 'قطعة KOMATSU. استبدل كل 500-1000 ساعة.', ru: 'Деталь KOMATSU. Заменяйте каждые 500-1000 часов.', fr: 'Pièce KOMATSU. Remplacer tous les 500-1000 heures.', pt: 'Peça KOMATSU. Substituir a cada 500-1000 horas.', it: 'Pezzo KOMATSU. Sostituire ogni 500-1000 ore.' },
-  'KOMATSU part. Replace every 250-500 hours.': { en: 'KOMATSU part. Replace every 250-500 hours.', zh: 'KOMATSU 零件。250-500小时', es: 'Pieza KOMATSU. Reemplazar cada 250-500 horas.', ar: 'قطعة KOMATSU. استبدل كل 250-500 ساعة.', ru: 'Деталь KOMATSU. Заменяйте каждые 250-500 часов.', fr: 'Pièce KOMATSU. Remplacer tous les 250-500 heures.', pt: 'Peça KOMATSU. Substituir a cada 250-500 horas.', it: 'Pezzo KOMATSU. Sostituire ogni 250-500 ore.' },
-  'KOMATSU part. Replace when teeth are worn or broken (major overhaul item).': { en: 'KOMATSU part. Replace when teeth are worn or broken (major overhaul item).', zh: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando los dientes se desgastan o se rompen (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند تآكل الأسنان أو كسرها (عنصر إصلاح رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при износе или поломке зубьев (крупный ремонт).', fr: 'Pièce KOMATSU. Remplacer lorsque les dents sont usées ou cassées (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando os dentes estão gastos ou quebrados (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando i denti sono usurati o rotti (elemento di revisione maggiore).' },
-  'KOMATSU part. Replace when worn or cracked (major overhaul item).': { en: 'KOMATSU part. Replace when worn or cracked (major overhaul item).', zh: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando está desgastado o agrietado (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند التآكل أو التصدع (عنصر إصلاح رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при износе или трещинах (крупный ремонт).', fr: 'Pièce KOMATSU. Remplacer lorsqu\'il est usé ou fissuré (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando desgastado ou rachado (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando usurato o incrinato (elemento di revisione maggiore).' },
-  'KOMATSU part. Replace when leaking or worn.': { en: 'KOMATSU part. Replace when leaking or worn.', zh: 'KOMATSU 零件。漏油/磨损时更换', es: 'Pieza KOMATSU. Reemplazar cuando hay fugas o desgaste.', ar: 'قطعة KOMATSU. استبدل عند التسرب أو التآكل.', ru: 'Деталь KOMATSU. Заменяйте при утечке или износе.', fr: 'Pièce KOMATSU. Remplacer en cas de fuite ou d\'usure.', pt: 'Peça KOMATSU. Substituir quando há vazamento ou desgaste.', it: 'Pezzo KOMATSU. Sostituire in caso di perdita o usura.' },
-  'KOMATSU part. Replace when worn to bottom or cracked (high-frequency replacement item).': { en: 'KOMATSU part. Replace when worn to bottom or cracked (high-frequency replacement item).', zh: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件', es: 'Pieza KOMATSU. Reemplazar cuando se desgasta hasta el fondo o se agrieta (artículo de reemplazo de alta frecuencia).', ar: 'قطعة KOMATSU. استبدل عند التآكل إلى القاع أو التصدع (عنصر استبدال عالي التردد).', ru: 'Деталь KOMATSU. Заменяйте при износе до дна или трещинах (часто заменяемый элемент).', fr: 'Pièce KOMATSU. Remplacer lorsqu\'il est usé jusqu\'au fond ou fissuré (article de remplacement haute fréquence).', pt: 'Peça KOMATSU. Substituir quando desgastado até o fundo ou rachado (item de substituição de alta frequência).', it: 'Pezzo KOMATSU. Sostituire quando usurato fino al fondo o incrinato (elemento di sostituzione ad alta frequenza).' },
-  'KOMATSU part. Replace synchronously when bucket teeth are replaced.': { en: 'KOMATSU part. Replace synchronously when bucket teeth are replaced.', zh: 'KOMATSU 零件。随斗齿更换时同步更换', es: 'Pieza KOMATSU. Reemplazar sincrónicamente cuando se reemplazan los dientes del cucharón.', ar: 'قطعة KOMATSU. استبدل بشكل متزامن عند استبدال أسنان الجرافة.', ru: 'Деталь KOMATSU. Заменяйте синхронно при замене зубьев ковша.', fr: 'Pièce KOMATSU. Remplacer en synchronisation lors du remplacement des dents de godet.', pt: 'Peça KOMATSU. Substituir sincronicamente quando os dentes da caçamba são substituídos.', it: 'Pezzo KOMATSU. Sostituire sincronicamente quando i denti della benna vengono sostituiti.' },
-  'KOMATSU part. Replace when abnormal noise, insufficient supply or pressure drop occurs (major overhaul item).': { en: 'KOMATSU part. Replace when abnormal noise, insufficient supply or pressure drop occurs (major overhaul item).', zh: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando hay ruido anormal, suministro insuficiente o caída de presión (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند حدوث ضوضاء غير طبيعية أو إمداد غير كافي أو انخفاض الضغط (عنصر إصلاح رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при аномальном шуме, недостаточном давлении или падении давления (крупный ремонт).', fr: 'Pièce KOMATSU. Remplacer en cas de bruit anormal, d\'alimentation insuffisante ou de chute de pression (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando há ruído anormal, suprimento insuficiente ou queda de pressão (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire in caso di rumore anomalo, alimentazione insufficiente o calo di pressione (elemento di revisione maggiore).' },
-  'KOMATSU part. Replace when abnormal noise or insufficient supply occurs (major overhaul item).': { en: 'KOMATSU part. Replace when abnormal noise or insufficient supply occurs (major overhaul item).', zh: 'KOMATSU 零件。异响/供油不足时更换(大修类)', es: 'Pieza KOMATSU. Reemplazar cuando hay ruido anormal o suministro insuficiente (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عند حدوث ضوضاء غير طبيعية أو إمداد غير كافي (عنصر إصلاح رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при аномальном шуме или недостаточном давлении (крупный ремонт).', fr: 'Pièce KOMATSU. Remplacer en cas de bruit anormal ou d\'alimentation insuffisante (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando há ruído anormal ou suprimento insuficiente (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire in caso di rumore anomalo o alimentazione insufficiente (elemento di revisione maggiore).' },
-  'KOMATSU part. Replace when swing is noisy or weak (major overhaul item).': { en: 'KOMATSU part. Replace when swing is noisy or weak (major overhaul item).', zh: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)', es: 'Pieza KOMATSU. Reemplazar cuando el giro es ruidoso o débil (artículo de revisión mayor).', ar: 'قطعة KOMATSU. استبدل عندما يكون الدوران صاخباً أو ضعيفاً (عنصر إصلاح رئيسي).', ru: 'Деталь KOMATSU. Заменяйте при шумном или слабом повороте (крупный ремонт).', fr: 'Pièce KOMATSU. Remplacer lorsque la rotation est bruyante ou faible (article de révision majeure).', pt: 'Peça KOMATSU. Substituir quando o giro é barulhento ou fraco (item de revisão maior).', it: 'Pezzo KOMATSU. Sostituire quando la rotazione è rumorosa o debole (elemento di revisione maggiore).' },
-  'KOMATSU part. Replace when hydraulic pressure is abnormal or unstable.': { en: 'KOMATSU part. Replace when hydraulic pressure is abnormal or unstable.', zh: 'KOMATSU 零件。液压异常/压力不稳时更换', es: 'Pieza KOMATSU. Reemplazar cuando la presión hidráulica es anormal o inestable.', ar: 'قطعة KOMATSU. استبدل عندما يكون الضغط الهيدروليكي غير طبيعي أو غير مستقر.', ru: 'Деталь KOMATSU. Заменяйте при аномальном или нестабильном гидравлическом давлении.', fr: 'Pièce KOMATSU. Remplacer lorsque la pression hydraulique est anormale ou instable.', pt: 'Peça KOMATSU. Substituir quando a pressão hidráulica é anormal ou instável.', it: 'Pezzo KOMATSU. Sostituire quando la pressione idraulica è anomala o instabile.' },
-  'KOMATSU part. Replace when key is worn or switch fails.': { en: 'KOMATSU part. Replace when key is worn or switch fails.', zh: 'KOMATSU 零件。钥匙磨损/开关失效时更换', es: 'Pieza KOMATSU. Reemplazar cuando la llave está desgastada o el interruptor falla.', ar: 'قطعة KOMATSU. استبدل عندما تكون المفتاح مهترأة أو يفشل المفتاح.', ru: 'Деталь KOMATSU. Заменяйте при износе ключа или отказе переключателя.', fr: 'Pièce KOMATSU. Remplacer lorsque la clé est usée ou que le commutateur défaille.', pt: 'Peça KOMATSU. Substituir quando a chave está desgastada ou o interruptor falha.', it: 'Pezzo KOMATSU. Sostituire quando la chiave è usurata o l\'interruttore si guasta.' },
-};
-
-export function getTranslatedKomatsuSparePartName(name: string, language: string): string {
-  const translations = komatsuSparePartNameTranslations[name];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return name;
-}
-
-export function getTranslatedKomatsuSparePartCategory(category: string, language: string): string {
-  const translations = komatsuSparePartCategoryTranslations[category];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return category;
-}
-
-export function getTranslatedKomatsuSparePartDescription(description: string, language: string): string {
-  const translations = komatsuSparePartDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
-}
-
-
-// LiuGong spare part name translations
-
-
-// Isuzu spare part name translations
-const isuzuSparePartNameTranslations: Record<string, Record<string, string>> = {
-  'Oil Filter': { en: 'Oil Filter', zh: '机油滤芯', es: 'Filtro de aceite', ar: 'مرشح الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
-  'Oil Filter (Secondary)': { en: 'Oil Filter (Secondary)', zh: '机油滤芯(二级)', es: 'Filtro de aceite (secundario)', ar: 'مرشح الزيت (ثانوي)', ru: 'Масляный фильтр (вторичный)', fr: 'Filtre à huile (secondaire)', pt: 'Filtro de óleo (secundário)', it: 'Filtro olio (secondario)' },
-  'Oil Filter (Model 2)': { en: 'Oil Filter (Model 2)', zh: '机油滤芯(型号2)', es: 'Filtro de aceite (modelo 2)', ar: 'مرشح الزيت (نموذج 2)', ru: 'Масляный фильтр (модель 2)', fr: 'Filtre à huile (modèle 2)', pt: 'Filtro de óleo (modelo 2)', it: 'Filtro olio (modello 2)' },
-  'Diesel Filter': { en: 'Diesel Filter', zh: '柴油滤芯', es: 'Filtro de diésel', ar: 'مرشح الديزل', ru: 'Дизельный фильтр', fr: 'Filtre à carburant', pt: 'Filtro diesel', it: 'Filtro diesel' },
-  'Air Filter': { en: 'Air Filter', zh: '空气滤芯', es: 'Filtro de aire', ar: 'مرشح الهواء', ru: 'Воздушный фильтр', fr: 'Filtre à air', pt: 'Filtro de ar', it: 'Filtro aria' },
-  'Hydraulic Oil Filter': { en: 'Hydraulic Oil Filter', zh: '液压油滤芯', es: 'Filtro de aceite hidráulico', ar: 'مرشح الزيت الهيدروليكي', ru: 'Гидравлический масляный фильтр', fr: 'Filtre à huile hydraulique', pt: 'Filtro de óleo hidráulico', it: 'Filtro olio idraulico' },
-  'Hydraulic Oil Filter (Model 2)': { en: 'Hydraulic Oil Filter (Model 2)', zh: '液压油滤芯(型号2)', es: 'Filtro de aceite hidráulico (modelo 2)', ar: 'مرشح الزيت الهيدروليكي (نموذج 2)', ru: 'Гидравлический масляный фильтр (модель 2)', fr: 'Filtre à huile hydraulique (modèle 2)', pt: 'Filtro de óleo hidráulico (modelo 2)', it: 'Filtro olio idraulico (modello 2)' },
-  'Hydraulic Oil Filter (Model 3)': { en: 'Hydraulic Oil Filter (Model 3)', zh: '液压油滤芯(型号3)', es: 'Filtro de aceite hidráulico (modelo 3)', ar: 'مرشح الزيت الهيدروليكي (نموذج 3)', ru: 'Гидравлический масляный фильтр (модель 3)', fr: 'Filtre à huile hydraulique (modèle 3)', pt: 'Filtro de óleo hidráulico (modelo 3)', it: 'Filtro olio idraulico (modello 3)' },
-  'Pilot Valve Filter': { en: 'Pilot Valve Filter', zh: '先导阀滤芯', es: 'Filtro de válvula piloto', ar: 'مرشح صمام التحكم', ru: 'Фильтр пилотного клапана', fr: 'Filtre de soupape pilote', pt: 'Filtro de válvula piloto', it: 'Filtro valvola pilota' },
-  'Water Pump Assembly': { en: 'Water Pump Assembly', zh: '水泵总成', es: 'Conjunto de bomba de agua', ar: 'مجموعة مضخة المياه', ru: 'Узел водяного насоса', fr: 'Ensemble pompe à eau', pt: 'Conjunto da bomba de água', it: 'Insieme pompa acqua' },
-  'Water Pump Assembly (Model 2)': { en: 'Water Pump Assembly (Model 2)', zh: '水泵总成(型号2)', es: 'Conjunto de bomba de agua (modelo 2)', ar: 'مجموعة مضخة المياه (نموذج 2)', ru: 'Узел водяного насоса (модель 2)', fr: 'Ensemble pompe à eau (modèle 2)', pt: 'Conjunto da bomba de água (modelo 2)', it: 'Insieme pompa acqua (modello 2)' },
-  'Turbocharger': { en: 'Turbocharger', zh: '涡轮增压器', es: 'Turbocompresor', ar: 'شاحن توربيني', ru: 'Турбокомпрессор', fr: 'Turbocompresseur', pt: 'Turbocompressor', it: 'Turbocompressore' },
-  'Oil Pump Assembly': { en: 'Oil Pump Assembly', zh: '机油泵总成', es: 'Conjunto de bomba de aceite', ar: 'مجموعة مضخة الزيت', ru: 'Узел масляного насоса', fr: 'Ensemble pompe à huile', pt: 'Conjunto da bomba de óleo', it: 'Insieme pompa olio' },
-  'Oil Transfer Pump': { en: 'Oil Transfer Pump', zh: '机油输送泵', es: 'Bomba de transferencia de aceite', ar: 'مضخة نقل الزيت', ru: 'Насос передачи масла', fr: 'Pompe de transfert d\'huile', pt: 'Bomba de transferência de óleo', it: 'Pompa di trasferimento olio' },
-  'Oil Pump (High Pressure)': { en: 'Oil Pump (High Pressure)', zh: '机油泵(高压型)', es: 'Bomba de aceite (alta presión)', ar: 'مضخة الزيت (ضغط عالي)', ru: 'Масляный насос (высокое давление)', fr: 'Pompe à huile (haute pression)', pt: 'Bomba de óleo (alta pressão)', it: 'Pompa olio (alta pressione)' },
-  'Air Filter (6HK1)': { en: 'Air Filter (6HK1)', zh: '空气滤芯(6HK1)', es: 'Filtro de aire (6HK1)', ar: 'مرشح الهواء (6HK1)', ru: 'Воздушный фильтр (6HK1)', fr: 'Filtre à air (6HK1)', pt: 'Filtro de ar (6HK1)', it: 'Filtro aria (6HK1)' },
-  'Oil Filter (6HK1)': { en: 'Oil Filter (6HK1)', zh: '机油滤芯(6HK1)', es: 'Filtro de aceite (6HK1)', ar: 'مرشح الزيت (6HK1)', ru: 'Масляный фильтр (6HK1)', fr: 'Filtre à huile (6HK1)', pt: 'Filtro de óleo (6HK1)', it: 'Filtro olio (6HK1)' },
-  'Diesel Filter (6HK1 Primary)': { en: 'Diesel Filter (6HK1 Primary)', zh: '柴油滤芯(6HK1一级)', es: 'Filtro de diésel (6HK1 primario)', ar: 'مرشح الديزل (6HK1 أساسي)', ru: 'Дизельный фильтр (6HK1 первичный)', fr: 'Filtre à carburant (6HK1 primaire)', pt: 'Filtro diesel (6HK1 primário)', it: 'Filtro diesel (6HK1 primario)' },
-  'Diesel Filter (6HK1 Secondary)': { en: 'Diesel Filter (6HK1 Secondary)', zh: '柴油滤芯(6HK1二级)', es: 'Filtro de diésel (6HK1 secundario)', ar: 'مرشح الديزل (6HK1 ثانوي)', ru: 'Дизельный фильтр (6HK1 вторичный)', fr: 'Filtre à carburant (6HK1 secondaire)', pt: 'Filtro diesel (6HK1 secundário)', it: 'Filtro diesel (6HK1 secondario)' },
-  'Hydraulic Oil Filter (6HK1)': { en: 'Hydraulic Oil Filter (6HK1)', zh: '液压油滤芯(6HK1)', es: 'Filtro de aceite hidráulico (6HK1)', ar: 'مرشح الزيت الهيدروليكي (6HK1)', ru: 'Гидравлический масляный фильтр (6HK1)', fr: 'Filtre à huile hydraulique (6HK1)', pt: 'Filtro de óleo hidráulico (6HK1)', it: 'Filtro olio idraulico (6HK1)' },
-  'Hydraulic Oil Filter (6HK1 Model 2)': { en: 'Hydraulic Oil Filter (6HK1 Model 2)', zh: '液压油滤芯(6HK1型号2)', es: 'Filtro de aceite hidráulico (6HK1 modelo 2)', ar: 'مرشح الزيت الهيدروليكي (6HK1 نموذج 2)', ru: 'Гидравлический масляный фильтр (6HK1 модель 2)', fr: 'Filtre à huile hydraulique (6HK1 modèle 2)', pt: 'Filtro de óleo hidráulico (6HK1 modelo 2)', it: 'Filtro olio idraulico (6HK1 modello 2)' },
-  'Pilot Valve Filter (6HK1)': { en: 'Pilot Valve Filter (6HK1)', zh: '先导阀滤芯(6HK1)', es: 'Filtro de válvula piloto (6HK1)', ar: 'مرشح صمام التحكم (6HK1)', ru: 'Фильтр пилотного клапана (6HK1)', fr: 'Filtre de soupape pilote (6HK1)', pt: 'Filtro de válvula piloto (6HK1)', it: 'Filtro valvola pilota (6HK1)' },
-  'Oil Filter Assembly (6HK1-3rd Gen)': { en: 'Oil Filter Assembly (6HK1-3rd Gen)', zh: '机油滤芯总成(6HK1-3代)', es: 'Conjunto de filtro de aceite (6HK1-3ª gen)', ar: 'مجموعة مرشح الزيت (6HK1-الجيل الثالث)', ru: 'Узел масляного фильтра (6HK1-3-е поколение)', fr: 'Ensemble filtre à huile (6HK1-3ème gén)', pt: 'Conjunto filtro de óleo (6HK1-3ª gen)', it: 'Insieme filtro olio (6HK1-3ª gen)' },
-  'Diesel Filter (6HK1-3rd Gen)': { en: 'Diesel Filter (6HK1-3rd Gen)', zh: '柴油滤芯(6HK1-3代/新款)', es: 'Filtro de diésel (6HK1-3ª gen)', ar: 'مرشح الديزل (6HK1-الجيل الثالث)', ru: 'Дизельный фильтр (6HK1-3-е поколение)', fr: 'Filtre à carburant (6HK1-3ème gén)', pt: 'Filtro diesel (6HK1-3ª gen)', it: 'Filtro diesel (6HK1-3ª gen)' },
-  'Water Pump Assembly (6HK1)': { en: 'Water Pump Assembly (6HK1)', zh: '水泵总成(6HK1)', es: 'Conjunto de bomba de agua (6HK1)', ar: 'مجموعة مضخة المياه (6HK1)', ru: 'Узел водяного насоса (6HK1)', fr: 'Ensemble pompe à eau (6HK1)', pt: 'Conjunto da bomba de água (6HK1)', it: 'Insieme pompa acqua (6HK1)' },
-  'Water Pump Assembly (6HK1 Model 2)': { en: 'Water Pump Assembly (6HK1 Model 2)', zh: '水泵总成(6HK1型号2)', es: 'Conjunto de bomba de agua (6HK1 modelo 2)', ar: 'مجموعة مضخة المياه (6HK1 نموذج 2)', ru: 'Узел водяного насоса (6HK1 модель 2)', fr: 'Ensemble pompe à eau (6HK1 modèle 2)', pt: 'Conjunto da bomba de água (6HK1 modelo 2)', it: 'Insieme pompa acqua (6HK1 modello 2)' },
-  'Water Pump Assembly (6HK1 FVR Truck)': { en: 'Water Pump Assembly (6HK1 FVR Truck)', zh: '水泵总成(6HK1 FVR卡车版)', es: 'Conjunto de bomba de agua (6HK1 camión FVR)', ar: 'مجموعة مضخة المياه (6HK1 شاحنة FVR)', ru: 'Узел водяного насоса (6HK1 грузовик FVR)', fr: 'Ensemble pompe à eau (6HK1 camion FVR)', pt: 'Conjunto da bomba de água (6HK1 caminhão FVR)', it: 'Insieme pompa acqua (6HK1 camion FVR)' },
-  'Electronic Oil Pump': { en: 'Electronic Oil Pump', zh: '电子机油泵', es: 'Bomba de aceite electrónica', ar: 'مضخة زيت إلكترونية', ru: 'Электронный масляный насос', fr: 'Pompe à huile électronique', pt: 'Bomba de óleo eletrônica', it: 'Pompa olio elettronica' },
-  'Fuel Injection Pump Assembly': { en: 'Fuel Injection Pump Assembly', zh: '燃油喷射泵总成', es: 'Conjunto de bomba de inyección de combustible', ar: 'مجموعة مضخة حقن الوقود', ru: 'Узел топливного насоса-форсунки', fr: 'Ensemble pompe d\'injection de carburant', pt: 'Conjunto da bomba de injeção de combustível', it: 'Insieme pompa iniezione carburante' },
-  'Fuel Injection Pump (Model 2)': { en: 'Fuel Injection Pump (Model 2)', zh: '燃油喷射泵(型号2)', es: 'Bomba de inyección de combustible (modelo 2)', ar: 'مضخة حقن الوقود (نموذج 2)', ru: 'Топливный насос-форсунка (модель 2)', fr: 'Pompe d\'injection de carburant (modèle 2)', pt: 'Bomba de injeção de combustível (modelo 2)', it: 'Pompa iniezione carburante (modello 2)' },
-  'Fuel Injection Pump (FTR/FXR/FVR Truck)': { en: 'Fuel Injection Pump (FTR/FXR/FVR Truck)', zh: '燃油喷射泵(FTR/FXR/FVR卡车版)', es: 'Bomba de inyección de combustible (camión FTR/FXR/FVR)', ar: 'مضخة حقن الوقود (شاحنة FTR/FXR/FVR)', ru: 'Топливный насос-форсунка (грузовик FTR/FXR/FVR)', fr: 'Pompe d\'injection de carburant (camion FTR/FXR/FVR)', pt: 'Bomba de injeção de combustível (caminhão FTR/FXR/FVR)', it: 'Pompa iniezione carburante (camion FTR/FXR/FVR)' },
-  'Turbocharger (RHG6 Type)': { en: 'Turbocharger (RHG6 Type)', zh: '涡轮增压器(RHG6型)', es: 'Turbocompresor (tipo RHG6)', ar: 'شاحن توربيني (نوع RHG6)', ru: 'Турбокомпрессор (тип RHG6)', fr: 'Turbocompresseur (type RHG6)', pt: 'Turbocompressor (tipo RHG6)', it: 'Turbocompressore (tipo RHG6)' },
-  'Turbocharger (RHG6, SH300)': { en: 'Turbocharger (RHG6, SH300)', zh: '涡轮增压器(RHG6,SH300)', es: 'Turbocompresor (RHG6, SH300)', ar: 'شاحن توربيني (RHG6, SH300)', ru: 'Турбокомпрессор (RHG6, SH300)', fr: 'Turbocompresseur (RHG6, SH300)', pt: 'Turbocompressor (RHG6, SH300)', it: 'Turbocompressore (RHG6, SH300)' },
-  'Oil Cooler Core': { en: 'Oil Cooler Core', zh: '机油冷却器芯', es: 'Núcleo del enfriador de aceite', ar: 'قلب مبرد الزيت', ru: 'Сердечник масляного охладителя', fr: 'Noyau du refroidisseur d\'huile', pt: 'Núcleo do resfriador de óleo', it: 'Nucleo del radiatore olio' },
-  'Cooling Fan Blade': { en: 'Cooling Fan Blade', zh: '散热风扇叶片', es: 'Aspa del ventilador de refrigeración', ar: 'شفرة مروحة التبريد', ru: 'Лопасть вентилятора охлаждения', fr: 'Pale du ventilateur de refroidissement', pt: 'Pá do ventilador de resfriamento', it: 'Pala ventola di raffreddamento' },
-  'Exhaust Manifold': { en: 'Exhaust Manifold', zh: '排气歧管', es: 'Colector de escape', ar: 'مشعب العادم', ru: 'Выпускной коллектор', fr: 'Collecteur d\'échappement', pt: 'Coletor de escape', it: 'Collettore di scarico' },
-};
-
-// Isuzu spare part category translations
-const isuzuSparePartCategoryTranslations: Record<string, Record<string, string>> = {
-  'Maintenance/Filtration System': { en: 'Maintenance/Filtration System', zh: '保养/滤清系统', es: 'Sistema de mantenimiento/filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema manutenção/filtração', it: 'Sistema manutenzione/filtrazione' },
-  'Cooling System': { en: 'Cooling System', zh: '冷却系统', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
-  'Intake/Boost System': { en: 'Intake/Boost System', zh: '进气/增压', es: 'Sistema de admisión/sobrealimentación', ar: 'نظام السحب/الشحن', ru: 'Система впуска/наддува', fr: 'Système d\'admission/suralimentation', pt: 'Sistema de admissão/sobrealimentação', it: 'Sistema di aspirazione/sovralimentazione' },
-  'Lubrication System': { en: 'Lubrication System', zh: '润滑系统', es: 'Sistema de lubricación', ar: 'نظام التشحيم', ru: 'Система смазки', fr: 'Système de lubrification', pt: 'Sistema de lubrificação', it: 'Sistema di lubrificazione' },
-  'Fuel System': { en: 'Fuel System', zh: '燃油系统', es: 'Sistema de combustible', ar: 'نظام الوقود', ru: 'Топливная система', fr: 'Système de carburant', pt: 'Sistema de combustível', it: 'Sistema di carburante' },
-  'Intake/Exhaust': { en: 'Intake/Exhaust', zh: '进气/排气', es: 'Admisión/Escape', ar: 'السحب/العادم', ru: 'Впуск/выпуск', fr: 'Admission/Échappement', pt: 'Admissão/Escape', it: 'Aspirazione/Scarico' },
-};
-
-// Isuzu spare part description translations
-const isuzuSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
-  'ISUZU 零件。250-500小时随保养更换': { en: 'ISUZU part. Replace every 250-500 hours during maintenance.', zh: 'ISUZU 零件。250-500小时随保养更换', es: 'Pieza ISUZU. Reemplazar cada 250-500 horas durante el mantenimiento.', ar: 'قطعة ISUZU. استبدل كل 250-500 ساعة أثناء الصيانة.', ru: 'Деталь ISUZU. Заменяйте каждые 250-500 часов при обслуживании.', fr: 'Pièce ISUZU. Remplacer tous les 250-500 heures lors de l\'entretien.', pt: 'Peça ISUZU. Substituir a cada 250-500 horas durante a manutenção.', it: 'Pezzo ISUZU. Sostituire ogni 250-500 ore durante la manutenzione.' },
-  'ISUZU 零件。250-500小时': { en: 'ISUZU part. Replace every 250-500 hours.', zh: 'ISUZU 零件。250-500小时', es: 'Pieza ISUZU. Reemplazar cada 250-500 horas.', ar: 'قطعة ISUZU. استبدل كل 250-500 ساعة.', ru: 'Деталь ISUZU. Заменяйте каждые 250-500 часов.', fr: 'Pièce ISUZU. Remplacer tous les 250-500 heures.', pt: 'Peça ISUZU. Substituir a cada 250-500 horas.', it: 'Pezzo ISUZU. Sostituire ogni 250-500 ore.' },
-  'ISUZU 零件。250-500小时或视油品': { en: 'ISUZU part. Replace every 250-500 hours or based on fuel quality.', zh: 'ISUZU 零件。250-500小时或视油品', es: 'Pieza ISUZU. Reemplazar cada 250-500 horas o según la calidad del combustible.', ar: 'قطعة ISUZU. استبدل كل 250-500 ساعة أو بناءً على جودة الوقود.', ru: 'Деталь ISUZU. Заменяйте каждые 250-500 часов или в зависимости от качества топлива.', fr: 'Pièce ISUZU. Remplacer tous les 250-500 heures ou selon la qualité du carburant.', pt: 'Peça ISUZU. Substituir a cada 250-500 horas ou com base na qualidade do combustível.', it: 'Pezzo ISUZU. Sostituire ogni 250-500 ore o in base alla qualità del carburante.' },
-  'ISUZU 零件。250-500小时或视灰尘环境': { en: 'ISUZU part. Replace every 250-500 hours or based on dust environment.', zh: 'ISUZU 零件。250-500小时或视灰尘环境', es: 'Pieza ISUZU. Reemplazar cada 250-500 horas o según el entorno de polvo.', ar: 'قطعة ISUZU. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.', ru: 'Деталь ISUZU. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.', fr: 'Pièce ISUZU. Remplacer tous les 250-500 heures ou selon l\'environnement poussiéreux.', pt: 'Peça ISUZU. Substituir a cada 250-500 horas ou com base no ambiente de poeira.', it: 'Pezzo ISUZU. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.' },
-  'ISUZU 零件。500-1000小时或视油液检测': { en: 'ISUZU part. Replace every 500-1000 hours or based on fluid analysis.', zh: 'ISUZU 零件。500-1000小时或视油液检测', es: 'Pieza ISUZU. Reemplazar cada 500-1000 horas o según el análisis de fluidos.', ar: 'قطعة ISUZU. استبدل كل 500-1000 ساعة أو بناءً على تحليل السوائل.', ru: 'Деталь ISUZU. Заменяйте каждые 500-1000 часов или на основе анализа жидкости.', fr: 'Pièce ISUZU. Remplacer tous les 500-1000 heures ou selon l\'analyse des fluides.', pt: 'Peça ISUZU. Substituir a cada 500-1000 horas ou com base na análise de fluidos.', it: 'Pezzo ISUZU. Sostituire ogni 500-1000 ore o in base all\'analisi dei fluidi.' },
-  'ISUZU 零件。500-1000小时': { en: 'ISUZU part. Replace every 500-1000 hours.', zh: 'ISUZU 零件。500-1000小时', es: 'Pieza ISUZU. Reemplazar cada 500-1000 horas.', ar: 'قطعة ISUZU. استبدل كل 500-1000 ساعة.', ru: 'Деталь ISUZU. Заменяйте каждые 500-1000 часов.', fr: 'Pièce ISUZU. Remplacer tous les 500-1000 heures.', pt: 'Peça ISUZU. Substituir a cada 500-1000 horas.', it: 'Pezzo ISUZU. Sostituire ogni 500-1000 ore.' },
-  'ISUZU 零件。冷却液渗漏/异响时更换': { en: 'ISUZU part. Replace when coolant leaks or abnormal noise occurs.', zh: 'ISUZU 零件。冷却液渗漏/异响时更换', es: 'Pieza ISUZU. Reemplazar cuando hay fugas de refrigerante o ruido anormal.', ar: 'قطعة ISUZU. استبدل عند تسرب سائل التبريد أو حدوث ضوضاء غير طبيعية.', ru: 'Деталь ISUZU. Заменяйте при утечке охлаждающей жидкости или аномальном шуме.', fr: 'Pièce ISUZU. Remplacer en cas de fuite de liquide de refroidissement ou de bruit anormal.', pt: 'Peça ISUZU. Substituir quando há vazamento de refrigerante ou ruído anormal.', it: 'Pezzo ISUZU. Sostituire quando c\'è perdita di refrigerante o rumore anomalo.' },
-  'ISUZU 零件。动力下降/异响/漏油时更换(大修类)': { en: 'ISUZU part. Replace when power drops, abnormal noise, or oil leaks (major repair).', zh: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类)', es: 'Pieza ISUZU. Reemplazar cuando hay caída de potencia, ruido anormal o fugas de aceite (reparación mayor).', ar: 'قطعة ISUZU. استبدل عند انخفاض الطاقة أو الضوضاء الغير طبيعية أو تسرب الزيت (إصلاح رئيسي).', ru: 'Деталь ISUZU. Заменяйте при снижении мощности, аномальном шуме или утечке масла (крупный ремонт).', fr: 'Pièce ISUZU. Remplacer en cas de perte de puissance, bruit anormal ou fuite d\'huile (réparation majeure).', pt: 'Peça ISUZU. Substituir quando há queda de potência, ruído anormal ou vazamento de óleo (reparo maior).', it: 'Pezzo ISUZU. Sostituire quando c\'è calo di potenza, rumore anomalo o perdita di olio (riparazione maggiore).' },
-  'ISUZU 零件。润滑不良/压力异常时更换(大修类)': { en: 'ISUZU part. Replace when lubrication is poor or pressure abnormal (major repair).', zh: 'ISUZU 零件。润滑不良/压力异常时更换(大修类)', es: 'Pieza ISUZU. Reemplazar cuando la lubricación es deficiente o la presión es anormal (reparación mayor).', ar: 'قطعة ISUZU. استبدل عند سوء التشحيم أو ضغط غير طبيعي (إصلاح رئيسي).', ru: 'Деталь ISUZU. Заменяйте при плохой смазке или аномальном давлении (крупный ремонт).', fr: 'Pièce ISUZU. Remplacer lorsque la lubrification est mauvaise ou la pression anormale (réparation majeure).', pt: 'Peça ISUZU. Substituir quando a lubrificação é deficiente ou a pressão anormal (reparo maior).', it: 'Pezzo ISUZU. Sostituire quando la lubrificazione è scarsa o la pressione anomala (riparazione maggiore).' },
-  'ISUZU 零件。润滑不良时更换': { en: 'ISUZU part. Replace when lubrication is poor.', zh: 'ISUZU 零件。润滑不良时更换', es: 'Pieza ISUZU. Reemplazar cuando la lubricación es deficiente.', ar: 'قطعة ISUZU. استبدل عند سوء التشحيم.', ru: 'Деталь ISUZU. Заменяйте при плохой смазке.', fr: 'Pièce ISUZU. Remplacer lorsque la lubrification est mauvaise.', pt: 'Peça ISUZU. Substituir quando a lubrificação é deficiente.', it: 'Pezzo ISUZU. Sostituire quando la lubrificazione è scarsa.' },
-  'ISUZU 零件。喷油不良/启动困难时更换(大修类)': { en: 'ISUZU part. Replace when fuel injection is poor or starting difficult (major repair).', zh: 'ISUZU 零件。喷油不良/启动困难时更换(大修类)', es: 'Pieza ISUZU. Reemplazar cuando la inyección de combustible es deficiente o el arranque es difícil (reparación mayor).', ar: 'قطعة ISUZU. استبدل عند سوء حقن الوقود أو صعوبة البدء (إصلاح رئيسي).', ru: 'Деталь ISUZU. Заменяйте при плохом впрыске топлива или затруднении запуска (крупный ремонт).', fr: 'Pièce ISUZU. Remplacer lorsque l\'injection de carburant est mauvaise ou le démarrage difficile (réparation majeure).', pt: 'Peça ISUZU. Substituir quando a injeção de combustível é deficiente ou o arranque difícil (reparo maior).', it: 'Pezzo ISUZU. Sostituire quando l\'iniezione di carburante è scarsa o l\'avviamento difficile (riparazione maggiore).' },
-  'ISUZU 零件。喷油不良时更换(大修类)': { en: 'ISUZU part. Replace when fuel injection is poor (major repair).', zh: 'ISUZU 零件。喷油不良时更换(大修类)', es: 'Pieza ISUZU. Reemplazar cuando la inyección de combustible es deficiente (reparación mayor).', ar: 'قطعة ISUZU. استبدل عند سوء حقن الوقود (إصلاح رئيسي).', ru: 'Деталь ISUZU. Заменяйте при плохом впрыске топлива (крупный ремонт).', fr: 'Pièce ISUZU. Remplacer lorsque l\'injection de carburant est mauvaise (réparation majeure).', pt: 'Peça ISUZU. Substituir quando a injeção de combustível é deficiente (reparo maior).', it: 'Pezzo ISUZU. Sostituire quando l\'iniezione di carburante è scarsa (riparazione maggiore).' },
-  'ISUZU 零件。异响/扇叶断裂时更换': { en: 'ISUZU part. Replace when abnormal noise or fan blade breaks.', zh: 'ISUZU 零件。异响/扇叶断裂时更换', es: 'Pieza ISUZU. Reemplazar cuando hay ruido anormal o rotura de aspa.', ar: 'قطعة ISUZU. استبدل عند الضوضاء الغير طبيعية أو كسر شفرة المروحة.', ru: 'Деталь ISUZU. Заменяйте при аномальном шуме или поломке лопасти вентилятора.', fr: 'Pièce ISUZU. Remplacer en cas de bruit anormal ou rupture de pale.', pt: 'Peça ISUZU. Substituir quando há ruído anormal ou quebra de pá.', it: 'Pezzo ISUZU. Sostituire quando c\'è rumore anomalo o rottura della pala.' },
-  'ISUZU 零件。散热不良/渗漏时更换': { en: 'ISUZU part. Replace when cooling is poor or leaks occur.', zh: 'ISUZU 零件。散热不良/渗漏时更换', es: 'Pieza ISUZU. Reemplazar cuando el enfriamiento es deficiente o hay fugas.', ar: 'قطعة ISUZU. استبدل عند سوء التبريد أو حدوث تسرب.', ru: 'Деталь ISUZU. Заменяйте при плохом охлаждении или утечке.', fr: 'Pièce ISUZU. Remplacer lorsque le refroidissement est mauvais ou qu\'il y a des fuites.', pt: 'Peça ISUZU. Substituir quando o resfriamento é deficiente ou há vazamentos.', it: 'Pezzo ISUZU. Sostituire quando il raffreddamento è scarso o si verificano perdite.' },
-  'ISUZU 零件。裂纹/漏气时更换': { en: 'ISUZU part. Replace when cracks or leaks occur.', zh: 'ISUZU 零件。裂纹/漏气时更换', es: 'Pieza ISUZU. Reemplazar cuando hay grietas o fugas.', ar: 'قطعة ISUZU. استبدل عند حدوث شقوق أو تسرب.', ru: 'Деталь ISUZU. Заменяйте при трещинах или утечке.', fr: 'Pièce ISUZU. Remplacer en cas de fissures ou de fuites.', pt: 'Peça ISUZU. Substituir quando há fissuras ou vazamentos.', it: 'Pezzo ISUZU. Sostituire quando si verificano crepe o perdite.' },
-};
-
-export function getTranslatedIsuzuSparePartName(name: string, language: string): string {
-  const translations = isuzuSparePartNameTranslations[name];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return name;
-}
-
-export function getTranslatedIsuzuSparePartCategory(category: string, language: string): string {
-  const translations = isuzuSparePartCategoryTranslations[category];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return category;
-}
-
-export function getTranslatedIsuzuSparePartDescription(description: string, language: string): string {
-  const translations = isuzuSparePartDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
-}
-
-
-// Sinotruk, Cummins, Weichai spare parts translations (simplified for brevity)
-const sinotrukSparePartNameTranslations: Record<string, Record<string, string>> = {
-  'Oil Filter': { en: 'Oil Filter', zh: '机油滤芯', es: 'Filtro de aceite', ar: 'مرشح الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
-  'Air Filter Assembly': { en: 'Air Filter Assembly', zh: '空气滤芯总成', es: 'Conjunto de filtro de aire', ar: 'مجموعة مرشح الهواء', ru: 'Узел воздушного фильтра', fr: 'Ensemble filtre à air', pt: 'Conjunto filtro de ar', it: 'Insieme filtro aria' },
-  'Diesel Coarse Filter (Water Separator)': { en: 'Diesel Coarse Filter (Water Separator)', zh: '柴油粗滤器(油水分离器)', es: 'Filtro grueso de diésel (separador de agua)', ar: 'مرشح الديزل الخشن (فاصل الماء)', ru: 'Грубый фильтр дизеля (водоотделитель)', fr: 'Filtre à carburant grossier (séparateur d\'eau)', pt: 'Filtro diesel grosseiro (separador de água)', it: 'Filtro diesel grossolano (separatore acqua)' },
-  'Diesel Fine Filter': { en: 'Diesel Fine Filter', zh: '柴油精滤器', es: 'Filtro fino de diésel', ar: 'مرشح الديزل الدقيق', ru: 'Тонкий фильтр дизеля', fr: 'Filtre à carburant fin', pt: 'Filtro diesel fino', it: 'Filtro diesel fine' },
-  'Alternator (28V/70A)': { en: 'Alternator (28V/70A)', zh: '发电机(28V/70A)', es: 'Alternador (28V/70A)', ar: 'مولد التيار المتردد (28V/70A)', ru: 'Генератор (28V/70A)', fr: 'Alternateur (28V/70A)', pt: 'Alternador (28V/70A)', it: 'Alternatore (28V/70A)' },
-  'Starter Motor Assembly': { en: 'Starter Motor Assembly', zh: '起动机总成', es: 'Conjunto de motor de arranque', ar: 'مجموعة محرك البدء', ru: 'Узел стартера', fr: 'Ensemble moteur de démarrage', pt: 'Conjunto motor de partida', it: 'Insieme motore di avviamento' },
-  'Air Compressor (Twin Cylinder Water Cooled)': { en: 'Air Compressor (Twin Cylinder Water Cooled)', zh: '空气压缩机(双缸水冷)', es: 'Compresor de aire (doble cilindro refrigerado por agua)', ar: 'ضاغط الهواء (أسطوانة مزدوجة مبردة بالماء)', ru: 'Воздушный компрессор (двойной цилиндр с водяным охлаждением)', fr: 'Compresseur d\'air (double cylindre refroidi par eau)', pt: 'Compressor de ar (cilindro duplo refrigerado a água)', it: 'Compressore aria (cilindro doppio raffreddato ad acqua)' },
-  'Front Brake Shoe Assembly': { en: 'Front Brake Shoe Assembly', zh: '前刹车蹄片总成', es: 'Conjunto de zapata de freno frontal', ar: 'مجموعة حذاء الفرامل الأمامي', ru: 'Узел передней тормозной колодки', fr: 'Ensemble garniture de frein avant', pt: 'Conjunto pastilha de freio dianteira', it: 'Insieme ceppo freno anteriore' },
-  'Rear Brake Shoe (with Friction Pad)': { en: 'Rear Brake Shoe (with Friction Pad)', zh: '后刹车蹄片(带摩擦片)', es: 'Zapata de freno trasera (con pastilla de fricción)', ar: 'حذاء الفرامل الخلفي (مع وسادة احتكاك)', ru: 'Задняя тормозная колодка (с фрикционной накладкой)', fr: 'Garniture de frein arrière (avec plaquette de friction)', pt: 'Pastilha de freio traseira (com pastilha de fricção)', it: 'Ceppo freno posteriore (con pastiglia di attrito)' },
-  'Brake Camshaft (Left)': { en: 'Brake Camshaft (Left)', zh: '制动凸轮轴(左)', es: 'Eje de levas de freno (izquierda)', ar: 'عمود الكامات للفرامل (يسار)', ru: 'Распределительный вал тормоза (левый)', fr: 'Arbre à cames de frein (gauche)', pt: 'Comando de válvulas de freio (esquerda)', it: 'Albero a camme freno (sinistra)' },
-  'Brake Gap Auto Adjuster Arm': { en: 'Brake Gap Auto Adjuster Arm', zh: '刹车间隙自动调整臂', es: 'Brazo ajustador automático de espaciador de freno', ar: 'ذراع مضبوط الفجوة التلقائي للفرامل', ru: 'Рычаг автоматического регулятора зазора тормоза', fr: 'Bras de réglage automatique de l\'écartement des freins', pt: 'Braço ajustador automático de folga de freio', it: 'Braccio regolatore automatico gioco freno' },
-  'Brake Air Chamber (Front Axle)': { en: 'Brake Air Chamber (Front Axle)', zh: '制动气室(前桥)', es: 'Cámara de aire de freno (eje delantero)', ar: 'حجرة الهواء للفرامل (المحور الأمامي)', ru: 'Тормозная воздушная камера (передний мост)', fr: 'Chambre d\'air de frein (essieu avant)', pt: 'Câmara de ar de freio (eixo dianteiro)', it: 'Camera aria freno (asse anteriore)' },
-  'Brake Disc': { en: 'Brake Disc', zh: '刹车盘', es: 'Disco de freno', ar: 'قرص الفرامل', ru: 'Тормозной диск', fr: 'Disque de frein', pt: 'Disco de freio', it: 'Disco freno' },
-  'Clutch Pressure Plate Assembly': { en: 'Clutch Pressure Plate Assembly', zh: '离合器压盘总成', es: 'Conjunto de placa de presión de embrague', ar: 'مجموعة صفيحة الضغط للقابض', ru: 'Узел нажимного диска сцепления', fr: 'Ensemble plateau de pression d\'embrayage', pt: 'Conjunto placa de pressão de embreagem', it: 'Insieme piatto di pressione frizione' },
-  'Clutch Release Bearing (Power Assist)': { en: 'Clutch Release Bearing (Power Assist)', zh: '离合器分离轴承(助力泵)', es: 'Rodamiento de liberación de embrague (asistencia de potencia)', ar: 'محمل تحرير القابض (مساعدة الطاقة)', ru: 'Подшипник выключения сцепления (гидравлический привод)', fr: 'Roulement de débrayage (assistance hydraulique)', pt: 'Rolamento de liberação de embreagem (assistência hidráulica)', it: 'Cuscinetto di rilascio frizione (assistenza idraulica)' },
-  'V-shaped Thrust Rod (Stabilizer Link)': { en: 'V-shaped Thrust Rod (Stabilizer Link)', zh: 'V型推力杆(稳定杆连杆)', es: 'Varilla de empuje en forma de V (enlace estabilizador)', ar: 'قضيب الدفع على شكل V (وصلة المثبت)', ru: 'V-образный тяговый стержень (стабилизирующая тяга)', fr: 'Barre de poussée en V (lien stabilisateur)', pt: 'Barra de empuxo em V (elo estabilizador)', it: 'Asta di spinta a V (collegamento stabilizzatore)' },
-  'Steering Knuckle Arm (Left)': { en: 'Steering Knuckle Arm (Left)', zh: '转向节臂/羊角(左)', es: 'Brazo de articulación de dirección (izquierda)', ar: 'ذراع مفصل التوجيه (يسار)', ru: 'Рычаг поворотного кулака (левый)', fr: 'Bras de fusée de direction (gauche)', pt: 'Braço de articulação de direção (esquerda)', it: 'Braccio nocca sterzo (sinistra)' },
-  'Front Leaf Spring Eye Pin': { en: 'Front Leaf Spring Eye Pin', zh: '前钢板弹簧卷耳销', es: 'Pasador de ojo de resorte de hoja frontal', ar: 'دبوس عين نابض الورقة الأمامي', ru: 'Штифт ушка передней листовой рессоры', fr: 'Goupille d\'œil de ressort à lames avant', pt: 'Pino de olho de mola de folha dianteira', it: 'Perno occhio molla a balestra anteriore' },
-  'Front Leaf Spring Hanger': { en: 'Front Leaf Spring Hanger', zh: '前钢板弹簧吊耳', es: 'Soporte de resorte de hoja frontal', ar: 'علاقة نابض الورقة الأمامي', ru: 'Кронштейн передней листовой рессоры', fr: 'Support de ressort à lames avant', pt: 'Suporte de mola de folha dianteira', it: 'Supporto molla a balestra anteriore' },
-  'King Pin Bushing': { en: 'King Pin Bushing', zh: 'king pin主销衬套', es: 'Casquillo de pasador maestro', ar: 'بوشة دبوس الملك', ru: 'Втулка шкворня', fr: 'Bague de pivot', pt: 'Bucha de pino mestre', it: 'Boccola perno maestro' },
-  'Front Suspension Shock Absorber Assembly': { en: 'Front Suspension Shock Absorber Assembly', zh: '前悬挂减震器总成', es: 'Conjunto de amortiguador de suspensión frontal', ar: 'مجموعة ممتص الصدمات للتعليق الأمامي', ru: 'Узел переднего амортизатора подвески', fr: 'Ensemble amortisseur de suspension avant', pt: 'Conjunto amortecedor de suspensão dianteira', it: 'Insieme ammortizzatore sospensione anteriore' },
-  'Rear Suspension Shock Absorber Assembly': { en: 'Rear Suspension Shock Absorber Assembly', zh: '后悬挂减震器总成', es: 'Conjunto de amortiguador de suspensión trasera', ar: 'مجموعة ممتص الصدمات للتعليق الخلفي', ru: 'Узел заднего амортизатора подвески', fr: 'Ensemble amortisseur de suspension arrière', pt: 'Conjunto amortecedor de suspensão traseira', it: 'Insieme ammortizzatore sospensione posteriore' },
-  'Rear Leaf Spring Assembly': { en: 'Rear Leaf Spring Assembly', zh: '后钢板弹簧总成', es: 'Conjunto de resorte de hoja trasera', ar: 'مجموعة نابض الورقة الخلفي', ru: 'Узел задней листовой рессоры', fr: 'Ensemble ressort à lames arrière', pt: 'Conjunto mola de folha traseira', it: 'Insieme molla a balestra posteriore' },
-  'Leaf Spring U-bolt Clamp Plate': { en: 'Leaf Spring U-bolt Clamp Plate', zh: '钢板弹簧U型螺栓压板', es: 'Placa de sujeción de perno en U de resorte de hoja', ar: 'لوحة ربط مسمار U لنابض الورقة', ru: 'Пластина зажима U-образного болта листовой рессоры', fr: 'Plaque de serrage de boulon en U de ressort à lames', pt: 'Placa de fixação de parafuso U de mola de folha', it: 'Piastra di serraggio bullone U molla a balestra' },
-};
-
-const sinotrukSparePartCategoryTranslations: Record<string, Record<string, string>> = {
-  'Maintenance/Filtration System': { en: 'Maintenance/Filtration System', zh: '保养/滤清系统', es: 'Sistema de mantenimiento/filtración', ar: 'نظام الصيانة/الترشيح', ru: 'Система обслуживания/фильтрации', fr: 'Système d\'entretien/filtration', pt: 'Sistema manutenção/filtração', it: 'Sistema manutenzione/filtrazione' },
-  'Electrical/Starting System': { en: 'Electrical/Starting System', zh: '电气/启动', es: 'Sistema eléctrico/arranque', ar: 'نظام كهربائي/بدء التشغيل', ru: 'Электрическая система/запуск', fr: 'Système électrique/démarrage', pt: 'Sistema elétrico/partida', it: 'Sistema elettrico/avviamento' },
-  'Braking System': { en: 'Braking System', zh: '制动系统', es: 'Sistema de frenado', ar: 'نظام الفرامل', ru: 'Тормозная система', fr: 'Système de freinage', pt: 'Sistema de frenagem', it: 'Sistema frenante' },
-  'Transmission/Clutch': { en: 'Transmission/Clutch', zh: '传动/离合器', es: 'Transmisión/Embrague', ar: 'نقل الحركة/القابض', ru: 'Трансмиссия/сцепление', fr: 'Transmission/embrayage', pt: 'Transmissão/embreagem', it: 'Trasmissione/frizione' },
-  'Steering/Suspension': { en: 'Steering/Suspension', zh: '转向/悬挂', es: 'Dirección/Suspensión', ar: 'التوجيه/التعليق', ru: 'Рулевое управление/подвеска', fr: 'Direction/suspension', pt: 'Direção/suspensão', it: 'Sterzo/sospensione' },
-  'Suspension/Shock Absorber': { en: 'Suspension/Shock Absorber', zh: '悬挂减震', es: 'Suspensión/Amortiguador', ar: 'التعليق/ممتص الصدمات', ru: 'Подвеска/амортизатор', fr: 'Suspension/amortisseur', pt: 'Suspensão/amortecedor', it: 'Sospensione/ammortizzatore' },
-  'Intake/Boost System': { en: 'Intake/Boost System', zh: '进气/增压', es: 'Sistema de admisión/sobrealimentación', ar: 'نظام السحب/الشحن', ru: 'Система впуска/наддува', fr: 'Système d\'admission/suralimentation', pt: 'Sistema de admissão/sobrealimentação', it: 'Sistema di aspirazione/sovralimentazione' },
-};
-
-const sinotrukSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
-  'SINOTRUK 零件。5,000-10,000km随保养更换': { en: 'SINOTRUK part. Replace every 5,000-10,000 km during maintenance.', zh: 'SINOTRUK 零件。5,000-10,000km随保养更换', es: 'Pieza SINOTRUK. Reemplazar cada 5,000-10,000 km durante el mantenimiento.', ar: 'قطعة SINOTRUK. استبدل كل 5,000-10,000 كم أثناء الصيانة.', ru: 'Деталь SINOTRUK. Заменяйте каждые 5,000-10,000 км при обслуживании.', fr: 'Pièce SINOTRUK. Remplacer tous les 5,000-10,000 km lors de l\'entretien.', pt: 'Peça SINOTRUK. Substituir a cada 5,000-10,000 km durante a manutenção.', it: 'Pezzo SINOTRUK. Sostituire ogni 5,000-10,000 km durante la manutenzione.' },
-  'SINOTRUK 零件。视路况10,000-20,000km': { en: 'SINOTRUK part. Replace every 10,000-20,000 km depending on road conditions.', zh: 'SINOTRUK 零件。视路况10,000-20,000km', es: 'Pieza SINOTRUK. Reemplazar cada 10,000-20,000 km según las condiciones de la carretera.', ar: 'قطعة SINOTRUK. استبدل كل 10,000-20,000 كم حسب ظروف الطريق.', ru: 'Деталь SINOTRUK. Заменяйте каждые 10,000-20,000 км в зависимости от условий дороги.', fr: 'Pièce SINOTRUK. Remplacer tous les 10,000-20,000 km selon les conditions de la route.', pt: 'Peça SINOTRUK. Substituir a cada 10,000-20,000 km dependendo das condições da estrada.', it: 'Pezzo SINOTRUK. Sostituire ogni 10,000-20,000 km a seconda delle condizioni della strada.' },
-  'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期': { en: 'SINOTRUK part. Replace every 5,000-10,000 km, shorten interval in rainy season or with poor fuel quality.', zh: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期', es: 'Pieza SINOTRUK. Reemplazar cada 5,000-10,000 km, acortar intervalo en temporada de lluvia o con combustible de baja calidad.', ar: 'قطعة SINOTRUK. استبدل كل 5,000-10,000 كم، قصر الفترة في موسم الأمطار أو مع وقود منخفض الجودة.', ru: 'Деталь SINOTRUK. Заменяйте каждые 5,000-10,000 км, сокращайте интервал в сезон дождей или при низком качестве топлива.', fr: 'Pièce SINOTRUK. Remplacer tous les 5,000-10,000 km, raccourcir l\'intervalle en saison des pluies ou avec un carburant de mauvaise qualité.', pt: 'Peça SINOTRUK. Substituir a cada 5,000-10,000 km, encurtar intervalo na estação chuvosa ou com combustível de baixa qualidade.', it: 'Pezzo SINOTRUK. Sostituire ogni 5,000-10,000 km, accorciare l\'intervallo nella stagione delle piogge o con carburante di bassa qualità.' },
-};
-
-export function getTranslatedSinotrukSparePartName(name: string, language: string): string {
-  const translations = sinotrukSparePartNameTranslations[name];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return name;
-}
-
-export function getTranslatedSinotrukSparePartCategory(category: string, language: string): string {
-  const translations = sinotrukSparePartCategoryTranslations[category];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return category;
-}
-
-export function getTranslatedSinotrukSparePartDescription(description: string, language: string): string {
-  const translations = sinotrukSparePartDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
-}
-
-// Cummins and Weichai use generic translations (same as other brands)
-
-
-
-// Cummins spare parts translations (complete)
-const cumminsSparePartNameTranslations: Record<string, Record<string, string>> = {
-  'Turbocharger Hose': { en: 'Turbocharger Hose', zh: '涡轮增压器软管', es: 'Manguera del turbocompresor', ar: 'خرطوم الشاحن التوربيني', ru: 'Шланг турбокомпрессора', fr: 'Tuyau du turbocompresseur', pt: 'Mangueira do turbocompressor', it: 'Tubo turbocompressore' },
-  'Connecting Rod Bearing': { en: 'Connecting Rod Bearing', zh: '连杆瓦', es: 'Cojinete de biela', ar: 'محمل قضيب التوصيل', ru: 'Подшипник шатуна', fr: 'Palier de bielle', pt: 'Mancal da biela', it: 'Cuscinetto biella' },
-  'Connecting Rod Bolt': { en: 'Connecting Rod Bolt', zh: '连杆螺栓', es: 'Perno de biela', ar: 'برغي قضيب التوصيل', ru: 'Болт шатуна', fr: 'Boulon de bielle', pt: 'Parafuso da biela', it: 'Bullone biella' },
-  'Water Pump Seal Ring': { en: 'Water Pump Seal Ring', zh: '水泵密封圈', es: 'Anillo de sello de bomba de agua', ar: 'حلقة ختم مضخة المياه', ru: 'Кольцо уплотнения водяного насоса', fr: 'Bague d\'étanchéité de pompe à eau', pt: 'Anel de vedação da bomba de água', it: 'Anello di tenuta pompa acqua' },
-  'Oil Filter': { en: 'Oil Filter', zh: '机油滤清器', es: 'Filtro de aceite', ar: 'مرشح الزيت', ru: 'Масляный фильтр', fr: 'Filtre à huile', pt: 'Filtro de óleo', it: 'Filtro olio' },
-  'Intake Valve': { en: 'Intake Valve', zh: '进气门', es: 'Válvula de admisión', ar: 'صمام السحب', ru: 'Впускной клапан', fr: 'Soupape d\'admission', pt: 'Válvula de admissão', it: 'Valvola di aspirazione' },
-  'Fuel Shutoff Solenoid': { en: 'Fuel Shutoff Solenoid', zh: '熄火电磁阀', es: 'Solenoide de corte de combustible', ar: 'ملف إيقاف الوقود', ru: 'Электромагнитный клапан отсечки топлива', fr: 'Solénoïde d\'arrêt de carburant', pt: 'Solenoide de corte de combustível', it: 'Solenoide di arresto carburante' },
-  'Intake Gasket': { en: 'Intake Gasket', zh: '进气垫片', es: 'Junta de admisión', ar: 'حشية السحب', ru: 'Прокладка впуска', fr: 'Joint d\'admission', pt: 'Junta de admissão', it: 'Guarnizione aspirazione' },
-  'Intake Pipe Gasket': { en: 'Intake Pipe Gasket', zh: '进气管垫片', es: 'Junta de tubo de admisión', ar: 'حشية أنبوب السحب', ru: 'Прокладка впускного трубопровода', fr: 'Joint de tuyau d\'admission', pt: 'Junta de tubo de admissão', it: 'Guarnizione tubo aspirazione' },
-  'Fuel Pump Gasket': { en: 'Fuel Pump Gasket', zh: '燃油泵垫片', es: 'Junta de bomba de combustible', ar: 'حشية مضخة الوقود', ru: 'Прокладка топливного насоса', fr: 'Joint de pompe à carburant', pt: 'Junta da bomba de combustível', it: 'Guarnizione pompa carburante' },
-  'Fuel Overflow Valve': { en: 'Fuel Overflow Valve', zh: '燃油溢流阀', es: 'Válvula de rebose de combustible', ar: 'صمام تجاوز الوقود', ru: 'Клапан перелива топлива', fr: 'Soupape de débordement de carburant', pt: 'Válvula de transbordamento de combustível', it: 'Valvola di scarico carburante' },
-  'Main Bearing Set': { en: 'Main Bearing Set', zh: '主轴承套件', es: 'Conjunto de cojinete principal', ar: 'مجموعة المحمل الرئيسي', ru: 'Комплект основного подшипника', fr: 'Ensemble palier principal', pt: 'Conjunto de mancal principal', it: 'Insieme cuscinetto principale' },
-  'Oil Pan Gasket': { en: 'Oil Pan Gasket', zh: '油底壳垫片', es: 'Junta de bandeja de aceite', ar: 'حشية حوض الزيت', ru: 'Прокладка поддона масла', fr: 'Joint de carter d\'huile', pt: 'Junta da bandeja de óleo', it: 'Guarnizione coppa olio' },
-  'Cylinder Head Gasket': { en: 'Cylinder Head Gasket', zh: '汽缸垫', es: 'Junta de culata', ar: 'حشية رأس الأسطوانة', ru: 'Прокладка головки цилиндра', fr: 'Joint de culasse', pt: 'Junta de cabeçote', it: 'Guarnizione testata' },
-  'Front Oil Seal': { en: 'Front Oil Seal', zh: '前油封', es: 'Sello de aceite frontal', ar: 'ختم الزيت الأمامي', ru: 'Передний масляный сальник', fr: 'Joint d\'huile avant', pt: 'Vedação de óleo frontal', it: 'Tenuta olio anteriore' },
-  'Exhaust Valve Push Rod': { en: 'Exhaust Valve Push Rod', zh: '排气门推杆', es: 'Varilla de empuje de válvula de escape', ar: 'قضيب دفع صمام العادم', ru: 'Толкатель выпускного клапана', fr: 'Tige de poussée de soupape d\'échappement', pt: 'Haste de empuxo da válvula de escape', it: 'Asta di spinta valvola scarico' },
-  'Belt Tensioner': { en: 'Belt Tensioner', zh: '皮带张紧器', es: 'Tensor de correa', ar: 'مشدد الحزام', ru: 'Натяжитель ремня', fr: 'Tendeur de courroie', pt: 'Tensor de correia', it: 'Tenditore cinghia' },
-  'Oil Pressure Sensor': { en: 'Oil Pressure Sensor', zh: '机油压力传感器', es: 'Sensor de presión de aceite', ar: 'مستشعر ضغط الزيت', ru: 'Датчик давления масла', fr: 'Capteur de pression d\'huile', pt: 'Sensor de pressão de óleo', it: 'Sensore pressione olio' },
-  'High Pressure Oil Tube': { en: 'High Pressure Oil Tube', zh: '高压油管', es: 'Tubo de aceite de alta presión', ar: 'أنبوب الزيت عالي الضغط', ru: 'Трубка высокого давления масла', fr: 'Tube d\'huile haute pression', pt: 'Tubo de óleo de alta pressão', it: 'Tubo olio alta pressione' },
-  'Fuel Tube': { en: 'Fuel Tube', zh: '燃油管', es: 'Tubo de combustible', ar: 'أنبوب الوقود', ru: 'Топливопровод', fr: 'Tube de carburant', pt: 'Tubo de combustível', it: 'Tubo carburante' },
-  'Fan Belt': { en: 'Fan Belt', zh: '风扇皮带', es: 'Correa de ventilador', ar: 'حزام المروحة', ru: 'Ремень вентилятора', fr: 'Courroie de ventilateur', pt: 'Correia do ventilador', it: 'Cinghia ventilatore' },
-  'Piston Assembly': { en: 'Piston Assembly', zh: '活塞组件', es: 'Conjunto de pistón', ar: 'مجموعة المكبس', ru: 'Узел поршня', fr: 'Ensemble piston', pt: 'Conjunto de pistão', it: 'Insieme pistone' },
-  'Piston Cooling Nozzle': { en: 'Piston Cooling Nozzle', zh: '活塞冷却喷嘴', es: 'Boquilla de enfriamiento de pistón', ar: 'فوهة تبريد المكبس', ru: 'Форсунка охлаждения поршня', fr: 'Buse de refroidissement de piston', pt: 'Bico de resfriamento do pistão', it: 'Ugello raffreddamento pistone' },
-  'Cylinder Head Bolt': { en: 'Cylinder Head Bolt', zh: '缸盖螺栓', es: 'Perno de culata', ar: 'برغي رأس الأسطوانة', ru: 'Болт головки цилиндра', fr: 'Boulon de culasse', pt: 'Parafuso do cabeçote', it: 'Bullone testata' },
-  'Connecting Rod Assembly': { en: 'Connecting Rod Assembly', zh: '连杆总成', es: 'Conjunto de biela', ar: 'مجموعة قضيب التوصيل', ru: 'Узел шатуна', fr: 'Ensemble bielle', pt: 'Conjunto de biela', it: 'Insieme biella' },
-  'Main Bearing': { en: 'Main Bearing', zh: '主轴瓦', es: 'Cojinete principal', ar: 'محمل رئيسي', ru: 'Основной подшипник', fr: 'Palier principal', pt: 'Mancal principal', it: 'Cuscinetto principale' },
-  'Thrust Washer': { en: 'Thrust Washer', zh: '止推片', es: 'Arandela de empuje', ar: 'حلقة الدفع', ru: 'Упорная шайба', fr: 'Rondelle de butée', pt: 'Arruela de empuxo', it: 'Rondella di spinta' },
-};
-
-const cumminsSparePartCategoryTranslations: Record<string, Record<string, string>> = {
-  'Engine System': { en: 'Engine System', zh: '发动机系统', es: 'Sistema de motor', ar: 'نظام المحرك', ru: 'Система двигателя', fr: 'Système moteur', pt: 'Sistema de motor', it: 'Sistema motore' },
-  'Cooling System': { en: 'Cooling System', zh: '冷却系统', es: 'Sistema de refrigeración', ar: 'نظام التبريد', ru: 'Система охлаждения', fr: 'Système de refroidissement', pt: 'Sistema de resfriamento', it: 'Sistema di raffreddamento' },
-  'Fuel System': { en: 'Fuel System', zh: '燃油系统', es: 'Sistema de combustible', ar: 'نظام الوقود', ru: 'Топливная система', fr: 'Système de carburant', pt: 'Sistema de combustível', it: 'Sistema di carburante' },
-};
-
-const cumminsSparePartDescriptionTranslations: Record<string, Record<string, string>> = {
-  'Cummins engine part': { en: 'Cummins engine part', zh: 'Cummins 发动机零件', es: 'Pieza del motor Cummins', ar: 'قطعة محرك Cummins', ru: 'Деталь двигателя Cummins', fr: 'Pièce moteur Cummins', pt: 'Peça do motor Cummins', it: 'Pezzo motore Cummins' },
-};
-
-export function getTranslatedCumminsSparePartName(name: string, language: string): string {
-  const translations = cumminsSparePartNameTranslations[name];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return name;
-}
-
-export function getTranslatedCumminsSparePartCategory(category: string, language: string): string {
-  const translations = cumminsSparePartCategoryTranslations[category];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return category;
-}
-
-export function getTranslatedCumminsSparePartDescription(description: string, language: string): string {
-  const translations = cumminsSparePartDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
-}
-
-// 更新导出（移除旧的别名）
-// export const getTranslatedCumminsSparePartName = getTranslatedIsuzuSparePartName;
-// export const getTranslatedCumminsSparePartCategory = getTranslatedIsuzuSparePartCategory;
-// export const getTranslatedCumminsSparePartDescription = getTranslatedIsuzuSparePartDescription;
-
-// Weichai spare parts translations (using Cummins translations as base)
-export function getTranslatedWeichaiSparePartName(name: string, language: string): string {
-  return getTranslatedCumminsSparePartName(name, language);
-}
-
-export function getTranslatedWeichaiSparePartCategory(category: string, language: string): string {
-  return getTranslatedCumminsSparePartCategory(category, language);
-}
-
-export function getTranslatedWeichaiSparePartDescription(description: string, language: string): string {
-  return getTranslatedCumminsSparePartDescription(description, language);
 }
