@@ -55,6 +55,76 @@ export function SparePartDetailModal({
   const getDetailsForBrand = brandDetailsMap[brandId];
   const details = getDetailsForBrand ? getDetailsForBrand(language) : part.description;
 
+  // Translation helper
+  const t = (key: string, translations: Record<string, string>) => {
+    return translations[language] || translations['en'];
+  };
+
+  const partNumberLabel = {
+    en: 'Part Number',
+    zh: '零件号',
+    es: 'Número de Pieza',
+    ar: 'رقم القطعة',
+    ru: 'Номер детали',
+    fr: 'Numéro de Pièce',
+    pt: 'Número da Peça',
+    it: 'Numero Pezzo',
+    de: 'Teilenummer',
+    ja: '部品番号',
+  };
+
+  const categoryLabel = {
+    en: 'Category',
+    zh: '分类',
+    es: 'Categoría',
+    ar: 'الفئة',
+    ru: 'Категория',
+    fr: 'Catégorie',
+    pt: 'Categoria',
+    it: 'Categoria',
+    de: 'Kategorie',
+    ja: 'カテゴリ',
+  };
+
+  const descriptionLabel = {
+    en: 'Description',
+    zh: '描述',
+    es: 'Descripción',
+    ar: 'الوصف',
+    ru: 'Описание',
+    fr: 'Description',
+    pt: 'Descrição',
+    it: 'Descrizione',
+    de: 'Beschreibung',
+    ja: '説明',
+  };
+
+  const closeLabel = {
+    en: 'Close',
+    zh: '关闭',
+    es: 'Cerrar',
+    ar: 'إغلاق',
+    ru: 'Закрыть',
+    fr: 'Fermer',
+    pt: 'Fechar',
+    it: 'Chiudi',
+    de: 'Schließen',
+    ja: '閉じる',
+  };
+
+  const inquiryLabel = {
+    en: 'Inquiry',
+    zh: '询价',
+    es: 'Consulta',
+    ar: 'استفسار',
+    ru: 'Запрос',
+    fr: 'Demande',
+    pt: 'Consulta',
+    it: 'Richiesta',
+    de: 'Anfrage',
+    ja: 'お問い合わせ',
+  };
+
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -74,7 +144,7 @@ export function SparePartDetailModal({
           {/* Part Number */}
           <div>
             <h3 className="text-sm font-semibold text-gray-600 mb-2">
-              {language === 'zh' ? '零件号' : language === 'en' ? 'Part Number' : language === 'es' ? 'Número de Pieza' : language === 'ar' ? 'رقم القطعة' : language === 'ru' ? 'Номер детали' : language === 'fr' ? 'Numéro de Pièce' : language === 'pt' ? 'Número da Peça' : language === 'it' ? 'Numero Pezzo' : language === 'de' ? 'Teilenummer' : language === 'ja' ? '部品番号' : 'Numero Pezzo'}
+              {t('partNumber', partNumberLabel)}
             </h3>
             <p className="text-lg font-mono">{part.partNumber}</p>
           </div>
@@ -82,7 +152,7 @@ export function SparePartDetailModal({
           {/* Category */}
           <div>
             <h3 className="text-sm font-semibold text-gray-600 mb-2">
-              {language === 'zh' ? '分类' : language === 'en' ? 'Category' : language === 'es' ? 'Categoría' : language === 'ar' ? 'الفئة' : language === 'ru' ? 'Категория' : language === 'fr' ? 'Catégorie' : language === 'pt' ? 'Categoria' : language === 'it' ? 'Categoria' : language === 'de' ? 'Kategorie' : language === 'ja' ? 'カテゴリ' : 'Categoria'}
+              {t('category', categoryLabel)}
             </h3>
             <p className="text-base">{part.category}</p>
           </div>
@@ -90,7 +160,7 @@ export function SparePartDetailModal({
           {/* Description */}
           <div>
             <h3 className="text-sm font-semibold text-gray-600 mb-2">
-              {language === 'zh' ? '描述' : language === 'en' ? 'Description' : language === 'es' ? 'Descripción' : language === 'ar' ? 'الوصف' : language === 'ru' ? 'Описание' : language === 'fr' ? 'Description' : language === 'pt' ? 'Descrição' : language === 'it' ? 'Descrizione' : language === 'de' ? 'Beschreibung' : language === 'ja' ? '説明' : 'Descrizione'}
+              {t('description', descriptionLabel)}
             </h3>
             <p className="text-base leading-relaxed">{details}</p>
           </div>
@@ -101,12 +171,12 @@ export function SparePartDetailModal({
               onClick={onClose}
               className="flex-1 px-4 py-3 bg-gray-100 text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition-colors"
             >
-              {language === 'zh' ? '关闭' : language === 'en' ? 'Close' : language === 'es' ? 'Cerrar' : language === 'ar' ? 'إغلاق' : language === 'ru' ? 'Закрыть' : language === 'fr' ? 'Fermer' : language === 'pt' ? 'Fechar' : language === 'it' ? 'Chiudi' : language === 'de' ? 'Schließen' : language === 'ja' ? '閉じる' : 'Chiudi'}
+              {t('close', closeLabel)}
             </button>
             <button
               className="flex-1 px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
             >
-              {language === 'zh' ? '询价' : language === 'en' ? 'Inquiry' : language === 'es' ? 'Consulta' : language === 'ar' ? 'استفسار' : language === 'ru' ? 'Запрос' : language === 'fr' ? 'Demande' : language === 'pt' ? 'Consulta' : language === 'it' ? 'Richiesta' : language === 'de' ? 'Anfrage' : language === 'ja' ? 'お問い合わせ' : 'Richiesta'}
+              {t('inquiry', inquiryLabel)}
             </button>
           </div>
         </div>

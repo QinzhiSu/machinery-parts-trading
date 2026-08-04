@@ -1008,9 +1008,9 @@
 
 ## 零件详情弹窗翻译修复
 
-- [ ] 为 SparePartDetailModal.tsx 中的所有硬编码文本添加翻译键
-- [ ] 在 translations.ts 中添加零件详情弹窗的翻译键
-- [ ] 为零件详情弹窗的翻译键添加德语和日语翻译
+- [x] 为 SparePartDetailModal.tsx 中的所有硬编码文本添加翻译键（支持 10 种语言）
+- [x] 在 SparePartDetailModal.tsx 中添加零件详情弹窗的翻译对象
+- [x] 零件详情弹窗的所有文本已支持德语和日语翻译
 - [ ] 验证零件详情弹窗已翻译成德语和日语
 
 

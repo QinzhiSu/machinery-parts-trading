@@ -40,6 +40,7 @@ import { getTranslatedToyotaMachineName, getTranslatedToyotaMachineType, getTran
 import { getTranslatedCumminsMachineName, getTranslatedCumminsMachineType, getTranslatedCumminsMachineSpecs, getTranslatedCumminsMachineDescription } from '@/data/cumminsmachineTranslations';
 import { getTranslatedWeichaiMachineName, getTranslatedWeichaiMachineType, getTranslatedWeichaiMachineSpecs, getTranslatedWeichaiMachineDescription } from '@/data/weichaimachineTranslations';
 import MachineDescriptionTranslator from '@/components/MachineDescriptionTranslator';
+import { SparePartDetailModal } from '@/components/SparePartDetailModal';
 
 const PARTS_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/spare-parts-banner-MPvqe3AJjXeWtJpc8XFEsb.webp';
 
@@ -485,6 +486,16 @@ export default function BrandPage() {
           </div>
         </div>
       </div>
+
+      {/* Spare Part Detail Modal */}
+      {selectedPart && (
+        <SparePartDetailModal
+          isOpen={partDetailOpen}
+          onClose={handlePartDetailClose}
+          part={selectedPart}
+          brandId={brandId || ''}
+        />
+      )}
 
       {/* Quick Inquiry Dialog */}
       {selectedProduct && (
