@@ -593,6 +593,42 @@ export const liugongCategoryTranslations: Record<string, Record<string, string>>
     ar: 'Engine System',
     it: 'Engine System',
   },
+  '保养/滤清系统': {
+    en: 'Maintenance/Filtration System',
+    zh: '保养/滤清系统',
+    es: 'Sistema de mantenimiento/filtración',
+    fr: 'Système de maintenance/filtration',
+    de: 'Wartungs-/Filtersystem',
+    pt: 'Sistema de manutenção/filtração',
+    ru: 'Система обслуживания/фильтрации',
+    ja: 'メンテナンス/ろ過システム',
+    ar: 'Maintenance/Filtration System',
+    it: 'Maintenance/Filtration System',
+  },
+  '制动系统': {
+    en: 'Braking System',
+    zh: '制动系统',
+    es: 'Sistema de frenado',
+    fr: 'Système de freinage',
+    de: 'Bremssystem',
+    pt: 'Sistema de frenagem',
+    ru: 'Тормозная система',
+    ja: 'ブレーキシステム',
+    ar: 'Braking System',
+    it: 'Braking System',
+  },
+  '冷却系统': {
+    en: 'Cooling System',
+    zh: '冷却系统',
+    es: 'Sistema de refrigeración',
+    fr: 'Système de refroidissement',
+    de: 'Kühlsystem',
+    pt: 'Sistema de resfriamento',
+    ru: 'Система охлаждения',
+    ja: '冷却システム',
+    ar: 'Cooling System',
+    it: 'Cooling System',
+  }
 };
 
 export const liugongDescriptionTranslations: Record<string, Record<string, string>> = {
