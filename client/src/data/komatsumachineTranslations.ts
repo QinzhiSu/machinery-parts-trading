@@ -16,6 +16,7 @@ export const komatsumachineNameTranslations: Record<string, Record<string, strin
 
 export const komatsumachineTypeTranslations: Record<string, Record<string, string>> = {
   'PC130-8': { en: 'Hydraulic Excavator', zh: '液压挖掘机', es: 'Excavadora hidráulica', fr: 'Pelle hydraulique', de: 'Hydraulikbagger', pt: 'Escavadeira hidráulica', ru: 'Гидравлический экскаватор', ja: '油圧ショベル', ar: 'حفار هيدروليكي', it: 'Escavatore idraulico' },
+  'PC130-7': { en: 'Hydraulic Excavator', zh: '液压挖掘机', es: 'Excavadora hidráulica', fr: 'Pelle hydraulique', de: 'Hydraulikbagger', pt: 'Escavadeira hidráulica', ru: 'Гидравлический экскаватор', ja: '油圧ショベル', ar: 'حفار هيدروليكي', it: 'Escavatore idraulico' },
   'PC200-8': { en: 'Hydraulic Excavator', zh: '液压挖掘机', es: 'Excavadora hidráulica', fr: 'Pelle hydraulique', de: 'Hydraulikbagger', pt: 'Escavadeira hidráulica', ru: 'Гидравлический экскаватор', ja: '油圧ショベル', ar: 'حفار هيدروليكي', it: 'Escavatore idraulico' },
   'PC220-8': { en: 'Hydraulic Excavator', zh: '液压挖掘机', es: 'Excavadora hidráulica', fr: 'Pelle hydraulique', de: 'Hydraulikbagger', pt: 'Escavadeira hidráulica', ru: 'Гидравлический экскаватор', ja: '油圧ショベル', ar: 'حفار هيدروليكي', it: 'Escavatore idraulico' },
   'PC300-8': { en: 'Hydraulic Excavator', zh: '液压挖掘机', es: 'Excavadora hidráulica', fr: 'Pelle hydraulique', de: 'Hydraulikbagger', pt: 'Escavadeira hidráulica', ru: 'Гидравлический экскаватор', ja: '油圧ショベル', ar: 'حفار هيدروليكي', it: 'Escavatore idraulico' },
