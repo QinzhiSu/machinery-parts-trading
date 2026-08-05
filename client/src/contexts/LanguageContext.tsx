@@ -11,6 +11,13 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>(() => {
+    // Try to get from URL parameters first
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get('lang');
+    if (urlLang === 'en' || urlLang === 'ar' || urlLang === 'ru' || urlLang === 'fr' || urlLang === 'zh' || urlLang === 'pt' || urlLang === 'es' || urlLang === 'it' || urlLang === 'de' || urlLang === 'ja') {
+      return urlLang as Language;
+    }
+    
     // Try to get from localStorage
     const saved = localStorage.getItem('language');
     if (saved === 'en' || saved === 'ar' || saved === 'ru' || saved === 'fr' || saved === 'zh' || saved === 'pt' || saved === 'es' || saved === 'it' || saved === 'de' || saved === 'ja') {
