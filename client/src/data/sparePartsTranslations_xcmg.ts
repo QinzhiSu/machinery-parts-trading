@@ -409,8 +409,6 @@ export const xcmgNameTranslations = {
     pt: 'Air Filter Assembly (Inner and Outer)',
     ru: 'Air Filter Assembly (Inner and Outer)',
     ja: 'Air Filter Assembly (Inner and Outer)',
-    ar: 'Air Filter Assembly (Inner and Outer)',
-    it: 'Air Filter Assembly (Inner and Outer)',
   },
   'Hydraulic Oil Filter (Variant)': {
     en: 'Hydraulic Oil Filter (Variant)',
@@ -423,8 +421,6 @@ export const xcmgNameTranslations = {
     pt: 'Hydraulic Oil Filter (Variant)',
     ru: 'Hydraulic Oil Filter (Variant)',
     ja: 'Hydraulic Oil Filter (Variant)',
-    ar: 'Hydraulic Oil Filter (Variant)',
-    it: 'Hydraulic Oil Filter (Variant)',
   },
   'Air Filter (ZL50)': {
     en: 'Air Filter (ZL50)',
@@ -437,8 +433,6 @@ export const xcmgNameTranslations = {
     pt: 'Air Filter (ZL50)',
     ru: 'Air Filter (ZL50)',
     ja: 'Air Filter (ZL50)',
-    ar: 'Air Filter (ZL50)',
-    it: 'Air Filter (ZL50)',
   },
   'Oil Filter (with Lock Valve)': {
     en: 'Oil Filter (with Lock Valve)',
@@ -451,8 +445,6 @@ export const xcmgNameTranslations = {
     pt: 'Oil Filter (with Lock Valve)',
     ru: 'Oil Filter (with Lock Valve)',
     ja: 'Oil Filter (with Lock Valve)',
-    ar: 'Oil Filter (with Lock Valve)',
-    it: 'Oil Filter (with Lock Valve)',
   },
   'Hydraulic Oil Filter (Model 2)': {
     en: 'Hydraulic Oil Filter (Model 2)',
@@ -465,8 +457,6 @@ export const xcmgNameTranslations = {
     pt: 'Hydraulic Oil Filter (Model 2)',
     ru: 'Hydraulic Oil Filter (Model 2)',
     ja: 'Hydraulic Oil Filter (Model 2)',
-    ar: 'Hydraulic Oil Filter (Model 2)',
-    it: 'Hydraulic Oil Filter (Model 2)',
   },
   'Water Temperature Sensor': {
     en: 'Water Temperature Sensor',
@@ -479,8 +469,6 @@ export const xcmgNameTranslations = {
     pt: 'Water Temperature Sensor',
     ru: 'Water Temperature Sensor',
     ja: 'Water Temperature Sensor',
-    ar: 'Water Temperature Sensor',
-    it: 'Water Temperature Sensor',
   },
   'Bucket Teeth': {
     en: 'Bucket Teeth',
@@ -493,8 +481,6 @@ export const xcmgNameTranslations = {
     pt: 'Bucket Teeth',
     ru: 'Bucket Teeth',
     ja: 'Bucket Teeth',
-    ar: 'Bucket Teeth',
-    it: 'Bucket Teeth',
   },
   'Right Bucket Tooth': {
     en: 'Right Bucket Tooth',
@@ -507,8 +493,6 @@ export const xcmgNameTranslations = {
     pt: 'Right Bucket Tooth',
     ru: 'Right Bucket Tooth',
     ja: 'Right Bucket Tooth',
-    ar: 'Right Bucket Tooth',
-    it: 'Right Bucket Tooth',
   },
   'Left Bucket Tooth': {
     en: 'Left Bucket Tooth',
@@ -521,8 +505,6 @@ export const xcmgNameTranslations = {
     pt: 'Left Bucket Tooth',
     ru: 'Left Bucket Tooth',
     ja: 'Left Bucket Tooth',
-    ar: 'Left Bucket Tooth',
-    it: 'Left Bucket Tooth',
   },
   'Bucket Tooth Seat': {
     en: 'Bucket Tooth Seat',
@@ -535,8 +517,6 @@ export const xcmgNameTranslations = {
     pt: 'Bucket Tooth Seat',
     ru: 'Bucket Tooth Seat',
     ja: 'Bucket Tooth Seat',
-    ar: 'Bucket Tooth Seat',
-    it: 'Bucket Tooth Seat',
   },
   'Transmission Assembly': {
     en: 'Transmission Assembly',
@@ -549,8 +529,6 @@ export const xcmgNameTranslations = {
     pt: 'Transmission Assembly',
     ru: 'Transmission Assembly',
     ja: 'Transmission Assembly',
-    ar: 'Transmission Assembly',
-    it: 'Transmission Assembly',
   },
   'Transmission Control Valve': {
     en: 'Transmission Control Valve',
@@ -563,8 +541,6 @@ export const xcmgNameTranslations = {
     pt: 'Transmission Control Valve',
     ru: 'Transmission Control Valve',
     ja: 'Transmission Control Valve',
-    ar: 'Transmission Control Valve',
-    it: 'Transmission Control Valve',
   },
   'Transmission Reverse Piston': {
     en: 'Transmission Reverse Piston',
@@ -577,8 +553,6 @@ export const xcmgNameTranslations = {
     pt: 'Transmission Reverse Piston',
     ru: 'Transmission Reverse Piston',
     ja: 'Transmission Reverse Piston',
-    ar: 'Transmission Reverse Piston',
-    it: 'Transmission Reverse Piston',
   },
   'Drive Axle Differential Gear': {
     en: 'Drive Axle Differential Gear',
@@ -591,8 +565,6 @@ export const xcmgNameTranslations = {
     pt: 'Drive Axle Differential Gear',
     ru: 'Drive Axle Differential Gear',
     ja: 'Drive Axle Differential Gear',
-    ar: 'Drive Axle Differential Gear',
-    it: 'Drive Axle Differential Gear',
   },
   'Working Hydraulic Pump': {
     en: 'Working Hydraulic Pump',
@@ -605,8 +577,6 @@ export const xcmgNameTranslations = {
     pt: 'Working Hydraulic Pump',
     ru: 'Working Hydraulic Pump',
     ja: 'Working Hydraulic Pump',
-    ar: 'Working Hydraulic Pump',
-    it: 'Working Hydraulic Pump',
   },
   'Brake Pads': {
     en: 'Brake Pads',
@@ -619,8 +589,6 @@ export const xcmgNameTranslations = {
     pt: 'Brake Pads',
     ru: 'Brake Pads',
     ja: 'Brake Pads',
-    ar: 'Brake Pads',
-    it: 'Brake Pads',
   },
   'Brake Disc': {
     en: 'Brake Disc',
@@ -633,8 +601,6 @@ export const xcmgNameTranslations = {
     pt: 'Brake Disc',
     ru: 'Brake Disc',
     ja: 'Brake Disc',
-    ar: 'Brake Disc',
-    it: 'Brake Disc',
   },
   'Parking Brake Valve': {
     en: 'Parking Brake Valve',
@@ -647,8 +613,6 @@ export const xcmgNameTranslations = {
     pt: 'Parking Brake Valve',
     ru: 'Parking Brake Valve',
     ja: 'Parking Brake Valve',
-    ar: 'Parking Brake Valve',
-    it: 'Parking Brake Valve',
   },
   'Brake Drum': {
     en: 'Brake Drum',
@@ -661,8 +625,6 @@ export const xcmgNameTranslations = {
     pt: 'Brake Drum',
     ru: 'Brake Drum',
     ja: 'Brake Drum',
-    ar: 'Brake Drum',
-    it: 'Brake Drum',
   },
   'Lip Seal Ring': {
     en: 'Lip Seal Ring',
@@ -675,8 +637,6 @@ export const xcmgNameTranslations = {
     pt: 'Lip Seal Ring',
     ru: 'Lip Seal Ring',
     ja: 'Lip Seal Ring',
-    ar: 'Lip Seal Ring',
-    it: 'Lip Seal Ring',
   },
   'Universal Joint Coupling': {
     en: 'Universal Joint Coupling',
@@ -689,8 +649,6 @@ export const xcmgNameTranslations = {
     pt: 'Universal Joint Coupling',
     ru: 'Universal Joint Coupling',
     ja: 'Universal Joint Coupling',
-    ar: 'Universal Joint Coupling',
-    it: 'Universal Joint Coupling',
   },
   'Relief Valve': {
     en: 'Relief Valve',
@@ -703,8 +661,6 @@ export const xcmgNameTranslations = {
     pt: 'Relief Valve',
     ru: 'Relief Valve',
     ja: 'Relief Valve',
-    ar: 'Relief Valve',
-    it: 'Relief Valve',
   },
 };
 
@@ -725,8 +681,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'Peça XCMG. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
     ru: 'Деталь XCMG. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
     ja: 'XCMG部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
-    ar: 'XCMG part. Replace every 500-1000 hours or based on fluid analysis results.',
-    it: 'XCMG part. Replace every 500-1000 hours or based on fluid analysis results.',
   },
   'XCMG part. Replace every 250-500 hours or based on dust environment.': {
     en: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
@@ -739,8 +693,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
     ru: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
     ja: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
-    ar: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
-    it: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
   },
   'XCMG part. Replace every 500-1000 hours.': {
     en: 'XCMG part. Replace every 500-1000 hours.',
@@ -753,8 +705,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace every 500-1000 hours.',
     ru: 'XCMG part. Replace every 500-1000 hours.',
     ja: 'XCMG part. Replace every 500-1000 hours.',
-    ar: 'XCMG part. Replace every 500-1000 hours.',
-    it: 'XCMG part. Replace every 500-1000 hours.',
   },
   'XCMG part. Replace every 250-500 hours or based on fuel quality.': {
     en: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
@@ -767,8 +717,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
     ru: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
     ja: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
-    ar: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
-    it: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
   },
   'XCMG part. Inspect every 500-1000 hours.': {
     en: 'XCMG part. Inspect every 500-1000 hours.',
@@ -781,8 +729,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Inspect every 500-1000 hours.',
     ru: 'XCMG part. Inspect every 500-1000 hours.',
     ja: 'XCMG part. Inspect every 500-1000 hours.',
-    ar: 'XCMG part. Inspect every 500-1000 hours.',
-    it: 'XCMG part. Inspect every 500-1000 hours.',
   },
   'XCMG part. Replace synchronously every time teeth are replaced.': {
     en: 'XCMG part. Replace synchronously every time teeth are replaced.',
@@ -795,8 +741,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace synchronously every time teeth are replaced.',
     ru: 'XCMG part. Replace synchronously every time teeth are replaced.',
     ja: 'XCMG part. Replace synchronously every time teeth are replaced.',
-    ar: 'XCMG part. Replace synchronously every time teeth are replaced.',
-    it: 'XCMG part. Replace synchronously every time teeth are replaced.',
   },
   'XCMG part. Replace when worn to bottom or broken.': {
     en: 'XCMG part. Replace when worn to bottom or broken.',
@@ -809,8 +753,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace when worn to bottom or broken.',
     ru: 'XCMG part. Replace when worn to bottom or broken.',
     ja: 'XCMG part. Replace when worn to bottom or broken.',
-    ar: 'XCMG part. Replace when worn to bottom or broken.',
-    it: 'XCMG part. Replace when worn to bottom or broken.',
   },
   'XCMG part. Replace when abnormal shifting occurs.': {
     en: 'XCMG part. Replace when abnormal shifting occurs.',
@@ -823,8 +765,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace when abnormal shifting occurs.',
     ru: 'XCMG part. Replace when abnormal shifting occurs.',
     ja: 'XCMG part. Replace when abnormal shifting occurs.',
-    ar: 'XCMG part. Replace when abnormal shifting occurs.',
-    it: 'XCMG part. Replace when abnormal shifting occurs.',
   },
   'XCMG part. Replace when shifting is difficult/slipping occurs.': {
     en: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
@@ -837,8 +777,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
     ru: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
     ja: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
-    ar: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
-    it: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
   },
   'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).': {
     en: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
@@ -851,8 +789,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
     ru: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
     ja: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
-    ar: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
-    it: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
   },
   'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).': {
     en: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
@@ -865,8 +801,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
     ru: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
     ja: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
-    ar: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
-    it: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
   },
   'XCMG part. Replace every 30,000-50,000 km or based on wear.': {
     en: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
@@ -879,8 +813,6 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     pt: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
     ru: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
     ja: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
-    ar: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
-    it: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
   },
 };
 
