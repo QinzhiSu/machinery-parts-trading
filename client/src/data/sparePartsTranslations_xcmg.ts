@@ -903,7 +903,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '维护/过滤系统',
     it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
-    it: 'Sistema di Manutenzione/Filtrazione',
   },
   'Cooling System': {
     en: 'Cooling System',
@@ -916,7 +915,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '冷却系统',
     it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
-    it: 'Sistema di Raffreddamento',
   },
   'Turbocharging/Intake System': {
     en: 'Turbocharging/Intake System',
@@ -929,7 +927,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '增压/进气系统',
     it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
-    it: 'Sistema di Sovralimentazione/Aspirazione',
   },
   'Chassis/Track System': {
     en: 'Chassis/Track System',
@@ -942,7 +939,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '底盘/履带系统',
     it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
-    it: 'Sistema di Telaio/Cingoli',
   },
   'Excavation/GET': {
     en: 'Excavation/GET',
@@ -955,7 +951,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '挖掘/GET',
     it: 'Excavation/GET',
     ar: 'التنقيب/GET',
-    it: 'Scavo/GET',
   },
   'Excavation/GET (Small)': {
     en: 'Excavation/GET (Small)',
@@ -968,7 +963,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '挖掘/GET (小型)',
     it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
-    it: 'Scavo/GET (Piccolo)',
   },
   'Excavation/GET (Medium)': {
     en: 'Excavation/GET (Medium)',
@@ -981,7 +975,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '挖掘/GET (中型)',
     it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
-    it: 'Scavo/GET (Medio)',
   },
   'Excavation/GET (Large)': {
     en: 'Excavation/GET (Large)',
@@ -994,7 +987,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '挖掘/GET (大型)',
     it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
-    it: 'Scavo/GET (Grande)',
   },
   'Transmission System': {
     en: 'Transmission System',
@@ -1007,7 +999,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '传动系统',
     it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
-    it: 'Sistema di Trasmissione',
   },
   'Boom Pin/Bushing System': {
     en: 'Boom Pin/Bushing System',
@@ -1020,7 +1011,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '动臂销/衬套系统',
     it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
-    it: 'Sistema di Perno/Boccola del Braccio',
   },
   'Hydraulic Cylinder/Seals': {
     en: 'Hydraulic Cylinder/Seals',
@@ -1033,7 +1023,6 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     zh: '液压缸/密封件',
     it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
-    it: 'Cilindro Idraulico/Guarnizioni',
   },
 };
 
