@@ -11,6 +11,8 @@ export const xcmgNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Air Filter(ZL50)': {
     en: 'Air Filter',
@@ -21,6 +23,8 @@ export const xcmgNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Air Filter套装(内外芯)': {
     en: 'Air Filter',
@@ -31,6 +35,8 @@ export const xcmgNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Braking System': {
     en: 'Braking System',
@@ -41,6 +47,8 @@ export const xcmgNameTranslations = {
     ru: 'Braking System',
     ja: 'Braking System',
     zh: 'Braking System',
+    ar: 'Braking System',
+    it: 'Braking System',
   },
   'Hydraulic Oil Filter': {
     en: 'Hydraulic Oil Filter',
@@ -51,6 +59,8 @@ export const xcmgNameTranslations = {
     ru: 'Гидравлический масляный фильтр',
     ja: '油圧オイルフィルター',
     zh: 'Hydraulic Oil Filter',
+    ar: 'مرشح الزيت الهيدروليكي',
+    it: 'Filtro olio idraulico',
   },
   'Hydraulic Oil Filter(变体)': {
     en: 'Oil Filter',
@@ -61,6 +71,8 @@ export const xcmgNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Hydraulic Oil Filter(型号2)': {
     en: 'Oil Filter',
@@ -71,6 +83,8 @@ export const xcmgNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Hydraulic Return Oil Filter': {
     en: 'Oil Filter',
@@ -81,6 +95,8 @@ export const xcmgNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -91,6 +107,8 @@ export const xcmgNameTranslations = {
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: 'Maintenance/Filtration System',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -101,6 +119,8 @@ export const xcmgNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Oil Filter(带锁止阀)': {
     en: 'Oil Filter',
@@ -111,6 +131,8 @@ export const xcmgNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   '万向节联轴器': {
     en: '万向节联轴器',
@@ -121,6 +143,8 @@ export const xcmgNameTranslations = {
     ru: '万向节联轴器',
     ja: '万向节联轴器',
     zh: '万向节联轴器',
+    ar: '万向节联轴器',
+    it: '万向节联轴器',
   },
   '传动/变速系统': {
     en: '传动/变速系统',
@@ -131,6 +155,8 @@ export const xcmgNameTranslations = {
     ru: '传动/变速系统',
     ja: '传动/变速系统',
     zh: '传动/变速系统',
+    ar: '传动/变速系统',
+    it: '传动/变速系统',
   },
   '制动盘(刹车盘)': {
     en: '制动盘(刹车盘)',
@@ -141,6 +167,8 @@ export const xcmgNameTranslations = {
     ru: '制动盘(刹车盘)',
     ja: '制动盘(刹车盘)',
     zh: '制动盘(刹车盘)',
+    ar: '制动盘(刹车盘)',
+    it: '制动盘(刹车盘)',
   },
   '刹车片(SOMA制动衬片)': {
     en: '刹车片(SOMA制动衬片)',
@@ -151,6 +179,8 @@ export const xcmgNameTranslations = {
     ru: '刹车片(SOMA制动衬片)',
     ja: '刹车片(SOMA制动衬片)',
     zh: '刹车片(SOMA制动衬片)',
+    ar: '刹车片(SOMA制动衬片)',
+    it: '刹车片(SOMA制动衬片)',
   },
   '变速箱倒挡活塞': {
     en: '变速箱倒挡活塞',
@@ -161,6 +191,8 @@ export const xcmgNameTranslations = {
     ru: '变速箱倒挡活塞',
     ja: '变速箱倒挡活塞',
     zh: '变速箱倒挡活塞',
+    ar: '变速箱倒挡活塞',
+    it: '变速箱倒挡活塞',
   },
   '变速箱总成(带变矩器)': {
     en: '变速箱总成(带变矩器)',
@@ -171,6 +203,8 @@ export const xcmgNameTranslations = {
     ru: '变速箱总成(带变矩器)',
     ja: '变速箱总成(带变矩器)',
     zh: '变速箱总成(带变矩器)',
+    ar: '变速箱总成(带变矩器)',
+    it: '变速箱总成(带变矩器)',
   },
   '变速箱控制阀(变速阀)': {
     en: '变速箱控制阀(变速阀)',
@@ -181,6 +215,8 @@ export const xcmgNameTranslations = {
     ru: '变速箱控制阀(变速阀)',
     ja: '变速箱控制阀(变速阀)',
     zh: '变速箱控制阀(变速阀)',
+    ar: '变速箱控制阀(变速阀)',
+    it: '变速箱控制阀(变速阀)',
   },
   '右侧斗齿': {
     en: '右侧斗齿',
@@ -191,6 +227,8 @@ export const xcmgNameTranslations = {
     ru: '右侧斗齿',
     ja: '右侧斗齿',
     zh: '右侧斗齿',
+    ar: '右侧斗齿',
+    it: '右侧斗齿',
   },
   '唇形油封': {
     en: '唇形油封',
@@ -201,6 +239,8 @@ export const xcmgNameTranslations = {
     ru: '唇形油封',
     ja: '唇形油封',
     zh: '唇形油封',
+    ar: '唇形油封',
+    it: '唇形油封',
   },
   '密封/传动件': {
     en: '密封/传动件',
@@ -211,6 +251,8 @@ export const xcmgNameTranslations = {
     ru: '密封/传动件',
     ja: '密封/传动件',
     zh: '密封/传动件',
+    ar: '密封/传动件',
+    it: '密封/传动件',
   },
   '工作液压泵': {
     en: '工作液压泵',
@@ -221,6 +263,8 @@ export const xcmgNameTranslations = {
     ru: '工作液压泵',
     ja: '工作液压泵',
     zh: '工作液压泵',
+    ar: '工作液压泵',
+    it: '工作液压泵',
   },
   '左侧斗齿': {
     en: '左侧斗齿',
@@ -231,6 +275,8 @@ export const xcmgNameTranslations = {
     ru: '左侧斗齿',
     ja: '左侧斗齿',
     zh: '左侧斗齿',
+    ar: '左侧斗齿',
+    it: '左侧斗齿',
   },
   '手刹阀': {
     en: '手刹阀',
@@ -241,6 +287,8 @@ export const xcmgNameTranslations = {
     ru: '手刹阀',
     ja: '手刹阀',
     zh: '手刹阀',
+    ar: '手刹阀',
+    it: '手刹阀',
   },
   '手刹鼓(制动鼓)': {
     en: '手刹鼓(制动鼓)',
@@ -251,6 +299,8 @@ export const xcmgNameTranslations = {
     ru: '手刹鼓(制动鼓)',
     ja: '手刹鼓(制动鼓)',
     zh: '手刹鼓(制动鼓)',
+    ar: '手刹鼓(制动鼓)',
+    it: '手刹鼓(制动鼓)',
   },
   '挖掘属性/GET': {
     en: '挖掘属性/GET',
@@ -261,6 +311,8 @@ export const xcmgNameTranslations = {
     ru: '挖掘属性/GET',
     ja: '挖掘属性/GET',
     zh: '挖掘属性/GET',
+    ar: '挖掘属性/GET',
+    it: '挖掘属性/GET',
   },
   '斗齿座(Tooth Holder)': {
     en: 'Tooth',
@@ -271,6 +323,8 @@ export const xcmgNameTranslations = {
     ru: 'Зуб',
     ja: '歯',
     zh: 'Tooth',
+    ar: '斗齿座(Tooth Holder)',
+    it: '斗齿座(Tooth Holder)',
   },
   '水温传感器': {
     en: '水温传感器',
@@ -281,6 +335,8 @@ export const xcmgNameTranslations = {
     ru: '水温传感器',
     ja: '水温传感器',
     zh: '水温传感器',
+    ar: '水温传感器',
+    it: '水温传感器',
   },
   '液压系统': {
     en: '液压系统',
@@ -291,6 +347,8 @@ export const xcmgNameTranslations = {
     ru: '液压系统',
     ja: '液压系统',
     zh: '液压系统',
+    ar: '液压系统',
+    it: '液压系统',
   },
   '溢流阀(继动阀)': {
     en: '溢流阀(继动阀)',
@@ -301,6 +359,8 @@ export const xcmgNameTranslations = {
     ru: '溢流阀(继动阀)',
     ja: '溢流阀(继动阀)',
     zh: '溢流阀(继动阀)',
+    ar: '溢流阀(继动阀)',
+    it: '溢流阀(继动阀)',
   },
   '电气/传感器': {
     en: '电气/传感器',
@@ -311,6 +371,8 @@ export const xcmgNameTranslations = {
     ru: '电气/传感器',
     ja: '电气/传感器',
     zh: '电气/传感器',
+    ar: '电气/传感器',
+    it: '电气/传感器',
   },
   '铲斗斗齿': {
     en: '铲斗斗齿',
@@ -321,6 +383,8 @@ export const xcmgNameTranslations = {
     ru: '铲斗斗齿',
     ja: '铲斗斗齿',
     zh: '铲斗斗齿',
+    ar: '铲斗斗齿',
+    it: '铲斗斗齿',
   },
   '驱动桥半轴齿轮(差速器齿轮)': {
     en: '驱动桥半轴齿轮(差速器齿轮)',
@@ -331,10 +395,14 @@ export const xcmgNameTranslations = {
     ru: '驱动桥半轴齿轮(差速器齿轮)',
     ja: '驱动桥半轴齿轮(差速器齿轮)',
     zh: '驱动桥半轴齿轮(差速器齿轮)',
+    ar: '驱动桥半轴齿轮(差速器齿轮)',
+    it: '驱动桥半轴齿轮(差速器齿轮)',
   },
   'Air Filter Assembly (Inner and Outer)': {
     en: 'Air Filter Assembly (Inner and Outer)',
     zh: 'Air Filter Assembly (Inner and Outer)',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
     es: 'Air Filter Assembly (Inner and Outer)',
     fr: 'Air Filter Assembly (Inner and Outer)',
     de: 'Air Filter Assembly (Inner and Outer)',
@@ -347,6 +415,8 @@ export const xcmgNameTranslations = {
   'Hydraulic Oil Filter (Variant)': {
     en: 'Hydraulic Oil Filter (Variant)',
     zh: 'Hydraulic Oil Filter (Variant)',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
     es: 'Hydraulic Oil Filter (Variant)',
     fr: 'Hydraulic Oil Filter (Variant)',
     de: 'Hydraulic Oil Filter (Variant)',
@@ -359,6 +429,8 @@ export const xcmgNameTranslations = {
   'Air Filter (ZL50)': {
     en: 'Air Filter (ZL50)',
     zh: 'Air Filter (ZL50)',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
     es: 'Air Filter (ZL50)',
     fr: 'Air Filter (ZL50)',
     de: 'Air Filter (ZL50)',
@@ -371,6 +443,8 @@ export const xcmgNameTranslations = {
   'Oil Filter (with Lock Valve)': {
     en: 'Oil Filter (with Lock Valve)',
     zh: 'Oil Filter (with Lock Valve)',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
     es: 'Oil Filter (with Lock Valve)',
     fr: 'Oil Filter (with Lock Valve)',
     de: 'Oil Filter (with Lock Valve)',
@@ -383,6 +457,8 @@ export const xcmgNameTranslations = {
   'Hydraulic Oil Filter (Model 2)': {
     en: 'Hydraulic Oil Filter (Model 2)',
     zh: 'Hydraulic Oil Filter (Model 2)',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
     es: 'Hydraulic Oil Filter (Model 2)',
     fr: 'Hydraulic Oil Filter (Model 2)',
     de: 'Hydraulic Oil Filter (Model 2)',
@@ -395,6 +471,8 @@ export const xcmgNameTranslations = {
   'Water Temperature Sensor': {
     en: 'Water Temperature Sensor',
     zh: 'Water Temperature Sensor',
+    ar: 'Water Temperature Sensor',
+    it: 'Water Temperature Sensor',
     es: 'Water Temperature Sensor',
     fr: 'Water Temperature Sensor',
     de: 'Water Temperature Sensor',
@@ -407,6 +485,8 @@ export const xcmgNameTranslations = {
   'Bucket Teeth': {
     en: 'Bucket Teeth',
     zh: 'Bucket Teeth',
+    ar: 'Bucket Teeth',
+    it: 'Bucket Teeth',
     es: 'Bucket Teeth',
     fr: 'Bucket Teeth',
     de: 'Bucket Teeth',
@@ -419,6 +499,8 @@ export const xcmgNameTranslations = {
   'Right Bucket Tooth': {
     en: 'Right Bucket Tooth',
     zh: 'Right Bucket Tooth',
+    ar: 'Right Bucket Tooth',
+    it: 'Right Bucket Tooth',
     es: 'Right Bucket Tooth',
     fr: 'Right Bucket Tooth',
     de: 'Right Bucket Tooth',
@@ -431,6 +513,8 @@ export const xcmgNameTranslations = {
   'Left Bucket Tooth': {
     en: 'Left Bucket Tooth',
     zh: 'Left Bucket Tooth',
+    ar: 'Left Bucket Tooth',
+    it: 'Left Bucket Tooth',
     es: 'Left Bucket Tooth',
     fr: 'Left Bucket Tooth',
     de: 'Left Bucket Tooth',
@@ -443,6 +527,8 @@ export const xcmgNameTranslations = {
   'Bucket Tooth Seat': {
     en: 'Bucket Tooth Seat',
     zh: 'Bucket Tooth Seat',
+    ar: 'Bucket Tooth Seat',
+    it: 'Bucket Tooth Seat',
     es: 'Bucket Tooth Seat',
     fr: 'Bucket Tooth Seat',
     de: 'Bucket Tooth Seat',
@@ -455,6 +541,8 @@ export const xcmgNameTranslations = {
   'Transmission Assembly': {
     en: 'Transmission Assembly',
     zh: 'Transmission Assembly',
+    ar: 'Transmission Assembly',
+    it: 'Transmission Assembly',
     es: 'Transmission Assembly',
     fr: 'Transmission Assembly',
     de: 'Transmission Assembly',
@@ -467,6 +555,8 @@ export const xcmgNameTranslations = {
   'Transmission Control Valve': {
     en: 'Transmission Control Valve',
     zh: 'Transmission Control Valve',
+    ar: 'Transmission Control Valve',
+    it: 'Transmission Control Valve',
     es: 'Transmission Control Valve',
     fr: 'Transmission Control Valve',
     de: 'Transmission Control Valve',
@@ -479,6 +569,8 @@ export const xcmgNameTranslations = {
   'Transmission Reverse Piston': {
     en: 'Transmission Reverse Piston',
     zh: 'Transmission Reverse Piston',
+    ar: 'Transmission Reverse Piston',
+    it: 'Transmission Reverse Piston',
     es: 'Transmission Reverse Piston',
     fr: 'Transmission Reverse Piston',
     de: 'Transmission Reverse Piston',
@@ -491,6 +583,8 @@ export const xcmgNameTranslations = {
   'Drive Axle Differential Gear': {
     en: 'Drive Axle Differential Gear',
     zh: 'Drive Axle Differential Gear',
+    ar: 'Drive Axle Differential Gear',
+    it: 'Drive Axle Differential Gear',
     es: 'Drive Axle Differential Gear',
     fr: 'Drive Axle Differential Gear',
     de: 'Drive Axle Differential Gear',
@@ -503,6 +597,8 @@ export const xcmgNameTranslations = {
   'Working Hydraulic Pump': {
     en: 'Working Hydraulic Pump',
     zh: 'Working Hydraulic Pump',
+    ar: 'Working Hydraulic Pump',
+    it: 'Working Hydraulic Pump',
     es: 'Working Hydraulic Pump',
     fr: 'Working Hydraulic Pump',
     de: 'Working Hydraulic Pump',
@@ -515,6 +611,8 @@ export const xcmgNameTranslations = {
   'Brake Pads': {
     en: 'Brake Pads',
     zh: 'Brake Pads',
+    ar: 'Brake Pads',
+    it: 'Brake Pads',
     es: 'Brake Pads',
     fr: 'Brake Pads',
     de: 'Brake Pads',
@@ -527,6 +625,8 @@ export const xcmgNameTranslations = {
   'Brake Disc': {
     en: 'Brake Disc',
     zh: 'Brake Disc',
+    ar: 'Brake Disc',
+    it: 'Brake Disc',
     es: 'Brake Disc',
     fr: 'Brake Disc',
     de: 'Brake Disc',
@@ -539,6 +639,8 @@ export const xcmgNameTranslations = {
   'Parking Brake Valve': {
     en: 'Parking Brake Valve',
     zh: 'Parking Brake Valve',
+    ar: 'Parking Brake Valve',
+    it: 'Parking Brake Valve',
     es: 'Parking Brake Valve',
     fr: 'Parking Brake Valve',
     de: 'Parking Brake Valve',
@@ -551,6 +653,8 @@ export const xcmgNameTranslations = {
   'Brake Drum': {
     en: 'Brake Drum',
     zh: 'Brake Drum',
+    ar: 'Brake Drum',
+    it: 'Brake Drum',
     es: 'Brake Drum',
     fr: 'Brake Drum',
     de: 'Brake Drum',
@@ -563,6 +667,8 @@ export const xcmgNameTranslations = {
   'Lip Seal Ring': {
     en: 'Lip Seal Ring',
     zh: 'Lip Seal Ring',
+    ar: 'Lip Seal Ring',
+    it: 'Lip Seal Ring',
     es: 'Lip Seal Ring',
     fr: 'Lip Seal Ring',
     de: 'Lip Seal Ring',
@@ -575,6 +681,8 @@ export const xcmgNameTranslations = {
   'Universal Joint Coupling': {
     en: 'Universal Joint Coupling',
     zh: 'Universal Joint Coupling',
+    ar: 'Universal Joint Coupling',
+    it: 'Universal Joint Coupling',
     es: 'Universal Joint Coupling',
     fr: 'Universal Joint Coupling',
     de: 'Universal Joint Coupling',
@@ -587,6 +695,8 @@ export const xcmgNameTranslations = {
   'Relief Valve': {
     en: 'Relief Valve',
     zh: 'Relief Valve',
+    ar: 'Relief Valve',
+    it: 'Relief Valve',
     es: 'Relief Valve',
     fr: 'Relief Valve',
     de: 'Relief Valve',
@@ -607,6 +717,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'XCMG part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '徐工零件。500-1000小时或视油液检测结果更换',
+    ar: 'XCMG part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'XCMG part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza XCMG. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce XCMG. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'XCMG-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -619,6 +731,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace every 250-500 hours or based on dust environment.': {
     en: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
     zh: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
+    ar: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
+    it: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
     es: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
     fr: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
     de: 'XCMG part. Replace every 250-500 hours or based on dust environment.',
@@ -631,6 +745,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace every 500-1000 hours.': {
     en: 'XCMG part. Replace every 500-1000 hours.',
     zh: 'XCMG part. Replace every 500-1000 hours.',
+    ar: 'XCMG part. Replace every 500-1000 hours.',
+    it: 'XCMG part. Replace every 500-1000 hours.',
     es: 'XCMG part. Replace every 500-1000 hours.',
     fr: 'XCMG part. Replace every 500-1000 hours.',
     de: 'XCMG part. Replace every 500-1000 hours.',
@@ -643,6 +759,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace every 250-500 hours or based on fuel quality.': {
     en: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
     zh: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
+    ar: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
+    it: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
     es: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
     fr: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
     de: 'XCMG part. Replace every 250-500 hours or based on fuel quality.',
@@ -655,6 +773,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Inspect every 500-1000 hours.': {
     en: 'XCMG part. Inspect every 500-1000 hours.',
     zh: 'XCMG part. Inspect every 500-1000 hours.',
+    ar: 'XCMG part. Inspect every 500-1000 hours.',
+    it: 'XCMG part. Inspect every 500-1000 hours.',
     es: 'XCMG part. Inspect every 500-1000 hours.',
     fr: 'XCMG part. Inspect every 500-1000 hours.',
     de: 'XCMG part. Inspect every 500-1000 hours.',
@@ -667,6 +787,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace synchronously every time teeth are replaced.': {
     en: 'XCMG part. Replace synchronously every time teeth are replaced.',
     zh: 'XCMG part. Replace synchronously every time teeth are replaced.',
+    ar: 'XCMG part. Replace synchronously every time teeth are replaced.',
+    it: 'XCMG part. Replace synchronously every time teeth are replaced.',
     es: 'XCMG part. Replace synchronously every time teeth are replaced.',
     fr: 'XCMG part. Replace synchronously every time teeth are replaced.',
     de: 'XCMG part. Replace synchronously every time teeth are replaced.',
@@ -679,6 +801,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace when worn to bottom or broken.': {
     en: 'XCMG part. Replace when worn to bottom or broken.',
     zh: 'XCMG part. Replace when worn to bottom or broken.',
+    ar: 'XCMG part. Replace when worn to bottom or broken.',
+    it: 'XCMG part. Replace when worn to bottom or broken.',
     es: 'XCMG part. Replace when worn to bottom or broken.',
     fr: 'XCMG part. Replace when worn to bottom or broken.',
     de: 'XCMG part. Replace when worn to bottom or broken.',
@@ -691,6 +815,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace when abnormal shifting occurs.': {
     en: 'XCMG part. Replace when abnormal shifting occurs.',
     zh: 'XCMG part. Replace when abnormal shifting occurs.',
+    ar: 'XCMG part. Replace when abnormal shifting occurs.',
+    it: 'XCMG part. Replace when abnormal shifting occurs.',
     es: 'XCMG part. Replace when abnormal shifting occurs.',
     fr: 'XCMG part. Replace when abnormal shifting occurs.',
     de: 'XCMG part. Replace when abnormal shifting occurs.',
@@ -703,6 +829,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace when shifting is difficult/slipping occurs.': {
     en: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
     zh: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
+    ar: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
+    it: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
     es: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
     fr: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
     de: 'XCMG part. Replace when shifting is difficult/slipping occurs.',
@@ -715,6 +843,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).': {
     en: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
     zh: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
+    ar: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
+    it: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
     es: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
     fr: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
     de: 'XCMG part. Replace during major repair or when abnormal noise occurs (major repair).',
@@ -727,6 +857,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).': {
     en: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
     zh: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
+    ar: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
+    it: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
     es: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
     fr: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
     de: 'XCMG part. Replace when abnormal noise, insufficient oil supply, or pressure drop (major repair, high-cost).',
@@ -739,6 +871,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   'XCMG part. Replace every 30,000-50,000 km or based on wear.': {
     en: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
     zh: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
+    ar: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
+    it: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
     es: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
     fr: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
     de: 'XCMG part. Replace every 30,000-50,000 km or based on wear.',
@@ -767,6 +901,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
+    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -779,6 +914,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
+    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -791,6 +927,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
+    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -803,6 +940,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
+    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -815,6 +953,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
+    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -827,6 +966,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
+    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -839,6 +979,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
+    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -851,6 +992,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
+    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -863,6 +1005,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
+    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -875,6 +1018,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
+    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -887,6 +1031,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
+    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

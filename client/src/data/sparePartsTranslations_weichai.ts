@@ -11,6 +11,8 @@ export const weichaiNameTranslations = {
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: 'Cooling System',
+    ar: 'نظام التبريد',
+    it: 'Sistema di raffreddamento',
   },
   'Diesel Filter(WP10专用)': {
     en: 'Diesel Filter',
@@ -21,6 +23,8 @@ export const weichaiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter(WP4/WP6/WD615/WD10/WP10/WP12通用)': {
     en: 'Diesel Filter',
@@ -31,6 +35,8 @@ export const weichaiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter(型号2)': {
     en: 'Diesel Filter',
@@ -41,6 +47,8 @@ export const weichaiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter(型号3)': {
     en: 'Diesel Filter',
@@ -51,6 +59,8 @@ export const weichaiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter(型号4)': {
     en: 'Diesel Filter',
@@ -61,6 +71,8 @@ export const weichaiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter(通用型)': {
     en: 'Diesel Filter',
@@ -71,6 +83,8 @@ export const weichaiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter总成': {
     en: 'Diesel Filter',
@@ -81,6 +95,8 @@ export const weichaiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'ECU电控单元': {
     en: 'ECU电控单元',
@@ -91,6 +107,8 @@ export const weichaiNameTranslations = {
     ru: 'ECU电控单元',
     ja: 'ECU电控单元',
     zh: 'ECU电控单元',
+    ar: 'وحدة التحكم الإلكترونية',
+    it: 'ECU',
   },
   'Electrical/Starting System': {
     en: 'Electrical/Starting System',
@@ -101,6 +119,8 @@ export const weichaiNameTranslations = {
     ru: 'Electrical/Starting System',
     ja: 'Electrical/Starting System',
     zh: 'Electrical/Starting System',
+    ar: 'نظام كهربائي/بدء التشغيل',
+    it: 'Sistema elettrico/avviamento',
   },
   'Fuel System': {
     en: 'Fuel System',
@@ -111,6 +131,8 @@ export const weichaiNameTranslations = {
     ru: 'Топливная система',
     ja: '燃料システム',
     zh: 'Fuel System',
+    ar: 'نظام الوقود',
+    it: 'Sistema di carburante',
   },
   'Generator Assembly(28V/70A)': {
     en: 'Generator Assembly(28V/70A)',
@@ -121,6 +143,8 @@ export const weichaiNameTranslations = {
     ru: 'Generator Assembly(28V/70A)',
     ja: 'Generator Assembly(28V/70A)',
     zh: 'Generator Assembly(28V/70A)',
+    ar: 'مجموعة المولد',
+    it: 'Gruppo generatore',
   },
   'Intake/Boost System': {
     en: 'Intake/Boost System',
@@ -131,6 +155,8 @@ export const weichaiNameTranslations = {
     ru: 'Intake/Boost System',
     ja: 'Intake/Boost System',
     zh: 'Intake/Boost System',
+    ar: 'نظام السحب/الضغط',
+    it: 'Sistema di aspirazione/sovralimentazione',
   },
   'Lubrication System': {
     en: 'Lubrication System',
@@ -141,6 +167,8 @@ export const weichaiNameTranslations = {
     ru: 'Система смазки',
     ja: '潤滑システム',
     zh: 'Lubrication System',
+    ar: 'نظام التشحيم',
+    it: 'Sistema di lubrificazione',
   },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -151,6 +179,8 @@ export const weichaiNameTranslations = {
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: 'Maintenance/Filtration System',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -161,6 +191,8 @@ export const weichaiNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Oil Filter(总成型)': {
     en: 'Oil Filter',
@@ -171,6 +203,8 @@ export const weichaiNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Oil Filter(通用变体)': {
     en: 'Oil Filter',
@@ -181,6 +215,8 @@ export const weichaiNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Turbocharger(WP10)': {
     en: 'Turbocharger',
@@ -191,6 +227,8 @@ export const weichaiNameTranslations = {
     ru: 'Турбокомпрессор',
     ja: 'ターボチャージャー',
     zh: 'Turbocharger',
+    ar: 'شاحن توربيني',
+    it: 'Turbocompressore',
   },
   'Turbocharger(高原型)': {
     en: 'Turbocharger',
@@ -201,6 +239,8 @@ export const weichaiNameTranslations = {
     ru: 'Турбокомпрессор',
     ja: 'ターボチャージャー',
     zh: 'Turbocharger',
+    ar: 'شاحن توربيني',
+    it: 'Turbocompressore',
   },
   'Water Pump Assembly': {
     en: 'Pump',
@@ -211,6 +251,8 @@ export const weichaiNameTranslations = {
     ru: 'Насос',
     ja: 'ポンプ',
     zh: 'Pump',
+    ar: 'Water Pump Assembly',
+    it: 'Water Pump Assembly',
   },
   'Water Pump Assembly(WD12/WP12专用)': {
     en: 'Pump',
@@ -221,6 +263,8 @@ export const weichaiNameTranslations = {
     ru: 'Насос',
     ja: 'ポンプ',
     zh: 'Pump',
+    ar: 'Water Pump Assembly(WD12/WP12专用)',
+    it: 'Water Pump Assembly(WD12/WP12专用)',
   },
   '传动/活塞组件': {
     en: '传动/活塞组件',
@@ -231,6 +275,8 @@ export const weichaiNameTranslations = {
     ru: '传动/活塞组件',
     ja: '传动/活塞组件',
     zh: '传动/活塞组件',
+    ar: '传动/活塞组件',
+    it: '传动/活塞组件',
   },
   '传动/皮带': {
     en: '传动/皮带',
@@ -241,6 +287,8 @@ export const weichaiNameTranslations = {
     ru: '传动/皮带',
     ja: '传动/皮带',
     zh: '传动/皮带',
+    ar: '传动/皮带',
+    it: '传动/皮带',
   },
   '后曲轴油封': {
     en: '后曲轴油封',
@@ -251,6 +299,8 @@ export const weichaiNameTranslations = {
     ru: '后曲轴油封',
     ja: '后曲轴油封',
     zh: '后曲轴油封',
+    ar: '后曲轴油封',
+    it: '后曲轴油封',
   },
   '喷油嘴(injector nozzle)': {
     en: 'Injector',
@@ -261,6 +311,8 @@ export const weichaiNameTranslations = {
     ru: 'Форсунка',
     ja: 'インジェクター',
     zh: 'Injector',
+    ar: '喷油嘴(injector nozzle)',
+    it: '喷油嘴(injector nozzle)',
   },
   '密封/传动件': {
     en: '密封/传动件',
@@ -271,6 +323,8 @@ export const weichaiNameTranslations = {
     ru: '密封/传动件',
     ja: '密封/传动件',
     zh: '密封/传动件',
+    ar: '密封/传动件',
+    it: '密封/传动件',
   },
   '水冷缸套': {
     en: '水冷缸套',
@@ -281,6 +335,8 @@ export const weichaiNameTranslations = {
     ru: '水冷缸套',
     ja: '水冷缸套',
     zh: '水冷缸套',
+    ar: '水冷缸套',
+    it: '水冷缸套',
   },
   '油气分离器滤芯': {
     en: '油气分离器滤芯',
@@ -291,6 +347,8 @@ export const weichaiNameTranslations = {
     ru: '油气分离器滤芯',
     ja: '油气分离器滤芯',
     zh: '油气分离器滤芯',
+    ar: '油气分离器滤芯',
+    it: '油气分离器滤芯',
   },
   '油气分离器滤芯(型号2)': {
     en: '油气分离器滤芯(型号2)',
@@ -301,6 +359,8 @@ export const weichaiNameTranslations = {
     ru: '油气分离器滤芯(型号2)',
     ja: '油气分离器滤芯(型号2)',
     zh: '油气分离器滤芯(型号2)',
+    ar: '油气分离器滤芯(型号2)',
+    it: '油气分离器滤芯(型号2)',
   },
   '活塞(标准尺寸)': {
     en: '活塞(标准尺寸)',
@@ -311,6 +371,8 @@ export const weichaiNameTranslations = {
     ru: '活塞(标准尺寸)',
     ja: '活塞(标准尺寸)',
     zh: '活塞(标准尺寸)',
+    ar: '活塞(标准尺寸)',
+    it: '活塞(标准尺寸)',
   },
   '活塞环': {
     en: '活塞环',
@@ -321,6 +383,8 @@ export const weichaiNameTranslations = {
     ru: '活塞环',
     ja: '活塞环',
     zh: '活塞环',
+    ar: '活塞环',
+    it: '活塞环',
   },
   '燃油喷油器': {
     en: '燃油喷油器',
@@ -331,6 +395,8 @@ export const weichaiNameTranslations = {
     ru: '燃油喷油器',
     ja: '燃油喷油器',
     zh: '燃油喷油器',
+    ar: '燃油喷油器',
+    it: '燃油喷油器',
   },
   '燃油滤芯元件(总成型)': {
     en: '燃油滤芯元件(总成型)',
@@ -341,6 +407,8 @@ export const weichaiNameTranslations = {
     ru: '燃油滤芯元件(总成型)',
     ja: '燃油滤芯元件(总成型)',
     zh: '燃油滤芯元件(总成型)',
+    ar: '燃油滤芯元件(总成型)',
+    it: '燃油滤芯元件(总成型)',
   },
   '缸套活塞组套件': {
     en: '缸套活塞组套件',
@@ -351,6 +419,8 @@ export const weichaiNameTranslations = {
     ru: '缸套活塞组套件',
     ja: '缸套活塞组套件',
     zh: '缸套活塞组套件',
+    ar: '缸套活塞组套件',
+    it: '缸套活塞组套件',
   },
   '节温器(恒温器)': {
     en: '节温器(恒温器)',
@@ -361,6 +431,8 @@ export const weichaiNameTranslations = {
     ru: '节温器(恒温器)',
     ja: '节温器(恒温器)',
     zh: '节温器(恒温器)',
+    ar: '节温器(恒温器)',
+    it: '节温器(恒温器)',
   },
   '节温器总成(WD615)': {
     en: '节温器总成(WD615)',
@@ -371,6 +443,8 @@ export const weichaiNameTranslations = {
     ru: '节温器总成(WD615)',
     ja: '节温器总成(WD615)',
     zh: '节温器总成(WD615)',
+    ar: '节温器总成(WD615)',
+    it: '节温器总成(WD615)',
   },
   '连杆总成': {
     en: '连杆总成',
@@ -381,6 +455,8 @@ export const weichaiNameTranslations = {
     ru: '连杆总成',
     ja: '连杆总成',
     zh: '连杆总成',
+    ar: '连杆总成',
+    it: '连杆总成',
   },
   '风扇液力驱动总成(离合风扇)': {
     en: '风扇液力驱动总成(离合风扇)',
@@ -391,10 +467,14 @@ export const weichaiNameTranslations = {
     ru: '风扇液力驱动总成(离合风扇)',
     ja: '风扇液力驱动总成(离合风扇)',
     zh: '风扇液力驱动总成(离合风扇)',
+    ar: '风扇液力驱动总成(离合风扇)',
+    it: '风扇液力驱动总成(离合风扇)',
   },
   '柴油滤芯(WP10专用)': {
     en: '柴油滤芯(WP10专用)',
     zh: '柴油滤芯(WP10专用)',
+    ar: '柴油滤芯(WP10专用)',
+    it: '柴油滤芯(WP10专用)',
     es: '柴油滤芯(WP10专用)',
     fr: '柴油滤芯(WP10专用)',
     de: '柴油滤芯(WP10专用)',
@@ -407,6 +487,8 @@ export const weichaiNameTranslations = {
   '柴油滤芯(通用型)': {
     en: '柴油滤芯(通用型)',
     zh: '柴油滤芯(通用型)',
+    ar: '柴油滤芯(通用型)',
+    it: '柴油滤芯(通用型)',
     es: '柴油滤芯(通用型)',
     fr: '柴油滤芯(通用型)',
     de: '柴油滤芯(通用型)',
@@ -419,6 +501,8 @@ export const weichaiNameTranslations = {
   '柴油滤芯(型号2)': {
     en: '柴油滤芯(型号2)',
     zh: '柴油滤芯(型号2)',
+    ar: '柴油滤芯(型号2)',
+    it: '柴油滤芯(型号2)',
     es: '柴油滤芯(型号2)',
     fr: '柴油滤芯(型号2)',
     de: '柴油滤芯(型号2)',
@@ -431,6 +515,8 @@ export const weichaiNameTranslations = {
   '柴油滤芯(型号3)': {
     en: '柴油滤芯(型号3)',
     zh: '柴油滤芯(型号3)',
+    ar: '柴油滤芯(型号3)',
+    it: '柴油滤芯(型号3)',
     es: '柴油滤芯(型号3)',
     fr: '柴油滤芯(型号3)',
     de: '柴油滤芯(型号3)',
@@ -443,6 +529,8 @@ export const weichaiNameTranslations = {
   '柴油滤芯(型号4)': {
     en: '柴油滤芯(型号4)',
     zh: '柴油滤芯(型号4)',
+    ar: '柴油滤芯(型号4)',
+    it: '柴油滤芯(型号4)',
     es: '柴油滤芯(型号4)',
     fr: '柴油滤芯(型号4)',
     de: '柴油滤芯(型号4)',
@@ -455,6 +543,8 @@ export const weichaiNameTranslations = {
   '柴油滤芯总成': {
     en: '柴油滤芯总成',
     zh: '柴油滤芯总成',
+    ar: '柴油滤芯总成',
+    it: '柴油滤芯总成',
     es: '柴油滤芯总成',
     fr: '柴油滤芯总成',
     de: '柴油滤芯总成',
@@ -467,6 +557,8 @@ export const weichaiNameTranslations = {
   '机油滤芯(通用变体)': {
     en: '机油滤芯(通用变体)',
     zh: '机油滤芯(通用变体)',
+    ar: '机油滤芯(通用变体)',
+    it: '机油滤芯(通用变体)',
     es: '机油滤芯(通用变体)',
     fr: '机油滤芯(通用变体)',
     de: '机油滤芯(通用变体)',
@@ -479,6 +571,8 @@ export const weichaiNameTranslations = {
   '柴油滤芯(WP4/WP6/WD615/WD10/WP10/WP12通用)': {
     en: '柴油滤芯(WP4/WP6/WD615/WD10/WP10/WP12通用)',
     zh: '柴油滤芯(WP4/WP6/WD615/WD10/WP10/WP12通用)',
+    ar: '柴油滤芯(WP4/WP6/WD615/WD10/WP10/WP12通用)',
+    it: '柴油滤芯(WP4/WP6/WD615/WD10/WP10/WP12通用)',
     es: '柴油滤芯(WP4/WP6/WD615/WD10/WP10/WP12通用)',
     fr: '柴油滤芯(WP4/WP6/WD615/WD10/WP10/WP12通用)',
     de: '柴油滤芯(WP4/WP6/WD615/WD10/WP10/WP12通用)',
@@ -491,6 +585,8 @@ export const weichaiNameTranslations = {
   '水泵总成': {
     en: '水泵总成',
     zh: '水泵总成',
+    ar: '水泵总成',
+    it: '水泵总成',
     es: '水泵总成',
     fr: '水泵总成',
     de: '水泵总成',
@@ -503,6 +599,8 @@ export const weichaiNameTranslations = {
   '水泵总成(WD12/WP12专用)': {
     en: '水泵总成(WD12/WP12专用)',
     zh: '水泵总成(WD12/WP12专用)',
+    ar: '水泵总成(WD12/WP12专用)',
+    it: '水泵总成(WD12/WP12专用)',
     es: '水泵总成(WD12/WP12专用)',
     fr: '水泵总成(WD12/WP12专用)',
     de: '水泵总成(WD12/WP12专用)',
@@ -515,6 +613,8 @@ export const weichaiNameTranslations = {
   '发电机总成(28V/70A)': {
     en: '发电机总成(28V/70A)',
     zh: '发电机总成(28V/70A)',
+    ar: '发电机总成(28V/70A)',
+    it: '发电机总成(28V/70A)',
     es: '发电机总成(28V/70A)',
     fr: '发电机总成(28V/70A)',
     de: '发电机总成(28V/70A)',
@@ -527,6 +627,8 @@ export const weichaiNameTranslations = {
   '涡轮增压器(WP10)': {
     en: '涡轮增压器(WP10)',
     zh: '涡轮增压器(WP10)',
+    ar: '涡轮增压器(WP10)',
+    it: '涡轮增压器(WP10)',
     es: '涡轮增压器(WP10)',
     fr: '涡轮增压器(WP10)',
     de: '涡轮增压器(WP10)',
@@ -539,6 +641,8 @@ export const weichaiNameTranslations = {
   '涡轮增压器(高原型)': {
     en: '涡轮增压器(高原型)',
     zh: '涡轮增压器(高原型)',
+    ar: '涡轮增压器(高原型)',
+    it: '涡轮增压器(高原型)',
     es: '涡轮增压器(高原型)',
     fr: '涡轮增压器(高原型)',
     de: '涡轮增压器(高原型)',
@@ -551,6 +655,8 @@ export const weichaiNameTranslations = {
   '机油滤芯(总成型)': {
     en: '机油滤芯(总成型)',
     zh: '机油滤芯(总成型)',
+    ar: '机油滤芯(总成型)',
+    it: '机油滤芯(总成型)',
     es: '机油滤芯(总成型)',
     fr: '机油滤芯(总成型)',
     de: '机油滤芯(总成型)',
@@ -571,6 +677,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'Weichai part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Weichai part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '潍柴零件。500-1000小时或视油液检测结果更换',
+    ar: 'Weichai part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Weichai part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Weichai. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Weichai. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Weichai-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -583,6 +691,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。250-500小时随保养更换': {
     en: 'WEICHAI 零件。250-500小时随保养更换',
     zh: 'WEICHAI 零件。250-500小时随保养更换',
+    ar: 'WEICHAI 零件。250-500小时随保养更换',
+    it: 'WEICHAI 零件。250-500小时随保养更换',
     es: 'WEICHAI 零件。250-500小时随保养更换',
     fr: 'WEICHAI 零件。250-500小时随保养更换',
     de: 'WEICHAI 零件。250-500小时随保养更换',
@@ -595,6 +705,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。250-500小时或视油品': {
     en: 'WEICHAI 零件。250-500小时或视油品',
     zh: 'WEICHAI 零件。250-500小时或视油品',
+    ar: 'WEICHAI 零件。250-500小时或视油品',
+    it: 'WEICHAI 零件。250-500小时或视油品',
     es: 'WEICHAI 零件。250-500小时或视油品',
     fr: 'WEICHAI 零件。250-500小时或视油品',
     de: 'WEICHAI 零件。250-500小时或视油品',
@@ -607,6 +719,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。250-500小时': {
     en: 'WEICHAI 零件。250-500小时',
     zh: 'WEICHAI 零件。250-500小时',
+    ar: 'WEICHAI 零件。250-500小时',
+    it: 'WEICHAI 零件。250-500小时',
     es: 'WEICHAI 零件。250-500小时',
     fr: 'WEICHAI 零件。250-500小时',
     de: 'WEICHAI 零件。250-500小时',
@@ -619,6 +733,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。500-1000小时': {
     en: 'WEICHAI 零件。500-1000小时',
     zh: 'WEICHAI 零件。500-1000小时',
+    ar: 'WEICHAI 零件。500-1000小时',
+    it: 'WEICHAI 零件。500-1000小时',
     es: 'WEICHAI 零件。500-1000小时',
     fr: 'WEICHAI 零件。500-1000小时',
     de: 'WEICHAI 零件。500-1000小时',
@@ -631,6 +747,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。冷却液渗漏/异响时更换': {
     en: 'WEICHAI 零件。冷却液渗漏/异响时更换',
     zh: 'WEICHAI 零件。冷却液渗漏/异响时更换',
+    ar: 'WEICHAI 零件。冷却液渗漏/异响时更换',
+    it: 'WEICHAI 零件。冷却液渗漏/异响时更换',
     es: 'WEICHAI 零件。冷却液渗漏/异响时更换',
     fr: 'WEICHAI 零件。冷却液渗漏/异响时更换',
     de: 'WEICHAI 零件。冷却液渗漏/异响时更换',
@@ -643,6 +761,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。水温异常/过热时更换': {
     en: 'WEICHAI 零件。水温异常/过热时更换',
     zh: 'WEICHAI 零件。水温异常/过热时更换',
+    ar: 'WEICHAI 零件。水温异常/过热时更换',
+    it: 'WEICHAI 零件。水温异常/过热时更换',
     es: 'WEICHAI 零件。水温异常/过热时更换',
     fr: 'WEICHAI 零件。水温异常/过热时更换',
     de: 'WEICHAI 零件。水温异常/过热时更换',
@@ -655,6 +775,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。散热异响/风扇打滑时更换': {
     en: 'WEICHAI 零件。散热异响/风扇打滑时更换',
     zh: 'WEICHAI 零件。散热异响/风扇打滑时更换',
+    ar: 'WEICHAI 零件。散热异响/风扇打滑时更换',
+    it: 'WEICHAI 零件。散热异响/风扇打滑时更换',
     es: 'WEICHAI 零件。散热异响/风扇打滑时更换',
     fr: 'WEICHAI 零件。散热异响/风扇打滑时更换',
     de: 'WEICHAI 零件。散热异响/风扇打滑时更换',
@@ -667,6 +789,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。发电异常/异响时更换': {
     en: 'WEICHAI 零件。发电异常/异响时更换',
     zh: 'WEICHAI 零件。发电异常/异响时更换',
+    ar: 'WEICHAI 零件。发电异常/异响时更换',
+    it: 'WEICHAI 零件。发电异常/异响时更换',
     es: 'WEICHAI 零件。发电异常/异响时更换',
     fr: 'WEICHAI 零件。发电异常/异响时更换',
     de: 'WEICHAI 零件。发电异常/异响时更换',
@@ -679,6 +803,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。喷油不良/启动困难时更换(2000小时检查/4000-6000小时更换)': {
     en: 'WEICHAI 零件。喷油不良/启动困难时更换(2000小时检查/4000-6000小时更换)',
     zh: 'WEICHAI 零件。喷油不良/启动困难时更换(2000小时检查/4000-6000小时更换)',
+    ar: 'WEICHAI 零件。喷油不良/启动困难时更换(2000小时检查/4000-6000小时更换)',
+    it: 'WEICHAI 零件。喷油不良/启动困难时更换(2000小时检查/4000-6000小时更换)',
     es: 'WEICHAI 零件。喷油不良/启动困难时更换(2000小时检查/4000-6000小时更换)',
     fr: 'WEICHAI 零件。喷油不良/启动困难时更换(2000小时检查/4000-6000小时更换)',
     de: 'WEICHAI 零件。喷油不良/启动困难时更换(2000小时检查/4000-6000小时更换)',
@@ -691,6 +817,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。随喷油器周期检查更换': {
     en: 'WEICHAI 零件。随喷油器周期检查更换',
     zh: 'WEICHAI 零件。随喷油器周期检查更换',
+    ar: 'WEICHAI 零件。随喷油器周期检查更换',
+    it: 'WEICHAI 零件。随喷油器周期检查更换',
     es: 'WEICHAI 零件。随喷油器周期检查更换',
     fr: 'WEICHAI 零件。随喷油器周期检查更换',
     de: 'WEICHAI 零件。随喷油器周期检查更换',
@@ -703,6 +831,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。故障灯报警/无法启动时检修更换(大修类高价件)': {
     en: 'WEICHAI 零件。故障灯报警/无法启动时检修更换(大修类高价件)',
     zh: 'WEICHAI 零件。故障灯报警/无法启动时检修更换(大修类高价件)',
+    ar: 'WEICHAI 零件。故障灯报警/无法启动时检修更换(大修类高价件)',
+    it: 'WEICHAI 零件。故障灯报警/无法启动时检修更换(大修类高价件)',
     es: 'WEICHAI 零件。故障灯报警/无法启动时检修更换(大修类高价件)',
     fr: 'WEICHAI 零件。故障灯报警/无法启动时检修更换(大修类高价件)',
     de: 'WEICHAI 零件。故障灯报警/无法启动时检修更换(大修类高价件)',
@@ -715,6 +845,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。动力下降/异响/漏油时更换(大修类高价件)': {
     en: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类高价件)',
     zh: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类高价件)',
+    ar: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类高价件)',
+    it: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类高价件)',
     es: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类高价件)',
     fr: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类高价件)',
     de: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类高价件)',
@@ -727,6 +859,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。动力下降/异响/漏油时更换(大修类)': {
     en: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类)',
     zh: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类)',
+    ar: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类)',
+    it: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类)',
     es: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类)',
     fr: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类)',
     de: 'WEICHAI 零件。动力下降/异响/漏油时更换(大修类)',
@@ -739,6 +873,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。大修/漏油时更换(大修类)': {
     en: 'WEICHAI 零件。大修/漏油时更换(大修类)',
     zh: 'WEICHAI 零件。大修/漏油时更换(大修类)',
+    ar: 'WEICHAI 零件。大修/漏油时更换(大修类)',
+    it: 'WEICHAI 零件。大修/漏油时更换(大修类)',
     es: 'WEICHAI 零件。大修/漏油时更换(大修类)',
     fr: 'WEICHAI 零件。大修/漏油时更换(大修类)',
     de: 'WEICHAI 零件。大修/漏油时更换(大修类)',
@@ -751,6 +887,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。大修类,异响/敲缸时检修更换': {
     en: 'WEICHAI 零件。大修类,异响/敲缸时检修更换',
     zh: 'WEICHAI 零件。大修类,异响/敲缸时检修更换',
+    ar: 'WEICHAI 零件。大修类,异响/敲缸时检修更换',
+    it: 'WEICHAI 零件。大修类,异响/敲缸时检修更换',
     es: 'WEICHAI 零件。大修类,异响/敲缸时检修更换',
     fr: 'WEICHAI 零件。大修类,异响/敲缸时检修更换',
     de: 'WEICHAI 零件。大修类,异响/敲缸时检修更换',
@@ -763,6 +901,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。大修类,烧机油/功率下降时更换': {
     en: 'WEICHAI 零件。大修类,烧机油/功率下降时更换',
     zh: 'WEICHAI 零件。大修类,烧机油/功率下降时更换',
+    ar: 'WEICHAI 零件。大修类,烧机油/功率下降时更换',
+    it: 'WEICHAI 零件。大修类,烧机油/功率下降时更换',
     es: 'WEICHAI 零件。大修类,烧机油/功率下降时更换',
     fr: 'WEICHAI 零件。大修类,烧机油/功率下降时更换',
     de: 'WEICHAI 零件。大修类,烧机油/功率下降时更换',
@@ -775,6 +915,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。大修类,烧机油/敲缸时更换': {
     en: 'WEICHAI 零件。大修类,烧机油/敲缸时更换',
     zh: 'WEICHAI 零件。大修类,烧机油/敲缸时更换',
+    ar: 'WEICHAI 零件。大修类,烧机油/敲缸时更换',
+    it: 'WEICHAI 零件。大修类,烧机油/敲缸时更换',
     es: 'WEICHAI 零件。大修类,烧机油/敲缸时更换',
     fr: 'WEICHAI 零件。大修类,烧机油/敲缸时更换',
     de: 'WEICHAI 零件。大修类,烧机油/敲缸时更换',
@@ -787,6 +929,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。大修类,机油消耗异常时更换': {
     en: 'WEICHAI 零件。大修类,机油消耗异常时更换',
     zh: 'WEICHAI 零件。大修类,机油消耗异常时更换',
+    ar: 'WEICHAI 零件。大修类,机油消耗异常时更换',
+    it: 'WEICHAI 零件。大修类,机油消耗异常时更换',
     es: 'WEICHAI 零件。大修类,机油消耗异常时更换',
     fr: 'WEICHAI 零件。大修类,机油消耗异常时更换',
     de: 'WEICHAI 零件。大修类,机油消耗异常时更换',
@@ -799,6 +943,8 @@ export const weichaiDescriptionTranslations: Record<string, Record<string, strin
   'WEICHAI 零件。大修类,烧机油/缸压不足时更换': {
     en: 'WEICHAI 零件。大修类,烧机油/缸压不足时更换',
     zh: 'WEICHAI 零件。大修类,烧机油/缸压不足时更换',
+    ar: 'WEICHAI 零件。大修类,烧机油/缸压不足时更换',
+    it: 'WEICHAI 零件。大修类,烧机油/缸压不足时更换',
     es: 'WEICHAI 零件。大修类,烧机油/缸压不足时更换',
     fr: 'WEICHAI 零件。大修类,烧机油/缸压不足时更换',
     de: 'WEICHAI 零件。大修类,烧机油/缸压不足时更换',
@@ -827,6 +973,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
+    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -839,6 +986,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
+    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -851,6 +999,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
+    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -863,6 +1012,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
+    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -875,6 +1025,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
+    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -887,6 +1038,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
+    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -899,6 +1051,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
+    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -911,6 +1064,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
+    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -923,6 +1077,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
+    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -935,6 +1090,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
+    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -947,6 +1103,7 @@ export const weichaiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
+    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

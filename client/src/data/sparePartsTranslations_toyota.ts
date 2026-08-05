@@ -11,6 +11,8 @@ export const toyotaNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Braking System': {
     en: 'Braking System',
@@ -21,6 +23,8 @@ export const toyotaNameTranslations = {
     ru: 'Braking System',
     ja: 'Braking System',
     zh: 'Braking System',
+    ar: 'Braking System',
+    it: 'Braking System',
   },
   'Cooling System': {
     en: 'Cooling System',
@@ -31,6 +35,8 @@ export const toyotaNameTranslations = {
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: 'Cooling System',
+    ar: 'نظام التبريد',
+    it: 'Sistema di raffreddamento',
   },
   'Diesel Filter(前置)': {
     en: 'Diesel Filter',
@@ -41,6 +47,8 @@ export const toyotaNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Front Wiper Blade(副驾驶侧)': {
     en: 'Wiper',
@@ -51,6 +59,8 @@ export const toyotaNameTranslations = {
     ru: 'Стеклоочиститель',
     ja: 'ワイパー',
     zh: 'Wiper',
+    ar: 'Front Wiper Blade(副驾驶侧)',
+    it: 'Front Wiper Blade(副驾驶侧)',
   },
   'Front Wiper Blade(右舵车驾驶侧)': {
     en: 'Wiper',
@@ -61,6 +71,8 @@ export const toyotaNameTranslations = {
     ru: 'Стеклоочиститель',
     ja: 'ワイパー',
     zh: 'Wiper',
+    ar: 'Front Wiper Blade(右舵车驾驶侧)',
+    it: 'Front Wiper Blade(右舵车驾驶侧)',
   },
   'Front Wiper Blade(通用参考号)': {
     en: 'Wiper',
@@ -71,6 +83,8 @@ export const toyotaNameTranslations = {
     ru: 'Стеклоочиститель',
     ja: 'ワイパー',
     zh: 'Wiper',
+    ar: 'Front Wiper Blade(通用参考号)',
+    it: 'Front Wiper Blade(通用参考号)',
   },
   'Fuel System': {
     en: 'Fuel System',
@@ -81,6 +95,8 @@ export const toyotaNameTranslations = {
     ru: 'Топливная система',
     ja: '燃料システム',
     zh: 'Fuel System',
+    ar: 'نظام الوقود',
+    it: 'Sistema di carburante',
   },
   'Hub/Transmission轴': {
     en: 'Hub/Transmission轴',
@@ -91,6 +107,8 @@ export const toyotaNameTranslations = {
     ru: 'Hub/Transmission轴',
     ja: 'Hub/Transmission轴',
     zh: 'Hub/Transmission轴',
+    ar: 'Hub/Transmission轴',
+    it: 'Hub/Transmission轴',
   },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -101,6 +119,8 @@ export const toyotaNameTranslations = {
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: 'Maintenance/Filtration System',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -111,6 +131,8 @@ export const toyotaNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Steering Knuckle Arm(早期Vigo)': {
     en: 'Steering Knuckle Arm(早期Vigo)',
@@ -121,6 +143,8 @@ export const toyotaNameTranslations = {
     ru: 'Steering Knuckle Arm(早期Vigo)',
     ja: 'Steering Knuckle Arm(早期Vigo)',
     zh: 'Steering Knuckle Arm(早期Vigo)',
+    ar: 'Steering Knuckle Arm(早期Vigo)',
+    it: 'Steering Knuckle Arm(早期Vigo)',
   },
   'Steering Knuckle Arm(羊角臂)': {
     en: 'Steering Knuckle Arm(羊角臂)',
@@ -131,6 +155,8 @@ export const toyotaNameTranslations = {
     ru: 'Steering Knuckle Arm(羊角臂)',
     ja: 'Steering Knuckle Arm(羊角臂)',
     zh: 'Steering Knuckle Arm(羊角臂)',
+    ar: 'Steering Knuckle Arm(羊角臂)',
+    it: 'Steering Knuckle Arm(羊角臂)',
   },
   'Steering System': {
     en: 'Steering System',
@@ -141,6 +167,8 @@ export const toyotaNameTranslations = {
     ru: 'Steering System',
     ja: 'Steering System',
     zh: 'Steering System',
+    ar: 'Steering System',
+    it: 'Steering System',
   },
   'Suspension System': {
     en: 'Suspension',
@@ -151,6 +179,8 @@ export const toyotaNameTranslations = {
     ru: 'Подвеска',
     ja: 'サスペンション',
     zh: 'Suspension',
+    ar: 'Suspension System',
+    it: 'Suspension System',
   },
   'Water Pump Assembly': {
     en: 'Pump',
@@ -161,6 +191,8 @@ export const toyotaNameTranslations = {
     ru: 'Насос',
     ja: 'ポンプ',
     zh: 'Pump',
+    ar: 'Water Pump Assembly',
+    it: 'Water Pump Assembly',
   },
   '中冷器总成': {
     en: '中冷器总成',
@@ -171,6 +203,8 @@ export const toyotaNameTranslations = {
     ru: '中冷器总成',
     ja: '中冷器总成',
     zh: '中冷器总成',
+    ar: '中冷器总成',
+    it: '中冷器总成',
   },
   '传动/皮带': {
     en: '传动/皮带',
@@ -181,6 +215,8 @@ export const toyotaNameTranslations = {
     ru: '传动/皮带',
     ja: '传动/皮带',
     zh: '传动/皮带',
+    ar: '传动/皮带',
+    it: '传动/皮带',
   },
   '传动轴': {
     en: '传动轴',
@@ -191,6 +227,8 @@ export const toyotaNameTranslations = {
     ru: '传动轴',
     ja: '传动轴',
     zh: '传动轴',
+    ar: '传动轴',
+    it: '传动轴',
   },
   '传动轴十字节(万向节)': {
     en: '传动轴十字节(万向节)',
@@ -201,6 +239,8 @@ export const toyotaNameTranslations = {
     ru: '传动轴十字节(万向节)',
     ja: '传动轴十字节(万向节)',
     zh: '传动轴十字节(万向节)',
+    ar: '传动轴十字节(万向节)',
+    it: '传动轴十字节(万向节)',
   },
   '减震器上支座(顶胶)': {
     en: '减震器上支座(顶胶)',
@@ -211,6 +251,8 @@ export const toyotaNameTranslations = {
     ru: '减震器上支座(顶胶)',
     ja: '减震器上支座(顶胶)',
     zh: '减震器上支座(顶胶)',
+    ar: '减震器上支座(顶胶)',
+    it: '减震器上支座(顶胶)',
   },
   '刹车分泵总成(后)': {
     en: '刹车分泵总成(后)',
@@ -221,6 +263,8 @@ export const toyotaNameTranslations = {
     ru: '刹车分泵总成(后)',
     ja: '刹车分泵总成(后)',
     zh: '刹车分泵总成(后)',
+    ar: '刹车分泵总成(后)',
+    it: '刹车分泵总成(后)',
   },
   '刹车分泵缸体(前)': {
     en: '刹车分泵缸体(前)',
@@ -231,6 +275,8 @@ export const toyotaNameTranslations = {
     ru: '刹车分泵缸体(前)',
     ja: '刹车分泵缸体(前)',
     zh: '刹车分泵缸体(前)',
+    ar: '刹车分泵缸体(前)',
+    it: '刹车分泵缸体(前)',
   },
   '前CV等速万向节': {
     en: '前CV等速万向节',
@@ -241,6 +287,8 @@ export const toyotaNameTranslations = {
     ru: '前CV等速万向节',
     ja: '前CV等速万向节',
     zh: '前CV等速万向节',
+    ar: '前CV等速万向节',
+    it: '前CV等速万向节',
   },
   '前下摆臂衬套': {
     en: '前下摆臂衬套',
@@ -251,6 +299,8 @@ export const toyotaNameTranslations = {
     ru: '前下摆臂衬套',
     ja: '前下摆臂衬套',
     zh: '前下摆臂衬套',
+    ar: '前下摆臂衬套',
+    it: '前下摆臂衬套',
   },
   '前减震器': {
     en: '前减震器',
@@ -261,6 +311,8 @@ export const toyotaNameTranslations = {
     ru: '前减震器',
     ja: '前减震器',
     zh: '前减震器',
+    ar: '前减震器',
+    it: '前减震器',
   },
   '前刹车片': {
     en: '前刹车片',
@@ -271,6 +323,8 @@ export const toyotaNameTranslations = {
     ru: '前刹车片',
     ja: '前刹车片',
     zh: '前刹车片',
+    ar: '前刹车片',
+    it: '前刹车片',
   },
   '前差速器壳体': {
     en: '前差速器壳体',
@@ -281,6 +335,8 @@ export const toyotaNameTranslations = {
     ru: '前差速器壳体',
     ja: '前差速器壳体',
     zh: '前差速器壳体',
+    ar: '前差速器壳体',
+    it: '前差速器壳体',
   },
   '前稳定杆连杆(右)': {
     en: '前稳定杆连杆(右)',
@@ -291,6 +347,8 @@ export const toyotaNameTranslations = {
     ru: '前稳定杆连杆(右)',
     ja: '前稳定杆连杆(右)',
     zh: '前稳定杆连杆(右)',
+    ar: '前稳定杆连杆(右)',
+    it: '前稳定杆连杆(右)',
   },
   '前稳定杆连杆(左)': {
     en: '前稳定杆连杆(左)',
@@ -301,6 +359,8 @@ export const toyotaNameTranslations = {
     ru: '前稳定杆连杆(左)',
     ja: '前稳定杆连杆(左)',
     zh: '前稳定杆连杆(左)',
+    ar: '前稳定杆连杆(左)',
+    it: '前稳定杆连杆(左)',
   },
   '前轮轴承总成': {
     en: '前轮轴承总成',
@@ -311,6 +371,8 @@ export const toyotaNameTranslations = {
     ru: '前轮轴承总成',
     ja: '前轮轴承总成',
     zh: '前轮轴承总成',
+    ar: '前轮轴承总成',
+    it: '前轮轴承总成',
   },
   '后减震器': {
     en: '后减震器',
@@ -321,6 +383,8 @@ export const toyotaNameTranslations = {
     ru: '后减震器',
     ja: '后减震器',
     zh: '后减震器',
+    ar: '后减震器',
+    it: '后减震器',
   },
   '后刹车蹄片': {
     en: '后刹车蹄片',
@@ -331,6 +395,8 @@ export const toyotaNameTranslations = {
     ru: '后刹车蹄片',
     ja: '后刹车蹄片',
     zh: '后刹车蹄片',
+    ar: '后刹车蹄片',
+    it: '后刹车蹄片',
   },
   '后轮轴承总成(含ABS环)': {
     en: '后轮轴承总成(含ABS环)',
@@ -341,6 +407,8 @@ export const toyotaNameTranslations = {
     ru: '后轮轴承总成(含ABS环)',
     ja: '后轮轴承总成(含ABS环)',
     zh: '后轮轴承总成(含ABS环)',
+    ar: '后轮轴承总成(含ABS环)',
+    it: '后轮轴承总成(含ABS环)',
   },
   '后钢板弹簧吊耳衬套': {
     en: '后钢板弹簧吊耳衬套',
@@ -351,6 +419,8 @@ export const toyotaNameTranslations = {
     ru: '后钢板弹簧吊耳衬套',
     ja: '后钢板弹簧吊耳衬套',
     zh: '后钢板弹簧吊耳衬套',
+    ar: '后钢板弹簧吊耳衬套',
+    it: '后钢板弹簧吊耳衬套',
   },
   '差速器/传动': {
     en: '差速器/传动',
@@ -361,6 +431,8 @@ export const toyotaNameTranslations = {
     ru: '差速器/传动',
     ja: '差速器/传动',
     zh: '差速器/传动',
+    ar: '差速器/传动',
+    it: '差速器/传动',
   },
   '差速器齿轮总成': {
     en: '差速器齿轮总成',
@@ -371,6 +443,8 @@ export const toyotaNameTranslations = {
     ru: '差速器齿轮总成',
     ja: '差速器齿轮总成',
     zh: '差速器齿轮总成',
+    ar: '差速器齿轮总成',
+    it: '差速器齿轮总成',
   },
   '散热器总成(参考)': {
     en: '散热器总成(参考)',
@@ -381,6 +455,8 @@ export const toyotaNameTranslations = {
     ru: '散热器总成(参考)',
     ja: '散热器总成(参考)',
     zh: '散热器总成(参考)',
+    ar: '散热器总成(参考)',
+    it: '散热器总成(参考)',
   },
   '散热器风扇罩': {
     en: '散热器风扇罩',
@@ -391,6 +467,8 @@ export const toyotaNameTranslations = {
     ru: '散热器风扇罩',
     ja: '散热器风扇罩',
     zh: '散热器风扇罩',
+    ar: '散热器风扇罩',
+    it: '散热器风扇罩',
   },
   '曲轴正时齿轮': {
     en: '曲轴正时齿轮',
@@ -401,6 +479,8 @@ export const toyotaNameTranslations = {
     ru: '曲轴正时齿轮',
     ja: '曲轴正时齿轮',
     zh: '曲轴正时齿轮',
+    ar: '曲轴正时齿轮',
+    it: '曲轴正时齿轮',
   },
   '正时链条导轨': {
     en: '正时链条导轨',
@@ -411,6 +491,8 @@ export const toyotaNameTranslations = {
     ru: '正时链条导轨',
     ja: '正时链条导轨',
     zh: '正时链条导轨',
+    ar: '正时链条导轨',
+    it: '正时链条导轨',
   },
   '正时链条组件(非皮带)': {
     en: '正时链条组件(非皮带)',
@@ -421,6 +503,8 @@ export const toyotaNameTranslations = {
     ru: '正时链条组件(非皮带)',
     ja: '正时链条组件(非皮带)',
     zh: '正时链条组件(非皮带)',
+    ar: '正时链条组件(非皮带)',
+    it: '正时链条组件(非皮带)',
   },
   '氧传感器': {
     en: '氧传感器',
@@ -431,6 +515,8 @@ export const toyotaNameTranslations = {
     ru: '氧传感器',
     ja: '氧传感器',
     zh: '氧传感器',
+    ar: '氧传感器',
+    it: '氧传感器',
   },
   '水路旁通管': {
     en: '水路旁通管',
@@ -441,6 +527,8 @@ export const toyotaNameTranslations = {
     ru: '水路旁通管',
     ja: '水路旁通管',
     zh: '水路旁通管',
+    ar: '水路旁通管',
+    it: '水路旁通管',
   },
   '点火/预热系统': {
     en: '点火/预热系统',
@@ -451,6 +539,8 @@ export const toyotaNameTranslations = {
     ru: '点火/预热系统',
     ja: '点火/预热系统',
     zh: '点火/预热系统',
+    ar: '点火/预热系统',
+    it: '点火/预热系统',
   },
   '燃油喷油器(1GD)': {
     en: '燃油喷油器(1GD)',
@@ -461,6 +551,8 @@ export const toyotaNameTranslations = {
     ru: '燃油喷油器(1GD)',
     ja: '燃油喷油器(1GD)',
     zh: '燃油喷油器(1GD)',
+    ar: '燃油喷油器(1GD)',
+    it: '燃油喷油器(1GD)',
   },
   '燃油喷油器(2GD)': {
     en: '燃油喷油器(2GD)',
@@ -471,6 +563,8 @@ export const toyotaNameTranslations = {
     ru: '燃油喷油器(2GD)',
     ja: '燃油喷油器(2GD)',
     zh: '燃油喷油器(2GD)',
+    ar: '燃油喷油器(2GD)',
+    it: '燃油喷油器(2GD)',
   },
   '燃油泵SCV阀': {
     en: '燃油泵SCV阀',
@@ -481,6 +575,8 @@ export const toyotaNameTranslations = {
     ru: '燃油泵SCV阀',
     ja: '燃油泵SCV阀',
     zh: '燃油泵SCV阀',
+    ar: '燃油泵SCV阀',
+    it: '燃油泵SCV阀',
   },
   '空调/花粉滤芯': {
     en: '空调/花粉滤芯',
@@ -491,6 +587,8 @@ export const toyotaNameTranslations = {
     ru: '空调/花粉滤芯',
     ja: '空调/花粉滤芯',
     zh: '空调/花粉滤芯',
+    ar: '空调/花粉滤芯',
+    it: '空调/花粉滤芯',
   },
   '空调冷凝器总成': {
     en: '空调冷凝器总成',
@@ -501,6 +599,8 @@ export const toyotaNameTranslations = {
     ru: '空调冷凝器总成',
     ja: '空调冷凝器总成',
     zh: '空调冷凝器总成',
+    ar: '空调冷凝器总成',
+    it: '空调冷凝器总成',
   },
   '空调压缩机总成': {
     en: '空调压缩机总成',
@@ -511,6 +611,8 @@ export const toyotaNameTranslations = {
     ru: '空调压缩机总成',
     ja: '空调压缩机总成',
     zh: '空调压缩机总成',
+    ar: '空调压缩机总成',
+    it: '空调压缩机总成',
   },
   '空调系统': {
     en: '空调系统',
@@ -521,6 +623,8 @@ export const toyotaNameTranslations = {
     ru: '空调系统',
     ja: '空调系统',
     zh: '空调系统',
+    ar: '空调系统',
+    it: '空调系统',
   },
   '节气门总成': {
     en: '节气门总成',
@@ -531,6 +635,8 @@ export const toyotaNameTranslations = {
     ru: '节气门总成',
     ja: '节气门总成',
     zh: '节气门总成',
+    ar: '节气门总成',
+    it: '节气门总成',
   },
   '转向拉杆球头': {
     en: '转向拉杆球头',
@@ -541,6 +647,8 @@ export const toyotaNameTranslations = {
     ru: '转向拉杆球头',
     ja: '转向拉杆球头',
     zh: '转向拉杆球头',
+    ar: '转向拉杆球头',
+    it: '转向拉杆球头',
   },
   '转向机拉杆端': {
     en: '转向机拉杆端',
@@ -551,6 +659,8 @@ export const toyotaNameTranslations = {
     ru: '转向机拉杆端',
     ja: '转向机拉杆端',
     zh: '转向机拉杆端',
+    ar: '转向机拉杆端',
+    it: '转向机拉杆端',
   },
   '进气/涡轮增压': {
     en: '进气/涡轮增压',
@@ -561,6 +671,8 @@ export const toyotaNameTranslations = {
     ru: '进气/涡轮增压',
     ja: '进气/涡轮增压',
     zh: '进气/涡轮增压',
+    ar: '进气/涡轮增压',
+    it: '进气/涡轮增压',
   },
   '雨刮/电气': {
     en: '雨刮/电气',
@@ -571,6 +683,8 @@ export const toyotaNameTranslations = {
     ru: '雨刮/电气',
     ja: '雨刮/电气',
     zh: '雨刮/电气',
+    ar: '雨刮/电气',
+    it: '雨刮/电气',
   },
   '预热塞(老款2L/3L柴油机)': {
     en: '预热塞(老款2L/3L柴油机)',
@@ -581,6 +695,8 @@ export const toyotaNameTranslations = {
     ru: '预热塞(老款2L/3L柴油机)',
     ja: '预热塞(老款2L/3L柴油机)',
     zh: '预热塞(老款2L/3L柴油机)',
+    ar: '预热塞(老款2L/3L柴油机)',
+    it: '预热塞(老款2L/3L柴油机)',
   },
   '风扇/发电机V带': {
     en: '风扇/发电机V带',
@@ -591,10 +707,14 @@ export const toyotaNameTranslations = {
     ru: '风扇/发电机V带',
     ja: '风扇/发电机V带',
     zh: '风扇/发电机V带',
+    ar: '风扇/发电机V带',
+    it: '风扇/发电机V带',
   },
   '空气滤芯': {
     en: '空气滤芯',
     zh: '空气滤芯',
+    ar: '空气滤芯',
+    it: '空气滤芯',
     es: '空气滤芯',
     fr: '空气滤芯',
     de: '空气滤芯',
@@ -607,6 +727,8 @@ export const toyotaNameTranslations = {
   '柴油滤芯(前置)': {
     en: '柴油滤芯(前置)',
     zh: '柴油滤芯(前置)',
+    ar: '柴油滤芯(前置)',
+    it: '柴油滤芯(前置)',
     es: '柴油滤芯(前置)',
     fr: '柴油滤芯(前置)',
     de: '柴油滤芯(前置)',
@@ -619,6 +741,8 @@ export const toyotaNameTranslations = {
   '转向节臂(羊角臂)': {
     en: '转向节臂(羊角臂)',
     zh: '转向节臂(羊角臂)',
+    ar: '转向节臂(羊角臂)',
+    it: '转向节臂(羊角臂)',
     es: '转向节臂(羊角臂)',
     fr: '转向节臂(羊角臂)',
     de: '转向节臂(羊角臂)',
@@ -631,6 +755,8 @@ export const toyotaNameTranslations = {
   '水泵总成': {
     en: '水泵总成',
     zh: '水泵总成',
+    ar: '水泵总成',
+    it: '水泵总成',
     es: '水泵总成',
     fr: '水泵总成',
     de: '水泵总成',
@@ -651,6 +777,8 @@ export const toyotaDescriptionTranslations: Record<string, Record<string, string
   'Toyota part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Toyota part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '丰田零件。500-1000小时或视油液检测结果更换',
+    ar: 'Toyota part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Toyota part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Toyota. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Toyota. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Toyota-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -679,6 +807,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
+    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -691,6 +820,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
+    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -703,6 +833,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
+    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -715,6 +846,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
+    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -727,6 +859,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
+    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -739,6 +872,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
+    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -751,6 +885,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
+    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -763,6 +898,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
+    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -775,6 +911,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
+    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -787,6 +924,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
+    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -799,6 +937,7 @@ export const toyotaCategoryTranslations: Record<string, Record<string, string>> 
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
+    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

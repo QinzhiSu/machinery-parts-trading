@@ -11,6 +11,8 @@ export const shacmanNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Cooling System': {
     en: 'Cooling System',
@@ -21,6 +23,8 @@ export const shacmanNameTranslations = {
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: 'Cooling System',
+    ar: 'نظام التبريد',
+    it: 'Sistema di raffreddamento',
   },
   'Diesel Filter': {
     en: 'Diesel Filter',
@@ -31,6 +35,8 @@ export const shacmanNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -41,6 +47,8 @@ export const shacmanNameTranslations = {
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: 'Maintenance/Filtration System',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -51,6 +59,8 @@ export const shacmanNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Turbocharger总成': {
     en: 'Turbocharger',
@@ -61,6 +71,8 @@ export const shacmanNameTranslations = {
     ru: 'Турбокомпрессор',
     ja: 'ターボチャージャー',
     zh: 'Turbocharger',
+    ar: 'شاحن توربيني',
+    it: 'Turbocompressore',
   },
   'Turbocharger进气管': {
     en: 'Turbocharger',
@@ -71,6 +83,8 @@ export const shacmanNameTranslations = {
     ru: 'Турбокомпрессор',
     ja: 'ターボチャージャー',
     zh: 'Turbocharger',
+    ar: 'شاحن توربيني',
+    it: 'Turbocompressore',
   },
   '传动/万向节': {
     en: '传动/万向节',
@@ -81,6 +95,8 @@ export const shacmanNameTranslations = {
     ru: '传动/万向节',
     ja: '传动/万向节',
     zh: '传动/万向节',
+    ar: '传动/万向节',
+    it: '传动/万向节',
   },
   '传动/离合器': {
     en: '传动/离合器',
@@ -91,6 +107,8 @@ export const shacmanNameTranslations = {
     ru: '传动/离合器',
     ja: '传动/离合器',
     zh: '传动/离合器',
+    ar: '传动/离合器',
+    it: '传动/离合器',
   },
   '传动轴总成(F3000)': {
     en: '传动轴总成(F3000)',
@@ -101,6 +119,8 @@ export const shacmanNameTranslations = {
     ru: '传动轴总成(F3000)',
     ja: '传动轴总成(F3000)',
     zh: '传动轴总成(F3000)',
+    ar: '传动轴总成(F3000)',
+    it: '传动轴总成(F3000)',
   },
   '侧倾/横向减震器': {
     en: '侧倾/横向减震器',
@@ -111,6 +131,8 @@ export const shacmanNameTranslations = {
     ru: '侧倾/横向减震器',
     ja: '侧倾/横向减震器',
     zh: '侧倾/横向减震器',
+    ar: '侧倾/横向减震器',
+    it: '侧倾/横向减震器',
   },
   '制动气室(前/后桥)': {
     en: '制动气室(前/后桥)',
@@ -121,6 +143,8 @@ export const shacmanNameTranslations = {
     ru: '制动气室(前/后桥)',
     ja: '制动气室(前/后桥)',
     zh: '制动气室(前/后桥)',
+    ar: '制动气室(前/后桥)',
+    it: '制动气室(前/后桥)',
   },
   '制动系统': {
     en: '制动系统',
@@ -131,6 +155,8 @@ export const shacmanNameTranslations = {
     ru: '制动系统',
     ja: '制动系统',
     zh: '制动系统',
+    ar: '制动系统',
+    it: '制动系统',
   },
   '刹车蹄片弹簧': {
     en: '刹车蹄片弹簧',
@@ -141,6 +167,8 @@ export const shacmanNameTranslations = {
     ru: '刹车蹄片弹簧',
     ja: '刹车蹄片弹簧',
     zh: '刹车蹄片弹簧',
+    ar: '刹车蹄片弹簧',
+    it: '刹车蹄片弹簧',
   },
   '前轮毂总成': {
     en: '前轮毂总成',
@@ -151,6 +179,8 @@ export const shacmanNameTranslations = {
     ru: '前轮毂总成',
     ja: '前轮毂总成',
     zh: '前轮毂总成',
+    ar: '前轮毂总成',
+    it: '前轮毂总成',
   },
   '前轮轴承维修包': {
     en: '前轮轴承维修包',
@@ -161,6 +191,8 @@ export const shacmanNameTranslations = {
     ru: '前轮轴承维修包',
     ja: '前轮轴承维修包',
     zh: '前轮轴承维修包',
+    ar: '前轮轴承维修包',
+    it: '前轮轴承维修包',
   },
   '前钢板弹簧总成(带支架/吊耳)': {
     en: '前钢板弹簧总成(带支架/吊耳)',
@@ -171,6 +203,8 @@ export const shacmanNameTranslations = {
     ru: '前钢板弹簧总成(带支架/吊耳)',
     ja: '前钢板弹簧总成(带支架/吊耳)',
     zh: '前钢板弹簧总成(带支架/吊耳)',
+    ar: '前钢板弹簧总成(带支架/吊耳)',
+    it: '前钢板弹簧总成(带支架/吊耳)',
   },
   '前雨刮片': {
     en: '前雨刮片',
@@ -181,6 +215,8 @@ export const shacmanNameTranslations = {
     ru: '前雨刮片',
     ja: '前雨刮片',
     zh: '前雨刮片',
+    ar: '前雨刮片',
+    it: '前雨刮片',
   },
   '发电机总成': {
     en: '发电机总成',
@@ -191,6 +227,8 @@ export const shacmanNameTranslations = {
     ru: '发电机总成',
     ja: '发电机总成',
     zh: '发电机总成',
+    ar: '发电机总成',
+    it: '发电机总成',
   },
   '右前大灯总成': {
     en: '右前大灯总成',
@@ -201,6 +239,8 @@ export const shacmanNameTranslations = {
     ru: '右前大灯总成',
     ja: '右前大灯总成',
     zh: '右前大灯总成',
+    ar: '右前大灯总成',
+    it: '右前大灯总成',
   },
   '后悬挂减震器': {
     en: '后悬挂减震器',
@@ -211,6 +251,8 @@ export const shacmanNameTranslations = {
     ru: '后悬挂减震器',
     ja: '后悬挂减震器',
     zh: '后悬挂减震器',
+    ar: '后悬挂减震器',
+    it: '后悬挂减震器',
   },
   '增压/进气': {
     en: '增压/进气',
@@ -221,6 +263,8 @@ export const shacmanNameTranslations = {
     ru: '增压/进气',
     ja: '增压/进气',
     zh: '增压/进气',
+    ar: '增压/进气',
+    it: '增压/进气',
   },
   '左前大灯总成': {
     en: '左前大灯总成',
@@ -231,6 +275,8 @@ export const shacmanNameTranslations = {
     ru: '左前大灯总成',
     ja: '左前大灯总成',
     zh: '左前大灯总成',
+    ar: '左前大灯总成',
+    it: '左前大灯总成',
   },
   '悬挂减震': {
     en: '悬挂减震',
@@ -241,6 +287,8 @@ export const shacmanNameTranslations = {
     ru: '悬挂减震',
     ja: '悬挂减震',
     zh: '悬挂减震',
+    ar: '悬挂减震',
+    it: '悬挂减震',
   },
   '悬挂系统': {
     en: '悬挂系统',
@@ -251,6 +299,8 @@ export const shacmanNameTranslations = {
     ru: '悬挂系统',
     ja: '悬挂系统',
     zh: '悬挂系统',
+    ar: '悬挂系统',
+    it: '悬挂系统',
   },
   '排气制动蝶阀': {
     en: '排气制动蝶阀',
@@ -261,6 +311,8 @@ export const shacmanNameTranslations = {
     ru: '排气制动蝶阀',
     ja: '排气制动蝶阀',
     zh: '排气制动蝶阀',
+    ar: '排气制动蝶阀',
+    it: '排气制动蝶阀',
   },
   '水泵总成': {
     en: '水泵总成',
@@ -271,6 +323,8 @@ export const shacmanNameTranslations = {
     ru: '水泵总成',
     ja: '水泵总成',
     zh: '水泵总成',
+    ar: '水泵总成',
+    it: '水泵总成',
   },
   '燃油粗滤器(油水分离器)': {
     en: '燃油粗滤器(油水分离器)',
@@ -281,6 +335,8 @@ export const shacmanNameTranslations = {
     ru: '燃油粗滤器(油水分离器)',
     ja: '燃油粗滤器(油水分离器)',
     zh: '燃油粗滤器(油水分离器)',
+    ar: '燃油粗滤器(油水分离器)',
+    it: '燃油粗滤器(油水分离器)',
   },
   '电气/启动': {
     en: '电气/启动',
@@ -291,6 +347,8 @@ export const shacmanNameTranslations = {
     ru: '电气/启动',
     ja: '电气/启动',
     zh: '电气/启动',
+    ar: '电气/启动',
+    it: '电气/启动',
   },
   '离合器总泵及油壶总成': {
     en: '离合器总泵及油壶总成',
@@ -301,6 +359,8 @@ export const shacmanNameTranslations = {
     ru: '离合器总泵及油壶总成',
     ja: '离合器总泵及油壶总成',
     zh: '离合器总泵及油壶总成',
+    ar: '离合器总泵及油壶总成',
+    it: '离合器总泵及油壶总成',
   },
   '离合器片总成': {
     en: '离合器片总成',
@@ -311,6 +371,8 @@ export const shacmanNameTranslations = {
     ru: '离合器片总成',
     ja: '离合器片总成',
     zh: '离合器片总成',
+    ar: '离合器片总成',
+    it: '离合器片总成',
   },
   '起动机总成': {
     en: '起动机总成',
@@ -321,6 +383,8 @@ export const shacmanNameTranslations = {
     ru: '起动机总成',
     ja: '起动机总成',
     zh: '起动机总成',
+    ar: '起动机总成',
+    it: '起动机总成',
   },
   '车身/电气': {
     en: '车身/电气',
@@ -331,6 +395,8 @@ export const shacmanNameTranslations = {
     ru: '车身/电气',
     ja: '车身/电气',
     zh: '车身/电气',
+    ar: '车身/电气',
+    it: '车身/电气',
   },
   '车身/雨刮': {
     en: '车身/雨刮',
@@ -341,6 +407,8 @@ export const shacmanNameTranslations = {
     ru: '车身/雨刮',
     ja: '车身/雨刮',
     zh: '车身/雨刮',
+    ar: '车身/雨刮',
+    it: '车身/雨刮',
   },
   '转向主销(king pin)总成': {
     en: 'Pin',
@@ -351,6 +419,8 @@ export const shacmanNameTranslations = {
     ru: 'Штифт',
     ja: 'ピン',
     zh: 'Pin',
+    ar: '转向主销(king pin)总成',
+    it: '转向主销(king pin)总成',
   },
   '转向系统': {
     en: '转向系统',
@@ -361,6 +431,8 @@ export const shacmanNameTranslations = {
     ru: '转向系统',
     ja: '转向系统',
     zh: '转向系统',
+    ar: '转向系统',
+    it: '转向系统',
   },
   '转向节臂/横拉杆(转向梯形臂)': {
     en: '转向节臂/横拉杆(转向梯形臂)',
@@ -371,6 +443,8 @@ export const shacmanNameTranslations = {
     ru: '转向节臂/横拉杆(转向梯形臂)',
     ja: '转向节臂/横拉杆(转向梯形臂)',
     zh: '转向节臂/横拉杆(转向梯形臂)',
+    ar: '转向节臂/横拉杆(转向梯形臂)',
+    it: '转向节臂/横拉杆(转向梯形臂)',
   },
   '轮毂/传动': {
     en: '轮毂/传动',
@@ -381,6 +455,8 @@ export const shacmanNameTranslations = {
     ru: '轮毂/传动',
     ja: '轮毂/传动',
     zh: '轮毂/传动',
+    ar: '轮毂/传动',
+    it: '轮毂/传动',
   },
   '轮毂/传动轴': {
     en: '轮毂/传动轴',
@@ -391,6 +467,8 @@ export const shacmanNameTranslations = {
     ru: '轮毂/传动轴',
     ja: '轮毂/传动轴',
     zh: '轮毂/传动轴',
+    ar: '轮毂/传动轴',
+    it: '轮毂/传动轴',
   },
   '进气/增压': {
     en: '进气/增压',
@@ -401,6 +479,8 @@ export const shacmanNameTranslations = {
     ru: '进气/增压',
     ja: '进气/增压',
     zh: '进气/增压',
+    ar: '进气/增压',
+    it: '进气/增压',
   },
   '雨刮臂(SWF)': {
     en: '雨刮臂(SWF)',
@@ -411,6 +491,8 @@ export const shacmanNameTranslations = {
     ru: '雨刮臂(SWF)',
     ja: '雨刮臂(SWF)',
     zh: '雨刮臂(SWF)',
+    ar: '雨刮臂(SWF)',
+    it: '雨刮臂(SWF)',
   },
   '雨刮连杆总成(带电机)': {
     en: '雨刮连杆总成(带电机)',
@@ -421,6 +503,8 @@ export const shacmanNameTranslations = {
     ru: '雨刮连杆总成(带电机)',
     ja: '雨刮连杆总成(带电机)',
     zh: '雨刮连杆总成(带电机)',
+    ar: '雨刮连杆总成(带电机)',
+    it: '雨刮连杆总成(带电机)',
   },
   '驱动桥空气弹簧(气囊)': {
     en: '驱动桥空气弹簧(气囊)',
@@ -431,6 +515,8 @@ export const shacmanNameTranslations = {
     ru: '驱动桥空气弹簧(气囊)',
     ja: '驱动桥空气弹簧(气囊)',
     zh: '驱动桥空气弹簧(气囊)',
+    ar: '驱动桥空气弹簧(气囊)',
+    it: '驱动桥空气弹簧(气囊)',
   },
   '驱动轴节叉': {
     en: '驱动轴节叉',
@@ -441,6 +527,8 @@ export const shacmanNameTranslations = {
     ru: '驱动轴节叉',
     ja: '驱动轴节叉',
     zh: '驱动轴节叉',
+    ar: '驱动轴节叉',
+    it: '驱动轴节叉',
   },
   '驾驶室后减震器': {
     en: '驾驶室后减震器',
@@ -451,6 +539,8 @@ export const shacmanNameTranslations = {
     ru: '驾驶室后减震器',
     ja: '驾驶室后减震器',
     zh: '驾驶室后减震器',
+    ar: '驾驶室后减震器',
+    it: '驾驶室后减震器',
   },
   '高度阀(空气悬挂)': {
     en: '高度阀(空气悬挂)',
@@ -461,10 +551,14 @@ export const shacmanNameTranslations = {
     ru: '高度阀(空气悬挂)',
     ja: '高度阀(空气悬挂)',
     zh: '高度阀(空气悬挂)',
+    ar: '高度阀(空气悬挂)',
+    it: '高度阀(空气悬挂)',
   },
   '柴油滤芯': {
     en: '柴油滤芯',
     zh: '柴油滤芯',
+    ar: '柴油滤芯',
+    it: '柴油滤芯',
     es: '柴油滤芯',
     fr: '柴油滤芯',
     de: '柴油滤芯',
@@ -477,6 +571,8 @@ export const shacmanNameTranslations = {
   '空气滤芯': {
     en: '空气滤芯',
     zh: '空气滤芯',
+    ar: '空气滤芯',
+    it: '空气滤芯',
     es: '空气滤芯',
     fr: '空气滤芯',
     de: '空气滤芯',
@@ -489,6 +585,8 @@ export const shacmanNameTranslations = {
   '涡轮增压器进气管': {
     en: '涡轮增压器进气管',
     zh: '涡轮增压器进气管',
+    ar: '涡轮增压器进气管',
+    it: '涡轮增压器进气管',
     es: '涡轮增压器进气管',
     fr: '涡轮增压器进气管',
     de: '涡轮增压器进气管',
@@ -501,6 +599,8 @@ export const shacmanNameTranslations = {
   '涡轮增压器总成': {
     en: '涡轮增压器总成',
     zh: '涡轮增压器总成',
+    ar: '涡轮增压器总成',
+    it: '涡轮增压器总成',
     es: '涡轮增压器总成',
     fr: '涡轮增压器总成',
     de: '涡轮增压器总成',
@@ -521,6 +621,8 @@ export const shacmanDescriptionTranslations: Record<string, Record<string, strin
   'Shacman part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Shacman part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '陕汽零件。500-1000小时或视油液检测结果更换',
+    ar: 'Shacman part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Shacman part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Shacman. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Shacman. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Shacman-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -549,6 +651,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
+    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -561,6 +664,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
+    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -573,6 +677,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
+    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -585,6 +690,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
+    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -597,6 +703,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
+    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -609,6 +716,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
+    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -621,6 +729,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
+    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -633,6 +742,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
+    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -645,6 +755,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
+    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -657,6 +768,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
+    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -669,6 +781,7 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
+    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

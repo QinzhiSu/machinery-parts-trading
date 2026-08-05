@@ -11,6 +11,8 @@ export const shantuiNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Air Filter(SD22外芯)': {
     en: 'Air Filter',
@@ -21,6 +23,8 @@ export const shantuiNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Cooling System': {
     en: 'Cooling System',
@@ -31,6 +35,8 @@ export const shantuiNameTranslations = {
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: 'Cooling System',
+    ar: 'نظام التبريد',
+    it: 'Sistema di raffreddamento',
   },
   'Diesel Filter': {
     en: 'Diesel Filter',
@@ -41,6 +47,8 @@ export const shantuiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter(SD22)': {
     en: 'Diesel Filter',
@@ -51,6 +59,8 @@ export const shantuiNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Strainer': {
     en: 'Diesel Strainer',
@@ -61,6 +71,8 @@ export const shantuiNameTranslations = {
     ru: 'Diesel Strainer',
     ja: 'Diesel Strainer',
     zh: 'Diesel Strainer',
+    ar: 'Diesel Strainer',
+    it: 'Diesel Strainer',
   },
   'Electrical/Starting System': {
     en: 'Electrical/Starting System',
@@ -71,6 +83,8 @@ export const shantuiNameTranslations = {
     ru: 'Electrical/Starting System',
     ja: 'Electrical/Starting System',
     zh: 'Electrical/Starting System',
+    ar: 'نظام كهربائي/بدء التشغيل',
+    it: 'Sistema elettrico/avviamento',
   },
   'Generator Assembly(28V/45A通用)': {
     en: 'Generator Assembly(28V/45A通用)',
@@ -81,6 +95,8 @@ export const shantuiNameTranslations = {
     ru: 'Generator Assembly(28V/45A通用)',
     ja: 'Generator Assembly(28V/45A通用)',
     zh: 'Generator Assembly(28V/45A通用)',
+    ar: 'مجموعة المولد',
+    it: 'Gruppo generatore',
   },
   'Hydraulic Oil Filter': {
     en: 'Hydraulic Oil Filter',
@@ -91,6 +107,8 @@ export const shantuiNameTranslations = {
     ru: 'Гидравлический масляный фильтр',
     ja: '油圧オイルフィルター',
     zh: 'Hydraulic Oil Filter',
+    ar: 'مرشح الزيت الهيدروليكي',
+    it: 'Filtro olio idraulico',
   },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -101,6 +119,8 @@ export const shantuiNameTranslations = {
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: 'Maintenance/Filtration System',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -111,6 +131,8 @@ export const shantuiNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   '万向节总成': {
     en: '万向节总成',
@@ -121,6 +143,8 @@ export const shantuiNameTranslations = {
     ru: '万向节总成',
     ja: '万向节总成',
     zh: '万向节总成',
+    ar: '万向节总成',
+    it: '万向节总成',
   },
   '主销(king pin)': {
     en: 'Pin',
@@ -131,6 +155,8 @@ export const shantuiNameTranslations = {
     ru: 'Штифт',
     ja: 'ピン',
     zh: 'Pin',
+    ar: '主销(king pin)',
+    it: '主销(king pin)',
   },
   '传动/变速系统': {
     en: '传动/变速系统',
@@ -141,6 +167,8 @@ export const shantuiNameTranslations = {
     ru: '传动/变速系统',
     ja: '传动/变速系统',
     zh: '传动/变速系统',
+    ar: '传动/变速系统',
+    it: '传动/变速系统',
   },
   '传动/最终驱动': {
     en: '传动/最终驱动',
@@ -151,6 +179,8 @@ export const shantuiNameTranslations = {
     ru: '传动/最终驱动',
     ja: '传动/最终驱动',
     zh: '传动/最终驱动',
+    ar: '传动/最终驱动',
+    it: '传动/最终驱动',
   },
   '传动系统': {
     en: '传动系统',
@@ -161,6 +191,8 @@ export const shantuiNameTranslations = {
     ru: '传动系统',
     ja: '传动系统',
     zh: '传动系统',
+    ar: '传动系统',
+    it: '传动系统',
   },
   '切削刃(cutting edge)/端刃': {
     en: '切削刃(cutting edge)/端刃',
@@ -171,6 +203,8 @@ export const shantuiNameTranslations = {
     ru: '切削刃(cutting edge)/端刃',
     ja: '切削刃(cutting edge)/端刃',
     zh: '切削刃(cutting edge)/端刃',
+    ar: '切削刃(cutting edge)/端刃',
+    it: '切削刃(cutting edge)/端刃',
   },
   '前导向轮总成(SD22)': {
     en: '前导向轮总成(SD22)',
@@ -181,6 +215,8 @@ export const shantuiNameTranslations = {
     ru: '前导向轮总成(SD22)',
     ja: '前导向轮总成(SD22)',
     zh: '前导向轮总成(SD22)',
+    ar: '前导向轮总成(SD22)',
+    it: '前导向轮总成(SD22)',
   },
   '单边支重轮(SD16)': {
     en: '单边支重轮(SD16)',
@@ -191,6 +227,8 @@ export const shantuiNameTranslations = {
     ru: '单边支重轮(SD16)',
     ja: '单边支重轮(SD16)',
     zh: '单边支重轮(SD16)',
+    ar: '单边支重轮(SD16)',
+    it: '单边支重轮(SD16)',
   },
   '双边支重轮(SD16)': {
     en: '双边支重轮(SD16)',
@@ -201,6 +239,8 @@ export const shantuiNameTranslations = {
     ru: '双边支重轮(SD16)',
     ja: '双边支重轮(SD16)',
     zh: '双边支重轮(SD16)',
+    ar: '双边支重轮(SD16)',
+    it: '双边支重轮(SD16)',
   },
   '变矩器冷却器': {
     en: '变矩器冷却器',
@@ -211,6 +251,8 @@ export const shantuiNameTranslations = {
     ru: '变矩器冷却器',
     ja: '变矩器冷却器',
     zh: '变矩器冷却器',
+    ar: '变矩器冷却器',
+    it: '变矩器冷却器',
   },
   '变速箱控制阀': {
     en: '变速箱控制阀',
@@ -221,6 +263,8 @@ export const shantuiNameTranslations = {
     ru: '变速箱控制阀',
     ja: '变速箱控制阀',
     zh: '变速箱控制阀',
+    ar: '变速箱控制阀',
+    it: '变速箱控制阀',
   },
   '变速箱泵总成': {
     en: '变速箱泵总成',
@@ -231,6 +275,8 @@ export const shantuiNameTranslations = {
     ru: '变速箱泵总成',
     ja: '变速箱泵总成',
     zh: '变速箱泵总成',
+    ar: '变速箱泵总成',
+    it: '变速箱泵总成',
   },
   '变速箱滤芯': {
     en: '变速箱滤芯',
@@ -241,6 +287,8 @@ export const shantuiNameTranslations = {
     ru: '变速箱滤芯',
     ja: '变速箱滤芯',
     zh: '变速箱滤芯',
+    ar: '变速箱滤芯',
+    it: '变速箱滤芯',
   },
   '履带引导轮/托链轮(SD16)': {
     en: '履带引导轮/托链轮(SD16)',
@@ -251,6 +299,8 @@ export const shantuiNameTranslations = {
     ru: '履带引导轮/托链轮(SD16)',
     ja: '履带引导轮/托链轮(SD16)',
     zh: '履带引导轮/托链轮(SD16)',
+    ar: '履带引导轮/托链轮(SD16)',
+    it: '履带引导轮/托链轮(SD16)',
   },
   '履带板/湿地履带板螺栓(72长)': {
     en: '履带板/湿地履带板螺栓(72长)',
@@ -261,6 +311,8 @@ export const shantuiNameTranslations = {
     ru: '履带板/湿地履带板螺栓(72长)',
     ja: '履带板/湿地履带板螺栓(72长)',
     zh: '履带板/湿地履带板螺栓(72长)',
+    ar: '履带板/湿地履带板螺栓(72长)',
+    it: '履带板/湿地履带板螺栓(72长)',
   },
   '履带板螺栓/驱动齿轮螺栓': {
     en: '履带板螺栓/驱动齿轮螺栓',
@@ -271,6 +323,8 @@ export const shantuiNameTranslations = {
     ru: '履带板螺栓/驱动齿轮螺栓',
     ja: '履带板螺栓/驱动齿轮螺栓',
     zh: '履带板螺栓/驱动齿轮螺栓',
+    ar: '履带板螺栓/驱动齿轮螺栓',
+    it: '履带板螺栓/驱动齿轮螺栓',
   },
   '履带链条总成(SD16)': {
     en: '履带链条总成(SD16)',
@@ -281,6 +335,8 @@ export const shantuiNameTranslations = {
     ru: '履带链条总成(SD16)',
     ja: '履带链条总成(SD16)',
     zh: '履带链条总成(SD16)',
+    ar: '履带链条总成(SD16)',
+    it: '履带链条总成(SD16)',
   },
   '履带链条总成(SD22)': {
     en: '履带链条总成(SD22)',
@@ -291,6 +347,8 @@ export const shantuiNameTranslations = {
     ru: '履带链条总成(SD22)',
     ja: '履带链条总成(SD22)',
     zh: '履带链条总成(SD22)',
+    ar: '履带链条总成(SD22)',
+    it: '履带链条总成(SD22)',
   },
   '履带链条总成(SD32)': {
     en: '履带链条总成(SD32)',
@@ -301,6 +359,8 @@ export const shantuiNameTranslations = {
     ru: '履带链条总成(SD32)',
     ja: '履带链条总成(SD32)',
     zh: '履带链条总成(SD32)',
+    ar: '履带链条总成(SD32)',
+    it: '履带链条总成(SD32)',
   },
   '底盘/履带系统': {
     en: '底盘/履带系统',
@@ -311,6 +371,8 @@ export const shantuiNameTranslations = {
     ru: '底盘/履带系统',
     ja: '底盘/履带系统',
     zh: '底盘/履带系统',
+    ar: '底盘/履带系统',
+    it: '底盘/履带系统',
   },
   '推土铲刀/GET': {
     en: '推土铲刀/GET',
@@ -321,6 +383,8 @@ export const shantuiNameTranslations = {
     ru: '推土铲刀/GET',
     ja: '推土铲刀/GET',
     zh: '推土铲刀/GET',
+    ar: '推土铲刀/GET',
+    it: '推土铲刀/GET',
   },
   '推土铲刀总成': {
     en: '推土铲刀总成',
@@ -331,6 +395,8 @@ export const shantuiNameTranslations = {
     ru: '推土铲刀总成',
     ja: '推土铲刀总成',
     zh: '推土铲刀总成',
+    ar: '推土铲刀总成',
+    it: '推土铲刀总成',
   },
   '散热器总成': {
     en: '散热器总成',
@@ -341,6 +407,8 @@ export const shantuiNameTranslations = {
     ru: '散热器总成',
     ja: '散热器总成',
     zh: '散热器总成',
+    ar: '散热器总成',
+    it: '散热器总成',
   },
   '散热风扇总成': {
     en: '散热风扇总成',
@@ -351,6 +419,8 @@ export const shantuiNameTranslations = {
     ru: '散热风扇总成',
     ja: '散热风扇总成',
     zh: '散热风扇总成',
+    ar: '散热风扇总成',
+    it: '散热风扇总成',
   },
   '最终驱动骨架油封': {
     en: '最终驱动骨架油封',
@@ -361,6 +431,8 @@ export const shantuiNameTranslations = {
     ru: '最终驱动骨架油封',
     ja: '最终驱动骨架油封',
     zh: '最终驱动骨架油封',
+    ar: '最终驱动骨架油封',
+    it: '最终驱动骨架油封',
   },
   '松土器(ripper)刀柄': {
     en: '松土器(ripper)刀柄',
@@ -371,6 +443,8 @@ export const shantuiNameTranslations = {
     ru: '松土器(ripper)刀柄',
     ja: '松土器(ripper)刀柄',
     zh: '松土器(ripper)刀柄',
+    ar: '松土器(ripper)刀柄',
+    it: '松土器(ripper)刀柄',
   },
   '液力变矩器总成(SD16)': {
     en: '液力变矩器总成(SD16)',
@@ -381,6 +455,8 @@ export const shantuiNameTranslations = {
     ru: '液力变矩器总成(SD16)',
     ja: '液力变矩器总成(SD16)',
     zh: '液力变矩器总成(SD16)',
+    ar: '液力变矩器总成(SD16)',
+    it: '液力变矩器总成(SD16)',
   },
   '液力变矩器总成(SD22)': {
     en: '液力变矩器总成(SD22)',
@@ -391,6 +467,8 @@ export const shantuiNameTranslations = {
     ru: '液力变矩器总成(SD22)',
     ja: '液力变矩器总成(SD22)',
     zh: '液力变矩器总成(SD22)',
+    ar: '液力变矩器总成(SD22)',
+    it: '液力变矩器总成(SD22)',
   },
   '液压提升缸修理包': {
     en: '液压提升缸修理包',
@@ -401,6 +479,8 @@ export const shantuiNameTranslations = {
     ru: '液压提升缸修理包',
     ja: '液压提升缸修理包',
     zh: '液压提升缸修理包',
+    ar: '液压提升缸修理包',
+    it: '液压提升缸修理包',
   },
   '液压系统': {
     en: '液压系统',
@@ -411,6 +491,8 @@ export const shantuiNameTranslations = {
     ru: '液压系统',
     ja: '液压系统',
     zh: '液压系统',
+    ar: '液压系统',
+    it: '液压系统',
   },
   '端刃(右)': {
     en: '端刃(右)',
@@ -421,6 +503,8 @@ export const shantuiNameTranslations = {
     ru: '端刃(右)',
     ja: '端刃(右)',
     zh: '端刃(右)',
+    ar: '端刃(右)',
+    it: '端刃(右)',
   },
   '蓄电池充电发电机(SD22)': {
     en: '蓄电池充电发电机(SD22)',
@@ -431,6 +515,8 @@ export const shantuiNameTranslations = {
     ru: '蓄电池充电发电机(SD22)',
     ja: '蓄电池充电发电机(SD22)',
     zh: '蓄电池充电发电机(SD22)',
+    ar: '蓄电池充电发电机(SD22)',
+    it: '蓄电池充电发电机(SD22)',
   },
   '转向/悬挂': {
     en: '转向/悬挂',
@@ -441,6 +527,8 @@ export const shantuiNameTranslations = {
     ru: '转向/悬挂',
     ja: '转向/悬挂',
     zh: '转向/悬挂',
+    ar: '转向/悬挂',
+    it: '转向/悬挂',
   },
   '转向Hydraulic Oil Filter': {
     en: 'Oil Filter',
@@ -451,6 +539,8 @@ export const shantuiNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   '转向制动带': {
     en: '转向制动带',
@@ -461,6 +551,8 @@ export const shantuiNameTranslations = {
     ru: '转向制动带',
     ja: '转向制动带',
     zh: '转向制动带',
+    ar: '转向制动带',
+    it: '转向制动带',
   },
   '转向泵总成': {
     en: '转向泵总成',
@@ -471,6 +563,8 @@ export const shantuiNameTranslations = {
     ru: '转向泵总成',
     ja: '转向泵总成',
     zh: '转向泵总成',
+    ar: '转向泵总成',
+    it: '转向泵总成',
   },
   '转向离合器总成': {
     en: '转向离合器总成',
@@ -481,6 +575,8 @@ export const shantuiNameTranslations = {
     ru: '转向离合器总成',
     ja: '转向离合器总成',
     zh: '转向离合器总成',
+    ar: '转向离合器总成',
+    it: '转向离合器总成',
   },
   '转向阀体': {
     en: '转向阀体',
@@ -491,6 +587,8 @@ export const shantuiNameTranslations = {
     ru: '转向阀体',
     ja: '转向阀体',
     zh: '转向阀体',
+    ar: '转向阀体',
+    it: '转向阀体',
   },
   '驱动链轮齿块(segment)': {
     en: '驱动链轮齿块(segment)',
@@ -501,10 +599,14 @@ export const shantuiNameTranslations = {
     ru: '驱动链轮齿块(segment)',
     ja: '驱动链轮齿块(segment)',
     zh: '驱动链轮齿块(segment)',
+    ar: '驱动链轮齿块(segment)',
+    it: '驱动链轮齿块(segment)',
   },
   'Diesel Filter (SD22)': {
     en: 'Diesel Filter (SD22)',
     zh: 'Diesel Filter (SD22)',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
     es: 'Diesel Filter (SD22)',
     fr: 'Diesel Filter (SD22)',
     de: 'Diesel Filter (SD22)',
@@ -517,6 +619,8 @@ export const shantuiNameTranslations = {
   'Diesel Coarse Filter': {
     en: 'Diesel Coarse Filter',
     zh: 'Diesel Coarse Filter',
+    ar: 'Diesel Coarse Filter',
+    it: 'Diesel Coarse Filter',
     es: 'Diesel Coarse Filter',
     fr: 'Diesel Coarse Filter',
     de: 'Diesel Coarse Filter',
@@ -529,6 +633,8 @@ export const shantuiNameTranslations = {
   'Air Filter (SD16)': {
     en: 'Air Filter (SD16)',
     zh: 'Air Filter (SD16)',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
     es: 'Air Filter (SD16)',
     fr: 'Air Filter (SD16)',
     de: 'Air Filter (SD16)',
@@ -541,6 +647,8 @@ export const shantuiNameTranslations = {
   'Air Filter (SD22 Outer)': {
     en: 'Air Filter (SD22 Outer)',
     zh: 'Air Filter (SD22 Outer)',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
     es: 'Air Filter (SD22 Outer)',
     fr: 'Air Filter (SD22 Outer)',
     de: 'Air Filter (SD22 Outer)',
@@ -553,6 +661,8 @@ export const shantuiNameTranslations = {
   'Steering Hydraulic Oil Filter': {
     en: 'Steering Hydraulic Oil Filter',
     zh: 'Steering Hydraulic Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
     es: 'Steering Hydraulic Oil Filter',
     fr: 'Steering Hydraulic Oil Filter',
     de: 'Steering Hydraulic Oil Filter',
@@ -565,6 +675,8 @@ export const shantuiNameTranslations = {
   'Transmission Filter': {
     en: 'Transmission Filter',
     zh: 'Transmission Filter',
+    ar: 'Transmission Filter',
+    it: 'Transmission Filter',
     es: 'Transmission Filter',
     fr: 'Transmission Filter',
     de: 'Transmission Filter',
@@ -577,6 +689,8 @@ export const shantuiNameTranslations = {
   'Battery Charging Alternator (SD22)': {
     en: 'Battery Charging Alternator (SD22)',
     zh: 'Battery Charging Alternator (SD22)',
+    ar: 'Battery Charging Alternator (SD22)',
+    it: 'Battery Charging Alternator (SD22)',
     es: 'Battery Charging Alternator (SD22)',
     fr: 'Battery Charging Alternator (SD22)',
     de: 'Battery Charging Alternator (SD22)',
@@ -589,6 +703,8 @@ export const shantuiNameTranslations = {
   'Alternator Assembly (28V/45A Universal)': {
     en: 'Alternator Assembly (28V/45A Universal)',
     zh: 'Alternator Assembly (28V/45A Universal)',
+    ar: 'Alternator Assembly (28V/45A Universal)',
+    it: 'Alternator Assembly (28V/45A Universal)',
     es: 'Alternator Assembly (28V/45A Universal)',
     fr: 'Alternator Assembly (28V/45A Universal)',
     de: 'Alternator Assembly (28V/45A Universal)',
@@ -601,6 +717,8 @@ export const shantuiNameTranslations = {
   'Torque Converter Assembly (SD16)': {
     en: 'Torque Converter Assembly (SD16)',
     zh: 'Torque Converter Assembly (SD16)',
+    ar: 'Torque Converter Assembly (SD16)',
+    it: 'Torque Converter Assembly (SD16)',
     es: 'Torque Converter Assembly (SD16)',
     fr: 'Torque Converter Assembly (SD16)',
     de: 'Torque Converter Assembly (SD16)',
@@ -613,6 +731,8 @@ export const shantuiNameTranslations = {
   'Torque Converter Assembly (SD22)': {
     en: 'Torque Converter Assembly (SD22)',
     zh: 'Torque Converter Assembly (SD22)',
+    ar: 'Torque Converter Assembly (SD22)',
+    it: 'Torque Converter Assembly (SD22)',
     es: 'Torque Converter Assembly (SD22)',
     fr: 'Torque Converter Assembly (SD22)',
     de: 'Torque Converter Assembly (SD22)',
@@ -625,6 +745,8 @@ export const shantuiNameTranslations = {
   'Torque Converter Cooler': {
     en: 'Torque Converter Cooler',
     zh: 'Torque Converter Cooler',
+    ar: 'Torque Converter Cooler',
+    it: 'Torque Converter Cooler',
     es: 'Torque Converter Cooler',
     fr: 'Torque Converter Cooler',
     de: 'Torque Converter Cooler',
@@ -637,6 +759,8 @@ export const shantuiNameTranslations = {
   'Steering Clutch Assembly': {
     en: 'Steering Clutch Assembly',
     zh: 'Steering Clutch Assembly',
+    ar: 'Steering Clutch Assembly',
+    it: 'Steering Clutch Assembly',
     es: 'Steering Clutch Assembly',
     fr: 'Steering Clutch Assembly',
     de: 'Steering Clutch Assembly',
@@ -649,6 +773,8 @@ export const shantuiNameTranslations = {
   'Steering Brake Band': {
     en: 'Steering Brake Band',
     zh: 'Steering Brake Band',
+    ar: 'Steering Brake Band',
+    it: 'Steering Brake Band',
     es: 'Steering Brake Band',
     fr: 'Steering Brake Band',
     de: 'Steering Brake Band',
@@ -661,6 +787,8 @@ export const shantuiNameTranslations = {
   'Steering Valve Body': {
     en: 'Steering Valve Body',
     zh: 'Steering Valve Body',
+    ar: 'Steering Valve Body',
+    it: 'Steering Valve Body',
     es: 'Steering Valve Body',
     fr: 'Steering Valve Body',
     de: 'Steering Valve Body',
@@ -673,6 +801,8 @@ export const shantuiNameTranslations = {
   'Steering Pump Assembly': {
     en: 'Steering Pump Assembly',
     zh: 'Steering Pump Assembly',
+    ar: 'Steering Pump Assembly',
+    it: 'Steering Pump Assembly',
     es: 'Steering Pump Assembly',
     fr: 'Steering Pump Assembly',
     de: 'Steering Pump Assembly',
@@ -685,6 +815,8 @@ export const shantuiNameTranslations = {
   'Transmission Pump Assembly': {
     en: 'Transmission Pump Assembly',
     zh: 'Transmission Pump Assembly',
+    ar: 'Transmission Pump Assembly',
+    it: 'Transmission Pump Assembly',
     es: 'Transmission Pump Assembly',
     fr: 'Transmission Pump Assembly',
     de: 'Transmission Pump Assembly',
@@ -697,6 +829,8 @@ export const shantuiNameTranslations = {
   'Transmission Control Valve': {
     en: 'Transmission Control Valve',
     zh: 'Transmission Control Valve',
+    ar: 'Transmission Control Valve',
+    it: 'Transmission Control Valve',
     es: 'Transmission Control Valve',
     fr: 'Transmission Control Valve',
     de: 'Transmission Control Valve',
@@ -709,6 +843,8 @@ export const shantuiNameTranslations = {
   'Track Chain Assembly (SD16)': {
     en: 'Track Chain Assembly (SD16)',
     zh: 'Track Chain Assembly (SD16)',
+    ar: 'Track Chain Assembly (SD16)',
+    it: 'Track Chain Assembly (SD16)',
     es: 'Track Chain Assembly (SD16)',
     fr: 'Track Chain Assembly (SD16)',
     de: 'Track Chain Assembly (SD16)',
@@ -721,6 +857,8 @@ export const shantuiNameTranslations = {
   'Track Chain Assembly (SD22)': {
     en: 'Track Chain Assembly (SD22)',
     zh: 'Track Chain Assembly (SD22)',
+    ar: 'Track Chain Assembly (SD22)',
+    it: 'Track Chain Assembly (SD22)',
     es: 'Track Chain Assembly (SD22)',
     fr: 'Track Chain Assembly (SD22)',
     de: 'Track Chain Assembly (SD22)',
@@ -733,6 +871,8 @@ export const shantuiNameTranslations = {
   'Track Chain Assembly (SD32)': {
     en: 'Track Chain Assembly (SD32)',
     zh: 'Track Chain Assembly (SD32)',
+    ar: 'Track Chain Assembly (SD32)',
+    it: 'Track Chain Assembly (SD32)',
     es: 'Track Chain Assembly (SD32)',
     fr: 'Track Chain Assembly (SD32)',
     de: 'Track Chain Assembly (SD32)',
@@ -745,6 +885,8 @@ export const shantuiNameTranslations = {
   'Front Idler Wheel Assembly (SD22)': {
     en: 'Front Idler Wheel Assembly (SD22)',
     zh: 'Front Idler Wheel Assembly (SD22)',
+    ar: 'بكرة التوجيه الأمامية',
+    it: 'Rullo di guida anteriore',
     es: 'Front Idler Wheel Assembly (SD22)',
     fr: 'Front Idler Wheel Assembly (SD22)',
     de: 'Front Idler Wheel Assembly (SD22)',
@@ -757,6 +899,8 @@ export const shantuiNameTranslations = {
   'Track Guide Wheel/Carrier Roller (SD16)': {
     en: 'Track Guide Wheel/Carrier Roller (SD16)',
     zh: 'Track Guide Wheel/Carrier Roller (SD16)',
+    ar: 'أسطوانة ناقلة',
+    it: 'Rullo portatore',
     es: 'Track Guide Wheel/Carrier Roller (SD16)',
     fr: 'Track Guide Wheel/Carrier Roller (SD16)',
     de: 'Track Guide Wheel/Carrier Roller (SD16)',
@@ -769,6 +913,8 @@ export const shantuiNameTranslations = {
   'Single-Sided Support Wheel (SD16)': {
     en: 'Single-Sided Support Wheel (SD16)',
     zh: 'Single-Sided Support Wheel (SD16)',
+    ar: 'Single-Sided Support Wheel (SD16)',
+    it: 'Single-Sided Support Wheel (SD16)',
     es: 'Single-Sided Support Wheel (SD16)',
     fr: 'Single-Sided Support Wheel (SD16)',
     de: 'Single-Sided Support Wheel (SD16)',
@@ -781,6 +927,8 @@ export const shantuiNameTranslations = {
   'Double-Sided Support Wheel (SD16)': {
     en: 'Double-Sided Support Wheel (SD16)',
     zh: 'Double-Sided Support Wheel (SD16)',
+    ar: 'Double-Sided Support Wheel (SD16)',
+    it: 'Double-Sided Support Wheel (SD16)',
     es: 'Double-Sided Support Wheel (SD16)',
     fr: 'Double-Sided Support Wheel (SD16)',
     de: 'Double-Sided Support Wheel (SD16)',
@@ -793,6 +941,8 @@ export const shantuiNameTranslations = {
   'Track Shoe/Wetland Track Shoe Bolt (72 Long)': {
     en: 'Track Shoe/Wetland Track Shoe Bolt (72 Long)',
     zh: 'Track Shoe/Wetland Track Shoe Bolt (72 Long)',
+    ar: 'Track Shoe/Wetland Track Shoe Bolt (72 Long)',
+    it: 'Track Shoe/Wetland Track Shoe Bolt (72 Long)',
     es: 'Track Shoe/Wetland Track Shoe Bolt (72 Long)',
     fr: 'Track Shoe/Wetland Track Shoe Bolt (72 Long)',
     de: 'Track Shoe/Wetland Track Shoe Bolt (72 Long)',
@@ -805,6 +955,8 @@ export const shantuiNameTranslations = {
   'Track Shoe Bolt/Drive Sprocket Bolt': {
     en: 'Track Shoe Bolt/Drive Sprocket Bolt',
     zh: 'Track Shoe Bolt/Drive Sprocket Bolt',
+    ar: 'Track Shoe Bolt/Drive Sprocket Bolt',
+    it: 'Track Shoe Bolt/Drive Sprocket Bolt',
     es: 'Track Shoe Bolt/Drive Sprocket Bolt',
     fr: 'Track Shoe Bolt/Drive Sprocket Bolt',
     de: 'Track Shoe Bolt/Drive Sprocket Bolt',
@@ -817,6 +969,8 @@ export const shantuiNameTranslations = {
   'Dozer Blade Assembly': {
     en: 'Dozer Blade Assembly',
     zh: 'Dozer Blade Assembly',
+    ar: 'Dozer Blade Assembly',
+    it: 'Dozer Blade Assembly',
     es: 'Dozer Blade Assembly',
     fr: 'Dozer Blade Assembly',
     de: 'Dozer Blade Assembly',
@@ -829,6 +983,8 @@ export const shantuiNameTranslations = {
   'Cutting Edge/End Bit': {
     en: 'Cutting Edge/End Bit',
     zh: 'Cutting Edge/End Bit',
+    ar: 'Cutting Edge/End Bit',
+    it: 'Cutting Edge/End Bit',
     es: 'Cutting Edge/End Bit',
     fr: 'Cutting Edge/End Bit',
     de: 'Cutting Edge/End Bit',
@@ -841,6 +997,8 @@ export const shantuiNameTranslations = {
   'End Bit (Right)': {
     en: 'End Bit (Right)',
     zh: 'End Bit (Right)',
+    ar: 'End Bit (Right)',
+    it: 'End Bit (Right)',
     es: 'End Bit (Right)',
     fr: 'End Bit (Right)',
     de: 'End Bit (Right)',
@@ -853,6 +1011,8 @@ export const shantuiNameTranslations = {
   'Ripper Shank': {
     en: 'Ripper Shank',
     zh: 'Ripper Shank',
+    ar: 'Ripper Shank',
+    it: 'Ripper Shank',
     es: 'Ripper Shank',
     fr: 'Ripper Shank',
     de: 'Ripper Shank',
@@ -865,6 +1025,8 @@ export const shantuiNameTranslations = {
   'Drive Sprocket Segment': {
     en: 'Drive Sprocket Segment',
     zh: 'Drive Sprocket Segment',
+    ar: 'Drive Sprocket Segment',
+    it: 'Drive Sprocket Segment',
     es: 'Drive Sprocket Segment',
     fr: 'Drive Sprocket Segment',
     de: 'Drive Sprocket Segment',
@@ -877,6 +1039,8 @@ export const shantuiNameTranslations = {
   'Universal Joint Assembly': {
     en: 'Universal Joint Assembly',
     zh: 'Universal Joint Assembly',
+    ar: 'Universal Joint Assembly',
+    it: 'Universal Joint Assembly',
     es: 'Universal Joint Assembly',
     fr: 'Universal Joint Assembly',
     de: 'Universal Joint Assembly',
@@ -889,6 +1053,8 @@ export const shantuiNameTranslations = {
   'Hydraulic Lift Cylinder Repair Kit': {
     en: 'Hydraulic Lift Cylinder Repair Kit',
     zh: 'Hydraulic Lift Cylinder Repair Kit',
+    ar: 'Hydraulic Lift Cylinder Repair Kit',
+    it: 'Hydraulic Lift Cylinder Repair Kit',
     es: 'Hydraulic Lift Cylinder Repair Kit',
     fr: 'Hydraulic Lift Cylinder Repair Kit',
     de: 'Hydraulic Lift Cylinder Repair Kit',
@@ -901,6 +1067,8 @@ export const shantuiNameTranslations = {
   'Radiator Assembly': {
     en: 'Radiator Assembly',
     zh: 'Radiator Assembly',
+    ar: 'Radiator Assembly',
+    it: 'Radiator Assembly',
     es: 'Radiator Assembly',
     fr: 'Radiator Assembly',
     de: 'Radiator Assembly',
@@ -913,6 +1081,8 @@ export const shantuiNameTranslations = {
   'Cooling Fan Assembly': {
     en: 'Cooling Fan Assembly',
     zh: 'Cooling Fan Assembly',
+    ar: 'Cooling Fan Assembly',
+    it: 'Cooling Fan Assembly',
     es: 'Cooling Fan Assembly',
     fr: 'Cooling Fan Assembly',
     de: 'Cooling Fan Assembly',
@@ -925,6 +1095,8 @@ export const shantuiNameTranslations = {
   'King Pin': {
     en: 'King Pin',
     zh: 'King Pin',
+    ar: 'King Pin',
+    it: 'King Pin',
     es: 'King Pin',
     fr: 'King Pin',
     de: 'King Pin',
@@ -937,6 +1109,8 @@ export const shantuiNameTranslations = {
   'Final Drive Skeleton Oil Seal': {
     en: 'Final Drive Skeleton Oil Seal',
     zh: 'Final Drive Skeleton Oil Seal',
+    ar: 'Final Drive Skeleton Oil Seal',
+    it: 'Final Drive Skeleton Oil Seal',
     es: 'Final Drive Skeleton Oil Seal',
     fr: 'Final Drive Skeleton Oil Seal',
     de: 'Final Drive Skeleton Oil Seal',
@@ -957,6 +1131,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'Shantui part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Shantui part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '山推零件。500-1000小时或视油液检测结果更换',
+    ar: 'Shantui part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Shantui part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Shantui. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Shantui. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Shantui-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -969,6 +1145,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace during maintenance every 250-500 hours.': {
     en: 'SHANTUI part. Replace during maintenance every 250-500 hours.',
     zh: 'SHANTUI part. Replace during maintenance every 250-500 hours.',
+    ar: 'SHANTUI part. Replace during maintenance every 250-500 hours.',
+    it: 'SHANTUI part. Replace during maintenance every 250-500 hours.',
     es: 'SHANTUI part. Replace during maintenance every 250-500 hours.',
     fr: 'SHANTUI part. Replace during maintenance every 250-500 hours.',
     de: 'SHANTUI part. Replace during maintenance every 250-500 hours.',
@@ -981,6 +1159,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.': {
     en: 'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.',
     zh: 'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.',
+    ar: 'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.',
+    it: 'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.',
     es: 'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.',
     fr: 'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.',
     de: 'SHANTUI part. Replace every 250-500 hours, shorten in rainy season/poor quality oil.',
@@ -993,6 +1173,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace every 250-500 hours.': {
     en: 'SHANTUI part. Replace every 250-500 hours.',
     zh: 'SHANTUI part. Replace every 250-500 hours.',
+    ar: 'SHANTUI part. Replace every 250-500 hours.',
+    it: 'SHANTUI part. Replace every 250-500 hours.',
     es: 'SHANTUI part. Replace every 250-500 hours.',
     fr: 'SHANTUI part. Replace every 250-500 hours.',
     de: 'SHANTUI part. Replace every 250-500 hours.',
@@ -1005,6 +1187,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace every 250-500 hours or based on dust environment.': {
     en: 'SHANTUI part. Replace every 250-500 hours or based on dust environment.',
     zh: 'SHANTUI part. Replace every 250-500 hours or based on dust environment.',
+    ar: 'SHANTUI part. Replace every 250-500 hours or based on dust environment.',
+    it: 'SHANTUI part. Replace every 250-500 hours or based on dust environment.',
     es: 'SHANTUI part. Replace every 250-500 hours or based on dust environment.',
     fr: 'SHANTUI part. Replace every 250-500 hours or based on dust environment.',
     de: 'SHANTUI part. Replace every 250-500 hours or based on dust environment.',
@@ -1017,6 +1201,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace every 500-1000 hours.': {
     en: 'SHANTUI part. Replace every 500-1000 hours.',
     zh: 'SHANTUI part. Replace every 500-1000 hours.',
+    ar: 'SHANTUI part. Replace every 500-1000 hours.',
+    it: 'SHANTUI part. Replace every 500-1000 hours.',
     es: 'SHANTUI part. Replace every 500-1000 hours.',
     fr: 'SHANTUI part. Replace every 500-1000 hours.',
     de: 'SHANTUI part. Replace every 500-1000 hours.',
@@ -1029,6 +1215,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.': {
     en: 'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.',
     zh: 'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.',
+    ar: 'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.',
+    it: 'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.',
     es: 'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.',
     fr: 'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.',
     de: 'SHANTUI part. Replace every 500-1000 hours or based on fluid analysis.',
@@ -1041,6 +1229,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when abnormal charging/noise occurs.': {
     en: 'SHANTUI part. Replace when abnormal charging/noise occurs.',
     zh: 'SHANTUI part. Replace when abnormal charging/noise occurs.',
+    ar: 'SHANTUI part. Replace when abnormal charging/noise occurs.',
+    it: 'SHANTUI part. Replace when abnormal charging/noise occurs.',
     es: 'SHANTUI part. Replace when abnormal charging/noise occurs.',
     fr: 'SHANTUI part. Replace when abnormal charging/noise occurs.',
     de: 'SHANTUI part. Replace when abnormal charging/noise occurs.',
@@ -1053,6 +1243,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).': {
     en: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).',
     zh: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).',
+    ar: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).',
+    it: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).',
     es: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).',
     fr: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).',
     de: 'SHANTUI part. Replace when abnormal noise/transmission efficiency drops (major repair).',
@@ -1065,6 +1257,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.': {
     en: 'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.',
     zh: 'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.',
+    ar: 'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.',
+    it: 'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.',
     es: 'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.',
     fr: 'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.',
     de: 'SHANTUI part. Replace when poor heat dissipation/transmission oil temperature is too high.',
@@ -1077,6 +1271,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when steering noise/slippage occurs (major repair).': {
     en: 'SHANTUI part. Replace when steering noise/slippage occurs (major repair).',
     zh: 'SHANTUI part. Replace when steering noise/slippage occurs (major repair).',
+    ar: 'SHANTUI part. Replace when steering noise/slippage occurs (major repair).',
+    it: 'SHANTUI part. Replace when steering noise/slippage occurs (major repair).',
     es: 'SHANTUI part. Replace when steering noise/slippage occurs (major repair).',
     fr: 'SHANTUI part. Replace when steering noise/slippage occurs (major repair).',
     de: 'SHANTUI part. Replace when steering noise/slippage occurs (major repair).',
@@ -1089,6 +1285,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when braking effect drops/noise occurs.': {
     en: 'SHANTUI part. Replace when braking effect drops/noise occurs.',
     zh: 'SHANTUI part. Replace when braking effect drops/noise occurs.',
+    ar: 'SHANTUI part. Replace when braking effect drops/noise occurs.',
+    it: 'SHANTUI part. Replace when braking effect drops/noise occurs.',
     es: 'SHANTUI part. Replace when braking effect drops/noise occurs.',
     fr: 'SHANTUI part. Replace when braking effect drops/noise occurs.',
     de: 'SHANTUI part. Replace when braking effect drops/noise occurs.',
@@ -1101,6 +1299,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when steering abnormal/stuck occurs.': {
     en: 'SHANTUI part. Replace when steering abnormal/stuck occurs.',
     zh: 'SHANTUI part. Replace when steering abnormal/stuck occurs.',
+    ar: 'SHANTUI part. Replace when steering abnormal/stuck occurs.',
+    it: 'SHANTUI part. Replace when steering abnormal/stuck occurs.',
     es: 'SHANTUI part. Replace when steering abnormal/stuck occurs.',
     fr: 'SHANTUI part. Replace when steering abnormal/stuck occurs.',
     de: 'SHANTUI part. Replace when steering abnormal/stuck occurs.',
@@ -1113,6 +1313,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when steering heavy/noise occurs.': {
     en: 'SHANTUI part. Replace when steering heavy/noise occurs.',
     zh: 'SHANTUI part. Replace when steering heavy/noise occurs.',
+    ar: 'SHANTUI part. Replace when steering heavy/noise occurs.',
+    it: 'SHANTUI part. Replace when steering heavy/noise occurs.',
     es: 'SHANTUI part. Replace when steering heavy/noise occurs.',
     fr: 'SHANTUI part. Replace when steering heavy/noise occurs.',
     de: 'SHANTUI part. Replace when steering heavy/noise occurs.',
@@ -1125,6 +1327,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.': {
     en: 'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.',
     zh: 'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.',
+    ar: 'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.',
+    it: 'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.',
     es: 'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.',
     fr: 'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.',
     de: 'SHANTUI part. Replace when abnormal noise/insufficient oil supply occurs.',
@@ -1137,6 +1341,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when abnormal shift occurs.': {
     en: 'SHANTUI part. Replace when abnormal shift occurs.',
     zh: 'SHANTUI part. Replace when abnormal shift occurs.',
+    ar: 'SHANTUI part. Replace when abnormal shift occurs.',
+    it: 'SHANTUI part. Replace when abnormal shift occurs.',
     es: 'SHANTUI part. Replace when abnormal shift occurs.',
     fr: 'SHANTUI part. Replace when abnormal shift occurs.',
     de: 'SHANTUI part. Replace when abnormal shift occurs.',
@@ -1149,6 +1355,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).': {
     en: 'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).',
     zh: 'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).',
+    ar: 'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).',
+    it: 'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).',
     es: 'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).',
     fr: 'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).',
     de: 'SHANTUI part. Replace when track slack/wear exceeds limit (major repair, high-value item).',
@@ -1161,6 +1369,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when wear/noise occurs.': {
     en: 'SHANTUI part. Replace when wear/noise occurs.',
     zh: 'SHANTUI part. Replace when wear/noise occurs.',
+    ar: 'SHANTUI part. Replace when wear/noise occurs.',
+    it: 'SHANTUI part. Replace when wear/noise occurs.',
     es: 'SHANTUI part. Replace when wear/noise occurs.',
     fr: 'SHANTUI part. Replace when wear/noise occurs.',
     de: 'SHANTUI part. Replace when wear/noise occurs.',
@@ -1173,6 +1383,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when leaking/wear occurs.': {
     en: 'SHANTUI part. Replace when leaking/wear occurs.',
     zh: 'SHANTUI part. Replace when leaking/wear occurs.',
+    ar: 'SHANTUI part. Replace when leaking/wear occurs.',
+    it: 'SHANTUI part. Replace when leaking/wear occurs.',
     es: 'SHANTUI part. Replace when leaking/wear occurs.',
     fr: 'SHANTUI part. Replace when leaking/wear occurs.',
     de: 'SHANTUI part. Replace when leaking/wear occurs.',
@@ -1185,6 +1397,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace with track shoe.': {
     en: 'SHANTUI part. Replace with track shoe.',
     zh: 'SHANTUI part. Replace with track shoe.',
+    ar: 'SHANTUI part. Replace with track shoe.',
+    it: 'SHANTUI part. Replace with track shoe.',
     es: 'SHANTUI part. Replace with track shoe.',
     fr: 'SHANTUI part. Replace with track shoe.',
     de: 'SHANTUI part. Replace with track shoe.',
@@ -1197,6 +1411,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace simultaneously with component replacement.': {
     en: 'SHANTUI part. Replace simultaneously with component replacement.',
     zh: 'SHANTUI part. Replace simultaneously with component replacement.',
+    ar: 'SHANTUI part. Replace simultaneously with component replacement.',
+    it: 'SHANTUI part. Replace simultaneously with component replacement.',
     es: 'SHANTUI part. Replace simultaneously with component replacement.',
     fr: 'SHANTUI part. Replace simultaneously with component replacement.',
     de: 'SHANTUI part. Replace simultaneously with component replacement.',
@@ -1209,6 +1425,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when wear reaches bottom/deformation occurs.': {
     en: 'SHANTUI part. Replace when wear reaches bottom/deformation occurs.',
     zh: 'SHANTUI part. Replace when wear reaches bottom/deformation occurs.',
+    ar: 'SHANTUI part. Replace when wear reaches bottom/deformation occurs.',
+    it: 'SHANTUI part. Replace when wear reaches bottom/deformation occurs.',
     es: 'SHANTUI part. Replace when wear reaches bottom/deformation occurs.',
     fr: 'SHANTUI part. Replace when wear reaches bottom/deformation occurs.',
     de: 'SHANTUI part. Replace when wear reaches bottom/deformation occurs.',
@@ -1221,6 +1439,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.': {
     en: 'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.',
     zh: 'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.',
+    ar: 'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.',
+    it: 'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.',
     es: 'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.',
     fr: 'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.',
     de: 'SHANTUI part. Replace when wear reaches bottom. High-frequency wear part for bulldozers.',
@@ -1233,6 +1453,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when wear/breakage occurs.': {
     en: 'SHANTUI part. Replace when wear/breakage occurs.',
     zh: 'SHANTUI part. Replace when wear/breakage occurs.',
+    ar: 'SHANTUI part. Replace when wear/breakage occurs.',
+    it: 'SHANTUI part. Replace when wear/breakage occurs.',
     es: 'SHANTUI part. Replace when wear/breakage occurs.',
     fr: 'SHANTUI part. Replace when wear/breakage occurs.',
     de: 'SHANTUI part. Replace when wear/breakage occurs.',
@@ -1245,6 +1467,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).': {
     en: 'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).',
     zh: 'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).',
+    ar: 'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).',
+    it: 'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).',
     es: 'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).',
     fr: 'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).',
     de: 'SHANTUI part. Replace when tooth wear/breakage occurs (major repair, high-value item).',
@@ -1257,6 +1481,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when abnormal noise/vibration occurs.': {
     en: 'SHANTUI part. Replace when abnormal noise/vibration occurs.',
     zh: 'SHANTUI part. Replace when abnormal noise/vibration occurs.',
+    ar: 'SHANTUI part. Replace when abnormal noise/vibration occurs.',
+    it: 'SHANTUI part. Replace when abnormal noise/vibration occurs.',
     es: 'SHANTUI part. Replace when abnormal noise/vibration occurs.',
     fr: 'SHANTUI part. Replace when abnormal noise/vibration occurs.',
     de: 'SHANTUI part. Replace when abnormal noise/vibration occurs.',
@@ -1269,6 +1495,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when leaking/seal aging occurs.': {
     en: 'SHANTUI part. Replace when leaking/seal aging occurs.',
     zh: 'SHANTUI part. Replace when leaking/seal aging occurs.',
+    ar: 'SHANTUI part. Replace when leaking/seal aging occurs.',
+    it: 'SHANTUI part. Replace when leaking/seal aging occurs.',
     es: 'SHANTUI part. Replace when leaking/seal aging occurs.',
     fr: 'SHANTUI part. Replace when leaking/seal aging occurs.',
     de: 'SHANTUI part. Replace when leaking/seal aging occurs.',
@@ -1281,6 +1509,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when overheating/leaking occurs.': {
     en: 'SHANTUI part. Replace when overheating/leaking occurs.',
     zh: 'SHANTUI part. Replace when overheating/leaking occurs.',
+    ar: 'SHANTUI part. Replace when overheating/leaking occurs.',
+    it: 'SHANTUI part. Replace when overheating/leaking occurs.',
     es: 'SHANTUI part. Replace when overheating/leaking occurs.',
     fr: 'SHANTUI part. Replace when overheating/leaking occurs.',
     de: 'SHANTUI part. Replace when overheating/leaking occurs.',
@@ -1293,6 +1523,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when abnormal noise/blade breakage occurs.': {
     en: 'SHANTUI part. Replace when abnormal noise/blade breakage occurs.',
     zh: 'SHANTUI part. Replace when abnormal noise/blade breakage occurs.',
+    ar: 'SHANTUI part. Replace when abnormal noise/blade breakage occurs.',
+    it: 'SHANTUI part. Replace when abnormal noise/blade breakage occurs.',
     es: 'SHANTUI part. Replace when abnormal noise/blade breakage occurs.',
     fr: 'SHANTUI part. Replace when abnormal noise/blade breakage occurs.',
     de: 'SHANTUI part. Replace when abnormal noise/blade breakage occurs.',
@@ -1305,6 +1537,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when steering noise/excessive clearance occurs.': {
     en: 'SHANTUI part. Replace when steering noise/excessive clearance occurs.',
     zh: 'SHANTUI part. Replace when steering noise/excessive clearance occurs.',
+    ar: 'SHANTUI part. Replace when steering noise/excessive clearance occurs.',
+    it: 'SHANTUI part. Replace when steering noise/excessive clearance occurs.',
     es: 'SHANTUI part. Replace when steering noise/excessive clearance occurs.',
     fr: 'SHANTUI part. Replace when steering noise/excessive clearance occurs.',
     de: 'SHANTUI part. Replace when steering noise/excessive clearance occurs.',
@@ -1317,6 +1551,8 @@ export const shantuiDescriptionTranslations: Record<string, Record<string, strin
   'SHANTUI part. Replace when leaking occurs (major repair).': {
     en: 'SHANTUI part. Replace when leaking occurs (major repair).',
     zh: 'SHANTUI part. Replace when leaking occurs (major repair).',
+    ar: 'SHANTUI part. Replace when leaking occurs (major repair).',
+    it: 'SHANTUI part. Replace when leaking occurs (major repair).',
     es: 'SHANTUI part. Replace when leaking occurs (major repair).',
     fr: 'SHANTUI part. Replace when leaking occurs (major repair).',
     de: 'SHANTUI part. Replace when leaking occurs (major repair).',
@@ -1345,6 +1581,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
+    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -1357,6 +1594,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
+    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -1369,6 +1607,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
+    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -1381,6 +1620,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
+    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -1393,6 +1633,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
+    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -1405,6 +1646,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
+    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -1417,6 +1659,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
+    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -1429,6 +1672,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
+    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -1441,6 +1685,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
+    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -1453,6 +1698,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
+    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -1465,6 +1711,7 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
+    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

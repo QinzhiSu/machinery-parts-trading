@@ -11,6 +11,8 @@ export const komatsuNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Air Filter(外芯)': {
     en: 'Air Filter',
@@ -21,6 +23,8 @@ export const komatsuNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Diesel Filter': {
     en: 'Diesel Filter',
@@ -31,6 +35,8 @@ export const komatsuNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter(新款7/8系)': {
     en: 'Diesel Filter',
@@ -41,6 +47,8 @@ export const komatsuNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Diesel Filter(通用型)': {
     en: 'Diesel Filter',
@@ -51,6 +59,8 @@ export const komatsuNameTranslations = {
     ru: 'Дизельный фильтр',
     ja: 'ディーゼルフィルター',
     zh: 'Diesel Filter',
+    ar: 'مرشح الديزل',
+    it: 'Filtro diesel',
   },
   'Hydraulic Oil Filter': {
     en: 'Hydraulic Oil Filter',
@@ -61,6 +71,8 @@ export const komatsuNameTranslations = {
     ru: 'Гидравлический масляный фильтр',
     ja: '油圧オイルフィルター',
     zh: 'Hydraulic Oil Filter',
+    ar: 'مرشح الزيت الهيدروليكي',
+    it: 'Filtro olio idraulico',
   },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -71,6 +83,8 @@ export const komatsuNameTranslations = {
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: 'Maintenance/Filtration System',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -81,6 +95,8 @@ export const komatsuNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Oil Filter(6D102发动机)': {
     en: 'Oil Filter',
@@ -91,6 +107,8 @@ export const komatsuNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   '上托轮(Carrier Roller,PC400-7参考)': {
     en: '上托轮(Carrier Roller,PC400-7参考)',
@@ -101,6 +119,8 @@ export const komatsuNameTranslations = {
     ru: '上托轮(Carrier Roller,PC400-7参考)',
     ja: '上托轮(Carrier Roller,PC400-7参考)',
     zh: '上托轮(Carrier Roller,PC400-7参考)',
+    ar: 'أسطوانة ناقلة',
+    it: 'Rullo portatore',
   },
   '下托链轮(Track Roller,PC300-7参考)': {
     en: '下托链轮(Track Roller,PC300-7参考)',
@@ -111,6 +131,8 @@ export const komatsuNameTranslations = {
     ru: '下托链轮(Track Roller,PC300-7参考)',
     ja: '下托链轮(Track Roller,PC300-7参考)',
     zh: '下托链轮(Track Roller,PC300-7参考)',
+    ar: 'أسطوانة المسار',
+    it: 'Rullo cingolato',
   },
   '主液压泵(型号2)': {
     en: '主液压泵(型号2)',
@@ -121,6 +143,8 @@ export const komatsuNameTranslations = {
     ru: '主液压泵(型号2)',
     ja: '主液压泵(型号2)',
     zh: '主液压泵(型号2)',
+    ar: '主液压泵(型号2)',
+    it: '主液压泵(型号2)',
   },
   '主液压泵总成': {
     en: '主液压泵总成',
@@ -131,6 +155,8 @@ export const komatsuNameTranslations = {
     ru: '主液压泵总成',
     ja: '主液压泵总成',
     zh: '主液压泵总成',
+    ar: '主液压泵总成',
+    it: '主液压泵总成',
   },
   '先导液压滤芯': {
     en: '先导液压滤芯',
@@ -141,6 +167,8 @@ export const komatsuNameTranslations = {
     ru: '先导液压滤芯',
     ja: '先导液压滤芯',
     zh: '先导液压滤芯',
+    ar: '先导液压滤芯',
+    it: '先导液压滤芯',
   },
   '回转(转台)马达总成': {
     en: '回转(转台)马达总成',
@@ -151,6 +179,8 @@ export const komatsuNameTranslations = {
     ru: '回转(转台)马达总成',
     ja: '回转(转台)马达总成',
     zh: '回转(转台)马达总成',
+    ar: '回转(转台)马达总成',
+    it: '回转(转台)马达总成',
   },
   '安全阀(溢流阀)': {
     en: '安全阀(溢流阀)',
@@ -161,6 +191,8 @@ export const komatsuNameTranslations = {
     ru: '安全阀(溢流阀)',
     ja: '安全阀(溢流阀)',
     zh: '安全阀(溢流阀)',
+    ar: '安全阀(溢流阀)',
+    it: '安全阀(溢流阀)',
   },
   '履带板总成': {
     en: '履带板总成',
@@ -171,6 +203,8 @@ export const komatsuNameTranslations = {
     ru: '履带板总成',
     ja: '履带板总成',
     zh: '履带板总成',
+    ar: '履带板总成',
+    it: '履带板总成',
   },
   '底盘/履带系统': {
     en: '底盘/履带系统',
@@ -181,6 +215,8 @@ export const komatsuNameTranslations = {
     ru: '底盘/履带系统',
     ja: '底盘/履带系统',
     zh: '底盘/履带系统',
+    ar: '底盘/履带系统',
+    it: '底盘/履带系统',
   },
   '挖掘属性/GET': {
     en: '挖掘属性/GET',
@@ -191,6 +227,8 @@ export const komatsuNameTranslations = {
     ru: '挖掘属性/GET',
     ja: '挖掘属性/GET',
     zh: '挖掘属性/GET',
+    ar: '挖掘属性/GET',
+    it: '挖掘属性/GET',
   },
   '斗齿锁定销': {
     en: '斗齿锁定销',
@@ -201,6 +239,8 @@ export const komatsuNameTranslations = {
     ru: '斗齿锁定销',
     ja: '斗齿锁定销',
     zh: '斗齿锁定销',
+    ar: '斗齿锁定销',
+    it: '斗齿锁定销',
   },
   '液压系统': {
     en: '液压系统',
@@ -211,6 +251,8 @@ export const komatsuNameTranslations = {
     ru: '液压系统',
     ja: '液压系统',
     zh: '液压系统',
+    ar: '液压系统',
+    it: '液压系统',
   },
   '点火钥匙开关(老款)': {
     en: '点火钥匙开关(老款)',
@@ -221,6 +263,8 @@ export const komatsuNameTranslations = {
     ru: '点火钥匙开关(老款)',
     ja: '点火钥匙开关(老款)',
     zh: '点火钥匙开关(老款)',
+    ar: '点火钥匙开关(老款)',
+    it: '点火钥匙开关(老款)',
   },
   '点火钥匙开关总成': {
     en: '点火钥匙开关总成',
@@ -231,6 +275,8 @@ export const komatsuNameTranslations = {
     ru: '点火钥匙开关总成',
     ja: '点火钥匙开关总成',
     zh: '点火钥匙开关总成',
+    ar: '点火钥匙开关总成',
+    it: '点火钥匙开关总成',
   },
   '电气系统': {
     en: '电气系统',
@@ -241,6 +287,8 @@ export const komatsuNameTranslations = {
     ru: '电气系统',
     ja: '电气系统',
     zh: '电气系统',
+    ar: '电气系统',
+    it: '电气系统',
   },
   '铲斗斗齿(K25系列)': {
     en: '铲斗斗齿(K25系列)',
@@ -251,6 +299,8 @@ export const komatsuNameTranslations = {
     ru: '铲斗斗齿(K25系列)',
     ja: '铲斗斗齿(K25系列)',
     zh: '铲斗斗齿(K25系列)',
+    ar: '铲斗斗齿(K25系列)',
+    it: '铲斗斗齿(K25系列)',
   },
   '驱动链轮(7/8系)': {
     en: '驱动链轮(7/8系)',
@@ -261,6 +311,8 @@ export const komatsuNameTranslations = {
     ru: '驱动链轮(7/8系)',
     ja: '驱动链轮(7/8系)',
     zh: '驱动链轮(7/8系)',
+    ar: '驱动链轮(7/8系)',
+    it: '驱动链轮(7/8系)',
   },
   '驱动链轮(旧款)': {
     en: '驱动链轮(旧款)',
@@ -271,10 +323,14 @@ export const komatsuNameTranslations = {
     ru: '驱动链轮(旧款)',
     ja: '驱动链轮(旧款)',
     zh: '驱动链轮(旧款)',
+    ar: '驱动链轮(旧款)',
+    it: '驱动链轮(旧款)',
   },
   '柴油滤芯': {
     en: '柴油滤芯',
     zh: '柴油滤芯',
+    ar: '柴油滤芯',
+    it: '柴油滤芯',
     es: '柴油滤芯',
     fr: '柴油滤芯',
     de: '柴油滤芯',
@@ -287,6 +343,8 @@ export const komatsuNameTranslations = {
   '空气滤芯(外芯)': {
     en: '空气滤芯(外芯)',
     zh: '空气滤芯(外芯)',
+    ar: '空气滤芯(外芯)',
+    it: '空气滤芯(外芯)',
     es: '空气滤芯(外芯)',
     fr: '空气滤芯(外芯)',
     de: '空气滤芯(外芯)',
@@ -299,6 +357,8 @@ export const komatsuNameTranslations = {
   '空气滤芯(内芯)': {
     en: '空气滤芯(内芯)',
     zh: '空气滤芯(内芯)',
+    ar: '空气滤芯(内芯)',
+    it: '空气滤芯(内芯)',
     es: '空气滤芯(内芯)',
     fr: '空气滤芯(内芯)',
     de: '空气滤芯(内芯)',
@@ -311,6 +371,8 @@ export const komatsuNameTranslations = {
   '柴油滤芯(新款7/8系)': {
     en: '柴油滤芯(新款7/8系)',
     zh: '柴油滤芯(新款7/8系)',
+    ar: '柴油滤芯(新款7/8系)',
+    it: '柴油滤芯(新款7/8系)',
     es: '柴油滤芯(新款7/8系)',
     fr: '柴油滤芯(新款7/8系)',
     de: '柴油滤芯(新款7/8系)',
@@ -323,6 +385,8 @@ export const komatsuNameTranslations = {
   '柴油滤芯(通用型)': {
     en: '柴油滤芯(通用型)',
     zh: '柴油滤芯(通用型)',
+    ar: '柴油滤芯(通用型)',
+    it: '柴油滤芯(通用型)',
     es: '柴油滤芯(通用型)',
     fr: '柴油滤芯(通用型)',
     de: '柴油滤芯(通用型)',
@@ -335,6 +399,8 @@ export const komatsuNameTranslations = {
   '机油滤芯(6D102发动机)': {
     en: '机油滤芯(6D102发动机)',
     zh: '机油滤芯(6D102发动机)',
+    ar: '机油滤芯(6D102发动机)',
+    it: '机油滤芯(6D102发动机)',
     es: '机油滤芯(6D102发动机)',
     fr: '机油滤芯(6D102发动机)',
     de: '机油滤芯(6D102发动机)',
@@ -355,6 +421,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'Komatsu part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Komatsu part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '小松零件。500-1000小时或视油液检测结果更换',
+    ar: 'Komatsu part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Komatsu part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Komatsu. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Komatsu. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Komatsu-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -367,6 +435,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。250-500小时随保养更换': {
     en: 'KOMATSU 零件。250-500小时随保养更换',
     zh: 'KOMATSU 零件。250-500小时随保养更换',
+    ar: 'KOMATSU 零件。250-500小时随保养更换',
+    it: 'KOMATSU 零件。250-500小时随保养更换',
     es: 'KOMATSU 零件。250-500小时随保养更换',
     fr: 'KOMATSU 零件。250-500小时随保养更换',
     de: 'KOMATSU 零件。250-500小时随保养更换',
@@ -379,6 +449,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。250-500小时或视油品': {
     en: 'KOMATSU 零件。250-500小时或视油品',
     zh: 'KOMATSU 零件。250-500小时或视油品',
+    ar: 'KOMATSU 零件。250-500小时或视油品',
+    it: 'KOMATSU 零件。250-500小时或视油品',
     es: 'KOMATSU 零件。250-500小时或视油品',
     fr: 'KOMATSU 零件。250-500小时或视油品',
     de: 'KOMATSU 零件。250-500小时或视油品',
@@ -391,6 +463,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。250-500小时或视灰尘环境': {
     en: 'KOMATSU 零件。250-500小时或视灰尘环境',
     zh: 'KOMATSU 零件。250-500小时或视灰尘环境',
+    ar: 'KOMATSU 零件。250-500小时或视灰尘环境',
+    it: 'KOMATSU 零件。250-500小时或视灰尘环境',
     es: 'KOMATSU 零件。250-500小时或视灰尘环境',
     fr: 'KOMATSU 零件。250-500小时或视灰尘环境',
     de: 'KOMATSU 零件。250-500小时或视灰尘环境',
@@ -403,6 +477,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。随外芯周期同步更换': {
     en: 'KOMATSU 零件。随外芯周期同步更换',
     zh: 'KOMATSU 零件。随外芯周期同步更换',
+    ar: 'KOMATSU 零件。随外芯周期同步更换',
+    it: 'KOMATSU 零件。随外芯周期同步更换',
     es: 'KOMATSU 零件。随外芯周期同步更换',
     fr: 'KOMATSU 零件。随外芯周期同步更换',
     de: 'KOMATSU 零件。随外芯周期同步更换',
@@ -415,6 +491,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。500-1000小时或视油液检测': {
     en: 'KOMATSU 零件。500-1000小时或视油液检测',
     zh: 'KOMATSU 零件。500-1000小时或视油液检测',
+    ar: 'KOMATSU 零件。500-1000小时或视油液检测',
+    it: 'KOMATSU 零件。500-1000小时或视油液检测',
     es: 'KOMATSU 零件。500-1000小时或视油液检测',
     fr: 'KOMATSU 零件。500-1000小时或视油液检测',
     de: 'KOMATSU 零件。500-1000小时或视油液检测',
@@ -427,6 +505,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。500-1000小时': {
     en: 'KOMATSU 零件。500-1000小时',
     zh: 'KOMATSU 零件。500-1000小时',
+    ar: 'KOMATSU 零件。500-1000小时',
+    it: 'KOMATSU 零件。500-1000小时',
     es: 'KOMATSU 零件。500-1000小时',
     fr: 'KOMATSU 零件。500-1000小时',
     de: 'KOMATSU 零件。500-1000小时',
@@ -439,6 +519,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。250-500小时': {
     en: 'KOMATSU 零件。250-500小时',
     zh: 'KOMATSU 零件。250-500小时',
+    ar: 'KOMATSU 零件。250-500小时',
+    it: 'KOMATSU 零件。250-500小时',
     es: 'KOMATSU 零件。250-500小时',
     fr: 'KOMATSU 零件。250-500小时',
     de: 'KOMATSU 零件。250-500小时',
@@ -451,6 +533,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)': {
     en: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)',
     zh: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)',
+    ar: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)',
+    it: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)',
     es: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)',
     fr: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)',
     de: 'KOMATSU 零件。轮齿磨损/断齿时更换(大修类高价件)',
@@ -463,6 +547,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。磨损/断裂时更换(大修类高价件)': {
     en: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)',
     zh: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)',
+    ar: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)',
+    it: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)',
     es: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)',
     fr: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)',
     de: 'KOMATSU 零件。磨损/断裂时更换(大修类高价件)',
@@ -475,6 +561,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。漏油/磨损时更换': {
     en: 'KOMATSU 零件。漏油/磨损时更换',
     zh: 'KOMATSU 零件。漏油/磨损时更换',
+    ar: 'KOMATSU 零件。漏油/磨损时更换',
+    it: 'KOMATSU 零件。漏油/磨损时更换',
     es: 'KOMATSU 零件。漏油/磨损时更换',
     fr: 'KOMATSU 零件。漏油/磨损时更换',
     de: 'KOMATSU 零件。漏油/磨损时更换',
@@ -487,6 +575,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。磨损见底或断裂时更换,高频更换件': {
     en: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件',
     zh: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件',
+    ar: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件',
+    it: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件',
     es: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件',
     fr: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件',
     de: 'KOMATSU 零件。磨损见底或断裂时更换,高频更换件',
@@ -499,6 +589,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。随斗齿更换时同步更换': {
     en: 'KOMATSU 零件。随斗齿更换时同步更换',
     zh: 'KOMATSU 零件。随斗齿更换时同步更换',
+    ar: 'KOMATSU 零件。随斗齿更换时同步更换',
+    it: 'KOMATSU 零件。随斗齿更换时同步更换',
     es: 'KOMATSU 零件。随斗齿更换时同步更换',
     fr: 'KOMATSU 零件。随斗齿更换时同步更换',
     de: 'KOMATSU 零件。随斗齿更换时同步更换',
@@ -511,6 +603,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)': {
     en: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)',
     zh: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)',
+    ar: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)',
+    it: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)',
     es: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)',
     fr: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)',
     de: 'KOMATSU 零件。异响/供油不足/压力下降时更换(大修类高价件)',
@@ -523,6 +617,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。异响/供油不足时更换(大修类)': {
     en: 'KOMATSU 零件。异响/供油不足时更换(大修类)',
     zh: 'KOMATSU 零件。异响/供油不足时更换(大修类)',
+    ar: 'KOMATSU 零件。异响/供油不足时更换(大修类)',
+    it: 'KOMATSU 零件。异响/供油不足时更换(大修类)',
     es: 'KOMATSU 零件。异响/供油不足时更换(大修类)',
     fr: 'KOMATSU 零件。异响/供油不足时更换(大修类)',
     de: 'KOMATSU 零件。异响/供油不足时更换(大修类)',
@@ -535,6 +631,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)': {
     en: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)',
     zh: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)',
+    ar: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)',
+    it: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)',
     es: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)',
     fr: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)',
     de: 'KOMATSU 零件。转台异响/回转无力时更换(大修类高价件)',
@@ -547,6 +645,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。液压异常/压力不稳时更换': {
     en: 'KOMATSU 零件。液压异常/压力不稳时更换',
     zh: 'KOMATSU 零件。液压异常/压力不稳时更换',
+    ar: 'KOMATSU 零件。液压异常/压力不稳时更换',
+    it: 'KOMATSU 零件。液压异常/压力不稳时更换',
     es: 'KOMATSU 零件。液压异常/压力不稳时更换',
     fr: 'KOMATSU 零件。液压异常/压力不稳时更换',
     de: 'KOMATSU 零件。液压异常/压力不稳时更换',
@@ -559,6 +659,8 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   'KOMATSU 零件。钥匙磨损/开关失效时更换': {
     en: 'KOMATSU 零件。钥匙磨损/开关失效时更换',
     zh: 'KOMATSU 零件。钥匙磨损/开关失效时更换',
+    ar: 'KOMATSU 零件。钥匙磨损/开关失效时更换',
+    it: 'KOMATSU 零件。钥匙磨损/开关失效时更换',
     es: 'KOMATSU 零件。钥匙磨损/开关失效时更换',
     fr: 'KOMATSU 零件。钥匙磨损/开关失效时更换',
     de: 'KOMATSU 零件。钥匙磨损/开关失效时更换',
@@ -587,6 +689,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
+    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -599,6 +702,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
+    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -611,6 +715,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
+    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -623,6 +728,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
+    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -635,6 +741,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
+    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -647,6 +754,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
+    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -659,6 +767,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
+    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -671,6 +780,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
+    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -683,6 +793,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
+    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -695,6 +806,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
+    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -707,6 +819,7 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
+    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

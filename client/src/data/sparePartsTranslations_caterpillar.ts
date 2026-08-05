@@ -11,6 +11,8 @@ export const caterpillarNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Air Filter(外芯)': {
     en: 'Air Filter',
@@ -21,6 +23,8 @@ export const caterpillarNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Cooling System': {
     en: 'Cooling System',
@@ -31,6 +35,8 @@ export const caterpillarNameTranslations = {
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: 'Cooling System',
+    ar: 'نظام التبريد',
+    it: 'Sistema di raffreddamento',
   },
   'Hydraulic Oil Filter': {
     en: 'Hydraulic Oil Filter',
@@ -41,6 +47,8 @@ export const caterpillarNameTranslations = {
     ru: 'Гидравлический масляный фильтр',
     ja: '油圧オイルフィルター',
     zh: 'Hydraulic Oil Filter',
+    ar: 'مرشح الزيت الهيدروليكي',
+    it: 'Filtro olio idraulico',
   },
   'Hydraulic Oil Filter(新款)': {
     en: 'Oil Filter',
@@ -51,6 +59,8 @@ export const caterpillarNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Hydraulic Return Oil Filter': {
     en: 'Oil Filter',
@@ -61,6 +71,8 @@ export const caterpillarNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -71,6 +83,8 @@ export const caterpillarNameTranslations = {
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: 'Maintenance/Filtration System',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -81,6 +95,8 @@ export const caterpillarNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Oil Filter(新款)': {
     en: 'Oil Filter',
@@ -91,6 +107,8 @@ export const caterpillarNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Turbocharger': {
     en: 'Turbocharger',
@@ -101,6 +119,8 @@ export const caterpillarNameTranslations = {
     ru: 'Турбокомпрессор',
     ja: 'ターボチャージャー',
     zh: 'Turbocharger',
+    ar: 'شاحن توربيني',
+    it: 'Turbocompressore',
   },
   '上托轮(Carrier Roller)': {
     en: 'Carrier Roller',
@@ -111,6 +131,7 @@ export const caterpillarNameTranslations = {
     ru: 'Несущий ролик',
     ja: 'キャリアローラー',
     zh: 'Carrier Roller',
+    it: 'Rullo portatore',
     ar: 'أسطوانة ناقلة',
     it: 'Rullo Portatore',
   },
@@ -123,6 +144,7 @@ export const caterpillarNameTranslations = {
     ru: 'Ролик гусеницы',
     ja: 'トラックローラー',
     zh: 'Track Roller',
+    it: 'Rullo cingolato',
     ar: 'أسطوانة المسار',
     it: 'Rullo Cingolato',
   },
@@ -135,6 +157,7 @@ export const caterpillarNameTranslations = {
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: 'Transmission System',
+    it: '传动系统',
     ar: 'نظام النقل',
     it: 'Sistema di Trasmissione',
   },
@@ -147,6 +170,7 @@ export const caterpillarNameTranslations = {
     ru: 'Передний натяжной ролик',
     ja: 'フロントアイドラー',
     zh: 'Front Idler',
+    it: 'Rullo di guida anteriore',
     ar: 'بكرة التوجيه الأمامية',
     it: 'Ruota Guida Anteriore',
   },
@@ -159,6 +183,7 @@ export const caterpillarNameTranslations = {
     ru: 'Поворотный мотор и редуктор',
     ja: 'スイングモーターとリデューサー',
     zh: 'Swing Motor and Reducer',
+    it: '回转(转台)马达及减速机',
     ar: 'محرك الدوران والمخفض',
     it: 'Motore di Rotazione e Riduttore',
   },
@@ -171,6 +196,7 @@ export const caterpillarNameTranslations = {
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: 'Turbocharging/Intake System',
+    it: '增压/进气',
     ar: 'نظام الشاحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -183,6 +209,7 @@ export const caterpillarNameTranslations = {
     ru: 'Сборка гусеничной цепи',
     ja: 'トラックチェーンアセンブリ',
     zh: 'Track Chain Assembly',
+    it: '履带链条总成',
     ar: 'مجموعة سلسلة المسار',
     it: 'Assemblaggio Catena Cingolata',
   },
@@ -195,6 +222,7 @@ export const caterpillarNameTranslations = {
     ru: 'Система шасси/гусеницы',
     ja: 'シャーシ/トラックシステム',
     zh: 'Chassis/Track System',
+    it: '底盘/履带系统',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema Telaio/Cingoli',
   },
@@ -207,6 +235,7 @@ export const caterpillarNameTranslations = {
     ru: 'Зубья ковша/GET',
     ja: '掘削/GET',
     zh: 'Bucket Teeth/GET',
+    it: '挖掘属性/GET',
     ar: 'أسنان الدلو/GET',
     it: 'Denti Benna/GET',
   },
@@ -219,6 +248,7 @@ export const caterpillarNameTranslations = {
     ru: 'Зубья ковша/GET (средний)',
     ja: '掘削/GET (中型)',
     zh: 'Bucket Teeth/GET (Medium)',
+    it: '挖掘属性/GET(中型段)',
     ar: 'أسنان الدلو/GET (متوسط)',
     it: 'Denti Benna/GET (Medio)',
   },
@@ -231,6 +261,7 @@ export const caterpillarNameTranslations = {
     ru: 'Зубья ковша/GET (большой)',
     ja: '掘削/GET (大型)',
     zh: 'Bucket Teeth/GET (Large)',
+    it: '挖掘属性/GET(大型段)',
     ar: 'أسنان الدلو/GET (كبير)',
     it: 'Denti Benna/GET (Grande)',
   },
@@ -243,6 +274,7 @@ export const caterpillarNameTranslations = {
     ru: 'Зубья ковша/GET (маленький)',
     ja: '掘削/GET (小型)',
     zh: 'Bucket Teeth/GET (Small)',
+    it: '挖掘属性/GET(小型段)',
     ar: 'أسنان الدلو/GET (صغير)',
     it: 'Denti Benna/GET (Piccolo)',
   },
@@ -255,6 +287,8 @@ export const caterpillarNameTranslations = {
     ru: '挖掘臂销套系统',
     ja: '挖掘臂销套系统',
     zh: '挖掘臂销套系统',
+    ar: '挖掘臂销套系统',
+    it: '挖掘臂销套系统',
   },
   '散热器水箱总成': {
     en: '散热器水箱总成',
@@ -265,6 +299,8 @@ export const caterpillarNameTranslations = {
     ru: '散热器水箱总成',
     ja: '散热器水箱总成',
     zh: '散热器水箱总成',
+    ar: '散热器水箱总成',
+    it: '散热器水箱总成',
   },
   '斗杆油缸密封修理包': {
     en: '斗杆油缸密封修理包',
@@ -275,6 +311,8 @@ export const caterpillarNameTranslations = {
     ru: '斗杆油缸密封修理包',
     ja: '斗杆油缸密封修理包',
     zh: '斗杆油缸密封修理包',
+    ar: '斗杆油缸密封修理包',
+    it: '斗杆油缸密封修理包',
   },
   '斗杆连杆衬套': {
     en: '斗杆连杆衬套',
@@ -285,6 +323,8 @@ export const caterpillarNameTranslations = {
     ru: '斗杆连杆衬套',
     ja: '斗杆连杆衬套',
     zh: '斗杆连杆衬套',
+    ar: '斗杆连杆衬套',
+    it: '斗杆连杆衬套',
   },
   '斗齿(J300大修/推土机焊接型适配器)': {
     en: '斗齿(J300大修/推土机焊接型适配器)',
@@ -295,6 +335,8 @@ export const caterpillarNameTranslations = {
     ru: '斗齿(J300大修/推土机焊接型适配器)',
     ja: '斗齿(J300大修/推土机焊接型适配器)',
     zh: '斗齿(J300大修/推土机焊接型适配器)',
+    ar: '斗齿(J300大修/推土机焊接型适配器)',
+    it: '斗齿(J300大修/推土机焊接型适配器)',
   },
   '斗齿(J300系列,V型)': {
     en: '斗齿(J300系列,V型)',
@@ -305,6 +347,8 @@ export const caterpillarNameTranslations = {
     ru: '斗齿(J300系列,V型)',
     ja: '斗齿(J300系列,V型)',
     zh: '斗齿(J300系列,V型)',
+    ar: '斗齿(J300系列,V型)',
+    it: '斗齿(J300系列,V型)',
   },
   '斗齿(J350摩擦磨损型)': {
     en: '斗齿(J350摩擦磨损型)',
@@ -315,6 +359,8 @@ export const caterpillarNameTranslations = {
     ru: '斗齿(J350摩擦磨损型)',
     ja: '斗齿(J350摩擦磨损型)',
     zh: '斗齿(J350摩擦磨损型)',
+    ar: '斗齿(J350摩擦磨损型)',
+    it: '斗齿(J350摩擦磨损型)',
   },
   '斗齿(J350系列,HD穿透型)': {
     en: '斗齿(J350系列,HD穿透型)',
@@ -325,6 +371,8 @@ export const caterpillarNameTranslations = {
     ru: '斗齿(J350系列,HD穿透型)',
     ja: '斗齿(J350系列,HD穿透型)',
     zh: '斗齿(J350系列,HD穿透型)',
+    ar: '斗齿(J350系列,HD穿透型)',
+    it: '斗齿(J350系列,HD穿透型)',
   },
   '斗齿(J350系列,通用型)': {
     en: '斗齿(J350系列,通用型)',
@@ -335,6 +383,8 @@ export const caterpillarNameTranslations = {
     ru: '斗齿(J350系列,通用型)',
     ja: '斗齿(J350系列,通用型)',
     zh: '斗齿(J350系列,通用型)',
+    ar: '斗齿(J350系列,通用型)',
+    it: '斗齿(J350系列,通用型)',
   },
   '斗齿(J400/J460系列)': {
     en: '斗齿(J400/J460系列)',
@@ -345,6 +395,8 @@ export const caterpillarNameTranslations = {
     ru: '斗齿(J400/J460系列)',
     ja: '斗齿(J400/J460系列)',
     zh: '斗齿(J400/J460系列)',
+    ar: '斗齿(J400/J460系列)',
+    it: '斗齿(J400/J460系列)',
   },
   '斗齿适配器(Adapter)': {
     en: '斗齿适配器(Adapter)',
@@ -355,6 +407,8 @@ export const caterpillarNameTranslations = {
     ru: '斗齿适配器(Adapter)',
     ja: '斗齿适配器(Adapter)',
     zh: '斗齿适配器(Adapter)',
+    ar: '斗齿适配器(Adapter)',
+    it: '斗齿适配器(Adapter)',
   },
   '斗齿适配器(J300侧销式)': {
     en: '斗齿适配器(J300侧销式)',
@@ -365,6 +419,8 @@ export const caterpillarNameTranslations = {
     ru: '斗齿适配器(J300侧销式)',
     ja: '斗齿适配器(J300侧销式)',
     zh: '斗齿适配器(J300侧销式)',
+    ar: '斗齿适配器(J300侧销式)',
+    it: '斗齿适配器(J300侧销式)',
   },
   '斗齿销/锁定销(Pin-G.E.T.)': {
     en: 'Pin',
@@ -375,6 +431,8 @@ export const caterpillarNameTranslations = {
     ru: 'Штифт',
     ja: 'ピン',
     zh: 'Pin',
+    ar: '斗齿销/锁定销(Pin-G.E.T.)',
+    it: '斗齿销/锁定销(Pin-G.E.T.)',
   },
   '最终驱动/行走减速机总成': {
     en: '最终驱动/行走减速机总成',
@@ -385,6 +443,8 @@ export const caterpillarNameTranslations = {
     ru: '最终驱动/行走减速机总成',
     ja: '最终驱动/行走减速机总成',
     zh: '最终驱动/行走减速机总成',
+    ar: '最终驱动/行走减速机总成',
+    it: '最终驱动/行走减速机总成',
   },
   '液压缸/密封件': {
     en: '液压缸/密封件',
@@ -395,6 +455,8 @@ export const caterpillarNameTranslations = {
     ru: '液压缸/密封件',
     ja: '液压缸/密封件',
     zh: '液压缸/密封件',
+    ar: '液压缸/密封件',
+    it: '液压缸/密封件',
   },
   '燃油滤芯(二级/精滤)': {
     en: '燃油滤芯(二级/精滤)',
@@ -405,6 +467,8 @@ export const caterpillarNameTranslations = {
     ru: '燃油滤芯(二级/精滤)',
     ja: '燃油滤芯(二级/精滤)',
     zh: '燃油滤芯(二级/精滤)',
+    ar: '燃油滤芯(二级/精滤)',
+    it: '燃油滤芯(二级/精滤)',
   },
   '行走(履带)马达': {
     en: '行走(履带)马达',
@@ -415,6 +479,8 @@ export const caterpillarNameTranslations = {
     ru: '行走(履带)马达',
     ja: '行走(履带)马达',
     zh: '行走(履带)马达',
+    ar: '行走(履带)马达',
+    it: '行走(履带)马达',
   },
   '连杆-斗杆连接销': {
     en: '连杆-斗杆连接销',
@@ -425,6 +491,8 @@ export const caterpillarNameTranslations = {
     ru: '连杆-斗杆连接销',
     ja: '连杆-斗杆连接销',
     zh: '连杆-斗杆连接销',
+    ar: '连杆-斗杆连接销',
+    it: '连杆-斗杆连接销',
   },
   '连杆-油缸连接销': {
     en: '连杆-油缸连接销',
@@ -435,6 +503,8 @@ export const caterpillarNameTranslations = {
     ru: '连杆-油缸连接销',
     ja: '连杆-油缸连接销',
     zh: '连杆-油缸连接销',
+    ar: '连杆-油缸连接销',
+    it: '连杆-油缸连接销',
   },
   '铲斗-斗杆连接销': {
     en: '铲斗-斗杆连接销',
@@ -445,6 +515,8 @@ export const caterpillarNameTranslations = {
     ru: '铲斗-斗杆连接销',
     ja: '铲斗-斗杆连接销',
     zh: '铲斗-斗杆连接销',
+    ar: '铲斗-斗杆连接销',
+    it: '铲斗-斗杆连接销',
   },
   '铲斗斗齿(通用J系列)': {
     en: '铲斗斗齿(通用J系列)',
@@ -455,6 +527,8 @@ export const caterpillarNameTranslations = {
     ru: '铲斗斗齿(通用J系列)',
     ja: '铲斗斗齿(通用J系列)',
     zh: '铲斗斗齿(通用J系列)',
+    ar: '铲斗斗齿(通用J系列)',
+    it: '铲斗斗齿(通用J系列)',
   },
   '铲斗油缸密封修理包': {
     en: '铲斗油缸密封修理包',
@@ -465,6 +539,8 @@ export const caterpillarNameTranslations = {
     ru: '铲斗油缸密封修理包',
     ja: '铲斗油缸密封修理包',
     zh: '铲斗油缸密封修理包',
+    ar: '铲斗油缸密封修理包',
+    it: '铲斗油缸密封修理包',
   },
   '铲斗油缸密封包(65mm杆,老款)': {
     en: '铲斗油缸密封包(65mm杆,老款)',
@@ -475,6 +551,8 @@ export const caterpillarNameTranslations = {
     ru: '铲斗油缸密封包(65mm杆,老款)',
     ja: '铲斗油缸密封包(65mm杆,老款)',
     zh: '铲斗油缸密封包(65mm杆,老款)',
+    ar: '铲斗油缸密封包(65mm杆,老款)',
+    it: '铲斗油缸密封包(65mm杆,老款)',
   },
   '铲斗油缸密封包(85mm杆/125mm缸径)': {
     en: '铲斗油缸密封包(85mm杆/125mm缸径)',
@@ -485,6 +563,8 @@ export const caterpillarNameTranslations = {
     ru: '铲斗油缸密封包(85mm杆/125mm缸径)',
     ja: '铲斗油缸密封包(85mm杆/125mm缸径)',
     zh: '铲斗油缸密封包(85mm杆/125mm缸径)',
+    ar: '铲斗油缸密封包(85mm杆/125mm缸径)',
+    it: '铲斗油缸密封包(85mm杆/125mm缸径)',
   },
   '铲斗衬套(斗杆处)': {
     en: '铲斗衬套(斗杆处)',
@@ -495,6 +575,8 @@ export const caterpillarNameTranslations = {
     ru: '铲斗衬套(斗杆处)',
     ja: '铲斗衬套(斗杆处)',
     zh: '铲斗衬套(斗杆处)',
+    ar: '铲斗衬套(斗杆处)',
+    it: '铲斗衬套(斗杆处)',
   },
   '驱动链轮(Drive Sprocket)': {
     en: '驱动链轮(Drive Sprocket)',
@@ -505,10 +587,14 @@ export const caterpillarNameTranslations = {
     ru: '驱动链轮(Drive Sprocket)',
     ja: '驱动链轮(Drive Sprocket)',
     zh: '驱动链轮(Drive Sprocket)',
+    ar: '驱动链轮(Drive Sprocket)',
+    it: '驱动链轮(Drive Sprocket)',
   },
   'Oil Filter (New Model)': {
     en: 'Oil Filter (New Model)',
     zh: 'Oil Filter (New Model)',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
     es: 'Oil Filter (New Model)',
     fr: 'Oil Filter (New Model)',
     de: 'Oil Filter (New Model)',
@@ -521,6 +607,8 @@ export const caterpillarNameTranslations = {
   'Fuel Filter (Secondary/Fine Filter)': {
     en: 'Fuel Filter (Secondary/Fine Filter)',
     zh: 'Fuel Filter (Secondary/Fine Filter)',
+    ar: 'Fuel Filter (Secondary/Fine Filter)',
+    it: 'Fuel Filter (Secondary/Fine Filter)',
     es: 'Fuel Filter (Secondary/Fine Filter)',
     fr: 'Fuel Filter (Secondary/Fine Filter)',
     de: 'Fuel Filter (Secondary/Fine Filter)',
@@ -533,6 +621,8 @@ export const caterpillarNameTranslations = {
   'Hydraulic Oil Filter (New Model)': {
     en: 'Hydraulic Oil Filter (New Model)',
     zh: 'Hydraulic Oil Filter (New Model)',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
     es: 'Hydraulic Oil Filter (New Model)',
     fr: 'Hydraulic Oil Filter (New Model)',
     de: 'Hydraulic Oil Filter (New Model)',
@@ -545,6 +635,8 @@ export const caterpillarNameTranslations = {
   'Air Filter (Outer Element)': {
     en: 'Air Filter (Outer Element)',
     zh: 'Air Filter (Outer Element)',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
     es: 'Air Filter (Outer Element)',
     fr: 'Air Filter (Outer Element)',
     de: 'Air Filter (Outer Element)',
@@ -557,6 +649,8 @@ export const caterpillarNameTranslations = {
   'Air Filter (Inner Element)': {
     en: 'Air Filter (Inner Element)',
     zh: 'Air Filter (Inner Element)',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
     es: 'Air Filter (Inner Element)',
     fr: 'Air Filter (Inner Element)',
     de: 'Air Filter (Inner Element)',
@@ -569,6 +663,8 @@ export const caterpillarNameTranslations = {
   'Radiator Water Tank Assembly': {
     en: 'Radiator Water Tank Assembly',
     zh: 'Radiator Water Tank Assembly',
+    ar: 'Radiator Water Tank Assembly',
+    it: 'Radiator Water Tank Assembly',
     es: 'Radiator Water Tank Assembly',
     fr: 'Radiator Water Tank Assembly',
     de: 'Radiator Water Tank Assembly',
@@ -581,6 +677,8 @@ export const caterpillarNameTranslations = {
   'Track Chain Assembly': {
     en: 'Track Chain Assembly',
     zh: 'Track Chain Assembly',
+    ar: 'Track Chain Assembly',
+    it: 'Track Chain Assembly',
     es: 'Track Chain Assembly',
     fr: 'Track Chain Assembly',
     de: 'Track Chain Assembly',
@@ -593,6 +691,8 @@ export const caterpillarNameTranslations = {
   'Track Roller': {
     en: 'Track Roller',
     zh: 'Track Roller',
+    ar: 'أسطوانة المسار',
+    it: 'Rullo cingolato',
     es: 'Track Roller',
     fr: 'Track Roller',
     de: 'Track Roller',
@@ -605,6 +705,8 @@ export const caterpillarNameTranslations = {
   'Front Idler': {
     en: 'Front Idler',
     zh: 'Front Idler',
+    ar: 'بكرة التوجيه الأمامية',
+    it: 'Rullo di guida anteriore',
     es: 'Front Idler',
     fr: 'Front Idler',
     de: 'Front Idler',
@@ -617,6 +719,8 @@ export const caterpillarNameTranslations = {
   'Carrier Roller': {
     en: 'Carrier Roller',
     zh: 'Carrier Roller',
+    ar: 'أسطوانة ناقلة',
+    it: 'Rullo portatore',
     es: 'Carrier Roller',
     fr: 'Carrier Roller',
     de: 'Carrier Roller',
@@ -629,6 +733,8 @@ export const caterpillarNameTranslations = {
   'Bucket Teeth (Universal J Series)': {
     en: 'Bucket Teeth (Universal J Series)',
     zh: 'Bucket Teeth (Universal J Series)',
+    ar: 'Bucket Teeth (Universal J Series)',
+    it: 'Bucket Teeth (Universal J Series)',
     es: 'Bucket Teeth (Universal J Series)',
     fr: 'Bucket Teeth (Universal J Series)',
     de: 'Bucket Teeth (Universal J Series)',
@@ -641,6 +747,8 @@ export const caterpillarNameTranslations = {
   'Bucket Teeth Pin/Lock Pin': {
     en: 'Bucket Teeth Pin/Lock Pin',
     zh: 'Bucket Teeth Pin/Lock Pin',
+    ar: 'Bucket Teeth Pin/Lock Pin',
+    it: 'Bucket Teeth Pin/Lock Pin',
     es: 'Bucket Teeth Pin/Lock Pin',
     fr: 'Bucket Teeth Pin/Lock Pin',
     de: 'Bucket Teeth Pin/Lock Pin',
@@ -653,6 +761,8 @@ export const caterpillarNameTranslations = {
   'Final Drive/Travel Reduction Gear Assembly': {
     en: 'Final Drive/Travel Reduction Gear Assembly',
     zh: 'Final Drive/Travel Reduction Gear Assembly',
+    ar: 'Final Drive/Travel Reduction Gear Assembly',
+    it: 'Final Drive/Travel Reduction Gear Assembly',
     es: 'Final Drive/Travel Reduction Gear Assembly',
     fr: 'Final Drive/Travel Reduction Gear Assembly',
     de: 'Final Drive/Travel Reduction Gear Assembly',
@@ -665,6 +775,8 @@ export const caterpillarNameTranslations = {
   'Bucket Teeth (J300 Series, V-Type)': {
     en: 'Bucket Teeth (J300 Series, V-Type)',
     zh: 'Bucket Teeth (J300 Series, V-Type)',
+    ar: 'Bucket Teeth (J300 Series, V-Type)',
+    it: 'Bucket Teeth (J300 Series, V-Type)',
     es: 'Bucket Teeth (J300 Series, V-Type)',
     fr: 'Bucket Teeth (J300 Series, V-Type)',
     de: 'Bucket Teeth (J300 Series, V-Type)',
@@ -677,6 +789,8 @@ export const caterpillarNameTranslations = {
   'Bucket Tooth Adapter (J300 Side-Lock)': {
     en: 'Bucket Tooth Adapter (J300 Side-Lock)',
     zh: 'Bucket Tooth Adapter (J300 Side-Lock)',
+    ar: 'Bucket Tooth Adapter (J300 Side-Lock)',
+    it: 'Bucket Tooth Adapter (J300 Side-Lock)',
     es: 'Bucket Tooth Adapter (J300 Side-Lock)',
     fr: 'Bucket Tooth Adapter (J300 Side-Lock)',
     de: 'Bucket Tooth Adapter (J300 Side-Lock)',
@@ -689,6 +803,8 @@ export const caterpillarNameTranslations = {
   'Bucket Teeth (J350 Series, HD Penetrating)': {
     en: 'Bucket Teeth (J350 Series, HD Penetrating)',
     zh: 'Bucket Teeth (J350 Series, HD Penetrating)',
+    ar: 'Bucket Teeth (J350 Series, HD Penetrating)',
+    it: 'Bucket Teeth (J350 Series, HD Penetrating)',
     es: 'Bucket Teeth (J350 Series, HD Penetrating)',
     fr: 'Bucket Teeth (J350 Series, HD Penetrating)',
     de: 'Bucket Teeth (J350 Series, HD Penetrating)',
@@ -701,6 +817,8 @@ export const caterpillarNameTranslations = {
   'Bucket Teeth (J350 Series, Universal)': {
     en: 'Bucket Teeth (J350 Series, Universal)',
     zh: 'Bucket Teeth (J350 Series, Universal)',
+    ar: 'Bucket Teeth (J350 Series, Universal)',
+    it: 'Bucket Teeth (J350 Series, Universal)',
     es: 'Bucket Teeth (J350 Series, Universal)',
     fr: 'Bucket Teeth (J350 Series, Universal)',
     de: 'Bucket Teeth (J350 Series, Universal)',
@@ -713,6 +831,8 @@ export const caterpillarNameTranslations = {
   'Bucket Teeth (J350 Friction Wear)': {
     en: 'Bucket Teeth (J350 Friction Wear)',
     zh: 'Bucket Teeth (J350 Friction Wear)',
+    ar: 'Bucket Teeth (J350 Friction Wear)',
+    it: 'Bucket Teeth (J350 Friction Wear)',
     es: 'Bucket Teeth (J350 Friction Wear)',
     fr: 'Bucket Teeth (J350 Friction Wear)',
     de: 'Bucket Teeth (J350 Friction Wear)',
@@ -725,6 +845,8 @@ export const caterpillarNameTranslations = {
   'Bucket Tooth (J400/J460 Series)': {
     en: 'Bucket Tooth (J400/J460 Series)',
     zh: 'Bucket Tooth (J400/J460 Series)',
+    ar: 'Bucket Tooth (J400/J460 Series)',
+    it: 'Bucket Tooth (J400/J460 Series)',
     es: 'Bucket Tooth (J400/J460 Series)',
     fr: 'Bucket Tooth (J400/J460 Series)',
     de: 'Bucket Tooth (J400/J460 Series)',
@@ -737,6 +859,8 @@ export const caterpillarNameTranslations = {
   'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)': {
     en: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
     zh: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+    ar: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+    it: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
     es: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
     fr: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
     de: 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
@@ -749,6 +873,8 @@ export const caterpillarNameTranslations = {
   'Boom Cylinder Seal Repair Kit': {
     en: 'Boom Cylinder Seal Repair Kit',
     zh: 'Boom Cylinder Seal Repair Kit',
+    ar: 'Boom Cylinder Seal Repair Kit',
+    it: 'Boom Cylinder Seal Repair Kit',
     es: 'Boom Cylinder Seal Repair Kit',
     fr: 'Boom Cylinder Seal Repair Kit',
     de: 'Boom Cylinder Seal Repair Kit',
@@ -761,6 +887,8 @@ export const caterpillarNameTranslations = {
   'Bucket Cylinder Seal Repair Kit': {
     en: 'Bucket Cylinder Seal Repair Kit',
     zh: 'Bucket Cylinder Seal Repair Kit',
+    ar: 'Bucket Cylinder Seal Repair Kit',
+    it: 'Bucket Cylinder Seal Repair Kit',
     es: 'Bucket Cylinder Seal Repair Kit',
     fr: 'Bucket Cylinder Seal Repair Kit',
     de: 'Bucket Cylinder Seal Repair Kit',
@@ -773,6 +901,8 @@ export const caterpillarNameTranslations = {
   'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)': {
     en: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
     zh: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+    ar: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+    it: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
     es: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
     fr: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
     de: 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
@@ -785,6 +915,8 @@ export const caterpillarNameTranslations = {
   'Bucket Cylinder Seal Kit (65mm Rod, Old Model)': {
     en: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
     zh: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+    ar: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+    it: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
     es: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
     fr: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
     de: 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
@@ -797,6 +929,8 @@ export const caterpillarNameTranslations = {
   'Bucket-Boom Connection Pin': {
     en: 'Bucket-Boom Connection Pin',
     zh: 'Bucket-Boom Connection Pin',
+    ar: 'Bucket-Boom Connection Pin',
+    it: 'Bucket-Boom Connection Pin',
     es: 'Bucket-Boom Connection Pin',
     fr: 'Bucket-Boom Connection Pin',
     de: 'Bucket-Boom Connection Pin',
@@ -809,6 +943,8 @@ export const caterpillarNameTranslations = {
   'Rod-Boom Connection Pin': {
     en: 'Rod-Boom Connection Pin',
     zh: 'Rod-Boom Connection Pin',
+    ar: 'Rod-Boom Connection Pin',
+    it: 'Rod-Boom Connection Pin',
     es: 'Rod-Boom Connection Pin',
     fr: 'Rod-Boom Connection Pin',
     de: 'Rod-Boom Connection Pin',
@@ -821,6 +957,8 @@ export const caterpillarNameTranslations = {
   'Rod-Cylinder Connection Pin': {
     en: 'Rod-Cylinder Connection Pin',
     zh: 'Rod-Cylinder Connection Pin',
+    ar: 'Rod-Cylinder Connection Pin',
+    it: 'Rod-Cylinder Connection Pin',
     es: 'Rod-Cylinder Connection Pin',
     fr: 'Rod-Cylinder Connection Pin',
     de: 'Rod-Cylinder Connection Pin',
@@ -833,6 +971,8 @@ export const caterpillarNameTranslations = {
   'Rod-Boom Connection Bushing': {
     en: 'Rod-Boom Connection Bushing',
     zh: 'Rod-Boom Connection Bushing',
+    ar: 'Rod-Boom Connection Bushing',
+    it: 'Rod-Boom Connection Bushing',
     es: 'Rod-Boom Connection Bushing',
     fr: 'Rod-Boom Connection Bushing',
     de: 'Rod-Boom Connection Bushing',
@@ -845,6 +985,8 @@ export const caterpillarNameTranslations = {
   'Bucket Bushing (Boom Position)': {
     en: 'Bucket Bushing (Boom Position)',
     zh: 'Bucket Bushing (Boom Position)',
+    ar: 'Bucket Bushing (Boom Position)',
+    it: 'Bucket Bushing (Boom Position)',
     es: 'Bucket Bushing (Boom Position)',
     fr: 'Bucket Bushing (Boom Position)',
     de: 'Bucket Bushing (Boom Position)',
@@ -865,6 +1007,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'Caterpillar part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Caterpillar part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '卡特彼勒零件。500-1000小时或视油液检测结果更换',
+    ar: 'Caterpillar part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Caterpillar part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Caterpillar. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Caterpillar. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Caterpillar-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -877,6 +1021,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace during maintenance every 250-500 hours.': {
     en: 'CAT part. Replace during maintenance every 250-500 hours.',
     zh: 'CAT part. Replace during maintenance every 250-500 hours.',
+    ar: 'CAT part. Replace during maintenance every 250-500 hours.',
+    it: 'CAT part. Replace during maintenance every 250-500 hours.',
     es: 'CAT part. Replace during maintenance every 250-500 hours.',
     fr: 'CAT part. Replace during maintenance every 250-500 hours.',
     de: 'CAT part. Replace during maintenance every 250-500 hours.',
@@ -889,6 +1035,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace every 250-500 hours or based on fuel quality.': {
     en: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
     zh: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    ar: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
+    it: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
     es: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
     fr: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
     de: 'CAT part. Replace every 250-500 hours or based on fuel quality.',
@@ -901,6 +1049,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    ar: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
     fr: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
     de: 'CAT part. Replace every 500-1000 hours or based on fluid analysis results.',
@@ -913,6 +1063,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace every 500-1000 hours.': {
     en: 'CAT part. Replace every 500-1000 hours.',
     zh: 'CAT part. Replace every 500-1000 hours.',
+    ar: 'CAT part. Replace every 500-1000 hours.',
+    it: 'CAT part. Replace every 500-1000 hours.',
     es: 'CAT part. Replace every 500-1000 hours.',
     fr: 'CAT part. Replace every 500-1000 hours.',
     de: 'CAT part. Replace every 500-1000 hours.',
@@ -925,6 +1077,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace every 250-500 hours or based on dust environment.': {
     en: 'CAT part. Replace every 250-500 hours or based on dust environment.',
     zh: 'CAT part. Replace every 250-500 hours or based on dust environment.',
+    ar: 'CAT part. Replace every 250-500 hours or based on dust environment.',
+    it: 'CAT part. Replace every 250-500 hours or based on dust environment.',
     es: 'CAT part. Replace every 250-500 hours or based on dust environment.',
     fr: 'CAT part. Replace every 250-500 hours or based on dust environment.',
     de: 'CAT part. Replace every 250-500 hours or based on dust environment.',
@@ -937,6 +1091,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace with outer element or replace inner element every 2 outer element changes.': {
     en: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.',
     zh: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.',
+    ar: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.',
+    it: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.',
     es: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.',
     fr: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.',
     de: 'CAT part. Replace with outer element or replace inner element every 2 outer element changes.',
@@ -949,6 +1105,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace if overheating or leaking.': {
     en: 'CAT part. Replace if overheating or leaking.',
     zh: 'CAT part. Replace if overheating or leaking.',
+    ar: 'CAT part. Replace if overheating or leaking.',
+    it: 'CAT part. Replace if overheating or leaking.',
     es: 'CAT part. Replace if overheating or leaking.',
     fr: 'CAT part. Replace if overheating or leaking.',
     de: 'CAT part. Replace if overheating or leaking.',
@@ -961,6 +1119,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).': {
     en: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
     zh: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    ar: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
+    it: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
     es: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
     fr: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
     de: 'CAT part. Replace when power drops, abnormal noise, or oil leaks occur (major repair).',
@@ -973,6 +1133,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).': {
     en: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
     zh: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    ar: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
+    it: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
     es: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
     fr: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
     de: 'CAT part. Replace when track is loose or wear exceeds limit (major repair, high-cost part).',
@@ -985,6 +1147,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace if leaking or worn.': {
     en: 'CAT part. Replace if leaking or worn.',
     zh: 'CAT part. Replace if leaking or worn.',
+    ar: 'CAT part. Replace if leaking or worn.',
+    it: 'CAT part. Replace if leaking or worn.',
     es: 'CAT part. Replace if leaking or worn.',
     fr: 'CAT part. Replace if leaking or worn.',
     de: 'CAT part. Replace if leaking or worn.',
@@ -997,6 +1161,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace if worn or making abnormal noise.': {
     en: 'CAT part. Replace if worn or making abnormal noise.',
     zh: 'CAT part. Replace if worn or making abnormal noise.',
+    ar: 'CAT part. Replace if worn or making abnormal noise.',
+    it: 'CAT part. Replace if worn or making abnormal noise.',
     es: 'CAT part. Replace if worn or making abnormal noise.',
     fr: 'CAT part. Replace if worn or making abnormal noise.',
     de: 'CAT part. Replace if worn or making abnormal noise.',
@@ -1009,6 +1175,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).': {
     en: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
     zh: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    ar: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
+    it: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
     es: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
     fr: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
     de: 'CAT part. Replace when worn to limit or cracked (high-frequency replacement part).',
@@ -1021,6 +1189,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace synchronously every time teeth are replaced.': {
     en: 'CAT part. Replace synchronously every time teeth are replaced.',
     zh: 'CAT part. Replace synchronously every time teeth are replaced.',
+    ar: 'CAT part. Replace synchronously every time teeth are replaced.',
+    it: 'CAT part. Replace synchronously every time teeth are replaced.',
     es: 'CAT part. Replace synchronously every time teeth are replaced.',
     fr: 'CAT part. Replace synchronously every time teeth are replaced.',
     de: 'CAT part. Replace synchronously every time teeth are replaced.',
@@ -1033,6 +1203,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).': {
     en: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
     zh: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    ar: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
+    it: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
     es: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
     fr: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
     de: 'CAT part. Replace when abnormal noise, oil leaks, or climbing difficulty occurs (major repair, high-cost part).',
@@ -1045,6 +1217,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.': {
     en: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
     zh: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    ar: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
+    it: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
     es: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
     fr: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
     de: 'CAT part. Check wear with bucket teeth; longer lifespan than teeth themselves.',
@@ -1057,6 +1231,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.': {
     en: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
     zh: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    ar: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
+    it: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
     es: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
     fr: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
     de: 'CAT part. Check wear with bucket teeth; high-frequency replacement part for dozer loosening teeth.',
@@ -1069,6 +1245,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace when leaking or seal aging occurs.': {
     en: 'CAT part. Replace when leaking or seal aging occurs.',
     zh: 'CAT part. Replace when leaking or seal aging occurs.',
+    ar: 'CAT part. Replace when leaking or seal aging occurs.',
+    it: 'CAT part. Replace when leaking or seal aging occurs.',
     es: 'CAT part. Replace when leaking or seal aging occurs.',
     fr: 'CAT part. Replace when leaking or seal aging occurs.',
     de: 'CAT part. Replace when leaking or seal aging occurs.',
@@ -1081,6 +1259,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).': {
     en: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
     zh: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    ar: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
+    it: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
     es: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
     fr: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
     de: 'CAT part. Replace when abnormal noise or excessive clearance occurs (high-frequency maintenance replacement part).',
@@ -1093,6 +1273,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace when abnormal noise or excessive clearance occurs.': {
     en: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
     zh: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    ar: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
+    it: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
     es: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
     fr: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
     de: 'CAT part. Replace when abnormal noise or excessive clearance occurs.',
@@ -1105,6 +1287,8 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
   'CAT part. Replace with pin, high-frequency wear part.': {
     en: 'CAT part. Replace with pin, high-frequency wear part.',
     zh: 'CAT part. Replace with pin, high-frequency wear part.',
+    ar: 'CAT part. Replace with pin, high-frequency wear part.',
+    it: 'CAT part. Replace with pin, high-frequency wear part.',
     es: 'CAT part. Replace with pin, high-frequency wear part.',
     fr: 'CAT part. Replace with pin, high-frequency wear part.',
     de: 'CAT part. Replace with pin, high-frequency wear part.',
@@ -1133,6 +1317,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
+    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -1145,6 +1330,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
+    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -1157,6 +1343,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
+    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -1169,6 +1356,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
+    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -1181,6 +1369,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
+    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -1193,6 +1382,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
+    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -1205,6 +1395,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
+    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -1217,6 +1408,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
+    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -1229,6 +1421,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
+    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -1241,6 +1434,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
+    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -1253,6 +1447,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
+    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

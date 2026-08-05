@@ -11,6 +11,8 @@ export const sinotrukNameTranslations = {
     ru: 'Воздушный фильтр',
     ja: 'エアフィルター',
     zh: 'Air Filter',
+    ar: 'مرشح الهواء',
+    it: 'Filtro dell\'aria',
   },
   'Body/Cabin': {
     en: 'Body/Cabin',
@@ -21,6 +23,8 @@ export const sinotrukNameTranslations = {
     ru: 'Body/Cabin',
     ja: 'Body/Cabin',
     zh: 'Body/Cabin',
+    ar: 'Body/Cabin',
+    it: 'Body/Cabin',
   },
   'Body/Wiper System': {
     en: 'Wiper',
@@ -31,6 +35,8 @@ export const sinotrukNameTranslations = {
     ru: 'Стеклоочиститель',
     ja: 'ワイパー',
     zh: 'Wiper',
+    ar: 'Body/Wiper System',
+    it: 'Body/Wiper System',
   },
   'Braking System': {
     en: 'Braking System',
@@ -41,6 +47,8 @@ export const sinotrukNameTranslations = {
     ru: 'Braking System',
     ja: 'Braking System',
     zh: 'Braking System',
+    ar: 'Braking System',
+    it: 'Braking System',
   },
   'Cooling System': {
     en: 'Cooling System',
@@ -51,6 +59,8 @@ export const sinotrukNameTranslations = {
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: 'Cooling System',
+    ar: 'نظام التبريد',
+    it: 'Sistema di raffreddamento',
   },
   'Drive Shaft Assembly(变速箱至驱动桥)': {
     en: 'Drive Shaft Assembly(变速箱至驱动桥)',
@@ -61,6 +71,8 @@ export const sinotrukNameTranslations = {
     ru: 'Drive Shaft Assembly(变速箱至驱动桥)',
     ja: 'Drive Shaft Assembly(变速箱至驱动桥)',
     zh: 'Drive Shaft Assembly(变速箱至驱动桥)',
+    ar: 'Drive Shaft Assembly(变速箱至驱动桥)',
+    it: 'Drive Shaft Assembly(变速箱至驱动桥)',
   },
   'Drive Shaft Fork(万向节叉)': {
     en: 'Drive Shaft Fork(万向节叉)',
@@ -71,6 +83,8 @@ export const sinotrukNameTranslations = {
     ru: 'Drive Shaft Fork(万向节叉)',
     ja: 'Drive Shaft Fork(万向节叉)',
     zh: 'Drive Shaft Fork(万向节叉)',
+    ar: 'Drive Shaft Fork(万向节叉)',
+    it: 'Drive Shaft Fork(万向节叉)',
   },
   'Electrical/Starting System': {
     en: 'Electrical/Starting System',
@@ -81,6 +95,8 @@ export const sinotrukNameTranslations = {
     ru: 'Electrical/Starting System',
     ja: 'Electrical/Starting System',
     zh: 'Electrical/Starting System',
+    ar: 'نظام كهربائي/بدء التشغيل',
+    it: 'Sistema elettrico/avviamento',
   },
   'Hub/Transmission轴': {
     en: 'Hub/Transmission轴',
@@ -91,6 +107,8 @@ export const sinotrukNameTranslations = {
     ru: 'Hub/Transmission轴',
     ja: 'Hub/Transmission轴',
     zh: 'Hub/Transmission轴',
+    ar: 'Hub/Transmission轴',
+    it: 'Hub/Transmission轴',
   },
   'Hydraulic/PTO System': {
     en: 'Hydraulic/PTO System',
@@ -101,6 +119,8 @@ export const sinotrukNameTranslations = {
     ru: 'Hydraulic/PTO System',
     ja: 'Hydraulic/PTO System',
     zh: 'Hydraulic/PTO System',
+    ar: 'Hydraulic/PTO System',
+    it: 'Hydraulic/PTO System',
   },
   'Intake/Boost System': {
     en: 'Intake/Boost System',
@@ -111,6 +131,8 @@ export const sinotrukNameTranslations = {
     ru: 'Intake/Boost System',
     ja: 'Intake/Boost System',
     zh: 'Intake/Boost System',
+    ar: 'نظام السحب/الضغط',
+    it: 'Sistema di aspirazione/sovralimentazione',
   },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -121,6 +143,8 @@ export const sinotrukNameTranslations = {
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: 'Maintenance/Filtration System',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
   },
   'Oil Filter': {
     en: 'Oil Filter',
@@ -131,6 +155,8 @@ export const sinotrukNameTranslations = {
     ru: 'Масляный фильтр',
     ja: 'オイルフィルター',
     zh: 'Oil Filter',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
   },
   'Starter Motor Assembly': {
     en: 'Motor',
@@ -141,6 +167,8 @@ export const sinotrukNameTranslations = {
     ru: 'Мотор',
     ja: 'モーター',
     zh: 'Motor',
+    ar: 'Starter Motor Assembly',
+    it: 'Starter Motor Assembly',
   },
   'Steering Knuckle Arm/羊角(左)': {
     en: 'Steering Knuckle Arm/羊角(左)',
@@ -151,6 +179,8 @@ export const sinotrukNameTranslations = {
     ru: 'Steering Knuckle Arm/羊角(左)',
     ja: 'Steering Knuckle Arm/羊角(左)',
     zh: 'Steering Knuckle Arm/羊角(左)',
+    ar: 'Steering Knuckle Arm/羊角(左)',
+    it: 'Steering Knuckle Arm/羊角(左)',
   },
   'Steering System': {
     en: 'Steering System',
@@ -161,6 +191,8 @@ export const sinotrukNameTranslations = {
     ru: 'Steering System',
     ja: 'Steering System',
     zh: 'Steering System',
+    ar: 'Steering System',
+    it: 'Steering System',
   },
   'Transmission/Clutch': {
     en: 'Clutch',
@@ -171,6 +203,8 @@ export const sinotrukNameTranslations = {
     ru: 'Сцепление',
     ja: 'クラッチ',
     zh: 'Clutch',
+    ar: 'Transmission/Clutch',
+    it: 'Transmission/Clutch',
   },
   'Transmission/Universal Joint': {
     en: 'Transmission/Universal Joint',
@@ -181,6 +215,8 @@ export const sinotrukNameTranslations = {
     ru: 'Transmission/Universal Joint',
     ja: 'Transmission/Universal Joint',
     zh: 'Transmission/Universal Joint',
+    ar: 'Transmission/Universal Joint',
+    it: 'Transmission/Universal Joint',
   },
   'Turbocharger总成': {
     en: 'Turbocharger',
@@ -191,6 +227,8 @@ export const sinotrukNameTranslations = {
     ru: 'Турбокомпрессор',
     ja: 'ターボチャージャー',
     zh: 'Turbocharger',
+    ar: 'شاحن توربيني',
+    it: 'Turbocompressore',
   },
   'V型推力杆(稳定杆连杆)': {
     en: 'V型推力杆(稳定杆连杆)',
@@ -201,6 +239,8 @@ export const sinotrukNameTranslations = {
     ru: 'V型推力杆(稳定杆连杆)',
     ja: 'V型推力杆(稳定杆连杆)',
     zh: 'V型推力杆(稳定杆连杆)',
+    ar: 'V型推力杆(稳定杆连杆)',
+    it: 'V型推力杆(稳定杆连杆)',
   },
   'Water Pump Assembly': {
     en: 'Pump',
@@ -211,6 +251,8 @@ export const sinotrukNameTranslations = {
     ru: 'Насос',
     ja: 'ポンプ',
     zh: 'Pump',
+    ar: 'Water Pump Assembly',
+    it: 'Water Pump Assembly',
   },
   'king pin主销衬套': {
     en: 'Pin',
@@ -221,6 +263,8 @@ export const sinotrukNameTranslations = {
     ru: 'Штифт',
     ja: 'ピン',
     zh: 'Pin',
+    ar: 'king pin主销衬套',
+    it: 'king pin主销衬套',
   },
   '万向节十字轴总成': {
     en: '万向节十字轴总成',
@@ -231,6 +275,8 @@ export const sinotrukNameTranslations = {
     ru: '万向节十字轴总成',
     ja: '万向节十字轴总成',
     zh: '万向节十字轴总成',
+    ar: '万向节十字轴总成',
+    it: '万向节十字轴总成',
   },
   '制动凸轮轴(左)': {
     en: '制动凸轮轴(左)',
@@ -241,6 +287,8 @@ export const sinotrukNameTranslations = {
     ru: '制动凸轮轴(左)',
     ja: '制动凸轮轴(左)',
     zh: '制动凸轮轴(左)',
+    ar: '制动凸轮轴(左)',
+    it: '制动凸轮轴(左)',
   },
   '制动气室(前桥)': {
     en: '制动气室(前桥)',
@@ -251,6 +299,8 @@ export const sinotrukNameTranslations = {
     ru: '制动气室(前桥)',
     ja: '制动气室(前桥)',
     zh: '制动气室(前桥)',
+    ar: '制动气室(前桥)',
+    it: '制动气室(前桥)',
   },
   '刹车盘': {
     en: '刹车盘',
@@ -261,6 +311,8 @@ export const sinotrukNameTranslations = {
     ru: '刹车盘',
     ja: '刹车盘',
     zh: '刹车盘',
+    ar: '刹车盘',
+    it: '刹车盘',
   },
   '刹车蹄片总成(带内衬)': {
     en: '刹车蹄片总成(带内衬)',
@@ -271,6 +323,8 @@ export const sinotrukNameTranslations = {
     ru: '刹车蹄片总成(带内衬)',
     ja: '刹车蹄片总成(带内衬)',
     zh: '刹车蹄片总成(带内衬)',
+    ar: '刹车蹄片总成(带内衬)',
+    it: '刹车蹄片总成(带内衬)',
   },
   '刹车间隙自动调整臂': {
     en: '刹车间隙自动调整臂',
@@ -281,6 +335,8 @@ export const sinotrukNameTranslations = {
     ru: '刹车间隙自动调整臂',
     ja: '刹车间隙自动调整臂',
     zh: '刹车间隙自动调整臂',
+    ar: '刹车间隙自动调整臂',
+    it: '刹车间隙自动调整臂',
   },
   '前刹车摩擦片(内衬)': {
     en: '前刹车摩擦片(内衬)',
@@ -291,6 +347,8 @@ export const sinotrukNameTranslations = {
     ru: '前刹车摩擦片(内衬)',
     ja: '前刹车摩擦片(内衬)',
     zh: '前刹车摩擦片(内衬)',
+    ar: '前刹车摩擦片(内衬)',
+    it: '前刹车摩擦片(内衬)',
   },
   '前刹车蹄片总成': {
     en: '前刹车蹄片总成',
@@ -301,6 +359,8 @@ export const sinotrukNameTranslations = {
     ru: '前刹车蹄片总成',
     ja: '前刹车蹄片总成',
     zh: '前刹车蹄片总成',
+    ar: '前刹车蹄片总成',
+    it: '前刹车蹄片总成',
   },
   '前悬挂减震器总成': {
     en: '前悬挂减震器总成',
@@ -311,6 +371,8 @@ export const sinotrukNameTranslations = {
     ru: '前悬挂减震器总成',
     ja: '前悬挂减震器总成',
     zh: '前悬挂减震器总成',
+    ar: '前悬挂减震器总成',
+    it: '前悬挂减震器总成',
   },
   '前钢板弹簧卷耳销': {
     en: '前钢板弹簧卷耳销',
@@ -321,6 +383,8 @@ export const sinotrukNameTranslations = {
     ru: '前钢板弹簧卷耳销',
     ja: '前钢板弹簧卷耳销',
     zh: '前钢板弹簧卷耳销',
+    ar: '前钢板弹簧卷耳销',
+    it: '前钢板弹簧卷耳销',
   },
   '前钢板弹簧吊耳': {
     en: '前钢板弹簧吊耳',
@@ -331,6 +395,8 @@ export const sinotrukNameTranslations = {
     ru: '前钢板弹簧吊耳',
     ja: '前钢板弹簧吊耳',
     zh: '前钢板弹簧吊耳',
+    ar: '前钢板弹簧吊耳',
+    it: '前钢板弹簧吊耳',
   },
   '动力转向助力泵': {
     en: '动力转向助力泵',
@@ -341,6 +407,8 @@ export const sinotrukNameTranslations = {
     ru: '动力转向助力泵',
     ja: '动力转向助力泵',
     zh: '动力转向助力泵',
+    ar: '动力转向助力泵',
+    it: '动力转向助力泵',
   },
   '发电机(28V/70A)': {
     en: '发电机(28V/70A)',
@@ -351,6 +419,8 @@ export const sinotrukNameTranslations = {
     ru: '发电机(28V/70A)',
     ja: '发电机(28V/70A)',
     zh: '发电机(28V/70A)',
+    ar: '发电机(28V/70A)',
+    it: '发电机(28V/70A)',
   },
   '后刹车蹄片(带摩擦片)': {
     en: '后刹车蹄片(带摩擦片)',
@@ -361,6 +431,8 @@ export const sinotrukNameTranslations = {
     ru: '后刹车蹄片(带摩擦片)',
     ja: '后刹车蹄片(带摩擦片)',
     zh: '后刹车蹄片(带摩擦片)',
+    ar: '后刹车蹄片(带摩擦片)',
+    it: '后刹车蹄片(带摩擦片)',
   },
   '后悬挂减震器总成': {
     en: '后悬挂减震器总成',
@@ -371,6 +443,8 @@ export const sinotrukNameTranslations = {
     ru: '后悬挂减震器总成',
     ja: '后悬挂减震器总成',
     zh: '后悬挂减震器总成',
+    ar: '后悬挂减震器总成',
+    it: '后悬挂减震器总成',
   },
   '后桥半轴(右)': {
     en: '后桥半轴(右)',
@@ -381,6 +455,8 @@ export const sinotrukNameTranslations = {
     ru: '后桥半轴(右)',
     ja: '后桥半轴(右)',
     zh: '后桥半轴(右)',
+    ar: '后桥半轴(右)',
+    it: '后桥半轴(右)',
   },
   '后钢板弹簧总成': {
     en: '后钢板弹簧总成',
@@ -391,6 +467,8 @@ export const sinotrukNameTranslations = {
     ru: '后钢板弹簧总成',
     ja: '后钢板弹簧总成',
     zh: '后钢板弹簧总成',
+    ar: '后钢板弹簧总成',
+    it: '后钢板弹簧总成',
   },
   '四回路气压保护阀': {
     en: '四回路气压保护阀',
@@ -401,6 +479,8 @@ export const sinotrukNameTranslations = {
     ru: '四回路气压保护阀',
     ja: '四回路气压保护阀',
     zh: '四回路气压保护阀',
+    ar: '四回路气压保护阀',
+    it: '四回路气压保护阀',
   },
   '悬挂减震': {
     en: '悬挂减震',
@@ -411,6 +491,8 @@ export const sinotrukNameTranslations = {
     ru: '悬挂减震',
     ja: '悬挂减震',
     zh: '悬挂减震',
+    ar: '悬挂减震',
+    it: '悬挂减震',
   },
   '排气制动阀': {
     en: '排气制动阀',
@@ -421,6 +503,8 @@ export const sinotrukNameTranslations = {
     ru: '排气制动阀',
     ja: '排气制动阀',
     zh: '排气制动阀',
+    ar: '排气制动阀',
+    it: '排气制动阀',
   },
   '排气系统': {
     en: '排气系统',
@@ -431,6 +515,8 @@ export const sinotrukNameTranslations = {
     ru: '排气系统',
     ja: '排气系统',
     zh: '排气系统',
+    ar: '排气系统',
+    it: '排气系统',
   },
   '散热器护罩/水箱罩': {
     en: '散热器护罩/水箱罩',
@@ -441,6 +527,8 @@ export const sinotrukNameTranslations = {
     ru: '散热器护罩/水箱罩',
     ja: '散热器护罩/水箱罩',
     zh: '散热器护罩/水箱罩',
+    ar: '散热器护罩/水箱罩',
+    it: '散热器护罩/水箱罩',
   },
   '柴油粗滤器(Oil-Water Separator)': {
     en: '柴油粗滤器(Oil-Water Separator)',
@@ -451,6 +539,8 @@ export const sinotrukNameTranslations = {
     ru: '柴油粗滤器(Oil-Water Separator)',
     ja: '柴油粗滤器(Oil-Water Separator)',
     zh: '柴油粗滤器(Oil-Water Separator)',
+    ar: '柴油粗滤器(Oil-Water Separator)',
+    it: '柴油粗滤器(Oil-Water Separator)',
   },
   '柴油精滤器': {
     en: '柴油精滤器',
@@ -461,6 +551,8 @@ export const sinotrukNameTranslations = {
     ru: '柴油精滤器',
     ja: '柴油精滤器',
     zh: '柴油精滤器',
+    ar: '柴油精滤器',
+    it: '柴油精滤器',
   },
   '消声器(排气筒)总成': {
     en: '消声器(排气筒)总成',
@@ -471,6 +563,8 @@ export const sinotrukNameTranslations = {
     ru: '消声器(排气筒)总成',
     ja: '消声器(排气筒)总成',
     zh: '消声器(排气筒)总成',
+    ar: '消声器(排气筒)总成',
+    it: '消声器(排气筒)总成',
   },
   '液压油泵(举升系统)': {
     en: '液压油泵(举升系统)',
@@ -481,6 +575,8 @@ export const sinotrukNameTranslations = {
     ru: '液压油泵(举升系统)',
     ja: '液压油泵(举升系统)',
     zh: '液压油泵(举升系统)',
+    ar: '液压油泵(举升系统)',
+    it: '液压油泵(举升系统)',
   },
   '电气/传感器': {
     en: '电气/传感器',
@@ -491,6 +587,8 @@ export const sinotrukNameTranslations = {
     ru: '电气/传感器',
     ja: '电气/传感器',
     zh: '电气/传感器',
+    ar: '电气/传感器',
+    it: '电气/传感器',
   },
   '离合器从动盘(摩擦片)': {
     en: '离合器从动盘(摩擦片)',
@@ -501,6 +599,8 @@ export const sinotrukNameTranslations = {
     ru: '离合器从动盘(摩擦片)',
     ja: '离合器从动盘(摩擦片)',
     zh: '离合器从动盘(摩擦片)',
+    ar: '离合器从动盘(摩擦片)',
+    it: '离合器从动盘(摩擦片)',
   },
   '离合器分离轴承(助力泵)': {
     en: '离合器分离轴承(助力泵)',
@@ -511,6 +611,8 @@ export const sinotrukNameTranslations = {
     ru: '离合器分离轴承(助力泵)',
     ja: '离合器分离轴承(助力泵)',
     zh: '离合器分离轴承(助力泵)',
+    ar: '离合器分离轴承(助力泵)',
+    it: '离合器分离轴承(助力泵)',
   },
   '离合器助力缸(分离缸)': {
     en: '离合器助力缸(分离缸)',
@@ -521,6 +623,8 @@ export const sinotrukNameTranslations = {
     ru: '离合器助力缸(分离缸)',
     ja: '离合器助力缸(分离缸)',
     zh: '离合器助力缸(分离缸)',
+    ar: '离合器助力缸(分离缸)',
+    it: '离合器助力缸(分离缸)',
   },
   '离合器压盘总成': {
     en: '离合器压盘总成',
@@ -531,6 +635,8 @@ export const sinotrukNameTranslations = {
     ru: '离合器压盘总成',
     ja: '离合器压盘总成',
     zh: '离合器压盘总成',
+    ar: '离合器压盘总成',
+    it: '离合器压盘总成',
   },
   '空气压缩机(双缸水冷)': {
     en: '空气压缩机(双缸水冷)',
@@ -541,6 +647,8 @@ export const sinotrukNameTranslations = {
     ru: '空气压缩机(双缸水冷)',
     ja: '空气压缩机(双缸水冷)',
     zh: '空气压缩机(双缸水冷)',
+    ar: '空气压缩机(双缸水冷)',
+    it: '空气压缩机(双缸水冷)',
   },
   '车门玻璃升降器(左/右)': {
     en: '车门玻璃升降器(左/右)',
@@ -551,6 +659,8 @@ export const sinotrukNameTranslations = {
     ru: '车门玻璃升降器(左/右)',
     ja: '车门玻璃升降器(左/右)',
     zh: '车门玻璃升降器(左/右)',
+    ar: '车门玻璃升降器(左/右)',
+    it: '车门玻璃升降器(左/右)',
   },
   '转向/悬挂': {
     en: '转向/悬挂',
@@ -561,6 +671,8 @@ export const sinotrukNameTranslations = {
     ru: '转向/悬挂',
     ja: '转向/悬挂',
     zh: '转向/悬挂',
+    ar: '转向/悬挂',
+    it: '转向/悬挂',
   },
   '输入轴转速传感器': {
     en: '输入轴转速传感器',
@@ -571,6 +683,8 @@ export const sinotrukNameTranslations = {
     ru: '输入轴转速传感器',
     ja: '输入轴转速传感器',
     zh: '输入轴转速传感器',
+    ar: '输入轴转速传感器',
+    it: '输入轴转速传感器',
   },
   '钢板弹簧U型螺栓压板': {
     en: '钢板弹簧U型螺栓压板',
@@ -581,6 +695,8 @@ export const sinotrukNameTranslations = {
     ru: '钢板弹簧U型螺栓压板',
     ja: '钢板弹簧U型螺栓压板',
     zh: '钢板弹簧U型螺栓压板',
+    ar: '钢板弹簧U型螺栓压板',
+    it: '钢板弹簧U型螺栓压板',
   },
   '驻车/手刹阀': {
     en: '驻车/手刹阀',
@@ -591,10 +707,14 @@ export const sinotrukNameTranslations = {
     ru: '驻车/手刹阀',
     ja: '驻车/手刹阀',
     zh: '驻车/手刹阀',
+    ar: '驻车/手刹阀',
+    it: '驻车/手刹阀',
   },
   '空气滤芯总成': {
     en: '空气滤芯总成',
     zh: '空气滤芯总成',
+    ar: '空气滤芯总成',
+    it: '空气滤芯总成',
     es: '空气滤芯总成',
     fr: '空气滤芯总成',
     de: '空气滤芯总成',
@@ -607,6 +727,8 @@ export const sinotrukNameTranslations = {
   '柴油粗滤器(油水分离器)': {
     en: '柴油粗滤器(油水分离器)',
     zh: '柴油粗滤器(油水分离器)',
+    ar: '柴油粗滤器(油水分离器)',
+    it: '柴油粗滤器(油水分离器)',
     es: '柴油粗滤器(油水分离器)',
     fr: '柴油粗滤器(油水分离器)',
     de: '柴油粗滤器(油水分离器)',
@@ -619,6 +741,8 @@ export const sinotrukNameTranslations = {
   '起动机总成': {
     en: '起动机总成',
     zh: '起动机总成',
+    ar: '起动机总成',
+    it: '起动机总成',
     es: '起动机总成',
     fr: '起动机总成',
     de: '起动机总成',
@@ -631,6 +755,8 @@ export const sinotrukNameTranslations = {
   '转向节臂/羊角(左)': {
     en: '转向节臂/羊角(左)',
     zh: '转向节臂/羊角(左)',
+    ar: '转向节臂/羊角(左)',
+    it: '转向节臂/羊角(左)',
     es: '转向节臂/羊角(左)',
     fr: '转向节臂/羊角(左)',
     de: '转向节臂/羊角(左)',
@@ -643,6 +769,8 @@ export const sinotrukNameTranslations = {
   '传动轴总成(变速箱至驱动桥)': {
     en: '传动轴总成(变速箱至驱动桥)',
     zh: '传动轴总成(变速箱至驱动桥)',
+    ar: '传动轴总成(变速箱至驱动桥)',
+    it: '传动轴总成(变速箱至驱动桥)',
     es: '传动轴总成(变速箱至驱动桥)',
     fr: '传动轴总成(变速箱至驱动桥)',
     de: '传动轴总成(变速箱至驱动桥)',
@@ -655,6 +783,8 @@ export const sinotrukNameTranslations = {
   '水泵总成': {
     en: '水泵总成',
     zh: '水泵总成',
+    ar: '水泵总成',
+    it: '水泵总成',
     es: '水泵总成',
     fr: '水泵总成',
     de: '水泵总成',
@@ -667,6 +797,8 @@ export const sinotrukNameTranslations = {
   '涡轮增压器总成': {
     en: '涡轮增压器总成',
     zh: '涡轮增压器总成',
+    ar: '涡轮增压器总成',
+    it: '涡轮增压器总成',
     es: '涡轮增压器总成',
     fr: '涡轮增压器总成',
     de: '涡轮增压器总成',
@@ -679,6 +811,8 @@ export const sinotrukNameTranslations = {
   '驱动轴节叉(万向节叉)': {
     en: '驱动轴节叉(万向节叉)',
     zh: '驱动轴节叉(万向节叉)',
+    ar: '驱动轴节叉(万向节叉)',
+    it: '驱动轴节叉(万向节叉)',
     es: '驱动轴节叉(万向节叉)',
     fr: '驱动轴节叉(万向节叉)',
     de: '驱动轴节叉(万向节叉)',
@@ -699,6 +833,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'Sinotruk part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Sinotruk part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '中国重汽零件。500-1000小时或视油液检测结果更换',
+    ar: 'Sinotruk part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Sinotruk part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Sinotruk. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Sinotruk. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Sinotruk-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -711,6 +847,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。5,000-10,000km随保养更换': {
     en: 'SINOTRUK 零件。5,000-10,000km随保养更换',
     zh: 'SINOTRUK 零件。5,000-10,000km随保养更换',
+    ar: 'SINOTRUK 零件。5,000-10,000km随保养更换',
+    it: 'SINOTRUK 零件。5,000-10,000km随保养更换',
     es: 'SINOTRUK 零件。5,000-10,000km随保养更换',
     fr: 'SINOTRUK 零件。5,000-10,000km随保养更换',
     de: 'SINOTRUK 零件。5,000-10,000km随保养更换',
@@ -723,6 +861,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。视路况10,000-20,000km': {
     en: 'SINOTRUK 零件。视路况10,000-20,000km',
     zh: 'SINOTRUK 零件。视路况10,000-20,000km',
+    ar: 'SINOTRUK 零件。视路况10,000-20,000km',
+    it: 'SINOTRUK 零件。视路况10,000-20,000km',
     es: 'SINOTRUK 零件。视路况10,000-20,000km',
     fr: 'SINOTRUK 零件。视路况10,000-20,000km',
     de: 'SINOTRUK 零件。视路况10,000-20,000km',
@@ -735,6 +875,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期': {
     en: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期',
     zh: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期',
+    ar: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期',
+    it: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期',
     es: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期',
     fr: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期',
     de: 'SINOTRUK 零件。5,000-10,000km,雨季/劣质油品缩短周期',
@@ -747,6 +889,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。与粗滤器同步更换': {
     en: 'SINOTRUK 零件。与粗滤器同步更换',
     zh: 'SINOTRUK 零件。与粗滤器同步更换',
+    ar: 'SINOTRUK 零件。与粗滤器同步更换',
+    it: 'SINOTRUK 零件。与粗滤器同步更换',
     es: 'SINOTRUK 零件。与粗滤器同步更换',
     fr: 'SINOTRUK 零件。与粗滤器同步更换',
     de: 'SINOTRUK 零件。与粗滤器同步更换',
@@ -759,6 +903,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。发电异常/异响时检修更换': {
     en: 'SINOTRUK 零件。发电异常/异响时检修更换',
     zh: 'SINOTRUK 零件。发电异常/异响时检修更换',
+    ar: 'SINOTRUK 零件。发电异常/异响时检修更换',
+    it: 'SINOTRUK 零件。发电异常/异响时检修更换',
     es: 'SINOTRUK 零件。发电异常/异响时检修更换',
     fr: 'SINOTRUK 零件。发电异常/异响时检修更换',
     de: 'SINOTRUK 零件。发电异常/异响时检修更换',
@@ -771,6 +917,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。启动无力/异响时更换': {
     en: 'SINOTRUK 零件。启动无力/异响时更换',
     zh: 'SINOTRUK 零件。启动无力/异响时更换',
+    ar: 'SINOTRUK 零件。启动无力/异响时更换',
+    it: 'SINOTRUK 零件。启动无力/异响时更换',
     es: 'SINOTRUK 零件。启动无力/异响时更换',
     fr: 'SINOTRUK 零件。启动无力/异响时更换',
     de: 'SINOTRUK 零件。启动无力/异响时更换',
@@ -783,6 +931,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。刹车气压不足/异响时更换': {
     en: 'SINOTRUK 零件。刹车气压不足/异响时更换',
     zh: 'SINOTRUK 零件。刹车气压不足/异响时更换',
+    ar: 'SINOTRUK 零件。刹车气压不足/异响时更换',
+    it: 'SINOTRUK 零件。刹车气压不足/异响时更换',
     es: 'SINOTRUK 零件。刹车气压不足/异响时更换',
     fr: 'SINOTRUK 零件。刹车气压不足/异响时更换',
     de: 'SINOTRUK 零件。刹车气压不足/异响时更换',
@@ -795,6 +945,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。30,000-50,000km或视磨损': {
     en: 'SINOTRUK 零件。30,000-50,000km或视磨损',
     zh: 'SINOTRUK 零件。30,000-50,000km或视磨损',
+    ar: 'SINOTRUK 零件。30,000-50,000km或视磨损',
+    it: 'SINOTRUK 零件。30,000-50,000km或视磨损',
     es: 'SINOTRUK 零件。30,000-50,000km或视磨损',
     fr: 'SINOTRUK 零件。30,000-50,000km或视磨损',
     de: 'SINOTRUK 零件。30,000-50,000km或视磨损',
@@ -807,6 +959,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。与前片同步检查,重载车型更频繁': {
     en: 'SINOTRUK 零件。与前片同步检查,重载车型更频繁',
     zh: 'SINOTRUK 零件。与前片同步检查,重载车型更频繁',
+    ar: 'SINOTRUK 零件。与前片同步检查,重载车型更频繁',
+    it: 'SINOTRUK 零件。与前片同步检查,重载车型更频繁',
     es: 'SINOTRUK 零件。与前片同步检查,重载车型更频繁',
     fr: 'SINOTRUK 零件。与前片同步检查,重载车型更频繁',
     de: 'SINOTRUK 零件。与前片同步检查,重载车型更频繁',
@@ -819,6 +973,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。随刹车蹄片检查': {
     en: 'SINOTRUK 零件。随刹车蹄片检查',
     zh: 'SINOTRUK 零件。随刹车蹄片检查',
+    ar: 'SINOTRUK 零件。随刹车蹄片检查',
+    it: 'SINOTRUK 零件。随刹车蹄片检查',
     es: 'SINOTRUK 零件。随刹车蹄片检查',
     fr: 'SINOTRUK 零件。随刹车蹄片检查',
     de: 'SINOTRUK 零件。随刹车蹄片检查',
@@ -831,6 +987,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。制动异响/行程异常时更换': {
     en: 'SINOTRUK 零件。制动异响/行程异常时更换',
     zh: 'SINOTRUK 零件。制动异响/行程异常时更换',
+    ar: 'SINOTRUK 零件。制动异响/行程异常时更换',
+    it: 'SINOTRUK 零件。制动异响/行程异常时更换',
     es: 'SINOTRUK 零件。制动异响/行程异常时更换',
     fr: 'SINOTRUK 零件。制动异响/行程异常时更换',
     de: 'SINOTRUK 零件。制动异响/行程异常时更换',
@@ -843,6 +1001,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。刹车异响/漏气时更换': {
     en: 'SINOTRUK 零件。刹车异响/漏气时更换',
     zh: 'SINOTRUK 零件。刹车异响/漏气时更换',
+    ar: 'SINOTRUK 零件。刹车异响/漏气时更换',
+    it: 'SINOTRUK 零件。刹车异响/漏气时更换',
     es: 'SINOTRUK 零件。刹车异响/漏气时更换',
     fr: 'SINOTRUK 零件。刹车异响/漏气时更换',
     de: 'SINOTRUK 零件。刹车异响/漏气时更换',
@@ -855,6 +1015,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。盘面磨损/异响时更换': {
     en: 'SINOTRUK 零件。盘面磨损/异响时更换',
     zh: 'SINOTRUK 零件。盘面磨损/异响时更换',
+    ar: 'SINOTRUK 零件。盘面磨损/异响时更换',
+    it: 'SINOTRUK 零件。盘面磨损/异响时更换',
     es: 'SINOTRUK 零件。盘面磨损/异响时更换',
     fr: 'SINOTRUK 零件。盘面磨损/异响时更换',
     de: 'SINOTRUK 零件。盘面磨损/异响时更换',
@@ -867,6 +1029,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。离合器打滑/异响时更换': {
     en: 'SINOTRUK 零件。离合器打滑/异响时更换',
     zh: 'SINOTRUK 零件。离合器打滑/异响时更换',
+    ar: 'SINOTRUK 零件。离合器打滑/异响时更换',
+    it: 'SINOTRUK 零件。离合器打滑/异响时更换',
     es: 'SINOTRUK 零件。离合器打滑/异响时更换',
     fr: 'SINOTRUK 零件。离合器打滑/异响时更换',
     de: 'SINOTRUK 零件。离合器打滑/异响时更换',
@@ -879,6 +1043,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。离合器异响/踩踏沉重时更换': {
     en: 'SINOTRUK 零件。离合器异响/踩踏沉重时更换',
     zh: 'SINOTRUK 零件。离合器异响/踩踏沉重时更换',
+    ar: 'SINOTRUK 零件。离合器异响/踩踏沉重时更换',
+    it: 'SINOTRUK 零件。离合器异响/踩踏沉重时更换',
     es: 'SINOTRUK 零件。离合器异响/踩踏沉重时更换',
     fr: 'SINOTRUK 零件。离合器异响/踩踏沉重时更换',
     de: 'SINOTRUK 零件。离合器异响/踩踏沉重时更换',
@@ -891,6 +1057,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。悬挂异响/跑偏时检查更换': {
     en: 'SINOTRUK 零件。悬挂异响/跑偏时检查更换',
     zh: 'SINOTRUK 零件。悬挂异响/跑偏时检查更换',
+    ar: 'SINOTRUK 零件。悬挂异响/跑偏时检查更换',
+    it: 'SINOTRUK 零件。悬挂异响/跑偏时检查更换',
     es: 'SINOTRUK 零件。悬挂异响/跑偏时检查更换',
     fr: 'SINOTRUK 零件。悬挂异响/跑偏时检查更换',
     de: 'SINOTRUK 零件。悬挂异响/跑偏时检查更换',
@@ -903,6 +1071,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。转向异响/精度下降时': {
     en: 'SINOTRUK 零件。转向异响/精度下降时',
     zh: 'SINOTRUK 零件。转向异响/精度下降时',
+    ar: 'SINOTRUK 零件。转向异响/精度下降时',
+    it: 'SINOTRUK 零件。转向异响/精度下降时',
     es: 'SINOTRUK 零件。转向异响/精度下降时',
     fr: 'SINOTRUK 零件。转向异响/精度下降时',
     de: 'SINOTRUK 零件。转向异响/精度下降时',
@@ -915,6 +1085,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。钢板弹簧异响/松旷时更换': {
     en: 'SINOTRUK 零件。钢板弹簧异响/松旷时更换',
     zh: 'SINOTRUK 零件。钢板弹簧异响/松旷时更换',
+    ar: 'SINOTRUK 零件。钢板弹簧异响/松旷时更换',
+    it: 'SINOTRUK 零件。钢板弹簧异响/松旷时更换',
     es: 'SINOTRUK 零件。钢板弹簧异响/松旷时更换',
     fr: 'SINOTRUK 零件。钢板弹簧异响/松旷时更换',
     de: 'SINOTRUK 零件。钢板弹簧异响/松旷时更换',
@@ -927,6 +1099,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。与销/衬套同步更换': {
     en: 'SINOTRUK 零件。与销/衬套同步更换',
     zh: 'SINOTRUK 零件。与销/衬套同步更换',
+    ar: 'SINOTRUK 零件。与销/衬套同步更换',
+    it: 'SINOTRUK 零件。与销/衬套同步更换',
     es: 'SINOTRUK 零件。与销/衬套同步更换',
     fr: 'SINOTRUK 零件。与销/衬套同步更换',
     de: 'SINOTRUK 零件。与销/衬套同步更换',
@@ -939,6 +1113,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。转向异响/间隙过大时更换': {
     en: 'SINOTRUK 零件。转向异响/间隙过大时更换',
     zh: 'SINOTRUK 零件。转向异响/间隙过大时更换',
+    ar: 'SINOTRUK 零件。转向异响/间隙过大时更换',
+    it: 'SINOTRUK 零件。转向异响/间隙过大时更换',
     es: 'SINOTRUK 零件。转向异响/间隙过大时更换',
     fr: 'SINOTRUK 零件。转向异响/间隙过大时更换',
     de: 'SINOTRUK 零件。转向异响/间隙过大时更换',
@@ -951,6 +1127,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。异响/漏油时更换': {
     en: 'SINOTRUK 零件。异响/漏油时更换',
     zh: 'SINOTRUK 零件。异响/漏油时更换',
+    ar: 'SINOTRUK 零件。异响/漏油时更换',
+    it: 'SINOTRUK 零件。异响/漏油时更换',
     es: 'SINOTRUK 零件。异响/漏油时更换',
     fr: 'SINOTRUK 零件。异响/漏油时更换',
     de: 'SINOTRUK 零件。异响/漏油时更换',
@@ -963,6 +1141,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。下沉/断裂时更换': {
     en: 'SINOTRUK 零件。下沉/断裂时更换',
     zh: 'SINOTRUK 零件。下沉/断裂时更换',
+    ar: 'SINOTRUK 零件。下沉/断裂时更换',
+    it: 'SINOTRUK 零件。下沉/断裂时更换',
     es: 'SINOTRUK 零件。下沉/断裂时更换',
     fr: 'SINOTRUK 零件。下沉/断裂时更换',
     de: 'SINOTRUK 零件。下沉/断裂时更换',
@@ -975,6 +1155,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。随弹簧检查更换': {
     en: 'SINOTRUK 零件。随弹簧检查更换',
     zh: 'SINOTRUK 零件。随弹簧检查更换',
+    ar: 'SINOTRUK 零件。随弹簧检查更换',
+    it: 'SINOTRUK 零件。随弹簧检查更换',
     es: 'SINOTRUK 零件。随弹簧检查更换',
     fr: 'SINOTRUK 零件。随弹簧检查更换',
     de: 'SINOTRUK 零件。随弹簧检查更换',
@@ -987,6 +1169,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。异响/断裂时更换(大修类)': {
     en: 'SINOTRUK 零件。异响/断裂时更换(大修类)',
     zh: 'SINOTRUK 零件。异响/断裂时更换(大修类)',
+    ar: 'SINOTRUK 零件。异响/断裂时更换(大修类)',
+    it: 'SINOTRUK 零件。异响/断裂时更换(大修类)',
     es: 'SINOTRUK 零件。异响/断裂时更换(大修类)',
     fr: 'SINOTRUK 零件。异响/断裂时更换(大修类)',
     de: 'SINOTRUK 零件。异响/断裂时更换(大修类)',
@@ -999,6 +1183,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。传动轴异响/抖动时更换': {
     en: 'SINOTRUK 零件。传动轴异响/抖动时更换',
     zh: 'SINOTRUK 零件。传动轴异响/抖动时更换',
+    ar: 'SINOTRUK 零件。传动轴异响/抖动时更换',
+    it: 'SINOTRUK 零件。传动轴异响/抖动时更换',
     es: 'SINOTRUK 零件。传动轴异响/抖动时更换',
     fr: 'SINOTRUK 零件。传动轴异响/抖动时更换',
     de: 'SINOTRUK 零件。传动轴异响/抖动时更换',
@@ -1011,6 +1197,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。异响/抖动/大修时更换': {
     en: 'SINOTRUK 零件。异响/抖动/大修时更换',
     zh: 'SINOTRUK 零件。异响/抖动/大修时更换',
+    ar: 'SINOTRUK 零件。异响/抖动/大修时更换',
+    it: 'SINOTRUK 零件。异响/抖动/大修时更换',
     es: 'SINOTRUK 零件。异响/抖动/大修时更换',
     fr: 'SINOTRUK 零件。异响/抖动/大修时更换',
     de: 'SINOTRUK 零件。异响/抖动/大修时更换',
@@ -1023,6 +1211,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。冷却液渗漏/异响时更换': {
     en: 'SINOTRUK 零件。冷却液渗漏/异响时更换',
     zh: 'SINOTRUK 零件。冷却液渗漏/异响时更换',
+    ar: 'SINOTRUK 零件。冷却液渗漏/异响时更换',
+    it: 'SINOTRUK 零件。冷却液渗漏/异响时更换',
     es: 'SINOTRUK 零件。冷却液渗漏/异响时更换',
     fr: 'SINOTRUK 零件。冷却液渗漏/异响时更换',
     de: 'SINOTRUK 零件。冷却液渗漏/异响时更换',
@@ -1035,6 +1225,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。碰撞/老化开裂时更换': {
     en: 'SINOTRUK 零件。碰撞/老化开裂时更换',
     zh: 'SINOTRUK 零件。碰撞/老化开裂时更换',
+    ar: 'SINOTRUK 零件。碰撞/老化开裂时更换',
+    it: 'SINOTRUK 零件。碰撞/老化开裂时更换',
     es: 'SINOTRUK 零件。碰撞/老化开裂时更换',
     fr: 'SINOTRUK 零件。碰撞/老化开裂时更换',
     de: 'SINOTRUK 零件。碰撞/老化开裂时更换',
@@ -1047,6 +1239,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。动力下降/异响/漏油时更换(大修类)': {
     en: 'SINOTRUK 零件。动力下降/异响/漏油时更换(大修类)',
     zh: 'SINOTRUK 零件。动力下降/异响/漏油时更换(大修类)',
+    ar: 'SINOTRUK 零件。动力下降/异响/漏油时更换(大修类)',
+    it: 'SINOTRUK 零件。动力下降/异响/漏油时更换(大修类)',
     es: 'SINOTRUK 零件。动力下降/异响/漏油时更换(大修类)',
     fr: 'SINOTRUK 零件。动力下降/异响/漏油时更换(大修类)',
     de: 'SINOTRUK 零件。动力下降/异响/漏油时更换(大修类)',
@@ -1059,6 +1253,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。排气异响/锈蚀穿孔时更换': {
     en: 'SINOTRUK 零件。排气异响/锈蚀穿孔时更换',
     zh: 'SINOTRUK 零件。排气异响/锈蚀穿孔时更换',
+    ar: 'SINOTRUK 零件。排气异响/锈蚀穿孔时更换',
+    it: 'SINOTRUK 零件。排气异响/锈蚀穿孔时更换',
     es: 'SINOTRUK 零件。排气异响/锈蚀穿孔时更换',
     fr: 'SINOTRUK 零件。排气异响/锈蚀穿孔时更换',
     de: 'SINOTRUK 零件。排气异响/锈蚀穿孔时更换',
@@ -1071,6 +1267,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。转向沉重/异响时更换': {
     en: 'SINOTRUK 零件。转向沉重/异响时更换',
     zh: 'SINOTRUK 零件。转向沉重/异响时更换',
+    ar: 'SINOTRUK 零件。转向沉重/异响时更换',
+    it: 'SINOTRUK 零件。转向沉重/异响时更换',
     es: 'SINOTRUK 零件。转向沉重/异响时更换',
     fr: 'SINOTRUK 零件。转向沉重/异响时更换',
     de: 'SINOTRUK 零件。转向沉重/异响时更换',
@@ -1083,6 +1281,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。离合器踩踏沉重/异响时更换': {
     en: 'SINOTRUK 零件。离合器踩踏沉重/异响时更换',
     zh: 'SINOTRUK 零件。离合器踩踏沉重/异响时更换',
+    ar: 'SINOTRUK 零件。离合器踩踏沉重/异响时更换',
+    it: 'SINOTRUK 零件。离合器踩踏沉重/异响时更换',
     es: 'SINOTRUK 零件。离合器踩踏沉重/异响时更换',
     fr: 'SINOTRUK 零件。离合器踩踏沉重/异响时更换',
     de: 'SINOTRUK 零件。离合器踩踏沉重/异响时更换',
@@ -1095,6 +1295,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。随蹄片检查更换': {
     en: 'SINOTRUK 零件。随蹄片检查更换',
     zh: 'SINOTRUK 零件。随蹄片检查更换',
+    ar: 'SINOTRUK 零件。随蹄片检查更换',
+    it: 'SINOTRUK 零件。随蹄片检查更换',
     es: 'SINOTRUK 零件。随蹄片检查更换',
     fr: 'SINOTRUK 零件。随蹄片检查更换',
     de: 'SINOTRUK 零件。随蹄片检查更换',
@@ -1107,6 +1309,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。驻车异响/失效时检修更换': {
     en: 'SINOTRUK 零件。驻车异响/失效时检修更换',
     zh: 'SINOTRUK 零件。驻车异响/失效时检修更换',
+    ar: 'SINOTRUK 零件。驻车异响/失效时检修更换',
+    it: 'SINOTRUK 零件。驻车异响/失效时检修更换',
     es: 'SINOTRUK 零件。驻车异响/失效时检修更换',
     fr: 'SINOTRUK 零件。驻车异响/失效时检修更换',
     de: 'SINOTRUK 零件。驻车异响/失效时检修更换',
@@ -1119,6 +1323,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。制动效果下降时检修更换': {
     en: 'SINOTRUK 零件。制动效果下降时检修更换',
     zh: 'SINOTRUK 零件。制动效果下降时检修更换',
+    ar: 'SINOTRUK 零件。制动效果下降时检修更换',
+    it: 'SINOTRUK 零件。制动效果下降时检修更换',
     es: 'SINOTRUK 零件。制动效果下降时检修更换',
     fr: 'SINOTRUK 零件。制动效果下降时检修更换',
     de: 'SINOTRUK 零件。制动效果下降时检修更换',
@@ -1131,6 +1337,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。变速箱换挡异常时检修更换': {
     en: 'SINOTRUK 零件。变速箱换挡异常时检修更换',
     zh: 'SINOTRUK 零件。变速箱换挡异常时检修更换',
+    ar: 'SINOTRUK 零件。变速箱换挡异常时检修更换',
+    it: 'SINOTRUK 零件。变速箱换挡异常时检修更换',
     es: 'SINOTRUK 零件。变速箱换挡异常时检修更换',
     fr: 'SINOTRUK 零件。变速箱换挡异常时检修更换',
     de: 'SINOTRUK 零件。变速箱换挡异常时检修更换',
@@ -1143,6 +1351,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。气压异常/制动不良时更换': {
     en: 'SINOTRUK 零件。气压异常/制动不良时更换',
     zh: 'SINOTRUK 零件。气压异常/制动不良时更换',
+    ar: 'SINOTRUK 零件。气压异常/制动不良时更换',
+    it: 'SINOTRUK 零件。气压异常/制动不良时更换',
     es: 'SINOTRUK 零件。气压异常/制动不良时更换',
     fr: 'SINOTRUK 零件。气压异常/制动不良时更换',
     de: 'SINOTRUK 零件。气压异常/制动不良时更换',
@@ -1155,6 +1365,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。升降失灵时更换': {
     en: 'SINOTRUK 零件。升降失灵时更换',
     zh: 'SINOTRUK 零件。升降失灵时更换',
+    ar: 'SINOTRUK 零件。升降失灵时更换',
+    it: 'SINOTRUK 零件。升降失灵时更换',
     es: 'SINOTRUK 零件。升降失灵时更换',
     fr: 'SINOTRUK 零件。升降失灵时更换',
     de: 'SINOTRUK 零件。升降失灵时更换',
@@ -1167,6 +1379,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。传动轴异响时更换': {
     en: 'SINOTRUK 零件。传动轴异响时更换',
     zh: 'SINOTRUK 零件。传动轴异响时更换',
+    ar: 'SINOTRUK 零件。传动轴异响时更换',
+    it: 'SINOTRUK 零件。传动轴异响时更换',
     es: 'SINOTRUK 零件。传动轴异响时更换',
     fr: 'SINOTRUK 零件。传动轴异响时更换',
     de: 'SINOTRUK 零件。传动轴异响时更换',
@@ -1179,6 +1393,8 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   'SINOTRUK 零件。举升无力/异响时检修更换': {
     en: 'SINOTRUK 零件。举升无力/异响时检修更换',
     zh: 'SINOTRUK 零件。举升无力/异响时检修更换',
+    ar: 'SINOTRUK 零件。举升无力/异响时检修更换',
+    it: 'SINOTRUK 零件。举升无力/异响时检修更换',
     es: 'SINOTRUK 零件。举升无力/异响时检修更换',
     fr: 'SINOTRUK 零件。举升无力/异响时检修更换',
     de: 'SINOTRUK 零件。举升无力/异响时检修更换',
@@ -1207,6 +1423,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
+    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -1219,6 +1436,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
+    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -1231,6 +1449,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
+    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -1243,6 +1462,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
+    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -1255,6 +1475,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
+    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -1267,6 +1488,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
+    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -1279,6 +1501,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
+    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -1291,6 +1514,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
+    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -1303,6 +1527,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
+    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -1315,6 +1540,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
+    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -1327,6 +1553,7 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
+    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },
