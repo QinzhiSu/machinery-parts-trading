@@ -56,3 +56,20 @@ export function getTranslatedCumminsMachineDescription(model: string, language: 
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
+
+
+// Export function to get all machine IDs
+export function getCumminsMachineIds(): string[] {
+  return Object.keys(cumminsmachineDescriptionTranslations);
+}
+
+// Export function to get machine data by ID and language
+export function getCumminsMachineData(machineId: string, language: string = 'en') {
+  return {
+    id: machineId,
+    name: cumminsmachineNameTranslations[machineId]?.[language] || machineId,
+    type: cumminsmachineTypeTranslations[machineId]?.[language] || 'Machine',
+    specs: cumminsmachineSpecsTranslations[machineId]?.[language] || '',
+    description: cumminsmachineDescriptionTranslations[machineId]?.[language] || '',
+  };
+}

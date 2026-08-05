@@ -76,3 +76,20 @@ export function getTranslatedIsuzuMachineDescription(model: string, language: st
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
+
+
+// Export function to get all machine IDs
+export function getIsuzuMachineIds(): string[] {
+  return Object.keys(isuzumachineDescriptionTranslations);
+}
+
+// Export function to get machine data by ID and language
+export function getIsuzuMachineData(machineId: string, language: string = 'en') {
+  return {
+    id: machineId,
+    name: isuzumachineNameTranslations[machineId]?.[language] || machineId,
+    type: isuzumachineTypeTranslations[machineId]?.[language] || 'Machine',
+    specs: isuzumachineSpecsTranslations[machineId]?.[language] || '',
+    description: isuzumachineDescriptionTranslations[machineId]?.[language] || '',
+  };
+}

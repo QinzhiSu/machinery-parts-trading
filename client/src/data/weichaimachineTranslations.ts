@@ -56,3 +56,20 @@ export function getTranslatedWeichaiMachineDescription(model: string, language: 
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
+
+
+// Export function to get all machine IDs
+export function getWeichaiMachineIds(): string[] {
+  return Object.keys(weichaimachineDescriptionTranslations);
+}
+
+// Export function to get machine data by ID and language
+export function getWeichaiMachineData(machineId: string, language: string = 'en') {
+  return {
+    id: machineId,
+    name: weichaimachineNameTranslations[machineId]?.[language] || machineId,
+    type: weichaimachineTypeTranslations[machineId]?.[language] || 'Machine',
+    specs: weichaimachineSpecsTranslations[machineId]?.[language] || '',
+    description: weichaimachineDescriptionTranslations[machineId]?.[language] || '',
+  };
+}

@@ -76,3 +76,20 @@ export function getTranslatedSinotruckMachineDescription(model: string, language
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
+
+
+// Export function to get all machine IDs
+export function getSinotruckMachineIds(): string[] {
+  return Object.keys(sinotruckmachineDescriptionTranslations);
+}
+
+// Export function to get machine data by ID and language
+export function getSinotruckMachineData(machineId: string, language: string = 'en') {
+  return {
+    id: machineId,
+    name: sinotruckmachineNameTranslations[machineId]?.[language] || machineId,
+    type: sinotruckmachineTypeTranslations[machineId]?.[language] || 'Machine',
+    specs: sinotruckmachineSpecsTranslations[machineId]?.[language] || '',
+    description: sinotruckmachineDescriptionTranslations[machineId]?.[language] || '',
+  };
+}

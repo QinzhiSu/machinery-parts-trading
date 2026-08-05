@@ -76,3 +76,20 @@ export function getTranslatedShacmanMachineDescription(model: string, language: 
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
+
+
+// Export function to get all machine IDs
+export function getShacmanMachineIds(): string[] {
+  return Object.keys(shacmanmachineDescriptionTranslations);
+}
+
+// Export function to get machine data by ID and language
+export function getShacmanMachineData(machineId: string, language: string = 'en') {
+  return {
+    id: machineId,
+    name: shacmanmachineNameTranslations[machineId]?.[language] || machineId,
+    type: shacmanmachineTypeTranslations[machineId]?.[language] || 'Machine',
+    specs: shacmanmachineSpecsTranslations[machineId]?.[language] || '',
+    description: shacmanmachineDescriptionTranslations[machineId]?.[language] || '',
+  };
+}

@@ -76,3 +76,20 @@ export function getTranslatedKomatsuMachineDescription(model: string, language: 
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
+
+
+// Export function to get all machine IDs
+export function getKomatsuMachineIds(): string[] {
+  return Object.keys(komatsumachineDescriptionTranslations);
+}
+
+// Export function to get machine data by ID and language
+export function getKomatsuMachineData(machineId: string, language: string = 'en') {
+  return {
+    id: machineId,
+    name: komatsumachineNameTranslations[machineId]?.[language] || machineId,
+    type: komatsumachineTypeTranslations[machineId]?.[language] || 'Machine',
+    specs: komatsumachineSpecsTranslations[machineId]?.[language] || '',
+    description: komatsumachineDescriptionTranslations[machineId]?.[language] || '',
+  };
+}

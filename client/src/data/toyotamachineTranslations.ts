@@ -56,3 +56,20 @@ export function getTranslatedToyotaMachineDescription(model: string, language: s
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
+
+
+// Export function to get all machine IDs
+export function getToyotaMachineIds(): string[] {
+  return Object.keys(toyotamachineDescriptionTranslations);
+}
+
+// Export function to get machine data by ID and language
+export function getToyotaMachineData(machineId: string, language: string = 'en') {
+  return {
+    id: machineId,
+    name: toyotamachineNameTranslations[machineId]?.[language] || machineId,
+    type: toyotamachineTypeTranslations[machineId]?.[language] || 'Machine',
+    specs: toyotamachineSpecsTranslations[machineId]?.[language] || '',
+    description: toyotamachineDescriptionTranslations[machineId]?.[language] || '',
+  };
+}
