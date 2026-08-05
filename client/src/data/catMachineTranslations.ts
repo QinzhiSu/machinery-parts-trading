@@ -12,8 +12,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Pelle hydraulique CAT 320D. Moteur: Caterpillar C6.4 Diesel (121 kW/163 ch). Capacite du godet: 1,19 m³. Profondeur maximale de creusement: 6,7 m. Longueur de la fleche: 6,7 m. Longueur du bras: 2,6 m. Chassis: Chaine en caoutchouc (600 mm). Systeme hydraulique: 280 bar. Reservoir de carburant: 180 L. Systeme de refroidissement: Radiateur avec ventilateur. Transmission: Hydrostatique. Vitesse de rotation: 12 tr/min. Vitesse de deplacement: 4,5 km/h. Ideal pour l\'excavation generale, le chargement et la manutention de materiaux.',
     pt: 'Escavadeira hidraulica CAT 320D. Motor: Caterpillar C6.4 Diesel (121 kW/163 hp). Capacidade da cacamba: 1,19 m³. Profundidade maxima de escavacao: 6,7 m. Comprimento da lanca: 6,7 m. Comprimento do braco: 2,6 m. Chassis: Esteira de borracha (600 mm). Sistema hidraulico: 280 bar. Tanque de combustivel: 180 L. Sistema de resfriamento: Radiador com ventilador. Transmissao: Hidrostatica. Velocidade de rotacao: 12 rpm. Velocidade de deslocamento: 4.5 km/h. Ideal para escavacao geral, carregamento e movimentacao de materiais.',
     it: 'Escavatore idraulico CAT 320D. Motore: Caterpillar C6.4 Diesel (121 kW/163 hp). Capacita della benna: 1,19 m³. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 180 L. Sistema di raffreddamento: Radiatore con ventilatore. Trasmissione: Idrostatica. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Perfetto per scavo generale, carico e movimentazione di materiali.',
-    ja: "Escavatore idraulico CAT 320D. Motore: Caterpillar C6.4 Diesel (121 kW/163 hp). Capacita della benna: 1,19 m\u00b3. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 180 L. Sistema di raffreddamento: Radiatore con ventilatore. Trasmissione: Idrostatica. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Perfetto per scavo generale, carico e movimentazione di materiali.",
-    de: "Escavatore idraulico CAT 320D. Motore: Caterpillar C6.4 Diesel (121 kW/163 hp). Capacita della benna: 1,19 m\u00b3. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 180 L. Sistema di raffreddamento: Radiatore con ventilatore. Trasmissione: Idrostatica. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Perfetto per scavo generale, carico e movimentazione di materiali.",
+    ja: "CAT 320D Hydraulic Excavator. Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Cooling System: Radiator with fan. Transmission: Hydrostatic. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for general excavation, loading, and material handling.",
+    de: "CAT 320D Hydraulic Excavator. Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Cooling System: Radiator with fan. Transmission: Hydrostatic. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for general excavation, loading, and material handling.",
   },
 
   // CAT 320D2
@@ -26,8 +26,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Pelle hydraulique CAT 320D2 (Generation 2). Moteur: Caterpillar C6.4 Diesel (121 kW/163 ch). Capacite du godet: 1,19 m³. Profondeur maximale de creusement: 6,7 m. Longueur de la fleche: 6,7 m. Longueur du bras: 2,6 m. Chassis: Chaine en caoutchouc (600 mm). Systeme hydraulique: 280 bar. Reservoir de carburant: 180 L. Caracteristiques ameliorees: efficacite energetique amelioree, meilleurs controles hydrauliques, emissions reduites. Vitesse de deplacement: 4,5 km/h. Vitesse de rotation: 12 tr/min. Parfait pour la construction, l\'amenagement paysager et les travaux de services.',
     pt: 'Escavadeira hidraulica CAT 320D2 (Geracao 2). Motor: Caterpillar C6.4 Diesel (121 kW/163 hp). Capacidade da cacamba: 1,19 m³. Profundidade maxima de escavacao: 6,7 m. Comprimento da lanca: 6,7 m. Comprimento do braco: 2,6 m. Chassis: Esteira de borracha (600 mm). Sistema hidraulico: 280 bar. Tanque de combustivel: 180 L. Recursos aprimorados: eficiencia de combustivel melhorada, melhores controles hidraulicos, emissoes reduzidas. Velocidade de deslocamento: 4,5 km/h. Velocidade de rotacao: 12 rpm. Perfeito para construcao, paisagismo e trabalhos de servicos.',
     it: 'Escavatore idraulico CAT 320D2 (Generazione 2). Motore: Caterpillar C6.4 Diesel (121 kW/163 hp). Capacita della benna: 1,19 m³. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 180 L. Funzioni migliorate: efficienza del carburante migliorata, migliori controlli idraulici, emissioni ridotte. Velocita di movimento: 4,5 km/h. Velocita di rotazione: 12 giri/min. Perfetto per costruzione, paesaggistica e lavori di servizio.',
-    ja: "Escavatore idraulico CAT 320D2 (Generazione 2). Motore: Caterpillar C6.4 Diesel (121 kW/163 hp). Capacita della benna: 1,19 m\u00b3. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 180 L. Funzioni migliorate: efficienza del carburante migliorata, migliori controlli idraulici, emissioni ridotte. Velocita di movimento: 4,5 km/h. Velocita di rotazione: 12 giri/min. Perfetto per costruzione, paesaggistica e lavori di servizio.",
-    de: "Escavatore idraulico CAT 320D2 (Generazione 2). Motore: Caterpillar C6.4 Diesel (121 kW/163 hp). Capacita della benna: 1,19 m\u00b3. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 180 L. Funzioni migliorate: efficienza del carburante migliorata, migliori controlli idraulici, emissioni ridotte. Velocita di movimento: 4,5 km/h. Velocita di rotazione: 12 giri/min. Perfetto per costruzione, paesaggistica e lavori di servizio.",
+    ja: "CAT 320D2 Hydraulic Excavator (Generation 2). Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Enhanced Features: Improved fuel efficiency, better hydraulic controls, reduced emissions. Travel Speed: 4.5 km/h. Swing Speed: 12 rpm. Perfect for construction, landscaping, and utility work.",
+    de: "CAT 320D2 Hydraulic Excavator (Generation 2). Engine: Caterpillar C6.4 Diesel (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Hydraulic System: 280 bar. Fuel Tank: 180 L. Enhanced Features: Improved fuel efficiency, better hydraulic controls, reduced emissions. Travel Speed: 4.5 km/h. Swing Speed: 12 rpm. Perfect for construction, landscaping, and utility work.",
   },
 
   // CAT 320 GC
@@ -40,8 +40,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Pelle hydraulique CAT 320 GC (Gaz Naturel). Moteur: Caterpillar C6.4 Gaz Naturel (121 kW/163 ch). Capacite du godet: 1,19 m³. Profondeur maximale de creusement: 6,7 m. Longueur de la fleche: 6,7 m. Longueur du bras: 2,6 m. Chassis: Chaine en caoutchouc (600 mm). Reservoir de carburant: 180 L (Gaz). Systeme hydraulique: 280 bar. Option de carburant alternatif ecologique. Vitesse de rotation: 12 tr/min. Vitesse de deplacement: 4,5 km/h. Ideal pour les projets ecologiquement sensibles.',
     pt: 'Escavadeira hidraulica CAT 320 GC (Gas Natural). Motor: Caterpillar C6.4 Gas Natural (121 kW/163 hp). Capacidade da cacamba: 1,19 m³. Profundidade maxima de escavacao: 6,7 m. Comprimento da lanca: 6,7 m. Comprimento do braco: 2,6 m. Chassis: Esteira de borracha (600 mm). Tanque de combustivel: 180 L (Gas). Sistema hidraulico: 280 bar. Opcao de combustivel alternativo ecologico. Velocidade de rotacao: 12 rpm. Velocidade de deslocamento: 4,5 km/h. Ideal para projetos ambientalmente sensiveis.',
     it: 'Escavatore idraulico CAT 320 GC (Gas Naturale). Motore: Caterpillar C6.4 Gas Naturale (121 kW/163 hp). Capacita della benna: 1,19 m³. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Serbatoio carburante: 180 L (Gas). Sistema idraulico: 280 bar. Opzione di carburante alternativo ecologico. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Ideale per progetti ambientalmente sensibili.',
-    ja: "Escavatore idraulico CAT 320 GC (Gas Naturale). Motore: Caterpillar C6.4 Gas Naturale (121 kW/163 hp). Capacita della benna: 1,19 m\u00b3. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Serbatoio carburante: 180 L (Gas). Sistema idraulico: 280 bar. Opzione di carburante alternativo ecologico. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Ideale per progetti ambientalmente sensibili.",
-    de: "Escavatore idraulico CAT 320 GC (Gas Naturale). Motore: Caterpillar C6.4 Gas Naturale (121 kW/163 hp). Capacita della benna: 1,19 m\u00b3. Profondita massima di scavo: 6,7 m. Lunghezza del braccio: 6,7 m. Lunghezza della benna: 2,6 m. Telaio: Cingolo in gomma (600 mm). Serbatoio carburante: 180 L (Gas). Sistema idraulico: 280 bar. Opzione di carburante alternativo ecologico. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Ideale per progetti ambientalmente sensibili.",
+    ja: "CAT 320 GC Hydraulic Excavator (Natural Gas). Engine: Caterpillar C6.4 Natural Gas (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Fuel Tank: 180 L (Gas). Hydraulic System: 280 bar. Eco-friendly alternative fuel option. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for environmentally sensitive projects.",
+    de: "CAT 320 GC Hydraulic Excavator (Natural Gas). Engine: Caterpillar C6.4 Natural Gas (121 kW/163 HP). Bucket Capacity: 1.19 m³. Max Digging Depth: 6.7 m. Boom Length: 6.7 m. Stick Length: 2.6 m. Undercarriage: Rubber Track (600mm). Fuel Tank: 180 L (Gas). Hydraulic System: 280 bar. Eco-friendly alternative fuel option. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for environmentally sensitive projects.",
   },
 
   // CAT 330C
@@ -54,8 +54,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Pelle hydraulique CAT 330C. Moteur: Caterpillar C7.1 Diesel (168 kW/225 ch). Capacite du godet: 1,69 m³. Profondeur maximale de creusement: 7,2 m. Longueur de la fleche: 7,1 m. Longueur du bras: 2,7 m. Chassis: Chaine en caoutchouc (700 mm). Systeme hydraulique: 280 bar. Reservoir de carburant: 250 L. Vitesse de rotation: 12 tr/min. Vitesse de deplacement: 4,5 km/h. Ideal pour les projets d\'excavation de moyenne a grande echelle, d\'exploitation miniere et de terrassement.',
     pt: 'Escavadeira hidraulica CAT 330C. Motor: Caterpillar C7.1 Diesel (168 kW/225 hp). Capacidade da cacamba: 1,69 m³. Profundidade maxima de escavacao: 7,2 m. Comprimento da lanca: 7,1 m. Comprimento do braco: 2,7 m. Chassis: Esteira de borracha (700 mm). Sistema hidraulico: 280 bar. Tanque de combustivel: 250 L. Velocidade de rotacao: 12 rpm. Velocidade de deslocamento: 4,5 km/h. Ideal para projetos de escavacao de medio a grande escala, mineracao e movimento de terra.',
     it: 'Escavatore idraulico CAT 330C. Motore: Caterpillar C7.1 Diesel (168 kW/225 hp). Capacita della benna: 1,69 m³. Profondita massima di scavo: 7,2 m. Lunghezza del braccio: 7,1 m. Lunghezza della benna: 2,7 m. Telaio: Cingolo in gomma (700 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 250 L. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Ideale per progetti di scavo, estrazione mineraria e movimento terra di medio-grande scala.',
-    ja: "Escavatore idraulico CAT 330C. Motore: Caterpillar C7.1 Diesel (168 kW/225 hp). Capacita della benna: 1,69 m\u00b3. Profondita massima di scavo: 7,2 m. Lunghezza del braccio: 7,1 m. Lunghezza della benna: 2,7 m. Telaio: Cingolo in gomma (700 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 250 L. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Ideale per progetti di scavo, estrazione mineraria e movimento terra di medio-grande scala.",
-    de: "Escavatore idraulico CAT 330C. Motore: Caterpillar C7.1 Diesel (168 kW/225 hp). Capacita della benna: 1,69 m\u00b3. Profondita massima di scavo: 7,2 m. Lunghezza del braccio: 7,1 m. Lunghezza della benna: 2,7 m. Telaio: Cingolo in gomma (700 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 250 L. Velocita di rotazione: 12 giri/min. Velocita di movimento: 4,5 km/h. Ideale per progetti di scavo, estrazione mineraria e movimento terra di medio-grande scala.",
+    ja: "CAT 330C Hydraulic Excavator. Engine: Caterpillar C7.1 Diesel (168 kW/225 HP). Bucket Capacity: 1.69 m³. Max Digging Depth: 7.2 m. Boom Length: 7.1 m. Stick Length: 2.7 m. Undercarriage: Rubber Track (700mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for medium to large-scale excavation, mining, and earthmoving projects.",
+    de: "CAT 330C Hydraulic Excavator. Engine: Caterpillar C7.1 Diesel (168 kW/225 HP). Bucket Capacity: 1.69 m³. Max Digging Depth: 7.2 m. Boom Length: 7.1 m. Stick Length: 2.7 m. Undercarriage: Rubber Track (700mm). Hydraulic System: 280 bar. Fuel Tank: 250 L. Swing Speed: 12 rpm. Travel Speed: 4.5 km/h. Ideal for medium to large-scale excavation, mining, and earthmoving projects.",
   },
 
   // CAT 336D
@@ -68,8 +68,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Pelle hydraulique CAT 336D. Moteur: Caterpillar C9 Diesel (206 kW/276 ch). Capacite du godet: 2,1 m³. Profondeur maximale de creusement: 7,5 m. Longueur de la fleche: 7,4 m. Longueur du bras: 2,8 m. Chassis: Chaine en caoutchouc (800 mm). Systeme hydraulique: 280 bar. Reservoir de carburant: 300 L. Vitesse de rotation: 11 tr/min. Vitesse de deplacement: 4,5 km/h. Parfait pour l\'exploitation miniere a grande echelle, les carrieres et la construction lourde.',
     pt: 'Escavadeira hidraulica CAT 336D. Motor: Caterpillar C9 Diesel (206 kW/276 hp). Capacidade da cacamba: 2,1 m³. Profundidade maxima de escavacao: 7,5 m. Comprimento da lanca: 7,4 m. Comprimento do braco: 2,8 m. Chassis: Esteira de borracha (800 mm). Sistema hidraulico: 280 bar. Tanque de combustivel: 300 L. Velocidade de rotacao: 11 rpm. Velocidade de deslocamento: 4,5 km/h. Perfeito para mineracao em larga escala, pedreiras e construcao pesada.',
     it: 'Escavatore idraulico CAT 336D. Motore: Caterpillar C9 Diesel (206 kW/276 hp). Capacita della benna: 2,1 m³. Profondita massima di scavo: 7,5 m. Lunghezza del braccio: 7,4 m. Lunghezza della benna: 2,8 m. Telaio: Cingolo in gomma (800 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 300 L. Velocita di rotazione: 11 giri/min. Velocita di movimento: 4,5 km/h. Perfetto per estrazione mineraria su larga scala, cave e costruzione pesante.',
-    ja: "Escavatore idraulico CAT 336D. Motore: Caterpillar C9 Diesel (206 kW/276 hp). Capacita della benna: 2,1 m\u00b3. Profondita massima di scavo: 7,5 m. Lunghezza del braccio: 7,4 m. Lunghezza della benna: 2,8 m. Telaio: Cingolo in gomma (800 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 300 L. Velocita di rotazione: 11 giri/min. Velocita di movimento: 4,5 km/h. Perfetto per estrazione mineraria su larga scala, cave e costruzione pesante.",
-    de: "Escavatore idraulico CAT 336D. Motore: Caterpillar C9 Diesel (206 kW/276 hp). Capacita della benna: 2,1 m\u00b3. Profondita massima di scavo: 7,5 m. Lunghezza del braccio: 7,4 m. Lunghezza della benna: 2,8 m. Telaio: Cingolo in gomma (800 mm). Sistema idraulico: 280 bar. Serbatoio carburante: 300 L. Velocita di rotazione: 11 giri/min. Velocita di movimento: 4,5 km/h. Perfetto per estrazione mineraria su larga scala, cave e costruzione pesante.",
+    ja: "CAT 336D Hydraulic Excavator. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 2.1 m³. Max Digging Depth: 7.5 m. Boom Length: 7.4 m. Stick Length: 2.8 m. Undercarriage: Rubber Track (800mm). Hydraulic System: 280 bar. Fuel Tank: 300 L. Swing Speed: 11 rpm. Travel Speed: 4.5 km/h. Perfect for large-scale mining, quarrying, and heavy construction.",
+    de: "CAT 336D Hydraulic Excavator. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 2.1 m³. Max Digging Depth: 7.5 m. Boom Length: 7.4 m. Stick Length: 2.8 m. Undercarriage: Rubber Track (800mm). Hydraulic System: 280 bar. Fuel Tank: 300 L. Swing Speed: 11 rpm. Travel Speed: 4.5 km/h. Perfect for large-scale mining, quarrying, and heavy construction.",
   },
 
   // CAT D6R
@@ -82,8 +82,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Bouteur CAT D6R. Moteur: Caterpillar C6.4 Diesel (138 kW/185 ch). Type de lame: Droit standard (SU). Largeur de lame: 3,66 m. Hauteur de lame: 1,27 m. Capacite de lame: 4,6 m³. Chassis: Chaine d\'acier (457 mm). Transmission: Hydrostatique. Effort de traction: 185 kN. Vitesse de deplacement: 11 km/h. Reservoir de carburant: 180 L. Ideal pour le boutage general, le defrichement et la preparation des sites de construction.',
     pt: 'Trator de esteira CAT D6R. Motor: Caterpillar C6.4 Diesel (138 kW/185 hp). Tipo de lamina: Reta padrao (SU). Largura da lamina: 3,66 m. Altura da lamina: 1,27 m. Capacidade da lamina: 4,6 m³. Chassis: Esteira de aco (457 mm). Transmissao: Hidrostatica. Forca de tracao: 185 kN. Velocidade de deslocamento: 11 km/h. Tanque de combustivel: 180 L. Ideal para empurra geral, limpeza de terrenos e preparacao de locais de construcao.',
     it: 'Bulldozer CAT D6R. Motore: Caterpillar C6.4 Diesel (138 kW/185 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 3,66 m. Altezza della lama: 1,27 m. Capacita della lama: 4,6 m³. Telaio: Cingolo in acciaio (457 mm). Trasmissione: Idrostatica. Forza di trazione: 185 kN. Velocita di movimento: 11 km/h. Serbatoio carburante: 180 L. Ideale per spinta generale, bonifica terreni e preparazione cantieri.',
-    ja: "Bulldozer CAT D6R. Motore: Caterpillar C6.4 Diesel (138 kW/185 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 3,66 m. Altezza della lama: 1,27 m. Capacita della lama: 4,6 m\u00b3. Telaio: Cingolo in acciaio (457 mm). Trasmissione: Idrostatica. Forza di trazione: 185 kN. Velocita di movimento: 11 km/h. Serbatoio carburante: 180 L. Ideale per spinta generale, bonifica terreni e preparazione cantieri.",
-    de: "Bulldozer CAT D6R. Motore: Caterpillar C6.4 Diesel (138 kW/185 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 3,66 m. Altezza della lama: 1,27 m. Capacita della lama: 4,6 m\u00b3. Telaio: Cingolo in acciaio (457 mm). Trasmissione: Idrostatica. Forza di trazione: 185 kN. Velocita di movimento: 11 km/h. Serbatoio carburante: 180 L. Ideale per spinta generale, bonifica terreni e preparazione cantieri.",
+    ja: "CAT D6R Bulldozer. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 185 kN. Travel Speed: 11 km/h. Fuel Tank: 180 L. Ideal for general dozing, land clearing, and construction site preparation.",
+    de: "CAT D6R Bulldozer. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 185 kN. Travel Speed: 11 km/h. Fuel Tank: 180 L. Ideal for general dozing, land clearing, and construction site preparation.",
   },
 
   // CAT D6T
@@ -96,8 +96,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Bouteur CAT D6T. Moteur: Caterpillar C6.4 Diesel (149 kW/200 ch). Type de lame: Droit standard (SU). Largeur de lame: 3,66 m. Hauteur de lame: 1,27 m. Capacite de lame: 4,6 m³. Chassis: Chaine d\'acier (457 mm). Transmission: Hydrostatique. Effort de traction: 200 kN. Vitesse de deplacement: 11 km/h. Reservoir de carburant: 200 L. Puissance et efficacite ameliorees pour les operations de boutage lourd.',
     pt: 'Trator de esteira CAT D6T. Motor: Caterpillar C6.4 Diesel (149 kW/200 hp). Tipo de lamina: Reta padrao (SU). Largura da lamina: 3,66 m. Altura da lamina: 1,27 m. Capacidade da lamina: 4,6 m³. Chassis: Esteira de aco (457 mm). Transmissao: Hidrostatica. Forca de tracao: 200 kN. Velocidade de deslocamento: 11 km/h. Tanque de combustivel: 200 L. Potencia e eficiencia aprimoradas para operacoes de empurra pesada.',
     it: 'Bulldozer CAT D6T. Motore: Caterpillar C6.4 Diesel (149 kW/200 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 3,66 m. Altezza della lama: 1,27 m. Capacita della lama: 4,6 m³. Telaio: Cingolo in acciaio (457 mm). Trasmissione: Idrostatica. Forza di trazione: 200 kN. Velocita di movimento: 11 km/h. Serbatoio carburante: 200 L. Potenza ed efficienza migliorate per operazioni di spinta pesante.',
-    ja: "Bulldozer CAT D6T. Motore: Caterpillar C6.4 Diesel (149 kW/200 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 3,66 m. Altezza della lama: 1,27 m. Capacita della lama: 4,6 m\u00b3. Telaio: Cingolo in acciaio (457 mm). Trasmissione: Idrostatica. Forza di trazione: 200 kN. Velocita di movimento: 11 km/h. Serbatoio carburante: 200 L. Potenza ed efficienza migliorate per operazioni di spinta pesante.",
-    de: "Bulldozer CAT D6T. Motore: Caterpillar C6.4 Diesel (149 kW/200 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 3,66 m. Altezza della lama: 1,27 m. Capacita della lama: 4,6 m\u00b3. Telaio: Cingolo in acciaio (457 mm). Trasmissione: Idrostatica. Forza di trazione: 200 kN. Velocita di movimento: 11 km/h. Serbatoio carburante: 200 L. Potenza ed efficienza migliorate per operazioni di spinta pesante.",
+    ja: "CAT D6T Bulldozer. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 200 kN. Travel Speed: 11 km/h. Fuel Tank: 200 L. Enhanced power and efficiency for heavy-duty dozing operations.",
+    de: "CAT D6T Bulldozer. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Blade Type: Standard Straight (SU). Blade Width: 3.66 m. Blade Height: 1.27 m. Blade Capacity: 4.6 m³. Undercarriage: Steel Track (457mm). Transmission: Hydrostatic. Drawbar Pull: 200 kN. Travel Speed: 11 km/h. Fuel Tank: 200 L. Enhanced power and efficiency for heavy-duty dozing operations.",
   },
 
   // CAT D7R
@@ -110,8 +110,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Bouteur CAT D7R. Moteur: Caterpillar C9 Diesel (186 kW/250 ch). Type de lame: Droit standard (SU). Largeur de lame: 4,27 m. Hauteur de lame: 1,73 m. Capacite de lame: 7,4 m³. Chassis: Chaine d\'acier (610 mm). Transmission: Hydrostatique. Effort de traction: 280 kN. Vitesse de deplacement: 10,5 km/h. Reservoir de carburant: 300 L. Excellent pour les applications de terrassement et d\'exploitation miniere a grande echelle.',
     pt: 'Trator de esteira CAT D7R. Motor: Caterpillar C9 Diesel (186 kW/250 hp). Tipo de lamina: Reta padrao (SU). Largura da lamina: 4,27 m. Altura da lamina: 1,73 m. Capacidade da lamina: 7,4 m³. Chassis: Esteira de aco (610 mm). Transmissao: Hidrostatica. Forca de tracao: 280 kN. Velocidade de deslocamento: 10,5 km/h. Tanque de combustivel: 300 L. Excelente para aplicacoes de movimento de terra e mineracao em larga escala.',
     it: 'Bulldozer CAT D7R. Motore: Caterpillar C9 Diesel (186 kW/250 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 4,27 m. Altezza della lama: 1,73 m. Capacita della lama: 7,4 m³. Telaio: Cingolo in acciaio (610 mm). Trasmissione: Idrostatica. Forza di trazione: 280 kN. Velocita di movimento: 10,5 km/h. Serbatoio carburante: 300 L. Eccellente per applicazioni di movimento terra e estrazione mineraria su larga scala.',
-    ja: "Bulldozer CAT D7R. Motore: Caterpillar C9 Diesel (186 kW/250 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 4,27 m. Altezza della lama: 1,73 m. Capacita della lama: 7,4 m\u00b3. Telaio: Cingolo in acciaio (610 mm). Trasmissione: Idrostatica. Forza di trazione: 280 kN. Velocita di movimento: 10,5 km/h. Serbatoio carburante: 300 L. Eccellente per applicazioni di movimento terra e estrazione mineraria su larga scala.",
-    de: "Bulldozer CAT D7R. Motore: Caterpillar C9 Diesel (186 kW/250 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 4,27 m. Altezza della lama: 1,73 m. Capacita della lama: 7,4 m\u00b3. Telaio: Cingolo in acciaio (610 mm). Trasmissione: Idrostatica. Forza di trazione: 280 kN. Velocita di movimento: 10,5 km/h. Serbatoio carburante: 300 L. Eccellente per applicazioni di movimento terra e estrazione mineraria su larga scala.",
+    ja: "CAT D7R Bulldozer. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Blade Type: Standard Straight (SU). Blade Width: 4.27 m. Blade Height: 1.73 m. Blade Capacity: 7.4 m³. Undercarriage: Steel Track (610mm). Transmission: Hydrostatic. Drawbar Pull: 280 kN. Travel Speed: 10.5 km/h. Fuel Tank: 300 L. Excellent for large-scale earthmoving and mining applications.",
+    de: "CAT D7R Bulldozer. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Blade Type: Standard Straight (SU). Blade Width: 4.27 m. Blade Height: 1.73 m. Blade Capacity: 7.4 m³. Undercarriage: Steel Track (610mm). Transmission: Hydrostatic. Drawbar Pull: 280 kN. Travel Speed: 10.5 km/h. Fuel Tank: 300 L. Excellent for large-scale earthmoving and mining applications.",
   },
 
   // CAT D8R
@@ -124,8 +124,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Bouteur CAT D8R. Moteur: Caterpillar C15 Diesel (231 kW/310 ch). Type de lame: Droit standard (SU). Largeur de lame: 4,88 m. Hauteur de lame: 2,15 m. Capacite de lame: 10,5 m³. Chassis: Chaine d\'acier (762 mm). Transmission: Hydrostatique. Effort de traction: 380 kN. Vitesse de deplacement: 10,5 km/h. Reservoir de carburant: 450 L. Parfait pour les projets majeurs d\'exploitation miniere, de carrieres et de construction lourde.',
     pt: 'Trator de esteira CAT D8R. Motor: Caterpillar C15 Diesel (231 kW/310 hp). Tipo de lamina: Reta padrao (SU). Largura da lamina: 4,88 m. Altura da lamina: 2,15 m. Capacidade da lamina: 10,5 m³. Chassis: Esteira de aco (762 mm). Transmissao: Hidrostatica. Forca de tracao: 380 kN. Velocidade de deslocamento: 10,5 km/h. Tanque de combustivel: 450 L. Perfeito para projetos principais de mineracao, pedreiras e construcao pesada.',
     it: 'Bulldozer CAT D8R. Motore: Caterpillar C15 Diesel (231 kW/310 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 4,88 m. Altezza della lama: 2,15 m. Capacita della lama: 10,5 m³. Telaio: Cingolo in acciaio (762 mm). Trasmissione: Idrostatica. Forza di trazione: 380 kN. Velocita di movimento: 10,5 km/h. Serbatoio carburante: 450 L. Perfetto per progetti importanti di estrazione mineraria, cave e costruzione pesante.',
-    ja: "Bulldozer CAT D8R. Motore: Caterpillar C15 Diesel (231 kW/310 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 4,88 m. Altezza della lama: 2,15 m. Capacita della lama: 10,5 m\u00b3. Telaio: Cingolo in acciaio (762 mm). Trasmissione: Idrostatica. Forza di trazione: 380 kN. Velocita di movimento: 10,5 km/h. Serbatoio carburante: 450 L. Perfetto per progetti importanti di estrazione mineraria, cave e costruzione pesante.",
-    de: "Bulldozer CAT D8R. Motore: Caterpillar C15 Diesel (231 kW/310 hp). Tipo di lama: Dritta standard (SU). Larghezza della lama: 4,88 m. Altezza della lama: 2,15 m. Capacita della lama: 10,5 m\u00b3. Telaio: Cingolo in acciaio (762 mm). Trasmissione: Idrostatica. Forza di trazione: 380 kN. Velocita di movimento: 10,5 km/h. Serbatoio carburante: 450 L. Perfetto per progetti importanti di estrazione mineraria, cave e costruzione pesante.",
+    ja: "CAT D8R Bulldozer. Engine: Caterpillar C15 Diesel (231 kW/310 HP). Blade Type: Standard Straight (SU). Blade Width: 4.88 m. Blade Height: 2.15 m. Blade Capacity: 10.5 m³. Undercarriage: Steel Track (762mm). Transmission: Hydrostatic. Drawbar Pull: 380 kN. Travel Speed: 10.5 km/h. Fuel Tank: 450 L. Perfect for major mining, quarrying, and heavy construction projects.",
+    de: "CAT D8R Bulldozer. Engine: Caterpillar C15 Diesel (231 kW/310 HP). Blade Type: Standard Straight (SU). Blade Width: 4.88 m. Blade Height: 2.15 m. Blade Capacity: 10.5 m³. Undercarriage: Steel Track (762mm). Transmission: Hydrostatic. Drawbar Pull: 380 kN. Travel Speed: 10.5 km/h. Fuel Tank: 450 L. Perfect for major mining, quarrying, and heavy construction projects.",
   },
 
   // CAT 950H
@@ -138,8 +138,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Chargeuse sur pneus CAT 950H. Moteur: Caterpillar C6.4 Diesel (138 kW/185 ch). Capacite du godet: 2,2 m³. Hauteur maximale de levage: 3,2 m. Capacite de levage a hauteur maximale: 8 tonnes. Chassis: Traction intégrale. Taille des pneus: 20.5R25. Transmission: Convertisseur de couple. Vitesse de deplacement: 40 km/h. Reservoir de carburant: 200 L. Ideal pour le chargement general, la manutention de materiaux et les travaux sur les chantiers de construction.',
     pt: 'Carregadeira de rodas CAT 950H. Motor: Caterpillar C6.4 Diesel (138 kW/185 hp). Capacidade da cacamba: 2,2 m³. Altura maxima de elevacao: 3,2 m. Capacidade de elevacao a altura maxima: 8 toneladas. Chassis: Tracao nas quatro rodas. Tamanho do pneu: 20.5R25. Transmissao: Conversor de torque. Velocidade de deslocamento: 40 km/h. Tanque de combustivel: 200 L. Ideal para carregamento geral, movimentacao de materiais e trabalho em canteiros de obra.',
     it: 'Caricatore gommato CAT 950H. Motore: Caterpillar C6.4 Diesel (138 kW/185 hp). Capacita della benna: 2,2 m³. Altezza massima di sollevamento: 3,2 m. Capacita di sollevamento a altezza massima: 8 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 20.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 40 km/h. Serbatoio carburante: 200 L. Ideale per caricamento generale, movimentazione materiali e lavori in cantiere.',
-    ja: "Caricatore gommato CAT 950H. Motore: Caterpillar C6.4 Diesel (138 kW/185 hp). Capacita della benna: 2,2 m\u00b3. Altezza massima di sollevamento: 3,2 m. Capacita di sollevamento a altezza massima: 8 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 20.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 40 km/h. Serbatoio carburante: 200 L. Ideale per caricamento generale, movimentazione materiali e lavori in cantiere.",
-    de: "Caricatore gommato CAT 950H. Motore: Caterpillar C6.4 Diesel (138 kW/185 hp). Capacita della benna: 2,2 m\u00b3. Altezza massima di sollevamento: 3,2 m. Capacita di sollevamento a altezza massima: 8 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 20.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 40 km/h. Serbatoio carburante: 200 L. Ideale per caricamento generale, movimentazione materiali e lavori in cantiere.",
+    ja: "CAT 950H Wheel Loader. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for general loading, material handling, and construction site work.",
+    de: "CAT 950H Wheel Loader. Engine: Caterpillar C6.4 Diesel (138 kW/185 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 200 L. Ideal for general loading, material handling, and construction site work.",
   },
 
   // CAT 950L
@@ -152,8 +152,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Chargeuse sur pneus CAT 950L. Moteur: Caterpillar C6.4 Diesel (149 kW/200 ch). Capacite du godet: 2,2 m³. Hauteur maximale de levage: 3,2 m. Capacite de levage a hauteur maximale: 8,5 tonnes. Chassis: Traction intégrale. Taille des pneus: 20.5R25. Transmission: Convertisseur de couple. Vitesse de deplacement: 40 km/h. Reservoir de carburant: 220 L. Puissance et performance ameliorees pour les operations de chargement exigeantes.',
     pt: 'Carregadeira de rodas CAT 950L. Motor: Caterpillar C6.4 Diesel (149 kW/200 hp). Capacidade da cacamba: 2,2 m³. Altura maxima de elevacao: 3,2 m. Capacidade de elevacao a altura maxima: 8,5 toneladas. Chassis: Tracao nas quatro rodas. Tamanho do pneu: 20.5R25. Transmissao: Conversor de torque. Velocidade de deslocamento: 40 km/h. Tanque de combustivel: 220 L. Potencia e desempenho aprimorados para operacoes de carregamento exigentes.',
     it: 'Caricatore gommato CAT 950L. Motore: Caterpillar C6.4 Diesel (149 kW/200 hp). Capacita della benna: 2,2 m³. Altezza massima di sollevamento: 3,2 m. Capacita di sollevamento a altezza massima: 8,5 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 20.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 40 km/h. Serbatoio carburante: 220 L. Potenza e prestazioni migliorate per operazioni di caricamento impegnative.',
-    ja: "Caricatore gommato CAT 950L. Motore: Caterpillar C6.4 Diesel (149 kW/200 hp). Capacita della benna: 2,2 m\u00b3. Altezza massima di sollevamento: 3,2 m. Capacita di sollevamento a altezza massima: 8,5 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 20.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 40 km/h. Serbatoio carburante: 220 L. Potenza e prestazioni migliorate per operazioni di caricamento impegnative.",
-    de: "Caricatore gommato CAT 950L. Motore: Caterpillar C6.4 Diesel (149 kW/200 hp). Capacita della benna: 2,2 m\u00b3. Altezza massima di sollevamento: 3,2 m. Capacita di sollevamento a altezza massima: 8,5 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 20.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 40 km/h. Serbatoio carburante: 220 L. Potenza e prestazioni migliorate per operazioni di caricamento impegnative.",
+    ja: "CAT 950L Wheel Loader. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 220 L. Enhanced power and performance for demanding loading operations.",
+    de: "CAT 950L Wheel Loader. Engine: Caterpillar C6.4 Diesel (149 kW/200 HP). Bucket Capacity: 2.2 m³. Max Lift Height: 3.2 m. Lift Capacity at Full Height: 8.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 20.5R25. Transmission: Torque Converter. Travel Speed: 40 km/h. Fuel Tank: 220 L. Enhanced power and performance for demanding loading operations.",
   },
 
   // CAT 966H
@@ -166,8 +166,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Chargeuse sur pneus CAT 966H. Moteur: Caterpillar C9 Diesel (186 kW/250 ch). Capacite du godet: 3,1 m³. Hauteur maximale de levage: 3,4 m. Capacite de levage a hauteur maximale: 11 tonnes. Chassis: Traction intégrale. Taille des pneus: 23.5R25. Transmission: Convertisseur de couple. Vitesse de deplacement: 42 km/h. Reservoir de carburant: 280 L. Parfait pour le chargement et la manutention de materiaux de moyenne a grande echelle.',
     pt: 'Carregadeira de rodas CAT 966H. Motor: Caterpillar C9 Diesel (186 kW/250 hp). Capacidade da cacamba: 3,1 m³. Altura maxima de elevacao: 3,4 m. Capacidade de elevacao a altura maxima: 11 toneladas. Chassis: Tracao nas quatro rodas. Tamanho do pneu: 23.5R25. Transmissao: Conversor de torque. Velocidade de deslocamento: 42 km/h. Tanque de combustivel: 280 L. Perfeito para carregamento e movimentacao de materiais em escala media a grande.',
     it: 'Caricatore gommato CAT 966H. Motore: Caterpillar C9 Diesel (186 kW/250 hp). Capacita della benna: 3,1 m³. Altezza massima di sollevamento: 3,4 m. Capacita di sollevamento a altezza massima: 11 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 23.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 42 km/h. Serbatoio carburante: 280 L. Perfetto per caricamento e movimentazione materiali di media-grande scala.',
-    ja: "Caricatore gommato CAT 966H. Motore: Caterpillar C9 Diesel (186 kW/250 hp). Capacita della benna: 3,1 m\u00b3. Altezza massima di sollevamento: 3,4 m. Capacita di sollevamento a altezza massima: 11 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 23.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 42 km/h. Serbatoio carburante: 280 L. Perfetto per caricamento e movimentazione materiali di media-grande scala.",
-    de: "Caricatore gommato CAT 966H. Motore: Caterpillar C9 Diesel (186 kW/250 hp). Capacita della benna: 3,1 m\u00b3. Altezza massima di sollevamento: 3,4 m. Capacita di sollevamento a altezza massima: 11 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 23.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 42 km/h. Serbatoio carburante: 280 L. Perfetto per caricamento e movimentazione materiali di media-grande scala.",
+    ja: "CAT 966H Wheel Loader. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 280 L. Perfect for medium to large-scale loading and material handling.",
+    de: "CAT 966H Wheel Loader. Engine: Caterpillar C9 Diesel (186 kW/250 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 280 L. Perfect for medium to large-scale loading and material handling.",
   },
 
   // CAT 966L
@@ -180,8 +180,8 @@ export const catMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Chargeuse sur pneus CAT 966L. Moteur: Caterpillar C9 Diesel (206 kW/276 ch). Capacite du godet: 3,1 m³. Hauteur maximale de levage: 3,4 m. Capacite de levage a hauteur maximale: 11,5 tonnes. Chassis: Traction intégrale. Taille des pneus: 23.5R25. Transmission: Convertisseur de couple. Vitesse de deplacement: 42 km/h. Reservoir de carburant: 300 L. Excellent pour le chargement lourd, les carrieres et les applications d\'exploitation miniere.',
     pt: 'Carregadeira de rodas CAT 966L. Motor: Caterpillar C9 Diesel (206 kW/276 hp). Capacidade da cacamba: 3,1 m³. Altura maxima de elevacao: 3,4 m. Capacidade de elevacao a altura maxima: 11,5 toneladas. Chassis: Tracao nas quatro rodas. Tamanho do pneu: 23.5R25. Transmissao: Conversor de torque. Velocidade de deslocamento: 42 km/h. Tanque de combustivel: 300 L. Excelente para carregamento pesado, pedreiras e aplicacoes de mineracao.',
     it: 'Caricatore gommato CAT 966L. Motore: Caterpillar C9 Diesel (206 kW/276 hp). Capacita della benna: 3,1 m³. Altezza massima di sollevamento: 3,4 m. Capacita di sollevamento a altezza massima: 11,5 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 23.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 42 km/h. Serbatoio carburante: 300 L. Eccellente per caricamento pesante, cave ed estrazione mineraria.',
-    ja: "Caricatore gommato CAT 966L. Motore: Caterpillar C9 Diesel (206 kW/276 hp). Capacita della benna: 3,1 m\u00b3. Altezza massima di sollevamento: 3,4 m. Capacita di sollevamento a altezza massima: 11,5 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 23.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 42 km/h. Serbatoio carburante: 300 L. Eccellente per caricamento pesante, cave ed estrazione mineraria.",
-    de: "Caricatore gommato CAT 966L. Motore: Caterpillar C9 Diesel (206 kW/276 hp). Capacita della benna: 3,1 m\u00b3. Altezza massima di sollevamento: 3,4 m. Capacita di sollevamento a altezza massima: 11,5 tonnellate. Telaio: Trazione integrale. Dimensione pneumatico: 23.5R25. Trasmissione: Convertitore di coppia. Velocita di movimento: 42 km/h. Serbatoio carburante: 300 L. Eccellente per caricamento pesante, cave ed estrazione mineraria.",
+    ja: "CAT 966L Wheel Loader. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 300 L. Excellent for heavy-duty loading, quarrying, and mining applications.",
+    de: "CAT 966L Wheel Loader. Engine: Caterpillar C9 Diesel (206 kW/276 HP). Bucket Capacity: 3.1 m³. Max Lift Height: 3.4 m. Lift Capacity at Full Height: 11.5 ton. Undercarriage: 4-Wheel Drive. Tire Size: 23.5R25. Transmission: Torque Converter. Travel Speed: 42 km/h. Fuel Tank: 300 L. Excellent for heavy-duty loading, quarrying, and mining applications.",
   }
 };
 
@@ -205,8 +205,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '20,5 tonnes | 121 kW | 1,19 m³ godet | Poids de fonctionnement: 20.500 kg',
     pt: '20,5 toneladas | 121 kW | 1,19 m³ caçamba | Peso de operação: 20.500 kg',
     it: '20,5 tonnellate | 121 kW | 1,19 m³ benna | Peso di esercizio: 20.500 kg',
-    ja: "20,5 tonnellate | 121 kW | 1,19 m\u00b3 benna | Peso di esercizio: 20.500 kg",
-    de: "20,5 tonnellate | 121 kW | 1,19 m\u00b3 benna | Peso di esercizio: 20.500 kg",
+    ja: "20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg",
+    de: "20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg",
   },
   'CAT 320D2': {
     zh: '20.8 吨 | 121 千瓦 | 1.19 立方米斗 | 工作重量：20,800 千克',
@@ -217,8 +217,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '20,8 tonnes | 121 kW | 1,19 m³ godet | Poids de fonctionnement: 20.800 kg',
     pt: '20,8 toneladas | 121 kW | 1,19 m³ caçamba | Peso de operação: 20.800 kg',
     it: '20,8 tonnellate | 121 kW | 1,19 m³ benna | Peso di esercizio: 20.800 kg',
-    ja: "20,8 tonnellate | 121 kW | 1,19 m\u00b3 benna | Peso di esercizio: 20.800 kg",
-    de: "20,8 tonnellate | 121 kW | 1,19 m\u00b3 benna | Peso di esercizio: 20.800 kg",
+    ja: "20.8 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,800 kg",
+    de: "20.8 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,800 kg",
   },
   'CAT 320 GC': {
     zh: '20.5 吨 | 121 千瓦 | 1.19 立方米斗 | 工作重量：20,500 千克',
@@ -229,8 +229,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '20,5 tonnes | 121 kW | 1,19 m³ godet | Poids de fonctionnement: 20.500 kg',
     pt: '20,5 toneladas | 121 kW | 1,19 m³ caçamba | Peso de operação: 20.500 kg',
     it: '20,5 tonnellate | 121 kW | 1,19 m³ benna | Peso di esercizio: 20.500 kg',
-    ja: "20,5 tonnellate | 121 kW | 1,19 m\u00b3 benna | Peso di esercizio: 20.500 kg",
-    de: "20,5 tonnellate | 121 kW | 1,19 m\u00b3 benna | Peso di esercizio: 20.500 kg",
+    ja: "20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg",
+    de: "20.5 ton | 121 kW | 1.19 m³ bucket | Operating Weight: 20,500 kg",
   },
   'CAT 330C': {
     zh: '30 吨 | 168 千瓦 | 1.69 立方米斗 | 工作重量：30,000 千克',
@@ -241,8 +241,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '30 tonnes | 168 kW | 1,69 m³ godet | Poids de fonctionnement: 30.000 kg',
     pt: '30 toneladas | 168 kW | 1,69 m³ caçamba | Peso de operação: 30.000 kg',
     it: '30 tonnellate | 168 kW | 1,69 m³ benna | Peso di esercizio: 30.000 kg',
-    ja: "30 tonnellate | 168 kW | 1,69 m\u00b3 benna | Peso di esercizio: 30.000 kg",
-    de: "30 tonnellate | 168 kW | 1,69 m\u00b3 benna | Peso di esercizio: 30.000 kg",
+    ja: "30 ton | 168 kW | 1.69 m³ bucket | Operating Weight: 30,000 kg",
+    de: "30 ton | 168 kW | 1.69 m³ bucket | Operating Weight: 30,000 kg",
   },
   'CAT 336D': {
     zh: '36.5 吨 | 206 千瓦 | 2.1 立方米斗 | 工作重量：36,500 千克',
@@ -253,8 +253,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '36,5 tonnes | 206 kW | 2,1 m³ godet | Poids de fonctionnement: 36.500 kg',
     pt: '36,5 toneladas | 206 kW | 2,1 m³ caçamba | Peso de operação: 36.500 kg',
     it: '36,5 tonnellate | 206 kW | 2,1 m³ benna | Peso di esercizio: 36.500 kg',
-    ja: "36,5 tonnellate | 206 kW | 2,1 m\u00b3 benna | Peso di esercizio: 36.500 kg",
-    de: "36,5 tonnellate | 206 kW | 2,1 m\u00b3 benna | Peso di esercizio: 36.500 kg",
+    ja: "36.5 ton | 206 kW | 2.1 m³ bucket | Operating Weight: 36,500 kg",
+    de: "36.5 ton | 206 kW | 2.1 m³ bucket | Operating Weight: 36,500 kg",
   },
   'CAT D6R': {
     zh: '18 吨 | 138 千瓦 | 直推刀 4.6 立方米 | 工作重量：18,000 千克',
@@ -265,8 +265,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '18 tonnes | 138 kW | Lame SU 4,6 m³ | Poids de fonctionnement: 18.000 kg',
     pt: '18 toneladas | 138 kW | Lâmina SU 4,6 m³ | Peso de operação: 18.000 kg',
     it: '18 tonnellate | 138 kW | Lama SU 4,6 m³ | Peso di esercizio: 18.000 kg',
-    ja: "18 tonnellate | 138 kW | Lama SU 4,6 m\u00b3 | Peso di esercizio: 18.000 kg",
-    de: "18 tonnellate | 138 kW | Lama SU 4,6 m\u00b3 | Peso di esercizio: 18.000 kg",
+    ja: "18 ton | 138 kW | SU blade 4.6 m³ | Operating Weight: 18,000 kg",
+    de: "18 ton | 138 kW | SU blade 4.6 m³ | Operating Weight: 18,000 kg",
   },
   'CAT D6T': {
     zh: '19 吨 | 149 千瓦 | 直推刀 4.6 立方米 | 工作重量：19,000 千克',
@@ -277,8 +277,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '19 tonnes | 149 kW | Lame SU 4,6 m³ | Poids de fonctionnement: 19.000 kg',
     pt: '19 toneladas | 149 kW | Lâmina SU 4,6 m³ | Peso de operação: 19.000 kg',
     it: '19 tonnellate | 149 kW | Lama SU 4,6 m³ | Peso di esercizio: 19.000 kg',
-    ja: "19 tonnellate | 149 kW | Lama SU 4,6 m\u00b3 | Peso di esercizio: 19.000 kg",
-    de: "19 tonnellate | 149 kW | Lama SU 4,6 m\u00b3 | Peso di esercizio: 19.000 kg",
+    ja: "19 ton | 149 kW | SU blade 4.6 m³ | Operating Weight: 19,000 kg",
+    de: "19 ton | 149 kW | SU blade 4.6 m³ | Operating Weight: 19,000 kg",
   },
   'CAT D7R': {
     zh: '28 吨 | 186 千瓦 | 直推刀 7.4 立方米 | 工作重量：28,000 千克',
@@ -289,8 +289,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '28 tonnes | 186 kW | Lame SU 7,4 m³ | Poids de fonctionnement: 28.000 kg',
     pt: '28 toneladas | 186 kW | Lâmina SU 7,4 m³ | Peso de operação: 28.000 kg',
     it: '28 tonnellate | 186 kW | Lama SU 7,4 m³ | Peso di esercizio: 28.000 kg',
-    ja: "28 tonnellate | 186 kW | Lama SU 7,4 m\u00b3 | Peso di esercizio: 28.000 kg",
-    de: "28 tonnellate | 186 kW | Lama SU 7,4 m\u00b3 | Peso di esercizio: 28.000 kg",
+    ja: "28 ton | 186 kW | SU blade 7.4 m³ | Operating Weight: 28,000 kg",
+    de: "28 ton | 186 kW | SU blade 7.4 m³ | Operating Weight: 28,000 kg",
   },
   'CAT D8R': {
     zh: '38 吨 | 231 千瓦 | 直推刀 10.5 立方米 | 工作重量：38,000 千克',
@@ -301,8 +301,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '38 tonnes | 231 kW | Lame SU 10,5 m³ | Poids de fonctionnement: 38.000 kg',
     pt: '38 toneladas | 231 kW | Lâmina SU 10,5 m³ | Peso de operação: 38.000 kg',
     it: '38 tonnellate | 231 kW | Lama SU 10,5 m³ | Peso di esercizio: 38.000 kg',
-    ja: "38 tonnellate | 231 kW | Lama SU 10,5 m\u00b3 | Peso di esercizio: 38.000 kg",
-    de: "38 tonnellate | 231 kW | Lama SU 10,5 m\u00b3 | Peso di esercizio: 38.000 kg",
+    ja: "38 ton | 231 kW | SU blade 10.5 m³ | Operating Weight: 38,000 kg",
+    de: "38 ton | 231 kW | SU blade 10.5 m³ | Operating Weight: 38,000 kg",
   },
   'CAT 950H': {
     zh: '20 吨 | 138 千瓦 | 2.2 立方米斗 | 工作重量：20,000 千克',
@@ -313,8 +313,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '20 tonnes | 138 kW | 2,2 m³ godet | Poids de fonctionnement: 20.000 kg',
     pt: '20 toneladas | 138 kW | 2,2 m³ caçamba | Peso de operação: 20.000 kg',
     it: '20 tonnellate | 138 kW | 2,2 m³ benna | Peso di esercizio: 20.000 kg',
-    ja: "20 tonnellate | 138 kW | 2,2 m\u00b3 benna | Peso di esercizio: 20.000 kg",
-    de: "20 tonnellate | 138 kW | 2,2 m\u00b3 benna | Peso di esercizio: 20.000 kg",
+    ja: "20 ton | 138 kW | 2.2 m³ bucket | Operating Weight: 20,000 kg",
+    de: "20 ton | 138 kW | 2.2 m³ bucket | Operating Weight: 20,000 kg",
   },
   'CAT 950L': {
     zh: '21 吨 | 149 千瓦 | 2.4 立方米斗 | 工作重量：21,000 千克',
@@ -325,8 +325,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '21 tonnes | 149 kW | 2,4 m³ godet | Poids de fonctionnement: 21.000 kg',
     pt: '21 toneladas | 149 kW | 2,4 m³ caçamba | Peso de operação: 21.000 kg',
     it: '21 tonnellate | 149 kW | 2,4 m³ benna | Peso di esercizio: 21.000 kg',
-    ja: "21 tonnellate | 149 kW | 2,4 m\u00b3 benna | Peso di esercizio: 21.000 kg",
-    de: "21 tonnellate | 149 kW | 2,4 m\u00b3 benna | Peso di esercizio: 21.000 kg",
+    ja: "21 ton | 149 kW | 2.4 m³ bucket | Operating Weight: 21,000 kg",
+    de: "21 ton | 149 kW | 2.4 m³ bucket | Operating Weight: 21,000 kg",
   },
   'CAT 966H': {
     zh: '25 吨 | 168 千瓦 | 2.8 立方米斗 | 工作重量：25,000 千克',
@@ -337,8 +337,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '25 tonnes | 168 kW | 2,8 m³ godet | Poids de fonctionnement: 25.000 kg',
     pt: '25 toneladas | 168 kW | 2,8 m³ caçamba | Peso de operação: 25.000 kg',
     it: '25 tonnellate | 168 kW | 2,8 m³ benna | Peso di esercizio: 25.000 kg',
-    ja: "25 tonnellate | 168 kW | 2,8 m\u00b3 benna | Peso di esercizio: 25.000 kg",
-    de: "25 tonnellate | 168 kW | 2,8 m\u00b3 benna | Peso di esercizio: 25.000 kg",
+    ja: "25 ton | 168 kW | 2.8 m³ bucket | Operating Weight: 25,000 kg",
+    de: "25 ton | 168 kW | 2.8 m³ bucket | Operating Weight: 25,000 kg",
   },
   'CAT 980H': {
     zh: '28 吨 | 186 千瓦 | 3.2 立方米斗 | 工作重量：28,000 千克',
@@ -349,8 +349,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '28 tonnes | 186 kW | 3,2 m³ godet | Poids de fonctionnement: 28.000 kg',
     pt: '28 toneladas | 186 kW | 3,2 m³ caçamba | Peso de operação: 28.000 kg',
     it: '28 tonnellate | 186 kW | 3,2 m³ benna | Peso di esercizio: 28.000 kg',
-    ja: "28 tonnellate | 186 kW | 3,2 m\u00b3 benna | Peso di esercizio: 28.000 kg",
-    de: "28 tonnellate | 186 kW | 3,2 m\u00b3 benna | Peso di esercizio: 28.000 kg",
+    ja: "28 ton | 186 kW | 3.2 m³ bucket | Operating Weight: 28,000 kg",
+    de: "28 ton | 186 kW | 3.2 m³ bucket | Operating Weight: 28,000 kg",
   },
   'CAT 966L': {
     zh: '25 吨 | 206 千瓦 | 3.1 立方米斗 | 工作重量：25,000 千克',
@@ -361,8 +361,8 @@ export const catMachineSpecsTranslations: Record<string, Record<string, string>>
     fr: '25 tonnes | 206 kW | 3,1 m³ godet | Poids de fonctionnement: 25.000 kg',
     pt: '25 toneladas | 206 kW | 3,1 m³ caçamba | Peso de operação: 25.000 kg',
     it: '25 tonnellate | 206 kW | 3,1 m³ benna | Peso di esercizio: 25.000 kg',
-    ja: "25 tonnellate | 206 kW | 3,1 m\u00b3 benna | Peso di esercizio: 25.000 kg",
-    de: "25 tonnellate | 206 kW | 3,1 m\u00b3 benna | Peso di esercizio: 25.000 kg",
+    ja: "25 ton | 206 kW | 3.1 m³ bucket | Operating Weight: 25,000 kg",
+    de: "25 ton | 206 kW | 3.1 m³ bucket | Operating Weight: 25,000 kg",
   }
 };
 
@@ -384,8 +384,8 @@ export const catMachineTypeTranslations: Record<string, Record<string, string>> 
     fr: 'Pelle Hydraulique',
     pt: 'Escavadeira Hidráulica',
     it: 'Escavatore Idraulico',
-    ja: "Escavatore Idraulico",
-    de: "Escavatore Idraulico",
+    ja: "Hydraulic Excavator",
+    de: "Hydraulic Excavator",
   },
   'Hydraulic Excavator (Gas Powered)': {
     zh: '液压挖掘机（天然气动力）',
@@ -396,8 +396,8 @@ export const catMachineTypeTranslations: Record<string, Record<string, string>> 
     fr: 'Pelle Hydraulique (Alimentée au Gaz)',
     pt: 'Escavadeira Hidráulica (Alimentada por Gás)',
     it: 'Escavatore Idraulico (Alimentato a Gas)',
-    ja: "Escavatore Idraulico (Alimentato a Gas)",
-    de: "Escavatore Idraulico (Alimentato a Gas)",
+    ja: "Hydraulic Excavator (Gas Powered)",
+    de: "Hydraulic Excavator (Gas Powered)",
   },
   'Bulldozer': {
     zh: '推土机',
@@ -408,8 +408,8 @@ export const catMachineTypeTranslations: Record<string, Record<string, string>> 
     fr: 'Bouteur',
     pt: 'Trator de Esteira',
     it: 'Ruspa',
-    ja: "Ruspa",
-    de: "Ruspa",
+    ja: "Bulldozer",
+    de: "Bulldozer",
   },
   'Wheel Loader': {
     zh: '轮式装载机',
@@ -420,8 +420,8 @@ export const catMachineTypeTranslations: Record<string, Record<string, string>> 
     fr: 'Chargeuse sur Pneus',
     pt: 'Carregadeira de Rodas',
     it: 'Caricatrice su Ruote',
-    ja: "Caricatrice su Ruote",
-    de: "Caricatrice su Ruote",
+    ja: "Wheel Loader",
+    de: "Wheel Loader",
   }
 };
 
