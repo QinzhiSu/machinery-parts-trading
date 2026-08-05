@@ -11,8 +11,6 @@ export const cumminsNameTranslations = {
     ru: 'Шатун',
     ja: 'コネクティングロッド',
     zh: 'Connecting Rod',
-    ar: 'Connecting Rod Bearing',
-    it: 'Connecting Rod Bearing',
   },
   'Connecting Rod Bolt': {
     en: 'Connecting Rod',
@@ -23,8 +21,6 @@ export const cumminsNameTranslations = {
     ru: 'Шатун',
     ja: 'コネクティングロッド',
     zh: 'Connecting Rod',
-    ar: 'Connecting Rod Bolt',
-    it: 'Connecting Rod Bolt',
   },
   'Cooling System': {
     en: 'Cooling System',
@@ -35,8 +31,6 @@ export const cumminsNameTranslations = {
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: 'Cooling System',
-    ar: 'نظام التبريد',
-    it: 'Sistema di raffreddamento',
   },
   'Engine System': {
     en: 'Engine System',
@@ -47,8 +41,6 @@ export const cumminsNameTranslations = {
     ru: 'Система двигателя',
     ja: 'エンジンシステム',
     zh: 'Engine System',
-    ar: 'نظام المحرك',
-    it: 'Sistema motore',
   },
   'Fuel System': {
     en: 'Fuel System',
@@ -59,8 +51,6 @@ export const cumminsNameTranslations = {
     ru: 'Топливная система',
     ja: '燃料システム',
     zh: 'Fuel System',
-    ar: 'نظام الوقود',
-    it: 'Sistema di carburante',
   },
   'Lubrication System': {
     en: 'Lubrication System',
@@ -71,8 +61,6 @@ export const cumminsNameTranslations = {
     ru: 'Система смазки',
     ja: '潤滑システム',
     zh: 'Lubrication System',
-    ar: 'نظام التشحيم',
-    it: 'Sistema di lubrificazione',
   },
   'Piston冷却喷嘴': {
     en: 'Piston',
@@ -83,8 +71,6 @@ export const cumminsNameTranslations = {
     ru: 'Поршень',
     ja: 'ピストン',
     zh: 'Piston',
-    ar: 'Piston冷却喷嘴',
-    it: 'Piston冷却喷嘴',
   },
   'Piston组件': {
     en: 'Piston',
@@ -95,8 +81,6 @@ export const cumminsNameTranslations = {
     ru: 'Поршень',
     ja: 'ピストン',
     zh: 'Piston',
-    ar: 'Piston组件',
-    it: 'Piston组件',
   },
   'Turbocharger软管': {
     en: 'Turbocharger',
@@ -107,8 +91,6 @@ export const cumminsNameTranslations = {
     ru: 'Турбокомпрессор',
     ja: 'ターボチャージャー',
     zh: 'Turbocharger',
-    ar: 'شاحن توربيني',
-    it: 'Turbocompressore',
   },
   '主轴承套件': {
     en: '主轴承套件',
@@ -119,8 +101,6 @@ export const cumminsNameTranslations = {
     ru: '主轴承套件',
     ja: '主轴承套件',
     zh: '主轴承套件',
-    ar: '主轴承套件',
-    it: '主轴承套件',
   },
   '主轴瓦': {
     en: '主轴瓦',
@@ -131,8 +111,6 @@ export const cumminsNameTranslations = {
     ru: '主轴瓦',
     ja: '主轴瓦',
     zh: '主轴瓦',
-    ar: '主轴瓦',
-    it: '主轴瓦',
   },
   '前油封': {
     en: '前油封',
@@ -143,8 +121,6 @@ export const cumminsNameTranslations = {
     ru: '前油封',
     ja: '前油封',
     zh: '前油封',
-    ar: '前油封',
-    it: '前油封',
   },
   '排气门推杆': {
     en: '排气门推杆',
@@ -155,8 +131,6 @@ export const cumminsNameTranslations = {
     ru: '排气门推杆',
     ja: '排气门推杆',
     zh: '排气门推杆',
-    ar: '排气门推杆',
-    it: '排气门推杆',
   },
   '机油冷却器芯': {
     en: '机油冷却器芯',
@@ -167,8 +141,6 @@ export const cumminsNameTranslations = {
     ru: '机油冷却器芯',
     ja: '机油冷却器芯',
     zh: '机油冷却器芯',
-    ar: '机油冷却器芯',
-    it: '机油冷却器芯',
   },
   '机油压力传感器': {
     en: '机油压力传感器',
@@ -179,8 +151,6 @@ export const cumminsNameTranslations = {
     ru: '机油压力传感器',
     ja: '机油压力传感器',
     zh: '机油压力传感器',
-    ar: '机油压力传感器',
-    it: '机油压力传感器',
   },
   '机油泵': {
     en: '机油泵',
@@ -191,8 +161,6 @@ export const cumminsNameTranslations = {
     ru: '机油泵',
     ja: '机油泵',
     zh: '机油泵',
-    ar: '机油泵',
-    it: '机油泵',
   },
   '机油滤清器': {
     en: '机油滤清器',
@@ -203,8 +171,6 @@ export const cumminsNameTranslations = {
     ru: '机油滤清器',
     ja: '机油滤清器',
     zh: '机油滤清器',
-    ar: '机油滤清器',
-    it: '机油滤清器',
   },
   '止推片': {
     en: '止推片',
@@ -215,8 +181,6 @@ export const cumminsNameTranslations = {
     ru: '止推片',
     ja: '止推片',
     zh: '止推片',
-    ar: '止推片',
-    it: '止推片',
   },
   '水泵密封圈': {
     en: '水泵密封圈',
@@ -227,8 +191,6 @@ export const cumminsNameTranslations = {
     ru: '水泵密封圈',
     ja: '水泵密封圈',
     zh: '水泵密封圈',
-    ar: '水泵密封圈',
-    it: '水泵密封圈',
   },
   '水泵总成': {
     en: '水泵总成',
@@ -239,8 +201,6 @@ export const cumminsNameTranslations = {
     ru: '水泵总成',
     ja: '水泵总成',
     zh: '水泵总成',
-    ar: '水泵总成',
-    it: '水泵总成',
   },
   '汽缸垫': {
     en: '汽缸垫',
@@ -251,8 +211,6 @@ export const cumminsNameTranslations = {
     ru: '汽缸垫',
     ja: '汽缸垫',
     zh: '汽缸垫',
-    ar: '汽缸垫',
-    it: '汽缸垫',
   },
   '油底壳垫片': {
     en: '油底壳垫片',
@@ -263,8 +221,6 @@ export const cumminsNameTranslations = {
     ru: '油底壳垫片',
     ja: '油底壳垫片',
     zh: '油底壳垫片',
-    ar: '油底壳垫片',
-    it: '油底壳垫片',
   },
   '熄火电磁阀': {
     en: '熄火电磁阀',
@@ -275,8 +231,6 @@ export const cumminsNameTranslations = {
     ru: '熄火电磁阀',
     ja: '熄火电磁阀',
     zh: '熄火电磁阀',
-    ar: '熄火电磁阀',
-    it: '熄火电磁阀',
   },
   '燃油泵垫片': {
     en: '燃油泵垫片',
@@ -287,8 +241,6 @@ export const cumminsNameTranslations = {
     ru: '燃油泵垫片',
     ja: '燃油泵垫片',
     zh: '燃油泵垫片',
-    ar: '燃油泵垫片',
-    it: '燃油泵垫片',
   },
   '燃油溢流阀': {
     en: '燃油溢流阀',
@@ -299,8 +251,6 @@ export const cumminsNameTranslations = {
     ru: '燃油溢流阀',
     ja: '燃油溢流阀',
     zh: '燃油溢流阀',
-    ar: '燃油溢流阀',
-    it: '燃油溢流阀',
   },
   '燃油管': {
     en: '燃油管',
@@ -311,8 +261,6 @@ export const cumminsNameTranslations = {
     ru: '燃油管',
     ja: '燃油管',
     zh: '燃油管',
-    ar: '燃油管',
-    it: '燃油管',
   },
   '皮带张紧器': {
     en: '皮带张紧器',
@@ -323,8 +271,6 @@ export const cumminsNameTranslations = {
     ru: '皮带张紧器',
     ja: '皮带张紧器',
     zh: '皮带张紧器',
-    ar: '皮带张紧器',
-    it: '皮带张紧器',
   },
   '缸盖螺栓': {
     en: '缸盖螺栓',
@@ -335,8 +281,6 @@ export const cumminsNameTranslations = {
     ru: '缸盖螺栓',
     ja: '缸盖螺栓',
     zh: '缸盖螺栓',
-    ar: '缸盖螺栓',
-    it: '缸盖螺栓',
   },
   '进气垫片': {
     en: '进气垫片',
@@ -347,8 +291,6 @@ export const cumminsNameTranslations = {
     ru: '进气垫片',
     ja: '进气垫片',
     zh: '进气垫片',
-    ar: '进气垫片',
-    it: '进气垫片',
   },
   '进气管垫片': {
     en: '进气管垫片',
@@ -359,8 +301,6 @@ export const cumminsNameTranslations = {
     ru: '进气管垫片',
     ja: '进气管垫片',
     zh: '进气管垫片',
-    ar: '进气管垫片',
-    it: '进气管垫片',
   },
   '进气门': {
     en: '进气门',
@@ -371,8 +311,6 @@ export const cumminsNameTranslations = {
     ru: '进气门',
     ja: '进气门',
     zh: '进气门',
-    ar: '进气门',
-    it: '进气门',
   },
   '连杆总成': {
     en: '连杆总成',
@@ -383,8 +321,6 @@ export const cumminsNameTranslations = {
     ru: '连杆总成',
     ja: '连杆总成',
     zh: '连杆总成',
-    ar: '连杆总成',
-    it: '连杆总成',
   },
   '风扇皮带': {
     en: '风扇皮带',
@@ -395,8 +331,6 @@ export const cumminsNameTranslations = {
     ru: '风扇皮带',
     ja: '风扇皮带',
     zh: '风扇皮带',
-    ar: '风扇皮带',
-    it: '风扇皮带',
   },
   '高压油管': {
     en: '高压油管',
@@ -407,8 +341,6 @@ export const cumminsNameTranslations = {
     ru: '高压油管',
     ja: '高压油管',
     zh: '高压油管',
-    ar: '高压油管',
-    it: '高压油管',
   },
 };
 
@@ -419,6 +351,17 @@ export function getTranslatedCumminsSparePartName(name: string, language: string
 
 export const cumminsDescriptionTranslations: Record<string, Record<string, string>> = {
   'Cummins part. Replace every 500-1000 hours or based on fluid analysis results.': {
+    en: 'Cummins part. Replace every 500-1000 hours or based on fluid analysis results.',
+    zh: '康明斯零件。500-1000小时或视油液检测结果更换',
+    es: 'Pieza Cummins. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
+    fr: 'Pièce Cummins. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
+    de: 'Cummins-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
+    pt: 'Peça Cummins. Substituir a cada 500-1000 horas ou com base nos resultados da análise de fluidos.',
+    ru: 'Деталь Cummins. Заменяйте каждые 500-1000 часов или на основе результатов анализа жидкости.',
+    ja: 'Cummins部品。500～1000時間ごと、または流体分析結果に基づいて交換してください。',
+    ar: 'Cummins part. Replace every 500-1000 hours or based on fluid analysis results.',
+    it: 'Cummins part. Replace every 500-1000 hours or based on fluid analysis results.',
+  },
 };
 
 export function getTranslatedCumminsSparePartDescription(description: string, language: string = 'zh'): string {
@@ -430,16 +373,137 @@ export function getTranslatedCumminsSparePartDescription(description: string, la
 }
 export const cumminsCategoryTranslations: Record<string, Record<string, string>> = {
   'Maintenance/Filtration System': {
+    en: 'Maintenance/Filtration System',
+    es: 'Sistema de Mantenimiento/Filtración',
+    fr: 'Système de Maintenance/Filtration',
+    de: 'Wartungs-/Filtersystem',
+    pt: 'Sistema de Manutenção/Filtração',
+    ru: 'Система обслуживания/фильтрации',
+    ja: 'メンテナンス/フィルトレーションシステム',
+    zh: '维护/过滤系统',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di Manutenzione/Filtrazione',
+  },
   'Cooling System': {
+    en: 'Cooling System',
+    es: 'Sistema de Enfriamiento',
+    fr: 'Système de Refroidissement',
+    de: 'Kühlsystem',
+    pt: 'Sistema de Resfriamento',
+    ru: 'Система охлаждения',
+    ja: '冷却システム',
+    zh: '冷却系统',
+    ar: 'نظام التبريد',
+    it: 'Sistema di Raffreddamento',
+  },
   'Turbocharging/Intake System': {
+    en: 'Turbocharging/Intake System',
+    es: 'Sistema de Sobrealimentación/Admisión',
+    fr: 'Système de Suralimentation/Admission',
+    de: 'Aufladungs-/Ansaugsystem',
+    pt: 'Sistema de Sobrealimentação/Admissão',
+    ru: 'Система наддува/впуска',
+    ja: 'ターボチャージング/吸気システム',
+    zh: '增压/进气系统',
+    ar: 'نظام الشحن التوربيني/السحب',
+    it: 'Sistema di Sovralimentazione/Aspirazione',
+  },
   'Chassis/Track System': {
+    en: 'Chassis/Track System',
+    es: 'Sistema de Chasis/Orugas',
+    fr: 'Système de Châssis/Chenilles',
+    de: 'Fahrwerk-/Kettenantriebssystem',
+    pt: 'Sistema de Chassi/Trilhos',
+    ru: 'Система шасси/гусеничного хода',
+    ja: 'シャーシ/トラックシステム',
+    zh: '底盘/履带系统',
+    ar: 'نظام الهيكل/المسار',
+    it: 'Sistema di Telaio/Cingoli',
+  },
   'Excavation/GET': {
+    en: 'Excavation/GET',
+    es: 'Excavación/GET',
+    fr: 'Excavation/GET',
+    de: 'Grabung/GET',
+    pt: 'Escavação/GET',
+    ru: 'Экскавация/GET',
+    ja: '掘削/GET',
+    zh: '挖掘/GET',
+    ar: 'التنقيب/GET',
+    it: 'Scavo/GET',
+  },
   'Excavation/GET (Small)': {
+    en: 'Excavation/GET (Small)',
+    es: 'Excavación/GET (Pequeño)',
+    fr: 'Excavation/GET (Petit)',
+    de: 'Grabung/GET (Klein)',
+    pt: 'Escavação/GET (Pequeno)',
+    ru: 'Экскавация/GET (Малый)',
+    ja: '掘削/GET (小)',
+    zh: '挖掘/GET (小型)',
+    ar: 'التنقيب/GET (صغير)',
+    it: 'Scavo/GET (Piccolo)',
+  },
   'Excavation/GET (Medium)': {
+    en: 'Excavation/GET (Medium)',
+    es: 'Excavación/GET (Mediano)',
+    fr: 'Excavation/GET (Moyen)',
+    de: 'Grabung/GET (Mittel)',
+    pt: 'Escavação/GET (Médio)',
+    ru: 'Экскавация/GET (Средний)',
+    ja: '掘削/GET (中)',
+    zh: '挖掘/GET (中型)',
+    ar: 'التنقيب/GET (متوسط)',
+    it: 'Scavo/GET (Medio)',
+  },
   'Excavation/GET (Large)': {
+    en: 'Excavation/GET (Large)',
+    es: 'Excavación/GET (Grande)',
+    fr: 'Excavation/GET (Grand)',
+    de: 'Grabung/GET (Groß)',
+    pt: 'Escavação/GET (Grande)',
+    ru: 'Экскавация/GET (Большой)',
+    ja: '掘削/GET (大)',
+    zh: '挖掘/GET (大型)',
+    ar: 'التنقيب/GET (كبير)',
+    it: 'Scavo/GET (Grande)',
+  },
   'Transmission System': {
+    en: 'Transmission System',
+    es: 'Sistema de Transmisión',
+    fr: 'Système de Transmission',
+    de: 'Übertragungssystem',
+    pt: 'Sistema de Transmissão',
+    ru: 'Система передачи',
+    ja: 'トランスミッションシステム',
+    zh: '传动系统',
+    ar: 'نظام الإرسال',
+    it: 'Sistema di Trasmissione',
+  },
   'Boom Pin/Bushing System': {
+    en: 'Boom Pin/Bushing System',
+    es: 'Sistema de Pasador/Casquillo de Pluma',
+    fr: 'Système de Goupille/Douille de Flèche',
+    de: 'Ausleger-Stift-/Buchsensystem',
+    pt: 'Sistema de Pino/Bucha de Lança',
+    ru: 'Система штифта/втулки стрелы',
+    ja: 'ブームピン/ブッシングシステム',
+    zh: '动臂销/衬套系统',
+    ar: 'نظام دبوس/بوشة الرافعة',
+    it: 'Sistema di Perno/Boccola del Braccio',
+  },
   'Hydraulic Cylinder/Seals': {
+    en: 'Hydraulic Cylinder/Seals',
+    es: 'Cilindro Hidráulico/Sellos',
+    fr: 'Cylindre Hydraulique/Joints',
+    de: 'Hydraulikzylinder/Dichtungen',
+    pt: 'Cilindro Hidráulico/Selos',
+    ru: 'Гидравлический цилиндр/уплотнения',
+    ja: '油圧シリンダー/シール',
+    zh: '液压缸/密封件',
+    ar: 'أسطوانة هيدروليكية/أختام',
+    it: 'Cilindro Idraulico/Guarnizioni',
+  },
 };
 
 export function getTranslatedCumminsSparePartCategory(category: string, language: string = 'zh'): string {
