@@ -1579,7 +1579,6 @@ export const sinotrukCategoryTranslations: Record<string, Record<string, string>
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
-    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
