@@ -250,8 +250,8 @@ export function getTranslatedXCMGMachineType(machineType: string, language: stri
       fr: 'Pelle hydraulique compacte',
       pt: 'Escavadeira hidráulica compacta',
       it: 'Escavatore idraulico compatto',
-    ja: 'Compact 油圧ショベル',
-    de: 'Compact Hydraulikbagger'
+      ja: 'コンパクト油圧ショベル',
+      de: 'Kompakt-Hydraulikbagger'
   },
     'Mid-Size Hydraulic Excavator': {
       zh: '中型液压挖掘机',
@@ -262,8 +262,8 @@ export function getTranslatedXCMGMachineType(machineType: string, language: stri
       fr: 'Pelle hydraulique de taille moyenne',
       pt: 'Escavadeira hidráulica de tamanho médio',
       it: 'Escavatore idraulico di medie dimensioni',
-    ja: 'Mid-Size 油圧ショベル',
-    de: 'Mid-Size Hydraulikbagger'
+      ja: '中型油圧ショベル',
+      de: '中型液压挖掘机'
   },
     'Electric Hybrid Excavator': {
       zh: '电动混合动力挖掘机',
