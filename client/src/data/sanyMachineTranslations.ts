@@ -12,8 +12,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Mini-excavatrice hydraulique SANY SY35U',
     pt: 'Mini-escavadeira hidráulica SANY SY35U',
     it: 'Mini-escavatore idraulico SANY SY35U',
-    ja: 'SANY SY35U Mini Hydraulic Excavator',
-    de: 'SANY SY35U Mini Hydraulic Excavator'
+    ja: 'SANY SY35U Mini 油圧ショベル',
+    de: 'SANY SY35U Mini Hydraulikbagger'
   },
   'SANY SY135F': {
     zh: 'SANY SY135F 小型液压挖掘机',
@@ -24,8 +24,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Excavatrice hydraulique SANY SY135F petite',
     pt: 'Escavadeira hidráulica SANY SY135F pequena',
     it: 'Escavatore idraulico SANY SY135F piccolo',
-    ja: 'SANY SY135F Small Hydraulic Excavator',
-    de: 'SANY SY135F Small Hydraulic Excavator'
+    ja: 'SANY SY135F Small 油圧ショベル',
+    de: 'SANY SY135F Small Hydraulikbagger'
   },
   // Standard Excavators
   'SANY SY155H': {
@@ -37,8 +37,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Excavatrice hydraulique SANY SY155H moyenne',
     pt: 'Escavadeira hidráulica SANY SY155H média',
     it: 'Escavatore idraulico SANY SY155H medio',
-    ja: 'SANY SY155H Medium Hydraulic Excavator',
-    de: 'SANY SY155H Medium Hydraulic Excavator'
+    ja: 'SANY SY155H Medium 油圧ショベル',
+    de: 'SANY SY155H Medium Hydraulikbagger'
   },
   'SANY SY215C': {
     zh: 'SANY SY215C 中大型液压挖掘机',
@@ -49,8 +49,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Excavatrice hydraulique SANY SY215C moyen-grand',
     pt: 'Escavadeira hidráulica SANY SY215C médio-grande',
     it: 'Escavatore idraulico SANY SY215C medio-grande',
-    ja: 'SANY SY215C Medium-Large Hydraulic Excavator',
-    de: 'SANY SY215C Medium-Large Hydraulic Excavator'
+    ja: 'SANY SY215C Medium-Large 油圧ショベル',
+    de: 'SANY SY215C Medium-Large Hydraulikbagger'
   },
   'SANY SY335C': {
     zh: 'SANY SY335C 大型液压挖掘机',
@@ -61,8 +61,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Excavatrice hydraulique SANY SY335C grande',
     pt: 'Escavadeira hidráulica SANY SY335C grande',
     it: 'Escavatore idraulico SANY SY335C grande',
-    ja: 'SANY SY335C Large Hydraulic Excavator',
-    de: 'SANY SY335C Large Hydraulic Excavator'
+    ja: 'SANY SY335C Large 油圧ショベル',
+    de: 'SANY SY335C Large Hydraulikbagger'
   },
   'SANY SY365H': {
     zh: 'SANY SY365H 大型液压挖掘机',
@@ -73,8 +73,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Excavatrice hydraulique SANY SY365H grande',
     pt: 'Escavadeira hidráulica SANY SY365H grande',
     it: 'Escavatore idraulico SANY SY365H grande',
-    ja: 'SANY SY365H Large Hydraulic Excavator',
-    de: 'SANY SY365H Large Hydraulic Excavator'
+    ja: 'SANY SY365H Large 油圧ショベル',
+    de: 'SANY SY365H Large Hydraulikbagger'
   },
   'SANY SY550H': {
     zh: 'SANY SY550H 超大型液压挖掘机',
@@ -85,8 +85,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Excavatrice hydraulique SANY SY550H très grande',
     pt: 'Escavadeira hidráulica SANY SY550H extra grande',
     it: 'Escavatore idraulico SANY SY550H extra grande',
-    ja: 'SANY SY550H Extra-Large Hydraulic Excavator',
-    de: 'SANY SY550H Extra-Large Hydraulic Excavator'
+    ja: 'SANY SY550H Extra-Large 油圧ショベル',
+    de: 'SANY SY550H Extra-Large Hydraulikbagger'
   },
   'SANY SY650H': {
     zh: 'SANY SY650H 超大型液压挖掘机',
@@ -97,8 +97,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Excavatrice hydraulique SANY SY650H très grande',
     pt: 'Escavadeira hidráulica SANY SY650H extra grande',
     it: 'Escavatore idraulico SANY SY650H extra grande',
-    ja: 'SANY SY650H Extra-Large Hydraulic Excavator',
-    de: 'SANY SY650H Extra-Large Hydraulic Excavator'
+    ja: 'SANY SY650H Extra-Large 油圧ショベル',
+    de: 'SANY SY650H Extra-Large Hydraulikbagger'
   },
   'SANY SY956H': {
     zh: 'SANY SY956H 大型液压挖掘机',
@@ -109,8 +109,8 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Excavatrice hydraulique SANY SY956H grande',
     pt: 'Escavadeira hidráulica SANY SY956H grande',
     it: 'Escavatore idraulico SANY SY956H grande',
-    ja: 'SANY SY956H Large Hydraulic Excavator',
-    de: 'SANY SY956H Large Hydraulic Excavator'
+    ja: 'SANY SY956H Large 油圧ショベル',
+    de: 'SANY SY956H Large Hydraulikbagger'
   },
   // Wheel Loaders
   'SANY SY55C': {
@@ -196,7 +196,7 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Niveleuse SANY GD220J',
     pt: 'Motoniveladora SANY GD220J',
     it: 'Livellatrice SANY GD220J',
-    ja: 'SANY GD220J Motor Grader',
+    ja: 'SANY GD220J モーター Grader',
     de: 'SANY GD220J Motor Grader'
   },
   'SANY XDE120': {
@@ -208,7 +208,7 @@ export const sanyMachineTranslations: Record<string, Record<string, string>> = {
     fr: 'Niveleuse compacte SANY XDE120',
     pt: 'Motoniveladora compacta SANY XDE120',
     it: 'Livellatrice compatta SANY XDE120',
-    ja: 'SANY XDE120 Compact Motor Grader',
+    ja: 'SANY XDE120 Compact モーター Grader',
     de: 'SANY XDE120 Compact Motor Grader'
   },
   // Bulldozer
@@ -311,8 +311,8 @@ export const sanyMachineTypeTranslations: Record<string, Record<string, string>>
     fr: 'Mini-excavatrice hydraulique',
     pt: 'Mini-escavadeira hidráulica',
     it: 'Mini-escavatore idraulico',
-    ja: 'Mini Hydraulic Excavator',
-    de: 'Mini Hydraulic Excavator'
+    ja: 'Mini 油圧ショベル',
+    de: 'Mini Hydraulikbagger'
   },
   'Excavator': {
     zh: '液压挖掘机',
@@ -323,8 +323,8 @@ export const sanyMachineTypeTranslations: Record<string, Record<string, string>>
     fr: 'Excavatrice hydraulique',
     pt: 'Escavadeira hidráulica',
     it: 'Escavatore idraulico',
-    ja: 'Hydraulic Excavator',
-    de: 'Hydraulic Excavator'
+    ja: '油圧ショベル',
+    de: 'Hydraulikbagger'
   },
   'Wheel Loader': {
     zh: '轮式装载机',
@@ -359,7 +359,7 @@ export const sanyMachineTypeTranslations: Record<string, Record<string, string>>
     fr: 'Niveleuse',
     pt: 'Motoniveladora',
     it: 'Livellatrice',
-    ja: 'Motor Grader',
+    ja: 'モーター Grader',
     de: 'Motor Grader'
   },
   'Bulldozer': {
@@ -436,8 +436,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '3,5 tonnes | 25 kW | 0,12 m³ godet',
     pt: '3,5 toneladas | 25 kW | 0,12 m³ caçamba',
     it: '3,5 tonnellate | 25 kW | 0,12 m³ benna',
-    ja: '3.5 ton | 25 kW | 0.12 m³ bucket',
-    de: '3.5 ton | 25 kW | 0.12 m³ bucket'
+    ja: '3.5 トン | 25 kW | 0.12 m³ bucket',
+    de: '3.5 t | 25 kW | 0.12 m³ bucket'
   },
   'SY135F': {
     zh: '13.5 吨 | 74 kW | 0.5 m³ 斗容',
@@ -448,8 +448,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '13,5 tonnes | 74 kW | 0,5 m³ godet',
     pt: '13,5 toneladas | 74 kW | 0,5 m³ caçamba',
     it: '13,5 tonnellate | 74 kW | 0,5 m³ benna',
-    ja: '13.5 ton | 74 kW | 0.5 m³ bucket',
-    de: '13.5 ton | 74 kW | 0.5 m³ bucket'
+    ja: '13.5 トン | 74 kW | 0.5 m³ bucket',
+    de: '13.5 t | 74 kW | 0.5 m³ bucket'
   },
   'SY155H': {
     zh: '15 吨 | 74 kW | 0.65 m³ 斗容',
@@ -460,8 +460,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '15 tonnes | 74 kW | 0,65 m³ godet',
     pt: '15 toneladas | 74 kW | 0,65 m³ caçamba',
     it: '15 tonnellate | 74 kW | 0,65 m³ benna',
-    ja: '15 ton | 74 kW | 0.65 m³ bucket',
-    de: '15 ton | 74 kW | 0.65 m³ bucket'
+    ja: '15 トン | 74 kW | 0.65 m³ bucket',
+    de: '15 t | 74 kW | 0.65 m³ bucket'
   },
   'SY215C': {
     zh: '21.5 吨 | 110 kW | 0.9 m³ 斗容',
@@ -472,8 +472,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '21,5 tonnes | 110 kW | 0,9 m³ godet',
     pt: '21,5 toneladas | 110 kW | 0,9 m³ caçamba',
     it: '21,5 tonnellate | 110 kW | 0,9 m³ benna',
-    ja: '21.5 ton | 110 kW | 0.9 m³ bucket',
-    de: '21.5 ton | 110 kW | 0.9 m³ bucket'
+    ja: '21.5 トン | 110 kW | 0.9 m³ bucket',
+    de: '21.5 t | 110 kW | 0.9 m³ bucket'
   },
   'SY335C': {
     zh: '33.5 吨 | 162 kW | 1.4 m³ 斗容',
@@ -484,8 +484,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '33,5 tonnes | 162 kW | 1,4 m³ godet',
     pt: '33,5 toneladas | 162 kW | 1,4 m³ caçamba',
     it: '33,5 tonnellate | 162 kW | 1,4 m³ benna',
-    ja: '33.5 ton | 162 kW | 1.4 m³ bucket',
-    de: '33.5 ton | 162 kW | 1.4 m³ bucket'
+    ja: '33.5 トン | 162 kW | 1.4 m³ bucket',
+    de: '33.5 t | 162 kW | 1.4 m³ bucket'
   },
   'SY365H': {
     zh: '36.5 吨 | 206 kW | 1.7 m³ 斗容',
@@ -496,8 +496,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '36,5 tonnes | 206 kW | 1,7 m³ godet',
     pt: '36,5 toneladas | 206 kW | 1,7 m³ caçamba',
     it: '36,5 tonnellate | 206 kW | 1,7 m³ benna',
-    ja: '36.5 ton | 206 kW | 1.7 m³ bucket',
-    de: '36.5 ton | 206 kW | 1.7 m³ bucket'
+    ja: '36.5 トン | 206 kW | 1.7 m³ bucket',
+    de: '36.5 t | 206 kW | 1.7 m³ bucket'
   },
   'SY550H': {
     zh: '55 吨 | 280 kW | 2.4 m³ 斗容',
@@ -508,8 +508,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '55 tonnes | 280 kW | 2,4 m³ godet',
     pt: '55 toneladas | 280 kW | 2,4 m³ caçamba',
     it: '55 tonnellate | 280 kW | 2,4 m³ benna',
-    ja: '55 ton | 280 kW | 2.4 m³ bucket',
-    de: '55 ton | 280 kW | 2.4 m³ bucket'
+    ja: '55 トン | 280 kW | 2.4 m³ bucket',
+    de: '55 t | 280 kW | 2.4 m³ bucket'
   },
   'SY650H': {
     zh: '65 吨 | 340 kW | 3.0 m³ 斗容',
@@ -520,8 +520,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '65 tonnes | 340 kW | 3,0 m³ godet',
     pt: '65 toneladas | 340 kW | 3,0 m³ caçamba',
     it: '65 tonnellate | 340 kW | 3,0 m³ benna',
-    ja: '65 ton | 340 kW | 3.0 m³ bucket',
-    de: '65 ton | 340 kW | 3.0 m³ bucket'
+    ja: '65 トン | 340 kW | 3.0 m³ bucket',
+    de: '65 t | 340 kW | 3.0 m³ bucket'
   },
   'SY956H': {
     zh: '95 吨 | 500 kW | 4.5 m³ 斗容',
@@ -532,8 +532,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '95 tonnes | 500 kW | 4,5 m³ godet',
     pt: '95 toneladas | 500 kW | 4,5 m³ caçamba',
     it: '95 tonnellate | 500 kW | 4,5 m³ benna',
-    ja: '95 ton | 500 kW | 4.5 m³ bucket',
-    de: '95 ton | 500 kW | 4.5 m³ bucket'
+    ja: '95 トン | 500 kW | 4.5 m³ bucket',
+    de: '95 t | 500 kW | 4.5 m³ bucket'
   },
   'SY55C': {
     zh: '5.5 吨 | 74 kW | 2.0 m³ 斗容',
@@ -544,8 +544,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '5,5 tonnes | 74 kW | 2,0 m³ godet',
     pt: '5,5 toneladas | 74 kW | 2,0 m³ caçamba',
     it: '5,5 tonnellate | 74 kW | 2,0 m³ benna',
-    ja: '5.5 ton | 74 kW | 2.0 m³ bucket',
-    de: '5.5 ton | 74 kW | 2.0 m³ bucket'
+    ja: '5.5 トン | 74 kW | 2.0 m³ bucket',
+    de: '5.5 t | 74 kW | 2.0 m³ bucket'
   },
   'SY60C': {
     zh: '6 吨 | 110 kW | 2.5 m³ 斗容',
@@ -556,8 +556,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '6 tonnes | 110 kW | 2,5 m³ godet',
     pt: '6 toneladas | 110 kW | 2,5 m³ caçamba',
     it: '6 tonnellate | 110 kW | 2,5 m³ benna',
-    ja: '6 ton | 110 kW | 2.5 m³ bucket',
-    de: '6 ton | 110 kW | 2.5 m³ bucket'
+    ja: '6 トン | 110 kW | 2.5 m³ bucket',
+    de: '6 t | 110 kW | 2.5 m³ bucket'
   },
   'SY75C': {
     zh: '7.5 吨 | 155 kW | 3.0 m³ 斗容',
@@ -568,8 +568,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '7,5 tonnes | 155 kW | 3,0 m³ godet',
     pt: '7,5 toneladas | 155 kW | 3,0 m³ caçamba',
     it: '7,5 tonnellate | 155 kW | 3,0 m³ benna',
-    ja: '7.5 ton | 155 kW | 3.0 m³ bucket',
-    de: '7.5 ton | 155 kW | 3.0 m³ bucket'
+    ja: '7.5 トン | 155 kW | 3.0 m³ bucket',
+    de: '7.5 t | 155 kW | 3.0 m³ bucket'
   },
   'XC968': {
     zh: '96 吨 | 500 kW | 6.0 m³ 斗容',
@@ -580,8 +580,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '96 tonnes | 500 kW | 6,0 m³ godet',
     pt: '96 toneladas | 500 kW | 6,0 m³ caçamba',
     it: '96 tonnellate | 500 kW | 6,0 m³ benna',
-    ja: '96 ton | 500 kW | 6.0 m³ bucket',
-    de: '96 ton | 500 kW | 6.0 m³ bucket'
+    ja: '96 トン | 500 kW | 6.0 m³ bucket',
+    de: '96 t | 500 kW | 6.0 m³ bucket'
   },
   'SY16C': {
     zh: '8 吨 | 75 kW | 2.0 m³ 斗容',
@@ -592,8 +592,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '8 tonnes | 75 kW | 2,0 m³ godet',
     pt: '8 toneladas | 75 kW | 2,0 m³ caçamba',
     it: '8 tonnellate | 75 kW | 2,0 m³ benna',
-    ja: '8 ton | 75 kW | 2.0 m³ bucket',
-    de: '8 ton | 75 kW | 2.0 m³ bucket'
+    ja: '8 トン | 75 kW | 2.0 m³ bucket',
+    de: '8 t | 75 kW | 2.0 m³ bucket'
   },
   'SY18C': {
     zh: '9 吨 | 110 kW | 2.5 m³ 斗容',
@@ -604,8 +604,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '9 tonnes | 110 kW | 2,5 m³ godet',
     pt: '9 toneladas | 110 kW | 2,5 m³ caçamba',
     it: '9 tonnellate | 110 kW | 2,5 m³ benna',
-    ja: '9 ton | 110 kW | 2.5 m³ bucket',
-    de: '9 ton | 110 kW | 2.5 m³ bucket'
+    ja: '9 トン | 110 kW | 2.5 m³ bucket',
+    de: '9 t | 110 kW | 2.5 m³ bucket'
   },
   'GD220J': {
     zh: '22 吨 | 155 kW | 3.7 m 刀片',
@@ -616,8 +616,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '22 tonnes | 155 kW | 3,7 m lame',
     pt: '22 toneladas | 155 kW | 3,7 m lâmina',
     it: '22 tonnellate | 155 kW | 3,7 m lama',
-    ja: '22 ton | 155 kW | 3.7 m blade',
-    de: '22 ton | 155 kW | 3.7 m blade'
+    ja: '22 トン | 155 kW | 3.7 m blade',
+    de: '22 t | 155 kW | 3.7 m blade'
   },
   'XDE120': {
     zh: '12 吨 | 110 kW | 3.2 m 刀片',
@@ -628,8 +628,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '12 tonnes | 110 kW | 3,2 m lame',
     pt: '12 toneladas | 110 kW | 3,2 m lâmina',
     it: '12 tonnellate | 110 kW | 3,2 m lama',
-    ja: '12 ton | 110 kW | 3.2 m blade',
-    de: '12 ton | 110 kW | 3.2 m blade'
+    ja: '12 トン | 110 kW | 3.2 m blade',
+    de: '12 t | 110 kW | 3.2 m blade'
   },
   'DL560': {
     zh: '56 吨 | 280 kW | 4.0 m 刀片',
@@ -640,8 +640,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '56 tonnes | 280 kW | 4,0 m lame',
     pt: '56 toneladas | 280 kW | 4,0 m lâmina',
     it: '56 tonnellate | 280 kW | 4,0 m lama',
-    ja: '56 ton | 280 kW | 4.0 m blade',
-    de: '56 ton | 280 kW | 4.0 m blade'
+    ja: '56 トン | 280 kW | 4.0 m blade',
+    de: '56 t | 280 kW | 4.0 m blade'
   },
   'SSR160AC-8': {
     zh: '16 吨 | 110 kW | 2.1 m 宽度',
@@ -652,8 +652,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '16 tonnes | 110 kW | 2,1 m largeur',
     pt: '16 toneladas | 110 kW | 2,1 m largura',
     it: '16 tonnellate | 110 kW | 2,1 m larghezza',
-    ja: '16 ton | 110 kW | 2.1 m width',
-    de: '16 ton | 110 kW | 2.1 m width'
+    ja: '16 トン | 110 kW | 2.1 m width',
+    de: '16 t | 110 kW | 2.1 m width'
   },
   'SSR200C-8H': {
     zh: '20 吨 | 155 kW | 2.1 m 宽度',
@@ -664,8 +664,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '20 tonnes | 155 kW | 2,1 m largeur',
     pt: '20 toneladas | 155 kW | 2,1 m largura',
     it: '20 tonnellate | 155 kW | 2,1 m larghezza',
-    ja: '20 ton | 155 kW | 2.1 m width',
-    de: '20 ton | 155 kW | 2.1 m width'
+    ja: '20 トン | 155 kW | 2.1 m width',
+    de: '20 t | 155 kW | 2.1 m width'
   },
   'STC250T5': {
     zh: '250 吨 | 500 kW | 60 m 臂长',
@@ -676,8 +676,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '250 tonnes | 500 kW | 60 m flèche',
     pt: '250 toneladas | 500 kW | 60 m lança',
     it: '250 tonnellate | 500 kW | 60 m braccio',
-    ja: '250 ton | 500 kW | 60 m boom',
-    de: '250 ton | 500 kW | 60 m boom'
+    ja: '250 トン | 500 kW | 60 m boom',
+    de: '250 t | 500 kW | 60 m boom'
   },
   'STC1200T7': {
     zh: '1200 吨 | 800 kW | 100 m 臂长',
@@ -688,8 +688,8 @@ export const sanyMachineSpecsTranslations: Record<string, Record<string, string>
     fr: '1200 tonnes | 800 kW | 100 m flèche',
     pt: '1200 toneladas | 800 kW | 100 m lança',
     it: '1200 tonnellate | 800 kW | 100 m braccio',
-    ja: '1200 ton | 800 kW | 100 m boom',
-    de: '1200 ton | 800 kW | 100 m boom'
+    ja: '1200 トン | 800 kW | 100 m boom',
+    de: '1200 t | 800 kW | 100 m boom'
   },
   'SAC600E': {
     zh: '600 m³/h | 500 kW | 60 m 臂长',
@@ -728,8 +728,8 @@ export const sanyMachineDescriptionTranslations: Record<string, Record<string, s
     fr: 'Mini-excavatrice ultra-compacte SANY SY35U pour l\'aménagement paysager et les espaces restreints. Caractéristiques: conception compacte, efficacité énergétique et précision excellente. Moteur: Yuchai YC3D60-20 (25 kW / 34 ch). Poids de fonctionnement: 3,5 tonnes. Capacité du godet: 0,12 m³. Profondeur maximale de fouille: 2,8 m. Parfaite pour les petits travaux de construction et l\'aménagement paysager.',
     pt: 'Mini-escavadeira ultra-compacta SANY SY35U para paisagismo e espaços confinados. Características: design compacto, eficiência de combustível e precisão excelente. Motor: Yuchai YC3D60-20 (25 kW / 34 HP). Peso de operação: 3,5 toneladas. Capacidade da caçamba: 0,12 m³. Profundidade máxima de escavação: 2,8 m. Perfeita para construção em pequena escala e trabalhos de paisagismo.',
     it: 'Mini-escavatore ultra-compatto SANY SY35U per paesaggistica e spazi ristretti. Caratteristiche: design compatto, efficienza del carburante e precisione eccellente. Motore: Yuchai YC3D60-20 (25 kW / 34 HP). Peso operativo: 3,5 tonnellate. Capacità della benna: 0,12 m³. Profondità massima di scavo: 2,8 m. Perfetto per lavori di costruzione su piccola scala e paesaggistica.',
-    ja: 'SANY SY35U ウルトラコンパクトミニショベル 造園と狭い空間用. 特徴 compact design, fuel efficiency, and excellent precision. エンジン: Yuchai YC3D60-20 (25 kW / 34 HP). 稼働重量: 3.5 ton. バケット容量: 0.12 m³. 最大掘削深度: 2.8 m. 最適な用途 small-scale construction and landscaping work.',
-    de: 'SANY SY35U Ultra-kompakter Mini-Bagger für Landschaftsbau und enge Räume. Merkmale compact design, fuel efficiency, and excellent precision. Motor: Yuchai YC3D60-20 (25 kW / 34 HP). Betriebsgewicht: 3.5 ton. Schaufelkapazität: 0.12 m³. Maximale Grabtiefe: 2.8 m. Perfekt für small-scale construction and landscaping work.'
+    ja: 'SANY SY35U ウルトラコンパクトミニショベル 造園と狭い空間用. 特徴 compact design, fuel efficiency, and excellent precision. エンジン: Yuchai YC3D60-20 (25 kW / 34 HP). 稼働重量: 3.5 トン. バケット容量: 0.12 m³. 最大掘削深度: 2.8 m. 最適な用途 小規模 建設 and 造園 work.',
+    de: 'SANY SY35U Ultra-kompakter Mini-Bagger für Landschaftsbau und enge Räume. Merkmale compact design, fuel efficiency, and excellent precision. Motor: Yuchai YC3D60-20 (25 kW / 34 PS). Betriebsgewicht: 3.5 t. Schaufelkapazität: 0.12 m³. Maximale Grabtiefe: 2.8 m. Perfekt für kleinflächige Bau and Landschaftsbau work.'
   },
   'SY135F': {
     zh: 'SANY SY135F 小型液压挖掘机，适用于公用事业和小型建筑。具有燃油高效、操控平顺、机动性强等特点。发动机：玉柴 YC4D80-20（74 kW / 100 HP）。工作重量：13.5 吨。斗容：0.5 m³。最大挖掘深度：4.5 m。适用于园林绿化和小型建筑项目。',
@@ -740,8 +740,8 @@ export const sanyMachineDescriptionTranslations: Record<string, Record<string, s
     fr: 'Excavatrice compacte SANY SY135F pour les travaux de services publics et la petite construction. Moteur économe en carburant, commande souple et excellente maniabilité. Moteur: Yuchai YC4D80-20 (74 kW / 100 ch). Poids de fonctionnement: 13,5 tonnes. Capacité du godet: 0,5 m³. Profondeur maximale de fouille: 4,5 m. Idéale pour l\'aménagement paysager et les petits projets de construction.',
     pt: 'Escavadeira compacta SANY SY135F para trabalhos de serviços públicos e construção pequena. Motor eficiente em combustível, controle suave e excelente manobrabilidade. Motor: Yuchai YC4D80-20 (74 kW / 100 HP). Peso de operação: 13,5 toneladas. Capacidade da caçamba: 0,5 m³. Profundidade máxima de escavação: 4,5 m. Ideal para paisagismo e pequenos projetos de construção.',
     it: 'Escavatore compatto SANY SY135F per lavori di servizi pubblici e piccola costruzione. Motore efficiente nei consumi, controllo fluido e eccellente manovrabilità. Motore: Yuchai YC4D80-20 (74 kW / 100 HP). Peso operativo: 13,5 tonnellate. Capacità della benna: 0,5 m³. Profondità massima di scavo: 4,5 m. Ideale per paesaggistica e piccoli progetti di costruzione.',
-    ja: 'SANY SY135F コンパクトショベル ユーティリティ作業と小規模建設用. 特徴 fuel-efficient エンジン, smooth control, and excellent maneuverability. エンジン: Yuchai YC4D80-20 (74 kW / 100 HP). 稼働重量: 13.5 ton. バケット容量: 0.5 m³. 最大掘削深度: 4.5 m. 理想的な用途 landscaping and small construction projects.',
-    de: 'SANY SY135F Kompakter Bagger für Versorgungsarbeiten und kleine Baustellen. Merkmale fuel-efficient Motor, smooth control, and excellent maneuverability. Motor: Yuchai YC4D80-20 (74 kW / 100 HP). Betriebsgewicht: 13.5 ton. Schaufelkapazität: 0.5 m³. Maximale Grabtiefe: 4.5 m. Ideal für landscaping and small construction projects.'
+    ja: 'SANY SY135F コンパクトショベル ユーティリティ作業と小規模建設用. 特徴 fuel-efficient エンジン, smooth control, and excellent maneuverability. エンジン: Yuchai YC4D80-20 (74 kW / 100 HP). 稼働重量: 13.5 トン. バケット容量: 0.5 m³. 最大掘削深度: 4.5 m. 理想的な用途 造園 and small 建設 projects.',
+    de: 'SANY SY135F Kompakter Bagger für Versorgungsarbeiten und kleine Baustellen. Merkmale fuel-efficient Motor, smooth control, and excellent maneuverability. Motor: Yuchai YC4D80-20 (74 kW / 100 PS). Betriebsgewicht: 13.5 t. Schaufelkapazität: 0.5 m³. Maximale Grabtiefe: 4.5 m. Ideal für Landschaftsbau and small Bau projects.'
   },
   'SY155H': {
     zh: 'SANY SY155H 中型液压挖掘机，适用于一般建筑和挖掘。具有燃油高效、液压平顺、可靠性强等特点。发动机：玉柴 YC4D80-20（74 kW / 100 HP）。工作重量：15 吨。斗容：0.65 m³。最大挖掘深度：5.2 m。适用于建筑、采矿和土方工程。',
@@ -752,8 +752,8 @@ export const sanyMachineDescriptionTranslations: Record<string, Record<string, s
     fr: 'Excavatrice de taille moyenne SANY SY155H pour la construction générale et l\'excavation. Moteur économe en carburant, hydraulique souple et fiabilité excellente. Moteur: Yuchai YC4D80-20 (74 kW / 100 ch). Poids de fonctionnement: 15 tonnes. Capacité du godet: 0,65 m³. Profondeur maximale de fouille: 5,2 m. Idéale pour la construction, l\'exploitation minière et les opérations de terrassement.',
     pt: 'Escavadeira de tamanho médio SANY SY155H para construção geral e escavação. Motor eficiente em combustível, hidráulica suave e confiabilidade excelente. Motor: Yuchai YC4D80-20 (74 kW / 100 HP). Peso de operação: 15 toneladas. Capacidade da caçamba: 0,65 m³. Profundidade máxima de escavação: 5,2 m. Ideal para construção, mineração e operações de movimentação de terra.',
     it: 'Escavatore di medie dimensioni SANY SY155H per costruzione generale e scavo. Motore efficiente nei consumi, idraulica fluida e affidabilità eccellente. Motore: Yuchai YC4D80-20 (74 kW / 100 HP). Peso operativo: 15 tonnellate. Capacità della benna: 0,65 m³. Profondità massima di scavo: 5,2 m. Ideale per costruzione, estrazione mineraria e operazioni di movimento terra.',
-    ja: 'SANY SY155H 中型ショベル 一般建設と掘削用. 特徴 fuel-efficient エンジン, smooth hydraulics, and excellent reliability. エンジン: Yuchai YC4D80-20 (74 kW / 100 HP). 稼働重量: 15 ton. バケット容量: 0.65 m³. 最大掘削深度: 5.2 m. 理想的な用途 construction, mining, and earthmoving operations.',
-    de: 'SANY SY155H Mittlerer Bagger für allgemeine Bauarbeiten und Aushubarbeiten. Merkmale fuel-efficient Motor, smooth hydraulics, and excellent reliability. Motor: Yuchai YC4D80-20 (74 kW / 100 HP). Betriebsgewicht: 15 ton. Schaufelkapazität: 0.65 m³. Maximale Grabtiefe: 5.2 m. Ideal für construction, mining, and earthmoving operations.'
+    ja: 'SANY SY155H 中型ショベル 一般建設と掘削用. 特徴 fuel-efficient エンジン, smooth hydraulics, and excellent reliability. エンジン: Yuchai YC4D80-20 (74 kW / 100 HP). 稼働重量: 15 トン. バケット容量: 0.65 m³. 最大掘削深度: 5.2 m. 理想的な用途 建設, 鉱業, and 土工 operations.',
+    de: 'SANY SY155H Mittlerer Bagger für allgemeine Bauarbeiten und Aushubarbeiten. Merkmale fuel-efficient Motor, smooth hydraulics, and excellent reliability. Motor: Yuchai YC4D80-20 (74 kW / 100 PS). Betriebsgewicht: 15 t. Schaufelkapazität: 0.65 m³. Maximale Grabtiefe: 5.2 m. Ideal für Bau, Bergbau, and Erdarbeiten operations.'
   },
   'SY650H': {
     zh: 'SANY SY650H 超大型液压挖掘机，适用于大型采矿和石料开采。具有强大康明斯发动机、先进控制系统、卓越稳定性等特点。发动机：康明斯 QSM11（340 kW / 460 HP）。工作重量：65 吨。斗容：3.0 m³。最大挖掘深度：8.5 m。适用于大规模采矿和土方工程。',
@@ -764,8 +764,8 @@ export const sanyMachineDescriptionTranslations: Record<string, Record<string, s
     fr: 'Excavatrice ultra-grande SANY SY650H pour les grandes opérations d\'exploitation minière. Moteur Cummins puissant, système de contrôle avancé et stabilité excellente. Moteur: Cummins QSM11 (340 kW / 460 ch). Poids de fonctionnement: 65 tonnes. Capacité du godet: 3,0 m³. Profondeur maximale de fouille: 8,5 m. Idéale pour l\'exploitation minière à grande échelle et les travaux de terrassement.',
     pt: 'Escavadeira ultra grande SANY SY650H para grandes operações de mineração. Motor Cummins potente, sistema de controle avançado e estabilidade excelente. Motor: Cummins QSM11 (340 kW / 460 HP). Peso de operação: 65 toneladas. Capacidade da caçamba: 3,0 m³. Profundidade máxima de escavação: 8,5 m. Ideal para mineração em larga escala e movimentação de terra.',
     it: 'Escavatore ultra-grande SANY SY650H per importanti operazioni di estrazione mineraria. Motore Cummins potente, sistema di controllo avanzato e stabilità eccellente. Motore: Cummins QSM11 (340 kW / 460 HP). Peso operativo: 65 tonnellate. Capacità della benna: 3,0 m³. Profondità massima di scavo: 8,5 m. Ideale per estrazione mineraria su larga scala e movimentazione di terra.',
-    ja: 'SANY SY650H 超大型ショベル 大規模採掘作業用. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSM11 (340 kW / 460 HP). 稼働重量: 65 ton. バケット容量: 3.0 m³. 最大掘削深度: 8.5 m. 理想的な用途 large-scale mining and earthmoving.',
-    de: 'SANY SY650H Ultra-großer Bagger für große Bergbauarbeiten. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSM11 (340 kW / 460 HP). Betriebsgewicht: 65 ton. Schaufelkapazität: 3.0 m³. Maximale Grabtiefe: 8.5 m. Ideal für large-scale mining and earthmoving.'
+    ja: 'SANY SY650H 超大型ショベル 大規模採掘作業用. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSM11 (340 kW / 460 HP). 稼働重量: 65 トン. バケット容量: 3.0 m³. 最大掘削深度: 8.5 m. 理想的な用途 大規模 鉱業 and 土工.',
+    de: 'SANY SY650H Ultra-großer Bagger für große Bergbauarbeiten. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSM11 (340 kW / 460 PS). Betriebsgewicht: 65 t. Schaufelkapazität: 3.0 m³. Maximale Grabtiefe: 8.5 m. Ideal für großflächige Bergbau and Erdarbeiten.'
   },
   'SY956H': {
     zh: 'SANY SY956H 巨型液压挖掘机，适用于大型采矿和石料开采。具有强大康明斯发动机、先进液压系统、卓越效率等特点。发动机：康明斯 QSK60（500 kW / 680 HP）。工作重量：95 吨。斗容：4.5 m³。最大挖掘深度：9.5 m。适用于大规模采矿和采石。',
@@ -776,8 +776,8 @@ export const sanyMachineDescriptionTranslations: Record<string, Record<string, s
     fr: 'Excavatrice méga SANY SY956H pour les grandes opérations d\'exploitation minière et de carrière. Moteur Cummins puissant, système hydraulique avancé et efficacité exceptionnelle. Moteur: Cummins QSK60 (500 kW / 680 ch). Poids de fonctionnement: 95 tonnes. Capacité du godet: 4,5 m³. Profondeur maximale de fouille: 9,5 m. Parfaite pour l\'exploitation minière et la carrière à grande échelle.',
     pt: 'Escavadeira mega SANY SY956H para grandes operações de mineração e pedreiras. Motor Cummins potente, sistema hidráulico avançado e eficiência excepcional. Motor: Cummins QSK60 (500 kW / 680 HP). Peso de operação: 95 toneladas. Capacidade da caçamba: 4,5 m³. Profundidade máxima de escavação: 9,5 m. Perfeita para mineração e pedreiras em larga escala.',
     it: 'Escavatore mega SANY SY956H per importanti operazioni di estrazione mineraria e cava. Motore Cummins potente, sistema idraulico avanzato e efficienza eccezionale. Motore: Cummins QSK60 (500 kW / 680 HP). Peso operativo: 95 tonnellate. Capacità della benna: 4,5 m³. Profondità massima di scavo: 9,5 m. Perfetto per estrazione mineraria e cava su larga scala.',
-    ja: 'SANY SY956H メガショベル for major mining and quarrying operations. 特徴 powerful Cummins エンジン, advanced hydraulic system, and exceptional efficiency. エンジン: Cummins QSK60 (500 kW / 680 HP). 稼働重量: 95 ton. バケット容量: 4.5 m³. 最大掘削深度: 9.5 m. 最適な用途 large-scale mining and quarrying.',
-    de: 'SANY SY956H Mega-Bagger for major mining and quarrying operations. Merkmale powerful Cummins Motor, advanced hydraulic system, and exceptional efficiency. Motor: Cummins QSK60 (500 kW / 680 HP). Betriebsgewicht: 95 ton. Schaufelkapazität: 4.5 m³. Maximale Grabtiefe: 9.5 m. Perfekt für large-scale mining and quarrying.'
+    ja: 'SANY SY956H メガショベル for major 鉱業 and 採石 operations. 特徴 powerful Cummins エンジン, advanced hydraulic system, and exceptional efficiency. エンジン: Cummins QSK60 (500 kW / 680 HP). 稼働重量: 95 トン. バケット容量: 4.5 m³. 最大掘削深度: 9.5 m. 最適な用途 大規模 鉱業 and 採石.',
+    de: 'SANY SY956H Mega-Bagger for major Bergbau and Steinbruchbetrieb operations. Merkmale powerful Cummins Motor, advanced hydraulic system, and exceptional efficiency. Motor: Cummins QSK60 (500 kW / 680 PS). Betriebsgewicht: 95 t. Schaufelkapazität: 4.5 m³. Maximale Grabtiefe: 9.5 m. Perfekt für großflächige Bergbau and Steinbruchbetrieb.'
   }
 };
 
@@ -808,8 +808,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Excavatrice de taille moyenne populaire SANY SY215C pour la construction et l\'exploitation minière. Moteur puissant, système hydraulique avancé et haute efficacité. Moteur: Cummins QSB4.5 (110 kW / 150 ch). Poids de fonctionnement: 21,5 tonnes. Capacité du godet: 0,9 m³. Profondeur maximale de fouille: 6,0 m. Parfaite pour la construction et l\'exploitation minière générale.',
     pt: 'Escavadeira de tamanho médio popular SANY SY215C para construção e mineração. Motor potente, sistema hidráulico avançado e alta eficiência. Motor: Cummins QSB4.5 (110 kW / 150 HP). Peso de operação: 21,5 toneladas. Capacidade da caçamba: 0,9 m³. Profundidade máxima de escavação: 6,0 m. Perfeita para construção e mineração geral.',
     it: 'Escavatore di taglia media popolare SANY SY215C per costruzione e estrazione mineraria. Motore potente, sistema idraulico avanzato e alta efficienza. Motore: Cummins QSB4.5 (110 kW / 150 HP). Peso operativo: 21,5 tonnellate. Capacità della benna: 0,9 m³. Profondità massima di scavo: 6,0 m. Perfetto per costruzione ed estrazione mineraria generale.',
-    ja: 'SANY SY215C popular 中型ショベル 建設と鉱業用. 特徴 powerful エンジン, advanced hydraulic system, and high efficiency. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 21.5 ton. バケット容量: 0.9 m³. 最大掘削深度: 6.0 m. 最適な用途 general construction and mining.',
-    de: 'SANY SY215C popular Mittlerer Bagger für Bau- und Bergbauarbeiten. Merkmale powerful Motor, advanced hydraulic system, and high efficiency. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 21.5 ton. Schaufelkapazität: 0.9 m³. Maximale Grabtiefe: 6.0 m. Perfekt für general construction and mining.'
+    ja: 'SANY SY215C popular 中型ショベル 建設と鉱業用. 特徴 powerful エンジン, advanced hydraulic system, and high efficiency. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 21.5 トン. バケット容量: 0.9 m³. 最大掘削深度: 6.0 m. 最適な用途 general 建設 and 鉱業.',
+    de: 'SANY SY215C popular Mittlerer Bagger für Bau- und Bergbauarbeiten. Merkmale powerful Motor, advanced hydraulic system, and high efficiency. Motor: Cummins QSB4.5 (110 kW / 150 PS). Betriebsgewicht: 21.5 t. Schaufelkapazität: 0.9 m³. Maximale Grabtiefe: 6.0 m. Perfekt für general Bau and Bergbau.'
   },
   'SY335C': {
     zh: 'SANY SY335C 大型液压挖掘机，适用于重型采矿和建筑。具有强大康明斯发动机、先进液压系统、高效率等特点。发动机：康明斯 QSB6.7（162 kW / 220 HP）。工作重量：33.5 吨。斗容：1.4 m³。最大挖掘深度：6.8 m。适用于大规模挖掘和采矿。',
@@ -820,8 +820,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Grande excavatrice SANY SY335C pour l\'exploitation minière lourde et la construction. Moteur Cummins puissant, système hydraulique avancé et haute efficacité. Moteur: Cummins QSB6.7 (162 kW / 220 ch). Poids de fonctionnement: 33,5 tonnes. Capacité du godet: 1,4 m³. Profondeur maximale de fouille: 6,8 m. Excellente pour l\'excavation et l\'exploitation minière à grande échelle.',
     pt: 'Escavadeira grande SANY SY335C para mineração pesada e construção. Motor Cummins potente, sistema hidráulico avançado e alta eficiência. Motor: Cummins QSB6.7 (162 kW / 220 HP). Peso de operação: 33,5 toneladas. Capacidade da caçamba: 1,4 m³. Profundidade máxima de escavação: 6,8 m. Excelente para escavação e mineração em larga escala.',
     it: 'Grande escavatore SANY SY335C per estrazione mineraria pesante e costruzione. Motore Cummins potente, sistema idraulico avanzato e alta efficienza. Motore: Cummins QSB6.7 (162 kW / 220 HP). Peso operativo: 33,5 tonnellate. Capacità della benna: 1,4 m³. Profondità massima di scavo: 6,8 m. Eccellente per scavi e estrazione mineraria su larga scala.',
-    ja: 'SANY SY335C 大型ショベル 重工業採掘と建設用. 特徴 powerful Cummins エンジン, advanced hydraulic system, and high efficiency. エンジン: Cummins QSB6.7 (162 kW / 220 HP). 稼働重量: 33.5 ton. バケット容量: 1.4 m³. 最大掘削深度: 6.8 m. 優れた用途 large-scale excavation and mining.',
-    de: 'SANY SY335C Großer Bagger für schwere Bergbau- und Bauarbeiten. Merkmale powerful Cummins Motor, advanced hydraulic system, and high efficiency. Motor: Cummins QSB6.7 (162 kW / 220 HP). Betriebsgewicht: 33.5 ton. Schaufelkapazität: 1.4 m³. Maximale Grabtiefe: 6.8 m. Hervorragend für large-scale excavation and mining.'
+    ja: 'SANY SY335C 大型ショベル 重工業採掘と建設用. 特徴 powerful Cummins エンジン, advanced hydraulic system, and high efficiency. エンジン: Cummins QSB6.7 (162 kW / 220 HP). 稼働重量: 33.5 トン. バケット容量: 1.4 m³. 最大掘削深度: 6.8 m. 優れた用途 大規模 excavation and 鉱業.',
+    de: 'SANY SY335C Großer Bagger für schwere Bergbau- und Bauarbeiten. Merkmale powerful Cummins Motor, advanced hydraulic system, and high efficiency. Motor: Cummins QSB6.7 (162 kW / 220 PS). Betriebsgewicht: 33.5 t. Schaufelkapazität: 1.4 m³. Maximale Grabtiefe: 6.8 m. Hervorragend für großflächige excavation and Bergbau.'
   },
   'SY365H': {
     zh: 'SANY SY365H 大型液压挖掘机，适用于大型采矿和建筑项目。具有强大康明斯发动机、先进控制系统、卓越稳定性等特点。发动机：康明斯 QSB6.7（206 kW / 280 HP）。工作重量：36.5 吨。斗容：1.7 m³。最大挖掘深度：7.0 m。适用于大规模采矿和建筑。',
@@ -832,8 +832,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Grande excavatrice SANY SY365H pour les grands projets d\'exploitation minière et de construction. Moteur Cummins puissant, système de contrôle avancé et stabilité excellente. Moteur: Cummins QSB6.7 (206 kW / 280 ch). Poids de fonctionnement: 36,5 tonnes. Capacité du godet: 1,7 m³. Profondeur maximale de fouille: 7,0 m. Idéale pour l\'exploitation minière et la construction à grande échelle.',
     pt: 'Escavadeira grande SANY SY365H para grandes projetos de mineração e construção. Motor Cummins potente, sistema de controle avançado e estabilidade excelente. Motor: Cummins QSB6.7 (206 kW / 280 HP). Peso de operação: 36,5 toneladas. Capacidade da caçamba: 1,7 m³. Profundidade máxima de escavação: 7,0 m. Ideal para mineração e construção em larga escala.',
     it: 'Grande escavatore SANY SY365H per importanti progetti di estrazione mineraria e costruzione. Motore Cummins potente, sistema di controllo avanzato e stabilità eccellente. Motore: Cummins QSB6.7 (206 kW / 280 HP). Peso operativo: 36,5 tonnellate. Capacità della benna: 1,7 m³. Profondità massima di scavo: 7,0 m. Ideale per estrazione mineraria e costruzione su larga scala.',
-    ja: 'SANY SY365H 大型ショベル 大規模採掘と建設プロジェクト用. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSB6.7 (206 kW / 280 HP). 稼働重量: 36.5 ton. バケット容量: 1.7 m³. 最大掘削深度: 7.0 m. 理想的な用途 large-scale mining and construction.',
-    de: 'SANY SY365H Großer Bagger für große Bergbau- und Bauprojekte. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSB6.7 (206 kW / 280 HP). Betriebsgewicht: 36.5 ton. Schaufelkapazität: 1.7 m³. Maximale Grabtiefe: 7.0 m. Ideal für large-scale mining and construction.'
+    ja: 'SANY SY365H 大型ショベル 大規模採掘と建設プロジェクト用. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSB6.7 (206 kW / 280 HP). 稼働重量: 36.5 トン. バケット容量: 1.7 m³. 最大掘削深度: 7.0 m. 理想的な用途 大規模 鉱業 and 建設.',
+    de: 'SANY SY365H Großer Bagger für große Bergbau- und Bauprojekte. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSB6.7 (206 kW / 280 PS). Betriebsgewicht: 36.5 t. Schaufelkapazität: 1.7 m³. Maximale Grabtiefe: 7.0 m. Ideal für großflächige Bergbau and Bau.'
   },
   'SY650H': {
     zh: 'SANY SY650H 超大型液压挖掘机，适用于大型采矿和石料开采。具有强大康明斯发动机、先进控制系统、卓越稳定性等特点。发动机：康明斯 QSM11（340 kW / 460 HP）。工作重量：65 吨。斗容：3.0 m³。最大挖掘深度：8.5 m。适用于大规模采矿和土方工程。',
@@ -844,8 +844,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Excavatrice ultra-grande SANY SY650H pour les grandes opérations d\'exploitation minière. Moteur Cummins puissant, système de contrôle avancé et stabilité excellente. Moteur: Cummins QSM11 (340 kW / 460 ch). Poids de fonctionnement: 65 tonnes. Capacité du godet: 3,0 m³. Profondeur maximale de fouille: 8,5 m. Idéale pour l\'exploitation minière à grande échelle et les travaux de terrassement.',
     pt: 'Escavadeira ultra grande SANY SY650H para grandes operações de mineração. Motor Cummins potente, sistema de controle avançado e estabilidade excelente. Motor: Cummins QSM11 (340 kW / 460 HP). Peso de operação: 65 toneladas. Capacidade da caçamba: 3,0 m³. Profundidade máxima de escavação: 8,5 m. Ideal para mineração em larga escala e movimentação de terra.',
     it: 'Escavatore ultra-grande SANY SY650H per importanti operazioni di estrazione mineraria. Motore Cummins potente, sistema di controllo avanzato e stabilità eccellente. Motore: Cummins QSM11 (340 kW / 460 HP). Peso operativo: 65 tonnellate. Capacità della benna: 3,0 m³. Profondità massima di scavo: 8,5 m. Ideale per estrazione mineraria su larga scala e movimentazione di terra.',
-    ja: 'SANY SY650H 超大型ショベル 大規模採掘作業用. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSM11 (340 kW / 460 HP). 稼働重量: 65 ton. バケット容量: 3.0 m³. 最大掘削深度: 8.5 m. 理想的な用途 large-scale mining and earthmoving.',
-    de: 'SANY SY650H Ultra-großer Bagger für große Bergbauarbeiten. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSM11 (340 kW / 460 HP). Betriebsgewicht: 65 ton. Schaufelkapazität: 3.0 m³. Maximale Grabtiefe: 8.5 m. Ideal für large-scale mining and earthmoving.'
+    ja: 'SANY SY650H 超大型ショベル 大規模採掘作業用. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSM11 (340 kW / 460 HP). 稼働重量: 65 トン. バケット容量: 3.0 m³. 最大掘削深度: 8.5 m. 理想的な用途 大規模 鉱業 and 土工.',
+    de: 'SANY SY650H Ultra-großer Bagger für große Bergbauarbeiten. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSM11 (340 kW / 460 PS). Betriebsgewicht: 65 t. Schaufelkapazität: 3.0 m³. Maximale Grabtiefe: 8.5 m. Ideal für großflächige Bergbau and Erdarbeiten.'
   },
   'SY956H': {
     zh: 'SANY SY956H 巨型液压挖掘机，适用于大型采矿和石料开采。具有强大康明斯发动机、先进液压系统、卓越效率等特点。发动机：康明斯 QSK60（500 kW / 680 HP）。工作重量：95 吨。斗容：4.5 m³。最大挖掘深度：9.5 m。适用于大规模采矿和采石。',
@@ -856,8 +856,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Excavatrice méga SANY SY956H pour les grandes opérations d\'exploitation minière et de carrière. Moteur Cummins puissant, système hydraulique avancé et efficacité exceptionnelle. Moteur: Cummins QSK60 (500 kW / 680 ch). Poids de fonctionnement: 95 tonnes. Capacité du godet: 4,5 m³. Profondeur maximale de fouille: 9,5 m. Parfaite pour l\'exploitation minière et la carrière à grande échelle.',
     pt: 'Escavadeira mega SANY SY956H para grandes operações de mineração e pedreiras. Motor Cummins potente, sistema hidráulico avançado e eficiência excepcional. Motor: Cummins QSK60 (500 kW / 680 HP). Peso de operação: 95 toneladas. Capacidade da caçamba: 4,5 m³. Profundidade máxima de escavação: 9,5 m. Perfeita para mineração e pedreiras em larga escala.',
     it: 'Escavatore mega SANY SY956H per importanti operazioni di estrazione mineraria e cava. Motore Cummins potente, sistema idraulico avanzato e efficienza eccezionale. Motore: Cummins QSK60 (500 kW / 680 HP). Peso operativo: 95 tonnellate. Capacità della benna: 4,5 m³. Profondità massima di scavo: 9,5 m. Perfetto per estrazione mineraria e cava su larga scala.',
-    ja: 'SANY SY956H メガショベル for major mining and quarrying operations. 特徴 powerful Cummins エンジン, advanced hydraulic system, and exceptional efficiency. エンジン: Cummins QSK60 (500 kW / 680 HP). 稼働重量: 95 ton. バケット容量: 4.5 m³. 最大掘削深度: 9.5 m. 最適な用途 large-scale mining and quarrying.',
-    de: 'SANY SY956H Mega-Bagger for major mining and quarrying operations. Merkmale powerful Cummins Motor, advanced hydraulic system, and exceptional efficiency. Motor: Cummins QSK60 (500 kW / 680 HP). Betriebsgewicht: 95 ton. Schaufelkapazität: 4.5 m³. Maximale Grabtiefe: 9.5 m. Perfekt für large-scale mining and quarrying.'
+    ja: 'SANY SY956H メガショベル for major 鉱業 and 採石 operations. 特徴 powerful Cummins エンジン, advanced hydraulic system, and exceptional efficiency. エンジン: Cummins QSK60 (500 kW / 680 HP). 稼働重量: 95 トン. バケット容量: 4.5 m³. 最大掘削深度: 9.5 m. 最適な用途 大規模 鉱業 and 採石.',
+    de: 'SANY SY956H Mega-Bagger for major Bergbau and Steinbruchbetrieb operations. Merkmale powerful Cummins Motor, advanced hydraulic system, and exceptional efficiency. Motor: Cummins QSK60 (500 kW / 680 PS). Betriebsgewicht: 95 t. Schaufelkapazität: 4.5 m³. Maximale Grabtiefe: 9.5 m. Perfekt für großflächige Bergbau and Steinbruchbetrieb.'
   },
   'SY550H': {
     zh: 'SANY SY550H 超大型液压挖掘机，适用于大型采矿作业。具有强大康明斯发动机、先进液压系统、高效率等特点。发动机：康明斯 QSM11（280 kW / 380 HP）。工作重量：55 吨。斗容：2.4 m³。最大挖掘深度：8.0 m。适用于大规模采矿项目。',
@@ -868,8 +868,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Excavatrice ultra-grande SANY SY550H pour les grandes opérations d\'exploitation minière. Moteur Cummins puissant, système hydraulique avancé et efficacité excellente. Moteur: Cummins QSM11 (280 kW / 380 ch). Poids de fonctionnement: 55 tonnes. Capacité du godet: 2,4 m³. Profondeur maximale de fouille: 8,0 m. Parfaite pour les projets d\'exploitation minière à grande échelle.',
     pt: 'Escavadeira super grande SANY SY550H para grandes operações de mineração. Motor Cummins potente, sistema hidráulico avançado e excelente eficiência. Motor: Cummins QSM11 (280 kW / 380 HP). Peso de operação: 55 toneladas. Capacidade da caçamba: 2,4 m³. Profundidade máxima de escavação: 8,0 m. Perfeita para projetos de mineração em larga escala.',
     it: 'Escavatore ultra-grande SANY SY550H per importanti operazioni di estrazione mineraria. Motore Cummins potente, sistema idraulico avanzato e efficienza eccellente. Motore: Cummins QSM11 (280 kW / 380 HP). Peso operativo: 55 tonnellate. Capacità della benna: 2,4 m³. Profondità massima di scavo: 8,0 m. Perfetto per progetti di estrazione mineraria su larga scala.',
-    ja: 'SANY SY550H super-大型ショベル 大規模採掘作業用. 特徴 powerful Cummins エンジン, advanced hydraulic system, and excellent efficiency. エンジン: Cummins QSM11 (280 kW / 380 HP). 稼働重量: 55 ton. バケット容量: 2.4 m³. 最大掘削深度: 8.0 m. 最適な用途 large-scale mining projects.',
-    de: 'SANY SY550H super-Großer Bagger für große Bergbauarbeiten. Merkmale powerful Cummins Motor, advanced hydraulic system, and excellent efficiency. Motor: Cummins QSM11 (280 kW / 380 HP). Betriebsgewicht: 55 ton. Schaufelkapazität: 2.4 m³. Maximale Grabtiefe: 8.0 m. Perfekt für large-scale mining projects.'
+    ja: 'SANY SY550H super-大型ショベル 大規模採掘作業用. 特徴 powerful Cummins エンジン, advanced hydraulic system, and excellent efficiency. エンジン: Cummins QSM11 (280 kW / 380 HP). 稼働重量: 55 トン. バケット容量: 2.4 m³. 最大掘削深度: 8.0 m. 最適な用途 大規模 鉱業 projects.',
+    de: 'SANY SY550H super-Großer Bagger für große Bergbauarbeiten. Merkmale powerful Cummins Motor, advanced hydraulic system, and excellent efficiency. Motor: Cummins QSM11 (280 kW / 380 PS). Betriebsgewicht: 55 t. Schaufelkapazität: 2.4 m³. Maximale Grabtiefe: 8.0 m. Perfekt für großflächige Bergbau projects.'
   },
   'SY55C': {
     zh: 'SANY SY55C 中型轮式装载机，适用于轻型物料搬运。具有燃油高效发动机、平顺液压系统、卓越可见性等特点。发动机：玉柴 YC4D80-20（75 kW / 100 HP）。工作重量：5.5 吨。斗容：2.0 m³。最大装载高度：2.8 m。适用于小型建筑工地。',
@@ -880,8 +880,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Chargeuse sur pneus compacte SANY SY55C pour la manutention de matériaux légers. Moteur économe en carburant, système hydraulique fluide et excellente visibilité. Moteur: Yuchai YC4D80-20 (75 kW / 100 ch). Poids de fonctionnement: 5,5 tonnes. Capacité du godet: 2,0 m³. Hauteur de chargement maximale: 2,8 m. Parfait pour les petits chantiers de construction.',
     pt: 'Carregadeira de rodas compacta SANY SY55C para movimentação de materiais leves. Motor econômico em combustível, sistema hidráulico suave e excelente visibilidade. Motor: Yuchai YC4D80-20 (75 kW / 100 HP). Peso de operação: 5,5 toneladas. Capacidade da caçamba: 2,0 m³. Altura máxima de carregamento: 2,8 m. Perfeito para pequenos canteiros de obras.',
     it: 'Caricatrice su ruote compatta SANY SY55C per la movimentazione di materiali leggeri. Motore efficiente nei consumi, sistema idraulico fluido e eccellente visibilità. Motore: Yuchai YC4D80-20 (75 kW / 100 HP). Peso operativo: 5,5 tonnellate. Capacità della benna: 2,0 m³. Altezza massima di caricamento: 2,8 m. Perfetto per piccoli cantieri edili.',
-    ja: 'SANY SY55C compact ホイールローダー 軽作業用. 特徴 fuel-efficient エンジン, smooth hydraulic system, and excellent visibility. エンジン: Yuchai YC4D80-20 (75 kW / 100 HP). 稼働重量: 5.5 ton. バケット容量: 2.0 m³. Max loading height: 2.8 m. 最適な用途 small construction sites.',
-    de: 'SANY SY55C compact Radlader für leichte Materialhandhabung. Merkmale fuel-efficient Motor, smooth hydraulic system, and excellent visibility. Motor: Yuchai YC4D80-20 (75 kW / 100 HP). Betriebsgewicht: 5.5 ton. Schaufelkapazität: 2.0 m³. Max loading height: 2.8 m. Perfekt für small construction sites.'
+    ja: 'SANY SY55C compact ホイールローダー 軽作業用. 特徴 fuel-efficient エンジン, smooth hydraulic system, and excellent visibility. エンジン: Yuchai YC4D80-20 (75 kW / 100 HP). 稼働重量: 5.5 トン. バケット容量: 2.0 m³. Max 積込み height: 2.8 m. 最適な用途 small 建設 sites.',
+    de: 'SANY SY55C compact Radlader für leichte Materialhandhabung. Merkmale fuel-efficient Motor, smooth hydraulic system, and excellent visibility. Motor: Yuchai YC4D80-20 (75 kW / 100 PS). Betriebsgewicht: 5.5 t. Schaufelkapazität: 2.0 m³. Max Laden height: 2.8 m. Perfekt für small Bau sites.'
   },
   'SY60C': {
     zh: 'SANY SY60C 中型轮式装载机，适用于一般物料搬运。具有强大发动机、平顺液压系统、卓越可见性等特点。发动机：康明斯 QSB4.5（110 kW / 150 HP）。工作重量：6 吨。斗容：2.5 m³。最大装载高度：3.0 m。适用于建筑和采矿。',
@@ -892,8 +892,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Chargeuse sur pneus de taille moyenne SANY SY60C pour la manutention générale de matériaux. Moteur puissant, système hydraulique fluide et excellente visibilité. Moteur: Cummins QSB4.5 (110 kW / 150 ch). Poids de fonctionnement: 6 tonnes. Capacité du godet: 2,5 m³. Hauteur de chargement maximale: 3,0 m. Excellent pour les opérations de construction et d\'exploitation minière.',
     pt: 'Carregadeira de rodas de tamanho médio SANY SY60C para movimentação geral de materiais. Motor potente, sistema hidráulico suave e excelente visibilidade. Motor: Cummins QSB4.5 (110 kW / 150 HP). Peso de operação: 6 toneladas. Capacidade da caçamba: 2,5 m³. Altura máxima de carregamento: 3,0 m. Excelente para operações de construção e mineração.',
     it: 'Caricatrice su ruote di taglia media SANY SY60C per la movimentazione generale di materiali. Motore potente, sistema idraulico fluido e eccellente visibilità. Motore: Cummins QSB4.5 (110 kW / 150 HP). Peso operativo: 6 tonnellate. Capacità della benna: 2,5 m³. Altezza massima di caricamento: 3,0 m. Eccellente per operazioni di costruzione e estrazione mineraria.',
-    ja: 'SANY SY60C mid-size ホイールローダー for general material handling. 特徴 powerful エンジン, smooth hydraulic system, and excellent visibility. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 6 ton. バケット容量: 2.5 m³. Max loading height: 3.0 m. Excellent 建設と鉱業用 operations.',
-    de: 'SANY SY60C mid-size Radlader for general material handling. Merkmale powerful Motor, smooth hydraulic system, and excellent visibility. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 6 ton. Schaufelkapazität: 2.5 m³. Max loading height: 3.0 m. Excellent für Bau- und Bergbauarbeiten operations.'
+    ja: 'SANY SY60C mid-size ホイールローダー for general 材料取扱い. 特徴 powerful エンジン, smooth hydraulic system, and excellent visibility. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 6 トン. バケット容量: 2.5 m³. Max 積込み height: 3.0 m. Excellent 建設と鉱業用 operations.',
+    de: 'SANY SY60C mid-size Radlader for general Materialhandhabung. Merkmale powerful Motor, smooth hydraulic system, and excellent visibility. Motor: Cummins QSB4.5 (110 kW / 150 PS). Betriebsgewicht: 6 t. Schaufelkapazität: 2.5 m³. Max Laden height: 3.0 m. Excellent für Bau- und Bergbauarbeiten operations.'
   },
   'SY75C': {
     zh: 'SANY SY75C 大型轮式装载机，适用于重型物料搬运。具有强大康明斯发动机、先进控制系统、卓越稳定性等特点。发动机：康明斯 QSB6.7（155 kW / 210 HP）。工作重量：7.5 吨。斗容：3.0 m³。最大装载高度：3.2 m。适用于大规模建筑和采矿。',
@@ -904,8 +904,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Grande chargeuse sur pneus SANY SY75C pour la manutention de matériaux lourds. Moteur Cummins puissant, système de contrôle avancé et stabilité excellente. Moteur: Cummins QSB6.7 (155 kW / 210 ch). Poids de fonctionnement: 7,5 tonnes. Capacité du godet: 3,0 m³. Hauteur de chargement maximale: 3,2 m. Idéale pour la construction et l\'exploitation minière à grande échelle.',
     pt: 'Grande carregadeira de rodas SANY SY75C para movimentação de materiais pesados. Motor Cummins potente, sistema de controle avançado e estabilidade excelente. Motor: Cummins QSB6.7 (155 kW / 210 HP). Peso de operação: 7,5 toneladas. Capacidade da caçamba: 3,0 m³. Altura máxima de carregamento: 3,2 m. Ideal para construção e mineração em larga escala.',
     it: 'Grande caricatrice su ruote SANY SY75C per la movimentazione di materiali pesanti. Motore Cummins potente, sistema di controllo avanzato e stabilità eccellente. Motore: Cummins QSB6.7 (155 kW / 210 HP). Peso operativo: 7,5 tonnellate. Capacità della benna: 3,0 m³. Altezza massima di caricamento: 3,2 m. Ideale per costruzione ed estrazione mineraria su larga scala.',
-    ja: 'SANY SY75C large ホイールローダー 重作業用. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSB6.7 (155 kW / 210 HP). 稼働重量: 7.5 ton. バケット容量: 3.0 m³. Max loading height: 3.2 m. 理想的な用途 large-scale construction and mining.',
-    de: 'SANY SY75C large Radlader für schwere Materialhandhabung. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSB6.7 (155 kW / 210 HP). Betriebsgewicht: 7.5 ton. Schaufelkapazität: 3.0 m³. Max loading height: 3.2 m. Ideal für large-scale construction and mining.'
+    ja: 'SANY SY75C large ホイールローダー 重作業用. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSB6.7 (155 kW / 210 HP). 稼働重量: 7.5 トン. バケット容量: 3.0 m³. Max 積込み height: 3.2 m. 理想的な用途 大規模 建設 and 鉱業.',
+    de: 'SANY SY75C large Radlader für schwere Materialhandhabung. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSB6.7 (155 kW / 210 PS). Betriebsgewicht: 7.5 t. Schaufelkapazität: 3.0 m³. Max Laden height: 3.2 m. Ideal für großflächige Bau and Bergbau.'
   },
   'XC968': {
     zh: 'SANY XC968 超大型轮式装载机，适用于大型采矿。具有强大康明斯发动机、先进液压系统、卓越效率等特点。发动机：康明斯 QSK60（500 kW / 680 HP）。工作重量：96 吨。斗容：6.0 m³。最大装载高度：3.8 m。适用于大规模采矿和石料开采。',
@@ -916,8 +916,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Chargeuse sur pneus ultra-grande SANY XC968 pour les grandes opérations d\'exploitation minière. Moteur Cummins puissant, système hydraulique avancé et efficacité exceptionnelle. Moteur: Cummins QSK60 (500 kW / 680 ch). Poids de fonctionnement: 96 tonnes. Capacité du godet: 6,0 m³. Hauteur de chargement maximale: 3,8 m. Parfait pour l\'exploitation minière et la carrière à grande échelle.',
     pt: 'Carregadeira de rodas ultra grande SANY XC968 para grandes operações de mineração. Motor Cummins potente, sistema hidráulico avançado e eficiência excepcional. Motor: Cummins QSK60 (500 kW / 680 HP). Peso de operação: 96 toneladas. Capacidade da caçamba: 6,0 m³. Altura máxima de carregamento: 3,8 m. Perfeito para mineração e pedreiras em larga escala.',
     it: 'Caricatrice su ruote ultra-grande SANY XC968 per importanti operazioni di estrazione mineraria. Motore Cummins potente, sistema idraulico avanzato e efficienza eccezionale. Motore: Cummins QSK60 (500 kW / 680 HP). Peso operativo: 96 tonnellate. Capacità della benna: 6,0 m³. Altezza massima di caricamento: 3,8 m. Perfetto per estrazione mineraria e cava su larga scala.',
-    ja: 'SANY XC968 ultra-large ホイールローダー 大規模採掘作業用. 特徴 powerful Cummins エンジン, advanced hydraulic system, and exceptional efficiency. エンジン: Cummins QSK60 (500 kW / 680 HP). 稼働重量: 96 ton. バケット容量: 6.0 m³. Max loading height: 3.8 m. 最適な用途 large-scale mining and quarrying.',
-    de: 'SANY XC968 ultra-large Radlader für große Bergbauarbeiten. Merkmale powerful Cummins Motor, advanced hydraulic system, and exceptional efficiency. Motor: Cummins QSK60 (500 kW / 680 HP). Betriebsgewicht: 96 ton. Schaufelkapazität: 6.0 m³. Max loading height: 3.8 m. Perfekt für large-scale mining and quarrying.'
+    ja: 'SANY XC968 ultra-large ホイールローダー 大規模採掘作業用. 特徴 powerful Cummins エンジン, advanced hydraulic system, and exceptional efficiency. エンジン: Cummins QSK60 (500 kW / 680 HP). 稼働重量: 96 トン. バケット容量: 6.0 m³. Max 積込み height: 3.8 m. 最適な用途 大規模 鉱業 and 採石.',
+    de: 'SANY XC968 ultra-large Radlader für große Bergbauarbeiten. Merkmale powerful Cummins Motor, advanced hydraulic system, and exceptional efficiency. Motor: Cummins QSK60 (500 kW / 680 PS). Betriebsgewicht: 96 t. Schaufelkapazität: 6.0 m³. Max Laden height: 3.8 m. Perfekt für großflächige Bergbau and Steinbruchbetrieb.'
   },
   'SY16C': {
     zh: 'SANY SY16C 反铲装载机，适用于多功能建筑和挖掘工作。具有前后装载和挖掘能力、舒适驾驶室、可靠性能等特点。发动机：玉柴 YC4D80-20（75 kW / 102 HP）。工作重量：8 吨。前斗：2.0 m³。后斗：0.25 m³。适用于公用事业和小型建筑。',
@@ -928,8 +928,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Chargeuse-pelleteuse SANY SY16C pour les travaux de construction et d\'excavation polyvalents. Capacité combinée de chargement et de creusement, cabine confortable et performance fiable. Moteur: Yuchai YC4D80-20 (75 kW / 102 ch). Poids de fonctionnement: 8 tonnes. Godet frontal: 2,0 m³. Godet arrière: 0,25 m³. Parfait pour les travaux de services publics et la petite construction.',
     pt: 'Retroescavadeira SANY SY16C para trabalho versátil de construção e escavação. Capacidade combinada de carregamento e escavação, cabine confortável e desempenho confiável. Motor: Yuchai YC4D80-20 (75 kW / 102 HP). Peso de operação: 8 toneladas. Caçamba frontal: 2,0 m³. Caçamba traseira: 0,25 m³. Perfeito para trabalho de utilidades e pequena construção.',
     it: 'Escavatore-caricatore SANY SY16C per lavori versatili di costruzione e scavo. Capacità combinata di caricamento e scavo, cabina confortevole e prestazioni affidabili. Motore: Yuchai YC4D80-20 (75 kW / 102 HP). Peso operativo: 8 tonnellate. Benna anteriore: 2,0 m³. Benna posteriore: 0,25 m³. Perfetto per lavori di utilità e piccola costruzione.',
-    ja: 'SANY SY16C backhoe loader for versatile construction and excavation work. 特徴 combined loading and digging capability, comfortable cabin, and reliable performance. エンジン: Yuchai YC4D80-20 (75 kW / 102 HP). 稼働重量: 8 ton. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect ユーティリティ作業と小規模建設用.',
-    de: 'SANY SY16C backhoe loader for versatile construction and excavation work. Merkmale combined loading and digging capability, comfortable cabin, and reliable performance. Motor: Yuchai YC4D80-20 (75 kW / 102 HP). Betriebsgewicht: 8 ton. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect für Versorgungsarbeiten und kleine Baustellen.'
+    ja: 'SANY SY16C backhoe loader for versatile 建設 and excavation work. 特徴 combined 積込み and digging capability, comfortable cabin, and reliable performance. エンジン: Yuchai YC4D80-20 (75 kW / 102 HP). 稼働重量: 8 トン. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect ユーティリティ作業と小規模建設用.',
+    de: 'SANY SY16C backhoe loader for versatile Bau and excavation work. Merkmale combined Laden and digging capability, comfortable cabin, and reliable performance. Motor: Yuchai YC4D80-20 (75 kW / 102 PS). Betriebsgewicht: 8 t. Front bucket: 2.0 m³. Rear bucket: 0.25 m³. Perfect für Versorgungsarbeiten und kleine Baustellen.'
   },
   'SY18C': {
     zh: 'SANY SY18C 反铲装载机，适用于一般建筑和挖掘。具有前后装载和挖掘能力、先进液压系统、卓越性能等特点。发动机：康明斯 QSB4.5（110 kW / 150 HP）。工作重量：9 吨。前斗：2.5 m³。后斗：0.3 m³。适用于建筑和公用事业工作。',
@@ -940,8 +940,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Chargeuse-pelleteuse SANY SY18C pour la construction et l\'excavation générale. Capacité combinée de chargement et de creusement, système hydraulique avancé et excellente performance. Moteur: Cummins QSB4.5 (110 kW / 150 ch). Poids de fonctionnement: 9 tonnes. Godet frontal: 2,5 m³. Godet arrière: 0,3 m³. Excellent pour la construction et les travaux de services publics.',
     pt: 'Retroescavadeira SANY SY18C para construção e escavação geral. Capacidade combinada de carregamento e escavação, sistema hidráulico avançado e excelente desempenho. Motor: Cummins QSB4.5 (110 kW / 150 HP). Peso de operação: 9 toneladas. Caçamba frontal: 2,5 m³. Caçamba traseira: 0,3 m³. Excelente para construção e trabalho de utilidades.',
     it: 'Escavatore-caricatore SANY SY18C per costruzione e scavo generale. Capacità combinata di caricamento e scavo, sistema idraulico avanzato e eccellente prestazione. Motore: Cummins QSB4.5 (110 kW / 150 HP). Peso operativo: 9 tonnellate. Benna anteriore: 2,5 m³. Benna posteriore: 0,3 m³. Eccellente per costruzione e lavori di utilità.',
-    ja: 'SANY SY18C backhoe loader 一般建設と掘削用. 特徴 combined loading and digging capability, advanced hydraulic system, and excellent performance. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 9 ton. Front bucket: 2.5 m³. Rear bucket: 0.3 m³. 優れた用途 construction and utility work.',
-    de: 'SANY SY18C backhoe loader für allgemeine Bauarbeiten und Aushubarbeiten. Merkmale combined loading and digging capability, advanced hydraulic system, and excellent performance. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 9 ton. Front bucket: 2.5 m³. Rear bucket: 0.3 m³. Hervorragend für construction and utility work.'
+    ja: 'SANY SY18C backhoe loader 一般建設と掘削用. 特徴 combined 積込み and digging capability, advanced hydraulic system, and excellent performance. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 9 トン. Front bucket: 2.5 m³. Rear bucket: 0.3 m³. 優れた用途 建設 and ユーティリティ作業.',
+    de: 'SANY SY18C backhoe loader für allgemeine Bauarbeiten und Aushubarbeiten. Merkmale combined Laden and digging capability, advanced hydraulic system, and excellent performance. Motor: Cummins QSB4.5 (110 kW / 150 PS). Betriebsgewicht: 9 t. Front bucket: 2.5 m³. Rear bucket: 0.3 m³. Hervorragend für Bau and Versorgungsarbeiten.'
   },
   'GD220J': {
     zh: 'SANY GD220J 平地机，适用于道路建筑和养护。具有精确刀片控制、强大康明斯发动机、卓越可见性等特点。发动机：康明斯 QSB6.7（155 kW / 210 HP）。工作重量：22 吨。刀片宽度：3.7 m。平整精度：±20 mm。适用于高速公路和机场建筑。',
@@ -952,8 +952,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Niveleuse SANY GD220J pour la construction et l\'entretien des routes. Contrôle précis de la lame, moteur Cummins puissant et excellente visibilité. Moteur: Cummins QSB6.7 (155 kW / 210 ch). Poids de fonctionnement: 22 tonnes. Largeur de lame: 3,7 m. Précision de nivellement: ±20 mm. Idéale pour la construction de routes et d\'aéroports.',
     pt: 'Motoniveladora SANY GD220J para construção e manutenção de estradas. Controle preciso de lâmina, motor Cummins potente e excelente visibilidade. Motor: Cummins QSB6.7 (155 kW / 210 HP). Peso de operação: 22 toneladas. Largura da lâmina: 3,7 m. Precisão de nivelamento: ±20 mm. Ideal para construção de rodovias e aeroportos.',
     it: 'Motonivelatrice SANY GD220J per la costruzione e la manutenzione stradale. Controllo preciso della lama, motore Cummins potente e eccellente visibilità. Motore: Cummins QSB6.7 (155 kW / 210 HP). Peso operativo: 22 tonnellate. Larghezza della lama: 3,7 m. Precisione di livellamento: ±20 mm. Ideale per la costruzione di autostrade e aeroporti.',
-    ja: 'SANY GD220J motor grader for road construction and maintenance. 特徴 precise blade control, powerful Cummins エンジン, and excellent visibility. エンジン: Cummins QSB6.7 (155 kW / 210 HP). 稼働重量: 22 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. 理想的な用途 highway and airport construction.',
-    de: 'SANY GD220J motor grader for road construction and maintenance. Merkmale precise blade control, powerful Cummins Motor, and excellent visibility. Motor: Cummins QSB6.7 (155 kW / 210 HP). Betriebsgewicht: 22 ton. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal für highway and airport construction.'
+    ja: 'SANY GD220J motor grader for road 建設 and maintenance. 特徴 precise blade control, powerful Cummins エンジン, and excellent visibility. エンジン: Cummins QSB6.7 (155 kW / 210 HP). 稼働重量: 22 トン. Blade width: 3.7 m. Grading accuracy: ±20 mm. 理想的な用途 highway and airport 建設.',
+    de: 'SANY GD220J motor grader for road Bau and maintenance. Merkmale precise blade control, powerful Cummins Motor, and excellent visibility. Motor: Cummins QSB6.7 (155 kW / 210 PS). Betriebsgewicht: 22 t. Blade width: 3.7 m. Grading accuracy: ±20 mm. Ideal für highway and airport Bau.'
   },
   'XDE120': {
     zh: 'SANY XDE120 紧凑型平地机，适用于道路养护和轻型建筑。具有精确刀片控制、燃油高效发动机、卓越机动性等特点。发动机：康明斯 QSB4.5（110 kW / 150 HP）。工作重量：12 吨。刀片宽度：3.2 m。平整精度：±15 mm。适用于道路养护和小型项目。',
@@ -964,8 +964,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Niveleuse compacte SANY XDE120 pour l\'entretien des routes et la construction légère. Contrôle précis de la lame, moteur économe en carburant et excellente maniabilité. Moteur: Cummins QSB4.5 (110 kW / 150 ch). Poids de fonctionnement: 12 tonnes. Largeur de lame: 3,2 m. Précision de nivellement: ±15 mm. Parfait pour l\'entretien des routes et les petits projets.',
     pt: 'Motoniveladora compacta SANY XDE120 para manutenção de estradas e construção leve. Controle preciso de lâmina, motor econômico em combustível e excelente manobrabilidade. Motor: Cummins QSB4.5 (110 kW / 150 HP). Peso de operação: 12 toneladas. Largura da lâmina: 3,2 m. Precisão de nivelamento: ±15 mm. Perfeito para manutenção de estradas e pequenos projetos.',
     it: 'Motonivelatrice compatta SANY XDE120 per la manutenzione stradale e la costruzione leggera. Controllo preciso della lama, motore economico e eccellente manovrabilità. Motore: Cummins QSB4.5 (110 kW / 150 HP). Peso operativo: 12 tonnellate. Larghezza della lama: 3,2 m. Precisione di livellamento: ±15 mm. Perfetto per la manutenzione stradale e i piccoli progetti.',
-    ja: 'SANY XDE120 compact motor grader for road maintenance and light construction. 特徴 precise blade control, fuel-efficient エンジン, and excellent maneuverability. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 12 ton. Blade width: 3.2 m. Grading accuracy: ±15 mm. 最適な用途 road maintenance and small projects.',
-    de: 'SANY XDE120 compact motor grader for road maintenance and light construction. Merkmale precise blade control, fuel-efficient Motor, and excellent maneuverability. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 12 ton. Blade width: 3.2 m. Grading accuracy: ±15 mm. Perfekt für road maintenance and small projects.'
+    ja: 'SANY XDE120 compact motor grader for road maintenance and light 建設. 特徴 precise blade control, fuel-efficient エンジン, and excellent maneuverability. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 12 トン. Blade width: 3.2 m. Grading accuracy: ±15 mm. 最適な用途 road maintenance and small projects.',
+    de: 'SANY XDE120 compact motor grader for road maintenance and light Bau. Merkmale precise blade control, fuel-efficient Motor, and excellent maneuverability. Motor: Cummins QSB4.5 (110 kW / 150 PS). Betriebsgewicht: 12 t. Blade width: 3.2 m. Grading accuracy: ±15 mm. Perfekt für road maintenance and small projects.'
   },
   'DL560': {
     zh: 'SANY DL560 大型推土机，适用于重型土方和建筑。具有强大康明斯发动机、先进液压系统、卓越稳定性等特点。发动机：康明斯 QSM11（280 kW / 380 HP）。工作重量：56 吨。刀片宽度：4.0 m。刀片容量：6.5 m³。适用于大规模建筑和采矿项目。',
@@ -976,8 +976,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Grand bulldozer SANY DL560 pour les travaux de terrassement lourds et la construction. Moteur Cummins puissant, système hydraulique avancé et stabilité excellente. Moteur: Cummins QSM11 (280 kW / 380 ch). Poids de fonctionnement: 56 tonnes. Largeur de lame: 4,0 m. Capacité de lame: 6,5 m³. Idéal pour les projets de construction et d\'exploitation minière à grande échelle.',
     pt: 'Grande trator de esteiras SANY DL560 para movimentação de terra pesada e construção. Motor Cummins potente, sistema hidráulico avançado e estabilidade excelente. Motor: Cummins QSM11 (280 kW / 380 HP). Peso de operação: 56 toneladas. Largura da lâmina: 4,0 m. Capacidade da lâmina: 6,5 m³. Ideal para projetos de construção e mineração em larga escala.',
     it: 'Grande bulldozer SANY DL560 per lavori di movimento terra pesanti e costruzione. Motore Cummins potente, sistema idraulico avanzato e stabilità eccellente. Motore: Cummins QSM11 (280 kW / 380 HP). Peso operativo: 56 tonnellate. Larghezza della lama: 4,0 m. Capacità della lama: 6,5 m³. Ideale per progetti di costruzione e estrazione mineraria su larga scala.',
-    ja: 'SANY DL560 large ブルドーザー for heavy-duty earthmoving and construction. 特徴 powerful Cummins エンジン, advanced hydraulic system, and excellent stability. エンジン: Cummins QSM11 (280 kW / 380 HP). 稼働重量: 56 ton. Blade width: 4.0 m. Blade capacity: 6.5 m³. 理想的な用途 large-scale construction and mining projects.',
-    de: 'SANY DL560 large Planierraupe for heavy-duty earthmoving and construction. Merkmale powerful Cummins Motor, advanced hydraulic system, and excellent stability. Motor: Cummins QSM11 (280 kW / 380 HP). Betriebsgewicht: 56 ton. Blade width: 4.0 m. Blade capacity: 6.5 m³. Ideal für large-scale construction and mining projects.'
+    ja: 'SANY DL560 large ブルドーザー for 重作業 土工 and 建設. 特徴 powerful Cummins エンジン, advanced hydraulic system, and excellent stability. エンジン: Cummins QSM11 (280 kW / 380 HP). 稼働重量: 56 トン. Blade width: 4.0 m. Blade capacity: 6.5 m³. 理想的な用途 大規模 建設 and 鉱業 projects.',
+    de: 'SANY DL560 large Planierraupe for Schwerlast Erdarbeiten and Bau. Merkmale powerful Cummins Motor, advanced hydraulic system, and excellent stability. Motor: Cummins QSM11 (280 kW / 380 PS). Betriebsgewicht: 56 t. Blade width: 4.0 m. Blade capacity: 6.5 m³. Ideal für großflächige Bau and Bergbau projects.'
   },
   'SSR160AC-8': {
     zh: 'SANY SSR160AC-8 振动压路机，适用于沥青和土壤压实。具有强大康明斯发动机、先进振动系统、卓越压实效率等特点。发动机：康明斯 QSB4.5（110 kW / 150 HP）。工作重量：16 吨。压路机宽度：2.1 m。压实深度：0.3 m。适用于道路建筑和养护。',
@@ -988,8 +988,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Rouleau vibrant SANY SSR160AC-8 pour le compactage de l\'asphalte et du sol. Moteur Cummins puissant, système de vibration avancé et excellente efficacité de compactage. Moteur: Cummins QSB4.5 (110 kW / 150 ch). Poids de fonctionnement: 16 tonnes. Largeur du rouleau: 2,1 m. Profondeur de compactage: 0,3 m. Parfait pour la construction et l\'entretien des routes.',
     pt: 'Rolo compactador vibratório SANY SSR160AC-8 para compactação de asfalto e solo. Motor Cummins potente, sistema de vibração avançado e excelente eficiência de compactação. Motor: Cummins QSB4.5 (110 kW / 150 HP). Peso de operação: 16 toneladas. Largura do rolo: 2,1 m. Profundidade de compactação: 0,3 m. Perfeito para construção e manutenção de estradas.',
     it: 'Rullo compattatore vibrante SANY SSR160AC-8 per la compattazione di asfalto e terreno. Motore Cummins potente, sistema di vibrazione avanzato e eccellente efficienza di compattazione. Motore: Cummins QSB4.5 (110 kW / 150 HP). Peso operativo: 16 tonnellate. Larghezza del rullo: 2,1 m. Profondità di compattazione: 0,3 m. Perfetto per la costruzione e la manutenzione stradale.',
-    ja: 'SANY SSR160AC-8 vibratory roller for asphalt and soil compaction. 特徴 powerful Cummins エンジン, advanced vibration system, and excellent compaction efficiency. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 16 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. 最適な用途 road construction and maintenance.',
-    de: 'SANY SSR160AC-8 vibratory roller for asphalt and soil compaction. Merkmale powerful Cummins Motor, advanced vibration system, and excellent compaction efficiency. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 16 ton. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfekt für road construction and maintenance.'
+    ja: 'SANY SSR160AC-8 vibratory roller for asphalt and soil compaction. 特徴 powerful Cummins エンジン, advanced vibration system, and excellent compaction efficiency. エンジン: Cummins QSB4.5 (110 kW / 150 HP). 稼働重量: 16 トン. Roller width: 2.1 m. Compaction depth: 0.3 m. 最適な用途 road 建設 and maintenance.',
+    de: 'SANY SSR160AC-8 vibratory roller for asphalt and soil compaction. Merkmale powerful Cummins Motor, advanced vibration system, and excellent compaction efficiency. Motor: Cummins QSB4.5 (110 kW / 150 PS). Betriebsgewicht: 16 t. Roller width: 2.1 m. Compaction depth: 0.3 m. Perfekt für road Bau and maintenance.'
   },
   'SSR200C-8H': {
     zh: 'SANY SSR200C-8H 振动压路机，适用于重型沥青压实。具有强大康明斯发动机、先进振动系统、卓越效率等特点。发动机：康明斯 QSB6.7（155 kW / 210 HP）。工作重量：20 吨。压路机宽度：2.1 m。压实深度：0.4 m。适用于高速公路和机场建筑。',
@@ -1000,8 +1000,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Rouleau vibrant SANY SSR200C-8H pour le compactage lourd de l\'asphalte. Moteur Cummins puissant, système de vibration avancé et excellente efficacité. Moteur: Cummins QSB6.7 (155 kW / 210 ch). Poids de fonctionnement: 20 tonnes. Largeur du rouleau: 2,1 m. Profondeur de compactage: 0,4 m. Idéal pour la construction de routes et d\'aéroports.',
     pt: 'Rolo compactador vibratório SANY SSR200C-8H para compactação pesada de asfalto. Motor Cummins potente, sistema de vibração avançado e excelente eficiência. Motor: Cummins QSB6.7 (155 kW / 210 HP). Peso de operação: 20 toneladas. Largura do rolo: 2,1 m. Profundidade de compactação: 0,4 m. Ideal para construção de rodovias e aeroportos.',
     it: 'Rullo compattatore vibrante SANY SSR200C-8H per la compattazione pesante di asfalto. Motore Cummins potente, sistema di vibrazione avanzato e eccellente efficienza. Motore: Cummins QSB6.7 (155 kW / 210 HP). Peso operativo: 20 tonnellate. Larghezza del rullo: 2,1 m. Profondità di compattazione: 0,4 m. Ideale per la costruzione di autostrade e aeroporti.',
-    ja: 'SANY SSR200C-8H vibratory roller for heavy-duty asphalt compaction. 特徴 powerful Cummins エンジン, advanced vibration system, and excellent efficiency. エンジン: Cummins QSB6.7 (155 kW / 210 HP). 稼働重量: 20 ton. Roller width: 2.1 m. Compaction depth: 0.4 m. 理想的な用途 highway and airport construction.',
-    de: 'SANY SSR200C-8H vibratory roller for heavy-duty asphalt compaction. Merkmale powerful Cummins Motor, advanced vibration system, and excellent efficiency. Motor: Cummins QSB6.7 (155 kW / 210 HP). Betriebsgewicht: 20 ton. Roller width: 2.1 m. Compaction depth: 0.4 m. Ideal für highway and airport construction.'
+    ja: 'SANY SSR200C-8H vibratory roller for 重作業 asphalt compaction. 特徴 powerful Cummins エンジン, advanced vibration system, and excellent efficiency. エンジン: Cummins QSB6.7 (155 kW / 210 HP). 稼働重量: 20 トン. Roller width: 2.1 m. Compaction depth: 0.4 m. 理想的な用途 highway and airport 建設.',
+    de: 'SANY SSR200C-8H vibratory roller for Schwerlast asphalt compaction. Merkmale powerful Cummins Motor, advanced vibration system, and excellent efficiency. Motor: Cummins QSB6.7 (155 kW / 210 PS). Betriebsgewicht: 20 t. Roller width: 2.1 m. Compaction depth: 0.4 m. Ideal für highway and airport Bau.'
   },
   'STC250T5': {
     zh: 'SANY STC250T5 大型汽车吊，适用于重型起重和建筑。具有强大康明斯发动机、先进控制系统、卓越稳定性等特点。发动机：康明斯 QSK60（500 kW / 680 HP）。起重能力：250 吨。最大臂长：60 m。适用于大型建筑和工业项目。',
@@ -1012,8 +1012,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Grande grue mobile SANY STC250T5 pour le levage lourd et la construction. Moteur Cummins puissant, système de contrôle avancé et stabilité excellente. Moteur: Cummins QSK60 (500 kW / 680 ch). Capacité de levage: 250 tonnes. Longueur maximale de la flèche: 60 m. Parfait pour les grands projets de construction et d\'industrie.',
     pt: 'Grande guindaste móvel SANY STC250T5 para levantamento pesado e construção. Motor Cummins potente, sistema de controle avançado e estabilidade excelente. Motor: Cummins QSK60 (500 kW / 680 HP). Capacidade de levantamento: 250 toneladas. Comprimento máximo da lança: 60 m. Perfeito para grandes projetos de construção e industriais.',
     it: 'Grande gru mobile SANY STC250T5 per il sollevamento pesante e la costruzione. Motore Cummins potente, sistema di controllo avanzato e stabilità eccellente. Motore: Cummins QSK60 (500 kW / 680 HP). Capacità di sollevamento: 250 tonnellate. Lunghezza massima della lancia: 60 m. Perfetto per importanti progetti di costruzione e industriali.',
-    ja: 'SANY STC250T5 large truck crane for heavy lifting and construction. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSK60 (500 kW / 680 HP). Lifting capacity: 250 ton. Max boom length: 60 m. 最適な用途 major construction and industrial projects.',
-    de: 'SANY STC250T5 large truck crane for heavy lifting and construction. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSK60 (500 kW / 680 HP). Lifting capacity: 250 ton. Max boom length: 60 m. Perfekt für major construction and industrial projects.'
+    ja: 'SANY STC250T5 large truck crane for heavy lifting and 建設. 特徴 powerful Cummins エンジン, advanced control system, and excellent stability. エンジン: Cummins QSK60 (500 kW / 680 HP). Lifting capacity: 250 トン. Max boom length: 60 m. 最適な用途 major 建設 and industrial projects.',
+    de: 'SANY STC250T5 large truck crane for heavy lifting and Bau. Merkmale powerful Cummins Motor, advanced control system, and excellent stability. Motor: Cummins QSK60 (500 kW / 680 PS). Lifting capacity: 250 t. Max boom length: 60 m. Perfekt für major Bau and industrial projects.'
   },
   'STC1200T7': {
     zh: 'SANY STC1200T7 超大型汽车吊，适用于超重起重。具有强大康明斯发动机、先进液压系统、卓越稳定性等特点。发动机：康明斯 QSK95（800 kW / 1088 HP）。起重能力：1200 吨。最大臂长：100 m。适用于大型基础设施和工业项目。',
@@ -1024,8 +1024,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Méga grue mobile SANY STC1200T7 pour les opérations de levage ultra-lourd. Moteur puissant, système hydraulique avancé et stabilité exceptionnelle. Moteur: Cummins QSK95 (800 kW / 1088 ch). Capacité de levage: 1200 tonnes. Longueur maximale de la flèche: 100 m. Idéal pour les grands projets d\'infrastructure et d\'industrie.',
     pt: 'Mega guindaste móvel SANY STC1200T7 para operações de levantamento ultra pesado. Motor potente, sistema hidráulico avançado e estabilidade excepcional. Motor: Cummins QSK95 (800 kW / 1088 HP). Capacidade de levantamento: 1200 toneladas. Comprimento máximo da lança: 100 m. Ideal para grandes projetos de infraestrutura e industriais.',
     it: 'Mega gru mobile SANY STC1200T7 per operazioni di sollevamento ultra-pesante. Motore potente, sistema idraulico avanzato e stabilità eccezionale. Motore: Cummins QSK95 (800 kW / 1088 HP). Capacità di sollevamento: 1200 tonnellate. Lunghezza massima della lancia: 100 m. Ideale per importanti progetti di infrastrutture e industriali.',
-    ja: 'SANY STC1200T7 mega truck crane for ultra-heavy lifting operations. 特徴 powerful エンジン, advanced hydraulic system, and exceptional stability. エンジン: Cummins QSK95 (800 kW / 1088 HP). Lifting capacity: 1200 ton. Max boom length: 100 m. 理想的な用途 major infrastructure and industrial projects.',
-    de: 'SANY STC1200T7 mega truck crane for ultra-heavy lifting operations. Merkmale powerful Motor, advanced hydraulic system, and exceptional stability. Motor: Cummins QSK95 (800 kW / 1088 HP). Lifting capacity: 1200 ton. Max boom length: 100 m. Ideal für major infrastructure and industrial projects.'
+    ja: 'SANY STC1200T7 mega truck crane for ultra-heavy lifting operations. 特徴 powerful エンジン, advanced hydraulic system, and exceptional stability. エンジン: Cummins QSK95 (800 kW / 1088 HP). Lifting capacity: 1200 トン. Max boom length: 100 m. 理想的な用途 major infrastructure and industrial projects.',
+    de: 'SANY STC1200T7 mega truck crane for ultra-heavy lifting operations. Merkmale powerful Motor, advanced hydraulic system, and exceptional stability. Motor: Cummins QSK95 (800 kW / 1088 PS). Lifting capacity: 1200 t. Max boom length: 100 m. Ideal für major infrastructure and industrial projects.'
   },
   'SAC600E': {
     zh: 'SANY SAC600E 车载混凝土泵，适用于大型建筑。具有强大康明斯发动机、先进液压系统、高效率等特点。发动机：康明斯 QSK60（500 kW / 680 HP）。泵送能力：600 m³/h。最大臂长：60 m。适用于大型建筑项目。',
@@ -1036,8 +1036,8 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Pompe à béton montée sur camion SANY SAC600E pour la construction à grande échelle. Moteur Cummins puissant, système hydraulique avancé et haute efficacité. Moteur: Cummins QSK60 (500 kW / 680 ch). Capacité de pompage: 600 m³/h. Longueur maximale de la flèche: 60 m. Parfait pour les grands projets de construction.',
     pt: 'Bomba de concreto montada em caminhão SANY SAC600E para construção em larga escala. Motor Cummins potente, sistema hidráulico avançado e alta eficiência. Motor: Cummins QSK60 (500 kW / 680 HP). Capacidade de bombeamento: 600 m³/h. Comprimento máximo da lança: 60 m. Perfeito para grandes projetos de construção.',
     it: 'Pompa per calcestruzzo montata su camion SANY SAC600E per costruzione su larga scala. Motore Cummins potente, sistema idraulico avanzato e alta efficienza. Motore: Cummins QSK60 (500 kW / 680 HP). Capacità di pompaggio: 600 m³/h. Lunghezza massima della lancia: 60 m. Perfetto per importanti progetti di costruzione.',
-    ja: 'SANY SAC600E truck-mounted concrete pump for large-scale construction. 特徴 powerful Cummins エンジン, advanced hydraulic system, and high efficiency. エンジン: Cummins QSK60 (500 kW / 680 HP). Pumping capacity: 600 m³/h. Max boom length: 60 m. 最適な用途 major construction projects.',
-    de: 'SANY SAC600E truck-mounted concrete pump for large-scale construction. Merkmale powerful Cummins Motor, advanced hydraulic system, and high efficiency. Motor: Cummins QSK60 (500 kW / 680 HP). Pumping capacity: 600 m³/h. Max boom length: 60 m. Perfekt für major construction projects.'
+    ja: 'SANY SAC600E truck-mounted concrete pump for 大規模 建設. 特徴 powerful Cummins エンジン, advanced hydraulic system, and high efficiency. エンジン: Cummins QSK60 (500 kW / 680 HP). Pumping capacity: 600 m³/h. Max boom length: 60 m. 最適な用途 major 建設 projects.',
+    de: 'SANY SAC600E truck-mounted concrete pump for großflächige Bau. Merkmale powerful Cummins Motor, advanced hydraulic system, and high efficiency. Motor: Cummins QSK60 (500 kW / 680 PS). Pumping capacity: 600 m³/h. Max boom length: 60 m. Perfekt für major Bau projects.'
   },
   'SCC1000TB': {
     zh: 'SANY SCC1000TB 超大型混凝土泵，适用于大型建筑。具有强大康明斯发动机、先进控制系统、卓越效率等特点。发动机：康明斯 QSK95（800 kW / 1088 HP）。泵送能力：1000 m³/h。最大臂长：80 m。适用于大型建筑项目。',
@@ -1048,7 +1048,7 @@ Object.assign(sanyMachineDescriptionTranslations, {
     fr: 'Pompe à béton ultra-grande SANY SCC1000TB pour les grandes opérations de construction. Moteur Cummins puissant, système de contrôle avancé et efficacité exceptionnelle. Moteur: Cummins QSK95 (800 kW / 1088 ch). Capacité de pompage: 1000 m³/h. Longueur maximale de la flèche: 80 m. Idéale pour les grands projets de construction.',
     pt: 'Bomba de concreto ultra grande SANY SCC1000TB para grandes operações de construção. Motor Cummins potente, sistema de controle avançado e eficiência excepcional. Motor: Cummins QSK95 (800 kW / 1088 HP). Capacidade de bombeamento: 1000 m³/h. Comprimento máximo da lança: 80 m. Ideal para grandes projetos de construção.',
     it: 'Pompa per calcestruzzo ultra-grande SANY SCC1000TB per importanti operazioni di costruzione. Motore Cummins potente, sistema di controllo avanzato e efficienza eccezionale. Motore: Cummins QSK95 (800 kW / 1088 HP). Capacità di pompaggio: 1000 m³/h. Lunghezza massima della lancia: 80 m. Ideale per importanti progetti di costruzione.',
-    ja: 'SANY SCC1000TB ultra-large concrete pump for major construction operations. 特徴 powerful Cummins エンジン, advanced control system, and exceptional efficiency. エンジン: Cummins QSK95 (800 kW / 1088 HP). Pumping capacity: 1000 m³/h. Max boom length: 80 m. 理想的な用途 large-scale construction projects.',
-    de: 'SANY SCC1000TB ultra-large concrete pump for major construction operations. Merkmale powerful Cummins Motor, advanced control system, and exceptional efficiency. Motor: Cummins QSK95 (800 kW / 1088 HP). Pumping capacity: 1000 m³/h. Max boom length: 80 m. Ideal für large-scale construction projects.'
+    ja: 'SANY SCC1000TB ultra-large concrete pump for major 建設 operations. 特徴 powerful Cummins エンジン, advanced control system, and exceptional efficiency. エンジン: Cummins QSK95 (800 kW / 1088 HP). Pumping capacity: 1000 m³/h. Max boom length: 80 m. 理想的な用途 大規模 建設 projects.',
+    de: 'SANY SCC1000TB ultra-large concrete pump for major Bau operations. Merkmale powerful Cummins Motor, advanced control system, and exceptional efficiency. Motor: Cummins QSK95 (800 kW / 1088 PS). Pumping capacity: 1000 m³/h. Max boom length: 80 m. Ideal für großflächige Bau projects.'
   }
 });
