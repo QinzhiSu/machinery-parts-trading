@@ -368,7 +368,7 @@ export function getTranslatedShantuiMachineDescription(modelName: string, langua
 }
 
 // Machine type and specs translations
-export const shantuiMachineタイプTranslations: Record<string, Record<string, string>> = {
+export const shantuiMachineTypeTranslations: Record<string, Record<string, string>> = {
   'Bulldozer SD16': { zh: '推土机 SD16', en: 'Bulldozer SD16', es: 'Excavadora SD16', ar: 'جرافة SD16', ru: 'Бульдозер SD16', fr: 'Bulldozer SD16', pt: 'Escavadeira SD16', it: 'Escavatore SD16',
     ja: 'ブルドーザー SD16',
     de: 'Planierraupe SD16'
@@ -427,8 +427,8 @@ export const shantuiMachineタイプTranslations: Record<string, Record<string, 
   }
 };
 
-export function getTranslatedShantuiMachineタイプ(modelName: string, language: string = 'en'): string {
-  const types = shantuiMachineタイプTranslations[modelName];
+export function getTranslatedShantuiMachineType(modelName: string, language: string = 'en'): string {
+  const types = shantuiMachineTypeTranslations[modelName];
   if (!types) return modelName;
   return types[language] || types['en'] || modelName;
 }
