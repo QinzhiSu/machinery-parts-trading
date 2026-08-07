@@ -119,7 +119,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Carregadeira de rodas grande XCMG XC968 para carregamento pesado e transporte. Características: hidráulica avançada com detecção de carga, cabine confortável e alta confiabilidade. Motor: Cummins QSX15-C600 (410 kW / 559 HP). Capacidade máxima de carga: 42 toneladas. Altura máxima de descarga: 3.8 m.',
     it: 'Caricatore gommato grande XCMG XC968 per carichi pesanti e trasporto. Caratteristiche: idraulica avanzata con compensazione di carico, cabina confortevole e alta affidabilità. Motore: Cummins QSX15-C600 (410 kW / 559 HP). Capacità massima di carico: 42 tonnellate. Altezza massima di scarico: 3.8 m.',
     ja: 'XCMG XC968 大型ホイールローダー 重作業積込みおよび運搬用。特徴 高度なロードセンシング油圧、快適なキャビン、および高い信頼性。 エンジン: Cummins QSX15-C600 (410 kW / 559 HP). 最大積載容量: 42 トン。最大ダンプ高さ: 3.8 m.',
-    de: 'XCMG XC968 large Radlader for Schwerlast Laden and transport. Merkmale advanced load-sensing hydraulics, comfortable cab, and high reliability. Motor: Cummins QSX15-C600 (410 kW / 559 PS). Max load capacity: 42 t. Max dump height: 3.8 m.'
+    de: 'XCMG XC968 großer Radlader für Schwerlast Laden und Transport. Merkmale: fortgeschrittene Lastausgleichshydraulik, komfortabler Führerstand und hohe Zuverlässigkeit. Motor: Cummins QSX15-C600 (410 kW / 559 PS). Maximale Tragfähigkeit: 42 t. Maximale Abwurfhöhe: 3,8 m.'
   },
   'XCMG XC968-EV electric wheel loader with zero emissions. Ideal for underground mines, tunnels, and enclosed spaces. Reduces operating costs significantly. Electric Motor System (410 kW equivalent). Max load capacity: 42 ton. Max dump height: 3.8 m.': {
     zh: 'XCMG XC968-EV 电动轮式装载机，零排放。适合地下矿山、隧道和封闭空间。显著降低运营成本。电动马达系统（410 kW 当量）。最大装载能力：42 吨。最大卸载高度：3.8 m。',
@@ -131,7 +131,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Carregadeira de rodas elétrica XCMG XC968-EV com zero emissões. Ideal para minas subterrâneas, túneis e espaços fechados. Reduz significativamente os custos operacionais. Sistema de motor elétrico (410 kW equivalente). Capacidade máxima de carga: 42 toneladas. Altura máxima de descarga: 3.8 m.',
     it: 'Caricatore gommato elettrico XCMG XC968-EV a zero emissioni. Ideale per miniere sotterranee, gallerie e spazi chiusi. Riduce significativamente i costi operativi. Sistema di motore elettrico (410 kW equivalente). Capacità massima di carico: 42 tonnellate. Altezza massima di scarico: 3.8 m.',
     ja: 'XCMG XC968-EV 電動ホイールローダー ゼロエミッション。理想的な用途 地下鉱山、トンネル、および密閉空間。運用コストを大幅に削減。 Electric モーター System (410 kW equivalent). 最大積載容量: 42 トン。最大ダンプ高さ: 3.8 m.',
-    de: 'XCMG XC968-EV electric Radlader with zero emissions. Ideal für underground mines, tunnels, and enclosed spaces. Reduces operating costs significantly. Electric Motor System (410 kW equivalent). Max load capacity: 42 t. Max dump height: 3.8 m.'
+    de: 'XCMG XC968-EV elektrischer Radlader mit Null-Emissionen. Ideal für Untertageminen, Tunnel und geschlossene Räume. Reduziert Betriebskosten erheblich. Elektrisches Motorsystem (410 kW Äquivalent). Maximale Tragfähigkeit: 42 t. Maximale Abwurfhöhe: 3,8 m.'
   },
   'XCMG GD220J motor grader for road construction and maintenance. Features precision blade control, comfortable operator cabin, and excellent grading accuracy. Engine: Weichai WD10.336E50 (155 kW / 211 HP). Max grading width: 3.5 m.': {
     zh: 'XCMG GD220J 平地机，用于道路建筑和维护。具有精确的铲刀控制、舒适的操作员驾驶室和优异的平整精度。发动机：潍柴 WD10.336E50（155 kW / 211 HP）。最大平整宽度：3.5 m。',
@@ -143,7 +143,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Motoniveladora XCMG GD220J para construção e manutenção de estradas. Características: controle de lâmina de precisão, cabine do operador confortável e excelente precisão de nivelamento. Motor: Weichai WD10.336E50 (155 kW / 211 HP). Largura máxima de nivelamento: 3.5 m.',
     it: 'Livellatrice XCMG GD220J per la costruzione e la manutenzione stradale. Caratteristiche: controllo della lama di precisione, cabina dell\'operatore confortevole e eccellente precisione di livellamento. Motore: Weichai WD10.336E50 (155 kW / 211 HP). Larghezza massima di livellamento: 3.5 m.',
     ja: 'XCMG GD220J モーターグレーダー 道路建設およびメンテナンス用。特徴 精密ブレード制御、快適なオペレーターキャビン、および優れたグレーディング精度。 エンジン: Weichai WD10.336E50 (155 kW / 211 HP). 最大グレーディング幅: 3.5 m.',
-    de: 'XCMG GD220J motor grader for road Bau and maintenance. Merkmale precision blade control, comfortable operator cabin, and excellent grading accuracy. Motor: Weichai WD10.336E50 (155 kW / 211 PS). 最大グレーディング幅: 3.5 m.'
+    de: 'XCMG GD220J Motorgrader für Straßenbau und Wartung. Merkmale: präzise Schaufelsteuerung, komfortabler Führerstand und ausgezeichnete Planiergenauigkeit. Motor: Weichai WD10.336E50 (155 kW / 211 PS). Maximale Planierbreite: 3,5 m.'
   },
   'XCMG DL560 large hydraulic bulldozer for heavy earthmoving and site preparation. Features powerful engine, advanced hydraulic system, and reinforced undercarriage. Engine: Cummins QSX15-C600 (410 kW / 559 HP). Blade capacity: 5.2 m³. Max blade pressure: 280 bar.': {
     zh: 'XCMG DL560 大型液压推土机，用于重型土方和场地准备。具有强大的发动机、先进的液压系统和加强的底盘。发动机：康明斯 QSX15-C600（410 kW / 559 HP）。铲刀容量：5.2 m³。最大铲刀压力：280 bar。',
@@ -155,7 +155,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Trator de esteira grande XCMG DL560 para movimentação de terra pesada e preparação do local. Características: motor poderoso, sistema hidráulico avançado e trem de rodagem reforçado. Motor: Cummins QSX15-C600 (410 kW / 559 HP). Capacidade da lâmina: 5.2 m³. Pressão máxima da lâmina: 280 bar.',
     it: 'Bulldozer idraulico grande XCMG DL560 per movimentazione terra pesante e preparazione del sito. Caratteristiche: motore potente, sistema idraulico avanzato e telaio inferiore rinforzato. Motore: Cummins QSX15-C600 (410 kW / 559 HP). Capacità della lama: 5.2 m³. Pressione massima della lama: 280 bar.',
     ja: 'XCMG DL560 大型油圧ブルドーザー 重土工およびサイト準備用。特徴 強力なエンジン、高度な油圧システム、および強化されたアンダーキャリッジ。 エンジン: Cummins QSX15-C600 (410 kW / 559 HP). ブレード容量: 5.2 m³。最大ブレード圧力: 280 bar.',
-    de: 'XCMG DL560 large hydraulic Planierraupe for heavy Erdarbeiten and Baustellenvorbereitung. Merkmale powerful Motor, advanced hydraulic system, and reinforced undercarriage. Motor: Cummins QSX15-C600 (410 kW / 559 PS). ブレード容量: 5.2 m³。最大ブレード圧力: 280 bar.'
+    de: 'XCMG DL560 großer Hydraulik-Bulldozer für schwere Erdarbeiten und Baustellenvorbereitung. Merkmale: kraftvoller Motor, fortschrittliches Hydrauliksystem und verstärktes Fahrwerk. Motor: Cummins QSX15-C600 (410 kW / 559 PS). Schaufelkapazität: 5,2 m³. Maximaler Schaufeldruck: 280 bar.'
   },
   'XCMG XCT45U mobile truck crane for lifting and material handling. Features advanced boom control, high stability, and excellent load capacity. Engine: Weichai WP12.430E50 (290 kW / 395 HP). Max lift capacity: 45 ton. Max boom length: 42 m. Max working height: 48 m.': {
     zh: 'XCMG XCT45U 移动式卡车起重机，用于起吊和物料搬运。具有先进的起重臂控制、高稳定性和优异的装载能力。发动机：潍柴 WP12.430E50（290 kW / 395 HP）。最大起吊能力：45 吨。最大起重臂长度：42 m。最大工作高度：48 m。',
@@ -179,7 +179,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Grande guindaste sobre esteiras XCMG XLC17000 para levantamento pesado em mineração e construção. Características: sistema hidráulico poderoso, excelente estabilidade e monitoramento avançado de carga. Motor: Cummins QSX15-C600 (410 kW / 559 HP). Capacidade máxima de levantamento: 170 toneladas. Comprimento máximo de lança: 100 m. Altura máxima de trabalho: 120 m.',
     it: 'Grande gru cingolata XCMG XLC17000 per il sollevamento pesante nell\'estrazione mineraria e nella costruzione. Caratteristiche: sistema idraulico potente, eccellente stabilità e monitoraggio avanzato del carico. Motore: Cummins QSX15-C600 (410 kW / 559 HP). Capacità massima di sollevamento: 170 tonnellate. Lunghezza massima della lancia: 100 m. Altezza massima di lavoro: 120 m.',
     ja: 'XCMG XLC17000 大型クローラークレーン 鉱業および建設用の重吊上げ。特徴 強力な油圧システム、優れた安定性、および高度な負荷監視。エンジン: Cummins QSX15-C600 (410 kW / 559 HP)。最大吊上げ容量: 170 トン。最大ブーム長: 100 m。最大作業高さ: 120 m.',
-    de: 'XCMG XLC17000 large crawler crane for heavy lifting in Bergbau and Bau. Merkmale powerful hydraulic system, excellent stability, and advanced load monitoring. Motor: Cummins QSX15-C600 (410 kW / 559 PS). Max lift capacity: 170 t. Max boom length: 100 m. Max working height: 120 m.'
+    de: 'XCMG XLC17000 großer Raupenkran für schweres Heben im Bergbau und Bau. Merkmale: kraftvolles Hydrauliksystem, ausgezeichnete Stabilität und fortschrittliche Lastüberwachung. Motor: Cummins QSX15-C600 (410 kW / 559 PS). Maximale Hubkapazität: 170 t. Maximale Auslegerlänge: 100 m. Maximale Arbeitshöhe: 120 m.'
   },
   'XCMG XC978E vibratory road roller for asphalt and soil compaction. Features high compaction efficiency, smooth operation, and fuel efficiency. Engine: Weichai WD615.47 (75 kW / 102 HP). Drum width: 2.1 m. Compaction depth: 0.3 m.': {
     zh: 'XCMG XC978E 振动压路机，用于沥青和土壤压实。具有高压实效率、平稳的操作和燃油高效。发动机：潍柴 WD615.47（75 kW / 102 HP）。鼓宽：2.1 m。压实深度：0.3 m。',
@@ -191,7 +191,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Rolo compactador vibratório XCMG XC978E para compactação de asfalto e solo. Características: alta eficiência de compactação, operação suave e eficiência de combustível. Motor: Weichai WD615.47 (75 kW / 102 HP). Largura do tambor: 2.1 m. Profundidade de compactação: 0.3 m.',
     it: 'Rullo compattatore vibrante XCMG XC978E per la compattazione di asfalto e terreno. Caratteristiche: alta efficienza di compattazione, funzionamento fluido ed efficienza dei consumi. Motore: Weichai WD615.47 (75 kW / 102 HP). Larghezza del tamburo: 2.1 m. Profondità di compattazione: 0.3 m.',
     ja: 'XCMG XC978E 振動ローラー アスファルトおよび土壌圧縮用。特徴 高い圧縮効率、スムーズな操作、および燃料効率。エンジン: Weichai WD615.47 (75 kW / 102 HP)。ドラム幅: 2.1 m。圧縮深度: 0.3 m.',
-    de: 'XCMG XC978E vibratory road roller for asphalt and soil compaction. Merkmale high compaction efficiency, smooth operation, and fuel efficiency. Motor: Weichai WD615.47 (75 kW / 102 PS). Drum width: 2.1 m. Compaction depth: 0.3 m.'
+    de: 'XCMG XC978E Vibrationswalze für Asphalt- und Bodenverdichtung. Merkmale: hohe Verdichtungseffizienz, sanfte Bedienung und Kraftstoffeffizienz. Motor: Weichai WD615.47 (75 kW / 102 PS). Walzenbreite: 2,1 m. Verdichtungstiefe: 0,3 m.'
   },
   'XCMG XDE120 rotary drilling rig for geotechnical and water well drilling. Features advanced drilling system, high precision, and excellent reliability. Engine: Cummins 6BTA5.9-C180 (200 kW / 272 HP). Max drilling depth: 1500 m. Drill pipe diameter: 127 mm.': {
     zh: 'XCMG XDE120 旋转钻机，用于岩土和水井钻探。具有先进的钻探系统、高精度和优异的可靠性。发动机：康明斯 6BTA5.9-C180（200 kW / 272 HP）。最大钻探深度：1500 m。钻杆直径：127 mm。',
@@ -203,7 +203,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Plataforma de perfuração rotatória XCMG XDE120 para perfuração geotécnica e de poços de água. Características: sistema de perfuração avançado, alta precisão e excelente confiabilidade. Motor: Cummins 6BTA5.9-C180 (200 kW / 272 HP). Profundidade máxima de perfuração: 1500 m. Diâmetro do tubo de perfuração: 127 mm.',
     it: 'Piattaforma di perforazione rotativa XCMG XDE120 per la perforazione geotecnica e di pozzi d\'acqua. Caratteristiche: sistema di perforazione avanzato, alta precisione e eccellente affidabilità. Motore: Cummins 6BTA5.9-C180 (200 kW / 272 HP). Profondità massima di perforazione: 1500 m. Diametro del tubo di perforazione: 127 mm.',
     ja: 'XCMG XDE120 回転式掘削リグ 地盤工学および水井戸掘削用。特徴 高度な掘削システム、高精度、および優れた信頼性。エンジン: Cummins 6BTA5.9-C180 (200 kW / 272 HP)。最大掘削深度: 1500 m。掘削パイプ径: 127 mm.',
-    de: 'XCMG XDE120 rotary drilling rig for geotechnical and water well drilling. Merkmale advanced drilling system, high precision, and excellent reliability. Motor: Cummins 6BTA5.9-C180 (200 kW / 272 PS). Max drilling depth: 1500 m. Drill pipe diameter: 127 mm.'
+    de: 'XCMG XDE120 Rotary-Bohranlage für Geotechnik- und Brunnenbohren. Merkmale: fortschrittliches Bohrersystem, hohe Präzision und ausgezeichnete Zuverlässigkeit. Motor: Cummins 6BTA5.9-C180 (200 kW / 272 PS). Maximale Bohrtiefe: 1500 m. Bohrrohr-Durchmesser: 127 mm.'
   },
   'XCMG XDE260 large rotary drilling rig for deep geotechnical drilling. Features powerful drilling system, advanced automation, and high efficiency. Engine: Cummins QSX15-C600 (350 kW / 476 HP). Max drilling depth: 3000 m. Drill pipe diameter: 152 mm.': {
     zh: 'XCMG XDE260 大型旋转钻机，用于深层岩土钻探。具有强大的钻探系统、先进的自动化和高效率。发动机：康明斯 QSX15-C600（350 kW / 476 HP）。最大钻探深度：3000 m。钻杆直径：152 mm。',
@@ -215,7 +215,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Grande plataforma de perfuração rotatória XCMG XDE260 para perfuração geotécnica profunda. Características: sistema de perfuração potente, automação avançada e alta eficiência. Motor: Cummins QSX15-C600 (350 kW / 476 HP). Profundidade máxima de perfuração: 3000 m. Diâmetro do tubo de perfuração: 152 mm.',
     it: 'Grande piattaforma di perforazione rotativa XCMG XDE260 per la perforazione geotecnica profonda. Caratteristiche: sistema di perforazione potente, automazione avanzata e alta efficienza. Motore: Cummins QSX15-C600 (350 kW / 476 HP). Profondità massima di perforazione: 3000 m. Diametro del tubo di perforazione: 152 mm.',
     ja: 'XCMG XDE260 大型回転式掘削リグ 深い地盤工学掘削用。特徴 強力な掘削システム、高度な自動化、および高効率。エンジン: Cummins QSX15-C600 (350 kW / 476 HP)。最大掘削深度: 3000 m。掘削パイプ径: 152 mm.',
-    de: 'XCMG XDE260 large rotary drilling rig for deep geotechnical drilling. Merkmale powerful drilling system, advanced automation, and high efficiency. Motor: Cummins QSX15-C600 (350 kW / 476 PS). Max drilling depth: 3000 m. Drill pipe diameter: 152 mm.'
+    de: 'XCMG XDE260 großer Rotary-Bohranlage für tiefe Geotechnik-Bohrungen. Merkmale: kraftvolles Bohrersystem, fortschrittliche Automatisierung und hohe Effizienz. Motor: Cummins QSX15-C600 (350 kW / 476 PS). Maximale Bohrtiefe: 3000 m. Bohrrohr-Durchmesser: 152 mm.'
   },
   'XCMG XCA120G7-1H truck-mounted crane for versatile lifting operations. Features compact design, high mobility, and excellent load capacity. Engine: Cummins QSX15-C600 (350 kW / 476 HP). Max lift capacity: 120 ton. Max boom length: 60 m. Max working height: 68 m.': {
     zh: 'XCMG XCA120G7-1H 卡车起重机，用于多功能起吊作业。具有紧凑的设计、高机动性和优异的装载能力。发动机：康明斯 QSX15-C600（350 kW / 476 HP）。最大起吊能力：120 吨。最大起重臂长度：60 m。最大工作高度：68 m。',
@@ -227,7 +227,7 @@ export const xcmgMachineDescriptions: Record<string, Record<string, string>> = {
     pt: 'Guindaste montado em caminhão XCMG XCA120G7-1H para operações de levantamento versátil. Características: design compacto, alta mobilidade e excelente capacidade de carga. Motor: Cummins QSX15-C600 (350 kW / 476 HP). Capacidade máxima de levantamento: 120 toneladas. Comprimento máximo de lança: 60 m. Altura máxima de trabalho: 68 m.',
     it: 'Gru montata su camion XCMG XCA120G7-1H per operazioni di sollevamento versatili. Caratteristiche: design compatto, alta mobilità e eccellente capacità di carico. Motore: Cummins QSX15-C600 (350 kW / 476 HP). Capacità massima di sollevamento: 120 tonnellate. Lunghezza massima della lancia: 60 m. Altezza massima di lavoro: 68 m.',
     ja: 'XCMG XCA120G7-1H トラック搭載クレーン 多目的吊上げ作業用。特徴 コンパクト設計、高い可動性、および優れた積載容量。エンジン: Cummins QSX15-C600 (350 kW / 476 HP)。最大吊上げ容量: 120 トン。最大ブーム長: 60 m。最大作業高さ: 68 m.',
-    de: 'XCMG XCA120G7-1H truck-mounted crane for versatile lifting operations. Merkmale compact design, high mobility, and excellent load capacity. Motor: Cummins QSX15-C600 (350 kW / 476 PS). Max lift capacity: 120 t. Max boom length: 60 m. Max working height: 68 m.'
+    de: 'XCMG XCA120G7-1H Lastkraftwagen-Kran für vielseitige Hubarbeiten. Merkmale: kompaktes Design, hohe Mobilität und ausgezeichnete Tragfähigkeit. Motor: Cummins QSX15-C600 (350 kW / 476 PS). Maximale Hubkapazität: 120 t. Maximale Auslegerlänge: 60 m. Maximale Arbeitshöhe: 68 m.'
   }
 };
 
