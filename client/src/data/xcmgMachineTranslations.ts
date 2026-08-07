@@ -1,6 +1,211 @@
 // XCMG Machine Translations
 // Xuzhou Construction Machinery Group (徐工)
 
+
+// XCMG machine names translations
+export const xcmgMachineTranslations: Record<string, Record<string, string>> = {
+  'Compact Hydraulic Excavator': {
+    zh: '小型液压挖掘机',
+    en: 'Compact Hydraulic Excavator',
+    es: 'Excavadora hidráulica compacta',
+    ar: 'حفار هيدروليكي صغير',
+    ru: 'Компактный гидравлический экскаватор',
+    fr: 'Pelle hydraulique compacte',
+    pt: 'Escavadeira hidráulica compacta',
+    it: 'Escavatore idraulico compatto',
+    ja: 'コンパクト油圧ショベル',
+    de: 'Kompakt-Hydraulikbagger'
+  },
+  'Mid-Size Hydraulic Excavator': {
+    zh: '中型液压挖掘机',
+    en: 'Mid-Size Hydraulic Excavator',
+    es: 'Excavadora hidráulica de tamaño medio',
+    ar: 'حفار هيدروليكي متوسط الحجم',
+    ru: 'Гидравлический экскаватор среднего размера',
+    fr: 'Pelle hydraulique de taille moyenne',
+    pt: 'Escavadeira hidráulica de tamanho médio',
+    it: 'Escavatore idraulico di medie dimensioni',
+    ja: '中型油圧ショベル',
+    de: '中型液压挖掘机'
+  },
+  'Electric Hybrid Excavator': {
+    zh: '电动混合动力挖掘机',
+    en: 'Electric Hybrid Excavator',
+    es: 'Excavadora híbrida eléctrica',
+    ar: 'حفار هجين كهربائي',
+    ru: 'Электрический гибридный экскаватор',
+    fr: 'Pelle hybride électrique',
+    pt: 'Escavadeira híbrida elétrica',
+    it: 'Escavatore ibrido elettrico',
+    ja: '電動ハイブリッド油圧ショベル',
+    de: 'Elektrischer Hybrid-Hydraulikbagger'
+  },
+  'Large Hydraulic Excavator': {
+    zh: '大型液压挖掘机',
+    en: 'Large Hydraulic Excavator',
+    es: 'Excavadora hidráulica grande',
+    ar: 'حفار هيدروليكي كبير',
+    ru: 'Крупный гидравлический экскаватор',
+    fr: 'Grande pelle hydraulique',
+    pt: 'Escavadeira hidráulica grande',
+    it: 'Grande escavatore idraulico',
+    ja: '大型油圧ショベル',
+    de: 'Großer Hydraulikbagger'
+  },
+  'Ultra-Large Mining Excavator': {
+    zh: '超大型采矿挖掘机',
+    en: 'Ultra-Large Mining Excavator',
+    es: 'Excavadora minera ultra grande',
+    ar: 'حفار تعدين فائق الحجم',
+    ru: 'Сверхкрупный горнодобывающий экскаватор',
+    fr: 'Pelle minière ultra-grande',
+    pt: 'Escavadeira de mineração ultra grande',
+    it: 'Escavatore minerario ultra grande',
+    ja: '超大型採鉱油圧ショベル',
+    de: 'Ultra-großer Bergbau-Hydraulikbagger'
+  },
+  'Mid-Size Wheel Loader': {
+    zh: '中型轮式装载机',
+    en: 'Mid-Size Wheel Loader',
+    es: 'Cargador de ruedas de tamaño medio',
+    ar: 'محمل عجلات متوسط الحجم',
+    ru: 'Колесный погрузчик среднего размера',
+    fr: 'Chargeuse sur pneus de taille moyenne',
+    pt: 'Carregadeira de rodas de tamanho médio',
+    it: 'Caricatore gommato di medie dimensioni',
+    ja: '中型ホイールローダー',
+    de: 'Mittlerer Radlader'
+  },
+  'Large Wheel Loader': {
+    zh: '大型轮式装载机',
+    en: 'Large Wheel Loader',
+    es: 'Cargador de ruedas grande',
+    ar: 'محمل عجلات كبير',
+    ru: 'Крупный колесный погрузчик',
+    fr: 'Grande chargeuse sur pneus',
+    pt: 'Carregadeira de rodas grande',
+    it: 'Grande caricatore gommato',
+    ja: '大型ホイールローダー',
+    de: 'Großer Radlader'
+  },
+  'Electric Wheel Loader': {
+    zh: '电动轮式装载机',
+    en: 'Electric Wheel Loader',
+    es: 'Cargador de ruedas eléctrico',
+    ar: 'محمل عجلات كهربائي',
+    ru: 'Электрический колесный погрузчик',
+    fr: 'Chargeuse sur pneus électrique',
+    pt: 'Carregadeira de rodas elétrica',
+    it: 'Caricatore gommato elettrico',
+    ja: '電動ホイールローダー',
+    de: 'Elektrischer Radlader'
+  },
+  'Motor Grader': {
+    zh: '平地机',
+    en: 'Motor Grader',
+    es: 'Motoniveladora',
+    ar: 'مدرج محرك',
+    ru: 'Автогрейдер',
+    fr: 'Niveleuse',
+    pt: 'Motoniveladora',
+    it: 'Livellatrice',
+    ja: 'モーターグレーダー',
+    de: 'Motorgrader'
+  },
+  'Hydraulic Bulldozer': {
+    zh: '液压推土机',
+    en: 'Hydraulic Bulldozer',
+    es: 'Tractor de orugas hidráulico',
+    ar: 'بلدوزر هيدروليكي',
+    ru: 'Гидравлический бульдозер',
+    fr: 'Bulldozer hydraulique',
+    pt: 'Trator de esteiras hidráulico',
+    it: 'Bulldozer idraulico',
+    ja: '液压推土機',
+    de: 'Hydraulic-Bulldozer'
+  },
+  'Mobile Truck Crane': {
+    zh: '移动式卡车起重机',
+    en: 'Mobile Truck Crane',
+    es: 'Grúa móvil sobre camión',
+    ar: 'رافعة شاحنة متنقلة',
+    ru: 'Мобильный автокран',
+    fr: 'Grue mobile sur camion',
+    pt: 'Guindaste móvel sobre caminhão',
+    it: 'Gru mobile su camion',
+    ja: 'モービルトラッククレーン',
+    de: 'Mobiler Lastkraftwagen-Kran'
+  },
+  'Large Crawler Crane': {
+    zh: '大型履带起重机',
+    en: 'Large Crawler Crane',
+    es: 'Grúa grande sobre orugas',
+    ar: 'رافعة زحافة كبيرة',
+    ru: 'Крупный гусеничный кран',
+    fr: 'Grande grue sur chenilles',
+    pt: 'Grande guindaste sobre esteiras',
+    it: 'Grande gru cingolata',
+    ja: '大型クローラークレーン',
+    de: 'Großer Raupenkran'
+  },
+  'Vibratory Road Roller': {
+    zh: '振动压路机',
+    en: 'Vibratory Road Roller',
+    es: 'Rodillo compactador vibratorio',
+    ar: 'أسطوانة ضغط الطريق الاهتزازية',
+    ru: 'Виброкаток',
+    fr: 'Rouleau compacteur vibrant',
+    pt: 'Rolo compactador vibratório',
+    it: 'Rullo compattatore vibrante',
+    ja: '振動ローラー',
+    de: 'Vibrationswalze'
+  },
+  'Rotary Drilling Rig': {
+    zh: '旋转钻机',
+    en: 'Rotary Drilling Rig',
+    es: 'Plataforma de perforación rotatoria',
+    ar: 'منصة الحفر الدوارة',
+    ru: 'Роторная буровая установка',
+    fr: 'Plateforme de forage rotatif',
+    pt: 'Plataforma de perfuração rotativa',
+    it: 'Impianto di perforazione rotativa',
+    ja: 'ロータリー掘削装置',
+    de: 'Rotary-Bohranlage'
+  },
+  'Large Rotary Drilling Rig': {
+    zh: '大型旋转钻机',
+    en: 'Large Rotary Drilling Rig',
+    es: 'Gran plataforma de perforación rotatoria',
+    ar: 'منصة حفر دوارة كبيرة',
+    ru: 'Крупная роторная буровая установка',
+    fr: 'Grande plateforme de forage rotatif',
+    pt: 'Grande plataforma de perfuração rotativa',
+    it: 'Grande impianto di perforazione rotativa',
+    ja: '大型ロータリー掘削装置',
+    de: 'Große Rotary-Bohranlage'
+  },
+  'Truck-Mounted Crane': {
+    zh: '卡车起重机',
+    en: 'Truck-Mounted Crane',
+    es: 'Grúa montada en camión',
+    ar: 'رافعة مثبتة على شاحنة',
+    ru: 'Кран, установленный на грузовике',
+    fr: 'Grue montée sur camion',
+    pt: 'Guindaste montado em caminhão',
+    it: 'Gru montata su camion',
+    ja: 'トラック搭載クレーン',
+    de: 'Lastkraftwagen-Kran'
+  }
+};
+
+export function getTranslatedXCMGMachineName(name: string, language: string = 'en'): string {
+  const translations = xcmgMachineTranslations[name];
+  if (translations && translations[language]) {
+    return translations[language];
+  }
+  return name;
+}
+
 export const xcmgMachineSpecsTranslations: Record<string, Record<string, string>> = {
   'ton': { zh: '吨', en: 'ton', es: 'ton', ar: 'طن', ru: 'тонн', fr: 'tonne', pt: 'ton', it: 'tonnellata',
     ja: 'トン',
