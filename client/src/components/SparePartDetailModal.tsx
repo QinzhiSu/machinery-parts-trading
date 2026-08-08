@@ -26,7 +26,7 @@ interface SparePartDetailModalProps {
 }
 
 // Map brand IDs to their translation functions
-const brandDetailsMap: Record<string, (language: string) => string> = {
+const brandDetailsMap: Record<string, (partName: string, language: string) => string> = {
   caterpillar: getTranslatedCaterpillarSparePartDetails,
   shantui: getTranslatedShantuiSparePartDetails,
   xcmg: getTranslatedXCMGSparePartDetails,
@@ -53,7 +53,7 @@ export function SparePartDetailModal({
 
   // Get the brand-specific details translation function
   const getDetailsForBrand = brandDetailsMap[brandId];
-  const details = getDetailsForBrand ? getDetailsForBrand(language) : part.description;
+  const details = getDetailsForBrand ? getDetailsForBrand(part.name, language) : part.description;
 
   // Translation helper
   const t = (key: string, translations: Record<string, string>) => {
