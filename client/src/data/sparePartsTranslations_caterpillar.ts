@@ -725,6 +725,18 @@ export const caterpillarDescriptionTranslations: Record<string, Record<string, s
     ar: 'قطعة CAT. استبدل مع الدبوس، قطعة تآكل عالية التردد.',
     it: 'Pezzo CAT. Sostituire con perno, pezzo di usura ad alta frequenza.',
   },
+  'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).': {
+    en: 'CAT part. Replace when turntable makes abnormal noise or swing is weak (major repair).',
+    zh: '卡特彼勒零件。当转台发出异常噪音或回转无力时更换（大修）。',
+    es: 'Pieza CAT. Reemplazar cuando la plataforma giratoria hace ruido anormal o el giro es débil (reparación mayor).',
+    fr: 'Pièce CAT. Remplacer lorsque la plateforme tournante fait du bruit anormal ou que la rotation est faible (réparation majeure).',
+    de: 'CAT-Teil. Ersetzen, wenn die Drehplattform abnormale Geräusche macht oder die Drehung schwach ist (Hauptreparatur).',
+    pt: 'Peça CAT. Substituir quando a plataforma giratória faz ruído anormal ou o giro é fraco (reparo maior).',
+    ru: 'Деталь CAT. Заменяйте, когда поворотный стол издает аномальный шум или поворот слабый (капремонт).',
+    ja: 'CAT部品。ターンテーブルが異常音を発するか、スイングが弱い場合に交換してください（大修理）。',
+    ar: 'قطعة CAT. استبدل عندما تصدر الطاولة الدوارة ضوضاء غير طبيعية أو يكون الدوران ضعيفاً (إصلاح رئيسي).',
+    it: 'Pezzo CAT. Sostituire quando la piattaforma girevole fa rumore anomalo o la rotazione è debole (riparazione maggiore).',
+  },
 };
 
 export const caterpillarCategoryTranslations: Record<string, Record<string, string>> = {
