@@ -2,7 +2,7 @@ import { X } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { getTranslatedCaterpillarSparePartDetails } from '@/data/sparePartsDetails_caterpillar';
 import { getTranslatedShantuiSparePartDetails } from '@/data/sparePartsDetails_shantui';
-import { getTranslatedXCMGSparePartDescription as getTranslatedXCMGSparePartDetails } from '@/data/sparePartsTranslations_xcmg';
+import { getTranslatedXCMGSparePartDetails } from '@/data/sparePartsDetails_xcmg';
 import { getTranslatedLiuGongSparePartDetails } from '@/data/sparePartsDetails_liugong';
 import { getTranslatedSANYSparePartDetails } from '@/data/sparePartsDetails_sany';
 import { getTranslatedKomatsuSparePartDetails } from '@/data/sparePartsDetails_komatsu';
