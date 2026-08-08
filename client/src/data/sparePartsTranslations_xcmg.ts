@@ -1,4 +1,5 @@
 // XCMG Spare Parts Translations (10 languages)
+// Keys must match exactly with part names in products_xcmg.ts
 // Languages: en, zh, es, fr, de, pt, ru, ja, ar, it
 
 export const xcmgNameTranslations: Record<string, Record<string, string>> = {
@@ -331,7 +332,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
   },
   '电气/传感器': {
     en: 'Electrical/Sensor System',
-    zh: '电气/传感器',
+    zh: '电气/传感器系统',
     es: 'Sistema Eléctrico/Sensor',
     fr: 'Système Électrique/Capteur',
     de: 'Elektro-/Sensorsystem',
@@ -342,28 +343,28 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     it: 'Sistema elettrico/sensore',
   },
   '挖掘属性/GET': {
-    en: 'Excavation/GET',
-    zh: '挖掘/GET',
-    es: 'Excavación/GET',
-    fr: 'Excavation/GET',
-    de: 'Grabung/GET',
-    pt: 'Escavação/GET',
-    ru: 'Экскавация/GET',
-    ja: '掘削/GET',
-    ar: 'الحفر/GET',
-    it: 'Scavo/GET',
+    en: 'Excavation/Bucket Teeth',
+    zh: '挖掘/斗齿系统',
+    es: 'Excavación/Dientes del Cucharón',
+    fr: 'Excavation/Dents de Godet',
+    de: 'Grabung/Schauffelzähne',
+    pt: 'Escavação/Dentes do Balde',
+    ru: 'Экскавация/Зубья ковша',
+    ja: '掘削/バケット歯',
+    ar: 'الحفر/أسنان الدلو',
+    it: 'Scavo/Denti del secchio',
   },
   '传动/变速系统': {
-    en: 'Transmission System',
+    en: 'Transmission/Gearbox System',
     zh: '传动/变速系统',
     es: 'Sistema de Transmisión',
     fr: 'Système de Transmission',
     de: 'Übertragungssystem',
     pt: 'Sistema de Transmissão',
     ru: 'Система передачи',
-    ja: 'トランスミッションシステム',
-    ar: 'نظام النقل',
-    it: 'Sistema di trasmissione',
+    ja: 'トランスミッション/ギアボックスシステム',
+    ar: 'نظام النقل/علبة التروس',
+    it: 'Sistema di trasmissione/cambio',
   },
   '液压系统': {
     en: 'Hydraulic System',
@@ -378,7 +379,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     it: 'Sistema idraulico',
   },
   'Braking System': {
-    en: 'Braking System',
+    en: 'Brake System',
     zh: '制动系统',
     es: 'Sistema de Frenado',
     fr: 'Système de Freinage',
@@ -390,7 +391,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     it: 'Sistema frenante',
   },
   '密封/传动件': {
-    en: 'Seal/Drive Components',
+    en: 'Sealing/Drive Components',
     zh: '密封/传动件',
     es: 'Componentes de Sello/Transmisión',
     fr: 'Composants de Joint/Transmission',
