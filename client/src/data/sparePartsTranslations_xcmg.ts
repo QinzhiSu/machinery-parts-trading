@@ -163,8 +163,44 @@ export const xcmgPartNameToDescriptionKey: Record<string, string> = {
   '溢流阀(继动阀)': 'Hydraulic Oil Filter',
 };
 
+// Map English part names to Chinese-English mixed names used in products_xcmg.ts
+const englishToMixedNameMap: Record<string, string> = {
+  'Air Filter Assembly (Inner and Outer)': 'Air Filter套装(内外芯)',
+  'Hydraulic Oil Filter (Variant)': 'Hydraulic Oil Filter(变体)',
+  'Air Filter (ZL50)': 'Air Filter(ZL50)',
+  'Oil Filter (with Lock Valve)': 'Oil Filter(带锁止阀)',
+  'Hydraulic Oil Filter (Model 2)': 'Hydraulic Oil Filter(型号2)',
+  'Water Temperature Sensor': '水温传感器',
+  'Bucket Teeth': '铲斗斗齿',
+  'Right Bucket Tooth': '右侧斗齿',
+  'Left Bucket Tooth': '左侧斗齿',
+  'Bucket Tooth Seat': '斗齿座(Tooth Holder)',
+  'Transmission Assembly': '变速箱总成(带变矩器)',
+  'Transmission Control Valve': '变速箱控制阀(变速阀)',
+  'Transmission Reverse Piston': '变速箱倒挡活塞',
+  'Drive Axle Differential Gear': '驱动桥半轴齿轮(差速器齿轮)',
+  'Working Hydraulic Pump': '工作液压泵',
+  'Brake Pads': '刹车片(SOMA制动衬片)',
+  'Brake Disc': '制动盘(刹车盘)',
+  'Parking Brake Valve': '手刹阀',
+  'Brake Drum': '手刹鼓(制动鼓)',
+  'Lip Seal Ring': '唇形油封',
+  'Universal Joint Coupling': '万向节联轴器',
+  'Relief Valve': '溢流阀(继动阀)',
+};
+
 export function getTranslatedXCMGSparePartName(name: string, language: string = 'zh'): string {
-  const translations = xcmgNameTranslations[name as keyof typeof xcmgNameTranslations];
+  // First try to find the name directly
+  let translations = xcmgNameTranslations[name as keyof typeof xcmgNameTranslations];
+  
+  // If not found, try to map English name to mixed name
+  if (!translations) {
+    const mixedName = englishToMixedNameMap[name as keyof typeof englishToMixedNameMap];
+    if (mixedName) {
+      translations = xcmgNameTranslations[mixedName as keyof typeof xcmgNameTranslations];
+    }
+  }
+  
   return translations?.[language as keyof typeof translations] || name;
 }
 
