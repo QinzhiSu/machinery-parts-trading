@@ -133,6 +133,36 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   },
 };
 
+// Map part names to their description keys for easier lookup
+export const xcmgPartNameToDescriptionKey: Record<string, string> = {
+  'Hydraulic Oil Filter': 'Hydraulic Oil Filter',
+  'Air Filter': 'Air Filter',
+  'Hydraulic Return Oil Filter': 'Hydraulic Oil Filter',
+  'Air Filter套装(内外芯)': 'Air Filter',
+  'Hydraulic Oil Filter(变体)': 'Hydraulic Oil Filter',
+  'Oil Filter': 'Hydraulic Oil Filter',
+  'Air Filter(ZL50)': 'Air Filter',
+  'Oil Filter(带锁止阀)': 'Hydraulic Oil Filter',
+  'Hydraulic Oil Filter(型号2)': 'Hydraulic Oil Filter',
+  '水温传感器': 'Hydraulic Oil Filter',
+  '铲斗斗齿': 'Air Filter',
+  '右侧斗齿': 'Air Filter',
+  '左侧斗齿': 'Air Filter',
+  '斗齿座(Tooth Holder)': 'Air Filter',
+  '变速箱总成(带变矩器)': 'Hydraulic Oil Filter',
+  '变速箱控制阀(变速阀)': 'Hydraulic Oil Filter',
+  '变速箱倒挡活塞': 'Hydraulic Oil Filter',
+  '驱动桥半轴齿轮(差速器齿轮)': 'Hydraulic Oil Filter',
+  '工作液压泵': 'Hydraulic Oil Filter',
+  '刹车片(SOMA制动衬片)': 'Air Filter',
+  '制动盘(刹车盘)': 'Air Filter',
+  '手刹阀': 'Hydraulic Oil Filter',
+  '手刹鼓(制动鼓)': 'Air Filter',
+  '唇形油封': 'Air Filter',
+  '万向节联轴器': 'Hydraulic Oil Filter',
+  '溢流阀(继动阀)': 'Hydraulic Oil Filter',
+};
+
 export function getTranslatedXCMGSparePartName(name: string, language: string = 'zh'): string {
   const translations = xcmgNameTranslations[name as keyof typeof xcmgNameTranslations];
   return translations?.[language as keyof typeof translations] || name;
@@ -143,7 +173,17 @@ export function getTranslatedXCMGSparePartCategory(category: string, language: s
   return translations?.[language as keyof typeof translations] || category;
 }
 
-export function getTranslatedXCMGSparePartDescription(description: string, language: string = 'zh'): string {
-  const translations = xcmgDescriptionTranslations[description as keyof typeof xcmgDescriptionTranslations];
-  return translations?.[language as keyof typeof translations] || description;
+export function getTranslatedXCMGSparePartDescription(partName: string, language: string = 'zh'): string {
+  // First try to find the part name directly
+  let translations = xcmgDescriptionTranslations[partName as keyof typeof xcmgDescriptionTranslations];
+  
+  // If not found, try to map the part name to a description key
+  if (!translations) {
+    const descriptionKey = xcmgPartNameToDescriptionKey[partName as keyof typeof xcmgPartNameToDescriptionKey];
+    if (descriptionKey) {
+      translations = xcmgDescriptionTranslations[descriptionKey as keyof typeof xcmgDescriptionTranslations];
+    }
+  }
+  
+  return translations?.[language as keyof typeof translations] || partName;
 }
