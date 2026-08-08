@@ -1,4 +1,4 @@
-// XCMG Spare Parts Translations (10 languages)
+// XCMG Spare Parts Translations
 // Keys MUST match exactly with part names in products_xcmg.ts
 
 export const xcmgNameTranslations: Record<string, Record<string, string>> = {
@@ -99,10 +99,10 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     en: 'Hydraulic System', zh: '液压系统', es: 'Sistema Hidráulico', fr: 'Système Hydraulique', de: 'Hydrauliksystem', pt: 'Sistema Hidráulico', ru: 'Гидравлическая система', ja: '油圧システム', ar: 'نظام هيدروليكي', it: 'Sistema idraulico'
   },
   'Brake System': {
-    en: 'Brake System', zh: '制动系统', es: 'Sistema de Frenado', fr: 'Système de Freinage', de: 'Bremssystem', pt: 'Sistema de Frenagem', ru: 'Тормозная система', ja: 'ブレーキシステム', ar: 'نظام الفرامل', it: 'Sistema frenante'
+    en: 'Brake System', zh: '制动系统', es: 'Sistema de Frenos', fr: 'Système de Freinage', de: 'Bremssystem', pt: 'Sistema de Freios', ru: 'Тормозная система', ja: 'ブレーキシステム', ar: 'نظام الفرامل', it: 'Sistema frenante'
   },
-  'Sealing/Drive Components': {
-    en: 'Sealing/Drive Components', zh: '密封/传动件', es: 'Componentes de Sello/Transmisión', fr: 'Composants de Joint/Transmission', de: 'Dichtungs-/Antriebskomponenten', pt: 'Componentes de Vedação/Transmissão', ru: 'Компоненты уплотнения/привода', ja: 'シール/ドライブコンポーネント', ar: 'مكونات الختم/الدفع', it: 'Componenti di tenuta/trasmissione'
+  'Sealing/Coupling System': {
+    en: 'Sealing/Coupling System', zh: '密封/联轴系统', es: 'Sistema de Sellado/Acoplamiento', fr: 'Système d\'Étanchéité/Accouplement', de: 'Dichtungs-/Kupplungssystem', pt: 'Sistema de Vedação/Acoplamento', ru: 'Система уплотнения/муфты', ja: 'シール/カップリングシステム', ar: 'نظام الختم/الاقتران', it: 'Sistema di tenuta/accoppiamento'
   },
 };
 
@@ -131,36 +131,252 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     ar: 'مرشح هواء عالي الكفاءة لمدخل محرك XCMG. استبدل كل 250-500 ساعة.',
     it: 'Filtro aria ad alta efficienza per l\'aspirazione del motore XCMG. Sostituire ogni 250-500 ore.'
   },
+  'Hydraulic Return Oil Filter': {
+    en: 'Hydraulic return oil filter for XCMG hydraulic system. Replace every 500-1000 hours.',
+    zh: 'XCMG液压系统液压回油滤芯。每500-1000小时更换。',
+    es: 'Filtro de aceite de retorno hidráulico para el sistema hidráulico XCMG. Reemplazar cada 500-1000 horas.',
+    fr: 'Filtre à huile de retour hydraulique pour le système hydraulique XCMG. Remplacer tous les 500-1000 heures.',
+    de: 'Hydraulik-Rücklaufölfilter für das XCMG-Hydrauliksystem. Alle 500-1000 Stunden wechseln.',
+    pt: 'Filtro de óleo de retorno hidráulico para o sistema hidráulico XCMG. Substituir a cada 500-1000 horas.',
+    ru: 'Фильтр гидравлического масла обратного потока для гидравлической системы XCMG. Заменяйте каждые 500-1000 часов.',
+    ja: 'XCMG油圧システム用油圧リターンオイルフィルター。500-1000時間ごとに交換。',
+    ar: 'مرشح الزيت الهيدروليكي العائد لنظام XCMG الهيدروليكي. استبدل كل 500-1000 ساعة.',
+    it: 'Filtro olio di ritorno idraulico per il sistema idraulico XCMG. Sostituire ogni 500-1000 ore.'
+  },
+  'Water Temperature Sensor': {
+    en: 'Water temperature sensor for XCMG engine cooling system. Inspect every 500-1000 hours.',
+    zh: 'XCMG发动机冷却系统水温传感器。每500-1000小时检查。',
+    es: 'Sensor de temperatura del agua para el sistema de refrigeración del motor XCMG. Inspeccionar cada 500-1000 horas.',
+    fr: 'Capteur de température de l\'eau pour le système de refroidissement du moteur XCMG. Inspecter tous les 500-1000 heures.',
+    de: 'Wassertemperatursensor für das XCMG-Motorkühlsystem. Alle 500-1000 Stunden überprüfen.',
+    pt: 'Sensor de temperatura da água para o sistema de resfriamento do motor XCMG. Inspecionar a cada 500-1000 horas.',
+    ru: 'Датчик температуры воды для системы охлаждения двигателя XCMG. Проверяйте каждые 500-1000 часов.',
+    ja: 'XCMGエンジン冷却システム用水温センサー。500-1000時間ごとに検査。',
+    ar: 'مستشعر درجة حرارة الماء لنظام تبريد محرك XCMG. تفتيش كل 500-1000 ساعة.',
+    it: 'Sensore di temperatura dell\'acqua per il sistema di raffreddamento del motore XCMG. Ispezionare ogni 500-1000 ore.'
+  },
+  'Bucket Teeth': {
+    en: 'Bucket teeth for XCMG excavators. Replace when worn to bottom or broken.',
+    zh: 'XCMG挖掘机斗齿。磨损到底部或损坏时更换。',
+    es: 'Dientes del cucharón para excavadoras XCMG. Reemplazar cuando se desgasten o se rompan.',
+    fr: 'Dents de godet pour excavatrices XCMG. Remplacer lorsqu\'usées ou cassées.',
+    de: 'Schauffelzähne für XCMG-Bagger. Wechseln wenn abgenutzt oder gebrochen.',
+    pt: 'Dentes do balde para escavadeiras XCMG. Substituir quando desgastados ou quebrados.',
+    ru: 'Зубья ковша для экскаваторов XCMG. Заменяйте при износе или поломке.',
+    ja: 'XCMGショベル用バケット歯。摩耗または破損時に交換。',
+    ar: 'أسنان الدلو لحفارات XCMG. استبدل عند التآكل أو الكسر.',
+    it: 'Denti del secchio per escavatori XCMG. Sostituire quando usurati o rotti.'
+  },
+  'Right Bucket Tooth': {
+    en: 'Right bucket tooth for XCMG excavators. Replace when worn or damaged.',
+    zh: 'XCMG挖掘机右侧斗齿。磨损或损坏时更换。',
+    es: 'Diente del cucharón derecho para excavadoras XCMG. Reemplazar cuando esté desgastado o dañado.',
+    fr: 'Dent de godet droit pour excavatrices XCMG. Remplacer lorsqu\'usée ou endommagée.',
+    de: 'Rechter Schauffelzahn für XCMG-Bagger. Wechseln wenn abgenutzt oder beschädigt.',
+    pt: 'Dente do balde direito para escavadeiras XCMG. Substituir quando desgastado ou danificado.',
+    ru: 'Правый зуб ковша для экскаваторов XCMG. Заменяйте при износе или повреждении.',
+    ja: 'XCMGショベル用右側バケット歯。摩耗または損傷時に交換。',
+    ar: 'سن الدلو الأيمن لحفارات XCMG. استبدل عند التآكل أو التلف.',
+    it: 'Dente del secchio destro per escavatori XCMG. Sostituire quando usurato o danneggiato.'
+  },
+  'Left Bucket Tooth': {
+    en: 'Left bucket tooth for XCMG excavators. Replace when worn or damaged.',
+    zh: 'XCMG挖掘机左侧斗齿。磨损或损坏时更换。',
+    es: 'Diente del cucharón izquierdo para excavadoras XCMG. Reemplazar cuando esté desgastado o dañado.',
+    fr: 'Dent de godet gauche pour excavatrices XCMG. Remplacer lorsqu\'usée ou endommagée.',
+    de: 'Linker Schauffelzahn für XCMG-Bagger. Wechseln wenn abgenutzt oder beschädigt.',
+    pt: 'Dente do balde esquerdo para escavadeiras XCMG. Substituir quando desgastado ou danificado.',
+    ru: 'Левый зуб ковша для экскаваторов XCMG. Заменяйте при износе или повреждении.',
+    ja: 'XCMGショベル用左側バケット歯。摩耗または損傷時に交換。',
+    ar: 'سن الدلو الأيسر لحفارات XCMG. استبدل عند التآكل أو التلف.',
+    it: 'Dente del secchio sinistro per escavatori XCMG. Sostituire quando usurato o danneggiato.'
+  },
+  'Bucket Tooth Seat': {
+    en: 'Bucket tooth seat for XCMG excavators. Replace when worn or damaged.',
+    zh: 'XCMG挖掘机斗齿座。磨损或损坏时更换。',
+    es: 'Asiento de diente del cucharón para excavadoras XCMG. Reemplazar cuando esté desgastado o dañado.',
+    fr: 'Siège de dent de godet pour excavatrices XCMG. Remplacer lorsqu\'usé ou endommagé.',
+    de: 'Schauffelzahnsitz für XCMG-Bagger. Wechseln wenn abgenutzt oder beschädigt.',
+    pt: 'Assento de dente do balde para escavadeiras XCMG. Substituir quando desgastado ou danificado.',
+    ru: 'Гнездо зуба ковша для экскаваторов XCMG. Заменяйте при износе или повреждении.',
+    ja: 'XCMGショベル用バケット歯シート。摩耗または損傷時に交換。',
+    ar: 'مقعد سن الدلو لحفارات XCMG. استبدل عند التآكل أو التلف.',
+    it: 'Sede del dente del secchio per escavatori XCMG. Sostituire quando usurata o danneggiata.'
+  },
+  'Transmission Assembly': {
+    en: 'Transmission assembly for XCMG equipment. Replace when abnormal shifting occurs.',
+    zh: 'XCMG设备变速箱总成。变速异常时更换。',
+    es: 'Conjunto de transmisión para equipos XCMG. Reemplazar cuando ocurra cambio anormal.',
+    fr: 'Ensemble de transmission pour équipements XCMG. Remplacer en cas de changement anormal.',
+    de: 'Getriebeeinheit für XCMG-Ausrüstung. Wechseln bei abnormalem Schaltverhalten.',
+    pt: 'Conjunto de transmissão para equipamentos XCMG. Substituir quando ocorrer mudança anormal.',
+    ru: 'Узел коробки передач для оборудования XCMG. Заменяйте при ненормальном переключении.',
+    ja: 'XCMGエクイップメント用トランスミッション組立。異常なシフトが発生した場合に交換。',
+    ar: 'مجموعة ناقل الحركة لمعدات XCMG. استبدل عند حدوث تحول غير طبيعي.',
+    it: 'Insieme della trasmissione per attrezzature XCMG. Sostituire quando si verifica uno spostamento anomalo.'
+  },
+  'Transmission Control Valve': {
+    en: 'Transmission control valve for XCMG equipment. Replace when shifting is difficult.',
+    zh: 'XCMG设备变速箱控制阀。变速困难时更换。',
+    es: 'Válvula de control de transmisión para equipos XCMG. Reemplazar cuando el cambio sea difícil.',
+    fr: 'Soupape de contrôle de transmission pour équipements XCMG. Remplacer en cas de changement difficile.',
+    de: 'Getriebesteuerventil für XCMG-Ausrüstung. Wechseln bei schwierigem Schalten.',
+    pt: 'Válvula de controle de transmissão para equipamentos XCMG. Substituir quando a mudança for difícil.',
+    ru: 'Управляющий клапан коробки передач для оборудования XCMG. Заменяйте при затруднении переключения.',
+    ja: 'XCMGエクイップメント用トランスミッション制御弁。シフトが困難な場合に交換。',
+    ar: 'صمام التحكم في ناقل الحركة لمعدات XCMG. استبدل عند صعوبة التحول.',
+    it: 'Valvola di controllo della trasmissione per attrezzature XCMG. Sostituire quando lo spostamento è difficile.'
+  },
+  'Transmission Reverse Piston': {
+    en: 'Transmission reverse piston for XCMG equipment. Replace when abnormal shifting occurs.',
+    zh: 'XCMG设备变速箱倒挡活塞。变速异常时更换。',
+    es: 'Pistón de marcha atrás de transmisión para equipos XCMG. Reemplazar cuando ocurra cambio anormal.',
+    fr: 'Piston de marche arrière de transmission pour équipements XCMG. Remplacer en cas de changement anormal.',
+    de: 'Rückwärtsgang-Kolben des Getriebes für XCMG-Ausrüstung. Wechseln bei abnormalem Schaltverhalten.',
+    pt: 'Pistão de marcha atrás da transmissão para equipamentos XCMG. Substituir quando ocorrer mudança anormal.',
+    ru: 'Поршень заднего хода коробки передач для оборудования XCMG. Заменяйте при ненормальном переключении.',
+    ja: 'XCMGエクイップメント用トランスミッション後進ピストン。異常なシフトが発生した場合に交換。',
+    ar: 'مكبس الحركة للخلف للنقل لمعدات XCMG. استبدل عند حدوث تحول غير طبيعي.',
+    it: 'Pistone di retromarcia della trasmissione per attrezzature XCMG. Sostituire quando si verifica uno spostamento anomalo.'
+  },
+  'Drive Axle Differential Gear': {
+    en: 'Drive axle differential gear for XCMG equipment. Replace during major repair.',
+    zh: 'XCMG设备驱动桥半轴齿轮。大修时更换。',
+    es: 'Engranaje diferencial del eje de accionamiento para equipos XCMG. Reemplazar durante reparación mayor.',
+    fr: 'Engrenage différentiel de l\'essieu de transmission pour équipements XCMG. Remplacer lors d\'une réparation majeure.',
+    de: 'Antriebsachsen-Differentialgetriebe für XCMG-Ausrüstung. Wechseln bei Überholung.',
+    pt: 'Engrenagem diferencial do eixo de acionamento para equipamentos XCMG. Substituir durante reparo maior.',
+    ru: 'Дифференциальное колесо приводного моста для оборудования XCMG. Заменяйте при капитальном ремонте.',
+    ja: 'XCMGエクイップメント用ドライブアクスル ディファレンシャル ギア。大修時に交換。',
+    ar: 'ترس التفاضل لمحور القيادة لمعدات XCMG. استبدل أثناء الإصلاح الرئيسي.',
+    it: 'Ingranaggio differenziale dell\'asse di trasmissione per attrezzature XCMG. Sostituire durante riparazione importante.'
+  },
+  'Working Hydraulic Pump': {
+    en: 'Working hydraulic pump for XCMG equipment. Replace when abnormal noise occurs.',
+    zh: 'XCMG设备工作液压泵。异常噪音时更换。',
+    es: 'Bomba hidráulica de trabajo para equipos XCMG. Reemplazar cuando ocurra ruido anormal.',
+    fr: 'Pompe hydraulique de travail pour équipements XCMG. Remplacer en cas de bruit anormal.',
+    de: 'Arbeitshydraulikpumpe für XCMG-Ausrüstung. Wechseln bei abnormalem Geräusch.',
+    pt: 'Bomba hidráulica de trabalho para equipamentos XCMG. Substituir quando ocorrer ruído anormal.',
+    ru: 'Рабочий гидравлический насос для оборудования XCMG. Заменяйте при ненормальном шуме.',
+    ja: 'XCMGエクイップメント用作業用油圧ポンプ。異常音が発生した場合に交換。',
+    ar: 'مضخة هيدروليكية عاملة لمعدات XCMG. استبدل عند حدوث ضوضاء غير طبيعية.',
+    it: 'Pompa idraulica di lavoro per attrezzature XCMG. Sostituire quando si verifica rumore anomalo.'
+  },
+  'Brake Pads': {
+    en: 'Brake pads for XCMG equipment. Replace when worn to minimum thickness.',
+    zh: 'XCMG设备刹车片。磨损到最小厚度时更换。',
+    es: 'Pastillas de freno para equipos XCMG. Reemplazar cuando se desgasten al espesor mínimo.',
+    fr: 'Plaquettes de frein pour équipements XCMG. Remplacer lorsqu\'usées à l\'épaisseur minimale.',
+    de: 'Bremsbeläge für XCMG-Ausrüstung. Wechseln wenn auf Mindestdicke abgenutzt.',
+    pt: 'Pastilhas de freio para equipamentos XCMG. Substituir quando desgastadas à espessura mínima.',
+    ru: 'Тормозные колодки для оборудования XCMG. Заменяйте при износе до минимальной толщины.',
+    ja: 'XCMGエクイップメント用ブレーキパッド。最小厚さまで摩耗した場合に交換。',
+    ar: 'وسادات الفرامل لمعدات XCMG. استبدل عند التآكل إلى الحد الأدنى للسمك.',
+    it: 'Pastiglie freno per attrezzature XCMG. Sostituire quando usurate allo spessore minimo.'
+  },
+  'Brake Disc': {
+    en: 'Brake disc for XCMG equipment. Replace when worn or warped.',
+    zh: 'XCMG设备制动盘。磨损或翘曲时更换。',
+    es: 'Disco de freno para equipos XCMG. Reemplazar cuando esté desgastado o deformado.',
+    fr: 'Disque de frein pour équipements XCMG. Remplacer lorsqu\'usé ou déformé.',
+    de: 'Bremsscheibe für XCMG-Ausrüstung. Wechseln wenn abgenutzt oder verformt.',
+    pt: 'Disco de freio para equipamentos XCMG. Substituir quando desgastado ou empenado.',
+    ru: 'Тормозной диск для оборудования XCMG. Заменяйте при износе или короблении.',
+    ja: 'XCMGエクイップメント用ブレーキディスク。摩耗または反り時に交換。',
+    ar: 'قرص الفرامل لمعدات XCMG. استبدل عند التآكل أو الالتواء.',
+    it: 'Disco freno per attrezzature XCMG. Sostituire quando usurato o deformato.'
+  },
+  'Parking Brake Valve': {
+    en: 'Parking brake valve for XCMG equipment. Replace when brake fails to hold.',
+    zh: 'XCMG设备手刹阀。制动失效时更换。',
+    es: 'Válvula de freno de estacionamiento para equipos XCMG. Reemplazar cuando el freno no se mantiene.',
+    fr: 'Soupape de frein de stationnement pour équipements XCMG. Remplacer lorsque le frein ne tient pas.',
+    de: 'Feststellbremsenventil für XCMG-Ausrüstung. Wechseln wenn Bremse nicht hält.',
+    pt: 'Válvula de freio de estacionamento para equipamentos XCMG. Substituir quando o freio não se mantém.',
+    ru: 'Клапан стояночного тормоза для оборудования XCMG. Заменяйте при отказе тормоза.',
+    ja: 'XCMGエクイップメント用パーキングブレーキバルブ。ブレーキが保持されない場合に交換。',
+    ar: 'صمام الفرامل لمعدات XCMG. استبدل عند فشل الفرامل في الثبات.',
+    it: 'Valvola freno di stazionamento per attrezzature XCMG. Sostituire quando il freno non si mantiene.'
+  },
+  'Brake Drum': {
+    en: 'Brake drum for XCMG equipment. Replace when worn or damaged.',
+    zh: 'XCMG设备手刹鼓。磨损或损坏时更换。',
+    es: 'Tambor de freno para equipos XCMG. Reemplazar cuando esté desgastado o dañado.',
+    fr: 'Tambour de frein pour équipements XCMG. Remplacer lorsqu\'usé ou endommagé.',
+    de: 'Bremstrommel für XCMG-Ausrüstung. Wechseln wenn abgenutzt oder beschädigt.',
+    pt: 'Tambor de freio para equipamentos XCMG. Substituir quando desgastado ou danificado.',
+    ru: 'Тормозной барабан для оборудования XCMG. Заменяйте при износе или повреждении.',
+    ja: 'XCMGエクイップメント用ブレーキドラム。摩耗または損傷時に交換。',
+    ar: 'أسطوانة الفرامل لمعدات XCMG. استبدل عند التآكل أو التلف.',
+    it: 'Tamburo freno per attrezzature XCMG. Sostituire quando usurato o danneggiato.'
+  },
+  'Lip Seal Ring': {
+    en: 'Lip seal ring for XCMG equipment. Replace when leakage occurs.',
+    zh: 'XCMG设备唇形油封。泄漏时更换。',
+    es: 'Sello de labios para equipos XCMG. Reemplazar cuando ocurra fuga.',
+    fr: 'Joint à lèvres pour équipements XCMG. Remplacer en cas de fuite.',
+    de: 'Lippendichtung für XCMG-Ausrüstung. Wechseln bei Undichtheit.',
+    pt: 'Anel de vedação de lábios para equipamentos XCMG. Substituir quando ocorrer vazamento.',
+    ru: 'Кольцевое уплотнение с губой для оборудования XCMG. Заменяйте при утечке.',
+    ja: 'XCMGエクイップメント用リップシール。漏れが発生した場合に交換。',
+    ar: 'حلقة الختم الشفاه لمعدات XCMG. استبدل عند حدوث تسرب.',
+    it: 'Anello di tenuta a labbro per attrezzature XCMG. Sostituire quando si verifica una perdita.'
+  },
+  'Universal Joint Coupling': {
+    en: 'Universal joint coupling for XCMG equipment. Replace when abnormal noise occurs.',
+    zh: 'XCMG设备万向节联轴器。异常噪音时更换。',
+    es: 'Acoplamiento de junta universal para equipos XCMG. Reemplazar cuando ocurra ruido anormal.',
+    fr: 'Accouplement à cardan pour équipements XCMG. Remplacer en cas de bruit anormal.',
+    de: 'Kardangelenkkupplung für XCMG-Ausrüstung. Wechseln bei abnormalem Geräusch.',
+    pt: 'Acoplamento de junta universal para equipamentos XCMG. Substituir quando ocorrer ruído anormal.',
+    ru: 'Муфта универсального шарнира для оборудования XCMG. Заменяйте при ненормальном шуме.',
+    ja: 'XCMGエクイップメント用ユニバーサルジョイント カップリング。異常音が発生した場合に交換。',
+    ar: 'مقرن المفصل الكروي لمعدات XCMG. استبدل عند حدوث ضوضاء غير طبيعية.',
+    it: 'Accoppiamento giunto cardanico per attrezzature XCMG. Sostituire quando si verifica rumore anomalo.'
+  },
+  'Relief Valve': {
+    en: 'Relief valve for XCMG equipment. Replace when pressure relief fails.',
+    zh: 'XCMG设备溢流阀。压力泄压失效时更换。',
+    es: 'Válvula de alivio para equipos XCMG. Reemplazar cuando falle el alivio de presión.',
+    fr: 'Soupape de décharge pour équipements XCMG. Remplacer en cas d\'échec du soulagement de pression.',
+    de: 'Überdruckventil für XCMG-Ausrüstung. Wechseln wenn Druckentlastung fehlschlägt.',
+    pt: 'Válvula de alívio para equipamentos XCMG. Substituir quando o alívio de pressão falhar.',
+    ru: 'Предохранительный клапан для оборудования XCMG. Заменяйте при отказе сброса давления.',
+    ja: 'XCMGエクイップメント用リリーフバルブ。圧力リリーフが失敗した場合に交換。',
+    ar: 'صمام الإغاثة لمعدات XCMG. استبدل عند فشل تخفيف الضغط.',
+    it: 'Valvola di scarico per attrezzature XCMG. Sostituire quando lo scarico della pressione non riesce.'
+  },
 };
 
 // Map part names to their description keys for easier lookup
 export const xcmgPartNameToDescriptionKey: Record<string, string> = {
   'Hydraulic Oil Filter': 'Hydraulic Oil Filter',
   'Air Filter': 'Air Filter',
-  'Hydraulic Return Oil Filter': 'Hydraulic Oil Filter',
+  'Hydraulic Return Oil Filter': 'Hydraulic Return Oil Filter',
   'Air Filter套装(内外芯)': 'Air Filter',
   'Hydraulic Oil Filter(变体)': 'Hydraulic Oil Filter',
   'Oil Filter': 'Hydraulic Oil Filter',
   'Air Filter(ZL50)': 'Air Filter',
   'Oil Filter(带锁止阀)': 'Hydraulic Oil Filter',
   'Hydraulic Oil Filter(型号2)': 'Hydraulic Oil Filter',
-  '水温传感器': 'Hydraulic Oil Filter',
-  '铲斗斗齿': 'Air Filter',
-  '右侧斗齿': 'Air Filter',
-  '左侧斗齿': 'Air Filter',
-  '斗齿座(Tooth Holder)': 'Air Filter',
-  '变速箱总成(带变矩器)': 'Hydraulic Oil Filter',
-  '变速箱控制阀(变速阀)': 'Hydraulic Oil Filter',
-  '变速箱倒挡活塞': 'Hydraulic Oil Filter',
-  '驱动桥半轴齿轮(差速器齿轮)': 'Hydraulic Oil Filter',
-  '工作液压泵': 'Hydraulic Oil Filter',
-  '刹车片(SOMA制动衬片)': 'Air Filter',
-  '制动盘(刹车盘)': 'Air Filter',
-  '手刹阀': 'Hydraulic Oil Filter',
-  '手刹鼓(制动鼓)': 'Air Filter',
-  '唇形油封': 'Air Filter',
-  '万向节联轴器': 'Hydraulic Oil Filter',
-  '溢流阀(继动阀)': 'Hydraulic Oil Filter',
+  '水温传感器': 'Water Temperature Sensor',
+  '铲斗斗齿': 'Bucket Teeth',
+  '右侧斗齿': 'Right Bucket Tooth',
+  '左侧斗齿': 'Left Bucket Tooth',
+  '斗齿座(Tooth Holder)': 'Bucket Tooth Seat',
+  '变速箱总成(带变矩器)': 'Transmission Assembly',
+  '变速箱控制阀(变速阀)': 'Transmission Control Valve',
+  '变速箱倒挡活塞': 'Transmission Reverse Piston',
+  '驱动桥半轴齿轮(差速器齿轮)': 'Drive Axle Differential Gear',
+  '工作液压泵': 'Working Hydraulic Pump',
+  '刹车片(SOMA制动衬片)': 'Brake Pads',
+  '制动盘(刹车盘)': 'Brake Disc',
+  '手刹阀': 'Parking Brake Valve',
+  '手刹鼓(制动鼓)': 'Brake Drum',
+  '唇形油封': 'Lip Seal Ring',
+  '万向节联轴器': 'Universal Joint Coupling',
+  '溢流阀(继动阀)': 'Relief Valve',
 };
 
 // Map English part names to Chinese-English mixed names used in products_xcmg.ts
