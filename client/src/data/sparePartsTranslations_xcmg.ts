@@ -1,5 +1,5 @@
 // XCMG Spare Parts Translations
-// Keys MUST match exactly with part names in products_xcmg.ts
+// Keys use English part names as they appear in products_xcmg.ts
 
 export const xcmgNameTranslations: Record<string, Record<string, string>> = {
   'Hydraulic Oil Filter': {
@@ -11,73 +11,73 @@ export const xcmgNameTranslations: Record<string, Record<string, string>> = {
   'Hydraulic Return Oil Filter': {
     en: 'Hydraulic Return Oil Filter', zh: '液压回油滤芯', es: 'Filtro de Aceite de Retorno Hidráulico', fr: 'Filtre à Huile de Retour Hydraulique', de: 'Hydraulik-Rücklaufölfilter', pt: 'Filtro de Óleo de Retorno Hidráulico', ru: 'Фильтр гидравлического масла обратного потока', ja: '油圧リターンオイルフィルター', ar: 'مرشح الزيت الهيدروليكي العائد', it: 'Filtro olio di ritorno idraulico'
   },
-  'Air Filter套装(内外芯)': {
+  'Air Filter Assembly (Inner and Outer)': {
     en: 'Air Filter Assembly (Inner and Outer)', zh: '空气滤芯套装（内外芯）', es: 'Conjunto de Filtro de Aire (Interior y Exterior)', fr: 'Ensemble de Filtre à Air (Intérieur et Extérieur)', de: 'Luftfilter-Set (Innen und Außen)', pt: 'Conjunto de Filtro de Ar (Interior e Exterior)', ru: 'Комплект воздушного фильтра (внутренний и внешний)', ja: 'エアフィルター組立（内側と外側）', ar: 'مجموعة مرشح الهواء (داخلي وخارجي)', it: 'Insieme filtro aria (interno ed esterno)'
   },
-  'Hydraulic Oil Filter(变体)': {
+  'Hydraulic Oil Filter (Variant)': {
     en: 'Hydraulic Oil Filter (Variant)', zh: '液压油滤芯（变体）', es: 'Filtro de Aceite Hidráulico (Variante)', fr: 'Filtre à Huile Hydraulique (Variante)', de: 'Hydraulikölfilter (Variante)', pt: 'Filtro de Óleo Hidráulico (Variante)', ru: 'Гидравлический масляный фильтр (вариант)', ja: '油圧オイルフィルター（バリアント）', ar: 'مرشح الزيت الهيدروليكي (متغير)', it: 'Filtro olio idraulico (variante)'
   },
   'Oil Filter': {
     en: 'Oil Filter', zh: '油滤芯', es: 'Filtro de Aceite', fr: 'Filtre à Huile', de: 'Ölfilter', pt: 'Filtro de Óleo', ru: 'Масляный фильтр', ja: 'オイルフィルター', ar: 'مرشح الزيت', it: 'Filtro olio'
   },
-  'Air Filter(ZL50)': {
+  'Air Filter (ZL50)': {
     en: 'Air Filter (ZL50)', zh: '空气滤芯（ZL50）', es: 'Filtro de Aire (ZL50)', fr: 'Filtre à Air (ZL50)', de: 'Luftfilter (ZL50)', pt: 'Filtro de Ar (ZL50)', ru: 'Воздушный фильтр (ZL50)', ja: 'エアフィルター (ZL50)', ar: 'مرشح الهواء (ZL50)', it: 'Filtro aria (ZL50)'
   },
-  'Oil Filter(带锁止阀)': {
+  'Oil Filter (with Lock Valve)': {
     en: 'Oil Filter (with Lock Valve)', zh: '油滤芯（带锁止阀）', es: 'Filtro de Aceite (con Válvula de Bloqueo)', fr: 'Filtre à Huile (avec Soupape de Verrouillage)', de: 'Ölfilter (mit Sperrventil)', pt: 'Filtro de Óleo (com Válvula de Bloqueio)', ru: 'Масляный фильтр (с запорным клапаном)', ja: 'オイルフィルター（ロック弁付き）', ar: 'مرشح الزيت (مع صمام القفل)', it: 'Filtro olio (con valvola di blocco)'
   },
-  'Hydraulic Oil Filter(型号2)': {
+  'Hydraulic Oil Filter (Model 2)': {
     en: 'Hydraulic Oil Filter (Model 2)', zh: '液压油滤芯（型号2）', es: 'Filtro de Aceite Hidráulico (Modelo 2)', fr: 'Filtre à Huile Hydraulique (Modèle 2)', de: 'Hydraulikölfilter (Modell 2)', pt: 'Filtro de Óleo Hidráulico (Modelo 2)', ru: 'Гидравлический масляный фильтр (модель 2)', ja: '油圧オイルフィルター（モデル2）', ar: 'مرشح الزيت الهيدروليكي (نموذج 2)', it: 'Filtro olio idraulico (modello 2)'
   },
-  '水温传感器': {
+  'Water Temperature Sensor': {
     en: 'Water Temperature Sensor', zh: '水温传感器', es: 'Sensor de Temperatura del Agua', fr: 'Capteur de Température de l\'Eau', de: 'Wassertemperatursensor', pt: 'Sensor de Temperatura da Água', ru: 'Датчик температуры воды', ja: '水温センサー', ar: 'مستشعر درجة حرارة الماء', it: 'Sensore di temperatura dell\'acqua'
   },
-  '铲斗斗齿': {
+  'Bucket Teeth': {
     en: 'Bucket Teeth', zh: '铲斗斗齿', es: 'Dientes del Cucharón', fr: 'Dents de Godet', de: 'Schauffelzähne', pt: 'Dentes do Balde', ru: 'Зубья ковша', ja: 'バケット歯', ar: 'أسنان الدلو', it: 'Denti del secchio'
   },
-  '右侧斗齿': {
+  'Right Bucket Tooth': {
     en: 'Right Bucket Tooth', zh: '右侧斗齿', es: 'Diente del Cucharón Derecho', fr: 'Dent de Godet Droit', de: 'Rechter Schauffelzahn', pt: 'Dente do Balde Direito', ru: 'Правый зуб ковша', ja: '右側バケット歯', ar: 'سن الدلو الأيمن', it: 'Dente del secchio destro'
   },
-  '左侧斗齿': {
+  'Left Bucket Tooth': {
     en: 'Left Bucket Tooth', zh: '左侧斗齿', es: 'Diente del Cucharón Izquierdo', fr: 'Dent de Godet Gauche', de: 'Linker Schauffelzahn', pt: 'Dente do Balde Esquerdo', ru: 'Левый зуб ковша', ja: '左側バケット歯', ar: 'سن الدلو الأيسر', it: 'Dente del secchio sinistro'
   },
-  '斗齿座(Tooth Holder)': {
+  'Bucket Tooth Seat': {
     en: 'Bucket Tooth Seat', zh: '斗齿座', es: 'Asiento de Diente del Cucharón', fr: 'Siège de Dent de Godet', de: 'Schauffelzahnsitz', pt: 'Assento de Dente do Balde', ru: 'Гнездо зуба ковша', ja: 'バケット歯シート', ar: 'مقعد سن الدلو', it: 'Sede del dente del secchio'
   },
-  '变速箱总成(带变矩器)': {
+  'Transmission Assembly': {
     en: 'Transmission Assembly', zh: '变速箱总成（带变矩器）', es: 'Conjunto de Transmisión', fr: 'Ensemble de Transmission', de: 'Getriebeeinheit', pt: 'Conjunto de Transmissão', ru: 'Узел коробки передач', ja: 'トランスミッション組立', ar: 'مجموعة ناقل الحركة', it: 'Insieme della trasmissione'
   },
-  '变速箱控制阀(变速阀)': {
+  'Transmission Control Valve': {
     en: 'Transmission Control Valve', zh: '变速箱控制阀', es: 'Válvula de Control de Transmisión', fr: 'Soupape de Contrôle de Transmission', de: 'Getriebesteuerventil', pt: 'Válvula de Controle de Transmissão', ru: 'Управляющий клапан коробки передач', ja: 'トランスミッション制御弁', ar: 'صمام التحكم في ناقل الحركة', it: 'Valvola di controllo della trasmissione'
   },
-  '变速箱倒挡活塞': {
+  'Transmission Reverse Piston': {
     en: 'Transmission Reverse Piston', zh: '变速箱倒挡活塞', es: 'Pistón de Marcha Atrás de Transmisión', fr: 'Piston de Marche Arrière de Transmission', de: 'Rückwärtsgang-Kolben des Getriebes', pt: 'Pistão de Marcha Atrás da Transmissão', ru: 'Поршень заднего хода коробки передач', ja: 'トランスミッション後進ピストン', ar: 'مكبس الحركة للخلف للنقل', it: 'Pistone di retromarcia della trasmissione'
   },
-  '驱动桥半轴齿轮(差速器齿轮)': {
+  'Drive Axle Differential Gear': {
     en: 'Drive Axle Differential Gear', zh: '驱动桥半轴齿轮', es: 'Engranaje Diferencial del Eje de Accionamiento', fr: 'Engrenage Différentiel de l\'Essieu de Transmission', de: 'Antriebsachsen-Differentialgetriebe', pt: 'Engrenagem Diferencial do Eixo de Acionamento', ru: 'Дифференциальное колесо приводного моста', ja: 'ドライブアクスル ディファレンシャル ギア', ar: 'ترس التفاضل لمحور القيادة', it: 'Ingranaggio differenziale dell\'asse di trasmissione'
   },
-  '工作液压泵': {
+  'Working Hydraulic Pump': {
     en: 'Working Hydraulic Pump', zh: '工作液压泵', es: 'Bomba Hidráulica de Trabajo', fr: 'Pompe Hydraulique de Travail', de: 'Arbeitshydraulikpumpe', pt: 'Bomba Hidráulica de Trabalho', ru: 'Рабочий гидравлический насос', ja: '作業用油圧ポンプ', ar: 'مضخة هيدروليكية عاملة', it: 'Pompa idraulica di lavoro'
   },
-  '刹车片(SOMA制动衬片)': {
+  'Brake Pads': {
     en: 'Brake Pads', zh: '刹车片', es: 'Pastillas de Freno', fr: 'Plaquettes de Frein', de: 'Bremsbeläge', pt: 'Pastilhas de Freio', ru: 'Тормозные колодки', ja: 'ブレーキパッド', ar: 'وسادات الفرامل', it: 'Pastiglie freno'
   },
-  '制动盘(刹车盘)': {
+  'Brake Disc': {
     en: 'Brake Disc', zh: '制动盘', es: 'Disco de Freno', fr: 'Disque de Frein', de: 'Bremsscheibe', pt: 'Disco de Freio', ru: 'Тормозной диск', ja: 'ブレーキディスク', ar: 'قرص الفرامل', it: 'Disco freno'
   },
-  '手刹阀': {
+  'Parking Brake Valve': {
     en: 'Parking Brake Valve', zh: '手刹阀', es: 'Válvula de Freno de Estacionamiento', fr: 'Soupape de Frein de Stationnement', de: 'Feststellbremsenventil', pt: 'Válvula de Freio de Estacionamento', ru: 'Клапан стояночного тормоза', ja: 'パーキングブレーキバルブ', ar: 'صمام الفرامل', it: 'Valvola freno di stazionamento'
   },
-  '手刹鼓(制动鼓)': {
+  'Brake Drum': {
     en: 'Brake Drum', zh: '手刹鼓', es: 'Tambor de Freno', fr: 'Tambour de Frein', de: 'Bremstrommel', pt: 'Tambor de Freio', ru: 'Тормозной барабан', ja: 'ブレーキドラム', ar: 'أسطوانة الفرامل', it: 'Tamburo freno'
   },
-  '唇形油封': {
+  'Lip Seal Ring': {
     en: 'Lip Seal Ring', zh: '唇形油封', es: 'Sello de Labios', fr: 'Joint à Lèvres', de: 'Lippendichtung', pt: 'Anel de Vedação de Lábios', ru: 'Кольцевое уплотнение с губой', ja: 'リップシール', ar: 'حلقة الختم الشفاه', it: 'Anello di tenuta a labbro'
   },
-  '万向节联轴器': {
+  'Universal Joint Coupling': {
     en: 'Universal Joint Coupling', zh: '万向节联轴器', es: 'Acoplamiento de Junta Universal', fr: 'Accouplement à Cardan', de: 'Kardangelenkkupplung', pt: 'Acoplamento de Junta Universal', ru: 'Муфта универсального шарнира', ja: 'ユニバーサルジョイント カップリング', ar: 'مقرن المفصل الكروي', it: 'Accoppiamento giunto cardanico'
   },
-  '溢流阀(继动阀)': {
+  'Relief Valve': {
     en: 'Relief Valve', zh: '溢流阀', es: 'Válvula de Alivio', fr: 'Soupape de Décharge', de: 'Überdruckventil', pt: 'Válvula de Alívio', ru: 'Предохранительный клапан', ja: 'リリーフバルブ', ar: 'صمام الإغاثة', it: 'Valvola di scarico'
   },
 };
@@ -142,6 +142,78 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     ja: 'XCMG油圧システム用油圧リターンオイルフィルター。500-1000時間ごとに交換。',
     ar: 'مرشح الزيت الهيدروليكي العائد لنظام XCMG الهيدروليكي. استبدل كل 500-1000 ساعة.',
     it: 'Filtro olio di ritorno idraulico per il sistema idraulico XCMG. Sostituire ogni 500-1000 ore.'
+  },
+  'Air Filter Assembly (Inner and Outer)': {
+    en: 'Air filter assembly including inner and outer elements for XCMG engines. Replace every 250-500 hours.',
+    zh: 'XCMG发动机空气滤芯套装（内外芯）。每250-500小时更换。',
+    es: 'Conjunto de filtro de aire con elementos interno y externo para motores XCMG. Reemplazar cada 250-500 horas.',
+    fr: 'Ensemble de filtre à air avec éléments intérieur et extérieur pour moteurs XCMG. Remplacer tous les 250-500 heures.',
+    de: 'Luftfilter-Set mit inneren und äußeren Elementen für XCMG-Motoren. Alle 250-500 Stunden wechseln.',
+    pt: 'Conjunto de filtro de ar com elementos interno e externo para motores XCMG. Substituir a cada 250-500 horas.',
+    ru: 'Комплект воздушного фильтра с внутренним и внешним элементами для двигателей XCMG. Заменяйте каждые 250-500 часов.',
+    ja: 'XCMG エンジン用エアフィルター組立（内側と外側）。250-500時間ごとに交換。',
+    ar: 'مجموعة مرشح الهواء مع العناصر الداخلية والخارجية لمحركات XCMG. استبدل كل 250-500 ساعة.',
+    it: 'Insieme filtro aria con elementi interno ed esterno per motori XCMG. Sostituire ogni 250-500 ore.'
+  },
+  'Hydraulic Oil Filter (Variant)': {
+    en: 'Variant hydraulic oil filter for specific XCMG models. Replace every 500-1000 hours.',
+    zh: 'XCMG特定型号液压油滤芯（变体）。每500-1000小时更换。',
+    es: 'Filtro de aceite hidráulico variante para modelos específicos de XCMG. Reemplazar cada 500-1000 horas.',
+    fr: 'Filtre à huile hydraulique variante pour modèles spécifiques de XCMG. Remplacer tous les 500-1000 heures.',
+    de: 'Varianten-Hydraulikölfilter für spezifische XCMG-Modelle. Alle 500-1000 Stunden wechseln.',
+    pt: 'Filtro de óleo hidráulico variante para modelos específicos de XCMG. Substituir a cada 500-1000 horas.',
+    ru: 'Вариант гидравлического масляного фильтра для конкретных моделей XCMG. Заменяйте каждые 500-1000 часов.',
+    ja: 'XCMG特定モデル用油圧オイルフィルター（バリアント）。500-1000時間ごとに交換。',
+    ar: 'مرشح الزيت الهيدروليكي المتغير لنماذج XCMG المحددة. استبدل كل 500-1000 ساعة.',
+    it: 'Filtro olio idraulico variante per modelli specifici di XCMG. Sostituire ogni 500-1000 ore.'
+  },
+  'Oil Filter': {
+    en: 'Engine oil filter for XCMG equipment. Replace every 250-500 hours.',
+    zh: 'XCMG设备发动机油滤芯。每250-500小时更换。',
+    es: 'Filtro de aceite del motor para equipos XCMG. Reemplazar cada 250-500 horas.',
+    fr: 'Filtre à huile moteur pour équipements XCMG. Remplacer tous les 250-500 heures.',
+    de: 'Motorölfilter für XCMG-Ausrüstung. Alle 250-500 Stunden wechseln.',
+    pt: 'Filtro de óleo do motor para equipamentos XCMG. Substituir a cada 250-500 horas.',
+    ru: 'Масляный фильтр двигателя для оборудования XCMG. Заменяйте каждые 250-500 часов.',
+    ja: 'XCMG設備用エンジンオイルフィルター。250-500時間ごとに交換。',
+    ar: 'مرشح زيت المحرك لمعدات XCMG. استبدل كل 250-500 ساعة.',
+    it: 'Filtro olio motore per attrezzature XCMG. Sostituire ogni 250-500 ore.'
+  },
+  'Air Filter (ZL50)': {
+    en: 'Air filter for XCMG ZL50 wheel loader. Replace every 250-500 hours.',
+    zh: 'XCMG ZL50轮式装载机空气滤芯。每250-500小时更换。',
+    es: 'Filtro de aire para cargadora de ruedas XCMG ZL50. Reemplazar cada 250-500 horas.',
+    fr: 'Filtre à air pour chargeuse sur pneus XCMG ZL50. Remplacer tous les 250-500 heures.',
+    de: 'Luftfilter für XCMG ZL50 Radlader. Alle 250-500 Stunden wechseln.',
+    pt: 'Filtro de ar para carregadeira de rodas XCMG ZL50. Substituir a cada 250-500 horas.',
+    ru: 'Воздушный фильтр для колесного погрузчика XCMG ZL50. Заменяйте каждые 250-500 часов.',
+    ja: 'XCMG ZL50ホイールローダー用エアフィルター。250-500時間ごとに交換。',
+    ar: 'مرشح الهواء لمحمل العجلات XCMG ZL50. استبدل كل 250-500 ساعة.',
+    it: 'Filtro aria per caricatore gommato XCMG ZL50. Sostituire ogni 250-500 ore.'
+  },
+  'Oil Filter (with Lock Valve)': {
+    en: 'Oil filter with lock valve for XCMG equipment. Replace every 250-500 hours.',
+    zh: 'XCMG设备带锁止阀油滤芯。每250-500小时更换。',
+    es: 'Filtro de aceite con válvula de bloqueo para equipos XCMG. Reemplazar cada 250-500 horas.',
+    fr: 'Filtre à huile avec soupape de verrouillage pour équipements XCMG. Remplacer tous les 250-500 heures.',
+    de: 'Ölfilter mit Sperrventil für XCMG-Ausrüstung. Alle 250-500 Stunden wechseln.',
+    pt: 'Filtro de óleo com válvula de bloqueio para equipamentos XCMG. Substituir a cada 250-500 horas.',
+    ru: 'Масляный фильтр с запорным клапаном для оборудования XCMG. Заменяйте каждые 250-500 часов.',
+    ja: 'XCMG設備用ロック弁付きオイルフィルター。250-500時間ごとに交換。',
+    ar: 'مرشح الزيت مع صمام القفل لمعدات XCMG. استبدل كل 250-500 ساعة.',
+    it: 'Filtro olio con valvola di blocco per attrezzature XCMG. Sostituire ogni 250-500 ore.'
+  },
+  'Hydraulic Oil Filter (Model 2)': {
+    en: 'Hydraulic oil filter model 2 for XCMG equipment. Replace every 500-1000 hours.',
+    zh: 'XCMG设备液压油滤芯（型号2）。每500-1000小时更换。',
+    es: 'Filtro de aceite hidráulico modelo 2 para equipos XCMG. Reemplazar cada 500-1000 horas.',
+    fr: 'Filtre à huile hydraulique modèle 2 pour équipements XCMG. Remplacer tous les 500-1000 heures.',
+    de: 'Hydraulikölfilter Modell 2 für XCMG-Ausrüstung. Alle 500-1000 Stunden wechseln.',
+    pt: 'Filtro de óleo hidráulico modelo 2 para equipamentos XCMG. Substituir a cada 500-1000 horas.',
+    ru: 'Гидравлический масляный фильтр модель 2 для оборудования XCMG. Заменяйте каждые 500-1000 часов.',
+    ja: 'XCMG設備用油圧オイルフィルター モデル2。500-1000時間ごとに交換。',
+    ar: 'مرشح الزيت الهيدروليكي نموذج 2 لمعدات XCMG. استبدل كل 500-1000 ساعة.',
+    it: 'Filtro olio idraulico modello 2 per attrezzature XCMG. Sostituire ogni 500-1000 ore.'
   },
   'Water Temperature Sensor': {
     en: 'Water temperature sensor for XCMG engine cooling system. Inspect every 500-1000 hours.',
@@ -219,7 +291,7 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     en: 'Transmission control valve for XCMG equipment. Replace when shifting is difficult.',
     zh: 'XCMG设备变速箱控制阀。变速困难时更换。',
     es: 'Válvula de control de transmisión para equipos XCMG. Reemplazar cuando el cambio sea difícil.',
-    fr: 'Soupape de contrôle de transmission pour équipements XCMG. Remplacer en cas de changement difficile.',
+    fr: 'Soupape de contrôle de transmission pour équipements XCMG. Remplacer en cas de changement difícil.',
     de: 'Getriebesteuerventil für XCMG-Ausrüstung. Wechseln bei schwierigem Schalten.',
     pt: 'Válvula de controle de transmissão para equipamentos XCMG. Substituir quando a mudança for difícil.',
     ru: 'Управляющий клапан коробки передач для оборудования XCMG. Заменяйте при затруднении переключения.',
@@ -349,74 +421,8 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   },
 };
 
-// Map part names to their description keys for easier lookup
-export const xcmgPartNameToDescriptionKey: Record<string, string> = {
-  'Hydraulic Oil Filter': 'Hydraulic Oil Filter',
-  'Air Filter': 'Air Filter',
-  'Hydraulic Return Oil Filter': 'Hydraulic Return Oil Filter',
-  'Air Filter套装(内外芯)': 'Air Filter',
-  'Hydraulic Oil Filter(变体)': 'Hydraulic Oil Filter',
-  'Oil Filter': 'Hydraulic Oil Filter',
-  'Air Filter(ZL50)': 'Air Filter',
-  'Oil Filter(带锁止阀)': 'Hydraulic Oil Filter',
-  'Hydraulic Oil Filter(型号2)': 'Hydraulic Oil Filter',
-  '水温传感器': 'Water Temperature Sensor',
-  '铲斗斗齿': 'Bucket Teeth',
-  '右侧斗齿': 'Right Bucket Tooth',
-  '左侧斗齿': 'Left Bucket Tooth',
-  '斗齿座(Tooth Holder)': 'Bucket Tooth Seat',
-  '变速箱总成(带变矩器)': 'Transmission Assembly',
-  '变速箱控制阀(变速阀)': 'Transmission Control Valve',
-  '变速箱倒挡活塞': 'Transmission Reverse Piston',
-  '驱动桥半轴齿轮(差速器齿轮)': 'Drive Axle Differential Gear',
-  '工作液压泵': 'Working Hydraulic Pump',
-  '刹车片(SOMA制动衬片)': 'Brake Pads',
-  '制动盘(刹车盘)': 'Brake Disc',
-  '手刹阀': 'Parking Brake Valve',
-  '手刹鼓(制动鼓)': 'Brake Drum',
-  '唇形油封': 'Lip Seal Ring',
-  '万向节联轴器': 'Universal Joint Coupling',
-  '溢流阀(继动阀)': 'Relief Valve',
-};
-
-// Map English part names to Chinese-English mixed names used in products_xcmg.ts
-const englishToMixedNameMap: Record<string, string> = {
-  'Air Filter Assembly (Inner and Outer)': 'Air Filter套装(内外芯)',
-  'Hydraulic Oil Filter (Variant)': 'Hydraulic Oil Filter(变体)',
-  'Air Filter (ZL50)': 'Air Filter(ZL50)',
-  'Oil Filter (with Lock Valve)': 'Oil Filter(带锁止阀)',
-  'Hydraulic Oil Filter (Model 2)': 'Hydraulic Oil Filter(型号2)',
-  'Water Temperature Sensor': '水温传感器',
-  'Bucket Teeth': '铲斗斗齿',
-  'Right Bucket Tooth': '右侧斗齿',
-  'Left Bucket Tooth': '左侧斗齿',
-  'Bucket Tooth Seat': '斗齿座(Tooth Holder)',
-  'Transmission Assembly': '变速箱总成(带变矩器)',
-  'Transmission Control Valve': '变速箱控制阀(变速阀)',
-  'Transmission Reverse Piston': '变速箱倒挡活塞',
-  'Drive Axle Differential Gear': '驱动桥半轴齿轮(差速器齿轮)',
-  'Working Hydraulic Pump': '工作液压泵',
-  'Brake Pads': '刹车片(SOMA制动衬片)',
-  'Brake Disc': '制动盘(刹车盘)',
-  'Parking Brake Valve': '手刹阀',
-  'Brake Drum': '手刹鼓(制动鼓)',
-  'Lip Seal Ring': '唇形油封',
-  'Universal Joint Coupling': '万向节联轴器',
-  'Relief Valve': '溢流阀(继动阀)',
-};
-
 export function getTranslatedXCMGSparePartName(name: string, language: string = 'zh'): string {
-  // First try to find the name directly
-  let translations = xcmgNameTranslations[name as keyof typeof xcmgNameTranslations];
-  
-  // If not found, try to map English name to mixed name
-  if (!translations) {
-    const mixedName = englishToMixedNameMap[name as keyof typeof englishToMixedNameMap];
-    if (mixedName) {
-      translations = xcmgNameTranslations[mixedName as keyof typeof xcmgNameTranslations];
-    }
-  }
-  
+  const translations = xcmgNameTranslations[name as keyof typeof xcmgNameTranslations];
   return translations?.[language as keyof typeof translations] || name;
 }
 
@@ -426,16 +432,6 @@ export function getTranslatedXCMGSparePartCategory(category: string, language: s
 }
 
 export function getTranslatedXCMGSparePartDescription(partName: string, language: string = 'zh'): string {
-  // First try to find the part name directly
-  let translations = xcmgDescriptionTranslations[partName as keyof typeof xcmgDescriptionTranslations];
-  
-  // If not found, try to map the part name to a description key
-  if (!translations) {
-    const descriptionKey = xcmgPartNameToDescriptionKey[partName as keyof typeof xcmgPartNameToDescriptionKey];
-    if (descriptionKey) {
-      translations = xcmgDescriptionTranslations[descriptionKey as keyof typeof xcmgDescriptionTranslations];
-    }
-  }
-  
+  const translations = xcmgDescriptionTranslations[partName as keyof typeof xcmgDescriptionTranslations];
   return translations?.[language as keyof typeof translations] || partName;
 }
