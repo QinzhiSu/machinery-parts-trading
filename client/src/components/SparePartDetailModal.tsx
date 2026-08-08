@@ -25,6 +25,20 @@ interface SparePartDetailModalProps {
   brandId: string;
 }
 
+// Import category translation functions
+import { getTranslatedCaterpillarSparePartCategory } from '@/data/sparePartsTranslations_caterpillar';
+import { getTranslatedShantuiSparePartCategory } from '@/data/sparePartsTranslations_shantui';
+import { getTranslatedXCMGSparePartCategory } from '@/data/sparePartsTranslations_xcmg';
+import { getTranslatedLiuGongSparePartCategory } from '@/data/sparePartsTranslations_liugong';
+import { getTranslatedSANYSparePartCategory } from '@/data/sparePartsTranslations_sany';
+import { getTranslatedKomatsuSparePartCategory } from '@/data/sparePartsTranslations_komatsu';
+import { getTranslatedIsuzuSparePartCategory } from '@/data/sparePartsTranslations_isuzu';
+import { getTranslatedShacmanSparePartCategory } from '@/data/sparePartsTranslations_shacman';
+import { getTranslatedSinotrukSparePartCategory } from '@/data/sparePartsTranslations_sinotruk';
+import { getTranslatedToyotaSparePartCategory } from '@/data/sparePartsTranslations_toyota';
+import { getTranslatedCumminsSparePartCategory } from '@/data/sparePartsTranslations_cummins';
+import { getTranslatedWeichaiSparePartCategory } from '@/data/sparePartsTranslations_weichai';
+
 // Map brand IDs to their translation functions
 const brandDetailsMap: Record<string, (partName: string, language: string) => string> = {
   caterpillar: getTranslatedCaterpillarSparePartDetails,
@@ -39,6 +53,22 @@ const brandDetailsMap: Record<string, (partName: string, language: string) => st
   toyota: getTranslatedToyotaSparePartDetails,
   cummins: getTranslatedCumminsSparePartDetails,
   weichai: getTranslatedWeichaiSparePartDetails,
+};
+
+// Map brand IDs to their category translation functions
+const brandCategoryMap: Record<string, (category: string, language: string) => string> = {
+  caterpillar: getTranslatedCaterpillarSparePartCategory,
+  shantui: getTranslatedShantuiSparePartCategory,
+  xcmg: getTranslatedXCMGSparePartCategory,
+  liugong: getTranslatedLiuGongSparePartCategory,
+  sany: getTranslatedSANYSparePartCategory,
+  komatsu: getTranslatedKomatsuSparePartCategory,
+  isuzu: getTranslatedIsuzuSparePartCategory,
+  shacman: getTranslatedShacmanSparePartCategory,
+  sinotruk: getTranslatedSinotrukSparePartCategory,
+  toyota: getTranslatedToyotaSparePartCategory,
+  cummins: getTranslatedCumminsSparePartCategory,
+  weichai: getTranslatedWeichaiSparePartCategory,
 };
 
 export function SparePartDetailModal({
@@ -154,7 +184,12 @@ export function SparePartDetailModal({
             <h3 className="text-sm font-semibold text-gray-600 mb-2">
               {t('category', categoryLabel)}
             </h3>
-            <p className="text-base">{part.category}</p>
+            <p className="text-base">
+              {(() => {
+                const getCategoryForBrand = brandCategoryMap[brandId];
+                return getCategoryForBrand ? getCategoryForBrand(part.category, language) : part.category;
+              })()}
+            </p>
           </div>
 
           {/* Description */}
