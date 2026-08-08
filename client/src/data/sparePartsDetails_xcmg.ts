@@ -1,5 +1,6 @@
 // XCMG Spare Parts Details Translations
 // Provides detailed descriptions for each spare part in 10 languages
+// Keys must match exactly with part names in products_xcmg.ts
 
 export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
   'Hydraulic Oil Filter': {
@@ -38,7 +39,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مرشح الزيت الهيدروليكي العائد لمعدات XCMG. استبدل كل 500-1000 ساعة.',
     it: 'Filtro olio di ritorno idraulico per apparecchiature XCMG. Sostituire ogni 500-1000 ore.'
   },
-  'Air Filter Assembly (Inner and Outer)': {
+  'Air Filter套装(内外芯)': {
     en: 'Complete air filter assembly with inner and outer elements for XCMG engines. Replace every 250-500 hours or based on dust environment.',
     zh: '包含内外滤芯的XCMG发动机完整空气滤芯总成。每250-500小时更换或根据粉尘环境更换。',
     es: 'Conjunto completo de filtro de aire con elementos interior y exterior para motores XCMG. Reemplazar cada 250-500 horas o según el ambiente de polvo.',
@@ -50,7 +51,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مجموعة فلتر هواء كاملة مع عناصر داخلية وخارجية لمحركات XCMG. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.',
     it: 'Insieme completo del filtro aria con elementi interni ed esterni per i motori XCMG. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.'
   },
-  'Hydraulic Oil Filter (Variant)': {
+  'Hydraulic Oil Filter(变体)': {
     en: 'Variant hydraulic oil filter for XCMG equipment. Replace every 500-1000 hours.',
     zh: 'XCMG设备变体液压油滤芯。每500-1000小时更换。',
     es: 'Filtro de aceite hidráulico variante para equipos XCMG. Reemplazar cada 500-1000 horas.',
@@ -74,7 +75,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مرشح زيت المحرك لمعدات XCMG. استبدل كل 250-500 ساعة أو بناءً على جودة الوقود.',
     it: 'Filtro olio motore per apparecchiature XCMG. Sostituire ogni 250-500 ore o in base alla qualità del carburante.'
   },
-  'Air Filter (ZL50)': {
+  'Air Filter(ZL50)': {
     en: 'Air filter for XCMG ZL50 wheel loader. Replace every 250-500 hours or based on dust environment.',
     zh: 'XCMG ZL50轮式装载机空气滤芯。每250-500小时更换或根据粉尘环境更换。',
     es: 'Filtro de aire para cargador de ruedas XCMG ZL50. Reemplazar cada 250-500 horas o según el ambiente de polvo.',
@@ -86,7 +87,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مرشح الهواء لمحمل عجلات XCMG ZL50. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.',
     it: 'Filtro aria per caricatore gommato XCMG ZL50. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.'
   },
-  'Oil Filter (with Lock Valve)': {
+  'Oil Filter(带锁止阀)': {
     en: 'Oil filter with lock valve for XCMG equipment. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '带锁止阀的XCMG设备油滤芯。每500-1000小时更换或根据液体分析结果更换。',
     es: 'Filtro de aceite con válvula de bloqueo para equipos XCMG. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
@@ -98,7 +99,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مرشح الزيت مع صمام القفل لمعدات XCMG. استبدل كل 500-1000 ساعة أو بناءً على نتائج تحليل السوائل.',
     it: 'Filtro olio con valvola di blocco per apparecchiature XCMG. Sostituire ogni 500-1000 ore o in base ai risultati dell\'analisi dei fluidi.'
   },
-  'Hydraulic Oil Filter (Model 2)': {
+  'Hydraulic Oil Filter(型号2)': {
     en: 'Hydraulic oil filter model 2 for XCMG equipment. Replace every 500-1000 hours.',
     zh: 'XCMG设备液压油滤芯型号2。每500-1000小时更换。',
     es: 'Filtro de aceite hidráulico modelo 2 para equipos XCMG. Reemplazar cada 500-1000 horas.',
@@ -110,7 +111,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مرشح الزيت الهيدروليكي النموذج 2 لمعدات XCMG. استبدل كل 500-1000 ساعة.',
     it: 'Filtro olio idraulico modello 2 per apparecchiature XCMG. Sostituire ogni 500-1000 ore.'
   },
-  'Water Temperature Sensor': {
+  '水温传感器': {
     en: 'Water temperature sensor for XCMG engines. Inspect every 500-1000 hours.',
     zh: 'XCMG发动机水温传感器。每500-1000小时检查。',
     es: 'Sensor de temperatura del agua para motores XCMG. Inspeccionar cada 500-1000 horas.',
@@ -122,7 +123,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مستشعر درجة حرارة الماء لمحركات XCMG. تفقد كل 500-1000 ساعة.',
     it: 'Sensore di temperatura dell\'acqua per motori XCMG. Ispezionare ogni 500-1000 ore.'
   },
-  'Bucket Teeth': {
+  '铲斗斗齿': {
     en: 'Bucket teeth for XCMG excavators. Replace synchronously every time teeth are replaced.',
     zh: 'XCMG挖掘机斗齿。每次更换斗齿时同步更换。',
     es: 'Dientes del cucharón para excavadoras XCMG. Reemplazar sincrónicamente cada vez que se reemplazan los dientes.',
@@ -134,7 +135,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'أسنان الدلو لحفارات XCMG. استبدل بشكل متزامن في كل مرة يتم استبدال الأسنان.',
     it: 'Denti del secchio per escavatori XCMG. Sostituire sincronicamente ogni volta che i denti vengono sostituiti.'
   },
-  'Right Bucket Tooth': {
+  '右侧斗齿': {
     en: 'Right bucket tooth for XCMG excavators. Replace when worn to bottom or broken.',
     zh: 'XCMG挖掘机右侧斗齿。当磨损到底部或断裂时更换。',
     es: 'Diente del cucharón derecho para excavadoras XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
@@ -146,7 +147,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'سن الدلو الأيمن لحفارات XCMG. استبدل عند التآكل حتى القاع أو الكسر.',
     it: 'Dente del secchio destro per escavatori XCMG. Sostituire quando usurato fino al fondo o rotto.'
   },
-  'Left Bucket Tooth': {
+  '左侧斗齿': {
     en: 'Left bucket tooth for XCMG excavators. Replace when worn to bottom or broken.',
     zh: 'XCMG挖掘机左侧斗齿。当磨损到底部或断裂时更换。',
     es: 'Diente del cucharón izquierdo para excavadoras XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
@@ -158,7 +159,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'سن الدلو الأيسر لحفارات XCMG. استبدل عند التآكل حتى القاع أو الكسر.',
     it: 'Dente del secchio sinistro per escavatori XCMG. Sostituire quando usurato fino al fondo o rotto.'
   },
-  'Bucket Tooth Seat': {
+  '斗齿座(Tooth Holder)': {
     en: 'Bucket tooth seat for XCMG excavators. Replace when worn to bottom or broken.',
     zh: 'XCMG挖掘机斗齿座。当磨损到底部或断裂时更换。',
     es: 'Asiento de diente del cucharón para excavadoras XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
@@ -170,7 +171,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مقعد سن الدلو لحفارات XCMG. استبدل عند التآكل حتى القاع أو الكسر.',
     it: 'Sede del dente del secchio per escavatori XCMG. Sostituire quando usurato fino al fondo o rotto.'
   },
-  'Transmission Assembly': {
+  '变速箱总成(带变矩器)': {
     en: 'Transmission assembly for XCMG equipment. Replace when abnormal shifting occurs.',
     zh: 'XCMG设备变速箱总成。当出现异常换档时更换。',
     es: 'Conjunto de transmisión para equipos XCMG. Reemplazar cuando se produce un cambio anormal.',
@@ -182,7 +183,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مجموعة ناقل الحركة لمعدات XCMG. استبدل عند حدوث تحول غير طبيعي.',
     it: 'Insieme della trasmissione per apparecchiature XCMG. Sostituire quando si verifica uno spostamento anormale.'
   },
-  'Transmission Control Valve': {
+  '变速箱控制阀(变速阀)': {
     en: 'Transmission control valve for XCMG equipment. Replace when shifting is difficult or slipping occurs.',
     zh: 'XCMG设备变速箱控制阀。当换档困难或打滑时更换。',
     es: 'Válvula de control de transmisión para equipos XCMG. Reemplazar cuando el cambio es difícil o se produce deslizamiento.',
@@ -194,7 +195,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'صمام التحكم في ناقل الحركة لمعدات XCMG. استبدل عند صعوبة التحول أو حدوث انزلاق.',
     it: 'Valvola di controllo della trasmissione per apparecchiature XCMG. Sostituire quando lo spostamento è difficile o si verifica slittamento.'
   },
-  'Transmission Reverse Piston': {
+  '变速箱倒挡活塞': {
     en: 'Transmission reverse piston for XCMG equipment. Replace when abnormal shifting occurs.',
     zh: 'XCMG设备变速箱倒挡活塞。当出现异常换档时更换。',
     es: 'Pistón de marcha atrás de la transmisión para equipos XCMG. Reemplazar cuando se produce un cambio anormal.',
@@ -206,7 +207,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مكبس عكس ناقل الحركة لمعدات XCMG. استبدل عند حدوث تحول غير طبيعي.',
     it: 'Pistone di marcia indietro della trasmissione per apparecchiature XCMG. Sostituire quando si verifica uno spostamento anormale.'
   },
-  'Drive Axle Differential Gear': {
+  '驱动桥半轴齿轮(差速器齿轮)': {
     en: 'Drive axle differential gear for XCMG equipment. Replace during major repair or when abnormal noise occurs.',
     zh: 'XCMG设备驱动桥差速齿轮。在大修期间或出现异常噪音时更换。',
     es: 'Engranaje diferencial del eje motriz para equipos XCMG. Reemplazar durante reparación mayor o cuando se produce ruido anormal.',
@@ -218,7 +219,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'ترس الفارق للمحور الدافع لمعدات XCMG. استبدل أثناء الإصلاح الرئيسي أو عند حدوث ضوضاء غير طبيعية.',
     it: 'Ingranaggio differenziale dell\'asse motore per apparecchiature XCMG. Sostituire durante riparazioni importanti o quando si verifica rumore anormale.'
   },
-  'Working Hydraulic Pump': {
+  '工作液压泵': {
     en: 'Working hydraulic pump for XCMG equipment. Replace when abnormal noise, insufficient oil supply, or pressure drop occurs.',
     zh: 'XCMG设备工作液压泵。当出现异常噪音、供油不足或压力下降时更换。',
     es: 'Bomba hidráulica de trabajo para equipos XCMG. Reemplazar cuando se produce ruido anormal, suministro insuficiente de aceite o caída de presión.',
@@ -230,7 +231,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'مضخة هيدروليكية عاملة لمعدات XCMG. استبدل عند حدوث ضوضاء غير طبيعية أو نقص في إمدادات الزيت أو انخفاض الضغط.',
     it: 'Pompa idraulica di lavoro per apparecchiature XCMG. Sostituire quando si verifica rumore anormale, fornitura insufficiente di olio o caduta di pressione.'
   },
-  'Brake Pads': {
+  '刹车片(SOMA制动衬片)': {
     en: 'Brake pads for XCMG equipment. Replace every 30,000-50,000 km or based on wear.',
     zh: 'XCMG设备刹车片。每30,000-50,000公里更换或根据磨损情况更换。',
     es: 'Pastillas de freno para equipos XCMG. Reemplazar cada 30,000-50,000 km o según el desgaste.',
@@ -242,11 +243,11 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'وسادات الفرامل لمعدات XCMG. استبدل كل 30,000-50,000 كم أو بناءً على التآكل.',
     it: 'Pastiglie freno per apparecchiature XCMG. Sostituire ogni 30.000-50.000 km o in base all\'usura.'
   },
-  'Brake Disc': {
+  '制动盘(刹车盘)': {
     en: 'Brake disc for XCMG equipment. Replace when worn to bottom or broken.',
     zh: 'XCMG设备制动盘。当磨损到底部或断裂时更换。',
     es: 'Disco de freno para equipos XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
-    fr: 'Disque de frein pour les équipements XCMG. Remplacer lorsqu\'il est usé jusqu\'au fond ou cassé.',
+    fr: 'Disque de freno pour les équipements XCMG. Remplacer lorsqu\'il est usé jusqu\'au fond ou cassé.',
     de: 'Bremsscheibe für XCMG-Ausrüstung. Ersetzen, wenn bis zum Boden abgenutzt oder gebrochen.',
     pt: 'Disco de freio para equipamentos XCMG. Substituir quando desgastado até o fundo ou quebrado.',
     ru: 'Тормозной диск для оборудования XCMG. Заменяйте при износе до дна или поломке.',
@@ -254,7 +255,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'قرص الفرامل لمعدات XCMG. استبدل عند التآكل حتى القاع أو الكسر.',
     it: 'Disco freno per apparecchiature XCMG. Sostituire quando usurato fino al fondo o rotto.'
   },
-  'Parking Brake Valve': {
+  '手刹阀': {
     en: 'Parking brake valve for XCMG equipment. Replace when worn to bottom or broken.',
     zh: 'XCMG设备手刹阀。当磨损到底部或断裂时更换。',
     es: 'Válvula de freno de estacionamiento para equipos XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
@@ -266,7 +267,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'صمام فرامل الانتظار لمعدات XCMG. استبدل عند التآكل حتى القاع أو الكسر.',
     it: 'Valvola freno di stazionamento per apparecchiature XCMG. Sostituire quando usurata fino al fondo o rotta.'
   },
-  'Brake Drum': {
+  '手刹鼓(制动鼓)': {
     en: 'Brake drum for XCMG equipment. Replace when worn to bottom or broken.',
     zh: 'XCMG设备制动鼓。当磨损到底部或断裂时更换。',
     es: 'Tambor de freno para equipos XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
@@ -278,7 +279,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'أسطوانة الفرامل لمعدات XCMG. استبدل عند التآكل حتى القاع أو الكسر.',
     it: 'Tamburo freno per apparecchiature XCMG. Sostituire quando usurato fino al fondo o rotto.'
   },
-  'Lip Seal Ring': {
+  '唇形油封': {
     en: 'Lip seal ring for XCMG equipment. Replace when worn to bottom or broken.',
     zh: 'XCMG设备唇形油封。当磨损到底部或断裂时更换。',
     es: 'Anillo de sello de labio para equipos XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
@@ -290,7 +291,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'حلقة ختم الشفاه لمعدات XCMG. استبدل عند التآكل حتى القاع أو الكسر.',
     it: 'Anello di tenuta a labbro per apparecchiature XCMG. Sostituire quando usurato fino al fondo o rotto.'
   },
-  'Universal Joint Coupling': {
+  '万向节联轴器': {
     en: 'Universal joint coupling for XCMG equipment. Replace when worn to bottom or broken.',
     zh: 'XCMG设备万向节联轴器。当磨损到底部或断裂时更换。',
     es: 'Acoplamiento de junta universal para equipos XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
@@ -302,7 +303,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     ar: 'اقتران المفصل العام لمعدات XCMG. استبدل عند التآكل حتى القاع أو الكسر.',
     it: 'Accoppiamento giunto cardanico per apparecchiature XCMG. Sostituire quando usurato fino al fondo o rotto.'
   },
-  'Relief Valve': {
+  '溢流阀(继动阀)': {
     en: 'Relief valve for XCMG equipment. Replace when worn to bottom or broken.',
     zh: 'XCMG设备溢流阀。当磨损到底部或断裂时更换。',
     es: 'Válvula de alivio para equipos XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
