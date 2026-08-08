@@ -766,7 +766,7 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
   },
   'Turbocharging/Intake System': {
     en: 'Turbocharging/Intake System',
-    zh: 'Turbocharging/进气系统',
+    zh: '涡轮增压/进气系统',
     es: 'Sistema de Sobrealimentación/Admisión',
     fr: 'Système de Suralimentation/Admission',
     de: 'Aufladungs-/Ansaugsystem',
