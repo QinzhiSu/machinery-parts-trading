@@ -1,5 +1,6 @@
 // Auto-generated translations for Sany spare parts
 // DO NOT EDIT MANUALLY
+import { getTranslatedSANYSparePartDetails } from './sparePartsDetails_sany';
 
 export const sanyNameTranslations = {
   'Generator Assembly': {
@@ -474,6 +475,12 @@ const sanyPartNameToDescriptionKey: Record<string, string> = {
 };
 
 export function getTranslatedSanySparePartDescription(partName: string, language: string = 'zh'): string {
+  // Try to get the description from sparePartsDetails_sany
+  const detailedDescription = getTranslatedSANYSparePartDetails(partName, language);
+  if (detailedDescription && detailedDescription !== 'OEM quality part. Contact us for detailed specifications and pricing.') {
+    return detailedDescription;
+  }
+  
   // Try to get the description key from the mapping
   const descriptionKey = sanyPartNameToDescriptionKey[partName];
   if (descriptionKey) {
@@ -489,7 +496,7 @@ export function getTranslatedSanySparePartDescription(partName: string, language
     return translations[language];
   }
   
-  // If no translation found, return empty string to avoid showing part name as description
+  // If no translation found, return empty string
   return '';
 }
 export const sanyCategoryTranslations: Record<string, Record<string, string>> = {
