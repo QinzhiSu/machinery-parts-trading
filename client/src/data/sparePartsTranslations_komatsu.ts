@@ -1,5 +1,6 @@
 // Auto-generated translations for Komatsu spare parts
 // DO NOT EDIT MANUALLY
+import { getTranslatedKomatsuSparePartDetails } from './sparePartsDetails_komatsu';
 
 export const komatsuNameTranslations = {
   'Air Filter(内芯)': {
@@ -672,12 +673,21 @@ export const komatsuDescriptionTranslations: Record<string, Record<string, strin
   },
 };
 
-export function getTranslatedKomatsuSparePartDescription(description: string, language: string = 'zh'): string {
-  const translations = komatsuDescriptionTranslations[description];
+export function getTranslatedKomatsuSparePartDescription(partName: string, language: string = 'zh'): string {
+  // Try to get the description from sparePartsDetails_komatsu
+  const detailedDescription = getTranslatedKomatsuSparePartDetails(partName, language);
+  if (detailedDescription) {
+    return detailedDescription;
+  }
+  
+  // Try to find a specific translation for this part name
+  const translations = komatsuDescriptionTranslations[partName];
   if (translations && translations[language]) {
     return translations[language];
   }
-  return description;
+  
+  // If no specific translation found, return empty string
+  return '';
 }
 export const komatsuCategoryTranslations: Record<string, Record<string, string>> = {
   'Maintenance/Filtration System': {
