@@ -448,12 +448,49 @@ export const sanyDescriptionTranslations: Record<string, Record<string, string>>
   },
 };
 
-export function getTranslatedSanySparePartDescription(description: string, language: string = 'zh'): string {
-  const translations = sanyDescriptionTranslations[description];
+// Map part names to description keys
+const sanyPartNameToDescriptionKey: Record<string, string> = {
+  '燃油滤芯': '燃油滤芯',
+  'Oil Filter': 'Oil Filter',
+  '燃油滤芯(老款)': '燃油滤芯(老款)',
+  'Oil Filter(SY215C/225C系列)': 'Oil Filter(SY215C/225C系列)',
+  '燃油滤芯(新款9系)': '燃油滤芯(新款9系)',
+  '燃油滤芯(替代号)': '燃油滤芯(替代号)',
+  '燃油滤芯(SY215C/225C新款)': '燃油滤芯(SY215C/225C新款)',
+  '铲斗斗齿': '铲斗斗齿',
+  '前导向轮': '前导向轮',
+  '驱动链轮': '驱动链轮',
+  '下托链轮(Bottom Roller)': '下托链轮(Bottom Roller)',
+  '上托轮(Top Roller/Carrier Roller)': '上托轮(Top Roller/Carrier Roller)',
+  '履带链条总成': '履带链条总成',
+  '履带板/track shoe': '履带板/track shoe',
+  '主液压泵(Rexroth型)': '主液压泵(Rexroth型)',
+  '行走(履带)马达/最终驱动总成': '行走(履带)马达/最终驱动总成',
+  '回转(转台)马达及减速机': '回转(转台)马达及减速机',
+  'Turbocharger': 'Turbocharger',
+  'Generator Assembly': 'Generator Assembly',
+  'Starter Motor Assembly': 'Starter Motor Assembly',
+  '铲斗油缸密封修理包': '铲斗油缸密封修理包',
+};
+
+export function getTranslatedSanySparePartDescription(partName: string, language: string = 'zh'): string {
+  // Try to get the description key from the mapping
+  const descriptionKey = sanyPartNameToDescriptionKey[partName];
+  if (descriptionKey) {
+    const translations = sanyDescriptionTranslations[descriptionKey];
+    if (translations && translations[language]) {
+      return translations[language];
+    }
+  }
+  
+  // Fallback to looking up the part name directly in descriptions
+  const translations = sanyDescriptionTranslations[partName];
   if (translations && translations[language]) {
     return translations[language];
   }
-  return description;
+  
+  // If no translation found, return empty string to avoid showing part name as description
+  return '';
 }
 export const sanyCategoryTranslations: Record<string, Record<string, string>> = {
   'Maintenance/Filtration System': {
