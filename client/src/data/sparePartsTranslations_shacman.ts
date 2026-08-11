@@ -702,6 +702,17 @@ const chineseToCategoryMap: Record<string, string> = {
   '传动/万向节': 'Transmission/Universal Joint',
   '轮毂/传动轴': 'Wheel Hub/Drive Shaft',
   '转向系统': 'Steering System',
+  'Maintenance/Filtration System': 'Maintenance/Filtration System',
+  'Brake System': 'Brake System',
+  'Transmission/Clutch': 'Transmission/Clutch',
+  'Turbocharger/Intake': 'Turbocharger/Intake',
+  'Suspension/Damping': 'Suspension/Damping',
+  'Body/Electrical': 'Body/Electrical',
+  'Wheel Hub/Transmission': 'Wheel Hub/Transmission',
+  'Suspension System': 'Suspension System',
+  'Transmission/Universal Joint': 'Transmission/Universal Joint',
+  'Wheel Hub/Drive Shaft': 'Wheel Hub/Drive Shaft',
+  'Steering System': 'Steering System',
 };
 
 export const shacmanCategoryTranslations: Record<string, Record<string, string>> = {
