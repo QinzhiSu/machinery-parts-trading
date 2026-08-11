@@ -362,7 +362,8 @@ export function getTranslatedKomatsuSparePartName(name: string, language: string
 }
 
 export function getTranslatedKomatsuSparePartCategory(category: string, language: string = 'zh'): string {
-  const translations = komatsuCategoryTranslations[category];
+  // Try to find translation using the category as key (supports both Chinese and English keys)
+  const translations = komatsuCategoryTranslations[category as keyof typeof komatsuCategoryTranslations];
   return translations?.[language as keyof typeof translations] || category;
 }
 
