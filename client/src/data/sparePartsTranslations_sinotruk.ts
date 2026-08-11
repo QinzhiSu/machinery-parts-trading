@@ -1406,7 +1406,16 @@ export const sinotrukDescriptionTranslations: Record<string, Record<string, stri
   },
 };
 
+import { getTranslatedSinotrukSparePartDetails } from './sparePartsDetails_sinotruk';
+
 export function getTranslatedSinotrukSparePartDescription(description: string, language: string = 'zh'): string {
+  // Try to get specific part details first
+  const partDetails = getTranslatedSinotrukSparePartDetails(description, language);
+  if (partDetails && partDetails !== 'OEM quality part. Contact us for detailed specifications and pricing.') {
+    return partDetails;
+  }
+  
+  // Fall back to generic descriptions
   const translations = sinotrukDescriptionTranslations[description];
   if (translations && translations[language]) {
     return translations[language];
