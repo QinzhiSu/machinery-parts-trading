@@ -612,8 +612,58 @@ export const shacmanNameTranslations = {
   },
 };
 
+// Map Chinese part names to English keys
+const chineseToNameMap: Record<string, string> = {
+  '油滤': 'Oil Filter',
+  '柴油滤芯': 'Diesel Filter',
+  '空气滤芯': 'Air Filter',
+  '燃油粗滤器(油水分离器)': 'Fuel Coarse Filter (Water Separator)',
+  '刹车蹄片弹簧': 'Brake Shoe Spring',
+  '排气制动蝶阀': 'Exhaust Brake Butterfly Valve',
+  '离合器片总成': 'Clutch Disc Assembly',
+  '涡轮增压器进气管': 'Turbocharger Intake Pipe',
+  '侧倾/横向减震器': 'Anti-roll/Lateral Shock Absorber',
+  '后悬挂减震器': 'Rear Suspension Shock Absorber',
+  '驾驶室后减震器': 'Cab Rear Shock Absorber',
+  '驱动桥空气弹簧(气囊)': 'Drive Axle Air Spring (Airbag)',
+  '前钢板弹簧总成(带支架/吊耳)': 'Front Leaf Spring Assembly (with Bracket/Shackle)',
+  '雨刮连杆总成(带电机)': 'Wiper Linkage Assembly (with Motor)',
+  '前轮毂总成': 'Front Wheel Hub Assembly',
+  '高度阀(空气悬挂)': 'Height Valve (Air Suspension)',
+  '传动轴总成(F3000)': 'Drive Shaft Assembly (F3000)',
+  '驱动轴节叉': 'Drive Shaft Yoke',
+  '前轮轴承维修包': 'Front Wheel Bearing Repair Kit',
+  '转向节臂/横拉杆(转向梯形臂)': 'Steering Knuckle/Tie Rod (Steering Trapezoid Arm)',
+  '转向横拉杆球头': 'Steering Tie Rod Ball Joint',
+  '转向拉杆球头': 'Steering Rod Ball Joint',
+  '转向齿条': 'Steering Rack',
+  '转向助力泵': 'Power Steering Pump',
+  '转向油缸': 'Steering Cylinder',
+  '冷却系统': 'Cooling System',
+  '维护/过滤系统': 'Maintenance/Filtration System',
+  '电气系统': 'Electrical System',
+  '发动机总成': 'Engine Assembly',
+  '变速箱总成': 'Transmission Assembly',
+  '制动系统': 'Brake System',
+  '悬挂系统': 'Suspension System',
+  'Oil Filter': 'Oil Filter',
+  'Diesel Filter': 'Diesel Filter',
+  'Air Filter': 'Air Filter',
+  'Turbocharger进气管': 'Turbocharger Intake Pipe',
+};
+
 export function getTranslatedShacmanSparePartName(name: string, language: string = 'zh'): string {
-  const translations = shacmanNameTranslations[name as keyof typeof shacmanNameTranslations];
+  // First try to find direct match
+  let translations = shacmanNameTranslations[name as keyof typeof shacmanNameTranslations];
+  
+  // If not found, try to map Chinese name to English
+  if (!translations) {
+    const englishName = chineseToNameMap[name];
+    if (englishName) {
+      translations = shacmanNameTranslations[englishName as keyof typeof shacmanNameTranslations];
+    }
+  }
+  
   return translations?.[language as keyof typeof translations] || name;
 }
 
@@ -639,6 +689,21 @@ import { getTranslatedShacmanSparePartDetails } from './sparePartsDetails_shacma
 export function getTranslatedShacmanSparePartDescription(name: string, language: string = 'zh'): string {
   return getTranslatedShacmanSparePartDetails(name, language);
 }
+// Map Chinese category names to English keys
+const chineseToCategoryMap: Record<string, string> = {
+  '保养/滤清系统': 'Maintenance/Filtration System',
+  '制动系统': 'Brake System',
+  '传动/离合器': 'Transmission/Clutch',
+  '增压/进气': 'Turbocharger/Intake',
+  '悬挂减震': 'Suspension/Damping',
+  '车身/电气': 'Body/Electrical',
+  '轮毂/传动': 'Wheel Hub/Transmission',
+  '悬挂系统': 'Suspension System',
+  '传动/万向节': 'Transmission/Universal Joint',
+  '轮毂/传动轴': 'Wheel Hub/Drive Shaft',
+  '转向系统': 'Steering System',
+};
+
 export const shacmanCategoryTranslations: Record<string, Record<string, string>> = {
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
@@ -786,7 +851,17 @@ export const shacmanCategoryTranslations: Record<string, Record<string, string>>
 };
 
 export function getTranslatedShacmanSparePartCategory(category: string, language: string = 'zh'): string {
-  const translations = shacmanCategoryTranslations[category];
+  // First try to find direct match
+  let translations = shacmanCategoryTranslations[category as keyof typeof shacmanCategoryTranslations];
+  
+  // If not found, try to map Chinese category to English
+  if (!translations) {
+    const englishCategory = chineseToCategoryMap[category];
+    if (englishCategory) {
+      translations = shacmanCategoryTranslations[englishCategory as keyof typeof shacmanCategoryTranslations];
+    }
+  }
+  
   return translations?.[language as keyof typeof translations] || category;
 }
 
