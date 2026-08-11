@@ -650,6 +650,36 @@ const chineseToNameMap: Record<string, string> = {
   'Diesel Filter': 'Diesel Filter',
   'Air Filter': 'Air Filter',
   'Turbocharger进气管': 'Turbocharger Intake Pipe',
+  '柴油滤芯': 'Diesel Filter',
+  '空气滤芯': 'Air Filter',
+  '燃油粗滤器(油水分离器)': 'Fuel Coarse Filter (Water Separator)',
+  '刹车蹄片弹簧': 'Brake Shoe Spring',
+  '排气制动蝶阀': 'Exhaust Brake Butterfly Valve',
+  '离合器片总成': 'Clutch Disc Assembly',
+  '涡轮增压器进气管': 'Turbocharger Intake Pipe',
+  '侧倾/横向减震器': 'Lateral/Transverse Shock Absorber',
+  '后悬挂减震器': 'Rear Suspension Shock Absorber',
+  '驾驶室后减震器': 'Cab Rear Shock Absorber',
+  '驱动桥空气弹簧(气囊)': 'Drive Axle Air Spring (Air Bag)',
+  '前钢板弹簧总成(带支架/吊耳)': 'Front Leaf Spring Assembly (with Bracket/Lugs)',
+  '雨刮连杆总成(带电机)': 'Windshield Wiper Linkage Assembly (with Motor)',
+  '前轮毂总成': 'Front Wheel Hub Assembly',
+  '高度阀(空气悬挂)': 'Height Valve (Air Suspension)',
+  '传动轴总成(F3000)': 'Drive Shaft Assembly (F3000)',
+  '驱动轴节叉': 'Drive Axle Yoke',
+  '前轮轴承维修包': 'Front Wheel Bearing Repair Kit',
+  '转向节臂/横拉杆(转向梯形臂)': 'Steering Knuckle Arm/Tie Rod (Steering Trapezoid Arm)',
+  '转向主销(king pin)总成': 'Steering King Pin Assembly',
+  '发电机总成': 'Alternator Assembly',
+  '起动机总成': 'Starter Motor Assembly',
+  '水泵总成': 'Water Pump Assembly',
+  'Turbocharger总成': 'Turbocharger Assembly',
+  '制动气室(前/后桥)': 'Brake Air Chamber (Front/Rear Axle)',
+  '前雨刮片': 'Front Windshield Wiper Blade',
+  '雨刮臂(SWF)': 'Wiper Arm (SWF)',
+  '左前大灯总成': 'Left Front Headlight Assembly',
+  '右前大灯总成': 'Right Front Headlight Assembly',
+  '离合器总泵及油壶总成': 'Clutch Master Cylinder and Oil Reservoir Assembly',
 };
 
 export function getTranslatedShacmanSparePartName(name: string, language: string = 'zh'): string {
@@ -664,7 +694,12 @@ export function getTranslatedShacmanSparePartName(name: string, language: string
     }
   }
   
-  return translations?.[language as keyof typeof translations] || name;
+  // If still not found, return the name as is
+  if (!translations) {
+    return name;
+  }
+  
+  return translations[language as keyof typeof translations] || name;
 }
 
 export const shacmanDescriptionTranslations: Record<string, Record<string, string>> = {
