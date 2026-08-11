@@ -634,12 +634,10 @@ export const shacmanDescriptionTranslations: Record<string, Record<string, strin
   },
 };
 
-export function getTranslatedShacmanSparePartDescription(description: string, language: string = 'zh'): string {
-  const translations = shacmanDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
+import { getTranslatedShacmanSparePartDetails } from './sparePartsDetails_shacman';
+
+export function getTranslatedShacmanSparePartDescription(name: string, language: string = 'zh'): string {
+  return getTranslatedShacmanSparePartDetails(name, language);
 }
 export const shacmanCategoryTranslations: Record<string, Record<string, string>> = {
   'Maintenance/Filtration System': {

@@ -281,6 +281,18 @@ export const komatsuCategoryTranslations: Record<string, Record<string, string>>
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di manutenzione/filtrazione',
   },
+  '保养/滤清系统': {
+    en: 'Maintenance/Filtration System',
+    es: 'Sistema de Mantenimiento/Filtración',
+    fr: 'Système de Maintenance/Filtration',
+    de: 'Wartungs-/Filtersystem',
+    pt: 'Sistema de Manutenção/Filtração',
+    ru: 'Система обслуживания/фильтрации',
+    ja: 'メンテナンス/フィルトレーションシステム',
+    zh: '保养/滤清系统',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
+  },
   '底盘/履带系统': {
     en: 'Chassis/Track System',
     es: 'Sistema de Chasis/Orugas',
@@ -364,7 +376,10 @@ export function getTranslatedKomatsuSparePartName(name: string, language: string
 export function getTranslatedKomatsuSparePartCategory(category: string, language: string = 'zh'): string {
   // Try to find translation using the category as key (supports both Chinese and English keys)
   const translations = komatsuCategoryTranslations[category as keyof typeof komatsuCategoryTranslations];
-  return translations?.[language as keyof typeof translations] || category;
+  if (translations && translations[language as keyof typeof translations]) {
+    return translations[language as keyof typeof translations];
+  }
+  return category;
 }
 
 export function getTranslatedKomatsuSparePartDescription(name: string, language: string = 'zh'): string {
