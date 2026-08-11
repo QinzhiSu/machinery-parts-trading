@@ -401,6 +401,18 @@ export const shacmanNameTranslations = {
 };
 
 export const shacmanCategoryTranslations = {
+  '保养/滤清系统': {
+    en: 'Maintenance/Filtration System',
+    es: 'Sistema de Mantenimiento/Filtración',
+    fr: 'Système de Maintenance/Filtration',
+    de: 'Wartungs-/Filtersystem',
+    pt: 'Sistema de Manutenção/Filtração',
+    ru: 'Система обслуживания/фильтрации',
+    ja: 'メンテナンス/フィルトレーションシステム',
+    zh: '保养/滤清系统',
+    ar: 'نظام الصيانة/الترشيح',
+    it: 'Sistema di manutenzione/filtrazione',
+  },
   'Maintenance/Filtration System': {
     en: 'Maintenance/Filtration System',
     es: 'Sistema de Mantenimiento/Filtración',
@@ -688,6 +700,18 @@ export const shacmanCategoryTranslations = {
     zh: '车身/雨刮',
     ar: 'الهيكل/ممسحة الزجاج',
     it: 'Carrozzeria/tergicristallo',
+  },
+  '冷却系统': {
+    en: 'Cooling System',
+    es: 'Sistema de Enfriamiento',
+    fr: 'Système de Refroidissement',
+    de: 'Kühlsystem',
+    pt: 'Sistema de Resfriamento',
+    ru: 'Система охлаждения',
+    ja: '冷却システム',
+    zh: '冷却系统',
+    ar: 'نظام التبريد',
+    it: 'Sistema di raffreddamento',
   },
 };
 
