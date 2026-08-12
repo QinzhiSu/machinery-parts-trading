@@ -1115,3 +1115,9 @@
 - [x] 编写测试脚本直接调用 getTranslatedSinotrukSparePartName / Category 检查非 zh 语言下的返回值
 - [x] 修复翻译函数中可能存在的默认 zh 或降级未生效问题
 - [x] 运行浏览器自动化真实打开 Sinotruk 零件页验证 10 种语言显示
+
+## Sinotruk 最终实际调用排查与修复
+
+- [x] 检查 BrandPage.tsx 中 Sinotruk 零件名称和分类的具体渲染逻辑
+- [x] 在 sparePartsTranslations_sinotruk.ts 中确保默认导出和函数签名完全符合 BrandPage 期望
+- [x] 实际打开页面验证 Sinotruk 零件各语言下的名称与分类显示
