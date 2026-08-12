@@ -2,10 +2,10 @@
 // DO NOT EDIT MANUALLY
 
 export const isuzumachineNameTranslations: Record<string, Record<string, string>> = {
-  '4HK1': { en: 'Diesel Engine', zh: '柴油发动机', es: 'Motor Diesel', fr: 'Moteur Diesel', de: 'Dieselmotor', pt: 'Motor Diesel', ru: 'Дизельный двигатель', ja: 'ディーゼルエンジン', ar: 'محرك ديزل', it: 'Motore Diesel' },
-  '6HK1': { en: 'Diesel Engine', zh: '柴油发动机', es: 'Motor Diesel', fr: 'Moteur Diesel', de: 'Dieselmotor', pt: 'Motor Diesel', ru: 'Дизельный двигатель', ja: 'ディーゼルエンジン', ar: 'محرك ديزل', it: 'Motore Diesel' },
-  '6UZ1': { en: 'Diesel Engine', zh: '柴油发动机', es: 'Motor Diesel', fr: 'Moteur Diesel', de: 'Dieselmotor', pt: 'Motor Diesel', ru: 'Дизельный двигатель', ja: 'ディーゼルエンジン', ar: 'محرك ديزل', it: 'Motore Diesel' },
-  '6WG1': { en: 'Diesel Engine', zh: '柴油发动机', es: 'Motor Diesel', fr: 'Moteur Diesel', de: 'Dieselmotor', pt: 'Motor Diesel', ru: 'Дизельный двигатель', ja: 'ディーゼルエンジン', ar: 'محرك ديزل', it: 'Motore Diesel' },
+  '4HK1': { en: 'Isuzu 4HK1 Diesel Engine', zh: '五十铃 4HK1 柴油发动机', es: 'Motor diésel Isuzu 4HK1', fr: 'Moteur diesel Isuzu 4HK1', de: 'Isuzu 4HK1 Dieselmotor', pt: 'Motor diesel Isuzu 4HK1', ru: 'Дизельный двигатель Isuzu 4HK1', ja: 'いすゞ 4HK1 ディーゼルエンジン', ar: 'محرك ديزل إيسوزو 4HK1', it: 'Motore diesel Isuzu 4HK1' },
+  '6HK1': { en: 'Isuzu 6HK1 Diesel Engine', zh: '五十铃 6HK1 柴油发动机', es: 'Motor diésel Isuzu 6HK1', fr: 'Moteur diesel Isuzu 6HK1', de: 'Isuzu 6HK1 Dieselmotor', pt: 'Motor diesel Isuzu 6HK1', ru: 'Дизельный двигатель Isuzu 6HK1', ja: 'いすゞ 6HK1 ディーゼルエンジン', ar: 'محرك ديزل إيسوزو 6HK1', it: 'Motore diesel Isuzu 6HK1' },
+  '6UZ1': { en: 'Isuzu 6UZ1 Diesel Engine', zh: '五十铃 6UZ1 柴油发动机', es: 'Motor diésel Isuzu 6UZ1', fr: 'Moteur diesel Isuzu 6UZ1', de: 'Isuzu 6UZ1 Dieselmotor', pt: 'Motor diesel Isuzu 6UZ1', ru: 'Дизельный двигатель Isuzu 6UZ1', ja: 'いすゞ 6UZ1 ディーゼルエンジン', ar: 'محرك ديزل إيسوزو 6UZ1', it: 'Motore diesel Isuzu 6UZ1' },
+  '6WG1': { en: 'Isuzu 6WG1 Diesel Engine', zh: '五十铃 6WG1 柴油发动机', es: 'Motor diésel Isuzu 6WG1', fr: 'Moteur diesel Isuzu 6WG1', de: 'Isuzu 6WG1 Dieselmotor', pt: 'Motor diesel Isuzu 6WG1', ru: 'Дизельный двигатель Isuzu 6WG1', ja: 'いすゞ 6WG1 ディーゼルエンジン', ar: 'محرك ديزل إيسوزو 6WG1', it: 'Motore diesel Isuzu 6WG1' },
 };
 
 export const isuzumachineTypeTranslations: Record<string, Record<string, string>> = {
