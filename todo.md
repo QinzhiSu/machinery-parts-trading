@@ -1106,6 +1106,12 @@
 
 ## Sinotruk 逐条键值核对与终极精确翻译修复
 
-- [ ] 导出 products.ts 中 Sinotruk 的全量名称与分类清单
-- [ ] 在 sparePartsTranslations_sinotruk.ts 中以绝对精确的方式补全每一个键
-- [ ] 验证 Sinotruk 页面不再残留任何中文名称或分类
+- [x] 导出 products.ts 中 Sinotruk 的全量名称与分类清单
+- [x] 在 sparePartsTranslations_sinotruk.ts 中以绝对精确的方式补全每一个键
+- [x] 验证 Sinotruk 页面不再残留任何中文名称或分类
+
+## Sinotruk 运行时翻译验证与深度排查修复
+
+- [x] 编写测试脚本直接调用 getTranslatedSinotrukSparePartName / Category 检查非 zh 语言下的返回值
+- [x] 修复翻译函数中可能存在的默认 zh 或降级未生效问题
+- [x] 运行浏览器自动化真实打开 Sinotruk 零件页验证 10 种语言显示

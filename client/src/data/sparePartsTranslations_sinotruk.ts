@@ -1,9 +1,10 @@
-// Sinotruk spare parts translations - 10 languages (exact match with products.ts)
+// Sinotruk spare parts translations - 10 languages (dual key lookup: English & Chinese)
 // DO NOT EDIT MANUALLY
 
 import { getTranslatedSinotrukSparePartDetails } from './sparePartsDetails_sinotruk';
 
 export const sinotrukNameTranslations = {
+  // English keys & Chinese keys mapping
   'Oil Filter': {
     en: 'Oil Filter',
     es: 'Filtro de Aceite',
@@ -16,7 +17,19 @@ export const sinotrukNameTranslations = {
     ar: 'مرشح الزيت',
     it: 'Filtro olio',
   },
-  '空气滤芯总成': {
+  '机油滤清器': {
+    en: 'Oil Filter',
+    es: 'Filtro de Aceite',
+    fr: 'Filtre à Huile',
+    de: 'Ölfilter',
+    pt: 'Filtro de Óleo',
+    ru: 'Масляный фильтр',
+    ja: 'オイルフィルター',
+    zh: '机油滤清器',
+    ar: 'مرشح الزيت',
+    it: 'Filtro olio',
+  },
+  'Air Filter总成': {
     en: 'Air Filter Assembly',
     es: 'Conjunto de Filtro de Aire',
     fr: 'Ensemble de Filtre à Air',
@@ -24,11 +37,35 @@ export const sinotrukNameTranslations = {
     pt: 'Conjunto de Filtro de Ar',
     ru: 'Узел воздушного фильтра',
     ja: 'エアフィルターアセンブリ',
-    zh: '空气滤芯总成',
+    zh: '空气滤清器总成',
+    ar: 'مجموعة مرشح الهواء',
+    it: 'Assieme filtro aria',
+  },
+  '空气滤清器总成': {
+    en: 'Air Filter Assembly',
+    es: 'Conjunto de Filtro de Aire',
+    fr: 'Ensemble de Filtre à Air',
+    de: 'Luftfilter-Baugruppe',
+    pt: 'Conjunto de Filtro de Ar',
+    ru: 'Узел воздушного фильтра',
+    ja: 'エアフィルターアセンブリ',
+    zh: '空气滤清器总成',
     ar: 'مجموعة مرشح الهواء',
     it: 'Assieme filtro aria',
   },
   '柴油粗滤器(油水分离器)': {
+    en: 'Diesel Coarse Filter (Oil-Water Separator)',
+    es: 'Filtro Grueso de Diésel (Separador de Agua)',
+    fr: 'Filtre Grossier Diesel (Séparateur Eau-Huile)',
+    de: 'Dieselgrobfilter (Öl-Wasser-Separator)',
+    pt: 'Filtro Grosso de Diesel (Separador de Água-Óleo)',
+    ru: 'Грубый дизельный фильтр (водоотделитель)',
+    ja: 'ディーゼル粗フィルター(油水分離器)',
+    zh: '柴油粗滤器(油水分离器)',
+    ar: 'مرشح الديزل الخشن (فاصل الزيت والماء)',
+    it: 'Filtro diesel grossolano (separatore acqua-olio)',
+  },
+  'Diesel Coarse Filter (Oil-Water Separator)': {
     en: 'Diesel Coarse Filter (Oil-Water Separator)',
     es: 'Filtro Grueso de Diésel (Separador de Agua)',
     fr: 'Filtre Grossier Diesel (Séparateur Eau-Huile)',
@@ -52,7 +89,31 @@ export const sinotrukNameTranslations = {
     ar: 'مرشح الديزل الدقيق',
     it: 'Filtro diesel fine',
   },
+  'Diesel Fine Filter': {
+    en: 'Diesel Fine Filter',
+    es: 'Filtro Fino de Diésel',
+    fr: 'Filtre Fin Diesel',
+    de: 'Dieselfeinfilter',
+    pt: 'Filtro Fino de Diesel',
+    ru: 'Дизельный фильтр тонкой очистки',
+    ja: 'ディーゼル精フィルター',
+    zh: '柴油精滤器',
+    ar: 'مرشح الديزل الدقيق',
+    it: 'Filtro diesel fine',
+  },
   '发电机(28V/70A)': {
+    en: 'Alternator (28V/70A)',
+    es: 'Alternador (28V/70A)',
+    fr: 'Alternateur (28V/70A)',
+    de: 'Lichtmaschine (28V/70A)',
+    pt: 'Alternador (28V/70A)',
+    ru: 'Генератор (28В/70А)',
+    ja: 'オルタネーター(28V/70A)',
+    zh: '发电机(28V/70A)',
+    ar: 'مولد كهربائي (28V/70A)',
+    it: 'Alternatore (28V/70A)',
+  },
+  'Alternator (28V/70A)': {
     en: 'Alternator (28V/70A)',
     es: 'Alternador (28V/70A)',
     fr: 'Alternateur (28V/70A)',
@@ -76,7 +137,31 @@ export const sinotrukNameTranslations = {
     ar: 'مجموعة محرك البدء',
     it: 'Assieme motorino di avviamento',
   },
+  'Starter Motor Assembly': {
+    en: 'Starter Motor Assembly',
+    es: 'Conjunto de Motor de Arranque',
+    fr: 'Ensemble de Moteur de Démarreur',
+    de: 'Startermotor-Baugruppe',
+    pt: 'Conjunto de Motor de Partida',
+    ru: 'Узел стартера',
+    ja: 'スターターモーターアセンブリ',
+    zh: '起动机总成',
+    ar: 'مجموعة محرك البدء',
+    it: 'Assieme motorino di avviamento',
+  },
   '空气压缩机(双缸水冷)': {
+    en: 'Air Compressor (Dual-Cylinder Water-Cooled)',
+    es: 'Compresor de Aire (Doble Cilindro Refrigerado por Agua)',
+    fr: 'Compresseur d\'Air (Double Cylindre Refroidi par Eau)',
+    de: 'Luftkompressor (Doppelzylinder Wassergekühlt)',
+    pt: 'Compressor de Ar (Duplo Cilindro Refrigerado por Água)',
+    ru: 'Воздушный компрессор (двухцилиндровый водяной охлаждаемый)',
+    ja: 'エアコンプレッサー(双気筒水冷)',
+    zh: '空气压缩机(双缸水冷)',
+    ar: 'ضاغط الهواء (ثنائي الأسطوانة مبرد بالماء)',
+    it: 'Compressore aria (doppio cilindro raffreddato ad acqua)',
+  },
+  'Air Compressor (Dual-Cylinder Water-Cooled)': {
     en: 'Air Compressor (Dual-Cylinder Water-Cooled)',
     es: 'Compresor de Aire (Doble Cilindro Refrigerado por Agua)',
     fr: 'Compresseur d\'Air (Double Cylindre Refroidi par Eau)',
@@ -100,7 +185,31 @@ export const sinotrukNameTranslations = {
     ar: 'مجموعة حذاء الفرامل الأمامي',
     it: 'Assieme ceppi freno anteriori',
   },
+  'Front Brake Shoe Assembly': {
+    en: 'Front Brake Shoe Assembly',
+    es: 'Conjunto de Zapata de Freno Delantero',
+    fr: 'Ensemble de Mâchoire de Frein Avant',
+    de: 'Vordere Bremsbelag-Baugruppe',
+    pt: 'Conjunto de Sapata de Freio Dianteiro',
+    ru: 'Узел передней тормозной колодки',
+    ja: '前ブレーキシューアセンブリ',
+    zh: '前刹车蹄片总成',
+    ar: 'مجموعة حذاء الفرامل الأمامي',
+    it: 'Assieme ceppi freno anteriori',
+  },
   '后刹车蹄片(带摩擦片)': {
+    en: 'Rear Brake Shoe (with Friction Lining)',
+    es: 'Zapata de Freno Trasero (con Revestimiento de Fricción)',
+    fr: 'Mâchoire de Frein Arrière (avec Garniture de Friction)',
+    de: 'Hinterer Bremsbelag (mit Reibungsbelag)',
+    pt: 'Sapata de Freio Traseiro (com Revestimento de Fricção)',
+    ru: 'Задняя тормозная колодка (с фрикционной накладкой)',
+    ja: '後ブレーキシュー(摩擦ライニング付き)',
+    zh: '后刹车蹄片(带摩擦片)',
+    ar: 'حذاء الفرامل الخلفي (مع بطانة الاحتكاك)',
+    it: 'Ceppo freno posteriore (con rivestimento di attrito)',
+  },
+  'Rear Brake Shoe (with Friction Lining)': {
     en: 'Rear Brake Shoe (with Friction Lining)',
     es: 'Zapata de Freno Trasero (con Revestimiento de Fricción)',
     fr: 'Mâchoire de Frein Arrière (avec Garniture de Friction)',
@@ -124,7 +233,31 @@ export const sinotrukNameTranslations = {
     ar: 'عمود الكامات الفرملة (الأيسر)',
     it: 'Albero a camme freno (sinistro)',
   },
+  'Brake Camshaft (Left)': {
+    en: 'Brake Camshaft (Left)',
+    es: 'Árbol de Levas de Freno (Izquierdo)',
+    fr: 'Arbre à Cames de Frein (Gauche)',
+    de: 'Bremsnockenwelle (Links)',
+    pt: 'Comando de Freio (Esquerdo)',
+    ru: 'Тормозной распределительный вал (левый)',
+    ja: 'ブレーキカムシャフト(左)',
+    zh: '制动凸轮轴(左)',
+    ar: 'عمود الكامات الفرملة (الأيسر)',
+    it: 'Albero a camme freno (sinistro)',
+  },
   '刹车间隙自动调整臂': {
+    en: 'Brake Clearance Automatic Adjuster Arm',
+    es: 'Brazo de Ajuste Automático de Holgura de Freno',
+    fr: 'Bras d\'Ajustement Automatique du Jeu de Frein',
+    de: 'Automatischer Bremsfreiraum-Einstellarm',
+    pt: 'Braço de Ajuste Automático de Folga de Freio',
+    ru: 'Рычаг автоматической регулировки зазора тормоза',
+    ja: 'ブレーキクリアランス自動調整アーム',
+    zh: '刹车间隙自动调整臂',
+    ar: 'ذراع ضبط الخلوص الفرملة التلقائي',
+    it: 'Braccio di regolazione automatica del gioco freno',
+  },
+  'Brake Clearance Automatic Adjuster Arm': {
     en: 'Brake Clearance Automatic Adjuster Arm',
     es: 'Brazo de Ajuste Automático de Holgura de Freno',
     fr: 'Bras d\'Ajustement Automatique du Jeu de Frein',
@@ -148,6 +281,18 @@ export const sinotrukNameTranslations = {
     ar: 'غرفة الهواء الفرملة (المحور الأمامي)',
     it: 'Camera aria freno (asse anteriore)',
   },
+  'Brake Air Chamber (Front Axle)': {
+    en: 'Brake Air Chamber (Front Axle)',
+    es: 'Cámara de Aire de Freno (Eje Delantero)',
+    fr: 'Chambre d\'Air de Frein (Essieu Avant)',
+    de: 'Bremsluftbehälter (Vorderachse)',
+    pt: 'Câmara de Ar de Freio (Eixo Dianteiro)',
+    ru: 'Тормозная воздушная камера (передняя ось)',
+    ja: 'ブレーキエアチャンバー(前軸)',
+    zh: '制动气室(前桥)',
+    ar: 'غرفة الهواء الفرملة (المحور الأمامي)',
+    it: 'Camera aria freno (asse anteriore)',
+  },
   '刹车盘': {
     en: 'Brake Disc',
     es: 'Disco de Freno',
@@ -160,7 +305,31 @@ export const sinotrukNameTranslations = {
     ar: 'قرص الفرامل',
     it: 'Disco freno',
   },
+  'Brake Disc': {
+    en: 'Brake Disc',
+    es: 'Disco de Freno',
+    fr: 'Disque de Frein',
+    de: 'Bremsscheibe',
+    pt: 'Disco de Freio',
+    ru: 'Тормозной диск',
+    ja: 'ブレーキディスク',
+    zh: '刹车盘',
+    ar: 'قرص الفرامل',
+    it: 'Disco freno',
+  },
   '离合器压盘总成': {
+    en: 'Clutch Pressure Plate Assembly',
+    es: 'Conjunto de Placa de Presión de Embrague',
+    fr: 'Ensemble de Plateau de Pression d\'Embrayage',
+    de: 'Kupplungsdruckplatte-Baugruppe',
+    pt: 'Conjunto de Placa de Pressão de Embreagem',
+    ru: 'Узел нажимного диска сцепления',
+    ja: 'クラッチプレッシャープレートアセンブリ',
+    zh: '离合器压盘总成',
+    ar: 'مجموعة لوحة ضغط القابض',
+    it: 'Assieme disco di pressione frizione',
+  },
+  'Clutch Pressure Plate Assembly': {
     en: 'Clutch Pressure Plate Assembly',
     es: 'Conjunto de Placa de Presión de Embrague',
     fr: 'Ensemble de Plateau de Pression d\'Embrayage',
@@ -187,7 +356,7 @@ export const sinotrukNameTranslations = {
   'V型推力杆(稳定杆连杆)': {
     en: 'V-Shaped Thrust Rod (Stabilizer Bar Link)',
     es: 'Varilla de Empuje en Forma de V (Enlace de Barra Estabilizadora)',
-    fr: 'Barre de Poussée en Forme de V (Lien de Barre Stabilisatrice)',
+    fr: 'Barre de Poussée en Forme de V (Lien de Barra Stabilisatrice)',
     de: 'V-förmiger Schubstab (Stabilisatorstangenverbindung)',
     pt: 'Barra de Empuxo em Forma de V (Link da Barra Estabilizadora)',
     ru: 'V-образный толкающий стержень (тяга стабилизатора)',
@@ -599,12 +768,14 @@ export const sinotrukCategoryTranslations = {
 
 export function getTranslatedSinotrukSparePartName(name: string, language: string = 'zh'): string {
   const translations = sinotrukNameTranslations[name as keyof typeof sinotrukNameTranslations];
-  return translations?.[language as keyof typeof translations] || name;
+  if (!translations) return name;
+  return translations[language as keyof typeof translations] || translations['en'] || name;
 }
 
 export function getTranslatedSinotrukSparePartCategory(category: string, language: string = 'zh'): string {
   const translations = sinotrukCategoryTranslations[category as keyof typeof sinotrukCategoryTranslations];
-  return translations?.[language as keyof typeof translations] || category;
+  if (!translations) return category;
+  return translations[language as keyof typeof translations] || translations['en'] || category;
 }
 
 export function getTranslatedSinotrukSparePartDescription(name: string, language: string = 'zh'): string {
