@@ -1227,6 +1227,16 @@
 
 > 页面验证：Weichai 德语零件列表已实际显示“61000070005 / W962”“612630080088 / PRELINE 420 / PL420”“61560080276 / KBEL132P110”等无中文件号；页面未显示“替代号”等中文说明。
 
+## Weichai 整机名称与型号恢复
+
+- [x] 审计 Weichai 整机源数据及独立翻译文件的名称与型号字段
+- [x] 仅恢复 Weichai 整机名称与型号的显示映射
+- [x] 验证 Weichai 整机页面显示完整名称与型号
+
+> 审计结果：Weichai 整机源数据中的型号 WP6、WP10、WP12、WP13 均仍存在；问题仅在独立 `weichaimachineTranslations.ts` 的名称映射，该映射只返回“Diesel Engine”等通用类型，导致品牌名称和型号未显示。将仅在该 Weichai 整机翻译文件中恢复每个型号的完整名称。
+
+> 页面验证：Weichai 德语整机页面已实际显示“Weichai WP6 Dieselmotor”“Weichai WP10 Dieselmotor”“Weichai WP12 Dieselmotor”和“Weichai WP13 Dieselmotor”；名称、品牌和型号均已恢复。
+
 ## 独立零件翻译重复键安全清理
 
 - [x] 仅删除已被同一对象最终同键属性覆盖的完整冗余属性节点

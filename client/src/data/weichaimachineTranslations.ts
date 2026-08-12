@@ -1,8 +1,8 @@
 export const weichaimachineNameTranslations: Record<string, Record<string, string>> = {
-  'WP6': { en: 'Diesel Engine', zh: '柴油发动机', es: 'Motor Diesel', fr: 'Moteur Diesel', de: 'Dieselmotor', pt: 'Motor Diesel', ru: 'Дизельный двигатель', ja: 'ディーゼルエンジン', ar: 'محرك ديزل', it: 'Motore Diesel' },
-  'WP10': { en: 'Diesel Engine', zh: '柴油发动机', es: 'Motor Diesel', fr: 'Moteur Diesel', de: 'Dieselmotor', pt: 'Motor Diesel', ru: 'Дизельный двигатель', ja: 'ディーゼルエンジン', ar: 'محرك ديزل', it: 'Motore Diesel' },
-  'WP12': { en: 'Diesel Engine', zh: '柴油发动机', es: 'Motor Diesel', fr: 'Moteur Diesel', de: 'Dieselmotor', pt: 'Motor Diesel', ru: 'Дизельный двигатель', ja: 'ディーゼルエンジン', ar: 'محرك ديزل', it: 'Motore Diesel' },
-  'WP13': { en: 'Diesel Engine', zh: '柴油发动机', es: 'Motor Diesel', fr: 'Moteur Diesel', de: 'Dieselmotor', pt: 'Motor Diesel', ru: 'Дизельный двигатель', ja: 'ディーゼルエンジン', ar: 'محرك ديزل', it: 'Motore Diesel' },
+  'WP6': { en: 'Weichai WP6 Diesel Engine', zh: '潍柴 WP6 柴油发动机', es: 'Motor diésel Weichai WP6', fr: 'Moteur diesel Weichai WP6', de: 'Weichai WP6 Dieselmotor', pt: 'Motor diesel Weichai WP6', ru: 'Дизельный двигатель Weichai WP6', ja: 'ウェイチャイ WP6 ディーゼルエンジン', ar: 'محرك ديزل ويتشاي WP6', it: 'Motore diesel Weichai WP6' },
+  'WP10': { en: 'Weichai WP10 Diesel Engine', zh: '潍柴 WP10 柴油发动机', es: 'Motor diésel Weichai WP10', fr: 'Moteur diesel Weichai WP10', de: 'Weichai WP10 Dieselmotor', pt: 'Motor diesel Weichai WP10', ru: 'Дизельный двигатель Weichai WP10', ja: 'ウェイチャイ WP10 ディーゼルエンジン', ar: 'محرك ديزل ويتشاي WP10', it: 'Motore diesel Weichai WP10' },
+  'WP12': { en: 'Weichai WP12 Diesel Engine', zh: '潍柴 WP12 柴油发动机', es: 'Motor diésel Weichai WP12', fr: 'Moteur diesel Weichai WP12', de: 'Weichai WP12 Dieselmotor', pt: 'Motor diesel Weichai WP12', ru: 'Дизельный двигатель Weichai WP12', ja: 'ウェイチャイ WP12 ディーゼルエンジン', ar: 'محرك ديزل ويتشاي WP12', it: 'Motore diesel Weichai WP12' },
+  'WP13': { en: 'Weichai WP13 Diesel Engine', zh: '潍柴 WP13 柴油发动机', es: 'Motor diésel Weichai WP13', fr: 'Moteur diesel Weichai WP13', de: 'Weichai WP13 Dieselmotor', pt: 'Motor diesel Weichai WP13', ru: 'Дизельный двигатель Weichai WP13', ja: 'ウェイチャイ WP13 ディーゼルエンジン', ar: 'محرك ديزل ويتشاي WP13', it: 'Motore diesel Weichai WP13' },
 };
 
 export const weichaimachineTypeTranslations: Record<string, Record<string, string>> = {
