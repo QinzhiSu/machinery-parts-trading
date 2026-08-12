@@ -48,7 +48,7 @@ export default function ContactPage() {
             <div className="lg:col-span-1 space-y-4">
               {[
                 { icon: Mail, title: 'Email', content: 'info@globalmachinery.com', sub: 'Reply within 24 hours', href: 'mailto:info@globalmachinery.com' },
-                { icon: Phone, title: 'WeChat / WhatsApp', content: '+86 188 8888 8888', sub: 'Mon–Sat 8:00–18:00 CST', href: 'tel:+8618888888888' },
+                { icon: Phone, title: 'WeChat / WhatsApp', content: '0022462297604/+224 622 497 604', sub: 'Mon–Sat 8:00–18:00 CST', href: 'https://wa.me/224622497604' },
                 { icon: MapPin, title: 'Location', content: 'China', sub: 'Global Export Operations', href: '#' },
                 { icon: Globe, title: 'Export Markets', content: 'Worldwide Shipping', sub: 'Africa · Middle East · SE Asia · Americas', href: '#' },
                 { icon: Clock, title: 'Business Hours', content: 'Mon–Sat 8:00–18:00', sub: 'China Standard Time (UTC+8)', href: '#' },
