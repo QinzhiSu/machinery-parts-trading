@@ -1085,3 +1085,9 @@
 - LiuGong 所有 21 个整机的分类、规格、描述翻译
 - Isuzu、Sinotruk、Shacman、Cummins、Weichai、Toyota 43 个整机的完整翻译
 - 柳工所有整机的阿拉伯语规格翻译
+
+## Sinotruk 零件名称与分类翻译修复
+
+- [ ] 修复 sparePartsTranslations_sinotruk.ts 中的对象重复键和语法错误
+- [ ] 确保所有 Sinotruk 零件名称和分类正确映射到 10 种语言
+- [ ] 验证 Sinotruk 列表及详情弹窗无中英文混杂
