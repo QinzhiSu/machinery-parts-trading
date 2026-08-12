@@ -1088,6 +1088,12 @@
 
 ## Sinotruk 零件名称与分类翻译修复
 
-- [ ] 修复 sparePartsTranslations_sinotruk.ts 中的对象重复键和语法错误
-- [ ] 确保所有 Sinotruk 零件名称和分类正确映射到 10 种语言
-- [ ] 验证 Sinotruk 列表及详情弹窗无中英文混杂
+- [x] 修复 sparePartsTranslations_sinotruk.ts 中的对象重复键和语法错误
+- [x] 确保所有 Sinotruk 零件名称和分类正确映射到 10 种语言
+- [x] 验证 Sinotruk 列表及详情弹窗无中英文混杂
+
+## Sinotruk 零件名称与分类翻译精确匹配修复
+
+- [x] 审计 BrandPage.tsx 中 Sinotruk 零件名称和分类翻译函数的调用方式
+- [x] 优化 sparePartsTranslations_sinotruk.ts 中的映射键，确保中英文原样匹配
+- [x] 验证网页在各语言下 Sinotruk 零件名称和分类正确显示
