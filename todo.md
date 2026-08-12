@@ -1287,6 +1287,16 @@
 
 > 页面验证：Sinotruk 德语整机页面已实际显示“Sinotruk HOWO 4×2 Sattelzugmaschine”“Sinotruk HOWO 6×4 Tankwagen”“Sinotruk HOWO T7S Premium-Kipplastwagen”“Sinotruk SITRAK C7H Sattelzugmaschine”等完整名称；品牌、型号和车型名称均已恢复。
 
+## Shacman 整机名称与型号恢复
+
+- [x] 审计 Shacman 整机源数据及独立翻译文件的名称与型号字段
+- [x] 仅恢复 Shacman 整机名称与型号的显示映射
+- [x] 验证 Shacman 整机页面显示完整名称与型号
+
+> 审计结果：Shacman 整机源数据中的 F3000、H3000、X3000、X5000、X6000 的 9 个型号均仍存在；问题仅在独立 `shacmanmachineTranslations.ts` 的名称映射，该映射只返回“Dump Truck”等通用类型。将仅在该 Shacman 整机翻译文件中恢复每个型号的完整名称。
+
+> 页面验证：Shacman 德语整机页面已实际显示“Shacman F3000 6×4 Schwerlast-Zugmaschine”“Shacman F3000 8×4 Kipplastwagen”“Shacman F3000/H3000 Betonmischer”“Shacman X6000 6×4 Ultra-Premium-Schwerlast-Zugmaschine”等完整名称；品牌、型号和车型名称均已恢复。
+
 ## 独立零件翻译重复键安全清理
 
 - [x] 仅删除已被同一对象最终同键属性覆盖的完整冗余属性节点
