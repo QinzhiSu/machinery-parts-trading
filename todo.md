@@ -1335,3 +1335,13 @@
 > 实现验证：新增 LiuGong 专用回归测试共 2 项，覆盖独立翻译文件中全部型号和 10 种语言；测试确认名称始终含品牌与型号，车型类型不含品牌或型号。
 
 > 页面验证：德语 LiuGong 品牌页前三张卡片已实际显示“LiuGong 856HE Radlader / Radlader”“LiuGong 856T Radlader / Radlader”“LiuGong 870HE Radlader / Radlader”；标题保留品牌和型号，副标题只显示车型类型，二者不再相同。
+
+## /construction Vite 热更新连接错误修复
+
+- [x] 诊断 /construction 预览页的 Vite WebSocket 连接错误与开发服务器状态
+- [x] 修复 Vite 热更新连接或开发服务配置
+- [x] 验证 /construction 页面加载及热更新 WebSocket 连接正常
+
+> 诊断与修复：错误发生时开发服务端口已失效，重启受管开发服务后服务器重新在 localhost:3000 启动。未修改 Vite 配置，以避免引入与受管预览代理不兼容的固定 HMR 主机或端口设置。
+
+> 验证结果：重启后 /construction 页面已连续两次正常加载六个工程机械品牌卡片；两次加载后的浏览器控制台均无 Vite WebSocket 错误，项目状态检查显示开发服务器运行中、TypeScript 无错误、语言服务无错误。
