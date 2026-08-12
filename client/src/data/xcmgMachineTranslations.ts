@@ -463,6 +463,15 @@ const xcmgModelByMachineType: Record<string, string> = {
   'Truck-Mounted Crane': 'XCA120G7-1H',
 };
 
+export function getTranslatedXCMGMachineFullName(machineType: string, language: string): string {
+  const translations = xcmgMachineTranslations[machineType];
+  const translatedType = translations?.[language] || translations?.en || machineType;
+  const model = xcmgModelByMachineType[machineType];
+  if (!model) return translatedType;
+  const brandName = language === 'zh' ? '徐工' : 'XCMG';
+  return `${brandName} ${model} ${translatedType}`;
+}
+
 export function getTranslatedXCMGMachineType(machineType: string, language: string): string {
   const typeTranslations: Record<string, Record<string, string>> = {
     'Compact Hydraulic Excavator': {
@@ -660,11 +669,7 @@ export function getTranslatedXCMGMachineType(machineType: string, language: stri
   };
   
   const translations = xcmgMachineTranslations[machineType] || typeTranslations[machineType];
-  const translatedType = translations?.[language] || translations?.en || machineType;
-  const model = xcmgModelByMachineType[machineType];
-  if (!model) return translatedType;
-  const brandName = language === 'zh' ? '徐工' : 'XCMG';
-  return `${brandName} ${model} ${translatedType}`;
+  return translations?.[language] || translations?.en || machineType;
 }
 
 export function getTranslatedXCMGMachineSpecs(specs: string, language: string): string {

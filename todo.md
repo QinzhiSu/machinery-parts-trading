@@ -1307,6 +1307,16 @@
 
 > 页面验证：XCMG 德语整机页面已实际显示“XCMG XE155UCR Kompakt-Hydraulikbagger”“XCMG XE215DA Mittelgroßer Hydraulikbagger”“XCMG XE215EV Elektrischer Hybrid-Hydraulikbagger”和“XCMG XCA120G7-1H Lastkraftwagen-Kran”等完整名称；品牌、型号和车型名称均已恢复。
 
+## XCMG 整机名称与车型类型去重显示
+
+- [x] 审计 XCMG 名称与车型类型的品牌页调用关系
+- [x] 仅修复 XCMG 名称和车型类型的独立显示映射
+- [x] 验证 XCMG 品牌页的名称与车型类型不再重复
+
+> 审计结果：品牌页的 XCMG 名称标题和车型类型副标题都调用了同一个 `getTranslatedXCMGMachineType(machine.name, language)`，因此两行显示相同。将新增 XCMG 专用完整名称函数供标题使用；车型类型副标题继续使用现有类型函数。品牌页只修改 XCMG 分支的一处调用与对应导入，不影响任何其他品牌分支。
+
+> 验证结果：XCMG 专用回归测试 3 项均通过。德语品牌页前三张卡片已实际显示“XCMG XE155UCR Kompakt-Hydraulikbagger / Kompakt-Hydraulikbagger”“XCMG XE215DA Mittelgroßer Hydraulikbagger / Mittelgroßer Hydraulikbagger”“XCMG XE215EV Elektrischer Hybrid-Hydraulikbagger / Elektrischer Hybrid-Hydraulikbagger”；标题含品牌和型号，副标题仅保留本地化车型类型。
+
 ## 独立零件翻译重复键安全清理
 
 - [x] 仅删除已被同一对象最终同键属性覆盖的完整冗余属性节点

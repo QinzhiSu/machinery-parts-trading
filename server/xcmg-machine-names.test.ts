@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getTranslatedXCMGMachineType } from "../client/src/data/xcmgMachineTranslations";
+import { getTranslatedXCMGMachineFullName, getTranslatedXCMGMachineType } from "../client/src/data/xcmgMachineTranslations";
 
 const languages = ["en", "zh", "es", "fr", "de", "pt", "ru", "ja", "ar", "it"];
 
@@ -26,7 +26,7 @@ describe("XCMG machine name translations", () => {
   it("keeps the XCMG brand and model visible for every supported language", () => {
     for (const [machineType, model] of Object.entries(machineModels)) {
       for (const language of languages) {
-        const name = getTranslatedXCMGMachineType(machineType, language);
+        const name = getTranslatedXCMGMachineFullName(machineType, language);
         expect(name).toContain(model);
         expect(name).toContain(language === "zh" ? "徐工" : "XCMG");
       }
@@ -34,7 +34,13 @@ describe("XCMG machine name translations", () => {
   });
 
   it("returns complete localized XCMG model names in German", () => {
-    expect(getTranslatedXCMGMachineType("Compact Hydraulic Excavator", "de")).toBe("XCMG XE155UCR Kompakt-Hydraulikbagger");
-    expect(getTranslatedXCMGMachineType("Truck-Mounted Crane", "de")).toBe("XCMG XCA120G7-1H Lastkraftwagen-Kran");
+    expect(getTranslatedXCMGMachineFullName("Compact Hydraulic Excavator", "de")).toBe("XCMG XE155UCR Kompakt-Hydraulikbagger");
+    expect(getTranslatedXCMGMachineFullName("Truck-Mounted Crane", "de")).toBe("XCMG XCA120G7-1H Lastkraftwagen-Kran");
+  });
+
+  it("keeps the localized machine type distinct from the complete model name", () => {
+    expect(getTranslatedXCMGMachineType("Compact Hydraulic Excavator", "de")).toBe("Kompakt-Hydraulikbagger");
+    expect(getTranslatedXCMGMachineType("Compact Hydraulic Excavator", "de")).not.toContain("XE155UCR");
+    expect(getTranslatedXCMGMachineType("Compact Hydraulic Excavator", "de")).not.toContain("XCMG");
   });
 });
