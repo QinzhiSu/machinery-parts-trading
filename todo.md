@@ -1121,3 +1121,15 @@
 - [x] 检查 BrandPage.tsx 中 Sinotruk 零件名称和分类的具体渲染逻辑
 - [x] 在 sparePartsTranslations_sinotruk.ts 中确保默认导出和函数签名完全符合 BrandPage 期望
 - [x] 实际打开页面验证 Sinotruk 零件各语言下的名称与分类显示
+
+## Sinotruk 仔细核对与最终修复
+
+- [x] 检查 products_sinotruk.ts 中 Sinotruk 零件的实际定义与导入情况
+- [x] 确保 sparePartsTranslations_sinotruk.ts 对所有原始中文名称和分类实现直接回退与多语言返回
+- [x] 验证 Sinotruk 页面分类与名称 100% 翻译
+
+## Sinotruk 名称与分类精确修复（本次）
+
+- [x] 导出最终页面数据源中全部 Sinotruk 名称和分类键并与翻译表逐项比对
+- [x] 仅在 Sinotruk 零件翻译文件中补齐所有缺失的名称与分类映射
+- [x] 在非中文语言下验证列表页和详情弹窗的名称与分类输出
