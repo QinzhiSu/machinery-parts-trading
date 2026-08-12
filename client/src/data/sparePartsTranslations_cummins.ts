@@ -1,6 +1,8 @@
 // Auto-generated translations for Cummins spare parts
 // DO NOT EDIT MANUALLY
 
+import { getTranslatedCumminsSparePartDetails } from './sparePartsDetails_cummins';
+
 export const cumminsNameTranslations = {
   'Connecting Rod Bearing': {
     en: 'Connecting Rod',
@@ -434,12 +436,8 @@ export const cumminsDescriptionTranslations: Record<string, Record<string, strin
   },
 };
 
-export function getTranslatedCumminsSparePartDescription(description: string, language: string = 'zh'): string {
-  const translations = cumminsDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
+export function getTranslatedCumminsSparePartDescription(name: string, language: string = 'zh'): string {
+  return getTranslatedCumminsSparePartDetails(name, language);
 }
 export const cumminsCategoryTranslations: Record<string, Record<string, string>> = {
   'Maintenance/Filtration System': {
@@ -591,5 +589,4 @@ export function getTranslatedCumminsSparePartCategory(category: string, language
   const translations = cumminsCategoryTranslations[category];
   return translations?.[language as keyof typeof translations] || category;
 }
-
 
