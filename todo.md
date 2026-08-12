@@ -1277,6 +1277,16 @@
 
 > 页面验证：Toyota 德语整机页面已实际显示“Toyota 4Runner Geländewagen”“Toyota Hilux 4×4 Pritschenwagen”等纯德语车型名称；参数显示为“4×4 | 4,0 l V6 | 215 kW | 4850 kg”“4×4 | 2,8 l Diesel | 130 kW | 1850 kg”等，已与现有 Toyota 源数据对齐且不含中文或英文通用车型词。
 
+## Sinotruk 整机名称与型号恢复
+
+- [x] 审计 Sinotruk 整机源数据及独立翻译文件的名称与型号字段
+- [x] 仅恢复 Sinotruk 整机名称与型号的显示映射
+- [x] 验证 Sinotruk 整机页面显示完整名称与型号
+
+> 审计结果：Sinotruk 整机源数据中的 HOWO 4×2、HOWO 6×4 Tanker、HOWO 6×4 Dump、HOWO 8×4 Mixer、HOWO 8×4 Dump、HOWO T7S、HOWO TX、HOWO TX Dump、HOWO T7H Concrete、SITRAK C7H、SITRAK C7H Mixer、HOWO 7 均仍存在；问题仅在独立 `sinotruckmachineTranslations.ts` 的名称映射，该映射只返回“Heavy Truck”等通用类型。将仅在该 Sinotruk 整机翻译文件中恢复每个型号的完整名称。
+
+> 页面验证：Sinotruk 德语整机页面已实际显示“Sinotruk HOWO 4×2 Sattelzugmaschine”“Sinotruk HOWO 6×4 Tankwagen”“Sinotruk HOWO T7S Premium-Kipplastwagen”“Sinotruk SITRAK C7H Sattelzugmaschine”等完整名称；品牌、型号和车型名称均已恢复。
+
 ## 独立零件翻译重复键安全清理
 
 - [x] 仅删除已被同一对象最终同键属性覆盖的完整冗余属性节点
