@@ -26,7 +26,7 @@ export const xcmgMachineTranslations: Record<string, Record<string, string>> = {
     pt: 'Escavadeira hidráulica de tamanho médio',
     it: 'Escavatore idraulico di medie dimensioni',
     ja: '中型油圧ショベル',
-    de: '中型液压挖掘机'
+    de: 'Mittelgroßer Hydraulikbagger'
   },
   'Electric Hybrid Excavator': {
     zh: '电动混合动力挖掘机',
@@ -444,6 +444,25 @@ export function getTranslatedXCMGMachineDescription(description: string, languag
   return description;
 }
 
+const xcmgModelByMachineType: Record<string, string> = {
+  'Compact Hydraulic Excavator': 'XE155UCR',
+  'Mid-Size Hydraulic Excavator': 'XE215DA',
+  'Electric Hybrid Excavator': 'XE215EV',
+  'Large Hydraulic Excavator': 'XE520E',
+  'Ultra-Large Mining Excavator': 'XE4000E',
+  'Mid-Size Wheel Loader': 'XC9260',
+  'Large Wheel Loader': 'XC968',
+  'Electric Wheel Loader': 'XC968-EV',
+  'Motor Grader': 'GD220J',
+  'Hydraulic Bulldozer': 'DL560',
+  'Mobile Truck Crane': 'XCT45U',
+  'Large Crawler Crane': 'XLC17000',
+  'Vibratory Road Roller': 'XC978E',
+  'Rotary Drilling Rig': 'XDE120',
+  'Large Rotary Drilling Rig': 'XDE260',
+  'Truck-Mounted Crane': 'XCA120G7-1H',
+};
+
 export function getTranslatedXCMGMachineType(machineType: string, language: string): string {
   const typeTranslations: Record<string, Record<string, string>> = {
     'Compact Hydraulic Excavator': {
@@ -640,11 +659,12 @@ export function getTranslatedXCMGMachineType(machineType: string, language: stri
   }
   };
   
-  const translations = typeTranslations[machineType];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return machineType;
+  const translations = xcmgMachineTranslations[machineType] || typeTranslations[machineType];
+  const translatedType = translations?.[language] || translations?.en || machineType;
+  const model = xcmgModelByMachineType[machineType];
+  if (!model) return translatedType;
+  const brandName = language === 'zh' ? '徐工' : 'XCMG';
+  return `${brandName} ${model} ${translatedType}`;
 }
 
 export function getTranslatedXCMGMachineSpecs(specs: string, language: string): string {

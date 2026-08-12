@@ -1297,6 +1297,16 @@
 
 > 页面验证：Shacman 德语整机页面已实际显示“Shacman F3000 6×4 Schwerlast-Zugmaschine”“Shacman F3000 8×4 Kipplastwagen”“Shacman F3000/H3000 Betonmischer”“Shacman X6000 6×4 Ultra-Premium-Schwerlast-Zugmaschine”等完整名称；品牌、型号和车型名称均已恢复。
 
+## XCMG 整机名称与型号恢复
+
+- [x] 审计 XCMG 整机源数据及独立翻译文件的名称与型号字段
+- [x] 仅恢复 XCMG 整机名称与型号的显示映射
+- [x] 验证 XCMG 整机页面显示完整名称与型号
+
+> 审计结果：XCMG 整机源数据中的 XE155UCR、XE215DA、XE215EV、XE520E、XE4000E、XC9260、XC968、XC968-EV、GD220J、DL560、XCT45U、XLC17000、XC978E、XDE120、XDE260、XCA120G7-1H 均仍存在；问题仅在独立 `xcmgMachineTranslations.ts` 的品牌页名称函数，该函数只返回通用车型类型。将仅在该 XCMG 整机翻译文件中建立车型名称到型号的映射并恢复完整显示。
+
+> 页面验证：XCMG 德语整机页面已实际显示“XCMG XE155UCR Kompakt-Hydraulikbagger”“XCMG XE215DA Mittelgroßer Hydraulikbagger”“XCMG XE215EV Elektrischer Hybrid-Hydraulikbagger”和“XCMG XCA120G7-1H Lastkraftwagen-Kran”等完整名称；品牌、型号和车型名称均已恢复。
+
 ## 独立零件翻译重复键安全清理
 
 - [x] 仅删除已被同一对象最终同键属性覆盖的完整冗余属性节点
