@@ -523,8 +523,6 @@ export const isuzuNameTranslations = {
   '机油滤芯(二级)': {
     en: '机油滤芯(二级)',
     zh: '机油滤芯(二级)',
-    ar: '机油滤芯(二级)',
-    it: '机油滤芯(二级)',
     es: '机油滤芯(二级)',
     fr: '机油滤芯(二级)',
     de: '机油滤芯(二级)',
@@ -537,8 +535,6 @@ export const isuzuNameTranslations = {
   '机油滤芯(型号2)': {
     en: '机油滤芯(型号2)',
     zh: '机油滤芯(型号2)',
-    ar: '机油滤芯(型号2)',
-    it: '机油滤芯(型号2)',
     es: '机油滤芯(型号2)',
     fr: '机油滤芯(型号2)',
     de: '机油滤芯(型号2)',
@@ -551,8 +547,6 @@ export const isuzuNameTranslations = {
   '柴油滤芯': {
     en: '柴油滤芯',
     zh: '柴油滤芯',
-    ar: '柴油滤芯',
-    it: '柴油滤芯',
     es: '柴油滤芯',
     fr: '柴油滤芯',
     de: '柴油滤芯',
@@ -565,8 +559,6 @@ export const isuzuNameTranslations = {
   '空气滤芯': {
     en: '空气滤芯',
     zh: '空气滤芯',
-    ar: '空气滤芯',
-    it: '空气滤芯',
     es: '空气滤芯',
     fr: '空气滤芯',
     de: '空气滤芯',
@@ -579,8 +571,6 @@ export const isuzuNameTranslations = {
   '液压油滤芯(型号2)': {
     en: '液压油滤芯(型号2)',
     zh: '液压油滤芯(型号2)',
-    ar: '液压油滤芯(型号2)',
-    it: '液压油滤芯(型号2)',
     es: '液压油滤芯(型号2)',
     fr: '液压油滤芯(型号2)',
     de: '液压油滤芯(型号2)',
@@ -593,8 +583,6 @@ export const isuzuNameTranslations = {
   '液压油滤芯(型号3)': {
     en: '液压油滤芯(型号3)',
     zh: '液压油滤芯(型号3)',
-    ar: '液压油滤芯(型号3)',
-    it: '液压油滤芯(型号3)',
     es: '液压油滤芯(型号3)',
     fr: '液压油滤芯(型号3)',
     de: '液压油滤芯(型号3)',
@@ -607,8 +595,6 @@ export const isuzuNameTranslations = {
   '先导阀滤芯': {
     en: '先导阀滤芯',
     zh: '先导阀滤芯',
-    ar: '先导阀滤芯',
-    it: '先导阀滤芯',
     es: '先导阀滤芯',
     fr: '先导阀滤芯',
     de: '先导阀滤芯',
@@ -621,8 +607,6 @@ export const isuzuNameTranslations = {
   '机油滤芯(卡车版)': {
     en: '机油滤芯(卡车版)',
     zh: '机油滤芯(卡车版)',
-    ar: '机油滤芯(卡车版)',
-    it: '机油滤芯(卡车版)',
     es: '机油滤芯(卡车版)',
     fr: '机油滤芯(卡车版)',
     de: '机油滤芯(卡车版)',
@@ -635,8 +619,6 @@ export const isuzuNameTranslations = {
   '水泵总成': {
     en: '水泵总成',
     zh: '水泵总成',
-    ar: '水泵总成',
-    it: '水泵总成',
     es: '水泵总成',
     fr: '水泵总成',
     de: '水泵总成',
@@ -649,8 +631,6 @@ export const isuzuNameTranslations = {
   '水泵总成(型号2)': {
     en: '水泵总成(型号2)',
     zh: '水泵总成(型号2)',
-    ar: '水泵总成(型号2)',
-    it: '水泵总成(型号2)',
     es: '水泵总成(型号2)',
     fr: '水泵总成(型号2)',
     de: '水泵总成(型号2)',
@@ -663,8 +643,6 @@ export const isuzuNameTranslations = {
   '机油泵总成': {
     en: '机油泵总成',
     zh: '机油泵总成',
-    ar: '机油泵总成',
-    it: '机油泵总成',
     es: '机油泵总成',
     fr: '机油泵总成',
     de: '机油泵总成',
@@ -677,8 +655,6 @@ export const isuzuNameTranslations = {
   '机油输送泵': {
     en: '机油输送泵',
     zh: '机油输送泵',
-    ar: '机油输送泵',
-    it: '机油输送泵',
     es: '机油输送泵',
     fr: '机油输送泵',
     de: '机油输送泵',
@@ -691,8 +667,6 @@ export const isuzuNameTranslations = {
   '机油泵(高压型)': {
     en: '机油泵(高压型)',
     zh: '机油泵(高压型)',
-    ar: '机油泵(高压型)',
-    it: '机油泵(高压型)',
     es: '机油泵(高压型)',
     fr: '机油泵(高压型)',
     de: '机油泵(高压型)',
@@ -705,8 +679,6 @@ export const isuzuNameTranslations = {
   '空气滤芯(6HK1)': {
     en: '空气滤芯(6HK1)',
     zh: '空气滤芯(6HK1)',
-    ar: '空气滤芯(6HK1)',
-    it: '空气滤芯(6HK1)',
     es: '空气滤芯(6HK1)',
     fr: '空气滤芯(6HK1)',
     de: '空气滤芯(6HK1)',
@@ -719,8 +691,6 @@ export const isuzuNameTranslations = {
   '机油滤芯(6HK1)': {
     en: '机油滤芯(6HK1)',
     zh: '机油滤芯(6HK1)',
-    ar: '机油滤芯(6HK1)',
-    it: '机油滤芯(6HK1)',
     es: '机油滤芯(6HK1)',
     fr: '机油滤芯(6HK1)',
     de: '机油滤芯(6HK1)',
@@ -733,8 +703,6 @@ export const isuzuNameTranslations = {
   '柴油滤芯(6HK1一级)': {
     en: '柴油滤芯(6HK1一级)',
     zh: '柴油滤芯(6HK1一级)',
-    ar: '柴油滤芯(6HK1一级)',
-    it: '柴油滤芯(6HK1一级)',
     es: '柴油滤芯(6HK1一级)',
     fr: '柴油滤芯(6HK1一级)',
     de: '柴油滤芯(6HK1一级)',
@@ -747,8 +715,6 @@ export const isuzuNameTranslations = {
   '柴油滤芯(6HK1二级)': {
     en: '柴油滤芯(6HK1二级)',
     zh: '柴油滤芯(6HK1二级)',
-    ar: '柴油滤芯(6HK1二级)',
-    it: '柴油滤芯(6HK1二级)',
     es: '柴油滤芯(6HK1二级)',
     fr: '柴油滤芯(6HK1二级)',
     de: '柴油滤芯(6HK1二级)',
@@ -761,8 +727,6 @@ export const isuzuNameTranslations = {
   '液压油滤芯(6HK1)': {
     en: '液压油滤芯(6HK1)',
     zh: '液压油滤芯(6HK1)',
-    ar: '液压油滤芯(6HK1)',
-    it: '液压油滤芯(6HK1)',
     es: '液压油滤芯(6HK1)',
     fr: '液压油滤芯(6HK1)',
     de: '液压油滤芯(6HK1)',
@@ -775,8 +739,6 @@ export const isuzuNameTranslations = {
   '液压油滤芯(6HK1型号2)': {
     en: '液压油滤芯(6HK1型号2)',
     zh: '液压油滤芯(6HK1型号2)',
-    ar: '液压油滤芯(6HK1型号2)',
-    it: '液压油滤芯(6HK1型号2)',
     es: '液压油滤芯(6HK1型号2)',
     fr: '液压油滤芯(6HK1型号2)',
     de: '液压油滤芯(6HK1型号2)',
@@ -789,8 +751,6 @@ export const isuzuNameTranslations = {
   '先导阀滤芯(6HK1)': {
     en: '先导阀滤芯(6HK1)',
     zh: '先导阀滤芯(6HK1)',
-    ar: '先导阀滤芯(6HK1)',
-    it: '先导阀滤芯(6HK1)',
     es: '先导阀滤芯(6HK1)',
     fr: '先导阀滤芯(6HK1)',
     de: '先导阀滤芯(6HK1)',
@@ -803,8 +763,6 @@ export const isuzuNameTranslations = {
   '机油滤芯总成(6HK1-3代)': {
     en: '机油滤芯总成(6HK1-3代)',
     zh: '机油滤芯总成(6HK1-3代)',
-    ar: '机油滤芯总成(6HK1-3代)',
-    it: '机油滤芯总成(6HK1-3代)',
     es: '机油滤芯总成(6HK1-3代)',
     fr: '机油滤芯总成(6HK1-3代)',
     de: '机油滤芯总成(6HK1-3代)',
@@ -817,8 +775,6 @@ export const isuzuNameTranslations = {
   '柴油滤芯(6HK1-3代/新款)': {
     en: '柴油滤芯(6HK1-3代/新款)',
     zh: '柴油滤芯(6HK1-3代/新款)',
-    ar: '柴油滤芯(6HK1-3代/新款)',
-    it: '柴油滤芯(6HK1-3代/新款)',
     es: '柴油滤芯(6HK1-3代/新款)',
     fr: '柴油滤芯(6HK1-3代/新款)',
     de: '柴油滤芯(6HK1-3代/新款)',
@@ -831,8 +787,6 @@ export const isuzuNameTranslations = {
   '水泵总成(6HK1)': {
     en: '水泵总成(6HK1)',
     zh: '水泵总成(6HK1)',
-    ar: '水泵总成(6HK1)',
-    it: '水泵总成(6HK1)',
     es: '水泵总成(6HK1)',
     fr: '水泵总成(6HK1)',
     de: '水泵总成(6HK1)',
@@ -845,8 +799,6 @@ export const isuzuNameTranslations = {
   '水泵总成(6HK1型号2)': {
     en: '水泵总成(6HK1型号2)',
     zh: '水泵总成(6HK1型号2)',
-    ar: '水泵总成(6HK1型号2)',
-    it: '水泵总成(6HK1型号2)',
     es: '水泵总成(6HK1型号2)',
     fr: '水泵总成(6HK1型号2)',
     de: '水泵总成(6HK1型号2)',
@@ -859,8 +811,6 @@ export const isuzuNameTranslations = {
   '水泵总成(6HK1 FVR卡车版)': {
     en: '水泵总成(6HK1 FVR卡车版)',
     zh: '水泵总成(6HK1 FVR卡车版)',
-    ar: '水泵总成(6HK1 FVR卡车版)',
-    it: '水泵总成(6HK1 FVR卡车版)',
     es: '水泵总成(6HK1 FVR卡车版)',
     fr: '水泵总成(6HK1 FVR卡车版)',
     de: '水泵总成(6HK1 FVR卡车版)',
@@ -873,8 +823,6 @@ export const isuzuNameTranslations = {
   '电子机油泵': {
     en: '电子机油泵',
     zh: '电子机油泵',
-    ar: '电子机油泵',
-    it: '电子机油泵',
     es: '电子机油泵',
     fr: '电子机油泵',
     de: '电子机油泵',
@@ -887,8 +835,6 @@ export const isuzuNameTranslations = {
   '燃油喷射泵总成': {
     en: '燃油喷射泵总成',
     zh: '燃油喷射泵总成',
-    ar: '燃油喷射泵总成',
-    it: '燃油喷射泵总成',
     es: '燃油喷射泵总成',
     fr: '燃油喷射泵总成',
     de: '燃油喷射泵总成',
@@ -901,8 +847,6 @@ export const isuzuNameTranslations = {
   '燃油喷射泵(型号2)': {
     en: '燃油喷射泵(型号2)',
     zh: '燃油喷射泵(型号2)',
-    ar: '燃油喷射泵(型号2)',
-    it: '燃油喷射泵(型号2)',
     es: '燃油喷射泵(型号2)',
     fr: '燃油喷射泵(型号2)',
     de: '燃油喷射泵(型号2)',
@@ -915,8 +859,6 @@ export const isuzuNameTranslations = {
   '燃油喷射泵(FTR/FXR/FVR卡车版)': {
     en: '燃油喷射泵(FTR/FXR/FVR卡车版)',
     zh: '燃油喷射泵(FTR/FXR/FVR卡车版)',
-    ar: '燃油喷射泵(FTR/FXR/FVR卡车版)',
-    it: '燃油喷射泵(FTR/FXR/FVR卡车版)',
     es: '燃油喷射泵(FTR/FXR/FVR卡车版)',
     fr: '燃油喷射泵(FTR/FXR/FVR卡车版)',
     de: '燃油喷射泵(FTR/FXR/FVR卡车版)',
@@ -929,8 +871,6 @@ export const isuzuNameTranslations = {
   '涡轮增压器(RHG6型)': {
     en: '涡轮增压器(RHG6型)',
     zh: '涡轮增压器(RHG6型)',
-    ar: '涡轮增压器(RHG6型)',
-    it: '涡轮增压器(RHG6型)',
     es: '涡轮增压器(RHG6型)',
     fr: '涡轮增压器(RHG6型)',
     de: '涡轮增压器(RHG6型)',
@@ -943,8 +883,6 @@ export const isuzuNameTranslations = {
   '涡轮增压器(RHG6,SH300)': {
     en: '涡轮增压器(RHG6,SH300)',
     zh: '涡轮增压器(RHG6,SH300)',
-    ar: '涡轮增压器(RHG6,SH300)',
-    it: '涡轮增压器(RHG6,SH300)',
     es: '涡轮增压器(RHG6,SH300)',
     fr: '涡轮增压器(RHG6,SH300)',
     de: '涡轮增压器(RHG6,SH300)',
@@ -957,8 +895,6 @@ export const isuzuNameTranslations = {
   '机油冷却器芯': {
     en: '机油冷却器芯',
     zh: '机油冷却器芯',
-    ar: '机油冷却器芯',
-    it: '机油冷却器芯',
     es: '机油冷却器芯',
     fr: '机油冷却器芯',
     de: '机油冷却器芯',
@@ -971,8 +907,6 @@ export const isuzuNameTranslations = {
   '散热风扇叶片': {
     en: '散热风扇叶片',
     zh: '散热风扇叶片',
-    ar: '散热风扇叶片',
-    it: '散热风扇叶片',
     es: '散热风扇叶片',
     fr: '散热风扇叶片',
     de: '散热风扇叶片',
@@ -985,8 +919,6 @@ export const isuzuNameTranslations = {
   '排气歧管': {
     en: '排气歧管',
     zh: '排气歧管',
-    ar: '排气歧管',
-    it: '排气歧管',
     es: '排气歧管',
     fr: '排气歧管',
     de: '排气歧管',
@@ -1063,15 +995,14 @@ export function getTranslatedIsuzuSparePartName(name: string, language: string =
   const translations = sourceKind
     ? isuzuSourceNameTranslations[sourceKind]
     : isuzuNameTranslations[name as keyof typeof isuzuNameTranslations];
-  return translations?.[language] || translations?.en || name;
+  const translatedRecord = translations as Record<string, string> | undefined;
+  return translatedRecord?.[language] || translatedRecord?.en || name;
 }
 
 export const isuzuDescriptionTranslations: Record<string, Record<string, string>> = {
   'Isuzu part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Isuzu part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '五十铃零件。500-1000小时或视油液检测结果更换',
-    ar: 'Isuzu part. Replace every 500-1000 hours or based on fluid analysis results.',
-    it: 'Isuzu part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Isuzu. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Isuzu. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Isuzu-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -1084,8 +1015,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。250-500小时随保养更换': {
     en: 'ISUZU 零件。250-500小时随保养更换',
     zh: 'ISUZU 零件。250-500小时随保养更换',
-    ar: 'ISUZU 零件。250-500小时随保养更换',
-    it: 'ISUZU 零件。250-500小时随保养更换',
     es: 'ISUZU 零件。250-500小时随保养更换',
     fr: 'ISUZU 零件。250-500小时随保养更换',
     de: 'ISUZU 零件。250-500小时随保养更换',
@@ -1098,8 +1027,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。250-500小时': {
     en: 'ISUZU 零件。250-500小时',
     zh: 'ISUZU 零件。250-500小时',
-    ar: 'ISUZU 零件。250-500小时',
-    it: 'ISUZU 零件。250-500小时',
     es: 'ISUZU 零件。250-500小时',
     fr: 'ISUZU 零件。250-500小时',
     de: 'ISUZU 零件。250-500小时',
@@ -1112,8 +1039,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。250-500小时或视油品': {
     en: 'ISUZU 零件。250-500小时或视油品',
     zh: 'ISUZU 零件。250-500小时或视油品',
-    ar: 'ISUZU 零件。250-500小时或视油品',
-    it: 'ISUZU 零件。250-500小时或视油品',
     es: 'ISUZU 零件。250-500小时或视油品',
     fr: 'ISUZU 零件。250-500小时或视油品',
     de: 'ISUZU 零件。250-500小时或视油品',
@@ -1126,8 +1051,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。250-500小时或视灰尘环境': {
     en: 'ISUZU 零件。250-500小时或视灰尘环境',
     zh: 'ISUZU 零件。250-500小时或视灰尘环境',
-    ar: 'ISUZU 零件。250-500小时或视灰尘环境',
-    it: 'ISUZU 零件。250-500小时或视灰尘环境',
     es: 'ISUZU 零件。250-500小时或视灰尘环境',
     fr: 'ISUZU 零件。250-500小时或视灰尘环境',
     de: 'ISUZU 零件。250-500小时或视灰尘环境',
@@ -1140,8 +1063,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。500-1000小时或视油液检测': {
     en: 'ISUZU 零件。500-1000小时或视油液检测',
     zh: 'ISUZU 零件。500-1000小时或视油液检测',
-    ar: 'ISUZU 零件。500-1000小时或视油液检测',
-    it: 'ISUZU 零件。500-1000小时或视油液检测',
     es: 'ISUZU 零件。500-1000小时或视油液检测',
     fr: 'ISUZU 零件。500-1000小时或视油液检测',
     de: 'ISUZU 零件。500-1000小时或视油液检测',
@@ -1154,8 +1075,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。500-1000小时': {
     en: 'ISUZU 零件。500-1000小时',
     zh: 'ISUZU 零件。500-1000小时',
-    ar: 'ISUZU 零件。500-1000小时',
-    it: 'ISUZU 零件。500-1000小时',
     es: 'ISUZU 零件。500-1000小时',
     fr: 'ISUZU 零件。500-1000小时',
     de: 'ISUZU 零件。500-1000小时',
@@ -1168,8 +1087,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。冷却液渗漏/异响时更换': {
     en: 'ISUZU 零件。冷却液渗漏/异响时更换',
     zh: 'ISUZU 零件。冷却液渗漏/异响时更换',
-    ar: 'ISUZU 零件。冷却液渗漏/异响时更换',
-    it: 'ISUZU 零件。冷却液渗漏/异响时更换',
     es: 'ISUZU 零件。冷却液渗漏/异响时更换',
     fr: 'ISUZU 零件。冷却液渗漏/异响时更换',
     de: 'ISUZU 零件。冷却液渗漏/异响时更换',
@@ -1182,8 +1099,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。动力下降/异响/漏油时更换(大修类)': {
     en: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类)',
     zh: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类)',
-    ar: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类)',
-    it: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类)',
     es: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类)',
     fr: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类)',
     de: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类)',
@@ -1196,8 +1111,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。润滑不良/压力异常时更换(大修类)': {
     en: 'ISUZU 零件。润滑不良/压力异常时更换(大修类)',
     zh: 'ISUZU 零件。润滑不良/压力异常时更换(大修类)',
-    ar: 'ISUZU 零件。润滑不良/压力异常时更换(大修类)',
-    it: 'ISUZU 零件。润滑不良/压力异常时更换(大修类)',
     es: 'ISUZU 零件。润滑不良/压力异常时更换(大修类)',
     fr: 'ISUZU 零件。润滑不良/压力异常时更换(大修类)',
     de: 'ISUZU 零件。润滑不良/压力异常时更换(大修类)',
@@ -1210,8 +1123,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。润滑不良时更换': {
     en: 'ISUZU 零件。润滑不良时更换',
     zh: 'ISUZU 零件。润滑不良时更换',
-    ar: 'ISUZU 零件。润滑不良时更换',
-    it: 'ISUZU 零件。润滑不良时更换',
     es: 'ISUZU 零件。润滑不良时更换',
     fr: 'ISUZU 零件。润滑不良时更换',
     de: 'ISUZU 零件。润滑不良时更换',
@@ -1224,8 +1135,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。润滑不良/压力异常时更换': {
     en: 'ISUZU 零件。润滑不良/压力异常时更换',
     zh: 'ISUZU 零件。润滑不良/压力异常时更换',
-    ar: 'ISUZU 零件。润滑不良/压力异常时更换',
-    it: 'ISUZU 零件。润滑不良/压力异常时更换',
     es: 'ISUZU 零件。润滑不良/压力异常时更换',
     fr: 'ISUZU 零件。润滑不良/压力异常时更换',
     de: 'ISUZU 零件。润滑不良/压力异常时更换',
@@ -1238,8 +1147,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。喷油不良/启动困难时更换(大修类)': {
     en: 'ISUZU 零件。喷油不良/启动困难时更换(大修类)',
     zh: 'ISUZU 零件。喷油不良/启动困难时更换(大修类)',
-    ar: 'ISUZU 零件。喷油不良/启动困难时更换(大修类)',
-    it: 'ISUZU 零件。喷油不良/启动困难时更换(大修类)',
     es: 'ISUZU 零件。喷油不良/启动困难时更换(大修类)',
     fr: 'ISUZU 零件。喷油不良/启动困难时更换(大修类)',
     de: 'ISUZU 零件。喷油不良/启动困难时更换(大修类)',
@@ -1252,8 +1159,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。喷油不良时更换(大修类)': {
     en: 'ISUZU 零件。喷油不良时更换(大修类)',
     zh: 'ISUZU 零件。喷油不良时更换(大修类)',
-    ar: 'ISUZU 零件。喷油不良时更换(大修类)',
-    it: 'ISUZU 零件。喷油不良时更换(大修类)',
     es: 'ISUZU 零件。喷油不良时更换(大修类)',
     fr: 'ISUZU 零件。喷油不良时更换(大修类)',
     de: 'ISUZU 零件。喷油不良时更换(大修类)',
@@ -1266,8 +1171,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。动力下降/异响/漏油时更换(大修类高价件)': {
     en: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类高价件)',
     zh: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类高价件)',
-    ar: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类高价件)',
-    it: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类高价件)',
     es: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类高价件)',
     fr: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类高价件)',
     de: 'ISUZU 零件。动力下降/异响/漏油时更换(大修类高价件)',
@@ -1280,8 +1183,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。散热不良/渗漏时更换': {
     en: 'ISUZU 零件。散热不良/渗漏时更换',
     zh: 'ISUZU 零件。散热不良/渗漏时更换',
-    ar: 'ISUZU 零件。散热不良/渗漏时更换',
-    it: 'ISUZU 零件。散热不良/渗漏时更换',
     es: 'ISUZU 零件。散热不良/渗漏时更换',
     fr: 'ISUZU 零件。散热不良/渗漏时更换',
     de: 'ISUZU 零件。散热不良/渗漏时更换',
@@ -1294,8 +1195,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。异响/扇叶断裂时更换': {
     en: 'ISUZU 零件。异响/扇叶断裂时更换',
     zh: 'ISUZU 零件。异响/扇叶断裂时更换',
-    ar: 'ISUZU 零件。异响/扇叶断裂时更换',
-    it: 'ISUZU 零件。异响/扇叶断裂时更换',
     es: 'ISUZU 零件。异响/扇叶断裂时更换',
     fr: 'ISUZU 零件。异响/扇叶断裂时更换',
     de: 'ISUZU 零件。异响/扇叶断裂时更换',
@@ -1308,8 +1207,6 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   'ISUZU 零件。裂纹/漏气时更换': {
     en: 'ISUZU 零件。裂纹/漏气时更换',
     zh: 'ISUZU 零件。裂纹/漏气时更换',
-    ar: 'ISUZU 零件。裂纹/漏气时更换',
-    it: 'ISUZU 零件。裂纹/漏气时更换',
     es: 'ISUZU 零件。裂纹/漏气时更换',
     fr: 'ISUZU 零件。裂纹/漏气时更换',
     de: 'ISUZU 零件。裂纹/漏气时更换',
@@ -1334,7 +1231,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
-    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -1347,7 +1243,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
-    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -1360,7 +1255,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
-    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -1373,7 +1267,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
-    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -1386,7 +1279,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
-    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -1399,7 +1291,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
-    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -1412,7 +1303,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
-    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -1425,7 +1315,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
-    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -1438,7 +1327,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
-    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -1451,7 +1339,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
-    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -1464,7 +1351,6 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
-    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

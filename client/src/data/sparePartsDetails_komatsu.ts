@@ -282,7 +282,7 @@ export const komatsuPartDetailsTranslations = {
 
 export function getTranslatedKomatsuSparePartDetails(partName: string = '', language: string = 'en'): string {
   // Try to find a specific translation for this part name
-  const translations = komatsuPartDetailsTranslations[partName];
+  const translations = (komatsuPartDetailsTranslations as Record<string, Record<string, string>>)[partName];
   if (translations && translations[language]) {
     return translations[language];
   }

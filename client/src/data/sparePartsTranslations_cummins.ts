@@ -454,15 +454,14 @@ const cumminsSourceNameKeys: Record<string, keyof typeof cumminsSourceNameTransl
 export function getTranslatedCumminsSparePartName(name: string, language: string = 'zh'): string {
   const sourceKey = cumminsSourceNameKeys[name];
   const translations = sourceKey ? cumminsSourceNameTranslations[sourceKey] : cumminsNameTranslations[name as keyof typeof cumminsNameTranslations];
-  return translations?.[language] || translations?.en || name;
+  const translatedRecord = translations as Record<string, string> | undefined;
+  return translatedRecord?.[language] || translatedRecord?.en || name;
 }
 
 export const cumminsDescriptionTranslations: Record<string, Record<string, string>> = {
   'Cummins part. Replace every 500-1000 hours or based on fluid analysis results.': {
     en: 'Cummins part. Replace every 500-1000 hours or based on fluid analysis results.',
     zh: '康明斯零件。500-1000小时或视油液检测结果更换',
-    ar: 'Cummins part. Replace every 500-1000 hours or based on fluid analysis results.',
-    it: 'Cummins part. Replace every 500-1000 hours or based on fluid analysis results.',
     es: 'Pieza Cummins. Reemplazar cada 500-1000 horas o según los resultados del análisis de fluidos.',
     fr: 'Pièce Cummins. Remplacer tous les 500-1000 heures ou selon les résultats de l\'analyse des fluides.',
     de: 'Cummins-Teil. Alle 500-1000 Stunden oder nach Fluidanalyse ersetzen.',
@@ -487,7 +486,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система обслуживания/фильтрации',
     ja: 'メンテナンス/フィルトレーションシステム',
     zh: '维护/过滤系统',
-    it: 'Sistema di manutenzione/filtrazione',
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di Manutenzione/Filtrazione',
   },
@@ -500,7 +498,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система охлаждения',
     ja: '冷却システム',
     zh: '冷却系统',
-    it: 'Sistema di raffreddamento',
     ar: 'نظام التبريد',
     it: 'Sistema di Raffreddamento',
   },
@@ -513,7 +510,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система наддува/впуска',
     ja: 'ターボチャージング/吸気システム',
     zh: '增压/进气系统',
-    it: 'Turbocharging/Intake System',
     ar: 'نظام الشحن التوربيني/السحب',
     it: 'Sistema di Sovralimentazione/Aspirazione',
   },
@@ -526,7 +522,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система шасси/гусеничного хода',
     ja: 'シャーシ/トラックシステム',
     zh: '底盘/履带系统',
-    it: 'Sistema telaio/cingolo',
     ar: 'نظام الهيكل/المسار',
     it: 'Sistema di Telaio/Cingoli',
   },
@@ -539,7 +534,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET',
     ja: '掘削/GET',
     zh: '挖掘/GET',
-    it: 'Excavation/GET',
     ar: 'التنقيب/GET',
     it: 'Scavo/GET',
   },
@@ -552,7 +546,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Малый)',
     ja: '掘削/GET (小)',
     zh: '挖掘/GET (小型)',
-    it: 'Excavation/GET (Small)',
     ar: 'التنقيب/GET (صغير)',
     it: 'Scavo/GET (Piccolo)',
   },
@@ -565,7 +558,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Средний)',
     ja: '掘削/GET (中)',
     zh: '挖掘/GET (中型)',
-    it: 'Excavation/GET (Medium)',
     ar: 'التنقيب/GET (متوسط)',
     it: 'Scavo/GET (Medio)',
   },
@@ -578,7 +570,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Экскавация/GET (Большой)',
     ja: '掘削/GET (大)',
     zh: '挖掘/GET (大型)',
-    it: 'Excavation/GET (Large)',
     ar: 'التنقيب/GET (كبير)',
     it: 'Scavo/GET (Grande)',
   },
@@ -591,7 +582,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система передачи',
     ja: 'トランスミッションシステム',
     zh: '传动系统',
-    it: 'Sistema di trasmissione',
     ar: 'نظام الإرسال',
     it: 'Sistema di Trasmissione',
   },
@@ -604,7 +594,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Система штифта/втулки стрелы',
     ja: 'ブームピン/ブッシングシステム',
     zh: '动臂销/衬套系统',
-    it: 'Boom Pin/Bushing System',
     ar: 'نظام دبوس/بوشة الرافعة',
     it: 'Sistema di Perno/Boccola del Braccio',
   },
@@ -617,7 +606,6 @@ export const cumminsCategoryTranslations: Record<string, Record<string, string>>
     ru: 'Гидравлический цилиндр/уплотнения',
     ja: '油圧シリンダー/シール',
     zh: '液压缸/密封件',
-    it: 'Hydraulic Cylinder/Seals',
     ar: 'أسطوانة هيدروليكية/أختام',
     it: 'Cilindro Idraulico/Guarnizioni',
   },

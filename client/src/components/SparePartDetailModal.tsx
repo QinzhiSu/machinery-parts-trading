@@ -26,17 +26,17 @@ interface SparePartDetailModalProps {
 }
 
 // Import category translation functions
-import { getTranslatedCaterpillarSparePartCategory } from '@/data/sparePartsTranslations_caterpillar';
-import { getTranslatedShantuiSparePartCategory } from '@/data/sparePartsTranslations_shantui';
-import { getTranslatedXCMGSparePartCategory } from '@/data/sparePartsTranslations_xcmg';
-import { getTranslatedLiuGongSparePartCategory } from '@/data/sparePartsTranslations_liugong';
-import { getTranslatedSANYSparePartCategory } from '@/data/sparePartsTranslations_sany';
-import { getTranslatedKomatsuSparePartCategory } from '@/data/sparePartsTranslations_komatsu';
-import { getTranslatedIsuzuSparePartCategory } from '@/data/sparePartsTranslations_isuzu';
-import { getTranslatedShacmanSparePartCategory } from '@/data/sparePartsTranslations_shacman';
-import { getTranslatedSinotrukSparePartCategory } from '@/data/sparePartsTranslations_sinotruk';
-import { getTranslatedToyotaSparePartCategory } from '@/data/sparePartsTranslations_toyota';
-import { getTranslatedCumminsSparePartCategory } from '@/data/sparePartsTranslations_cummins';
+import { getTranslatedCaterpillarSparePartCategory, getTranslatedCaterpillarSparePartName } from '@/data/sparePartsTranslations_caterpillar';
+import { getTranslatedShantuiSparePartCategory, getTranslatedShantuiSparePartName } from '@/data/sparePartsTranslations_shantui';
+import { getTranslatedXCMGSparePartCategory, getTranslatedXCMGSparePartName } from '@/data/sparePartsTranslations_xcmg';
+import { getTranslatedLiuGongSparePartCategory, getTranslatedLiuGongSparePartName } from '@/data/sparePartsTranslations_liugong';
+import { getTranslatedSANYSparePartCategory, getTranslatedSanySparePartName } from '@/data/sparePartsTranslations_sany';
+import { getTranslatedKomatsuSparePartCategory, getTranslatedKomatsuSparePartName } from '@/data/sparePartsTranslations_komatsu';
+import { getTranslatedIsuzuSparePartCategory, getTranslatedIsuzuSparePartName } from '@/data/sparePartsTranslations_isuzu';
+import { getTranslatedShacmanSparePartCategory, getTranslatedShacmanSparePartName } from '@/data/sparePartsTranslations_shacman';
+import { getTranslatedSinotrukSparePartCategory, getTranslatedSinotrukSparePartName } from '@/data/sparePartsTranslations_sinotruk';
+import { getTranslatedToyotaSparePartCategory, getTranslatedToyotaSparePartName } from '@/data/sparePartsTranslations_toyota';
+import { getTranslatedCumminsSparePartCategory, getTranslatedCumminsSparePartName } from '@/data/sparePartsTranslations_cummins';
 import { getTranslatedWeichaiSparePartCategory, getTranslatedWeichaiSparePartName } from '@/data/sparePartsTranslations_weichai';
 
 // Map brand IDs to their translation functions
@@ -72,6 +72,17 @@ const brandCategoryMap: Record<string, (category: string, language: string) => s
 };
 
 const brandNameMap: Record<string, (partName: string, language: string) => string> = {
+  caterpillar: getTranslatedCaterpillarSparePartName,
+  shantui: getTranslatedShantuiSparePartName,
+  xcmg: getTranslatedXCMGSparePartName,
+  liugong: getTranslatedLiuGongSparePartName,
+  sany: getTranslatedSanySparePartName,
+  komatsu: getTranslatedKomatsuSparePartName,
+  isuzu: getTranslatedIsuzuSparePartName,
+  shacman: getTranslatedShacmanSparePartName,
+  sinotruk: getTranslatedSinotrukSparePartName,
+  toyota: getTranslatedToyotaSparePartName,
+  cummins: getTranslatedCumminsSparePartName,
   weichai: getTranslatedWeichaiSparePartName,
 };
 

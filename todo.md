@@ -1188,3 +1188,20 @@
 > 弹窗验证说明：Weichai 详情弹窗与列表共用以零件名称为键的 `getTranslatedWeichaiSparePartDetails(partName, language)` 调用；回归测试已逐项断言 30 个零件在列表描述和弹窗详情路径下的 10 种语言输出完全一致。
 
 > 页面交互核验：德语页面中的首个详情按钮实际文本为“Details anzeigen”，按钮已正确渲染并可交互。弹窗现已确认显示“Ölfilter”标题、“Wartungs-/Filtersystem”分类及对应的德语机油滤芯技术描述；不再显示英文源名称“Oil Filter”或中文源名称。
+
+## 全品牌零件详情弹窗名称翻译核验
+
+- [x] 让详情弹窗标题调用全部 12 个品牌各自的零件名称翻译函数
+- [x] 验证详情弹窗名称、分类和独立详细描述的品牌路由
+- [x] 运行现有零件翻译回归测试并记录结果
+
+> 2026-08-12 页面核验：Cummins 德语零件列表显示“Turboladerschlauch、Pleuellager、Wasserpumpendichtring”等名称，“Motorsystem、Kühlsystem、Kraftstoffsystem”等分类，以及纯德语技术描述；未发现中文名称或分类源键。
+
+> 弹窗核验：Cummins 德语详情弹窗已显示“Turboladerschlauch”标题、“Motorsystem”分类和对应的德语技术描述；其标题不再使用中文源名称。全品牌路由测试覆盖 12 个品牌，确认每个品牌均调用自身独立名称翻译函数。
+
+## 独立零件翻译重复键安全清理
+
+- [x] 仅删除已被同一对象最终同键属性覆盖的完整冗余属性节点
+- [x] 确认全部独立零件翻译文件不再产生 TS1117 重复键错误
+
+> 清理验证：仅移除了 Cummins、Isuzu、SANY、Shacman 与 Toyota 独立零件翻译对象中会被同一对象后续同键值覆盖的完整冗余属性；执行 `tsc --noEmit` 已无错误，且 9 个回归测试文件的 27 项测试全部通过。
