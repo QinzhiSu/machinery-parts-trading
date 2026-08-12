@@ -151,7 +151,6 @@ export default function AboutPage() {
                   </p>
                   <div className="text-xs" style={{ color: 'oklch(0.55 0.02 265)' }}>
                     <div className="mb-1">{office.address}</div>
-                    <div>{office.phone}</div>
                   </div>
                 </div>
               ))}
