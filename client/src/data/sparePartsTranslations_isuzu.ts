@@ -998,9 +998,72 @@ export const isuzuNameTranslations = {
   },
 };
 
+// Exact raw keys used by the Isuzu spare-parts data in products.ts.
+// This keeps the page from falling back to Chinese source labels.
+const isuzuSourceNameTranslations: Record<string, Record<string, string>> = {
+  oilFilter: { en: 'Engine Oil Filter', zh: '发动机机油滤芯', es: 'Filtro de Aceite de Motor', fr: 'Filtre à Huile Moteur', de: 'Motorölfilter', pt: 'Filtro de Óleo do Motor', ru: 'Фильтр моторного масла', ja: 'エンジンオイルフィルター', ar: 'مرشح زيت المحرك', it: 'Filtro olio motore' },
+  dieselFilter: { en: 'Diesel Fuel Filter', zh: '柴油燃油滤芯', es: 'Filtro de Combustible Diésel', fr: 'Filtre à Carburant Diesel', de: 'Dieselkraftstofffilter', pt: 'Filtro de Combustível Diesel', ru: 'Дизельный топливный фильтр', ja: 'ディーゼル燃料フィルター', ar: 'مرشح وقود الديزل', it: 'Filtro carburante diesel' },
+  airFilter: { en: 'Engine Air Filter', zh: '发动机空气滤芯', es: 'Filtro de Aire del Motor', fr: 'Filtre à Air Moteur', de: 'Motorluftfilter', pt: 'Filtro de Ar do Motor', ru: 'Воздушный фильтр двигателя', ja: 'エンジンエアフィルター', ar: 'مرشح هواء المحرك', it: 'Filtro aria motore' },
+  hydraulicFilter: { en: 'Hydraulic Oil Filter', zh: '液压油滤芯', es: 'Filtro de Aceite Hidráulico', fr: 'Filtre à Huile Hydraulique', de: 'Hydraulikölfilter', pt: 'Filtro de Óleo Hidráulico', ru: 'Фильтр гидравлического масла', ja: '油圧オイルフィルター', ar: 'مرشح الزيت الهيدروليكي', it: 'Filtro olio idraulico' },
+  pilotFilter: { en: 'Pilot Valve Filter', zh: '先导阀滤芯', es: 'Filtro de Válvula Piloto', fr: 'Filtre de Soupape Pilote', de: 'Pilotventilfilter', pt: 'Filtro da Válvula Piloto', ru: 'Фильтр пилотного клапана', ja: 'パイロットバルブフィルター', ar: 'مرشح الصمام الطيار', it: 'Filtro valvola pilota' },
+  waterPump: { en: 'Water Pump Assembly', zh: '水泵总成', es: 'Conjunto de Bomba de Agua', fr: 'Ensemble de Pompe à Eau', de: 'Wasserpumpen-Baugruppe', pt: 'Conjunto da Bomba de Água', ru: 'Узел водяного насоса', ja: 'ウォーターポンプアセンブリ', ar: 'مجموعة مضخة الماء', it: 'Gruppo pompa acqua' },
+  turbocharger: { en: 'Turbocharger', zh: '涡轮增压器', es: 'Turbocompresor', fr: 'Turbocompresseur', de: 'Turbolader', pt: 'Turbocompressor', ru: 'Турбокомпрессор', ja: 'ターボチャージャー', ar: 'شاحن توربيني', it: 'Turbocompressore' },
+  oilPump: { en: 'Engine Oil Pump', zh: '发动机机油泵', es: 'Bomba de Aceite de Motor', fr: 'Pompe à Huile Moteur', de: 'Motorölpumpe', pt: 'Bomba de Óleo do Motor', ru: 'Масляный насос двигателя', ja: 'エンジンオイルポンプ', ar: 'مضخة زيت المحرك', it: 'Pompa olio motore' },
+  oilTransferPump: { en: 'Oil Transfer Pump', zh: '机油输送泵', es: 'Bomba de Transferencia de Aceite', fr: 'Pompe de Transfert d’Huile', de: 'Ölförderpumpe', pt: 'Bomba de Transferência de Óleo', ru: 'Насос перекачки масла', ja: 'オイル移送ポンプ', ar: 'مضخة نقل الزيت', it: 'Pompa di trasferimento olio' },
+  highPressureOilPump: { en: 'High-Pressure Oil Pump', zh: '高压机油泵', es: 'Bomba de Aceite de Alta Presión', fr: 'Pompe à Huile Haute Pression', de: 'Hochdruckölpumpe', pt: 'Bomba de Óleo de Alta Pressão', ru: 'Масляный насос высокого давления', ja: '高圧オイルポンプ', ar: 'مضخة زيت عالية الضغط', it: 'Pompa olio ad alta pressione' },
+  electricOilPump: { en: 'Electric Oil Pump', zh: '电子机油泵', es: 'Bomba de Aceite Eléctrica', fr: 'Pompe à Huile Électrique', de: 'Elektrische Ölpumpe', pt: 'Bomba de Óleo Elétrica', ru: 'Электрический масляный насос', ja: '電動オイルポンプ', ar: 'مضخة زيت كهربائية', it: 'Pompa olio elettrica' },
+  injectionPump: { en: 'Fuel Injection Pump Assembly', zh: '燃油喷射泵总成', es: 'Conjunto de Bomba de Inyección de Combustible', fr: 'Ensemble de Pompe d’Injection de Carburant', de: 'Kraftstoff-Einspritzpumpen-Baugruppe', pt: 'Conjunto da Bomba de Injeção de Combustível', ru: 'Узел топливного насоса высокого давления', ja: '燃料噴射ポンプアセンブリ', ar: 'مجموعة مضخة حقن الوقود', it: 'Gruppo pompa di iniezione carburante' },
+  oilCooler: { en: 'Engine Oil Cooler Core', zh: '发动机机油冷却器芯', es: 'Núcleo de Enfriador de Aceite de Motor', fr: 'Noyau de Refroidisseur d’Huile Moteur', de: 'Motorölkühlerkern', pt: 'Núcleo do Resfriador de Óleo do Motor', ru: 'Сердцевина масляного радиатора двигателя', ja: 'エンジンオイルクーラーコア', ar: 'قلب مبرد زيت المحرك', it: 'Nucleo radiatore olio motore' },
+  coolingFan: { en: 'Cooling Fan Blade', zh: '散热风扇叶片', es: 'Aspa de Ventilador de Refrigeración', fr: 'Pale de Ventilateur de Refroidissement', de: 'Kühlerlüfterflügel', pt: 'Pá da Ventoinha de Arrefecimento', ru: 'Лопасть вентилятора охлаждения', ja: '冷却ファンブレード', ar: 'شفرة مروحة التبريد', it: 'Pala della ventola di raffreddamento' },
+  exhaustManifold: { en: 'Exhaust Manifold', zh: '排气歧管', es: 'Colector de Escape', fr: 'Collecteur d’Échappement', de: 'Abgaskrümmer', pt: 'Coletor de Escape', ru: 'Выпускной коллектор', ja: 'エキゾーストマニホールド', ar: 'مشعب العادم', it: 'Collettore di scarico' },
+};
+
+const isuzuSourceNameKinds: Record<string, keyof typeof isuzuSourceNameTranslations> = {
+  'Oil Filter': 'oilFilter',
+  '机油滤芯(二级)': 'oilFilter',
+  '机油滤芯(型号2)': 'oilFilter',
+  '机油滤芯(卡车版)': 'oilFilter',
+  '机油滤芯(6HK1)': 'oilFilter',
+  '机油滤芯总成(6HK1-3代)': 'oilFilter',
+  '柴油滤芯': 'dieselFilter',
+  '柴油滤芯(6HK1一级)': 'dieselFilter',
+  '柴油滤芯(6HK1二级)': 'dieselFilter',
+  '柴油滤芯(6HK1-3代/新款)': 'dieselFilter',
+  '空气滤芯': 'airFilter',
+  '空气滤芯(6HK1)': 'airFilter',
+  'Hydraulic Oil Filter': 'hydraulicFilter',
+  '液压油滤芯(型号2)': 'hydraulicFilter',
+  '液压油滤芯(型号3)': 'hydraulicFilter',
+  '液压油滤芯(6HK1)': 'hydraulicFilter',
+  '液压油滤芯(6HK1型号2)': 'hydraulicFilter',
+  '先导阀滤芯': 'pilotFilter',
+  '先导阀滤芯(6HK1)': 'pilotFilter',
+  '水泵总成': 'waterPump',
+  '水泵总成(型号2)': 'waterPump',
+  '水泵总成(6HK1)': 'waterPump',
+  '水泵总成(6HK1型号2)': 'waterPump',
+  '水泵总成(6HK1 FVR卡车版)': 'waterPump',
+  'Turbocharger': 'turbocharger',
+  '涡轮增压器(RHG6型)': 'turbocharger',
+  '涡轮增压器(RHG6,SH300)': 'turbocharger',
+  '机油泵总成': 'oilPump',
+  '机油输送泵': 'oilTransferPump',
+  '机油泵(高压型)': 'highPressureOilPump',
+  '电子机油泵': 'electricOilPump',
+  '燃油喷射泵总成': 'injectionPump',
+  '燃油喷射泵(型号2)': 'injectionPump',
+  '燃油喷射泵(FTR/FXR/FVR卡车版)': 'injectionPump',
+  '机油冷却器芯': 'oilCooler',
+  '散热风扇叶片': 'coolingFan',
+  '排气歧管': 'exhaustManifold',
+};
+
 export function getTranslatedIsuzuSparePartName(name: string, language: string = 'zh'): string {
-  const translations = isuzuNameTranslations[name as keyof typeof isuzuNameTranslations];
-  return translations?.[language as keyof typeof translations] || name;
+  const sourceKind = isuzuSourceNameKinds[name];
+  const translations = sourceKind
+    ? isuzuSourceNameTranslations[sourceKind]
+    : isuzuNameTranslations[name as keyof typeof isuzuNameTranslations];
+  return translations?.[language] || translations?.en || name;
 }
 
 export const isuzuDescriptionTranslations: Record<string, Record<string, string>> = {
@@ -1407,8 +1470,16 @@ export const isuzuCategoryTranslations: Record<string, Record<string, string>> =
   },
 };
 
-export function getTranslatedIsuzuSparePartCategory(category: string, language: string = 'zh'): string {
-  const translations = isuzuCategoryTranslations[category];
-  return translations?.[language as keyof typeof translations] || category;
-}
+const isuzuSourceCategoryTranslations: Record<string, Record<string, string>> = {
+  '保养/滤清系统': { en: 'Maintenance/Filtration System', zh: '保养/滤清系统', es: 'Sistema de Mantenimiento/Filtración', fr: 'Système de Maintenance/Filtration', de: 'Wartungs-/Filtersystem', pt: 'Sistema de Manutenção/Filtração', ru: 'Система обслуживания/фильтрации', ja: 'メンテナンス/ろ過システム', ar: 'نظام الصيانة/الترشيح', it: 'Sistema di manutenzione/filtrazione' },
+  '冷却系统': { en: 'Cooling System', zh: '冷却系统', es: 'Sistema de Refrigeración', fr: 'Système de Refroidissement', de: 'Kühlsystem', pt: 'Sistema de Arrefecimento', ru: 'Система охлаждения', ja: '冷却システム', ar: 'نظام التبريد', it: 'Sistema di raffreddamento' },
+  '进气/增压': { en: 'Intake/Turbocharging System', zh: '进气/增压', es: 'Sistema de Admisión/Turbocompresión', fr: 'Système d’Admission/Suralimentation', de: 'Ansaug-/Turboladersystem', pt: 'Sistema de Admissão/Turbocompressão', ru: 'Система впуска/турбонаддува', ja: '吸気/過給システム', ar: 'نظام السحب/الشحن التوربيني', it: 'Sistema di aspirazione/sovralimentazione' },
+  '润滑系统': { en: 'Lubrication System', zh: '润滑系统', es: 'Sistema de Lubricación', fr: 'Système de Lubrification', de: 'Schmiersystem', pt: 'Sistema de Lubrificação', ru: 'Система смазки', ja: '潤滑システム', ar: 'نظام التزييت', it: 'Sistema di lubrificazione' },
+  '燃油系统': { en: 'Fuel System', zh: '燃油系统', es: 'Sistema de Combustible', fr: 'Système de Carburant', de: 'Kraftstoffsystem', pt: 'Sistema de Combustível', ru: 'Топливная система', ja: '燃料システム', ar: 'نظام الوقود', it: 'Sistema di alimentazione' },
+  '进气/排气': { en: 'Intake/Exhaust System', zh: '进气/排气', es: 'Sistema de Admisión/Escape', fr: 'Système d’Admission/Échappement', de: 'Ansaug-/Abgassystem', pt: 'Sistema de Admissão/Escape', ru: 'Система впуска/выпуска', ja: '吸気/排気システム', ar: 'نظام السحب/العادم', it: 'Sistema di aspirazione/scarico' },
+};
 
+export function getTranslatedIsuzuSparePartCategory(category: string, language: string = 'zh'): string {
+  const translations = isuzuSourceCategoryTranslations[category] || isuzuCategoryTranslations[category];
+  return translations?.[language] || translations?.en || category;
+}
