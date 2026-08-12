@@ -99,7 +99,9 @@ export const liugongMachineDescriptionTranslations: Record<string, Record<string
 
 export function getTranslatedLiuGongMachineName(model: string, language: string = 'en'): string {
   const translations = liugongMachineNameTranslations[model];
-  return translations ? (translations[language] || translations['en'] || model) : model;
+  const translatedType = translations ? (translations[language] || translations['en'] || model) : model;
+  const brandName = language === 'zh' ? '柳工' : 'LiuGong';
+  return `${brandName} ${model} ${translatedType}`;
 }
 
 export function getTranslatedLiuGongMachineType(model: string, language: string = 'en'): string {
