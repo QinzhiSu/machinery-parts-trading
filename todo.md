@@ -1267,6 +1267,16 @@
 
 > 页面验证：Toyota 德语整机页面已实际显示“Toyota 4Runner SUV”“Toyota Fortuner SUV”“Toyota Hilux 4×4 Pickup”“Toyota Land Cruiser 70 SUV”“Toyota Prado SUV”“Toyota Tacoma 4×4 Pickup”和“Toyota Tundra Pickup”；名称、品牌和型号均已恢复。
 
+## Toyota 整机名称与参数纯语言翻译清理
+
+- [x] 审计 Toyota 整机名称和参数的十语言混杂字段
+- [x] 仅修复 Toyota 独立名称和参数翻译映射中的混杂文本
+- [x] 验证 Toyota 多语言页面的整机名称和参数显示
+
+> 审计结果：Toyota 独立名称映射在非英语字段中残留“SUV”“Pickup”等英文通用车型词；部分独立参数映射沿用旧的排量、功率和座位数，且与 Toyota 源数据中的 4×4、发动机类型、功率和整备质量不一致。将仅在 `toyotamachineTranslations.ts` 中以对应语言恢复完整车型名称，并将七个机型的参数翻译对齐至现有 Toyota 源数据。
+
+> 页面验证：Toyota 德语整机页面已实际显示“Toyota 4Runner Geländewagen”“Toyota Hilux 4×4 Pritschenwagen”等纯德语车型名称；参数显示为“4×4 | 4,0 l V6 | 215 kW | 4850 kg”“4×4 | 2,8 l Diesel | 130 kW | 1850 kg”等，已与现有 Toyota 源数据对齐且不含中文或英文通用车型词。
+
 ## 独立零件翻译重复键安全清理
 
 - [x] 仅删除已被同一对象最终同键属性覆盖的完整冗余属性节点
