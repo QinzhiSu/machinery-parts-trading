@@ -1257,6 +1257,16 @@
 
 > 页面验证：Isuzu 德语整机页面已实际显示“Isuzu 4HK1 Dieselmotor”“Isuzu 6HK1 Dieselmotor”“Isuzu 6UZ1 Dieselmotor”和“Isuzu 6WG1 Dieselmotor”；名称、品牌和型号均已恢复。
 
+## Toyota 整机名称与型号恢复
+
+- [x] 审计 Toyota 整机源数据及独立翻译文件的名称与型号字段
+- [x] 仅恢复 Toyota 整机名称与型号的显示映射
+- [x] 验证 Toyota 整机页面显示完整名称与型号
+
+> 审计结果：Toyota 整机源数据中的型号 4Runner、Fortuner、Hilux 4×4、Land Cruiser 70、Prado、Tacoma 4×4、Tundra 均仍存在；问题仅在独立 `toyotamachineTranslations.ts` 的名称映射，该映射只返回“SUV”或“Pickup Truck”等通用类型。将仅在该 Toyota 整机翻译文件中恢复每个型号的完整名称。
+
+> 页面验证：Toyota 德语整机页面已实际显示“Toyota 4Runner SUV”“Toyota Fortuner SUV”“Toyota Hilux 4×4 Pickup”“Toyota Land Cruiser 70 SUV”“Toyota Prado SUV”“Toyota Tacoma 4×4 Pickup”和“Toyota Tundra Pickup”；名称、品牌和型号均已恢复。
+
 ## 独立零件翻译重复键安全清理
 
 - [x] 仅删除已被同一对象最终同键属性覆盖的完整冗余属性节点

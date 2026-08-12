@@ -1,11 +1,11 @@
 export const toyotamachineNameTranslations: Record<string, Record<string, string>> = {
-  '4Runner': { en: 'SUV', zh: '越野车', es: 'SUV', fr: 'SUV', de: 'SUV', pt: 'SUV', ru: 'внедорожник', ja: 'SUV', ar: 'سيارة رياضية', it: 'SUV' },
-  'Fortuner': { en: 'SUV', zh: '越野车', es: 'SUV', fr: 'SUV', de: 'SUV', pt: 'SUV', ru: 'внедорожник', ja: 'SUV', ar: 'سيارة رياضية', it: 'SUV' },
-  'Hilux 4×4': { en: 'Pickup Truck', zh: '皮卡车', es: 'Camioneta', fr: 'Camionnette', de: 'Pickup', pt: 'Caminhonete', ru: 'пикап', ja: 'ピックアップトラック', ar: 'شاحنة صغيرة', it: 'Pickup' },
-  'Land Cruiser 70': { en: 'SUV', zh: '越野车', es: 'SUV', fr: 'SUV', de: 'SUV', pt: 'SUV', ru: 'внедорожник', ja: 'SUV', ar: 'سيارة رياضية', it: 'SUV' },
-  'Prado': { en: 'SUV', zh: '越野车', es: 'SUV', fr: 'SUV', de: 'SUV', pt: 'SUV', ru: 'внедорожник', ja: 'SUV', ar: 'سيارة رياضية', it: 'SUV' },
-  'Tacoma 4×4': { en: 'Pickup Truck', zh: '皮卡车', es: 'Camioneta', fr: 'Camionnette', de: 'Pickup', pt: 'Caminhonete', ru: 'пикап', ja: 'ピックアップトラック', ar: 'شاحنة صغيرة', it: 'Pickup' },
-  'Tundra': { en: 'Pickup Truck', zh: '皮卡车', es: 'Camioneta', fr: 'Camionnette', de: 'Pickup', pt: 'Caminhonete', ru: 'пикап', ja: 'ピックアップトラック', ar: 'شاحنة صغيرة', it: 'Pickup' },
+  '4Runner': { en: 'Toyota 4Runner SUV', zh: '丰田 4Runner 越野车', es: 'Toyota 4Runner SUV', fr: 'Toyota 4Runner SUV', de: 'Toyota 4Runner SUV', pt: 'Toyota 4Runner SUV', ru: 'Toyota 4Runner внедорожник', ja: 'トヨタ 4Runner SUV', ar: 'تويوتا 4Runner سيارة رياضية متعددة الاستخدامات', it: 'Toyota 4Runner SUV' },
+  'Fortuner': { en: 'Toyota Fortuner SUV', zh: '丰田 Fortuner 越野车', es: 'Toyota Fortuner SUV', fr: 'Toyota Fortuner SUV', de: 'Toyota Fortuner SUV', pt: 'Toyota Fortuner SUV', ru: 'Toyota Fortuner внедорожник', ja: 'トヨタ Fortuner SUV', ar: 'تويوتا Fortuner سيارة رياضية متعددة الاستخدامات', it: 'Toyota Fortuner SUV' },
+  'Hilux 4×4': { en: 'Toyota Hilux 4×4 Pickup Truck', zh: '丰田 Hilux 4×4 皮卡车', es: 'Toyota Hilux 4×4 Camioneta', fr: 'Toyota Hilux 4×4 Camionnette', de: 'Toyota Hilux 4×4 Pickup', pt: 'Toyota Hilux 4×4 Caminhonete', ru: 'Toyota Hilux 4×4 пикап', ja: 'トヨタ Hilux 4×4 ピックアップトラック', ar: 'تويوتا Hilux 4×4 شاحنة صغيرة', it: 'Toyota Hilux 4×4 Pickup' },
+  'Land Cruiser 70': { en: 'Toyota Land Cruiser 70 SUV', zh: '丰田 Land Cruiser 70 越野车', es: 'Toyota Land Cruiser 70 SUV', fr: 'Toyota Land Cruiser 70 SUV', de: 'Toyota Land Cruiser 70 SUV', pt: 'Toyota Land Cruiser 70 SUV', ru: 'Toyota Land Cruiser 70 внедорожник', ja: 'トヨタ Land Cruiser 70 SUV', ar: 'تويوتا Land Cruiser 70 سيارة رياضية متعددة الاستخدامات', it: 'Toyota Land Cruiser 70 SUV' },
+  'Prado': { en: 'Toyota Prado SUV', zh: '丰田 Prado 越野车', es: 'Toyota Prado SUV', fr: 'Toyota Prado SUV', de: 'Toyota Prado SUV', pt: 'Toyota Prado SUV', ru: 'Toyota Prado внедорожник', ja: 'トヨタ Prado SUV', ar: 'تويوتا Prado سيارة رياضية متعددة الاستخدامات', it: 'Toyota Prado SUV' },
+  'Tacoma 4×4': { en: 'Toyota Tacoma 4×4 Pickup Truck', zh: '丰田 Tacoma 4×4 皮卡车', es: 'Toyota Tacoma 4×4 Camioneta', fr: 'Toyota Tacoma 4×4 Camionnette', de: 'Toyota Tacoma 4×4 Pickup', pt: 'Toyota Tacoma 4×4 Caminhonete', ru: 'Toyota Tacoma 4×4 пикап', ja: 'トヨタ Tacoma 4×4 ピックアップトラック', ar: 'تويوتا Tacoma 4×4 شاحنة صغيرة', it: 'Toyota Tacoma 4×4 Pickup' },
+  'Tundra': { en: 'Toyota Tundra Pickup Truck', zh: '丰田 Tundra 皮卡车', es: 'Toyota Tundra Camioneta', fr: 'Toyota Tundra Camionnette', de: 'Toyota Tundra Pickup', pt: 'Toyota Tundra Caminhonete', ru: 'Toyota Tundra пикап', ja: 'トヨタ Tundra ピックアップトラック', ar: 'تويوتا Tundra شاحنة صغيرة', it: 'Toyota Tundra Pickup' },
 };
 
 export const toyotamachineTypeTranslations: Record<string, Record<string, string>> = {
