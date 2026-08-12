@@ -1163,3 +1163,11 @@
 - [x] 检查 Cummins 零件数据、独立详情翻译文件与描述翻译函数
 - [x] 恢复所有 Cummins 零件的独立十语言详细信息
 - [x] 验证列表页和详情弹窗均能显示对应语言的详细描述
+
+## Cummins 零件名称与分类精确翻译修复
+
+- [x] 导出品牌页面实际使用的 Cummins 全量名称与分类键并逐项核对
+- [x] 仅在 Cummins 独立翻译文件中补齐所有缺失的十语言名称与分类映射
+- [x] 在非中文语言下验证 Cummins 零件列表和详情分类不再出现中英文混杂
+
+> 2026-08-12 验证记录：Cummins 德语零件列表已实际显示“Turboladerschlauch、Pleuellager、Pleuelschraube、Wasserpumpendichtring”等纯德语名称，以及“Motorsystem、Kühlsystem、Kraftstoffsystem”等纯德语分类；未发现中文或英文源键残留。名称、分类和详情函数的 6 项回归测试均通过，覆盖 33 个页面实际零件与全部 10 种语言。
