@@ -37,7 +37,7 @@ import { getTranslatedShacmanSparePartCategory } from '@/data/sparePartsTranslat
 import { getTranslatedSinotrukSparePartCategory } from '@/data/sparePartsTranslations_sinotruk';
 import { getTranslatedToyotaSparePartCategory } from '@/data/sparePartsTranslations_toyota';
 import { getTranslatedCumminsSparePartCategory } from '@/data/sparePartsTranslations_cummins';
-import { getTranslatedWeichaiSparePartCategory } from '@/data/sparePartsTranslations_weichai';
+import { getTranslatedWeichaiSparePartCategory, getTranslatedWeichaiSparePartName } from '@/data/sparePartsTranslations_weichai';
 
 // Map brand IDs to their translation functions
 const brandDetailsMap: Record<string, (partName: string, language: string) => string> = {
@@ -71,6 +71,10 @@ const brandCategoryMap: Record<string, (category: string, language: string) => s
   weichai: getTranslatedWeichaiSparePartCategory,
 };
 
+const brandNameMap: Record<string, (partName: string, language: string) => string> = {
+  weichai: getTranslatedWeichaiSparePartName,
+};
+
 export function SparePartDetailModal({
   isOpen,
   onClose,
@@ -84,6 +88,8 @@ export function SparePartDetailModal({
   // Get the brand-specific details translation function
   const getDetailsForBrand = brandDetailsMap[brandId];
   const details = getDetailsForBrand ? getDetailsForBrand(part.name, language) : part.description;
+  const getNameForBrand = brandNameMap[brandId];
+  const translatedPartName = getNameForBrand ? getNameForBrand(part.name, language) : part.name;
 
   // Translation helper
   const t = (key: string, translations: Record<string, string>) => {
@@ -160,7 +166,7 @@ export function SparePartDetailModal({
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="sticky top-0 bg-white border-b border-border p-6 flex items-center justify-between">
-          <h2 className="text-2xl font-bold">{part.name}</h2>
+          <h2 className="text-2xl font-bold">{translatedPartName}</h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"

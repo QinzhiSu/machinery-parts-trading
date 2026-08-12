@@ -1171,3 +1171,20 @@
 - [x] 在非中文语言下验证 Cummins 零件列表和详情分类不再出现中英文混杂
 
 > 2026-08-12 验证记录：Cummins 德语零件列表已实际显示“Turboladerschlauch、Pleuellager、Pleuelschraube、Wasserpumpendichtring”等纯德语名称，以及“Motorsystem、Kühlsystem、Kraftstoffsystem”等纯德语分类；未发现中文或英文源键残留。名称、分类和详情函数的 6 项回归测试均通过，覆盖 33 个页面实际零件与全部 10 种语言。
+
+## Weichai 零件十语言翻译修复
+
+- [x] 导出 Weichai 页面实际使用的所有零件名称、分类键与详情调用关系
+- [x] 仅修复 Weichai 独立翻译文件中的重复键 TypeScript 错误
+- [x] 仅在 Weichai 独立翻译文件中补齐所有名称和分类的十语言映射
+- [x] 为 Weichai 每个实际零件建立独立的十语言详细描述映射
+- [x] 新增并通过 Weichai 零件名称、分类和详情回归测试
+- [x] 实际验证 Weichai 非中文语言的零件列表与详情弹窗无中英文混杂
+
+> 审计结果：品牌页面实际使用 30 个 Weichai 零件，源名称以中文为主、分类为 9 个中文键；详情弹窗会以 `(part.name, language)` 调用 Weichai 的独立详情函数。现有详情文件仅返回通用默认文本，且独立名称/分类文件存在 4 处重复 `it` 键错误。
+
+> 2026-08-12 验证记录：Weichai 德语零件列表已实际显示“Ölfilter、Kraftstofffilter für WP10、Wasserpumpen-Baugruppe、Turbolader WP10”等纯德语名称，“Wartungs-/Filtersystem、Kühlsystem、Kraftstoffsystem、Ansaug-/Turboladersystem”等纯德语分类，以及对应的德语技术描述。新增回归测试共 4 项，覆盖 30 个实际零件、10 种语言和列表/详情调用一致性。
+
+> 弹窗验证说明：Weichai 详情弹窗与列表共用以零件名称为键的 `getTranslatedWeichaiSparePartDetails(partName, language)` 调用；回归测试已逐项断言 30 个零件在列表描述和弹窗详情路径下的 10 种语言输出完全一致。
+
+> 页面交互核验：德语页面中的首个详情按钮实际文本为“Details anzeigen”，按钮已正确渲染并可交互。弹窗现已确认显示“Ölfilter”标题、“Wartungs-/Filtersystem”分类及对应的德语机油滤芯技术描述；不再显示英文源名称“Oil Filter”或中文源名称。
