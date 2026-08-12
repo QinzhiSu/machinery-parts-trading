@@ -1097,3 +1097,9 @@
 - [x] 审计 BrandPage.tsx 中 Sinotruk 零件名称和分类翻译函数的调用方式
 - [x] 优化 sparePartsTranslations_sinotruk.ts 中的映射键，确保中英文原样匹配
 - [x] 验证网页在各语言下 Sinotruk 零件名称和分类正确显示
+
+## Sinotruk 零件名称与分类终极翻译修复
+
+- [ ] 检查 products.ts 中实际引用的 Sinotruk 零件数据源文件路径
+- [ ] 确保 sparePartsTranslations_sinotruk.ts 覆盖实际数据源中的每一个中文名称与分类键
+- [ ] 验证多语言切换后 Sinotruk 零件名称与分类100%翻译

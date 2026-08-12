@@ -1,8 +1,10 @@
-// Sinotruk spare parts translations - 10 languages
+// Sinotruk spare parts translations - 10 languages (exact match with products.ts)
 // DO NOT EDIT MANUALLY
 
+import { getTranslatedSinotrukSparePartDetails } from './sparePartsDetails_sinotruk';
+
 export const sinotrukNameTranslations = {
-  'Oil Filter': {
+  '机油滤清器': {
     en: 'Oil Filter',
     es: 'Filtro de Aceite',
     fr: 'Filtre à Huile',
@@ -14,7 +16,7 @@ export const sinotrukNameTranslations = {
     ar: 'مرشح الزيت',
     it: 'Filtro olio',
   },
-  'Air Filter总成': {
+  '空气滤清器总成': {
     en: 'Air Filter Assembly',
     es: 'Conjunto de Filtro de Aire',
     fr: 'Ensemble de Filtre à Air',
@@ -26,7 +28,7 @@ export const sinotrukNameTranslations = {
     ar: 'مجموعة مرشح الهواء',
     it: 'Assieme filtro aria',
   },
-  '柴油粗滤器(Oil-Water Separator)': {
+  '柴油粗滤器(油水分离器)': {
     en: 'Diesel Coarse Filter (Oil-Water Separator)',
     es: 'Filtro Grueso de Diésel (Separador de Agua)',
     fr: 'Filtre Grossier Diesel (Séparateur Eau-Huile)',
@@ -62,7 +64,7 @@ export const sinotrukNameTranslations = {
     ar: 'مولد كهربائي (28V/70A)',
     it: 'Alternatore (28V/70A)',
   },
-  'Starter Motor Assembly': {
+  '起动机总成': {
     en: 'Starter Motor Assembly',
     es: 'Conjunto de Motor de Arranque',
     fr: 'Ensemble de Moteur de Démarreur',
@@ -194,7 +196,7 @@ export const sinotrukNameTranslations = {
     ar: 'قضيب الدفع على شكل V (وصلة شريط التثبيت)',
     it: 'Barra di spinta a forma di V (collegamento barra stabilizzatrice)',
   },
-  'Steering Knuckle Arm/羊角(左)': {
+  '转向节臂/羊角(左)': {
     en: 'Steering Knuckle Arm (Left)',
     es: 'Brazo de Articulación de Dirección (Izquierdo)',
     fr: 'Bras de Fusée de Direction (Gauche)',
@@ -230,7 +232,7 @@ export const sinotrukNameTranslations = {
     ar: 'قوس تعليق الزنبرك الورقي الأمامي',
     it: 'Staffa di sospensione molla a balestra anteriore',
   },
-  'king pin主销衬套': {
+  '主销衬套': {
     en: 'King Pin Bushing',
     es: 'Casquillo de Pasador Rey',
     fr: 'Bague de Pivot de Direction',
@@ -314,19 +316,19 @@ export const sinotrukNameTranslations = {
     ar: 'مجموعة عمود الصليب المفصل العام',
     it: 'Assieme albero trasversale giunto cardanico',
   },
-  'Drive Shaft Assembly(变速箱至驱动桥)': {
+  '传动轴总成(变速箱至驱动桥)': {
     en: 'Drive Shaft Assembly (Transmission to Drive Axle)',
     es: 'Conjunto de Eje de Transmisión (Transmisión a Eje Motriz)',
     fr: 'Ensemble d\'Arbre de Transmission (Transmission à Essieu Moteur)',
     de: 'Antriebswellen-Baugruppe (Getriebe zu Antriebsachse)',
-    pt: 'Conjunto de Eixo de Transmissão (Transmissão para Eixo Motriz)',
+    pt: 'Conjunto de Eixo de Transmisión (Transmissão para Eixo Motriz)',
     ru: 'Узел приводного вала (коробка передач к ведущей оси)',
     ja: 'ドライブシャフトアセンブリ(トランスミッションからドライブアクスル)',
     zh: '传动轴总成(变速箱至驱动桥)',
     ar: 'مجموعة عمود الدفع (ناقل الحركة إلى محور الدفع)',
     it: 'Assieme albero di trasmissione (cambio a asse motore)',
   },
-  'Water Pump Assembly': {
+  '水泵总成': {
     en: 'Water Pump Assembly',
     es: 'Conjunto de Bomba de Agua',
     fr: 'Ensemble de Pompe à Eau',
@@ -350,7 +352,7 @@ export const sinotrukNameTranslations = {
     ar: 'غطاء المبرد/غطاء خزان الماء',
     it: 'Copertura radiatore/copertura serbatoio acqua',
   },
-  'Turbocharger总成': {
+  '涡轮增压器总成': {
     en: 'Turbocharger Assembly',
     es: 'Conjunto de Turbocompresor',
     fr: 'Ensemble de Turbocompresseur',
@@ -494,7 +496,7 @@ export const sinotrukNameTranslations = {
     ar: 'منظم النافذة (يسار/يمين)',
     it: 'Regolatore finestrino (sinistro/destro)',
   },
-  'Drive Shaft Fork(万向节叉)': {
+  '驱动轴节叉(万向节叉)': {
     en: 'Drive Shaft Fork (Universal Joint Yoke)',
     es: 'Horquilla de Eje de Transmisión (Horquilla de Junta Universal)',
     fr: 'Fourchette d\'Arbre de Transmission (Fourchette de Joint Universel)',
@@ -502,7 +504,7 @@ export const sinotrukNameTranslations = {
     pt: 'Garfo de Eixo de Transmissão (Garfo de Junta Universal)',
     ru: 'Вилка приводного вала (вилка универсального шарнира)',
     ja: 'ドライブシャフトフォーク(ユニバーサルジョイントヨーク)',
-    zh: '万向节叉',
+    zh: '驱动轴节叉(万向节叉)',
     ar: 'شوكة عمود الدفع (شوكة المفصل العام)',
     it: 'Forcella albero di trasmissione (forcella giunto cardanico)',
   },
@@ -521,7 +523,7 @@ export const sinotrukNameTranslations = {
 };
 
 export const sinotrukCategoryTranslations = {
-  'Maintenance/Filtration System': {
+  '保养/滤清系统': {
     en: 'Maintenance/Filtration System',
     es: 'Sistema de Mantenimiento/Filtración',
     fr: 'Système de Maintenance/Filtration',
@@ -533,7 +535,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'نظام الصيانة/الترشيح',
     it: 'Sistema di manutenzione/filtrazione',
   },
-  'Electrical/Starting System': {
+  '电气/启动': {
     en: 'Electrical/Starting System',
     es: 'Sistema Eléctrico/Arranque',
     fr: 'Système Électrique/Démarrage',
@@ -541,11 +543,11 @@ export const sinotrukCategoryTranslations = {
     pt: 'Sistema Elétrico/Partida',
     ru: 'Электрическая/стартовая система',
     ja: '電気/始動システム',
-    zh: '电气/启动系统',
+    zh: '电气/启动',
     ar: 'نظام كهربائي/بدء التشغيل',
     it: 'Sistema elettrico/avviamento',
   },
-  'Intake/Boost System': {
+  '进气/增压': {
     en: 'Intake/Boost System',
     es: 'Sistema de Admisión/Turbo',
     fr: 'Système d\'Admission/Suralimentation',
@@ -553,11 +555,11 @@ export const sinotrukCategoryTranslations = {
     pt: 'Sistema de Admissão/Turbo',
     ru: 'Система впуска/наддува',
     ja: '吸気/ブースト システム',
-    zh: '进气/增压系统',
+    zh: '进气/增压',
     ar: 'نظام السحب/الضغط',
     it: 'Sistema di aspirazione/sovralimentazione',
   },
-  'Braking System': {
+  '制动系统': {
     en: 'Braking System',
     es: 'Sistema de Frenado',
     fr: 'Système de Freinage',
@@ -569,7 +571,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'نظام الفرملة',
     it: 'Sistema frenante',
   },
-  'Transmission/Clutch': {
+  '传动/离合器': {
     en: 'Transmission/Clutch',
     es: 'Transmisión/Embrague',
     fr: 'Transmission/Embrayage',
@@ -605,7 +607,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'التعليق/التخميد',
     it: 'Sospensione/smorzamento',
   },
-  'Body/Wiper System': {
+  '车身/雨刮系统': {
     en: 'Body/Wiper System',
     es: 'Carrocería/Sistema de Limpiaparabrisas',
     fr: 'Carrosserie/Système d\'Essuie-glace',
@@ -617,7 +619,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'الهيكل/نظام المساح',
     it: 'Carrozzeria/sistema tergicristalli',
   },
-  'Transmission/Universal Joint': {
+  '传动/万向节': {
     en: 'Transmission/Universal Joint',
     es: 'Transmisión/Junta Universal',
     fr: 'Transmission/Joint Universel',
@@ -629,7 +631,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'ناقل الحركة/المفصل العام',
     it: 'Trasmissione/giunto cardanico',
   },
-  'Cooling System': {
+  '冷却系统': {
     en: 'Cooling System',
     es: 'Sistema de Enfriamiento',
     fr: 'Système de Refroidissement',
@@ -653,7 +655,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'نظام العادم',
     it: 'Sistema di scarico',
   },
-  'Steering System': {
+  '转向系统': {
     en: 'Steering System',
     es: 'Sistema de Dirección',
     fr: 'Système de Direction',
@@ -665,7 +667,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'نظام التوجيه',
     it: 'Sistema di sterzo',
   },
-  'Body/Cabin': {
+  '车身/驾驶室': {
     en: 'Body/Cabin',
     es: 'Carrocería/Cabina',
     fr: 'Carrosserie/Cabine',
@@ -677,7 +679,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'الهيكل/المقصورة',
     it: 'Carrozzeria/cabina',
   },
-  'Hub/Transmission轴': {
+  '轮毂/传动轴': {
     en: 'Hub/Transmission Shaft',
     es: 'Cubo/Eje de Transmisión',
     fr: 'Moyeu/Arbre de Transmission',
@@ -689,7 +691,7 @@ export const sinotrukCategoryTranslations = {
     ar: 'المحور/عمود ناقل الحركة',
     it: 'Mozzo/albero trasmissione',
   },
-  'Hydraulic/PTO System': {
+  '液压/取力': {
     en: 'Hydraulic/PTO System',
     es: 'Sistema Hidráulico/TDF',
     fr: 'Système Hydraulique/PTO',
@@ -697,7 +699,7 @@ export const sinotrukCategoryTranslations = {
     pt: 'Sistema Hidráulico/TDF',
     ru: 'Гидравлическая/ВОМ система',
     ja: '油圧/PTO システム',
-    zh: '液压/取力器系统',
+    zh: '液压/取力',
     ar: 'النظام الهيدروليكي/نظام الإخراج',
     it: 'Sistema idraulico/PTO',
   },
@@ -729,5 +731,3 @@ export function getTranslatedSinotrukSparePartDescription(name: string, language
   const details = getTranslatedSinotrukSparePartDetails(name, language);
   return details || '';
 }
-
-import { getTranslatedSinotrukSparePartDetails } from './sparePartsDetails_sinotruk';
