@@ -1,6 +1,8 @@
 // Auto-generated translations for Isuzu spare parts
 // DO NOT EDIT MANUALLY
 
+import { getTranslatedIsuzuSparePartDetails } from './sparePartsDetails_isuzu';
+
 export const isuzuNameTranslations = {
   'Air Filter': {
     en: 'Air Filter',
@@ -1256,12 +1258,8 @@ export const isuzuDescriptionTranslations: Record<string, Record<string, string>
   },
 };
 
-export function getTranslatedIsuzuSparePartDescription(description: string, language: string = 'zh'): string {
-  const translations = isuzuDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
+export function getTranslatedIsuzuSparePartDescription(name: string, language: string = 'zh'): string {
+  return getTranslatedIsuzuSparePartDetails(name, language);
 }
 export const isuzuCategoryTranslations: Record<string, Record<string, string>> = {
   'Maintenance/Filtration System': {
@@ -1413,5 +1411,4 @@ export function getTranslatedIsuzuSparePartCategory(category: string, language: 
   const translations = isuzuCategoryTranslations[category];
   return translations?.[language as keyof typeof translations] || category;
 }
-
 
