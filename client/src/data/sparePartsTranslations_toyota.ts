@@ -1,6 +1,8 @@
 // Auto-generated translations for Toyota spare parts
 // DO NOT EDIT MANUALLY
 
+import { getTranslatedToyotaSparePartDetails } from './sparePartsDetails_toyota';
+
 export const toyotaNameTranslations = {
   'Air Filter': {
     en: 'Air Filter',
@@ -790,12 +792,8 @@ export const toyotaDescriptionTranslations: Record<string, Record<string, string
   },
 };
 
-export function getTranslatedToyotaSparePartDescription(description: string, language: string = 'zh'): string {
-  const translations = toyotaDescriptionTranslations[description];
-  if (translations && translations[language]) {
-    return translations[language];
-  }
-  return description;
+export function getTranslatedToyotaSparePartDescription(name: string, language: string = 'zh'): string {
+  return getTranslatedToyotaSparePartDetails(name, language);
 }
 export const toyotaCategoryTranslations: Record<string, Record<string, string>> = {
   'Maintenance/Filtration System': {
@@ -947,5 +945,4 @@ export function getTranslatedToyotaSparePartCategory(category: string, language:
   const translations = toyotaCategoryTranslations[category];
   return translations?.[language as keyof typeof translations] || category;
 }
-
 
