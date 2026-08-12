@@ -1100,6 +1100,12 @@
 
 ## Sinotruk 零件名称与分类终极翻译修复
 
-- [ ] 检查 products.ts 中实际引用的 Sinotruk 零件数据源文件路径
-- [ ] 确保 sparePartsTranslations_sinotruk.ts 覆盖实际数据源中的每一个中文名称与分类键
-- [ ] 验证多语言切换后 Sinotruk 零件名称与分类100%翻译
+- [x] 检查 products.ts 中实际引用的 Sinotruk 零件数据源文件路径
+- [x] 确保 sparePartsTranslations_sinotruk.ts 覆盖实际数据源中的每一个中文名称与分类键
+- [x] 验证多语言切换后 Sinotruk 零件名称与分类100%翻译
+
+## Sinotruk 逐条键值核对与终极精确翻译修复
+
+- [ ] 导出 products.ts 中 Sinotruk 的全量名称与分类清单
+- [ ] 在 sparePartsTranslations_sinotruk.ts 中以绝对精确的方式补全每一个键
+- [ ] 验证 Sinotruk 页面不再残留任何中文名称或分类
