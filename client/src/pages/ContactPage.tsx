@@ -5,13 +5,19 @@ import { Link } from 'wouter';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { toast } from 'sonner';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/data/translations';
+import { contactPageTranslations } from '@/data/contactPageTranslations';
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', subject: '', message: '' });
+  const { language } = useLanguage();
+  const t = (key: string) => translations[language]?.[key] || key;
+  const pageCopy = contactPageTranslations[language];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Message sent! We will reply within 24 hours.');
+    toast.success(pageCopy.success);
     setForm({ name: '', company: '', email: '', phone: '', subject: '', message: '' });
   };
 
@@ -24,18 +30,18 @@ export default function ContactPage() {
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: 'oklch(0.68 0.18 42)' }} />
         <div className="container relative z-10">
           <div className="flex items-center gap-2 mb-4 text-xs" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">Home</Link>
+            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">{t('nav.home')}</Link>
             <ChevronRight size={12} />
-            <span className="uppercase tracking-wider" style={{ color: 'oklch(0.68 0.18 42)' }}>Contact</span>
+            <span className="uppercase tracking-wider" style={{ color: 'oklch(0.68 0.18 42)' }}>{t('contact.title')}</span>
           </div>
           <h1
             className="text-white uppercase leading-none mb-3"
             style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800 }}
           >
-            Contact <span style={{ color: 'oklch(0.68 0.18 42)' }}>Us</span>
+            {t('contact.title')}
           </h1>
           <p className="text-sm max-w-xl" style={{ color: 'oklch(0.7 0.02 265)' }}>
-            Get in touch for product inquiries, pricing, availability, and shipping quotes. We respond within 24 hours.
+            {t('contact.subtitle')}
           </p>
         </div>
       </section>
@@ -47,11 +53,11 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="lg:col-span-1 space-y-4">
               {[
-                { icon: Mail, title: 'Email', content: 'info@globalmachinery.com', sub: 'Reply within 24 hours', href: 'mailto:info@globalmachinery.com' },
-                { icon: Phone, title: 'WeChat / WhatsApp', content: '0022462297604/+224 622 497 604', sub: 'Mon–Sat 8:00–18:00 CST', href: 'https://wa.me/224622497604' },
-                { icon: MapPin, title: 'Location', content: 'China', sub: 'Global Export Operations', href: '#' },
-                { icon: Globe, title: 'Export Markets', content: 'Worldwide Shipping', sub: 'Africa · Middle East · SE Asia · Americas', href: '#' },
-                { icon: Clock, title: 'Business Hours', content: 'Mon–Sat 8:00–18:00', sub: 'China Standard Time (UTC+8)', href: '#' },
+                { icon: Mail, title: t('inquiry.email'), content: 'info@globalmachinery.com', sub: t('contact.replyWithin24'), href: 'mailto:info@globalmachinery.com' },
+                { icon: Phone, title: 'WeChat / WhatsApp', content: '0022462297604/+224 622 497 604', sub: t('contact.monSat'), href: 'https://wa.me/224622497604' },
+                { icon: MapPin, title: t('contact.location'), content: t('home.country.china'), sub: t('contact.globalExport'), href: '#' },
+                { icon: Globe, title: pageCopy.exportMarketsLabel, content: t('contact.worldwideShipping'), sub: pageCopy.markets, href: '#' },
+                { icon: Clock, title: t('contact.businessHours'), content: t('contact.monSat'), sub: t('contact.chinaTime'), href: '#' },
               ].map((item) => (
                 <a
                   key={item.title}
@@ -82,14 +88,14 @@ export default function ContactPage() {
                   className="text-2xl font-bold uppercase tracking-wide mb-6"
                   style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.18 0.04 265)' }}
                 >
-                  Send Inquiry
+                  {t('contact.sendInquiry')}
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                        Your Name *
+                        {t('inquiry.yourName')} *
                       </label>
                       <input
                         type="text"
@@ -98,12 +104,12 @@ export default function ContactPage() {
                         onChange={e => setForm({ ...form, name: e.target.value })}
                         className="w-full px-4 py-2.5 text-sm border focus:outline-none focus:border-orange-400 transition-colors"
                         style={{ borderColor: 'oklch(0.88 0.008 90)', color: 'oklch(0.18 0.04 265)' }}
-                        placeholder="John Smith"
+                        placeholder={pageCopy.namePlaceholder}
                       />
                     </div>
                     <div>
                       <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                        Company
+                        {t('inquiry.company')}
                       </label>
                       <input
                         type="text"
@@ -111,7 +117,7 @@ export default function ContactPage() {
                         onChange={e => setForm({ ...form, company: e.target.value })}
                         className="w-full px-4 py-2.5 text-sm border focus:outline-none focus:border-orange-400 transition-colors"
                         style={{ borderColor: 'oklch(0.88 0.008 90)', color: 'oklch(0.18 0.04 265)' }}
-                        placeholder="Your Company Name"
+                        placeholder={pageCopy.companyPlaceholder}
                       />
                     </div>
                   </div>
@@ -119,7 +125,7 @@ export default function ContactPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                        Email *
+                        {t('inquiry.email')} *
                       </label>
                       <input
                         type="email"
@@ -141,14 +147,14 @@ export default function ContactPage() {
                         onChange={e => setForm({ ...form, phone: e.target.value })}
                         className="w-full px-4 py-2.5 text-sm border focus:outline-none focus:border-orange-400 transition-colors"
                         style={{ borderColor: 'oklch(0.88 0.008 90)', color: 'oklch(0.18 0.04 265)' }}
-                        placeholder="+1 234 567 8900"
+                        placeholder={pageCopy.phonePlaceholder}
                       />
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                      Subject *
+                        {t('contact.subject')} *
                     </label>
                     <input
                       type="text"
@@ -157,13 +163,13 @@ export default function ContactPage() {
                       onChange={e => setForm({ ...form, subject: e.target.value })}
                       className="w-full px-4 py-2.5 text-sm border focus:outline-none focus:border-orange-400 transition-colors"
                       style={{ borderColor: 'oklch(0.88 0.008 90)', color: 'oklch(0.18 0.04 265)' }}
-                      placeholder="e.g. CAT 320 Excavator Inquiry / Komatsu PC220 Filter Parts"
+                      placeholder={pageCopy.subjectPlaceholder}
                     />
                   </div>
 
                   <div>
                     <label className="block text-xs uppercase tracking-wider font-semibold mb-1.5" style={{ color: 'oklch(0.35 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                      Message *
+                        {t('contact.message')} *
                     </label>
                     <textarea
                       required
@@ -172,7 +178,7 @@ export default function ContactPage() {
                       onChange={e => setForm({ ...form, message: e.target.value })}
                       className="w-full px-4 py-2.5 text-sm border focus:outline-none focus:border-orange-400 transition-colors resize-none"
                       style={{ borderColor: 'oklch(0.88 0.008 90)', color: 'oklch(0.18 0.04 265)' }}
-                      placeholder="Please describe the products you need, quantity, destination country, and any other requirements..."
+                      placeholder={t('contact.describeProducts')}
                     />
                   </div>
 
@@ -182,7 +188,7 @@ export default function ContactPage() {
                     style={{ background: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)', fontSize: '0.9rem' }}
                   >
                     <Send size={16} />
-                    Send Inquiry
+                    {t('contact.sendInquiry')}
                   </button>
                 </form>
               </div>
