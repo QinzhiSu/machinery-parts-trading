@@ -1,6 +1,8 @@
 // Shantui spare parts translations for all 40 parts in 10 languages
 // Contains name, description, and category translations
 
+import { getTranslatedShantuiSparePartDetails } from './sparePartsDetails_shantui';
+
 export const shantuiNameTranslations = {
   'Oil Filter': {
     en: 'Oil Filter',
@@ -634,20 +636,78 @@ export const shantuiCategoryTranslations: Record<string, Record<string, string>>
   },
 };
 
+// Source product names and categories use a mix of Chinese and compact labels.
+// Keep all canonical translations above and resolve the actual source keys here.
+export const shantuiSparePartSourceNameAliases: Record<string, string> = {
+  'Diesel Filter(SD22)': 'Diesel Filter (SD22)',
+  'Diesel Strainer': 'Diesel Coarse Filter',
+  'Air Filter(SD16)': 'Air Filter (SD16)',
+  'Air Filter(SD22外芯)': 'Air Filter (SD22 Outer)',
+  '转向Hydraulic Oil Filter': 'Steering Hydraulic Oil Filter',
+  '变速箱滤芯': 'Transmission Filter',
+  '蓄电池充电发电机(SD22)': 'Battery Charging Alternator (SD22)',
+  'Generator Assembly(28V/45A通用)': 'Alternator Assembly (28V/45A Universal)',
+  '液力变矩器总成(SD16)': 'Torque Converter Assembly (SD16)',
+  '液力变矩器总成(SD22)': 'Torque Converter Assembly (SD22)',
+  '变矩器冷却器': 'Torque Converter Cooler',
+  '转向离合器总成': 'Steering Clutch Assembly',
+  '转向制动带': 'Steering Brake Band',
+  '转向阀体': 'Steering Valve Body',
+  '转向泵总成': 'Steering Pump Assembly',
+  '变速箱泵总成': 'Transmission Pump Assembly',
+  '变速箱控制阀': 'Transmission Control Valve',
+  '履带链条总成(SD16)': 'Track Chain Assembly (SD16)',
+  '履带链条总成(SD22)': 'Track Chain Assembly (SD22)',
+  '履带链条总成(SD32)': 'Track Chain Assembly (SD32)',
+  '前导向轮总成(SD22)': 'Front Idler Wheel Assembly (SD22)',
+  '履带引导轮/托链轮(SD16)': 'Track Guide Wheel/Carrier Roller (SD16)',
+  '单边支重轮(SD16)': 'Single-Sided Support Wheel (SD16)',
+  '双边支重轮(SD16)': 'Double-Sided Support Wheel (SD16)',
+  '履带板/湿地履带板螺栓(72长)': 'Track Shoe/Wetland Track Shoe Bolt (72 Long)',
+  '履带板螺栓/驱动齿轮螺栓': 'Track Shoe Bolt/Drive Sprocket Bolt',
+  '推土铲刀总成': 'Dozer Blade Assembly',
+  '切削刃(cutting edge)/端刃': 'Cutting Edge/End Bit',
+  '端刃(右)': 'End Bit (Right)',
+  '松土器(ripper)刀柄': 'Ripper Shank',
+  '驱动链轮齿块(segment)': 'Drive Sprocket Segment',
+  '万向节总成': 'Universal Joint Assembly',
+  '液压提升缸修理包': 'Hydraulic Lift Cylinder Repair Kit',
+  '散热器总成': 'Radiator Assembly',
+  '散热风扇总成': 'Cooling Fan Assembly',
+  '主销(king pin)': 'King Pin',
+  '最终驱动骨架油封': 'Final Drive Skeleton Oil Seal',
+};
+
+export const shantuiSparePartSourceCategoryAliases: Record<string, string> = {
+  '维护/过滤系统': 'Maintenance/Filtration System',
+  '电气/启动系统': 'Electrical/Starting System',
+  '传动/变速系统': 'Transmission System',
+  '底盘/履带系统': 'Track/Chassis System',
+  '推土铲刀/GET': 'Work Equipment',
+  '传动系统': 'Transmission System',
+  '液压系统': 'Hydraulic System',
+  '转向/悬挂': 'Steering System',
+  '传动/最终驱动': 'Transmission System',
+};
+
 export function getTranslatedShantuiSparePartName(partName: string, language: string): string {
-  const translations = shantuiNameTranslations[partName as keyof typeof shantuiNameTranslations];
+  const canonicalName = shantuiSparePartSourceNameAliases[partName] || partName;
+  const translations = shantuiNameTranslations[canonicalName as keyof typeof shantuiNameTranslations];
   if (!translations) return partName;
   return translations[language as keyof typeof translations] || translations.en || partName;
 }
 
 export function getTranslatedShantuiSparePartDescription(description: string, language: string): string {
+  const detail = getTranslatedShantuiSparePartDetails(description, language);
+  if (detail !== 'OEM quality part. Contact us for detailed specifications and pricing.') return detail;
   const translations = shantuiDescriptionTranslations[description as keyof typeof shantuiDescriptionTranslations];
   if (!translations) return description;
   return translations[language as keyof typeof translations] || translations.en || description;
 }
 
 export function getTranslatedShantuiSparePartCategory(category: string, language: string): string {
-  const translations = shantuiCategoryTranslations[category as keyof typeof shantuiCategoryTranslations];
+  const canonicalCategory = shantuiSparePartSourceCategoryAliases[category] || category;
+  const translations = shantuiCategoryTranslations[canonicalCategory as keyof typeof shantuiCategoryTranslations];
   if (!translations) return category;
   return translations[language as keyof typeof translations] || translations.en || category;
 }

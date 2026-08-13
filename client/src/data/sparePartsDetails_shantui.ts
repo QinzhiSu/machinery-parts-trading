@@ -1,6 +1,8 @@
 // Shantui Spare Parts Details Translations (10 languages)
 // Languages: en, zh, es, fr, de, pt, ru, ja, ar, it
 
+import { shantuiSparePartSourceNameAliases } from './sparePartsSourceAliases_shantui';
+
 export const shantuiPartDetailsTranslations: Record<string, Record<string, string>> = {
   'Oil Filter': {
     en: 'Shantui OEM oil filter for engine maintenance. Replace every 250-500 hours or based on oil analysis.',
@@ -485,6 +487,7 @@ export const shantuiPartDetailsTranslations: Record<string, Record<string, strin
 };
 
 export function getTranslatedShantuiSparePartDetails(partName: string, language: string = 'zh'): string {
-  const details = shantuiPartDetailsTranslations[partName as keyof typeof shantuiPartDetailsTranslations];
+  const canonicalName = shantuiSparePartSourceNameAliases[partName] || partName;
+  const details = shantuiPartDetailsTranslations[canonicalName as keyof typeof shantuiPartDetailsTranslations];
   return details?.[language as keyof typeof details] || 'OEM quality part. Contact us for detailed specifications and pricing.';
 }
