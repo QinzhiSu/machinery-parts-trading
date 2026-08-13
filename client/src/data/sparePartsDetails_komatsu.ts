@@ -282,7 +282,8 @@ export const komatsuPartDetailsTranslations = {
 
 export function getTranslatedKomatsuSparePartDetails(partName: string = '', language: string = 'en'): string {
   // Try to find a specific translation for this part name
-  const translations = (komatsuPartDetailsTranslations as Record<string, Record<string, string>>)[partName];
+  const canonicalPartName = komatsuDetailSourceAliases[partName] ?? partName;
+  const translations = (komatsuPartDetailsTranslations as Record<string, Record<string, string>>)[canonicalPartName];
   if (translations && translations[language]) {
     return translations[language];
   }
@@ -291,3 +292,12 @@ export function getTranslatedKomatsuSparePartDetails(partName: string = '', lang
   const defaultTranslations = komatsuPartDetailsTranslations['default'];
   return (defaultTranslations as Record<string, string>)[language] || defaultTranslations['en'];
 }
+
+const komatsuDetailSourceAliases: Record<string, string> = {
+  '柴油滤芯': 'Diesel Filter',
+  '空气滤芯(外芯)': 'Air Filter(外芯)',
+  '空气滤芯(内芯)': 'Air Filter(内芯)',
+  '柴油滤芯(新款7/8系)': 'Diesel Filter(新款7/8系)',
+  '柴油滤芯(通用型)': 'Diesel Filter(通用型)',
+  '机油滤芯(6D102发动机)': 'Oil Filter(6D102发动机)',
+};
