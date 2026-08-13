@@ -6,7 +6,10 @@ import {
   getTranslatedWeichaiSparePartDescription,
   getTranslatedWeichaiSparePartName,
 } from "../client/src/data/sparePartsTranslations_weichai";
-import { getTranslatedWeichaiSparePartDetails } from "../client/src/data/sparePartsDetails_weichai";
+import {
+  getTranslatedWeichaiSparePartDetails,
+  weichaiPartDetailsTranslations,
+} from "../client/src/data/sparePartsDetails_weichai";
 
 const supportedLanguages = ["en", "zh", "es", "fr", "de", "pt", "ru", "ja", "ar", "it"];
 const nonChineseLanguages = supportedLanguages.filter(language => language !== "zh" && language !== "ja");
@@ -53,6 +56,25 @@ describe("Weichai spare-parts translations", () => {
           getTranslatedWeichaiSparePartDetails(part.name, language),
         );
       }
+    }
+  });
+
+  it("routes every source part to dedicated rather than default modal details", () => {
+    const missing: string[] = [];
+    for (const part of parts) {
+      for (const language of supportedLanguages) {
+        const detail = getTranslatedWeichaiSparePartDetails(part.name, language);
+        const fallback = weichaiPartDetailsTranslations.default[language];
+        if (detail === fallback) missing.push(`${part.name}:${language}`);
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it("uses the localized Weichai brand form in Japanese detail text", () => {
+    for (const part of parts) {
+      expect(getTranslatedWeichaiSparePartDetails(part.name, "ja")).not.toContain("潍柴");
+      expect(getTranslatedWeichaiSparePartDescription(part.name, "ja")).not.toContain("潍柴");
     }
   });
 });

@@ -1,3 +1,5 @@
+import { correctedWeichaiMachineTranslations } from './weichaiMachineTranslations.corrected';
+
 export const weichaimachineNameTranslations: Record<string, Record<string, string>> = {
   'WP6': { en: 'Weichai WP6 Diesel Engine', zh: '潍柴 WP6 柴油发动机', es: 'Motor diésel Weichai WP6', fr: 'Moteur diesel Weichai WP6', de: 'Weichai WP6 Dieselmotor', pt: 'Motor diesel Weichai WP6', ru: 'Дизельный двигатель Weichai WP6', ja: 'ウェイチャイ WP6 ディーゼルエンジン', ar: 'محرك ديزل ويتشاي WP6', it: 'Motore diesel Weichai WP6' },
   'WP10': { en: 'Weichai WP10 Diesel Engine', zh: '潍柴 WP10 柴油发动机', es: 'Motor diésel Weichai WP10', fr: 'Moteur diesel Weichai WP10', de: 'Weichai WP10 Dieselmotor', pt: 'Motor diesel Weichai WP10', ru: 'Дизельный двигатель Weichai WP10', ja: 'ウェイチャイ WP10 ディーゼルエンジン', ar: 'محرك ديزل ويتشاي WP10', it: 'Motore diesel Weichai WP10' },
@@ -27,25 +29,25 @@ export const weichaimachineDescriptionTranslations: Record<string, Record<string
 };
 
 export function getTranslatedWeichaiMachineName(model: string, language: string): string {
-  const translations = weichaimachineNameTranslations[model];
+  const translations: Record<string, string> | undefined = correctedWeichaiMachineTranslations.name[model as keyof typeof correctedWeichaiMachineTranslations.name] || weichaimachineNameTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedWeichaiMachineType(model: string, language: string): string {
-  const translations = weichaimachineTypeTranslations[model];
+  const translations: Record<string, string> | undefined = correctedWeichaiMachineTranslations.type[model as keyof typeof correctedWeichaiMachineTranslations.type] || weichaimachineTypeTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedWeichaiMachineSpecs(model: string, language: string): string {
-  const translations = weichaimachineSpecsTranslations[model];
+  const translations: Record<string, string> | undefined = correctedWeichaiMachineTranslations.specs[model as keyof typeof correctedWeichaiMachineTranslations.specs] || weichaimachineSpecsTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedWeichaiMachineDescription(model: string, language: string): string {
-  const translations = weichaimachineDescriptionTranslations[model];
+  const translations: Record<string, string> | undefined = correctedWeichaiMachineTranslations.description[model as keyof typeof correctedWeichaiMachineTranslations.description] || weichaimachineDescriptionTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
@@ -57,9 +59,9 @@ export function getWeichaiMachineIds(): string[] {
 export function getWeichaiMachineData(machineId: string, language: string = 'en') {
   return {
     id: machineId,
-    name: weichaimachineNameTranslations[machineId]?.[language] || machineId,
-    type: weichaimachineTypeTranslations[machineId]?.[language] || 'Engine',
-    specs: weichaimachineSpecsTranslations[machineId]?.[language] || '',
-    description: weichaimachineDescriptionTranslations[machineId]?.[language] || '',
+    name: getTranslatedWeichaiMachineName(machineId, language),
+    type: getTranslatedWeichaiMachineType(machineId, language),
+    specs: getTranslatedWeichaiMachineSpecs(machineId, language),
+    description: getTranslatedWeichaiMachineDescription(machineId, language),
   };
 }

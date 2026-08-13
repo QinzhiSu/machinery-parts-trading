@@ -256,5 +256,6 @@ const weichaiPartDetailKeys: Record<string, keyof typeof weichaiPartDetailsTrans
 export function getTranslatedWeichaiSparePartDetails(partName: string, language: string = 'en'): string {
   const detailKey = weichaiPartDetailKeys[partName] || 'default';
   const translations = weichaiPartDetailsTranslations[detailKey];
-  return translations[language] || translations.en;
+  const detail = translations[language] || translations.en;
+  return language === 'ja' ? detail.replaceAll('潍柴', 'ウェイチャイ') : detail;
 }
