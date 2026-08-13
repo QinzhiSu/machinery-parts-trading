@@ -342,7 +342,8 @@ export const sanyNameTranslations = {
 };
 
 export function getTranslatedSanySparePartName(name: string, language: string = 'zh'): string {
-  const translations = sanyNameTranslations[name as keyof typeof sanyNameTranslations];
+  const canonicalName = sanySourceNameAliases[name] ?? name;
+  const translations = sanyNameTranslations[canonicalName as keyof typeof sanyNameTranslations];
   return translations?.[language as keyof typeof translations] || name;
 }
 
@@ -459,14 +460,15 @@ const sanyPartNameToDescriptionKey: Record<string, string> = {
 };
 
 export function getTranslatedSanySparePartDescription(partName: string, language: string = 'zh'): string {
+  const canonicalName = sanySourceNameAliases[partName] ?? partName;
   // Try to get the description from sparePartsDetails_sany
-  const detailedDescription = getTranslatedSANYSparePartDetails(partName, language);
+  const detailedDescription = getTranslatedSANYSparePartDetails(canonicalName, language);
   if (detailedDescription && detailedDescription !== 'OEM quality part. Contact us for detailed specifications and pricing.') {
     return detailedDescription;
   }
   
   // Try to get the description key from the mapping
-  const descriptionKey = sanyPartNameToDescriptionKey[partName];
+  const descriptionKey = sanyPartNameToDescriptionKey[canonicalName];
   if (descriptionKey) {
     const translations = sanyDescriptionTranslations[descriptionKey];
     if (translations && translations[language]) {
@@ -475,7 +477,7 @@ export function getTranslatedSanySparePartDescription(partName: string, language
   }
   
   // Fallback to looking up the part name directly in descriptions
-  const translations = sanyDescriptionTranslations[partName];
+  const translations = sanyDescriptionTranslations[canonicalName];
   if (translations && translations[language]) {
     return translations[language];
   }
@@ -623,4 +625,50 @@ export function getTranslatedSANYSparePartCategory(category: string, language: s
   return translations?.[language as keyof typeof translations] || category;
 }
 
+const sanyPartNameLocaleOverrides: Record<string, Record<string, string>> = {
+  "燃油滤芯": { en: "SANY fuel filter element", zh: "SANY 燃油滤芯", es: "Elemento del filtro de combustible SANY", fr: "Élément de filtre à carburant SANY", de: "SANY Kraftstofffilterelement", pt: "Elemento do filtro de combustível SANY", ru: "Элемент топливного фильтра SANY", ja: "SANY 燃料フィルターエレメント", ar: "عنصر فلتر الوقود SANY", it: "Elemento del filtro carburante SANY" },
+  "Oil Filter": { en: "SANY oil filter", zh: "三一油滤芯", es: "Filtro de aceite SANY", fr: "Filtre à huile SANY", de: "SANY Ölfilter", pt: "Filtro de óleo SANY", ru: "Масляный фильтр SANY", ja: "SANYのオイルフィルター", ar: "فلتر زيت SANY", it: "Filtro olio SANY" },
+  "燃油滤芯(老款)": { en: "SANY fuel filter element (old model)", zh: "SANY 燃油滤芯（老款）", es: "Elemento filtrante de combustible SANY (modelo antiguo)", fr: "Élément filtrant de carburant SANY (ancien modèle)", de: "SANY Kraftstofffiltereinsatz (altes Modell)", pt: "Elemento filtrante de combustível SANY (modelo antigo)", ru: "Топливный фильтрующий элемент SANY (старая модель)", ja: "SANY 燃料フィルターエレメント（旧型）", ar: "عنصر فلتر الوقود SANY (الطراز القديم)", it: "Elemento filtrante carburante SANY (vecchio modello)" },
+  "Oil Filter(SY215C/225C系列)": { en: "SANY oil filter for SY215C/225C series", zh: "SANY油滤芯(SY215C/225C系列)", es: "Filtro de aceite SANY para la serie SY215C/225C", fr: "Filtre à huile SANY pour la série SY215C/225C", de: "SANY-Ölfilter für die Baureihe SY215C/225C", pt: "Filtro de óleo SANY para a série SY215C/225C", ru: "Масляный фильтр SANY для серии SY215C/225C", ja: "SANYオイルフィルター（SY215C/225Cシリーズ）", ar: "فلتر زيت SANY لسلسلة SY215C/225C", it: "Filtro dell'olio SANY per la serie SY215C/225C" },
+  "燃油滤芯(新款9系)": { en: "SANY fuel filter element (new 9 series)", zh: "三一燃油滤芯(新款9系)", es: "Elemento del filtro de combustible SANY (nueva serie 9)", fr: "Élément de filtre à carburant SANY (nouvelle série 9)", de: "SANY Kraftstofffiltereinsatz (neue Serie 9)", pt: "Elemento do filtro de combustível SANY (nova série 9)", ru: "Элемент топливного фильтра SANY (новая серия 9)", ja: "SANY 燃料フィルターエレメント（新型9シリーズ）", ar: "عنصر فلتر الوقود SANY (السلسلة 9 الجديدة)", it: "Elemento del filtro carburante SANY (nuova serie 9)" },
+  "燃油滤芯(替代号)": { en: "SANY fuel filter element (alternative part number)", zh: "三一燃油滤芯(替代号)", es: "Elemento filtrante de combustible SANY (número de pieza alternativo)", fr: "Élément filtrant de carburant SANY (numéro de pièce alternatif)", de: "SANY Kraftstofffiltereinsatz (alternative Teilenummer)", pt: "Elemento do filtro de combustível SANY (número de peça alternativo)", ru: "Фильтрующий элемент топливного фильтра SANY (альтернативный номер детали)", ja: "SANY燃料フィルターエレメント（代替部品番号）", ar: "عنصر مرشح الوقود SANY (رقم قطعة بديل)", it: "Elemento filtro carburante SANY (numero parte alternativo)" },
+  "燃油滤芯(SY215C/225C新款)": { en: "SANY fuel filter element (SY215C/225C new model)", zh: "三一燃油滤芯（SY215C/225C 新款）", es: "Elemento filtrante de combustible SANY (SY215C/225C, modelo nuevo)", fr: "Élément de filtre à carburant SANY (SY215C/225C, nouveau modèle)", de: "SANY-Kraftstofffilterelement (SY215C/225C, neues Modell)", pt: "Elemento de filtro de combustível SANY (SY215C/225C, modelo novo)", ru: "Топливный фильтрующий элемент SANY (SY215C/225C, новая модель)", ja: "SANY燃料フィルターエレメント（SY215C/225C 新型）", ar: "عنصر فلتر الوقود SANY (SY215C/225C، الطراز الجديد)", it: "Elemento filtrante del carburante SANY (SY215C/225C, nuovo modello)" },
+  "铲斗斗齿": { en: "SANY bucket tooth", zh: "三一铲斗斗齿", es: "diente de cucharón SANY", fr: "dent de godet SANY", de: "SANY Schaufelzahn", pt: "dente de caçamba SANY", ru: "зуб ковша SANY", ja: "SANY バケットティース", ar: "سن الدلو SANY", it: "dente della benna SANY" },
+  "前导向轮": { en: "SANY front guide roller", zh: "三一前导向轮", es: "SANY rodillo guía delantero", fr: "SANY galet guide avant", de: "SANY vordere Führungsrolle", pt: "SANY rolete guia dianteiro", ru: "SANY передний направляющий ролик", ja: "SANY フロントガイドローラー", ar: "SANY بكرة توجيه أمامية", it: "SANY rullo guida anteriore" },
+  "驱动链轮": { en: "SANY drive sprocket", zh: "三一驱动链轮", es: "Piñón motriz SANY", fr: "Pignon d'entraînement SANY", de: "SANY Antriebsritzel", pt: "Pinhão motriz SANY", ru: "Ведущая звездочка SANY", ja: "SANY 駆動スプロケット", ar: "عجلة مسننة القيادة SANY", it: "Pignone motore SANY" },
+  "下托链轮(Bottom Roller)": { en: "SANY bottom roller", zh: "三一下托链轮", es: "SANY rodillo inferior", fr: "SANY galet inférieur", de: "SANY untere Laufrolle", pt: "SANY rolete inferior", ru: "SANY нижний каток", ja: "SANY 下部転輪", ar: "SANY بكرة سفلية", it: "SANY rullo inferiore" },
+  "上托轮(Top Roller/Carrier Roller)": { en: "SANY top roller / carrier roller", zh: "三一上托轮", es: "SANY rodillo superior / rodillo portador", fr: "SANY rouleau supérieur / rouleau porteur", de: "SANY obere Trägerrolle / obere Laufrolle", pt: "SANY rolete superior / rolete portador", ru: "SANY верхний ролик / опорный ролик", ja: "SANY 上部ローラー／キャリアローラー", ar: "SANY بكرة علوية / بكرة حاملة", it: "SANY rullo superiore / rullo portante" },
+  "履带链条总成": { en: "SANY track chain assembly", zh: "三一履带链条总成", es: "Conjunto de cadena de oruga SANY", fr: "Ensemble de chaîne de chenille SANY", de: "SANY Raupenkettenbaugruppe", pt: "Conjunto de corrente de esteira SANY", ru: "Сборка гусеничной цепи SANY", ja: "SANY トラックチェーンアセンブリ", ar: "مجموعة سلسلة المسار SANY", it: "Assieme catena cingolo SANY" },
+  "履带板/track shoe": { en: "SANY track shoe", zh: "三一履带板", es: "SANY zapata de oruga", fr: "SANY patin de chenille", de: "SANY Raupenplatte", pt: "SANY sapata de esteira", ru: "SANY гусеничная плита", ja: "SANY トラックシュー", ar: "SANY حذاء المسار", it: "SANY piastra del cingolo" },
+  "主液压泵(Rexroth型)": { en: "SANY main hydraulic pump (Rexroth type)", zh: "SANY 主液压泵(Rexroth型)", es: "Bomba hidráulica principal SANY (tipo Rexroth)", fr: "Pompe hydraulique principale SANY (type Rexroth)", de: "SANY Haupt-Hydraulikpumpe (Rexroth-Typ)", pt: "Bomba hidráulica principal SANY (tipo Rexroth)", ru: "Главный гидравлический насос SANY (тип Rexroth)", ja: "SANY 主油圧ポンプ（Rexroth型）", ar: "مضخة هيدروليكية رئيسية SANY (نوع Rexroth)", it: "Pompa idraulica principale SANY (tipo Rexroth)" },
+  "行走(履带)马达/最终驱动总成": { en: "SANY travel motor/final drive assembly", zh: "SANY 行走（履带）马达/最终驱动总成", es: "SANY motor de desplazamiento/conjunto de transmisión final", fr: "SANY moteur de déplacement/ensemble d'entraînement final", de: "SANY Fahrmotor/Endantriebsbaugruppe", pt: "SANY motor de locomoção/conjunto de transmissão final", ru: "SANY ходовой мотор/сборка конечного привода", ja: "SANY 走行モータ/ファイナルドライブアセンブリ", ar: "SANY محرك الحركة/مجموعة ناقل الحركة النهائي", it: "SANY motore di avanzamento/insieme di trasmissione finale" },
+  "回转(转台)马达及减速机": { en: "SANY swing motor and reducer", zh: "三一回转(转台)马达及减速机", es: "SANY motor de giro y reductor", fr: "Moteur de rotation et réducteur SANY", de: "SANY Schwenkmotor und Reduziergetriebe", pt: "Motor de rotação e redutor SANY", ru: "SANY поворотный мотор и редуктор", ja: "SANY 回転（スイング）モータおよび減速機", ar: "محرك دوران ومخفض السرعة SANY", it: "Motore di rotazione e riduttore SANY" },
+  "Turbocharger": { en: "SANY turbocharger", zh: "SANY 涡轮增压器", es: "SANY turbocompresor", fr: "SANY turbocompresseur", de: "SANY Turbolader", pt: "SANY turbocompressor", ru: "SANY турбокомпрессор", ja: "SANY ターボチャージャー", ar: "SANY شاحن توربيني", it: "SANY turbocompressore" },
+  "Generator Assembly": { en: "SANY generator assembly", zh: "三一发电机总成", es: "Conjunto del generador SANY", fr: "Ensemble générateur SANY", de: "SANY-Generatorbaugruppe", pt: "Conjunto do gerador SANY", ru: "Сборка генератора SANY", ja: "SANY発電機アセンブリ", ar: "مجموعة مولد SANY", it: "Gruppo generatore SANY" },
+  "Starter Motor Assembly": { en: "SANY Starter Motor Assembly", zh: "三一启动马达总成", es: "Conjunto del motor de arranque SANY", fr: "Ensemble du démarreur SANY", de: "SANY Startermotorbaugruppe", pt: "Conjunto do motor de arranque SANY", ru: "Стартер в сборе SANY", ja: "SANY スターターモーターアセンブリ", ar: "مجموعة محرك بدء التشغيل SANY", it: "Gruppo motorino di avviamento SANY" },
+  "铲斗油缸密封修理包": { en: "SANY bucket cylinder seal repair kit", zh: "三一铲斗油缸密封修理包", es: "Kit de reparación de retenes del cilindro del cucharón SANY", fr: "Kit de réparation de joints du vérin de godet SANY", de: "SANY Hydraulikzylinder-Dichtungsreparatursatz für die Schaufel", pt: "Kit de reparo de vedação do cilindro da caçamba SANY", ru: "Ремкомплект уплотнений цилиндра ковша SANY", ja: "SANY バケット油圧シリンダーシール修理キット", ar: "طقم إصلاح أختام أسطوانة الدلو SANY", it: "Kit di riparazione guarnizioni del cilindro della benna SANY" },
+};
 
+for (const [name, locale] of Object.entries(sanyPartNameLocaleOverrides)) {
+  Object.assign(sanyNameTranslations[name as keyof typeof sanyNameTranslations], locale);
+}
+
+const sanySourceCategoryLocaleOverrides: Record<string, Record<string, string>> = {
+  '保养/滤清系统': { en: 'Maintenance / filtration system', zh: '保养/滤清系统', es: 'Sistema de mantenimiento / filtración', fr: 'Système d’entretien / filtration', de: 'Wartungs- / Filtersystem', pt: 'Sistema de manutenção / filtração', ru: 'Система обслуживания / фильтрации', ja: 'メンテナンス/ろ過システム', ar: 'نظام الصيانة / الترشيح', it: 'Sistema di manutenzione / filtrazione' },
+  '挖掘属性/GET': { en: 'Excavation / ground-engaging tools', zh: '挖掘/地面接触工具', es: 'Excavación / herramientas de contacto con el suelo', fr: 'Excavation / outils d’attaque du sol', de: 'Grabwerkzeuge mit Bodenkontakt', pt: 'Escavação / ferramentas de contato com o solo', ru: 'Землеройные работы / грунторежущие инструменты', ja: '掘削用接地工具', ar: 'الحفر / أدوات ملامسة التربة', it: 'Scavo / utensili di contatto con il terreno' },
+  '底盘/履带系统': { en: 'Chassis / track system', zh: '底盘/履带系统', es: 'Sistema de chasis / orugas', fr: 'Système de châssis / chenilles', de: 'Fahrwerk- / Kettensystem', pt: 'Sistema de chassi / esteiras', ru: 'Система шасси / гусеничного хода', ja: '車台/履帯システム', ar: 'نظام الهيكل / الجنزير', it: 'Sistema telaio / cingoli' },
+  '液压系统': { en: 'Hydraulic system', zh: '液压系统', es: 'Sistema hidráulico', fr: 'Système hydraulique', de: 'Hydrauliksystem', pt: 'Sistema hidráulico', ru: 'Гидравлическая система', ja: '油圧システム', ar: 'النظام الهيدروليكي', it: 'Sistema idraulico' },
+  '发动机系统': { en: 'Engine system', zh: '发动机系统', es: 'Sistema del motor', fr: 'Système moteur', de: 'Motorsystem', pt: 'Sistema do motor', ru: 'Система двигателя', ja: 'エンジンシステム', ar: 'نظام المحرك', it: 'Sistema motore' },
+  '液压缸/密封件': { en: 'Hydraulic cylinder / seals', zh: '液压缸/密封件', es: 'Cilindro hidráulico / sellos', fr: 'Vérin hydraulique / joints', de: 'Hydraulikzylinder / Dichtungen', pt: 'Cilindro hidráulico / vedações', ru: 'Гидроцилиндр / уплотнения', ja: '油圧シリンダー/シール', ar: 'أسطوانة هيدروليكية / أختام', it: 'Cilindro idraulico / guarnizioni' },
+};
+
+for (const [category, locale] of Object.entries(sanySourceCategoryLocaleOverrides)) {
+  sanyCategoryTranslations[category] = locale;
+}
+
+const sanySourceNameAliases: Record<string, string> = {
+  '机油滤芯(SY215C/225C系列)': 'Oil Filter(SY215C/225C系列)',
+  'Track Chain Assembly': '履带链条总成',
+  '发电机总成': 'Generator Assembly',
+  '起动机总成': 'Starter Motor Assembly',
+};

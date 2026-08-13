@@ -91,10 +91,10 @@ export const sanyPartDetailsTranslations: Record<string, Record<string, string>>
     zh: '三一铲斗斗齿。磨损到底部或裂纹时更换（高频更换）。',
     es: 'Diente de cucharón SANY. Reemplazar cuando esté desgastado o agrietado (reemplazo de alta frecuencia).',
     fr: 'Dent de godet SANY. Remplacer lorsqu\'usée ou fissurée (remplacement haute fréquence).',
-    de: 'SANY Schauffelzahn. Wechseln wenn abgenutzt oder gebrochen (Hochfrequenz-Austausch).',
+    de: 'SANY Schaufelzahn. Wechseln wenn abgenutzt oder gebrochen (Hochfrequenz-Austausch).',
     pt: 'Dente do balde SANY. Substituir quando desgastado ou rachado (substituição de alta frequência).',
     ru: 'Зубья ковша SANY. Заменять при износе или трещинах (частая замена).',
-    ja: 'SANYバケットティース。摩耗または破裂した場合に交換（高頻度交換）。',
+    ja: 'SANYバケットティース。摩耗または亀裂がある場合に交換（高頻度交換）。',
     ar: 'سن الجرافة SANY. استبدل عند البلى أو الشقوق (استبدال عالي التكرار).',
     it: 'Dente della benna SANY. Sostituire quando usurato o incrinato (sostituzione ad alta frequenza).',
   },
@@ -162,8 +162,8 @@ export const sanyPartDetailsTranslations: Record<string, Record<string, string>>
     en: 'SANY track shoe. Replace when worn or broken (Trasteel brand).',
     zh: '三一履带板。磨损或断裂时更换(Trasteel品牌)。',
     es: 'Zapata de orugas SANY. Reemplazar cuando esté desgastada o rota (marca Trasteel).',
-    fr: 'Chaîne de chenille SANY. Remplacer lorsqu\'usée ou cassée (marque Trasteel).',
-    de: 'SANY Raupenglied. Wechseln wenn abgenutzt oder gebrochen (Marke Trasteel).',
+    fr: 'Patin de chenille SANY. Remplacer lorsqu\'usé ou cassé (marque Trasteel).',
+    de: 'SANY Raupenplatte. Wechseln wenn abgenutzt oder gebrochen (Marke Trasteel).',
     pt: 'Sapata de esteira SANY. Substituir quando desgastada ou quebrada (marca Trasteel).',
     ru: 'Звено гусеницы SANY. Заменять при износе или поломке (марка Trasteel).',
     ja: 'SANYトラックシュー。摩耗または破損した場合に交換（Trasteel ブランド）。',
@@ -247,7 +247,7 @@ export const sanyPartDetailsTranslations: Record<string, Record<string, string>>
     zh: '三一铲斗油缸密封修理包。油泄漏时更换。',
     es: 'Kit de reparación de sello de cilindro de cucharón SANY. Reemplazar cuando hay fugas de aceite.',
     fr: 'Kit de réparation de joint de vérin de godet SANY. Remplacer en cas de fuite d\'huile.',
-    de: 'SANY Schauffelzylinder-Dichtungsreparatursatz. Wechseln wenn Ölverlust auftritt.',
+    de: 'SANY Schaufelzylinder-Dichtungsreparatursatz. Wechseln wenn Ölverlust auftritt.',
     pt: 'Kit de reparo de vedação do cilindro do balde SANY. Substituir quando houver vazamento de óleo.',
     ru: 'Набор для ремонта уплотнения цилиндра ковша SANY. Заменять при утечке масла.',
     ja: 'SANYバケットシリンダーシール修理キット。オイル漏れが発生した場合に交換。',
@@ -257,7 +257,8 @@ export const sanyPartDetailsTranslations: Record<string, Record<string, string>>
 };
 
 export function getTranslatedSANYSparePartDetails(partName: string, language: string = 'en'): string {
-  const translations = sanyPartDetailsTranslations[partName];
+  const canonicalName = sanyDetailSourceNameAliases[partName] ?? partName;
+  const translations = sanyPartDetailsTranslations[canonicalName];
   if (translations && translations[language]) {
     return translations[language];
   }
@@ -268,3 +269,10 @@ export function getTranslatedSANYSparePartDetails(partName: string, language: st
   // Default fallback
   return 'OEM quality part. Contact us for detailed specifications and pricing.';
 }
+
+const sanyDetailSourceNameAliases: Record<string, string> = {
+  '机油滤芯(SY215C/225C系列)': 'Oil Filter(SY215C/225C系列)',
+  'Track Chain Assembly': '履带链条总成',
+  '发电机总成': 'Generator Assembly',
+  '起动机总成': 'Starter Motor Assembly',
+};
