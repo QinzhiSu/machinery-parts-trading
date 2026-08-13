@@ -47,7 +47,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     de: 'Komplettes Luftfilter-Set mit inneren und äußeren Elementen für XCMG-Motoren. Alle 250-500 Stunden oder je nach Staubumgebung wechseln.',
     pt: 'Conjunto completo de filtro de ar com elementos internos e externos para motores XCMG. Substituir a cada 250-500 horas ou conforme o ambiente de poeira.',
     ru: 'Полный комплект воздушного фильтра с внутренними и внешними элементами для двигателей XCMG. Заменяйте каждые 250-500 часов или в зависимости от пыльной среды.',
-    ja: 'XCMG エンジン用内外滤芯を備えた完全なエアフィルター組立。250-500時間ごとまたは粉塵環境に基づいて交換。',
+    ja: 'XCMGエンジン用の内側・外側フィルターエレメント付き完全エアフィルター組立。250～500時間ごと、または粉じん環境に応じて交換。',
     ar: 'مجموعة فلتر هواء كاملة مع عناصر داخلية وخارجية لمحركات XCMG. استبدل كل 250-500 ساعة أو بناءً على بيئة الغبار.',
     it: 'Insieme completo del filtro aria con elementi interni ed esterni per i motori XCMG. Sostituire ogni 250-500 ore o in base all\'ambiente polveroso.'
   },
@@ -128,7 +128,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     zh: 'XCMG挖掘机斗齿。每次更换斗齿时同步更换。',
     es: 'Dientes del cucharón para excavadoras XCMG. Reemplazar sincrónicamente cada vez que se reemplazan los dientes.',
     fr: 'Dents de godet pour excavatrices XCMG. Remplacer de manière synchrone chaque fois que les dents sont remplacées.',
-    de: 'Schauffelzähne für XCMG-Bagger. Synchron ersetzen, wenn Zähne ersetzt werden.',
+    de: 'Schaufelzähne für XCMG-Bagger. Beim Austausch der Zähne stets gemeinsam ersetzen.',
     pt: 'Dentes do balde para escavadeiras XCMG. Substituir sincronicamente sempre que os dentes forem substituídos.',
     ru: 'Зубья ковша для экскаваторов XCMG. Заменяйте синхронно каждый раз при замене зубьев.',
     ja: 'XCMG油圧ショベル用バケット歯。歯を交換するたびに同期的に交換。',
@@ -140,7 +140,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     zh: 'XCMG挖掘机右侧斗齿。当磨损到底部或断裂时更换。',
     es: 'Diente del cucharón derecho para excavadoras XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
     fr: 'Dent de godet droit pour excavatrices XCMG. Remplacer lorsqu\'elle est usée jusqu\'au fond ou cassée.',
-    de: 'Rechter Schauffelzahn für XCMG-Bagger. Ersetzen, wenn bis zum Boden abgenutzt oder gebrochen.',
+    de: 'Rechter Schaufelzahn für XCMG-Bagger. Ersetzen, wenn er stark abgenutzt oder gebrochen ist.',
     pt: 'Dente do balde direito para escavadeiras XCMG. Substituir quando desgastado até o fundo ou quebrado.',
     ru: 'Правый зуб ковша для экскаваторов XCMG. Заменяйте при износе до дна или поломке.',
     ja: 'XCMG油圧ショベル用右側バケット歯。底まで磨耗または破損した場合に交換。',
@@ -152,7 +152,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     zh: 'XCMG挖掘机左侧斗齿。当磨损到底部或断裂时更换。',
     es: 'Diente del cucharón izquierdo para excavadoras XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
     fr: 'Dent de godet gauche pour excavatrices XCMG. Remplacer lorsqu\'elle est usée jusqu\'au fond ou cassée.',
-    de: 'Linker Schauffelzahn für XCMG-Bagger. Ersetzen, wenn bis zum Boden abgenutzt oder gebrochen.',
+    de: 'Linker Schaufelzahn für XCMG-Bagger. Ersetzen, wenn er stark abgenutzt oder gebrochen ist.',
     pt: 'Dente do balde esquerdo para escavadeiras XCMG. Substituir quando desgastado até o fundo ou quebrado.',
     ru: 'Левый зуб ковша для экскаваторов XCMG. Заменяйте при износе до дна или поломке.',
     ja: 'XCMG油圧ショベル用左側バケット歯。底まで磨耗または破損した場合に交換。',
@@ -164,7 +164,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     zh: 'XCMG挖掘机斗齿座。当磨损到底部或断裂时更换。',
     es: 'Asiento de diente del cucharón para excavadoras XCMG. Reemplazar cuando se desgaste hasta el fondo o se rompa.',
     fr: 'Siège de dent de godet pour excavatrices XCMG. Remplacer lorsqu\'il est usé jusqu\'au fond ou cassé.',
-    de: 'Schauffelzahnsitz für XCMG-Bagger. Ersetzen, wenn bis zum Boden abgenutzt oder gebrochen.',
+    de: 'Schaufelzahnsitz für XCMG-Bagger. Ersetzen, wenn er stark abgenutzt oder gebrochen ist.',
     pt: 'Assento de dente do balde para escavadeiras XCMG. Substituir quando desgastado até o fundo ou quebrado.',
     ru: 'Гнездо зуба ковша для экскаваторов XCMG. Заменяйте при износе до дна или поломке.',
     ja: 'XCMG油圧ショベル用バケット歯シート。底まで磨耗または破損した場合に交換。',
@@ -203,7 +203,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     de: 'Rückwärtsgang-Kolben der Getriebe für XCMG-Ausrüstung. Ersetzen, wenn abnormale Schaltung auftritt.',
     pt: 'Pistão de marcha ré da transmissão para equipamentos XCMG. Substituir quando ocorrer mudança anormal.',
     ru: 'Поршень заднего хода коробки передач для оборудования XCMG. Заменяйте при аномальном переключении.',
-    ja: 'XCMG機器用トランスミッション逆転ピストン。異常なシフトが発生した場合に交換。',
+    ja: 'XCMG機器用トランスミッション後進ピストン。異常な変速が発生した場合に交換。',
     ar: 'مكبس عكس ناقل الحركة لمعدات XCMG. استبدل عند حدوث تحول غير طبيعي.',
     it: 'Pistone di marcia indietro della trasmissione per apparecchiature XCMG. Sostituire quando si verifica uno spostamento anormale.'
   },
@@ -215,7 +215,7 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
     de: 'Antriebsachsen-Differentialgetriebe für XCMG-Ausrüstung. Bei Großreparaturen oder abnormalen Geräuschen ersetzen.',
     pt: 'Engrenagem diferencial do eixo motriz para equipamentos XCMG. Substituir durante reparação importante ou quando ocorrer ruído anormal.',
     ru: 'Дифференциальное колесо ведущей оси для оборудования XCMG. Заменяйте при капитальном ремонте или при аномальном шуме.',
-    ja: 'XCMG機器用ドライブアクセル差動ギア。大修理時または異常音が発生した場合に交換。',
+    ja: 'XCMG機器用ドライブアクスル・ディファレンシャルギア。大修理時または異常音が発生した場合に交換。',
     ar: 'ترس الفارق للمحور الدافع لمعدات XCMG. استبدل أثناء الإصلاح الرئيسي أو عند حدوث ضوضاء غير طبيعية.',
     it: 'Ingranaggio differenziale dell\'asse motore per apparecchiature XCMG. Sostituire durante riparazioni importanti o quando si verifica rumore anormale.'
   },
@@ -317,7 +317,33 @@ export const xcmgSparePartDetails: Record<string, Record<string, string>> = {
   },
 };
 
+export const xcmgSparePartDetailSourceAliases: Record<string, string> = {
+  'Air Filter Assembly (Inner and Outer)': 'Air Filter套装(内外芯)',
+  'Hydraulic Oil Filter (Variant)': 'Hydraulic Oil Filter(变体)',
+  'Air Filter (ZL50)': 'Air Filter(ZL50)',
+  'Oil Filter (with Lock Valve)': 'Oil Filter(带锁止阀)',
+  'Hydraulic Oil Filter (Model 2)': 'Hydraulic Oil Filter(型号2)',
+  'Water Temperature Sensor': '水温传感器',
+  'Bucket Teeth': '铲斗斗齿',
+  'Right Bucket Tooth': '右侧斗齿',
+  'Left Bucket Tooth': '左侧斗齿',
+  'Bucket Tooth Seat': '斗齿座(Tooth Holder)',
+  'Transmission Assembly': '变速箱总成(带变矩器)',
+  'Transmission Control Valve': '变速箱控制阀(变速阀)',
+  'Transmission Reverse Piston': '变速箱倒挡活塞',
+  'Drive Axle Differential Gear': '驱动桥半轴齿轮(差速器齿轮)',
+  'Working Hydraulic Pump': '工作液压泵',
+  'Brake Pads': '刹车片(SOMA制动衬片)',
+  'Brake Disc': '制动盘(刹车盘)',
+  'Parking Brake Valve': '手刹阀',
+  'Brake Drum': '手刹鼓(制动鼓)',
+  'Lip Seal Ring': '唇形油封',
+  'Universal Joint Coupling': '万向节联轴器',
+  'Relief Valve': '溢流阀(继动阀)',
+};
+
 export function getTranslatedXCMGSparePartDetails(partName: string, language: string = 'zh'): string {
-  const details = xcmgSparePartDetails[partName as keyof typeof xcmgSparePartDetails];
+  const sourceName = xcmgSparePartDetailSourceAliases[partName] || partName;
+  const details = xcmgSparePartDetails[sourceName as keyof typeof xcmgSparePartDetails];
   return details?.[language as keyof typeof details] || partName;
 }

@@ -33,16 +33,16 @@ export const xcmgNameTranslations: Record<string, Record<string, string>> = {
     en: 'Water Temperature Sensor', zh: '水温传感器', es: 'Sensor de Temperatura del Agua', fr: 'Capteur de Température de l\'Eau', de: 'Wassertemperatursensor', pt: 'Sensor de Temperatura da Água', ru: 'Датчик температуры воды', ja: '水温センサー', ar: 'مستشعر درجة حرارة الماء', it: 'Sensore di temperatura dell\'acqua'
   },
   'Bucket Teeth': {
-    en: 'Bucket Teeth', zh: '铲斗斗齿', es: 'Dientes del Cucharón', fr: 'Dents de Godet', de: 'Schauffelzähne', pt: 'Dentes do Balde', ru: 'Зубья ковша', ja: 'バケット歯', ar: 'أسنان الدلو', it: 'Denti del secchio'
+    en: 'Bucket Teeth', zh: '铲斗斗齿', es: 'Dientes del Cucharón', fr: 'Dents de Godet', de: 'Schaufelzähne', pt: 'Dentes do Balde', ru: 'Зубья ковша', ja: 'バケット歯', ar: 'أسنان الدلو', it: 'Denti del secchio'
   },
   'Right Bucket Tooth': {
-    en: 'Right Bucket Tooth', zh: '右侧斗齿', es: 'Diente del Cucharón Derecho', fr: 'Dent de Godet Droit', de: 'Rechter Schauffelzahn', pt: 'Dente do Balde Direito', ru: 'Правый зуб ковша', ja: '右側バケット歯', ar: 'سن الدلو الأيمن', it: 'Dente del secchio destro'
+    en: 'Right Bucket Tooth', zh: '右侧斗齿', es: 'Diente del Cucharón Derecho', fr: 'Dent de Godet Droit', de: 'Rechter Schaufelzahn', pt: 'Dente do Balde Direito', ru: 'Правый зуб ковша', ja: '右側バケット歯', ar: 'سن الدلو الأيمن', it: 'Dente del secchio destro'
   },
   'Left Bucket Tooth': {
-    en: 'Left Bucket Tooth', zh: '左侧斗齿', es: 'Diente del Cucharón Izquierdo', fr: 'Dent de Godet Gauche', de: 'Linker Schauffelzahn', pt: 'Dente do Balde Esquerdo', ru: 'Левый зуб ковша', ja: '左側バケット歯', ar: 'سن الدلو الأيسر', it: 'Dente del secchio sinistro'
+    en: 'Left Bucket Tooth', zh: '左侧斗齿', es: 'Diente del Cucharón Izquierdo', fr: 'Dent de Godet Gauche', de: 'Linker Schaufelzahn', pt: 'Dente do Balde Esquerdo', ru: 'Левый зуб ковша', ja: '左側バケット歯', ar: 'سن الدلو الأيسر', it: 'Dente del secchio sinistro'
   },
   'Bucket Tooth Seat': {
-    en: 'Bucket Tooth Seat', zh: '斗齿座', es: 'Asiento de Diente del Cucharón', fr: 'Siège de Dent de Godet', de: 'Schauffelzahnsitz', pt: 'Assento de Dente do Balde', ru: 'Гнездо зуба ковша', ja: 'バケット歯シート', ar: 'مقعد سن الدلو', it: 'Sede del dente del secchio'
+    en: 'Bucket Tooth Seat', zh: '斗齿座', es: 'Asiento de Diente del Cucharón', fr: 'Siège de Dent de Godet', de: 'Schaufelzahnsitz', pt: 'Assento de Dente do Balde', ru: 'Гнездо зуба ковша', ja: 'バケット歯シート', ar: 'مقعد سن الدلو', it: 'Sede del dente del secchio'
   },
   'Transmission Assembly': {
     en: 'Transmission Assembly', zh: '变速箱总成（带变矩器）', es: 'Conjunto de Transmisión', fr: 'Ensemble de Transmission', de: 'Getriebeeinheit', pt: 'Conjunto de Transmissão', ru: 'Узел коробки передач', ja: 'トランスミッション組立', ar: 'مجموعة ناقل الحركة', it: 'Insieme della trasmissione'
@@ -66,7 +66,7 @@ export const xcmgNameTranslations: Record<string, Record<string, string>> = {
     en: 'Brake Disc', zh: '制动盘', es: 'Disco de Freno', fr: 'Disque de Frein', de: 'Bremsscheibe', pt: 'Disco de Freio', ru: 'Тормозной диск', ja: 'ブレーキディスク', ar: 'قرص الفرامل', it: 'Disco freno'
   },
   'Parking Brake Valve': {
-    en: 'Parking Brake Valve', zh: '手刹阀', es: 'Válvula de Freno de Estacionamiento', fr: 'Soupape de Frein de Stationnement', de: 'Feststellbremsenventil', pt: 'Válvula de Freio de Estacionamento', ru: 'Клапан стояночного тормоза', ja: 'パーキングブレーキバルブ', ar: 'صمام الفرامل', it: 'Valvola freno di stazionamento'
+    en: 'Parking Brake Valve', zh: '手刹阀', es: 'Válvula de Freno de Estacionamiento', fr: 'Soupape de Frein de Stationnement', de: 'Feststellbremsenventil', pt: 'Válvula de Freio de Estacionamento', ru: 'Клапан стояночного тормоза', ja: 'パーキングブレーキバルブ', ar: 'صمام فرامل التوقف', it: 'Valvola freno di stazionamento'
   },
   'Brake Drum': {
     en: 'Brake Drum', zh: '手刹鼓', es: 'Tambor de Freno', fr: 'Tambour de Frein', de: 'Bremstrommel', pt: 'Tambor de Freio', ru: 'Тормозной барабан', ja: 'ブレーキドラム', ar: 'أسطوانة الفرامل', it: 'Tamburo freno'
@@ -90,7 +90,7 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
     en: 'Electrical/Sensor System', zh: '电气/传感器系统', es: 'Sistema Eléctrico/Sensor', fr: 'Système Électrique/Capteur', de: 'Elektro-/Sensorsystem', pt: 'Sistema Elétrico/Sensor', ru: 'Электрическая/сенсорная система', ja: '電気/センサーシステム', ar: 'نظام كهربائي/مستشعر', it: 'Sistema elettrico/sensore'
   },
   'Excavation/Bucket Teeth': {
-    en: 'Excavation/Bucket Teeth', zh: '挖掘/斗齿系统', es: 'Excavación/Dientes del Cucharón', fr: 'Excavation/Dents de Godet', de: 'Grabung/Schauffelzähne', pt: 'Escavação/Dentes do Balde', ru: 'Экскавация/Зубья ковша', ja: '掘削/バケット歯', ar: 'الحفر/أسنان الدلو', it: 'Scavo/Denti del secchio'
+    en: 'Excavation/Bucket Teeth', zh: '挖掘/斗齿系统', es: 'Excavación/Dientes del Cucharón', fr: 'Excavation/Dents de Godet', de: 'Aushub/Schaufelzähne', pt: 'Escavação/Dentes do Balde', ru: 'Экскавация/Зубья ковша', ja: '掘削/バケット歯', ar: 'الحفر/أسنان الدلو', it: 'Scavo/Denti del secchio'
   },
   'Transmission/Gearbox System': {
     en: 'Transmission/Gearbox System', zh: '传动/变速系统', es: 'Sistema de Transmisión', fr: 'Système de Transmission', de: 'Übertragungssystem', pt: 'Sistema de Transmissão', ru: 'Система передачи', ja: 'トランスミッション/ギアボックスシステム', ar: 'نظام النقل/علبة التروس', it: 'Sistema di trasmissione/cambio'
@@ -103,6 +103,9 @@ export const xcmgCategoryTranslations: Record<string, Record<string, string>> = 
   },
   'Sealing/Coupling System': {
     en: 'Sealing/Coupling System', zh: '密封/联轴系统', es: 'Sistema de Sellado/Acoplamiento', fr: 'Système d\'Étanchéité/Accouplement', de: 'Dichtungs-/Kupplungssystem', pt: 'Sistema de Vedação/Acoplamento', ru: 'Система уплотнения/муфты', ja: 'シール/カップリングシステム', ar: 'نظام الختم/الاقتران', it: 'Sistema di tenuta/accoppiamento'
+  },
+  'Sealing/Drive Components': {
+    en: 'Sealing/Drive Components', zh: '密封/传动部件', es: 'Componentes de Sellado/Transmisión', fr: 'Composants d\'Étanchéité/de Transmission', de: 'Dichtungs-/Antriebskomponenten', pt: 'Componentes de Vedação/Transmissão', ru: 'Уплотнительные/приводные компоненты', ja: 'シール/駆動部品', ar: 'مكونات الختم/نقل الحركة', it: 'Componenti di tenuta/trasmissione'
   },
 };
 
@@ -232,7 +235,7 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     zh: 'XCMG挖掘机斗齿。磨损到底部或损坏时更换。',
     es: 'Dientes del cucharón para excavadoras XCMG. Reemplazar cuando se desgasten o se rompan.',
     fr: 'Dents de godet pour excavatrices XCMG. Remplacer lorsqu\'usées ou cassées.',
-    de: 'Schauffelzähne für XCMG-Bagger. Wechseln wenn abgenutzt oder gebrochen.',
+    de: 'Schaufelzähne für XCMG-Bagger. Wechseln, wenn sie abgenutzt oder gebrochen sind.',
     pt: 'Dentes do balde para escavadeiras XCMG. Substituir quando desgastados ou quebrados.',
     ru: 'Зубья ковша для экскаваторов XCMG. Заменяйте при износе или поломке.',
     ja: 'XCMGショベル用バケット歯。摩耗または破損時に交換。',
@@ -244,7 +247,7 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     zh: 'XCMG挖掘机右侧斗齿。磨损或损坏时更换。',
     es: 'Diente del cucharón derecho para excavadoras XCMG. Reemplazar cuando esté desgastado o dañado.',
     fr: 'Dent de godet droit pour excavatrices XCMG. Remplacer lorsqu\'usée ou endommagée.',
-    de: 'Rechter Schauffelzahn für XCMG-Bagger. Wechseln wenn abgenutzt oder beschädigt.',
+    de: 'Rechter Schaufelzahn für XCMG-Bagger. Wechseln, wenn er abgenutzt oder beschädigt ist.',
     pt: 'Dente do balde direito para escavadeiras XCMG. Substituir quando desgastado ou danificado.',
     ru: 'Правый зуб ковша для экскаваторов XCMG. Заменяйте при износе или повреждении.',
     ja: 'XCMGショベル用右側バケット歯。摩耗または損傷時に交換。',
@@ -256,7 +259,7 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     zh: 'XCMG挖掘机左侧斗齿。磨损或损坏时更换。',
     es: 'Diente del cucharón izquierdo para excavadoras XCMG. Reemplazar cuando esté desgastado o dañado.',
     fr: 'Dent de godet gauche pour excavatrices XCMG. Remplacer lorsqu\'usée ou endommagée.',
-    de: 'Linker Schauffelzahn für XCMG-Bagger. Wechseln wenn abgenutzt oder beschädigt.',
+    de: 'Linker Schaufelzahn für XCMG-Bagger. Wechseln, wenn er abgenutzt oder beschädigt ist.',
     pt: 'Dente do balde esquerdo para escavadeiras XCMG. Substituir quando desgastado ou danificado.',
     ru: 'Левый зуб ковша для экскаваторов XCMG. Заменяйте при износе или повреждении.',
     ja: 'XCMGショベル用左側バケット歯。摩耗または損傷時に交換。',
@@ -268,7 +271,7 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
     zh: 'XCMG挖掘机斗齿座。磨损或损坏时更换。',
     es: 'Asiento de diente del cucharón para excavadoras XCMG. Reemplazar cuando esté desgastado o dañado.',
     fr: 'Siège de dent de godet pour excavatrices XCMG. Remplacer lorsqu\'usé ou endommagé.',
-    de: 'Schauffelzahnsitz für XCMG-Bagger. Wechseln wenn abgenutzt oder beschädigt.',
+    de: 'Schaufelzahnsitz für XCMG-Bagger. Wechseln, wenn er abgenutzt oder beschädigt ist.',
     pt: 'Assento de dente do balde para escavadeiras XCMG. Substituir quando desgastado ou danificado.',
     ru: 'Гнездо зуба ковша для экскаваторов XCMG. Заменяйте при износе или повреждении.',
     ja: 'XCMGショベル用バケット歯シート。摩耗または損傷時に交換。',
@@ -421,17 +424,54 @@ export const xcmgDescriptionTranslations: Record<string, Record<string, string>>
   },
 };
 
+export const xcmgSparePartSourceAliases: Record<string, string> = {
+  'Air Filter套装(内外芯)': 'Air Filter Assembly (Inner and Outer)',
+  'Hydraulic Oil Filter(变体)': 'Hydraulic Oil Filter (Variant)',
+  'Air Filter(ZL50)': 'Air Filter (ZL50)',
+  'Oil Filter(带锁止阀)': 'Oil Filter (with Lock Valve)',
+  'Hydraulic Oil Filter(型号2)': 'Hydraulic Oil Filter (Model 2)',
+  '水温传感器': 'Water Temperature Sensor',
+  '铲斗斗齿': 'Bucket Teeth',
+  '右侧斗齿': 'Right Bucket Tooth',
+  '左侧斗齿': 'Left Bucket Tooth',
+  '斗齿座(Tooth Holder)': 'Bucket Tooth Seat',
+  '变速箱总成(带变矩器)': 'Transmission Assembly',
+  '变速箱控制阀(变速阀)': 'Transmission Control Valve',
+  '变速箱倒挡活塞': 'Transmission Reverse Piston',
+  '驱动桥半轴齿轮(差速器齿轮)': 'Drive Axle Differential Gear',
+  '工作液压泵': 'Working Hydraulic Pump',
+  '刹车片(SOMA制动衬片)': 'Brake Pads',
+  '制动盘(刹车盘)': 'Brake Disc',
+  '手刹阀': 'Parking Brake Valve',
+  '手刹鼓(制动鼓)': 'Brake Drum',
+  '唇形油封': 'Lip Seal Ring',
+  '万向节联轴器': 'Universal Joint Coupling',
+  '溢流阀(继动阀)': 'Relief Valve',
+};
+
+export const xcmgSparePartCategorySourceAliases: Record<string, string> = {
+  '电气/传感器': 'Electrical/Sensor System',
+  '挖掘属性/GET': 'Excavation/Bucket Teeth',
+  '传动/变速系统': 'Transmission/Gearbox System',
+  '液压系统': 'Hydraulic System',
+  'Braking System': 'Brake System',
+  '密封/传动件': 'Sealing/Drive Components',
+};
+
 export function getTranslatedXCMGSparePartName(name: string, language: string = 'zh'): string {
-  const translations = xcmgNameTranslations[name as keyof typeof xcmgNameTranslations];
+  const canonicalName = xcmgSparePartSourceAliases[name] || name;
+  const translations = xcmgNameTranslations[canonicalName as keyof typeof xcmgNameTranslations];
   return translations?.[language as keyof typeof translations] || name;
 }
 
 export function getTranslatedXCMGSparePartCategory(category: string, language: string = 'zh'): string {
-  const translations = xcmgCategoryTranslations[category as keyof typeof xcmgCategoryTranslations];
+  const canonicalCategory = xcmgSparePartCategorySourceAliases[category] || category;
+  const translations = xcmgCategoryTranslations[canonicalCategory as keyof typeof xcmgCategoryTranslations];
   return translations?.[language as keyof typeof translations] || category;
 }
 
 export function getTranslatedXCMGSparePartDescription(partName: string, language: string = 'zh'): string {
-  const translations = xcmgDescriptionTranslations[partName as keyof typeof xcmgDescriptionTranslations];
+  const canonicalName = xcmgSparePartSourceAliases[partName] || partName;
+  const translations = xcmgDescriptionTranslations[canonicalName as keyof typeof xcmgDescriptionTranslations];
   return translations?.[language as keyof typeof translations] || partName;
 }
