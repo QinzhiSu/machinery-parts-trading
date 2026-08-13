@@ -1,6 +1,8 @@
 // Auto-generated translations for Caterpillar spare parts
 // Contains translations for all 37 spare parts in 10 languages
 
+import { getTranslatedCaterpillarSparePartDetails } from './sparePartsDetails_caterpillar';
+
 export const caterpillarNameTranslations = {
   'Oil Filter': {
     en: 'Oil Filter',
@@ -112,7 +114,7 @@ export const caterpillarNameTranslations = {
   },
   'Turbocharger': {
     en: 'Turbocharger',
-    zh: 'Turbocharger',
+    zh: '涡轮增压器',
     es: 'Turbocompresor',
     fr: 'Turbocompresseur',
     de: 'Turbolader',
@@ -127,7 +129,7 @@ export const caterpillarNameTranslations = {
     zh: '履带链条总成',
     es: 'Conjunto de Cadena de Orugas',
     fr: 'Assemblage de Chaîne de Chenille',
-    de: 'Kettenkettenbaugruppe',
+    de: 'Kettenbaugruppe',
     pt: 'Montagem de Corrente de Trilho',
     ru: 'Сборка гусеничной цепи',
     ja: 'トラックチェーンアセンブリ',
@@ -175,7 +177,7 @@ export const caterpillarNameTranslations = {
     zh: '上托轮',
     es: 'Rodillo Portador',
     fr: 'Rouleau Porteur',
-    de: 'Tragrollen',
+    de: 'Tragrolle',
     pt: 'Rolo Portador',
     ru: 'Несущий ролик',
     ja: 'キャリアローラー',
@@ -223,7 +225,7 @@ export const caterpillarNameTranslations = {
     zh: '最终驱动/行走减速机总成',
     es: 'Conjunto de Transmisión Final/Reductor de Desplazamiento',
     fr: 'Ensemble Transmission Finale/Réducteur de Déplacement',
-    de: 'Enddrive/Fahrgetriebebaugruppe',
+    de: 'Endantriebs-/Fahrgetriebebaugruppe',
     pt: 'Conjunto de Transmissão Final/Redutor de Deslocamento',
     ru: 'Сборка финального привода/редуктора хода',
     ja: 'ファイナルドライブ/トラベルレデューサーアセンブリ',
@@ -355,7 +357,7 @@ export const caterpillarNameTranslations = {
     zh: '斗杆油缸密封修理包',
     es: 'Kit de Reparación de Sello de Cilindro de Cuchara',
     fr: 'Kit de Réparation de Joint de Cylindre de Godet',
-    de: 'Reparatursatz für Schauffelzylinderdichtung',
+    de: 'Reparatursatz für Schaufelzylinderdichtung',
     pt: 'Kit de Reparo de Vedação de Cilindro de Balde',
     ru: 'Комплект ремонта уплотнения цилиндра ковша',
     ja: 'バケットシリンダーシール修理キット',
@@ -367,7 +369,7 @@ export const caterpillarNameTranslations = {
     zh: '斗杆油缸密封包（85mm杆/125mm缸径）',
     es: 'Kit de Sello de Cilindro de Cuchara (Varilla 85mm/Orificio 125mm)',
     fr: 'Kit de Joint de Cylindre de Godet (Tige 85mm/Alésage 125mm)',
-    de: 'Schauffelzylinderdichtungssatz (85mm Stange/125mm Bohrung)',
+    de: 'Schaufelzylinderdichtungssatz (85mm Stange/125mm Bohrung)',
     pt: 'Kit de Vedação de Cilindro de Balde (Haste 85mm/Furo 125mm)',
     ru: 'Комплект уплотнения цилиндра ковша (шток 85мм/отверстие 125мм)',
     ja: 'バケットシリンダーシールキット（85mmロッド/125mmボア）',
@@ -379,7 +381,7 @@ export const caterpillarNameTranslations = {
     zh: '斗杆油缸密封包（65mm杆，老款）',
     es: 'Kit de Sello de Cilindro de Cuchara (Varilla 65mm, Modelo Antiguo)',
     fr: 'Kit de Joint de Cylindre de Godet (Tige 65mm, Ancien Modèle)',
-    de: 'Schauffelzylinderdichtungssatz (65mm Stange, altes Modell)',
+    de: 'Schaufelzylinderdichtungssatz (65mm Stange, altes Modell)',
     pt: 'Kit de Vedação de Cilindro de Balde (Haste 65mm, Modelo Antigo)',
     ru: 'Комплект уплотнения цилиндра ковша (шток 65мм, старая модель)',
     ja: 'バケットシリンダーシールキット（65mmロッド、旧型）',
@@ -874,17 +876,67 @@ export const caterpillarCategoryTranslations: Record<string, Record<string, stri
   },
 };
 
+const caterpillarSourceNameAliases: Record<string, string> = {
+  'Oil Filter(新款)': 'Oil Filter (New Model)',
+  '燃油滤芯(二级/精滤)': 'Fuel Filter (Secondary/Fine Filter)',
+  'Hydraulic Oil Filter(新款)': 'Hydraulic Oil Filter (New Model)',
+  'Air Filter(外芯)': 'Air Filter (Outer Element)',
+  'Air Filter(内芯)': 'Air Filter (Inner Element)',
+  '散热器水箱总成': 'Radiator Water Tank Assembly',
+  '履带链条总成': 'Track Chain Assembly',
+  '下托链轮(track roller)': 'Track Roller',
+  '前导向轮(Front Idler)': 'Front Idler',
+  '驱动链轮(Drive Sprocket)': 'Drive Sprocket',
+  '上托轮(Carrier Roller)': 'Carrier Roller',
+  '铲斗斗齿(通用J系列)': 'Bucket Teeth (Universal J Series)',
+  '斗齿适配器(Adapter)': 'Bucket Teeth Adapter',
+  '斗齿销/锁定销(Pin-G.E.T.)': 'Bucket Teeth Pin/Lock Pin',
+  '最终驱动/行走减速机总成': 'Final Drive/Travel Reduction Gear Assembly',
+  '行走(履带)马达': 'Travel (Track) Motor',
+  '回转(转台)马达及减速机': 'Swing (Turntable) Motor and Reducer',
+  '斗齿(J300系列,V型)': 'Bucket Teeth (J300 Series, V-Type)',
+  '斗齿适配器(J300侧销式)': 'Bucket Tooth Adapter (J300 Side-Lock)',
+  '斗齿(J350系列,HD穿透型)': 'Bucket Teeth (J350 Series, HD Penetrating)',
+  '斗齿(J350系列,通用型)': 'Bucket Teeth (J350 Series, Universal)',
+  '斗齿(J350摩擦磨损型)': 'Bucket Teeth (J350 Friction Wear)',
+  '斗齿(J400/J460系列)': 'Bucket Tooth (J400/J460 Series)',
+  '斗齿(J300大修/推土机焊接型适配器)': 'Bucket Tooth (J300 Major Repair/Dozer Welded Adapter)',
+  '斗杆油缸密封修理包': 'Boom Cylinder Seal Repair Kit',
+  '铲斗油缸密封修理包': 'Bucket Cylinder Seal Repair Kit',
+  '铲斗油缸密封包(85mm杆/125mm缸径)': 'Bucket Cylinder Seal Kit (85mm Rod/125mm Bore)',
+  '铲斗油缸密封包(65mm杆,老款)': 'Bucket Cylinder Seal Kit (65mm Rod, Old Model)',
+  '铲斗-斗杆连接销': 'Bucket-Boom Connection Pin',
+  '连杆-斗杆连接销': 'Rod-Boom Connection Pin',
+  '连杆-油缸连接销': 'Rod-Cylinder Connection Pin',
+  '斗杆连杆衬套': 'Rod-Boom Connection Bushing',
+  '铲斗衬套(斗杆处)': 'Bucket Bushing (Boom Position)',
+};
+
+const caterpillarSourceCategoryAliases: Record<string, string> = {
+  '增压/进气': 'Turbocharging/Intake System',
+  '底盘/履带系统': 'Chassis/Track System',
+  '挖掘属性/GET': 'Excavation/GET',
+  '传动系统': 'Transmission System',
+  '挖掘属性/GET(小型段)': 'Excavation/GET (Small)',
+  '挖掘属性/GET(中型段)': 'Excavation/GET (Medium)',
+  '挖掘属性/GET(大型段)': 'Excavation/GET (Large)',
+  '液压缸/密封件': 'Hydraulic Cylinder/Seals',
+  '挖掘臂销套系统': 'Boom Pin/Bushing System',
+};
+
 export function getTranslatedCaterpillarSparePartName(name: string, language: string = 'zh'): string {
-  const translations = caterpillarNameTranslations[name as keyof typeof caterpillarNameTranslations];
-  return translations?.[language as keyof typeof translations] || name;
+  const canonicalName = caterpillarSourceNameAliases[name] || name;
+  const translations = caterpillarNameTranslations[canonicalName as keyof typeof caterpillarNameTranslations];
+  return translations?.[language as keyof typeof translations] || canonicalName;
 }
 
 export function getTranslatedCaterpillarSparePartDescription(description: string, language: string = 'zh'): string {
   const translations = caterpillarDescriptionTranslations[description as keyof typeof caterpillarDescriptionTranslations];
-  return translations?.[language as keyof typeof translations] || description;
+  return translations?.[language as keyof typeof translations] || getTranslatedCaterpillarSparePartDetails(description, language);
 }
 
 export function getTranslatedCaterpillarSparePartCategory(category: string, language: string = 'zh'): string {
-  const translations = caterpillarCategoryTranslations[category as keyof typeof caterpillarCategoryTranslations];
-  return translations?.[language as keyof typeof translations] || category;
+  const canonicalCategory = caterpillarSourceCategoryAliases[category] || category;
+  const translations = caterpillarCategoryTranslations[canonicalCategory as keyof typeof caterpillarCategoryTranslations];
+  return translations?.[language as keyof typeof translations] || canonicalCategory;
 }
