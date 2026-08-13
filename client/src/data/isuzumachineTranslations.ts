@@ -1,6 +1,13 @@
 // Auto-generated Isuzu Machine Translations
 // DO NOT EDIT MANUALLY
 
+import { correctedIsuzuMachineTranslations } from './isuzuMachineTranslations.corrected';
+
+const correctedIsuzuNames = correctedIsuzuMachineTranslations.name as Record<string, Record<string, string>>;
+const correctedIsuzuTypes = correctedIsuzuMachineTranslations.type as Record<string, Record<string, string>>;
+const correctedIsuzuSpecs = correctedIsuzuMachineTranslations.specs as Record<string, Record<string, string>>;
+const correctedIsuzuDescriptions = correctedIsuzuMachineTranslations.description as Record<string, Record<string, string>>;
+
 export const isuzumachineNameTranslations: Record<string, Record<string, string>> = {
   '4HK1': { en: 'Isuzu 4HK1 Diesel Engine', zh: '五十铃 4HK1 柴油发动机', es: 'Motor diésel Isuzu 4HK1', fr: 'Moteur diesel Isuzu 4HK1', de: 'Isuzu 4HK1 Dieselmotor', pt: 'Motor diesel Isuzu 4HK1', ru: 'Дизельный двигатель Isuzu 4HK1', ja: 'いすゞ 4HK1 ディーゼルエンジン', ar: 'محرك ديزل إيسوزو 4HK1', it: 'Motore diesel Isuzu 4HK1' },
   '6HK1': { en: 'Isuzu 6HK1 Diesel Engine', zh: '五十铃 6HK1 柴油发动机', es: 'Motor diésel Isuzu 6HK1', fr: 'Moteur diesel Isuzu 6HK1', de: 'Isuzu 6HK1 Dieselmotor', pt: 'Motor diesel Isuzu 6HK1', ru: 'Дизельный двигатель Isuzu 6HK1', ja: 'いすゞ 6HK1 ディーゼルエンジン', ar: 'محرك ديزل إيسوزو 6HK1', it: 'Motore diesel Isuzu 6HK1' },
@@ -30,25 +37,25 @@ export const isuzumachineDescriptionTranslations: Record<string, Record<string, 
 };
 
 export function getTranslatedIsuzuMachineName(model: string, language: string): string {
-  const translations = isuzumachineNameTranslations[model];
+  const translations = correctedIsuzuNames[model] || isuzumachineNameTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedIsuzuMachineType(model: string, language: string): string {
-  const translations = isuzumachineTypeTranslations[model];
+  const translations = correctedIsuzuTypes[model] || isuzumachineTypeTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedIsuzuMachineSpecs(model: string, language: string): string {
-  const translations = isuzumachineSpecsTranslations[model];
+  const translations = correctedIsuzuSpecs[model] || isuzumachineSpecsTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedIsuzuMachineDescription(model: string, language: string): string {
-  const translations = isuzumachineDescriptionTranslations[model];
+  const translations = correctedIsuzuDescriptions[model] || isuzumachineDescriptionTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }

@@ -3,8 +3,10 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   getTranslatedIsuzuSparePartCategory,
+  getTranslatedIsuzuSparePartDescription,
   getTranslatedIsuzuSparePartName,
 } from "../client/src/data/sparePartsTranslations_isuzu";
+import { isuzuPartDetailsTranslations } from "../client/src/data/sparePartsDetails_isuzu";
 
 const supportedLanguages = ["en", "zh", "es", "fr", "de", "pt", "ru", "ja", "ar", "it"];
 const nonChineseLanguages = supportedLanguages.filter(language => language !== "zh" && language !== "ja");
@@ -38,6 +40,17 @@ describe("Isuzu spare-parts name and category translations", () => {
       for (const language of nonChineseLanguages) {
         expect(getTranslatedIsuzuSparePartName(part.name, language)).not.toMatch(chineseCharacters);
         expect(getTranslatedIsuzuSparePartCategory(part.category, language)).not.toMatch(chineseCharacters);
+      }
+    }
+  });
+
+  it("routes every live part to a dedicated ten-language list and modal description", () => {
+    for (const part of parts) {
+      for (const language of supportedLanguages) {
+        const description = getTranslatedIsuzuSparePartDescription(part.name, language);
+        const genericFallback = isuzuPartDetailsTranslations.default[language as keyof typeof isuzuPartDetailsTranslations.default];
+        expect(description).toBeTruthy();
+        expect(description).not.toBe(genericFallback);
       }
     }
   });
