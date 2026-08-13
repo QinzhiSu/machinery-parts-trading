@@ -1,6 +1,8 @@
 // Shacman Spare Parts Translations
 // DO NOT EDIT MANUALLY
 
+import { getTranslatedShacmanSparePartDetails as getDetailedShacmanSparePartDetails } from './sparePartsDetails_shacman';
+
 export const shacmanNameTranslations = {
   'Oil Filter': {
     en: 'Oil Filter',
@@ -814,9 +816,14 @@ export const chineseToCategoryMap = {
   '车身/雨刮': 'Body/Wiper',
 };
 
+const shacmanNameAliases: Record<string, keyof typeof shacmanNameTranslations> = {
+  '涡轮增压器总成': 'Turbocharger总成',
+};
+
 export function getTranslatedShacmanSparePartName(name: string, language: string = 'zh'): string {
   // First try to find direct match
-  let translations = shacmanNameTranslations[name as keyof typeof shacmanNameTranslations];
+  const canonicalName = shacmanNameAliases[name] || name;
+  let translations = shacmanNameTranslations[canonicalName as keyof typeof shacmanNameTranslations];
   
   // If not found, return the name as is
   if (!translations) {
@@ -873,7 +880,5 @@ export function getTranslatedShacmanSparePartDescription(name: string, language:
 }
 
 export function getTranslatedShacmanSparePartDetails(name: string, language: string = 'zh'): string {
-  // This function will be called from the details modal
-  // For now, return empty string - details will be fetched from sparePartsDetails_shacman
-  return '';
+  return getDetailedShacmanSparePartDetails(name, language);
 }

@@ -1,6 +1,8 @@
 // Auto-generated file for Shacman spare parts details translations
 // This file contains translations for spare part details modal
 
+import { shacmanPartDescriptions } from './sparePartsDescriptions_shacman';
+
 export const shacmanPartDetailsTranslations = {
   'Air Filter': {
     en: 'Shacman air filter for engine intake. Replace every 500-1000 hours or when clogged.',
@@ -124,7 +126,20 @@ export const shacmanPartDetailsTranslations = {
   },
 };
 
+const shacmanDetailAliases: Record<string, keyof typeof shacmanPartDescriptions> = {
+  '柴油滤芯': 'Diesel Filter',
+  '空气滤芯': 'Air Filter',
+  '涡轮增压器进气管': 'Turbocharger进气管',
+  '涡轮增压器总成': 'Turbocharger总成',
+};
+
 export function getTranslatedShacmanSparePartDetails(partName: string, language: string = 'en'): string {
+  const descriptionKey = shacmanDetailAliases[partName] || partName;
+  const descriptionTranslations = shacmanPartDescriptions[descriptionKey as keyof typeof shacmanPartDescriptions];
+  if (descriptionTranslations && descriptionTranslations[language as keyof typeof descriptionTranslations]) {
+    return descriptionTranslations[language as keyof typeof descriptionTranslations];
+  }
+
   const translations = shacmanPartDetailsTranslations[partName as keyof typeof shacmanPartDetailsTranslations];
   if (translations && translations[language as keyof typeof translations]) {
     return translations[language as keyof typeof translations];
