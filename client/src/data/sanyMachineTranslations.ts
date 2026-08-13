@@ -1052,3 +1052,111 @@ Object.assign(sanyMachineDescriptionTranslations, {
     de: 'SANY SCC1000TB ultra-large concrete pump for major Bau operations. Merkmale powerful Cummins Motor, advanced control system, and exceptional efficiency. Motor: Cummins QSK95 (800 kW / 1088 PS). Pumping capacity: 1000 m³/h. Max boom length: 80 m. Ideal für großflächige Bau projects.'
   }
 });
+
+// Localized Japanese and German overrides preserve all existing language entries.
+const sanyMachineTitleLocaleOverrides: Record<string, { ja: string; de: string }> = {
+  "SANY SY35U": { ja: "SANY SY35U ミニ油圧ショベル", de: "SANY SY35U Minibagger" },
+  "SANY SY135F": { ja: "SANY SY135F 小型油圧ショベル", de: "SANY SY135F Kleiner Hydraulikbagger" },
+  "SANY SY155H": { ja: "SANY SY155H 中型油圧ショベル", de: "SANY SY155H Mittelklasse-Hydraulikbagger" },
+  "SANY SY215C": { ja: "SANY SY215C 中大型油圧ショベル", de: "SANY SY215C mittelgroßer bis großer Hydraulikbagger" },
+  "SANY SY335C": { ja: "SANY SY335C 大型油圧ショベル", de: "SANY SY335C Großer Hydraulikbagger" },
+  "SANY SY365H": { ja: "SANY SY365H 大型油圧ショベル", de: "SANY SY365H Großer Hydraulikbagger" },
+  "SANY SY550H": { ja: "SANY SY550H 超大型油圧ショベル", de: "SANY SY550H extra-großer Hydraulikbagger" },
+  "SANY SY650H": { ja: "SANY SY650H 超大型油圧ショベル", de: "SANY SY650H Extra-großer Hydraulikbagger" },
+  "SANY SY956H": { ja: "SANY SY956H 大型油圧ショベル", de: "SANY SY956H Großer Hydraulikbagger" },
+  "SANY SY55C": { ja: "SANY SY55C 中型ホイールローダー", de: "SANY SY55C Mittelgroßer Radlader" },
+  "SANY SY60C": { ja: "SANY SY60C 中型ホイールローダー", de: "SANY SY60C Mittlerer Radlader" },
+  "SANY SY75C": { ja: "SANY SY75C 大型ホイールローダー", de: "SANY SY75C Großer Radlader" },
+  "SANY XC968": { ja: "SANY XC968 大型ホイールローダー", de: "SANY XC968 Großer Radlader" },
+  "SANY SY16C": { ja: "SANY SY16C バックホーローダー", de: "SANY SY16C Baggerlader" },
+  "SANY SY18C": { ja: "SANY SY18C バックホーローダー", de: "SANY SY18C Baggerlader" },
+  "SANY GD220J": { ja: "SANY GD220J モーターグレーダー", de: "SANY GD220J Motorgrader" },
+  "SANY XDE120": { ja: "SANY XDE120 コンパクトモーターグレーダー", de: "SANY XDE120 Kompakter Motorgrader" },
+  "SANY DL560": { ja: "SANY DL560 ブルドーザー", de: "SANY DL560 Planierraupe" },
+  "SANY SSR160AC-8": { ja: "SANY SSR160AC-8 振動ローラー", de: "SANY SSR160AC-8 Vibrationswalze" },
+  "SANY SSR200C-8H": { ja: "SANY SSR200C-8H 振動ローラー", de: "SANY SSR200C-8H Vibrationswalze" },
+  "SANY STC250T5": { ja: "SANY STC250T5 トラッククレーン", de: "SANY STC250T5 Autokran" },
+  "SANY STC1200T7": { ja: "SANY STC1200T7 大型トラッククレーン", de: "SANY STC1200T7 großer Autokran" },
+  "SANY SAC600E": { ja: "SANY SAC600E コンクリートポンプ", de: "SANY SAC600E Betonpumpe" },
+  "SANY SCC1000TB": { ja: "SANY SCC1000TB 大型コンクリートポンプ", de: "SANY SCC1000TB Große Betonpumpe" },
+};
+
+const sanyMachineTypeLocaleOverrides: Record<string, { ja: string; de: string }> = {
+  "Mini Excavator": { ja: "ミニ油圧ショベル", de: "Minibagger" },
+  "Excavator": { ja: "油圧ショベル", de: "Hydraulikbagger" },
+  "Wheel Loader": { ja: "ホイールローダー", de: "Radlader" },
+  "Backhoe Loader": { ja: "バックホーローダー", de: "Baggerlader" },
+  "Motor Grader": { ja: "モーターグレーダー", de: "Motorgrader" },
+  "Bulldozer": { ja: "ブルドーザー", de: "Planierraupe" },
+  "Vibratory Roller": { ja: "振動ローラー", de: "Vibrationswalze" },
+  "Truck Crane": { ja: "トラッククレーン", de: "Autokran" },
+  "Concrete Pump": { ja: "コンクリートポンプ", de: "Betonpumpe" },
+};
+
+const sanyMachineSpecsLocaleOverrides: Record<string, { ja: string; de: string }> = {
+  "SY35U": { ja: "稼働重量: 3.5 トン | 出力: 25 kW | バケット容量: 0.12 m³", de: "Betriebsgewicht: 3.5 t | Leistung: 25 kW | Schaufelvolumen: 0.12 m³" },
+  "SY135F": { ja: "稼働重量: 13.5 トン | 出力: 74 kW | バケット容量: 0.5 m³", de: "Betriebsgewicht: 13.5 t | Leistung: 74 kW | Schaufelvolumen: 0.5 m³" },
+  "SY155H": { ja: "稼働重量: 15 トン | エンジン出力: 74 kW | バケット容量: 0.65 m³", de: "Betriebsgewicht: 15 t | Motorleistung: 74 kW | Schaufelvolumen: 0.65 m³" },
+  "SY215C": { ja: "稼働重量：21.5 トン | 110 kW | バケット容量：0.9 m³", de: "Betriebsgewicht: 21.5 t | 110 kW | Schaufelvolumen: 0.9 m³" },
+  "SY335C": { ja: "稼働重量: 33.5 トン | 出力: 162 kW | バケット容量: 1.4 m³", de: "Betriebsgewicht: 33.5 t | Leistung: 162 kW | Schaufelvolumen: 1.4 m³" },
+  "SY365H": { ja: "稼働重量: 36.5 トン | 出力: 206 kW | バケット容量: 1.7 m³", de: "Betriebsgewicht: 36.5 t | Leistung: 206 kW | Schaufelvolumen: 1.7 m³" },
+  "SY550H": { ja: "55 トン | 280 kW | 2.4 m³ バケット", de: "55 t | 280 kW | 2.4 m³ Schaufel" },
+  "SY650H": { ja: "65 トン | 340 kW | 3.0 m³ バケット", de: "65 t | 340 kW | 3.0 m³ Schaufel" },
+  "SY956H": { ja: "95 トン | 500 kW | 4.5 m³ バケット", de: "95 t | 500 kW | 4.5 m³ Schaufel" },
+  "SY55C": { ja: "5.5 トン | 74 kW | 2.0 m³ バケット", de: "5.5 t | 74 kW | 2.0 m³ Schaufel" },
+  "SY60C": { ja: "稼働重量: 6 トン | エンジン出力: 110 kW | バケット容量: 2.5 m³", de: "Betriebsgewicht: 6 t | Motorleistung: 110 kW | Schaufelvolumen: 2.5 m³" },
+  "SY75C": { ja: "7.5 トン | 155 kW | 3.0 m³ バケット", de: "7.5 t | 155 kW | 3.0 m³ Schaufel" },
+  "XC968": { ja: "稼働重量: 96 トン | 出力: 500 kW | バケット容量: 6.0 m³", de: "Betriebsgewicht: 96 t | Leistung: 500 kW | Schaufelvolumen: 6.0 m³" },
+  "SY16C": { ja: "8 トン | 75 kW | 2.0 m³ バケット", de: "8 t | 75 kW | 2.0 m³ Schaufel" },
+  "SY18C": { ja: "9 トン | 110 kW | 2.5 m³ バケット", de: "9 t | 110 kW | 2.5 m³ Schaufel" },
+  "GD220J": { ja: "稼働重量: 22 トン | 出力: 155 kW | ブレード幅: 3.7 m", de: "Betriebsgewicht: 22 t | Leistung: 155 kW | Planierschildbreite: 3.7 m" },
+  "XDE120": { ja: "稼働重量: 12 トン | 出力: 110 kW | ブレード幅: 3.2 m", de: "Betriebsgewicht: 12 t | Leistung: 110 kW | Planierschildbreite: 3.2 m" },
+  "DL560": { ja: "56 トン | 280 kW | 4.0 m ブレード", de: "56 t | 280 kW | 4.0 m Planierschild" },
+  "SSR160AC-8": { ja: "16 トン | 110 kW | 2.1 m 幅", de: "16 t | 110 kW | 2.1 m Breite" },
+  "SSR200C-8H": { ja: "稼働重量: 20 トン | 出力: 155 kW | 幅: 2.1 m", de: "Betriebsgewicht: 20 t | Leistung: 155 kW | Breite: 2.1 m" },
+  "STC250T5": { ja: "吊り上げ能力: 250 トン | 出力: 500 kW | 最大ブーム長: 60 m", de: "Tragfähigkeit: 250 t | Motorleistung: 500 kW | Maximale Auslegerlänge: 60 m" },
+  "STC1200T7": { ja: "吊り上げ能力: 1200 トン | 出力: 800 kW | 最大ブーム長: 100 m", de: "Tragfähigkeit: 1200 t | Motorleistung: 800 kW | Maximale Auslegerlänge: 100 m" },
+  "SAC600E": { ja: "ポンピング能力: 600 m³/h。エンジン出力: 500 kW。最大ブーム長: 60 m。", de: "Förderleistung: 600 m³/h. Motorleistung: 500 kW. Maximale Auslegerlänge: 60 m." },
+  "SCC1000TB": { ja: "吐出量: 1000 m³/h | エンジン出力: 800 kW | 最大ブーム長: 80 m", de: "Förderleistung: 1000 m³/h | Motorleistung: 800 kW | maximale Auslegerlänge: 80 m" },
+};
+
+for (const [model, locale] of Object.entries(sanyMachineTitleLocaleOverrides)) {
+  Object.assign(sanyMachineTranslations[model], locale);
+}
+for (const [type, locale] of Object.entries(sanyMachineTypeLocaleOverrides)) {
+  Object.assign(sanyMachineTypeTranslations[type], locale);
+}
+for (const [model, locale] of Object.entries(sanyMachineSpecsLocaleOverrides)) {
+  Object.assign(sanyMachineSpecsTranslations[model], locale);
+}
+
+const sanyMachineDescriptionLocaleOverrides: Record<string, { ja: string; de: string }> = {
+  "SY35U": { ja: "SANY SY35U は造園や狭い作業場所向けの超小型ミニ油圧ショベルです。コンパクトな設計、省燃費、優れた精度を特徴とします。エンジン: Yuchai YC3D60-20 (25 kW / 34 HP)。稼働重量: 3.5 トン。バケット容量: 0.12 m³。最大掘削深度: 2.8 m。小規模な建設工事や造園作業に最適です。", de: "Der SANY SY35U ist ein ultrakompakter Minibagger für den Landschaftsbau und beengte Arbeitsbereiche. Er zeichnet sich durch eine kompakte Bauweise, kraftstoffeffizienten Betrieb und hervorragende Präzision aus. Motor: Yuchai YC3D60-20 (25 kW / 34 HP). Betriebsgewicht: 3.5 t. Schaufelvolumen: 0.12 m³. Maximale Grabtiefe: 2.8 m. Ideal für kleinmaßstäbige Bauarbeiten und Landschaftsbau." },
+  "SY135F": { ja: "SANY SY135Fは公共作業や小規模建設向けのミニ油圧ショベルです。燃料効率の良いエンジン、スムーズな操作、優れた機動性を備えています。エンジン: Yuchai YC4D80-20 (74 kW / 100 HP)。稼働重量: 13.5 トン。バケット容量: 0.5 m³。最大掘削深度: 4.5 m。造園作業や小規模建設プロジェクトに最適です。", de: "Der SANY SY135F ist ein Minibagger für Versorgungsarbeiten und kleine Bauvorhaben. Er verfügt über einen kraftstoffsparenden Motor, eine sanfte Steuerung und ausgezeichnete Manövrierfähigkeit. Motor: Yuchai YC4D80-20 (74 kW / 100 HP). Betriebsgewicht: 13.5 t. Schaufelvolumen: 0.5 m³. Maximale Grabtiefe: 4.5 m. Ideal für Landschaftsbau und kleine Bauprojekte." },
+  "SY155H": { ja: "SANY SY155Hは一般的な建設工事および掘削作業向けの中型油圧ショベルです。燃料効率の高いエンジン、スムーズな油圧性能、および優れた信頼性を備えています。エンジン: Yuchai YC4D80-20 (74 kW / 100 HP)。稼働重量: 15 トン。バケット容量: 0.65 m³。最大掘削深度: 5.2 m。建設、採鉱、土木の土砂移動作業に最適です。", de: "Der SANY SY155H ist ein Mittelklasse-Hydraulikbagger für allgemeine Bau- und Aushubarbeiten. Er verfügt über einen kraftstoffeffizienten Motor, eine geschmeidige Hydraulik und ausgezeichnete Zuverlässigkeit. Motor: Yuchai YC4D80-20 (74 kW / 100 HP). Betriebsgewicht: 15 t. Schaufelvolumen: 0.65 m³. Maximale Grabtiefe: 5.2 m. Ideal für Bau-, Bergbau- und Erdbewegungsarbeiten." },
+  "SY215C": { ja: "SANY SY215Cは建設および採鉱用途に人気のある中型油圧ショベルです。強力なエンジン、高度な油圧システム、高効率を特徴とします。エンジン：Cummins QSB4.5 (110 kW / 150 HP)。稼働重量：21.5 トン。バケット容量：0.9 m³。最大掘削深度：6.0 m。一般的な建設および採鉱作業に最適です。", de: "Der SANY SY215C ist ein beliebter mittelgroßer Hydraulikbagger für Bau und Bergbau. Er verfügt über einen leistungsstarken Motor, ein fortschrittliches Hydrauliksystem und hohe Effizienz. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 21.5 t. Schaufelvolumen: 0.9 m³. Maximale Grabtiefe: 6.0 m. Er ist ideal für allgemeine Bauarbeiten und den Bergbau." },
+  "SY335C": { ja: "SANY SY335C大型油圧ショベルは、重負荷の採掘・建設作業向けに設計されています。強力なCumminsエンジン、先進的な油圧システム、高い効率性を備えています。エンジン: Cummins QSB6.7 (162 kW / 220 HP)。稼働重量: 33.5 トン。バケット容量: 1.4 m³。最大掘削深度: 6.8 m。大規模な掘削および採掘に最適です。", de: "Der SANY SY335C ist ein großer Hydraulikbagger für schwere Bergbau- und Bauarbeiten. Er verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Hydrauliksystem und hohe Effizienz. Motor: Cummins QSB6.7 (162 kW / 220 HP). Betriebsgewicht: 33.5 t. Schaufelvolumen: 1.4 m³. Maximale Grabtiefe: 6.8 m. Hervorragend geeignet für großflächige Aushubarbeiten und Bergbau." },
+  "SY365H": { ja: "SANY SY365Hは、大規模な採掘および建設プロジェクト向けの大型油圧ショベルです。強力なCumminsエンジン、高度な制御システム、優れた安定性を備えています。エンジン: Cummins QSB6.7 (206 kW / 280 HP)。稼働重量: 36.5 トン。バケット容量: 1.7 m³。最大掘削深度: 7.0 m。大規模な採掘および建設作業に最適です。", de: "Der SANY SY365H ist ein großer Hydraulikbagger für umfangreiche Bergbau- und Bauprojekte. Er verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Steuersystem und eine hervorragende Stabilität. Motor: Cummins QSB6.7 (206 kW / 280 HP). Betriebsgewicht: 36.5 t. Schaufelvolumen: 1.7 m³. Maximale Grabtiefe: 7.0 m. Er eignet sich ideal für großangelegte Bergbau- und Bauarbeiten." },
+  "SY550H": { ja: "SANY SY550Hは大規模採鉱作業向けの超大型油圧ショベルです。強力なCumminsエンジン、高度な油圧システム、高い効率性を備えています。エンジン: Cummins QSM11 (280 kW / 380 HP)。稼働重量: 55 トン。バケット容量: 2.4 m³。最大掘削深度: 8.0 m。大規模採鉱プロジェクトに最適です。", de: "Der SANY SY550H ist ein extra-großer Hydraulikbagger für groß angelegte Bergbauarbeiten. Er verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Hydrauliksystem und eine hervorragende Effizienz. Motor: Cummins QSM11 (280 kW / 380 HP). Betriebsgewicht: 55 t. Schaufelvolumen: 2.4 m³. Maximale Grabtiefe: 8.0 m. Ideal für groß angelegte Bergbauprojekte." },
+  "SY650H": { ja: "SANY SY650Hは大規模な採鉱作業向けの超大型油圧ショベルです。強力なCumminsエンジン、先進的な制御システム、優れた安定性を備えています。エンジン: Cummins QSM11 (340 kW / 460 HP)。稼働重量: 65 トン。バケット容量: 3.0 m³。最大掘削深度: 8.5 m。大規模な採鉱や土木工事に最適です。", de: "Der SANY SY650H ist ein außerordentlich großer Hydraulikbagger für umfangreiche Bergbauarbeiten. Er verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Steuerungssystem und ausgezeichnete Stabilität. Der Motor ist ein Cummins QSM11 (340 kW / 460 HP). Das Betriebsgewicht beträgt 65 t. Das Schaufelvolumen beträgt 3.0 m³. Die maximale Grabtiefe beträgt 8.5 m. Der SY650H ist ideal für groß angelegte Bergbau- und Erdbewegungsarbeiten." },
+  "SY956H": { ja: "SANY SY956Hは大規模な鉱山および採石場作業向けの超大型油圧ショベルです。強力なCumminsエンジン、高度な油圧システム、そして卓越した効率性を備えています。エンジン：Cummins QSK60 (500 kW / 680 HP)。稼働重量：95 トン。バケット容量：4.5 m³。最大掘削深度：9.5 m。大規模な鉱山および採石場作業に最適です。", de: "Der SANY SY956H ist ein Mega-Hydraulikbagger für groß angelegte Bergbau- und Steinbrucharbeiten. Er verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Hydrauliksystem und eine außergewöhnliche Effizienz. Motor: Cummins QSK60 (500 kW / 680 HP). Betriebsgewicht: 95 t. Schaufelvolumen: 4.5 m³. Maximale Grabtiefe: 9.5 m. Ideal für großflächigen Bergbau und Steinbrucharbeiten." },
+  "SY55C": { ja: "SANY SY55Cは軽作業向けのコンパクトなホイールローダーです。燃費に優れたエンジン、滑らかな油圧システム、優れた視界を備えています。エンジン: Yuchai YC4D80-20 (75 kW / 100 HP)。稼働重量: 5.5 トン。バケット容量: 2.0 m³。最大積込高さ: 2.8 m。小規模な建設現場に最適です。", de: "Der SANY SY55C ist ein kompakter Radlader für leichte Materialumschlagarbeiten. Er verfügt über einen kraftstoffsparenden Motor, ein geschmeidiges Hydrauliksystem und eine hervorragende Sicht. Motor: Yuchai YC4D80-20 (75 kW / 100 HP). Betriebsgewicht: 5.5 t. Schaufelvolumen: 2.0 m³. Maximale Beladehöhe: 2.8 m. Ideal für kleine Baustellen." },
+  "SY60C": { ja: "SANY SY60Cは一般的な資材取扱向けの中型ホイールローダーです。強力なエンジン、滑らかな油圧システム、優れた視界を特徴とします。エンジン: Cummins QSB4.5 (110 kW / 150 HP)。稼働重量: 6 トン。バケット容量: 2.5 m³。最大積載高さ: 3.0 m。建設および採掘作業に最適です。", de: "Der SANY SY60C ist ein mittlerer Radlader für allgemeinen Materialumschlag. Er verfügt über einen leistungsstarken Motor, ein geschmeidiges Hydrauliksystem und eine ausgezeichnete Sicht. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 6 t. Schaufelvolumen: 2.5 m³. Maximale Ladehöhe: 3.0 m. Er eignet sich hervorragend für Bau- und Bergbauarbeiten." },
+  "SY75C": { ja: "SANY SY75Cは重負荷の資材取扱用大型ホイールローダーです。強力なCumminsエンジン、先進的な制御システム、優れた安定性を備えています。エンジン: Cummins QSB6.7 (155 kW / 210 HP)。稼働重量: 7.5 トン。バケット容量: 3.0 m³。最大積載高さ: 3.2 m。大規模な建設工事や鉱山での使用に最適です。", de: "Der SANY SY75C ist ein großer Radlader für schweren Materialumschlag. Er verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Steuerungssystem und eine ausgezeichnete Stabilität. Motor: Cummins QSB6.7 (155 kW / 210 HP). Betriebsgewicht: 7.5 t. Schaufelvolumen: 3.0 m³. Maximale Ladehöhe: 3.2 m. Ideal für groß angelegte Bauvorhaben und den Bergbau." },
+  "XC968": { ja: "SANY XC968は、大規模な鉱山作業向けの超大型ホイールローダーです。強力なCumminsエンジン、高度な油圧システム、並外れた効率性を備えています。エンジン: Cummins QSK60 (500 kW / 680 HP)。稼働重量: 96 トン。バケット容量: 6.0 m³。最大積込高さ: 3.8 m。大規模な鉱山および採石場作業に最適です。", de: "Der SANY XC968 ist ein ultra-großer Radlader für umfangreiche Bergbauarbeiten. Er verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Hydrauliksystem und eine außergewöhnliche Effizienz. Motor: Cummins QSK60 (500 kW / 680 HP). Betriebsgewicht: 96 t. Schaufelvolumen: 6.0 m³. Maximale Ladehöhe: 3.8 m. Ideal für großflächige Bergbau- und Steinbrucharbeiten." },
+  "SY16C": { ja: "SANY SY16Cは多用途の建設および掘削作業向けのバックホーローダーです。積み込みと掘削を兼ね備え、快適なキャビンと信頼性の高い性能を発揮します。エンジン: Yuchai YC4D80-20 (75 kW / 102 HP)。稼働重量: 8 トン。フロントバケット: 2.0 m³。リアバケット: 0.25 m³。公共工事や小規模な建設作業に最適です。", de: "Der SANY SY16C ist ein Baggerlader für vielseitige Bau- und Aushubarbeiten. Er bietet kombinierte Lade- und Grabfunktionen, eine komfortable Kabine und zuverlässige Leistung. Motor: Yuchai YC4D80-20 (75 kW / 102 HP). Betriebsgewicht: 8 t. Frontschaufel: 2.0 m³. Heckschaufel: 0.25 m³. Ideal für Versorgungsarbeiten und kleine Bauvorhaben." },
+  "SY18C": { ja: "SANY SY18Cバックホーローダーは一般的な建設および掘削作業向けです。積込みと掘削の複合能力、先進的な油圧システム、優れた性能を備えています。エンジン: Cummins QSB4.5 (110 kW / 150 HP)。稼働重量: 9 トン。フロントバケット: 2.5 m³。リアバケット: 0.3 m³。建設およびユーティリティ作業に最適です。", de: "Der SANY SY18C Baggerlader ist für allgemeine Bau- und Aushubarbeiten konzipiert. Er verfügt über kombinierte Lade- und Grabfunktionen, ein fortschrittliches Hydrauliksystem und ausgezeichnete Leistung. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 9 t. Frontschaufel: 2.5 m³. Heckschaufel: 0.3 m³. Hervorragend geeignet für Bau- und Versorgungsarbeiten." },
+  "GD220J": { ja: "SANY GD220Jモーターグレーダーは、道路の建設および維持管理に適しています。正確なブレード制御、強力なCumminsエンジン、優れた視界を特徴とします。エンジン: Cummins QSB6.7 (155 kW / 210 HP)。稼働重量: 22 トン。ブレード幅: 3.7 m。整地精度: ±20 mm。高速道路および空港の建設に最適です。", de: "Der SANY GD220J Motorgrader ist für den Straßenbau und die Instandhaltung konzipiert. Er bietet eine präzise Planierschildsteuerung, einen leistungsstarken Cummins-Motor und hervorragende Sichtverhältnisse. Motor: Cummins QSB6.7 (155 kW / 210 HP). Betriebsgewicht: 22 t. Planierschildbreite: 3.7 m. Nivelliergenauigkeit: ±20 mm. Ideal für Autobahn- und Flughafenbau." },
+  "XDE120": { ja: "SANY XDE120は道路保守および小規模建設向けのコンパクトなモーターグレーダーです。正確なブレード制御、燃料効率の高いエンジン、優れた機動性を備えています。エンジン: Cummins QSB4.5 (110 kW / 150 HP)。稼働重量: 12 トン。ブレード幅: 3.2 m。整地精度: ±15 mm。道路保守や小規模プロジェクトに最適です。", de: "Der SANY XDE120 ist ein kompakter Motorgrader für Straßeninstandhaltung und leichte Bauarbeiten. Er bietet eine präzise Planierschildsteuerung, einen kraftstoffeffizienten Motor und ausgezeichnete Manövrierfähigkeit. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 12 t. Planierschildbreite: 3.2 m. Planiergenauigkeit: ±15 mm. Ideal für Straßeninstandhaltung und kleinere Projekte." },
+  "DL560": { ja: "SANY DL560は、重作業の土木および建設工事向けの大型ブルドーザーです。強力なCumminsエンジン、高度な油圧システム、および優れた安定性を備えています。エンジン: Cummins QSM11 (280 kW / 380 HP)。稼働重量: 56 トン。ブレード幅: 4.0 m。ブレード容量: 6.5 m³。大規模な建設および採掘プロジェクトに最適です。", de: "Der SANY DL560 ist eine große Planierraupe für schwere Erdbewegungs- und Bauarbeiten. Sie verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Hydrauliksystem und hervorragende Stabilität. Motor: Cummins QSM11 (280 kW / 380 HP). Betriebsgewicht: 56 t. Breite des Planierschilds: 4.0 m. Planierschildvolumen: 6.5 m³. Sie ist ideal für groß angelegte Bau- und Bergbauprojekte." },
+  "SSR160AC-8": { ja: "SANY SSR160AC-8振動ローラーは、アスファルトおよび土壌の締固め用に設計されています。強力なCumminsエンジン、先進的な振動システム、優れた締固め効率を特徴とします。エンジン: Cummins QSB4.5 (110 kW / 150 HP)。稼働重量: 16 トン。ローラー幅: 2.1 m。締固め深さ: 0.3 m。道路建設および維持管理に最適です。", de: "Die SANY SSR160AC-8 Vibrationswalze ist für die Verdichtung von Asphalt und Boden konzipiert. Sie verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Vibrationssystem und eine ausgezeichnete Verdichtungseffizienz. Motor: Cummins QSB4.5 (110 kW / 150 HP). Betriebsgewicht: 16 t. Breite der Walze: 2.1 m. Verdichtungstiefe: 0.3 m. Ideal für Straßenbau und Instandhaltung." },
+  "SSR200C-8H": { ja: "SANY SSR200C-8H振動ローラーは、重負荷のアスファルト締固め用です。強力なCumminsエンジン、先進の振動システム、および高い効率を備えています。エンジン: Cummins QSB6.7 (155 kW / 210 HP)。稼働重量: 20 トン。ローラー幅: 2.1 m。締固め深さ: 0.4 m。高速道路および空港の建設に最適です。", de: "Der SANY SSR200C-8H ist eine Vibrationswalze für die Schwerlastverdichtung von Asphalt. Sie verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Vibrationssystem und eine ausgezeichnete Effizienz. Motor: Cummins QSB6.7 (155 kW / 210 HP). Betriebsgewicht: 20 t. Walzenbreite: 2.1 m. Verdichtungstiefe: 0.4 m. Sie ist ideal für den Einsatz im Straßen- und Flughafenbau." },
+  "STC250T5": { ja: "SANY STC250T5は重量物の吊り上げや建設作業に適した大型トラッククレーンです。強力なCumminsエンジン、高度な制御システム、優れた安定性を備えています。エンジン: Cummins QSK60 (500 kW / 680 HP)。吊り上げ能力: 250 トン。最大ブーム長: 60 m。大規模な建設および産業プロジェクトに最適です。", de: "Der SANY STC250T5 ist ein großer Autokran für schwere Hebearbeiten und Einsätze im Bauwesen. Er verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Steuerungssystem und ausgezeichnete Stabilität. Motor: Cummins QSK60 (500 kW / 680 HP). Tragfähigkeit: 250 t. Maximale Auslegerlänge: 60 m. Ideal für große Bau- und Industrieprojekte." },
+  "STC1200T7": { ja: "SANY STC1200T7は、極めて重量のある吊り上げ作業向けの超大型トラッククレーンです。強力なエンジン、先進的な油圧システム、並外れた安定性を備えています。エンジン：Cummins QSK95（800 kW / 1088 HP）。吊り上げ能力：1200 トン。最大ブーム長：100 m。大規模なインフラおよび産業プロジェクトに最適です。", de: "Der SANY STC1200T7 ist ein Autokran für besonders schwere Hebearbeiten und Großprojekte. Er verfügt über einen leistungsstarken Motor, ein fortschrittliches Hydrauliksystem und außergewöhnliche Stabilität. Motor: Cummins QSK95 (800 kW / 1088 HP). Tragfähigkeit: 1200 Tonnen. Maximale Auslegerlänge: 100 m. Ideal für große Infrastruktur- und Industrieprojekte." },
+  "SAC600E": { ja: "SANY SAC600Eは大規模建設現場向けのトラック搭載コンクリートポンプです。強力なCummins QSK60 (500 kW / 680 HP)エンジン、先進的な油圧システム、高効率を特徴とします。ポンピング能力は600 m³/h、最大ブーム長は60 mです。大規模工事に最適です。", de: "Die SANY SAC600E ist eine auf LKW montierte Betonpumpe für großangelegte Bauprojekte. Sie verfügt über einen leistungsstarken Cummins QSK60 (500 kW / 680 HP), ein fortschrittliches Hydrauliksystem und hohe Effizienz. Die Förderleistung beträgt 600 m³/h, die maximale Auslegerlänge 60 m. Ideal für große Bauvorhaben." },
+  "SCC1000TB": { ja: "SANY SCC1000TBは大規模工事向けの超大型コンクリートポンプです。強力なCumminsエンジン、先進的な制御システム、高い作業効率を備えています。エンジン: Cummins QSK95 (800 kW / 1088 HP)。吐出量: 1000 m³/h。最大ブーム長: 80 m。大規模な建設工事に最適です。", de: "Die SANY SCC1000TB ist eine ultragroße Betonpumpe für umfangreiche Bauvorhaben. Sie verfügt über einen leistungsstarken Cummins-Motor, ein fortschrittliches Steuerungssystem und zeichnet sich durch hohe Effizienz aus. Motor: Cummins QSK95 (800 kW / 1088 HP). Förderleistung: 1000 m³/h. Maximale Auslegerlänge: 80 m. Ideal für groß angelegte Bauprojekte." },
+};
+
+for (const [model, locale] of Object.entries(sanyMachineDescriptionLocaleOverrides)) {
+  Object.assign(sanyMachineDescriptionTranslations[model], locale);
+}
