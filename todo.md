@@ -1405,3 +1405,14 @@
 > 修复记录：仅新增 `constructionPageTranslations.ts`，为页面简介、“more”、美国/中国/日本国家名称与 Caterpillar、Shantui、XCMG、LiuGong、SANY、Komatsu 六个品牌简介提供独立十语言映射；工程机械页面只调用该独立文件与既有分类页翻译键。新增专用回归测试并通过 3 项，覆盖十语言页面文案、国家、六个品牌简介及安全回退。
 
 > 页面验证：德语工程机械页面已实际显示“Baumaschinen”“Unsere Marken”“Maschinenmodelle”“Ersatzteile”“Vollständigen Katalog anzeigen”及六个品牌的德语简介；阿拉伯语页面已实际显示对应的 RTL 标题、简介、国家、统计标签、“المزيد”和“عرض الكتالوج الكامل”。品牌名称、型号与法定公司全称按原样保留。
+
+## 卡车与发动机页面十语言翻译核查
+
+- [x] 定位卡车与发动机页面文本、语言上下文和专用翻译来源
+- [x] 审计页面在 en、zh、es、fr、de、pt、ru、ja、ar、it 下的文本覆盖与语言纯度
+- [x] 仅修复卡车与发动机页面发现的翻译缺失或语言混杂
+- [x] 验证卡车与发动机页面十种语言的显示结果
+
+> 审计与修复：原页面未接入语言上下文，面包屑、标题、简介、分区标签、统计、按钮、国家名称、品牌简介和发动机统计均为英文或源数据。仅新增 `trucksPageTranslations.ts`，为 Isuzu、Shacman、Sinotruk、Toyota、Cummins 与 Weichai 的简介提供独立十语言映射；页面其余文本使用既有首页/分类页翻译键。新增专用回归测试并通过 3 项，覆盖十语言品牌简介、可见文本路由和安全回退。
+
+> 页面验证：德语页面已实际显示“Lastkraftwagen & Motoren”“Maschinenmodelle”“Ersatzteile”“Vollständigen Katalog anzeigen”及六个品牌的德语简介；阿拉伯语页面已实际显示对应的 RTL 标题、分区、国家、统计、按钮和六个品牌简介。品牌名称、型号与法定公司全称按原样保留。

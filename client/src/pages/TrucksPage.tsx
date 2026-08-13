@@ -4,35 +4,49 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { getBrandsByCategory } from '@/data/products';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/data/translations';
+import { getTranslatedTrucksPageBrandDescription } from '@/data/trucksPageTranslations';
 
 const TRUCK_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/truck-lineup-BTngFzLT6659jP3HKE93B4.webp';
 const truckBrands = getBrandsByCategory('truck');
 const engineBrands = getBrandsByCategory('engine');
 
 export default function TrucksPage() {
+  const { language } = useLanguage();
+  const t = (key: string) => translations[language]?.[key] || key;
+  const getCountryLabel = (country: string) => {
+    const countryKeyBySource: Record<string, string> = {
+      USA: 'home.country.usa',
+      China: 'home.country.china',
+      Japan: 'home.country.japan',
+    };
+    return countryKeyBySource[country] ? t(countryKeyBySource[country]) : country;
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
       {/* Hero */}
       <section className="relative h-64 md:h-80 flex items-end overflow-hidden">
-        <img src={TRUCK_IMG} alt="Heavy Trucks" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={TRUCK_IMG} alt={t('home.heavyTrucks')} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(0deg, oklch(0.1 0.04 265 / 0.95) 0%, oklch(0.1 0.04 265 / 0.5) 100%)' }} />
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: 'oklch(0.68 0.18 42)' }} />
         <div className="container relative z-10 pb-8">
           <div className="flex items-center gap-2 mb-2 text-xs" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">Home</Link>
+            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">{t('nav.home')}</Link>
             <ChevronRight size={12} />
-            <span className="uppercase tracking-wider" style={{ color: 'oklch(0.68 0.18 42)' }}>Trucks & Engines</span>
+            <span className="uppercase tracking-wider" style={{ color: 'oklch(0.68 0.18 42)' }}>{t('category.trucksEngines')}</span>
           </div>
           <h1
             className="text-white uppercase leading-none"
             style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800 }}
           >
-            Trucks & <span style={{ color: 'oklch(0.68 0.18 42)' }}>Diesel Engines</span>
+            {t('category.trucksEngines')}
           </h1>
           <p className="text-sm mt-2 max-w-xl" style={{ color: 'oklch(0.75 0.01 265)' }}>
-            Heavy-duty trucks, commercial vehicles, and diesel engines — whole units and spare parts for global markets.
+            {t('home.heavyTrucksDesc')}
           </p>
         </div>
       </section>
@@ -44,13 +58,13 @@ export default function TrucksPage() {
           <div className="mb-12">
             <div className="mb-8">
               <div className="text-xs uppercase tracking-widest mb-1 font-semibold" style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}>
-                Commercial Vehicles
+                {t('category.trucksEngines')}
               </div>
               <h2 className="section-heading" style={{ color: 'oklch(0.18 0.04 265)' }}>
-                Heavy Trucks
+                {t('home.heavyTrucks')}
               </h2>
               <p className="mt-3 text-sm" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                Dump trucks, tractor units, cargo trucks, pickup trucks, and vans from leading global brands.
+                {t('home.heavyTrucksDesc')}
               </p>
             </div>
 
@@ -75,7 +89,7 @@ export default function TrucksPage() {
                       >
                         {brand.name}
                       </h3>
-                      <div className="text-xs" style={{ color: 'oklch(0.6 0.02 265)' }}>{brand.country}</div>
+                      <div className="text-xs" style={{ color: 'oklch(0.6 0.02 265)' }}>{getCountryLabel(brand.country)}</div>
                     </div>
                   </div>
 
@@ -84,19 +98,19 @@ export default function TrucksPage() {
                       <div className="text-xl font-bold" style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.68 0.18 42)' }}>
                         {brand.machines.length}
                       </div>
-                      <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)', fontFamily: 'var(--font-display)' }}>Models</div>
+                      <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)', fontFamily: 'var(--font-display)' }}>{t('category.machineModels')}</div>
                     </div>
                     <div className="p-3 text-center">
                       <div className="text-xl font-bold" style={{ fontFamily: 'var(--font-display)', color: 'oklch(0.68 0.18 42)' }}>
                         {brand.spareParts.length}
                       </div>
-                      <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)', fontFamily: 'var(--font-display)' }}>Parts</div>
+                      <div className="text-xs" style={{ color: 'oklch(0.5 0.02 265)', fontFamily: 'var(--font-display)' }}>{t('category.spareParts')}</div>
                     </div>
                   </div>
 
                   <div className="p-4">
                     <p className="text-xs leading-relaxed mb-3" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                      {brand.description.substring(0, 90)}...
+                      {getTranslatedTrucksPageBrandDescription(brand.id, language, brand.description)}
                     </p>
                     <div className="flex flex-wrap gap-1 mb-3">
                       {brand.machines.slice(0, 3).map((m: typeof brand.machines[0]) => (
@@ -106,7 +120,7 @@ export default function TrucksPage() {
                       ))}
                     </div>
                     <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider group-hover:gap-2.5 transition-all" style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}>
-                      View Catalog <ArrowRight size={13} />
+                      {t('category.viewFullCatalog')} <ArrowRight size={13} />
                     </div>
                   </div>
                 </Link>
@@ -118,13 +132,13 @@ export default function TrucksPage() {
           <div>
             <div className="mb-8">
               <div className="text-xs uppercase tracking-widest mb-1 font-semibold" style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}>
-                Power Units
+                {t('home.dieselEngines')}
               </div>
               <h2 className="section-heading" style={{ color: 'oklch(0.18 0.04 265)' }}>
-                Diesel Engines
+                {t('home.dieselEngines')}
               </h2>
               <p className="mt-3 text-sm" style={{ color: 'oklch(0.5 0.02 265)' }}>
-                Cummins and Weichai diesel engines — complete engines and spare parts for construction, mining, and transportation.
+                {t('home.dieselEnginesDesc')}
               </p>
             </div>
 
@@ -154,7 +168,7 @@ export default function TrucksPage() {
                           {brand.fullName}
                         </h3>
                         <p className="text-sm leading-relaxed mb-3" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                          {brand.description.substring(0, 120)}...
+                          {getTranslatedTrucksPageBrandDescription(brand.id, language, brand.description)}
                         </p>
                         <div className="flex flex-wrap gap-1.5 mb-3">
                           {brand.machines.map((m: typeof brand.machines[0]) => (
@@ -165,10 +179,10 @@ export default function TrucksPage() {
                         </div>
                         <div className="flex items-center gap-4">
                           <span className="text-xs font-mono-industrial" style={{ color: 'oklch(0.68 0.18 42)' }}>
-                            {brand.machines.length} engine models
+                            {brand.machines.length} {t('category.machineModels')}
                           </span>
                           <span className="text-xs font-mono-industrial" style={{ color: 'oklch(0.68 0.18 42)' }}>
-                            {brand.spareParts.length} spare parts
+                            {brand.spareParts.length} {t('category.spareParts')}
                           </span>
                         </div>
                       </div>
