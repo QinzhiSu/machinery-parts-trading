@@ -6,7 +6,7 @@ const pageSource = readFileSync(new URL("../client/src/pages/ConstructionPage.ts
 describe("construction page hero layout", () => {
   it("places the hero title group below the top navigation instead of behind it", () => {
     expect(pageSource).toContain('h-96 md:h-[26rem] flex items-start overflow-hidden');
-    expect(pageSource).toContain('container relative z-10 pt-4 md:pt-8 pb-8');
+    expect(pageSource).toContain('container relative z-10 pt-0 md:pt-0 pb-8');
     expect(pageSource).not.toContain('h-64 md:h-80 flex items-end overflow-hidden');
   });
 });

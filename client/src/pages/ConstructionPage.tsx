@@ -28,7 +28,7 @@ export default function ConstructionPage() {
         <img src={HERO_IMG} alt={t('category.constructionMachinery')} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(0deg, oklch(0.1 0.04 265 / 0.95) 0%, oklch(0.1 0.04 265 / 0.5) 100%)' }} />
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: 'oklch(0.68 0.18 42)' }} />
-        <div className="container relative z-10 pt-4 md:pt-8 pb-8">
+        <div className="container relative z-10 pt-0 md:pt-0 pb-8">
           <div className="flex items-center gap-2 mb-2 text-xs" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
             <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">{t('nav.home')}</Link>
             <ChevronRight size={12} />
