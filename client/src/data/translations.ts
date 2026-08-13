@@ -45,6 +45,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'View All Trucks',
     'home.viewAllEngines': 'View All Engines',
     'home.viewFavorites': 'View Favorites',
+    'home.scroll': 'SCROLL',
+    'home.country.usa': 'United States',
+    'home.country.china': 'China',
+    'home.country.japan': 'Japan',
 
     // Category pages
     'category.constructionMachinery': 'Construction Machinery',
@@ -200,6 +204,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'عرض جميع الشاحنات',
     'home.viewAllEngines': 'عرض جميع المحركات',
     'home.viewFavorites': 'عرض المفضلة',
+    'home.scroll': 'مرر للأسفل',
+    'home.country.usa': 'الولايات المتحدة',
+    'home.country.china': 'الصين',
+    'home.country.japan': 'اليابان',
 
     // Category pages
     'category.constructionMachinery': 'الآلات الإنشائية',
@@ -351,6 +359,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'Посмотреть все грузовики',
     'home.viewAllEngines': 'Посмотреть все двигатели',
     'home.viewFavorites': 'Посмотреть избранное',
+    'home.scroll': 'ПРОКРУТИТЕ ВНИЗ',
+    'home.country.usa': 'США',
+    'home.country.china': 'Китай',
+    'home.country.japan': 'Япония',
 
     // Category pages
     'category.constructionMachinery': 'Строительная техника',
@@ -487,6 +499,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'Voir Tous les Camions',
     'home.viewAllEngines': 'Voir Tous les Moteurs',
     'home.viewFavorites': 'Voir les Favoris',
+    'home.scroll': 'FAITES DÉFILER',
+    'home.country.usa': 'États-Unis',
+    'home.country.china': 'Chine',
+    'home.country.japan': 'Japon',
 
     // Category pages
     'category.constructionMachinery': 'Machines de Construction',
@@ -627,6 +643,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': '查看所有卡车',
     'home.viewAllEngines': '查看所有发动机',
     'home.viewFavorites': '查看收藏',
+    'home.scroll': '向下滚动',
+    'home.country.usa': '美国',
+    'home.country.china': '中国',
+    'home.country.japan': '日本',
 
     // Category pages
     'category.constructionMachinery': '工程机械',
@@ -763,6 +783,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'Ver Todos os Caminhões',
     'home.viewAllEngines': 'Ver Todos os Motores',
     'home.viewFavorites': 'Ver Favoritos',
+    'home.scroll': 'ROLE PARA BAIXO',
+    'home.country.usa': 'Estados Unidos',
+    'home.country.china': 'China',
+    'home.country.japan': 'Japão',
 
     // Category pages
     'category.constructionMachinery': 'Máquinas de Construção',
@@ -899,6 +923,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'Ver Todos los Camiones',
     'home.viewAllEngines': 'Ver Todos los Motores',
     'home.viewFavorites': 'Ver Favoritos',
+    'home.scroll': 'DESPLÁCESE HACIA ABAJO',
+    'home.country.usa': 'Estados Unidos',
+    'home.country.china': 'China',
+    'home.country.japan': 'Japón',
 
     // Category pages
     'category.constructionMachinery': 'Maquinaria de Construcción',
@@ -1039,6 +1067,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'Visualizza Tutti i Camion',
     'home.viewAllEngines': 'Visualizza Tutti i Motori',
     'home.viewFavorites': 'Visualizza Preferiti',
+    'home.scroll': 'SCORRI IN BASSO',
+    'home.country.usa': 'Stati Uniti',
+    'home.country.china': 'Cina',
+    'home.country.japan': 'Giappone',
 
     // Category pages
     'category.constructionMachinery': 'Macchinari da Costruzione',
@@ -1159,7 +1191,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.globalReachDesc': 'Professioneller Export nach Afrika, Nahost, Zentralasien, Südamerika und Russland.',
     'home.completeInventory': 'Vollständiges Inventar',
     'home.completeInventoryDesc': 'Umfassende Auswahl an Maschinen, Motoren und häufig austauschbaren Teilen.',
-    'home.expertSupport': 'Fachmanniübliche Unterstützung',
+    'home.expertSupport': 'Fachkundige Unterstützung',
     'home.expertSupportDesc': 'Professionelle technische Beratung zur Auswahl von Geräten und Teileidentifikation.',
     'home.constructionMachinery': 'Baumaschinen',
     'home.constructionMachineryDesc': 'Bagger, Radlader, Planierraupe und mehr von weltweit führenden Marken.',
@@ -1173,6 +1205,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'Alle Lastkraftwagen anzeigen',
     'home.viewAllEngines': 'Alle Motoren anzeigen',
     'home.viewFavorites': 'Favoriten anzeigen',
+    'home.scroll': 'NACH UNTEN SCROLLEN',
+    'home.country.usa': 'Vereinigte Staaten',
+    'home.country.china': 'China',
+    'home.country.japan': 'Japan',
     'category.constructionMachinery': 'Baumaschinen',
     'category.trucksEngines': 'Lastkraftwagen & Motoren',
     'category.ourBrands': 'Unsere Marken',
@@ -1311,6 +1347,10 @@ export const translations: Record<Language, Record<string, string>> = {
     'home.viewAllTrucks': 'すべてのトラックを表示',
     'home.viewAllEngines': 'すべてのエンジンを表示',
     'home.viewFavorites': 'お気に入りを表示',
+    'home.scroll': '下にスクロール',
+    'home.country.usa': 'アメリカ合衆国',
+    'home.country.china': '中国',
+    'home.country.japan': '日本',
 
     'category.constructionMachinery': '建設機械',
     'category.trucksEngines': 'トラック＆エンジン',
@@ -1417,4 +1457,3 @@ export const translations: Record<Language, Record<string, string>> = {
 export function t(key: string, lang: Language): string {
   return translations[lang][key] || key;
 }
-

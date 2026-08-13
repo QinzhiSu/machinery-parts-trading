@@ -18,11 +18,11 @@ const engineBrands = brands.filter(b => b.category === 'engine');
 
 const HERO_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/hero-machinery-nbwEngDndkYEV7YkbvbRje.webp';
 
-const stats = [
-  { value: '13+', label: 'Global Brands', icon: '🌍' },
-  { value: '500+', label: 'Machine Models', icon: '⚙️' },
-  { value: '2000+', label: 'Spare Parts', icon: '📦' },
-  { value: '50+', label: 'Countries', icon: '🚀' },
+const getStats = (t: (key: string) => string) => [
+  { value: '13+', label: t('home.globalBrands'), icon: '🌍' },
+  { value: '500+', label: t('home.machineModels'), icon: '⚙️' },
+  { value: '2000+', label: t('home.spareParts'), icon: '📦' },
+  { value: '50+', label: t('home.countriesServed'), icon: '🚀' },
 ];
 
 const getFeatures = (t: (key: string) => string) => [
@@ -48,10 +48,21 @@ const getFeatures = (t: (key: string) => string) => [
   },
 ];
 
+const getCountryLabel = (country: string, t: (key: string) => string) => {
+  const countryKeyBySource: Record<string, string> = {
+    USA: 'home.country.usa',
+    China: 'home.country.china',
+    Japan: 'home.country.japan',
+  };
+
+  return countryKeyBySource[country] ? t(countryKeyBySource[country]) : country;
+};
+
 export default function Home() {
   const { user, loading, error, isAuthenticated, logout } = useAuth();
   const { language } = useLanguage();
   const t = (key: string) => translations[language as keyof typeof translations]?.[key as keyof typeof translations.en] || key;
+  const stats = getStats(t);
   const features = getFeatures(t);
 
   return (
@@ -116,7 +127,7 @@ export default function Home() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
           <div className="flex flex-col items-center gap-2 text-white/60">
-            <span className="text-sm uppercase tracking-widest">SCROLL</span>
+            <span className="text-sm uppercase tracking-widest">{t('home.scroll')}</span>
             <div className="w-6 h-10 border-2 border-white/40 rounded-full flex items-start justify-center p-2">
               <div className="w-1 h-2 bg-white/60 rounded-full animate-bounce" />
             </div>
@@ -200,7 +211,7 @@ export default function Home() {
                 <div className="font-semibold text-charcoal text-sm group-hover:text-gold transition-colors">
                   {brand.name}
                 </div>
-                <div className="text-xs text-gray-500 mt-2">{brand.country}</div>
+                <div className="text-xs text-gray-500 mt-2">{getCountryLabel(brand.country, t)}</div>
               </Link>
             ))}
           </div>
@@ -250,7 +261,7 @@ export default function Home() {
                 <div className="font-semibold text-charcoal text-sm group-hover:text-gold transition-colors">
                   {brand.name}
                 </div>
-                <div className="text-xs text-gray-500 mt-2">{brand.country}</div>
+                <div className="text-xs text-gray-500 mt-2">{getCountryLabel(brand.country, t)}</div>
               </Link>
             ))}
           </div>
@@ -300,7 +311,7 @@ export default function Home() {
                 <div className="font-semibold text-charcoal text-sm group-hover:text-accent transition-colors">
                   {brand.name}
                 </div>
-                <div className="text-xs text-gray-500 mt-2">{brand.country}</div>
+                <div className="text-xs text-gray-500 mt-2">{getCountryLabel(brand.country, t)}</div>
               </Link>
             ))}
           </div>
