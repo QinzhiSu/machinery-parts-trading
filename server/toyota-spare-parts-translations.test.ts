@@ -3,8 +3,10 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   getTranslatedToyotaSparePartCategory,
+  getTranslatedToyotaSparePartDescription,
   getTranslatedToyotaSparePartName,
 } from "../client/src/data/sparePartsTranslations_toyota";
+import { toyotaPartDetailsTranslations } from "../client/src/data/sparePartsDetails_toyota";
 
 const supportedLanguages = ["en", "zh", "es", "fr", "de", "pt", "ru", "ja", "ar", "it"];
 const nonChineseLanguages = supportedLanguages.filter(language => language !== "zh" && language !== "ja");
@@ -38,6 +40,17 @@ describe("Toyota spare-parts name and category translations", () => {
       for (const language of nonChineseLanguages) {
         expect(getTranslatedToyotaSparePartName(part.name, language)).not.toMatch(chineseCharacters);
         expect(getTranslatedToyotaSparePartCategory(part.category, language)).not.toMatch(chineseCharacters);
+      }
+    }
+  });
+
+  it("routes every live part to a dedicated ten-language list and modal description", () => {
+    for (const part of parts) {
+      for (const language of supportedLanguages) {
+        const description = getTranslatedToyotaSparePartDescription(part.name, language);
+        const genericFallback = toyotaPartDetailsTranslations.default[language as keyof typeof toyotaPartDetailsTranslations.default];
+        expect(description).toBeTruthy();
+        expect(description).not.toBe(genericFallback);
       }
     }
   });

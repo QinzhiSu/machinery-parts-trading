@@ -1,3 +1,10 @@
+import { correctedToyotaMachineTranslations } from './toyotaMachineTranslations.corrected';
+
+const correctedToyotaNames = correctedToyotaMachineTranslations.name as Record<string, Record<string, string>>;
+const correctedToyotaTypes = correctedToyotaMachineTranslations.type as Record<string, Record<string, string>>;
+const correctedToyotaSpecs = correctedToyotaMachineTranslations.specs as Record<string, Record<string, string>>;
+const correctedToyotaDescriptions = correctedToyotaMachineTranslations.description as Record<string, Record<string, string>>;
+
 export const toyotamachineNameTranslations: Record<string, Record<string, string>> = {
   '4Runner': { en: 'Toyota 4Runner SUV', zh: '丰田 4Runner 越野车', es: 'Toyota 4Runner vehículo todoterreno', fr: 'Toyota 4Runner véhicule tout-terrain', de: 'Toyota 4Runner Geländewagen', pt: 'Toyota 4Runner veículo utilitário esportivo', ru: 'Toyota 4Runner внедорожник', ja: 'トヨタ 4Runner 多目的スポーツ車', ar: 'تويوتا 4Runner مركبة رياضية متعددة الاستخدامات', it: 'Toyota 4Runner veicolo fuoristrada' },
   'Fortuner': { en: 'Toyota Fortuner SUV', zh: '丰田 Fortuner 越野车', es: 'Toyota Fortuner vehículo todoterreno', fr: 'Toyota Fortuner véhicule tout-terrain', de: 'Toyota Fortuner Geländewagen', pt: 'Toyota Fortuner veículo utilitário esportivo', ru: 'Toyota Fortuner внедорожник', ja: 'トヨタ Fortuner 多目的スポーツ車', ar: 'تويوتا Fortuner مركبة رياضية متعددة الاستخدامات', it: 'Toyota Fortuner veicolo fuoristrada' },
@@ -39,25 +46,25 @@ export const toyotamachineDescriptionTranslations: Record<string, Record<string,
 };
 
 export function getTranslatedToyotaMachineName(model: string, language: string): string {
-  const translations = toyotamachineNameTranslations[model];
+  const translations = correctedToyotaNames[model] || toyotamachineNameTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedToyotaMachineType(model: string, language: string): string {
-  const translations = toyotamachineTypeTranslations[model];
+  const translations = correctedToyotaTypes[model] || toyotamachineTypeTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedToyotaMachineSpecs(model: string, language: string): string {
-  const translations = toyotamachineSpecsTranslations[model];
+  const translations = correctedToyotaSpecs[model] || toyotamachineSpecsTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedToyotaMachineDescription(model: string, language: string): string {
-  const translations = toyotamachineDescriptionTranslations[model];
+  const translations = correctedToyotaDescriptions[model] || toyotamachineDescriptionTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
