@@ -1,6 +1,13 @@
 // Auto-generated Sinotruk Machine Translations
 // DO NOT EDIT MANUALLY
 
+import { correctedSinotrukMachineTranslations } from './sinotrukMachineTranslations.corrected';
+
+const correctedNames = correctedSinotrukMachineTranslations.name as Record<string, Record<string, string>>;
+const correctedTypes = correctedSinotrukMachineTranslations.type as Record<string, Record<string, string>>;
+const correctedSpecs = correctedSinotrukMachineTranslations.specs as Record<string, Record<string, string>>;
+const correctedDescriptions = correctedSinotrukMachineTranslations.description as Record<string, Record<string, string>>;
+
 export const sinotruckmachineNameTranslations: Record<string, Record<string, string>> = {
   'HOWO 4×2': { en: 'Sinotruk HOWO 4×2 Tractor Truck', zh: '中国重汽 HOWO 4×2 牵引车', es: 'Sinotruk HOWO 4×2 Camión tractor', fr: 'Sinotruk HOWO 4×2 Tracteur routier', de: 'Sinotruk HOWO 4×2 Sattelzugmaschine', pt: 'Sinotruk HOWO 4×2 Caminhão trator', ru: 'Sinotruk HOWO 4×2 Тягач', ja: 'シノトルク HOWO 4×2 牽引車', ar: 'سينوتروك HOWO 4×2 شاحنة جرار', it: 'Sinotruk HOWO 4×2 Trattore stradale' },
   'HOWO 6×4 Dump': { en: 'Sinotruk HOWO 6×4 Dump Truck', zh: '中国重汽 HOWO 6×4 自卸车', es: 'Sinotruk HOWO 6×4 Camión volquete', fr: 'Sinotruk HOWO 6×4 Camion benne', de: 'Sinotruk HOWO 6×4 Kipplastwagen', pt: 'Sinotruk HOWO 6×4 Caminhão basculante', ru: 'Sinotruk HOWO 6×4 Самосвал', ja: 'シノトルク HOWO 6×4 ダンプトラック', ar: 'سينوتروك HOWO 6×4 شاحنة قلابة', it: 'Sinotruk HOWO 6×4 Camion ribaltabile' },
@@ -62,25 +69,25 @@ export const sinotruckmachineDescriptionTranslations: Record<string, Record<stri
 };
 
 export function getTranslatedSinotruckMachineName(model: string, language: string): string {
-  const translations = sinotruckmachineNameTranslations[model];
+  const translations = correctedNames[model] || sinotruckmachineNameTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedSinotruckMachineType(model: string, language: string): string {
-  const translations = sinotruckmachineTypeTranslations[model];
+  const translations = correctedTypes[model] || sinotruckmachineTypeTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedSinotruckMachineSpecs(model: string, language: string): string {
-  const translations = sinotruckmachineSpecsTranslations[model];
+  const translations = correctedSpecs[model] || sinotruckmachineSpecsTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedSinotruckMachineDescription(model: string, language: string): string {
-  const translations = sinotruckmachineDescriptionTranslations[model];
+  const translations = correctedDescriptions[model] || sinotruckmachineDescriptionTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }

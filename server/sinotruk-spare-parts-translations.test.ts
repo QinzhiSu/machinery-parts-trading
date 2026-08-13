@@ -2,11 +2,16 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
+  getTranslatedSinotrukSparePartDescription,
   getTranslatedSinotrukSparePartCategory,
   getTranslatedSinotrukSparePartName,
   sinotrukCategoryTranslations,
   sinotrukNameTranslations,
 } from "../client/src/data/sparePartsTranslations_sinotruk";
+import {
+  getTranslatedSinotrukSparePartDetails,
+  sinotrukPartDetailsTranslations,
+} from "../client/src/data/sparePartsDetails_sinotruk";
 
 const supportedLanguages = ["en", "zh", "es", "fr", "de", "pt", "ru", "ja", "ar", "it"] as const;
 const nonChineseLanguages = supportedLanguages.filter(language => language !== "zh" && language !== "ja");
@@ -50,6 +55,32 @@ describe("Sinotruk spare-parts translations", () => {
         expect(getTranslatedSinotrukSparePartName(part.name, language)).not.toMatch(chineseCharacters);
         expect(getTranslatedSinotrukSparePartCategory(part.category, language)).not.toMatch(chineseCharacters);
       }
+    }
+  });
+
+  it("maps every actual source name to a specific ten-language list description and detail modal text", () => {
+    const fallbackKeys: string[] = [];
+    for (const part of parts) {
+      for (const language of supportedLanguages) {
+        const defaultDetail = sinotrukPartDetailsTranslations.default[language];
+        const listDescription = getTranslatedSinotrukSparePartDescription(part.name, language);
+        const modalDetail = getTranslatedSinotrukSparePartDetails(part.name, language);
+
+        expect(listDescription).toBeTruthy();
+        expect(modalDetail).toBeTruthy();
+        expect(listDescription).toBe(modalDetail);
+        if (modalDetail === defaultDetail) {
+          fallbackKeys.push(`${part.name} (${language})`);
+        }
+      }
+    }
+    expect(fallbackKeys).toEqual([]);
+  });
+
+  it("keeps Japanese part details free of raw English technical labels", () => {
+    const rawEnglishLabels = /\b(?:Oil Filter|Air Filter|Brake|Clutch|Drive Shaft|Water Pump|Turbocharger|Hydraulic)\b/;
+    for (const part of parts) {
+      expect(getTranslatedSinotrukSparePartDetails(part.name, "ja")).not.toMatch(rawEnglishLabels);
     }
   });
 });

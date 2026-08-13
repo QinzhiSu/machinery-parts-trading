@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { getTranslatedSinotruckMachineName } from "../client/src/data/sinotruckmachineTranslations";
+import { brands } from "../client/src/data/products";
+import {
+  getTranslatedSinotruckMachineDescription,
+  getTranslatedSinotruckMachineName,
+  getTranslatedSinotruckMachineSpecs,
+  getTranslatedSinotruckMachineType,
+} from "../client/src/data/sinotruckmachineTranslations";
 
 const languages = ["en", "zh", "es", "fr", "de", "pt", "ru", "ja", "ar", "it"];
 const models = [
@@ -46,10 +52,26 @@ describe("Sinotruk machine name translations", () => {
     }
   });
 
-  it("returns complete localized Sinotruk model names in German", () => {
-    expect(getTranslatedSinotruckMachineName("HOWO 4×2", "de")).toBe("Sinotruk HOWO 4×2 Sattelzugmaschine");
-    expect(getTranslatedSinotruckMachineName("HOWO 6×4 Dump", "de")).toBe("Sinotruk HOWO 6×4 Kipplastwagen");
-    expect(getTranslatedSinotruckMachineName("HOWO T7S", "de")).toBe("Sinotruk HOWO T7S Premium-Kipplastwagen");
-    expect(getTranslatedSinotruckMachineName("SITRAK C7H", "de")).toBe("Sinotruk SITRAK C7H Sattelzugmaschine");
+  it("aligns all 12 English specifications and technical descriptions with the actual product source", () => {
+    const sinotrukMachines = brands.find((brand) => brand.id === "sinotruk")?.machines ?? [];
+    expect(sinotrukMachines).toHaveLength(12);
+    for (const machine of sinotrukMachines) {
+      expect(getTranslatedSinotruckMachineName(machine.model, "en")).toContain(modelIdentifiers[machine.model]);
+      expect(getTranslatedSinotruckMachineType(machine.model, "en")).toBe(machine.name);
+      expect(getTranslatedSinotruckMachineSpecs(machine.model, "en")).toBe(machine.specs);
+      expect(getTranslatedSinotruckMachineDescription(machine.model, "en")).toBe(
+        machine.description.replaceAll("Sinotruck", "Sinotruk"),
+      );
+    }
+  });
+
+  it("removes mixed Japanese unit labels from all machine specifications and descriptions", () => {
+    const japaneseResiduals = /\bkW\b|\bGVW\b|\bton\b|\bm³\b|Heavy Duty|Dump Truck|Tractor Truck|Concrete Mixer Truck|重型|重荷重/;
+    for (const model of models) {
+      expect(getTranslatedSinotruckMachineName(model, "ja")).not.toMatch(japaneseResiduals);
+      expect(getTranslatedSinotruckMachineType(model, "ja")).not.toMatch(japaneseResiduals);
+      expect(getTranslatedSinotruckMachineSpecs(model, "ja")).not.toMatch(japaneseResiduals);
+      expect(getTranslatedSinotruckMachineDescription(model, "ja")).not.toMatch(japaneseResiduals);
+    }
   });
 });

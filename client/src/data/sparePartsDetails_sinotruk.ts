@@ -511,7 +511,7 @@ export const sinotrukPartDetailsTranslations = {
     zh: '中国重汽液压油泵(举升系统)。为车辆举升和自卸车厢操作提供液压压力。',
     es: 'Bomba de aceite hidráulico (sistema de elevación) para Sinotruk. Suministra presión hidráulica para la operación de elevación del vehículo y la caja de volcado.',
     fr: 'Pompe d\'huile hydraulique (système de levage) pour Sinotruk. Fournit une pression hydraulique pour l\'opération de levage du véhicule et de la benne basculante.',
-    de: 'Hydraulikölpumpe (Hebesystem) für Sinotruk. Liefert Hydraulikdruck für Fahzeughebung und Kippmuldenbetrieb.',
+    de: 'Hydraulikölpumpe (Hebesystem) für Sinotruk. Liefert Hydraulikdruck für Fahrzeughebung und Kippmuldenbetrieb.',
     pt: 'Bomba de óleo hidráulico (sistema de elevação) para Sinotruk. Fornece pressão hidráulica para operação de elevação do veículo e caçamba basculante.',
     ru: 'Гидравлический масляный насос (система подъема) для Sinotruk. Подает гидравлическое давление для подъема транспортного средства и работы самосвальной кровати.',
     ja: 'シノトルク用油圧ポンプ(リフティングシステム)。車両の持ち上げとダンプベッド操作のための油圧を供給します。',
@@ -532,8 +532,20 @@ export const sinotrukPartDetailsTranslations = {
   },
 };
 
+const sinotrukDetailAliases: Record<string, keyof typeof sinotrukPartDetailsTranslations> = {
+  '空气滤芯总成': 'Air Filter总成',
+  '柴油粗滤器(油水分离器)': '柴油粗滤器(Oil-Water Separator)',
+  '起动机总成': 'Starter Motor Assembly',
+  '转向节臂/羊角(左)': 'Steering Knuckle Arm/羊角(左)',
+  '传动轴总成(变速箱至驱动桥)': 'Drive Shaft Assembly(变速箱至驱动桥)',
+  '水泵总成': 'Water Pump Assembly',
+  '涡轮增压器总成': 'Turbocharger总成',
+  '驱动轴节叉(万向节叉)': 'Drive Shaft Fork(万向节叉)',
+};
+
 export function getTranslatedSinotrukSparePartDetails(partName: string, language: string = 'en'): string {
-  const translations = sinotrukPartDetailsTranslations[partName as keyof typeof sinotrukPartDetailsTranslations];
+  const canonicalName = sinotrukDetailAliases[partName] || partName;
+  const translations = sinotrukPartDetailsTranslations[canonicalName as keyof typeof sinotrukPartDetailsTranslations];
   if (translations && translations[language as keyof typeof translations]) {
     return translations[language as keyof typeof translations];
   }
