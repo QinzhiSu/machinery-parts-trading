@@ -24,7 +24,7 @@ export default function ConstructionPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-96 md:h-[26rem] flex items-start overflow-hidden">
+      <section className="relative h-96 md:h-[26rem] flex items-start overflow-hidden" style={{ paddingTop: "4rem" }}>
         <img src={HERO_IMG} alt={t('category.constructionMachinery')} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(0deg, oklch(0.1 0.04 265 / 0.95) 0%, oklch(0.1 0.04 265 / 0.5) 100%)' }} />
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: 'oklch(0.68 0.18 42)' }} />
