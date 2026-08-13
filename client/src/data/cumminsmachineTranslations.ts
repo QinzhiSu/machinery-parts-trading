@@ -1,3 +1,5 @@
+import { correctedCumminsMachineTranslations } from './cumminsMachineTranslations.corrected';
+
 export const cumminsmachineNameTranslations: Record<string, Record<string, string>> = {
   '6BT5.9-G2': { en: 'Cummins 6BT5.9-G2 Diesel Engine', zh: '康明斯 6BT5.9-G2 柴油发动机', es: 'Motor diésel Cummins 6BT5.9-G2', fr: 'Moteur diesel Cummins 6BT5.9-G2', de: 'Cummins 6BT5.9-G2 Dieselmotor', pt: 'Motor diesel Cummins 6BT5.9-G2', ru: 'Дизельный двигатель Cummins 6BT5.9-G2', ja: 'カミンズ 6BT5.9-G2 ディーゼルエンジン', ar: 'محرك ديزل كمنز 6BT5.9-G2', it: 'Motore diesel Cummins 6BT5.9-G2' },
   'ISF3.8': { en: 'Cummins ISF3.8 Diesel Engine', zh: '康明斯 ISF3.8 柴油发动机', es: 'Motor diésel Cummins ISF3.8', fr: 'Moteur diesel Cummins ISF3.8', de: 'Cummins ISF3.8 Dieselmotor', pt: 'Motor diesel Cummins ISF3.8', ru: 'Дизельный двигатель Cummins ISF3.8', ja: 'カミンズ ISF3.8 ディーゼルエンジン', ar: 'محرك ديزل كمنز ISF3.8', it: 'Motore diesel Cummins ISF3.8' },
@@ -39,25 +41,25 @@ export const cumminsmachineDescriptionTranslations: Record<string, Record<string
 };
 
 export function getTranslatedCumminsMachineName(model: string, language: string): string {
-  const translations = cumminsmachineNameTranslations[model];
+  const translations: Record<string, string> | undefined = correctedCumminsMachineTranslations.name[model as keyof typeof correctedCumminsMachineTranslations.name] || cumminsmachineNameTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedCumminsMachineType(model: string, language: string): string {
-  const translations = cumminsmachineTypeTranslations[model];
+  const translations: Record<string, string> | undefined = correctedCumminsMachineTranslations.type[model as keyof typeof correctedCumminsMachineTranslations.type] || cumminsmachineTypeTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedCumminsMachineSpecs(model: string, language: string): string {
-  const translations = cumminsmachineSpecsTranslations[model];
+  const translations: Record<string, string> | undefined = correctedCumminsMachineTranslations.specs[model as keyof typeof correctedCumminsMachineTranslations.specs] || cumminsmachineSpecsTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
 
 export function getTranslatedCumminsMachineDescription(model: string, language: string): string {
-  const translations = cumminsmachineDescriptionTranslations[model];
+  const translations: Record<string, string> | undefined = correctedCumminsMachineTranslations.description[model as keyof typeof correctedCumminsMachineTranslations.description] || cumminsmachineDescriptionTranslations[model];
   if (!translations) return model;
   return translations[language] || translations['en'] || model;
 }
@@ -69,9 +71,9 @@ export function getCumminsMachineIds(): string[] {
 export function getCumminsMachineData(machineId: string, language: string = 'en') {
   return {
     id: machineId,
-    name: cumminsmachineNameTranslations[machineId]?.[language] || machineId,
-    type: cumminsmachineTypeTranslations[machineId]?.[language] || 'Engine',
-    specs: cumminsmachineSpecsTranslations[machineId]?.[language] || '',
-    description: cumminsmachineDescriptionTranslations[machineId]?.[language] || '',
+    name: getTranslatedCumminsMachineName(machineId, language),
+    type: getTranslatedCumminsMachineType(machineId, language),
+    specs: getTranslatedCumminsMachineSpecs(machineId, language),
+    description: getTranslatedCumminsMachineDescription(machineId, language),
   };
 }

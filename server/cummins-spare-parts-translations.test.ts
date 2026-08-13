@@ -3,8 +3,13 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   getTranslatedCumminsSparePartCategory,
+  getTranslatedCumminsSparePartDescription,
   getTranslatedCumminsSparePartName,
 } from "../client/src/data/sparePartsTranslations_cummins";
+import {
+  cumminsPartDetailsTranslations,
+  getTranslatedCumminsSparePartDetails,
+} from "../client/src/data/sparePartsDetails_cummins";
 
 const supportedLanguages = ["en", "zh", "es", "fr", "de", "pt", "ru", "ja", "ar", "it"];
 const nonChineseLanguages = supportedLanguages.filter(language => language !== "zh" && language !== "ja");
@@ -40,5 +45,21 @@ describe("Cummins spare-parts name and category translations", () => {
         expect(getTranslatedCumminsSparePartCategory(part.category, language)).not.toMatch(chineseCharacters);
       }
     }
+  });
+
+  it("routes every source part to matching non-default list and modal details", () => {
+    const missing: string[] = [];
+    for (const part of parts) {
+      for (const language of supportedLanguages) {
+        const listDescription = getTranslatedCumminsSparePartDescription(part.name, language);
+        const modalDetails = getTranslatedCumminsSparePartDetails(part.name, language);
+        const fallback = (cumminsPartDetailsTranslations.default as Record<string, string>)[language];
+        if (listDescription === fallback || modalDetails === fallback) {
+          missing.push(`${part.name}:${language}`);
+        }
+        expect(listDescription).toBe(modalDetails);
+      }
+    }
+    expect(missing).toEqual([]);
   });
 });
