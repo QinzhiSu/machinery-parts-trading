@@ -4,34 +4,44 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { getBrandsByCategory } from '@/data/products';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/data/translations';
+import {
+  getTranslatedConstructionBrandDescription,
+  getTranslatedConstructionCountry,
+  getTranslatedConstructionPageText,
+} from '@/data/constructionPageTranslations';
 
 const HERO_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663644782615/Wp4u9iGenLAr7MSPhkcAHT/hero-machinery-nbwEngDndkYEV7YkbvbRje.webp';
 const constructionBrands = getBrandsByCategory('construction');
 
 export default function ConstructionPage() {
+  const { language } = useLanguage();
+  const t = (key: string) => translations[language]?.[key] || key;
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
       {/* Hero */}
       <section className="relative h-64 md:h-80 flex items-end overflow-hidden">
-        <img src={HERO_IMG} alt="Construction Machinery" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={HERO_IMG} alt={t('category.constructionMachinery')} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(0deg, oklch(0.1 0.04 265 / 0.95) 0%, oklch(0.1 0.04 265 / 0.5) 100%)' }} />
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: 'oklch(0.68 0.18 42)' }} />
         <div className="container relative z-10 pb-8">
           <div className="flex items-center gap-2 mb-2 text-xs" style={{ color: 'oklch(0.6 0.02 265)', fontFamily: 'var(--font-display)' }}>
-            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">Home</Link>
+            <Link href="/" className="hover:text-orange-400 transition-colors uppercase tracking-wider">{t('nav.home')}</Link>
             <ChevronRight size={12} />
-            <span className="uppercase tracking-wider" style={{ color: 'oklch(0.68 0.18 42)' }}>Construction Machinery</span>
+            <span className="uppercase tracking-wider" style={{ color: 'oklch(0.68 0.18 42)' }}>{t('category.constructionMachinery')}</span>
           </div>
           <h1
             className="text-white uppercase leading-none"
             style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800 }}
           >
-            Construction <span style={{ color: 'oklch(0.68 0.18 42)' }}>Machinery</span>
+            {t('category.constructionMachinery')}
           </h1>
           <p className="text-sm mt-2 max-w-xl" style={{ color: 'oklch(0.75 0.01 265)' }}>
-            Excavators, bulldozers, wheel loaders, motor graders, cranes and more — whole machines and spare parts.
+            {getTranslatedConstructionPageText('heroDescription', language)}
           </p>
         </div>
       </section>
@@ -41,10 +51,10 @@ export default function ConstructionPage() {
         <div className="container">
           <div className="mb-8">
             <h2 className="section-heading" style={{ color: 'oklch(0.18 0.04 265)' }}>
-              Our Brands
+              {t('category.ourBrands')}
             </h2>
             <p className="mt-3 text-sm" style={{ color: 'oklch(0.5 0.02 265)' }}>
-              Click on any brand to view complete machine models and spare parts catalog.
+              {t('category.clickToBrowse')}
             </p>
           </div>
 
@@ -74,7 +84,7 @@ export default function ConstructionPage() {
                       {brand.name}
                     </h3>
                     <div className="text-xs" style={{ color: 'oklch(0.6 0.02 265)' }}>
-                      {brand.country} · {brand.fullName}
+                      {getTranslatedConstructionCountry(brand.country, language)} · {brand.fullName}
                     </div>
                   </div>
                 </div>
@@ -86,7 +96,7 @@ export default function ConstructionPage() {
                       {brand.machines.length}
                     </div>
                     <div className="text-xs uppercase tracking-wider mt-0.5" style={{ color: 'oklch(0.5 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                      Machine Models
+                      {t('category.machineModels')}
                     </div>
                   </div>
                   <div className="p-4 text-center">
@@ -94,7 +104,7 @@ export default function ConstructionPage() {
                       {brand.spareParts.length}
                     </div>
                     <div className="text-xs uppercase tracking-wider mt-0.5" style={{ color: 'oklch(0.5 0.02 265)', fontFamily: 'var(--font-display)' }}>
-                      Spare Parts
+                      {t('category.spareParts')}
                     </div>
                   </div>
                 </div>
@@ -102,7 +112,7 @@ export default function ConstructionPage() {
                 {/* Description */}
                 <div className="p-5">
                   <p className="text-sm leading-relaxed mb-4" style={{ color: 'oklch(0.45 0.02 265)' }}>
-                    {brand.description.substring(0, 120)}...
+                    {getTranslatedConstructionBrandDescription(brand.id, language, brand.description)}
                   </p>
 
                   {/* Machine models preview */}
@@ -123,7 +133,7 @@ export default function ConstructionPage() {
                     ))}
                     {brand.machines.length > 4 && (
                       <span className="text-xs px-2 py-0.5" style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}>
-                        +{brand.machines.length - 4} more
+                        +{brand.machines.length - 4} {getTranslatedConstructionPageText('more', language)}
                       </span>
                     )}
                   </div>
@@ -132,7 +142,7 @@ export default function ConstructionPage() {
                     className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider group-hover:gap-3 transition-all"
                     style={{ color: 'oklch(0.68 0.18 42)', fontFamily: 'var(--font-display)' }}
                   >
-                    View Full Catalog <ArrowRight size={16} />
+                    {t('category.viewFullCatalog')} <ArrowRight size={16} />
                   </div>
                 </div>
               </Link>
